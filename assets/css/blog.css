@@ -121,9 +121,11 @@ blockquote {
 }
 .navbar a {
   color: #222;
-  font-weight: 600;
-  font-size: 1.08rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.12rem;
   letter-spacing: 0.01em;
+  transition: color 0.2s;
 }
 .navbar a:hover {
   color: #1a8917;
