@@ -1,0 +1,79 @@
+/* Custom Minima overrides for Surya Rao Rayarao's blog */
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', 'Noto Sans', sans-serif;
+  background: #f8fafc;
+}
+
+.site-header {
+  background: #0a2540;
+  color: #fff;
+  border-bottom: 2px solid #e3e6eb;
+}
+
+.site-title, .site-title a {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #fff !important;
+  letter-spacing: 0.5px;
+}
+
+.site-nav {
+  font-size: 1.1rem;
+}
+
+.site-nav a {
+  color: #e3e6eb;
+  margin-right: 1.2rem;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover {
+  color: #ffd700;
+}
+
+.site-footer {
+  background: #0a2540;
+  color: #fff;
+  border-top: 2px solid #e3e6eb;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', 'Noto Sans', sans-serif;
+  color: #0a2540;
+}
+
+.post-content code, pre {
+  background: #e9f3fa;
+  color: #222;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 1em;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+.container, .wrapper {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px 0 #0002, 0 1.5px 6px #0001;
+  border: 1.5px solid #e3e6eb;
+  padding: 2.7rem 2.2rem 2.7rem 2.2rem;
+}
+
+@media (max-width: 800px) {
+  .container, .wrapper {
+    padding: 1.2rem 0.5rem;
+    border-radius: 12px;
+  }
+  .site-title {
+    font-size: 1.4rem;
+  }
+}

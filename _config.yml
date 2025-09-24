@@ -4,3 +4,8 @@ baseurl: ""
 url: "https://blog.suryarao.in"
 exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json"]
 theme: minima
+# Custom CSS for Minima theme
+minima:
+  skin: null
+  include:
+    - assets/css/minima-overrides.css
