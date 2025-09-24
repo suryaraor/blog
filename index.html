@@ -3,10 +3,6 @@ layout: default
 ---
 <!-- Blog index page for posts under /blog/_posts -->
 <div class="container">
-  <div style="display: flex; justify-content: flex-end; gap: 1.5rem; margin-bottom: 1.5rem;">
-  <a href="/" style="font-weight:600;">Blog Home</a>
-  <a href="/index.html" style="font-weight:600;">Author Profile</a>
-  </div>
   <h1>My Blog Posts</h1>
   <ul>
     {% for post in site.posts %}
@@ -19,6 +15,5 @@ layout: default
   {% if site.posts == empty %}
     <div class="no-posts">No blog posts found.</div>
   {% endif %}
-  <a href="/" style="display:block; margin-top:2.5rem; color:#555;">&larr; Blog Home</a>
-  <a href="/index.html" style="display:block; margin-top:2.5rem; color:#555;">&larr; Author Profile</a>
+  <!-- Navigation links removed to avoid duplication; handled by layout -->
 </div>
