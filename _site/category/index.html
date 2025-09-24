@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posts in category: {{ page.category }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/blog/assets/css/blog.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Posts in category: </h1>
+<ul>
+  
+  
+</ul>
+<a href="/blog/" style="display:block; margin-top:2.5rem; color:#555;">&larr; Back to Blog Home</a>
+
+  </div>
+  <script>
+    document.querySelectorAll('pre code').forEach(function(codeBlock) {
+      var btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.type = 'button';
+      btn.innerText = 'Copy';
+      btn.onclick = function() {
+        navigator.clipboard.writeText(codeBlock.innerText);
+        btn.innerText = 'Copied!';
+        setTimeout(function(){ btn.innerText = 'Copy'; }, 1200);
+      };
+      codeBlock.parentNode.style.position = 'relative';
+      codeBlock.parentNode.appendChild(btn);
+    });
+  </script>
+</body>
+</html>

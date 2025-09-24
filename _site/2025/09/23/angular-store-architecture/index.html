@@ -1,0 +1,165 @@
+<p>layout: default
+title: “Mastering Angular Store Architecture: A Practical Guide”
+date: 2025-09-23
+category: Angular
+—</p>
+
+<h1 id="mastering-angular-store-architecture-a-practical-guide">Mastering Angular Store Architecture: A Practical Guide</h1>
+
+<p>State management is a cornerstone of building robust, scalable, and maintainable Angular applications. As your app grows, managing data flow and state transitions can become complex and error-prone. This is where <strong>Angular store architecture</strong> comes in—a pattern that helps you centralize, organize, and control your application’s state in a predictable way.</p>
+
+<p>In this post, you’ll learn:</p>
+<ul>
+  <li>What Angular store architecture is and why it matters</li>
+  <li>The core concepts behind state management in Angular</li>
+  <li>How to implement a simple store using RxJS</li>
+  <li>Best practices, common pitfalls, and practical tips</li>
+  <li>How to use libraries like NgRx for advanced scenarios</li>
+</ul>
+
+<hr />
+
+<h2 id="what-is-angular-store-architecture">What is Angular Store Architecture?</h2>
+
+<p>Angular store architecture refers to a design pattern where application state is managed in a single, centralized store. This approach is inspired by Redux and Flux patterns from the React ecosystem, but adapted for Angular using RxJS and Angular’s dependency injection.</p>
+
+<p><strong>Why use a store?</strong></p>
+<ul>
+  <li>Centralizes state, making it easier to debug and test</li>
+  <li>Enables predictable state transitions</li>
+  <li>Simplifies data sharing between components</li>
+  <li>Makes undo/redo, time-travel debugging, and state persistence possible</li>
+</ul>
+
+<hr />
+
+<h2 id="core-concepts">Core Concepts</h2>
+
+<ul>
+  <li><strong>State</strong>: The single source of truth for your app’s data.</li>
+  <li><strong>Actions</strong>: Events that describe something that happened (e.g., <code class="language-plaintext highlighter-rouge">AddTodo</code>, <code class="language-plaintext highlighter-rouge">LoadUser</code>).</li>
+  <li><strong>Reducers</strong>: Pure functions that take the current state and an action, and return a new state.</li>
+  <li><strong>Selectors</strong>: Functions to get slices of state for components.</li>
+  <li><strong>Effects</strong>: (Advanced) Handle side effects like API calls.</li>
+</ul>
+
+<hr />
+
+<h2 id="implementing-a-simple-store-with-rxjs">Implementing a Simple Store with RxJS</h2>
+
+<p>Let’s build a minimal store from scratch using RxJS. This will help you understand the core ideas before using a library like NgRx.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">BehaviorSubject</span><span class="p">,</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">rxjs</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kr">interface</span> <span class="nx">AppState</span> <span class="p">{</span>
+  <span class="nl">counter</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">initialState</span><span class="p">:</span> <span class="nx">AppState</span> <span class="o">=</span> <span class="p">{</span> <span class="na">counter</span><span class="p">:</span> <span class="mi">0</span> <span class="p">};</span>
+
+<span class="kd">class</span> <span class="nc">Store</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="nx">state$</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BehaviorSubject</span><span class="o">&lt;</span><span class="nx">AppState</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">initialState</span><span class="p">);</span>
+
+  <span class="c1">// Selector</span>
+  <span class="nx">select</span><span class="o">&lt;</span><span class="nx">K</span> <span class="kd">extends</span> <span class="kr">keyof</span> <span class="nx">AppState</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">key</span><span class="p">:</span> <span class="nx">K</span><span class="p">):</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">AppState</span><span class="p">[</span><span class="nx">K</span><span class="p">]</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nf">asObservable</span><span class="p">().</span><span class="nf">pipe</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span><span class="p">[</span><span class="nx">key</span><span class="p">]));</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Action dispatcher</span>
+  <span class="nf">setState</span><span class="p">(</span><span class="nx">newState</span><span class="p">:</span> <span class="nb">Partial</span><span class="o">&lt;</span><span class="nx">AppState</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nf">next</span><span class="p">({</span> <span class="p">...</span><span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span> <span class="p">...</span><span class="nx">newState</span> <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Get current state snapshot</span>
+  <span class="kd">get</span> <span class="nf">value</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage</span>
+<span class="kd">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Store</span><span class="p">();</span>
+<span class="nx">store</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="dl">'</span><span class="s1">counter</span><span class="dl">'</span><span class="p">).</span><span class="nf">subscribe</span><span class="p">(</span><span class="nx">val</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Counter:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">val</span><span class="p">));</span>
+<span class="nx">store</span><span class="p">.</span><span class="nf">setState</span><span class="p">({</span> <span class="na">counter</span><span class="p">:</span> <span class="mi">1</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Tip:</strong> In a real app, you would inject the store as a service and use actions/reducers for more structure.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="using-ngrx-the-official-angular-store-library">Using NgRx: The Official Angular Store Library</h2>
+
+<p>For large applications, <a href="https://ngrx.io/">NgRx</a> is the de facto standard for state management in Angular. It provides a powerful set of tools based on Redux, but fully integrated with Angular and RxJS.</p>
+
+<p><strong>Key features:</strong></p>
+<ul>
+  <li>Strong TypeScript support</li>
+  <li>DevTools for time-travel debugging</li>
+  <li>Effects for handling async operations</li>
+  <li>Entity management for collections</li>
+</ul>
+
+<p><strong>Example: Counter Store with NgRx</strong></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// actions.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">createAction</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@ngrx/store</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">increment</span> <span class="o">=</span> <span class="nf">createAction</span><span class="p">(</span><span class="dl">'</span><span class="s1">[Counter] Increment</span><span class="dl">'</span><span class="p">);</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">decrement</span> <span class="o">=</span> <span class="nf">createAction</span><span class="p">(</span><span class="dl">'</span><span class="s1">[Counter] Decrement</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// reducer.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">createReducer</span><span class="p">,</span> <span class="nx">on</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@ngrx/store</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">initialState</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">_counterReducer</span> <span class="o">=</span> <span class="nf">createReducer</span><span class="p">(</span>
+  <span class="nx">initialState</span><span class="p">,</span>
+  <span class="nf">on</span><span class="p">(</span><span class="nx">increment</span><span class="p">,</span> <span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+  <span class="nf">on</span><span class="p">(</span><span class="nx">decrement</span><span class="p">,</span> <span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">);</span>
+<span class="k">export</span> <span class="kd">function</span> <span class="nf">counterReducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span> <span class="nx">action</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nf">_counterReducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span> <span class="nx">action</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// selector.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">createSelector</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@ngrx/store</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">selectCounter</span> <span class="o">=</span> <span class="p">(</span><span class="nx">state</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">state</span><span class="p">.</span><span class="nx">counter</span><span class="p">;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Best Practice:</strong> Keep your state as flat as possible and use selectors to derive data for components.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="common-pitfalls--best-practices">Common Pitfalls &amp; Best Practices</h2>
+
+<ul>
+  <li><strong>Avoid mutating state directly.</strong> Always return new objects from reducers.</li>
+  <li><strong>Keep state serializable.</strong> Don’t store functions, classes, or non-plain objects.</li>
+  <li><strong>Use selectors for all state access.</strong> Don’t access the store’s value directly in components.</li>
+  <li><strong>Modularize your store.</strong> Split state, actions, and reducers by feature.</li>
+</ul>
+
+<hr />
+
+<h2 id="summary--key-takeaways">Summary &amp; Key Takeaways</h2>
+
+<ul>
+  <li>Angular store architecture helps you manage complex state in a scalable way.</li>
+  <li>Start simple with RxJS, then move to NgRx for larger apps.</li>
+  <li>Use actions, reducers, and selectors for predictable state management.</li>
+  <li>Follow best practices to avoid common bugs and headaches.</li>
+</ul>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+  <li><a href="https://ngrx.io/docs">NgRx Documentation</a></li>
+  <li><a href="https://redux.js.org/introduction/getting-started">Redux Pattern</a></li>
+  <li><a href="https://blog.angularindepth.com/angular-state-management-1f8d7b6c5c3e">Angular State Management Patterns</a></li>
+</ul>
+
+<hr />
+
+<p>By mastering Angular store architecture, you’ll build apps that are easier to maintain, debug, and scale. Happy coding!</p>
