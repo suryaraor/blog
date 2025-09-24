@@ -2,18 +2,16 @@
 layout: default
 ---
 <!-- Blog index page for posts under /blog/_posts -->
-<div class="container">
-  <h1>My Blog Posts</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-  <div class="blog-title"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></div>
-        <div class="blog-meta">{{ post.date | date: "%B %d, %Y" }}</div>
-      </li>
-    {% endfor %}
-  </ul>
-  {% if site.posts == empty %}
-    <div class="no-posts">No blog posts found.</div>
-  {% endif %}
-  <!-- Navigation links removed to avoid duplication; handled by layout -->
-</div>
+<h1>My Blog Posts</h1>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <div class="blog-title"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></div>
+      <div class="blog-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+    </li>
+  {% endfor %}
+</ul>
+{% if site.posts == empty %}
+  <div class="no-posts">No blog posts found.</div>
+{% endif %}
+<!-- Navigation links removed to avoid duplication; handled by layout -->
