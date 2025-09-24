@@ -1,7 +1,8 @@
 
+
 body {
   font-family: 'Segoe UI', 'Georgia', Arial, sans-serif;
-  background: #faf9f7;
+  background: linear-gradient(120deg, #f8fafc 0%, #e9f3fa 100%);
   color: #222;
   margin: 0;
   padding: 0;
@@ -13,10 +14,10 @@ body {
   max-width: 700px;
   margin: 2.5rem auto;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px #0001;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px 0 #0002, 0 1.5px 6px #0001;
   padding: 2.5rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, border-radius 0.2s;
 }
 
 h1, h2, h3, h4 {
