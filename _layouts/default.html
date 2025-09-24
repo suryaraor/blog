@@ -29,18 +29,30 @@ layout: default
     {{ content }}
   </div>
   <script>
-    document.querySelectorAll('pre code').forEach(function(codeBlock) {
+    // Improved copy button for both <pre> and <pre><code> blocks
+    document.querySelectorAll('pre').forEach(function(preBlock) {
+      // If <pre> contains a <code>, use that, else use <pre> text
+      var codeBlock = preBlock.querySelector('code') || preBlock;
       var btn = document.createElement('button');
       btn.className = 'copy-btn';
       btn.type = 'button';
       btn.innerText = 'Copy';
       btn.onclick = function() {
-        navigator.clipboard.writeText(codeBlock.innerText);
-        btn.innerText = 'Copied!';
-        setTimeout(function(){ btn.innerText = 'Copy'; }, 1200);
+        try {
+          navigator.clipboard.writeText(codeBlock.innerText).then(function() {
+            btn.innerText = 'Copied!';
+            setTimeout(function(){ btn.innerText = 'Copy'; }, 1200);
+          }, function() {
+            btn.innerText = 'Failed';
+            setTimeout(function(){ btn.innerText = 'Copy'; }, 1200);
+          });
+        } catch (e) {
+          btn.innerText = 'Failed';
+          setTimeout(function(){ btn.innerText = 'Copy'; }, 1200);
+        }
       };
-      codeBlock.parentNode.style.position = 'relative';
-      codeBlock.parentNode.appendChild(btn);
+      preBlock.style.position = 'relative';
+      preBlock.appendChild(btn);
     });
   </script>
 </body>
