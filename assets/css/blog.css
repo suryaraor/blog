@@ -18,8 +18,10 @@ pre, code {
   border: 1.5px solid #e3e6eb;
   padding: 2.7rem 2.2rem 2.7rem 2.2rem;
   transition: box-shadow 0.2s, border-radius 0.2s, border 0.2s;
-}
-.container:hover {
+body {
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   box-shadow: 0 10px 40px 0 #0003, 0 2px 8px #0001;
   border-color: #c9d6e3;
 }
