@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.1rem;
   font-weight: 700;
 }
-h1 { font-size: 2.2rem; color: #222; }
+/* Renamed to disable custom CSS for Minima theme. */
 h2 { font-size: 1.5rem; color: #444; }
 h3 { font-size: 1.2rem; color: #666; }
 

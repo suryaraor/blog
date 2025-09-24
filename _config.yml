@@ -3,3 +3,4 @@ permalink: pretty
 baseurl: ""
 url: "https://blog.suryarao.in"
 exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json"]
+theme: minima
