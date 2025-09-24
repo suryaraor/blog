@@ -7,6 +7,12 @@ layout: default
   <meta charset="UTF-8">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Insights on software engineering, data science, and technology by Surya Rao Rayarao.">
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="Insights on software engineering, data science, and technology by Surya Rao Rayarao." />
+  <meta property="og:image" content="https://blog.suryarao.in/profile.png" />
+  <meta property="og:url" content="https://blog.suryarao.in{{ page.url | default: '/' }}" />
+  <meta property="og:type" content="website" />
   <link rel="stylesheet" href="/assets/css/blog.css">
 </head>
 <body>
