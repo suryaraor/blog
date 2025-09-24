@@ -47,7 +47,7 @@ title: "Spring Transaction Management in Java EE"
   </style>
 </head>
 <body>
-  <div class="container">
+
     <h1>My Blog Posts</h1>
     <ul>
       {% for post in site.posts %}
@@ -61,7 +61,7 @@ title: "Spring Transaction Management in Java EE"
       <div class="no-posts">No blog posts found.</div>
     {% endif %}
     <a href="../index.html" style="display:block; margin-top:2.5rem; color:#555;">&larr; Back to Home</a>
-  </div>
+  
 </body>
 </html>
 
