@@ -107,8 +107,8 @@ pre {
     padding-left: 1.2rem;
   }
   .container, .wrapper {
-    margin: 1.2rem 0.2rem;
+    margin: 1.2rem auto;
+    max-width: calc(100% - 0.4rem);
     box-shadow: 0 2px 8px 0 #0001;
   }
-}
 }
