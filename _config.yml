@@ -1,11 +1,9 @@
+title: "Surya Rao Rayarao Blog"
+description: "Code, Karma, and Creativity: A deeper look at tech's impact on our world"
+author: "Surya Rao Rayarao"
+email: "hello@example.com"
 markdown: kramdown
-permalink: pretty
-baseurl: ""
-url: "https://blog.suryarao.in"
-exclude: ["node_modules", "gulpfile.js", "package.json", "package-lock.json"]
-theme: minima
-# Custom CSS for Minima theme
-minima:
-  skin: null
-  include:
-    - assets/css/minima-overrides.css
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
