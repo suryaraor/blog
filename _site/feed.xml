@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-10T13:26:24-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Surya Rao Rayarao Blog</title><subtitle>Code, Karma, and Creativity: A deeper look at tech&apos;s impact on our world</subtitle><author><name>Surya Rao Rayarao</name></author><entry><title type="html">Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action</title><link href="http://localhost:4000/2025/10/10/agentic-ai-autonomous-agents/" rel="alternate" type="text/html" title="Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action" /><published>2025-10-10T09:00:00-05:00</published><updated>2025-10-10T09:00:00-05:00</updated><id>http://localhost:4000/2025/10/10/agentic-ai-autonomous-agents</id><content type="html" xml:base="http://localhost:4000/2025/10/10/agentic-ai-autonomous-agents/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-14T11:38:38-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Surya Rao Rayarao Blog</title><subtitle>Code, Karma, and Creativity: A deeper look at tech&apos;s impact on our world</subtitle><author><name>Surya Rao Rayarao</name></author><entry><title type="html">Top 3 Trends Shaping India’s IT Ecosystem</title><link href="http://localhost:4000/2025/10/13/top-3-trends-shaping-indias-it-ecosystem/" rel="alternate" type="text/html" title="Top 3 Trends Shaping India’s IT Ecosystem" /><published>2025-10-13T13:30:00-05:00</published><updated>2025-10-13T13:30:00-05:00</updated><id>http://localhost:4000/2025/10/13/top-3-trends-shaping-indias-it-ecosystem</id><content type="html" xml:base="http://localhost:4000/2025/10/13/top-3-trends-shaping-indias-it-ecosystem/"><![CDATA[<p>Based on comprehensive research, three transformative trends stand out as defining forces reshaping India’s technology landscape in 2025. Each represents a critical dimension of India’s digital evolution: indigenous platform adoption, market expansion, and technological leadership.</p>
+
+<h2 id="trend-1-the-indigenous-tech-revolution---arattais-explosive-growth">Trend 1: The Indigenous Tech Revolution - Arattai’s Explosive Growth</h2>
+
+<p>Zoho’s Arattai messaging app achieved unprecedented 100x growth in just eight weeks, surging from under 10,000 users in August 2025 to over 10 million by October. This exponential trajectory reflects a fundamental shift in India’s technology consumption patterns, where nationalist sentiment combined with genuine product capabilities can drive grassroots adoption at remarkable velocity.</p>
+
+<p><img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3ab436bf2c0692a7ad91e3946a5d74a1/448ea4df-b80c-4575-b1c6-bd6eab569141/81bcb43e.png" alt="Arattai's exponential user growth demonstrates the rapid adoption potential of indigenous technology platforms when backed by nationalist sentiment and government support." /></p>
+
+<p><em>Arattai’s exponential user growth demonstrates the rapid adoption potential of indigenous technology platforms when backed by nationalist sentiment and government support.</em></p>
+
+<p>The growth acceleration tells a compelling story: daily sign-ups exploded from a mere 100 in August to 350,000 by October—a 3,500x increase in user acquisition velocity. This wasn’t driven by traditional venture capital-backed growth hacking but rather by government endorsements, word-of-mouth momentum, and growing awareness of data sovereignty concerns.<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup><sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup><sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">6</a></sup></p>
+
+<p><strong>Strategic Implications</strong>: Arattai’s success validates the “Made in India” technology movement and demonstrates that Indian platforms can compete with global incumbents when addressing domestic priorities. The app’s integration with Zoho’s enterprise suite, combined with plans for payments and business monetization, suggests a roadmap toward building comprehensive digital ecosystems independent of foreign technology stacks. This trend extends beyond messaging to cloud infrastructure, AI platforms, and semiconductor manufacturing—areas where India seeks technological autonomy.<sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">7</a></sup></p>
+
+<h2 id="trend-2-digital-transformation-at-scale---a-267-billion-market-by-2030">Trend 2: Digital Transformation at Scale - A $267 Billion Market by 2030</h2>
+
+<p>India’s digital transformation market is experiencing structural expansion, growing from $124.42 billion in 2025 to a projected $267.01 billion by 2030—representing a 16.5% compound annual growth rate. This growth reflects coordinated investments across government infrastructure (Digital India, IndiaAI Mission), enterprise modernization, and consumer digital adoption.<sup id="fnref:8"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">8</a></sup></p>
+
+<p><img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3ab436bf2c0692a7ad91e3946a5d74a1/6e24632e-9450-46c8-8dda-671a942b9427/c48b737c.png" alt="India's digital transformation market demonstrates robust growth at 16.5% CAGR, more than doubling from $124.42 billion in 2025 to $267.01 billion by 2030." /></p>
+
+<p><em>India’s digital transformation market demonstrates robust growth at 16.5% CAGR, more than doubling from $124.42 billion in 2025 to $267.01 billion by 2030.</em></p>
+
+<p>The market doubling over five years is driven by multiple converging forces: mobile penetration exceeding 73% of the population, monthly data consumption surpassing 19 GB per user, and government investment of Rs 14,903 crore extending Digital India initiatives through FY 2026. India Stack infrastructure layers—including Aadhaar, UPI, and DigiLocker—have created standardized frameworks that dramatically lower integration costs for enterprises operating at population scale.<sup id="fnref:8:1"><a href="#fn:8" class="footnote" rel="footnote" role="doc-noteref">8</a></sup><sup id="fnref:9"><a href="#fn:9" class="footnote" rel="footnote" role="doc-noteref">9</a></sup></p>
+
+<p><strong>Strategic Implications</strong>: This trajectory positions India among the fastest-growing digital economies globally, with implications for cloud computing (21.9% CAGR to $58.73 billion by 2030), cybersecurity (18.3% CAGR to $12.90 billion), and SaaS exports ($50 billion ARR by 2030). The scale of transformation creates opportunities for domestic technology providers to build for India first, then expand globally—reversing the traditional model where international platforms entered India after dominating developed markets.<sup id="fnref:10"><a href="#fn:10" class="footnote" rel="footnote" role="doc-noteref">10</a></sup><sup id="fnref:11"><a href="#fn:11" class="footnote" rel="footnote" role="doc-noteref">11</a></sup><sup id="fnref:12"><a href="#fn:12" class="footnote" rel="footnote" role="doc-noteref">12</a></sup></p>
+
+<h2 id="trend-3-ai-adoption-leadership---india-outpacing-global-benchmarks">Trend 3: AI Adoption Leadership - India Outpacing Global Benchmarks</h2>
+
+<p>India has emerged as a global leader in artificial intelligence adoption, with 30% of Indian enterprises maximizing AI’s value potential compared to 26% globally, and a remarkable 100% of Indian companies actively experimenting with AI versus 78% worldwide. Additionally, 65% of Indian enterprises are investing in Generative AI compared to 45% globally.<sup id="fnref:13"><a href="#fn:13" class="footnote" rel="footnote" role="doc-noteref">13</a></sup><sup id="fnref:14"><a href="#fn:14" class="footnote" rel="footnote" role="doc-noteref">14</a></sup></p>
+
+<p><img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/3ab436bf2c0692a7ad91e3946a5d74a1/5af45a55-de52-4c8c-8721-258daa86d948/14d8f090.png" alt="India demonstrates AI adoption leadership, with 100% of companies experimenting with AI compared to 78% globally, and significantly higher rates of GenAI investment and value maximization." /></p>
+
+<p><em>India demonstrates AI adoption leadership, with 100% of companies experimenting with AI compared to 78% globally, and significantly higher rates of GenAI investment and value maximization.</em></p>
+
+<p>This leadership reflects strategic national initiatives including the IndiaAI Mission (Rs 10,300+ crore over five years providing 18,700+ GPUs and compute access), homegrown AI model development (Sarvam AI, Gan AI, Gnan AI, Soket AI), and enterprise demand for automation and efficiency gains. India’s AI spending is projected to grow 2.2x faster than overall digital transformation investments through 2025.<sup id="fnref:13:1"><a href="#fn:13" class="footnote" rel="footnote" role="doc-noteref">13</a></sup><sup id="fnref:15"><a href="#fn:15" class="footnote" rel="footnote" role="doc-noteref">15</a></sup><sup id="fnref:16"><a href="#fn:16" class="footnote" rel="footnote" role="doc-noteref">16</a></sup></p>
+
+<p><strong>Strategic Implications</strong>: AI adoption leadership positions India at the forefront of the next technology wave, with applications spanning healthcare (telemedicine, diagnostics), financial services (fraud detection, credit scoring), agriculture (yield prediction, supply chain), and manufacturing (predictive maintenance, quality control). The combination of vast datasets, affordable talent, and government support creates potential for India to become an AI innovation hub—not just an implementation market. However, sustaining this leadership requires addressing the 58% skills gap in AI/ML talent and ensuring domestic compute infrastructure can support growing model training demands.<sup id="fnref:17"><a href="#fn:17" class="footnote" rel="footnote" role="doc-noteref">17</a></sup></p>
+
+<hr />
+
+<h2 id="cross-cutting-insights">Cross-Cutting Insights</h2>
+
+<p>These three trends interconnect powerfully. Arattai’s growth demonstrates that when digital infrastructure is in place (Trend 2), Indian consumers will rapidly adopt indigenous platforms addressing sovereignty concerns. AI adoption leadership (Trend 3) enables Indian enterprises to build competitive advantages through intelligent automation, supporting both domestic digital transformation and global competitiveness.</p>
+
+<p>Together, they signal India’s transition from technology consumer to technology creator, from back office to innovation hub, from services provider to platform originator. The next 3-5 years will determine whether this momentum translates into sustained technological leadership or remains confined to specific pockets of excellence. Success requires continued infrastructure investment, talent development at scale, regulatory clarity, and coordination between government policy and private sector execution—precisely the holistic approach that characterized previous technology superpowers’ ascent.</p>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://www.bbc.com/news/articles/cy50299w5vwo">BBC News - Arattai Growth Report</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><a href="https://www.forbesindia.com/article/news/the-arattai-moment-how-zohos-chatting-app-is-winning-trsut-nationwide/2987963/1">Forbes India - The Arattai Moment</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p><a href="https://www.forbes.com/sites/siladityaray/2025/10/09/whatsapp-rival-in-india-is-boosted-by-modis-calls-for-self-reliance-amid-us-tariff-battle/">Forbes - WhatsApp Rival in India</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="https://economictimes.com/tech/technology/made-in-india-message-zohos-arattai-logs-100x-increase-in-user-traffic/articleshow/124265223.cms">Economic Times - Made in India Message</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p><a href="https://timesofindia.indiatimes.com/technology/tech-news/zoho-founder-sridhar-vembu-feeling-of-nationalism-has-gone-missing-in-our-hyper-educated-elite-they-think-of-themselves-as/articleshow/124544598.cms">Times of India - Sridhar Vembu on Nationalism</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p><a href="https://economictimes.com/tech/startups/india-needs-its-tech-champs-to-guard-data-sovereignty-zoho-cofounder-sridhar-vembu/articleshow/124533352.cms">Economic Times - Data Sovereignty</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p><a href="https://www.moneycontrol.com/technology/there-is-a-swadeshi-movement-underway-india-must-be-self-reliant-in-tech-and-trade-on-equal-terms-says-zohos-sridhar-vembu-article-13612952.html">Moneycontrol - Swadeshi Movement in Tech</a> <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+      <p><a href="https://www.mordorintelligence.com/industry-reports/india-digital-transformation-market">Mordor Intelligence - India Digital Transformation Market</a> <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:8:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:9">
+      <p><a href="https://ibef.org/government-schemes/digital-india">IBEF - Digital India Scheme</a> <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:10">
+      <p><a href="https://www.ecaplabs.com/blogs/saas-funding-india">ECAP Labs - SaaS Funding India</a> <a href="#fnref:10" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:11">
+      <p><a href="https://www.mordorintelligence.com/industry-reports/india-cloud-computing-market">Mordor Intelligence - Cloud Computing Market</a> <a href="#fnref:11" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:12">
+      <p><a href="https://www.mordorintelligence.com/industry-reports/india-cybersecurity-market">Mordor Intelligence - Cybersecurity Market</a> <a href="#fnref:12" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:13">
+      <p><a href="https://www.isas.nus.edu.sg/papers/ai-adoption-in-india-moving-the-needle-forward/">ISAS NUS - AI Adoption in India</a> <a href="#fnref:13" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:13:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:14">
+      <p><a href="https://indiaai.gov.in/news/india-leads-in-ai-adoption-says-bcg-study">IndiaAI - BCG Study on AI Leadership</a> <a href="#fnref:14" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:15">
+      <p><a href="https://my.idc.com/getdoc.jsp?containerId=prAP53217325">IDC - India AI Market</a> <a href="#fnref:15" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:16">
+      <p><a href="https://coingeek.com/india-leads-ai-adoption-in-2024-despite-concerns/">CoinGeek - India AI Adoption 2024</a> <a href="#fnref:16" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:17">
+      <p><a href="https://www.linkedin.com/posts/skillpulse-jobs_skillpulseai-techtalent-airevolution-activity-7373718235525005312-aWTH">LinkedIn - AI Skills Gap</a> <a href="#fnref:17" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Surya Rao</name></author><category term="technology" /><category term="india" /><category term="trends" /><category term="AI" /><category term="digital-transformation" /><category term="indigenous-tech" /><category term="Arattai" /><category term="Zoho" /><category term="startup-ecosystem" /><summary type="html"><![CDATA[Three transformative trends are reshaping India's technology landscape in 2025: indigenous platform adoption through Arattai's explosive growth, a $267B digital transformation market expansion, and AI adoption leadership where India outpaces global benchmarks.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/blog/india-it-trends-2025.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/blog/india-it-trends-2025.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action</title><link href="http://localhost:4000/2025/10/10/agentic-ai-autonomous-agents/" rel="alternate" type="text/html" title="Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action" /><published>2025-10-10T09:00:00-05:00</published><updated>2025-10-10T09:00:00-05:00</updated><id>http://localhost:4000/2025/10/10/agentic-ai-autonomous-agents</id><content type="html" xml:base="http://localhost:4000/2025/10/10/agentic-ai-autonomous-agents/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <figure class="post-featured-image">
   <img src="/assets/images/blog/2025-10-10.jpg" alt="Featured image for Agentic AI article" />
@@ -101,4 +205,357 @@
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Agentic AI marks a significant step forward in how AI systems can act in the world. While challenges remain—particularly around safety, reliability, and societal impact—the potential for agents to augment human capabilities across research, business, science, and everyday life is enormous. The field will continue to evolve rapidly as researchers and practitioners refine architectures, tool integrations, and governance frameworks that make agentic systems practical and safe.</p>]]></content><author><name>Surya Rao Rayarao</name></author><summary type="html"><![CDATA[How agentic AI and autonomous agents advance AI from reactive chatbots to proactive, goal-directed systems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/blog/2025-10-10.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/blog/2025-10-10.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>Agentic AI marks a significant step forward in how AI systems can act in the world. While challenges remain—particularly around safety, reliability, and societal impact—the potential for agents to augment human capabilities across research, business, science, and everyday life is enormous. The field will continue to evolve rapidly as researchers and practitioners refine architectures, tool integrations, and governance frameworks that make agentic systems practical and safe.</p>]]></content><author><name>Surya Rao Rayarao</name></author><summary type="html"><![CDATA[How agentic AI and autonomous agents advance AI from reactive chatbots to proactive, goal-directed systems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/blog/2025-10-10.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/blog/2025-10-10.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">A Practical Guide to Angular Interceptors</title><link href="http://localhost:4000/2025/09/23/angular-interceptors/" rel="alternate" type="text/html" title="A Practical Guide to Angular Interceptors" /><published>2025-09-23T00:00:00-05:00</published><updated>2025-09-23T00:00:00-05:00</updated><id>http://localhost:4000/2025/09/23/angular-interceptors</id><content type="html" xml:base="http://localhost:4000/2025/09/23/angular-interceptors/"><![CDATA[<h1 id="a-practical-guide-to-angular-interceptors">A Practical Guide to Angular Interceptors</h1>
+
+<p>HTTP communication is at the heart of most Angular applications. But what if you want to add authentication tokens, log requests, handle errors, or modify responses globally—without repeating code in every service? Enter <strong>Angular Interceptors</strong>: a powerful feature that lets you intercept and transform HTTP requests and responses in a clean, reusable way.</p>
+
+<p>In this post, you’ll learn:</p>
+<ul>
+  <li>What Angular interceptors are and why they’re useful</li>
+  <li>How to create and register an interceptor</li>
+  <li>Real-world use cases (auth, logging, error handling)</li>
+  <li>Best practices and common pitfalls</li>
+  <li>How to chain multiple interceptors</li>
+</ul>
+
+<hr />
+
+<h2 id="what-are-angular-interceptors">What Are Angular Interceptors?</h2>
+
+<p>Angular interceptors are classes that implement the <code class="language-plaintext highlighter-rouge">HttpInterceptor</code> interface. They sit between your app and the backend, allowing you to inspect, modify, or even block HTTP requests and responses.</p>
+
+<p><strong>Why use interceptors?</strong></p>
+<ul>
+  <li>Add headers (e.g., auth tokens) to every request</li>
+  <li>Log or monitor HTTP traffic</li>
+  <li>Handle errors globally</li>
+  <li>Transform responses before they reach your code</li>
+</ul>
+
+<hr />
+
+<h2 id="creating-a-simple-interceptor">Creating a Simple Interceptor</h2>
+
+<p>Let’s build an interceptor that adds an authentication token to every outgoing request.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Injectable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/core</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">HttpInterceptor</span><span class="p">,</span> <span class="nx">HttpRequest</span><span class="p">,</span> <span class="nx">HttpHandler</span><span class="p">,</span> <span class="nx">HttpEvent</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/common/http</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">rxjs</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nc">AuthInterceptor</span> <span class="k">implements</span> <span class="nx">HttpInterceptor</span> <span class="p">{</span>
+  <span class="nf">intercept</span><span class="p">(</span><span class="nx">req</span><span class="p">:</span> <span class="nx">HttpRequest</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">next</span><span class="p">:</span> <span class="nx">HttpHandler</span><span class="p">):</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">HttpEvent</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">authToken</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">YOUR_AUTH_TOKEN</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Replace with real token logic</span>
+    <span class="kd">const</span> <span class="nx">authReq</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nf">clone</span><span class="p">({</span>
+      <span class="na">setHeaders</span><span class="p">:</span> <span class="p">{</span> <span class="na">Authorization</span><span class="p">:</span> <span class="s2">`Bearer </span><span class="p">${</span><span class="nx">authToken</span><span class="p">}</span><span class="s2">`</span> <span class="p">}</span>
+    <span class="p">});</span>
+    <span class="k">return</span> <span class="nx">next</span><span class="p">.</span><span class="nf">handle</span><span class="p">(</span><span class="nx">authReq</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Tip:</strong> Always use <code class="language-plaintext highlighter-rouge">req.clone()</code>—Angular HTTP requests are immutable!</p>
+</blockquote>
+
+<hr />
+
+<h2 id="registering-the-interceptor">Registering the Interceptor</h2>
+
+<p>You must register your interceptor in the <code class="language-plaintext highlighter-rouge">providers</code> array of your module:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">HTTP_INTERCEPTORS</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@angular/common/http</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">AuthInterceptor</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./auth.interceptor</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="p">@</span><span class="nd">NgModule</span><span class="p">({</span>
+  <span class="c1">// ...</span>
+  <span class="na">providers</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="na">provide</span><span class="p">:</span> <span class="nx">HTTP_INTERCEPTORS</span><span class="p">,</span> <span class="na">useClass</span><span class="p">:</span> <span class="nx">AuthInterceptor</span><span class="p">,</span> <span class="na">multi</span><span class="p">:</span> <span class="kc">true</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">})</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nc">AppModule</span> <span class="p">{}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Best Practice:</strong> Use <code class="language-plaintext highlighter-rouge">multi: true</code> so you can register multiple interceptors.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="real-world-use-cases">Real-World Use Cases</h2>
+
+<ul>
+  <li><strong>Authentication:</strong> Attach JWT or OAuth tokens to requests</li>
+  <li><strong>Logging:</strong> Log all HTTP traffic for debugging</li>
+  <li><strong>Error Handling:</strong> Catch and handle errors globally</li>
+  <li><strong>Caching:</strong> Serve cached responses for certain requests</li>
+</ul>
+
+<p><strong>Example: Global Error Handler</strong></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">Injectable</span><span class="p">()</span>
+<span class="k">export</span> <span class="kd">class</span> <span class="nc">ErrorInterceptor</span> <span class="k">implements</span> <span class="nx">HttpInterceptor</span> <span class="p">{</span>
+  <span class="nf">intercept</span><span class="p">(</span><span class="nx">req</span><span class="p">:</span> <span class="nx">HttpRequest</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">next</span><span class="p">:</span> <span class="nx">HttpHandler</span><span class="p">):</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">HttpEvent</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">next</span><span class="p">.</span><span class="nf">handle</span><span class="p">(</span><span class="nx">req</span><span class="p">).</span><span class="nf">pipe</span><span class="p">(</span>
+      <span class="nf">catchError</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// Handle error (show toast, redirect, etc.)</span>
+        <span class="k">return</span> <span class="nf">throwError</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">error</span><span class="p">);</span>
+      <span class="p">})</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="chaining-multiple-interceptors">Chaining Multiple Interceptors</h2>
+
+<p>Angular supports multiple interceptors. They are called in the order they are provided. For example, you can have one for auth, one for logging, and one for error handling—all working together.</p>
+
+<blockquote>
+  <p><strong>Tip:</strong> Keep each interceptor focused on a single responsibility for easier testing and maintenance.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="common-pitfalls--best-practices">Common Pitfalls &amp; Best Practices</h2>
+
+<ul>
+  <li><strong>Order matters:</strong> Interceptors are executed in the order they are provided.</li>
+  <li><strong>Always use <code class="language-plaintext highlighter-rouge">clone()</code>:</strong> Never mutate the original request.</li>
+  <li><strong>Handle errors gracefully:</strong> Don’t swallow errors—log or display them to users.</li>
+  <li><strong>Unsubscribe if needed:</strong> Interceptors return observables; manage subscriptions if you add side effects.</li>
+</ul>
+
+<hr />
+
+<h2 id="summary--key-takeaways">Summary &amp; Key Takeaways</h2>
+
+<ul>
+  <li>Angular interceptors let you handle cross-cutting concerns for HTTP requests in one place.</li>
+  <li>Use them for auth, logging, error handling, and more.</li>
+  <li>Register all interceptors with <code class="language-plaintext highlighter-rouge">multi: true</code>.</li>
+  <li>Keep interceptors focused and composable.</li>
+</ul>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+  <li><a href="https://angular.io/guide/http#intercepting-requests-and-responses">Angular Docs: HTTP Interceptors</a></li>
+  <li><a href="https://rxjs.dev/api/operators/catchError">RxJS catchError Operator</a></li>
+  <li><a href="https://blog.angularindepth.com/the-new-angular-httpclient-api-9e5c85fe4c0e">Best Practices for Angular HTTP</a></li>
+</ul>
+
+<hr />
+
+<p>By mastering Angular interceptors, you’ll write cleaner, more maintainable, and more powerful HTTP code. Happy intercepting!</p>]]></content><author><name>Surya Rao Rayarao</name></author><category term="Angular" /><summary type="html"><![CDATA[A Practical Guide to Angular Interceptors]]></summary></entry><entry><title type="html">Mastering Angular Store Architecture: A Practical Guide</title><link href="http://localhost:4000/2025/09/23/angular-store-architecture/" rel="alternate" type="text/html" title="Mastering Angular Store Architecture: A Practical Guide" /><published>2025-09-23T00:00:00-05:00</published><updated>2025-09-23T00:00:00-05:00</updated><id>http://localhost:4000/2025/09/23/angular-store-architecture</id><content type="html" xml:base="http://localhost:4000/2025/09/23/angular-store-architecture/"><![CDATA[<h1 id="mastering-angular-store-architecture-a-practical-guide">Mastering Angular Store Architecture: A Practical Guide</h1>
+
+<p>State management is a cornerstone of building robust, scalable, and maintainable Angular applications. As your app grows, managing data flow and state transitions can become complex and error-prone. This is where <strong>Angular store architecture</strong> comes in—a pattern that helps you centralize, organize, and control your application’s state in a predictable way.</p>
+
+<p>In this post, you’ll learn:</p>
+<ul>
+  <li>What Angular store architecture is and why it matters</li>
+  <li>The core concepts behind state management in Angular</li>
+  <li>How to implement a simple store using RxJS</li>
+  <li>Best practices, common pitfalls, and practical tips</li>
+  <li>How to use libraries like NgRx for advanced scenarios</li>
+</ul>
+
+<hr />
+
+<h2 id="what-is-angular-store-architecture">What is Angular Store Architecture?</h2>
+
+<p>Angular store architecture refers to a design pattern where application state is managed in a single, centralized store. This approach is inspired by Redux and Flux patterns from the React ecosystem, but adapted for Angular using RxJS and Angular’s dependency injection.</p>
+
+<p><strong>Why use a store?</strong></p>
+<ul>
+  <li>Centralizes state, making it easier to debug and test</li>
+  <li>Enables predictable state transitions</li>
+  <li>Simplifies data sharing between components</li>
+  <li>Makes undo/redo, time-travel debugging, and state persistence possible</li>
+</ul>
+
+<hr />
+
+<h2 id="core-concepts">Core Concepts</h2>
+
+<ul>
+  <li><strong>State</strong>: The single source of truth for your app’s data.</li>
+  <li><strong>Actions</strong>: Events that describe something that happened (e.g., <code class="language-plaintext highlighter-rouge">AddTodo</code>, <code class="language-plaintext highlighter-rouge">LoadUser</code>).</li>
+  <li><strong>Reducers</strong>: Pure functions that take the current state and an action, and return a new state.</li>
+  <li><strong>Selectors</strong>: Functions to get slices of state for components.</li>
+  <li><strong>Effects</strong>: (Advanced) Handle side effects like API calls.</li>
+</ul>
+
+<hr />
+
+<h2 id="implementing-a-simple-store-with-rxjs">Implementing a Simple Store with RxJS</h2>
+
+<p>Let’s build a minimal store from scratch using RxJS. This will help you understand the core ideas before using a library like NgRx.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">BehaviorSubject</span><span class="p">,</span> <span class="nx">Observable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">rxjs</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kr">interface</span> <span class="nx">AppState</span> <span class="p">{</span>
+  <span class="nl">counter</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">initialState</span><span class="p">:</span> <span class="nx">AppState</span> <span class="o">=</span> <span class="p">{</span> <span class="na">counter</span><span class="p">:</span> <span class="mi">0</span> <span class="p">};</span>
+
+<span class="kd">class</span> <span class="nc">Store</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="nx">state$</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BehaviorSubject</span><span class="o">&lt;</span><span class="nx">AppState</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">initialState</span><span class="p">);</span>
+
+  <span class="c1">// Selector</span>
+  <span class="nx">select</span><span class="o">&lt;</span><span class="nx">K</span> <span class="kd">extends</span> <span class="kr">keyof</span> <span class="nx">AppState</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">key</span><span class="p">:</span> <span class="nx">K</span><span class="p">):</span> <span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">AppState</span><span class="p">[</span><span class="nx">K</span><span class="p">]</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nf">asObservable</span><span class="p">().</span><span class="nf">pipe</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span><span class="p">[</span><span class="nx">key</span><span class="p">]));</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Action dispatcher</span>
+  <span class="nf">setState</span><span class="p">(</span><span class="nx">newState</span><span class="p">:</span> <span class="nb">Partial</span><span class="o">&lt;</span><span class="nx">AppState</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nf">next</span><span class="p">({</span> <span class="p">...</span><span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nx">value</span><span class="p">,</span> <span class="p">...</span><span class="nx">newState</span> <span class="p">});</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Get current state snapshot</span>
+  <span class="kd">get</span> <span class="nf">value</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">state$</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage</span>
+<span class="kd">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Store</span><span class="p">();</span>
+<span class="nx">store</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="dl">'</span><span class="s1">counter</span><span class="dl">'</span><span class="p">).</span><span class="nf">subscribe</span><span class="p">(</span><span class="nx">val</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Counter:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">val</span><span class="p">));</span>
+<span class="nx">store</span><span class="p">.</span><span class="nf">setState</span><span class="p">({</span> <span class="na">counter</span><span class="p">:</span> <span class="mi">1</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Tip:</strong> In a real app, you would inject the store as a service and use actions/reducers for more structure.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="using-ngrx-the-official-angular-store-library">Using NgRx: The Official Angular Store Library</h2>
+
+<p>For large applications, <a href="https://ngrx.io/">NgRx</a> is the de facto standard for state management in Angular. It provides a powerful set of tools based on Redux, but fully integrated with Angular and RxJS.</p>
+
+<p><strong>Key features:</strong></p>
+<ul>
+  <li>Strong TypeScript support</li>
+  <li>DevTools for time-travel debugging</li>
+  <li>Effects for handling async operations</li>
+  <li>Entity management for collections</li>
+</ul>
+
+<p><strong>Example: Counter Store with NgRx</strong></p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// actions.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">createAction</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@ngrx/store</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">increment</span> <span class="o">=</span> <span class="nf">createAction</span><span class="p">(</span><span class="dl">'</span><span class="s1">[Counter] Increment</span><span class="dl">'</span><span class="p">);</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">decrement</span> <span class="o">=</span> <span class="nf">createAction</span><span class="p">(</span><span class="dl">'</span><span class="s1">[Counter] Decrement</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// reducer.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">createReducer</span><span class="p">,</span> <span class="nx">on</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@ngrx/store</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">initialState</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">_counterReducer</span> <span class="o">=</span> <span class="nf">createReducer</span><span class="p">(</span>
+  <span class="nx">initialState</span><span class="p">,</span>
+  <span class="nf">on</span><span class="p">(</span><span class="nx">increment</span><span class="p">,</span> <span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+  <span class="nf">on</span><span class="p">(</span><span class="nx">decrement</span><span class="p">,</span> <span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">);</span>
+<span class="k">export</span> <span class="kd">function</span> <span class="nf">counterReducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span> <span class="nx">action</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nf">_counterReducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span> <span class="nx">action</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// selector.ts</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">createSelector</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@ngrx/store</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">selectCounter</span> <span class="o">=</span> <span class="p">(</span><span class="nx">state</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">state</span><span class="p">.</span><span class="nx">counter</span><span class="p">;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>Best Practice:</strong> Keep your state as flat as possible and use selectors to derive data for components.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="common-pitfalls--best-practices">Common Pitfalls &amp; Best Practices</h2>
+
+<ul>
+  <li><strong>Avoid mutating state directly.</strong> Always return new objects from reducers.</li>
+  <li><strong>Keep state serializable.</strong> Don’t store functions, classes, or non-plain objects.</li>
+  <li><strong>Use selectors for all state access.</strong> Don’t access the store’s value directly in components.</li>
+  <li><strong>Modularize your store.</strong> Split state, actions, and reducers by feature.</li>
+</ul>
+
+<hr />
+
+<h2 id="summary--key-takeaways">Summary &amp; Key Takeaways</h2>
+
+<ul>
+  <li>Angular store architecture helps you manage complex state in a scalable way.</li>
+  <li>Start simple with RxJS, then move to NgRx for larger apps.</li>
+  <li>Use actions, reducers, and selectors for predictable state management.</li>
+  <li>Follow best practices to avoid common bugs and headaches.</li>
+</ul>
+
+<hr />
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+  <li><a href="https://ngrx.io/docs">NgRx Documentation</a></li>
+  <li><a href="https://redux.js.org/introduction/getting-started">Redux Pattern</a></li>
+  <li><a href="https://blog.angularindepth.com/angular-state-management-1f8d7b6c5c3e">Angular State Management Patterns</a></li>
+</ul>
+
+<hr />
+
+<p>By mastering Angular store architecture, you’ll build apps that are easier to maintain, debug, and scale. Happy coding!</p>]]></content><author><name>Surya Rao Rayarao</name></author><category term="Angular" /><summary type="html"><![CDATA[Mastering Angular Store Architecture: A Practical Guide]]></summary></entry><entry><title type="html">Databricks: The Unified Analytics Platform Revolutionizing Data Science</title><link href="http://localhost:4000/2025/08/31/databricks/" rel="alternate" type="text/html" title="Databricks: The Unified Analytics Platform Revolutionizing Data Science" /><published>2025-08-31T00:00:00-05:00</published><updated>2025-08-31T00:00:00-05:00</updated><id>http://localhost:4000/2025/08/31/databricks</id><content type="html" xml:base="http://localhost:4000/2025/08/31/databricks/"><![CDATA[<h1 id="databricks-the-unified-analytics-platform-revolutionizing-data-science">Databricks: The Unified Analytics Platform Revolutionizing Data Science</h1>
+
+<p>How Apache Spark’s creators built the future of collaborative data analytics</p>
+
+<div class="read-time">12 min read</div>
+
+<div class="author-info">
+    <div class="author-name">Surya Rao Rayarao</div>
+    <div class="author-details">
+        Department of Statistics and Data Sciences<br />
+        Department of Computer Science<br />
+        The University of Texas at Austin<br />
+        suryarao.r@utexas.edu
+    </div>
+</div>
+
+<p>In the rapidly evolving landscape of big data and analytics, organizations face an increasingly complex challenge: how to efficiently process, analyze, and derive insights from massive datasets while enabling collaboration between data scientists, engineers, and analysts. Enter <strong>Databricks</strong> — a unified analytics platform that has revolutionized the way teams approach data science and machine learning at scale.</p>
+
+<p>Founded in 2013 by the original creators of Apache Spark, Databricks emerged from the recognition that traditional data processing tools were inadequate for the demands of modern analytics. The platform represents a paradigm shift from fragmented, tool-specific workflows to a collaborative, cloud-native environment that seamlessly integrates data engineering, data science, and business analytics.</p>
+
+<div class="highlight-box">
+    <strong>Did You Know?</strong> Databricks processes over 1 exabyte of data daily across its platform, making it one of the largest data processing platforms in the world. Companies like Netflix, Shell, and H&amp;M rely on Databricks to power their data-driven decision making.
+</div>
+
+<h2 id="the-genesis-why-databricks-was-created">The Genesis: Why Databricks Was Created</h2>
+
+<p>To understand Databricks’ significance, we must first examine the challenges that led to its creation. In the early 2010s, organizations struggled with several critical issues:</p>
+
+<ul>
+  <li><strong>Data Silos:</strong> Different teams used different tools, creating isolated workflows and hampering collaboration</li>
+  <li><strong>Infrastructure Complexity:</strong> Setting up and maintaining big data infrastructure required significant expertise and resources</li>
+  <li><strong>Scalability Bottlenecks:</strong> Traditional databases and analytics tools couldn’t handle the volume, velocity, and variety of modern data</li>
+  <li><strong>Time-to-Insight:</strong> The journey from raw data to actionable insights was lengthy and fragmented</li>
+</ul>
+
+<p>The founding team at Databricks, having created Apache Spark at UC Berkeley’s AMPLab, recognized that while Spark solved many computational challenges, there was still a need for a comprehensive platform that could democratize big data analytics and make it accessible to a broader range of users.</p>
+
+<h2 id="core-architecture-and-building-blocks">Core Architecture and Building Blocks</h2>
+
+<p>Databricks is built upon several fundamental components that work together to create a unified analytics experience:</p>
+
+<div class="architecture-diagram">
+    <h3>Databricks Architecture Overview</h3>
+    <div style="font-family: monospace; font-size: 0.9em; line-height: 2;">
+        ┌──────────────────────────────────────────────┐<br />
+        │         Databricks Workspace                │<br />
+        └──────────────────────────────────────────────┘
+    </div>
+</div>
+
+<!-- ...rest of the content... -->]]></content><author><name>Surya Rao Rayarao</name></author><category term="Data" /><summary type="html"><![CDATA[Databricks: The Unified Analytics Platform Revolutionizing Data Science]]></summary></entry></feed>

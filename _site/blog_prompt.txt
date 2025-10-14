@@ -17,15 +17,24 @@ Use examples, analogies, or diagrams to make complex ideas easy to grasp.
 End with a summary or key takeaways that reinforce what the reader has learned.
 Optionally, suggest further reading or next steps for deeper exploration.
 Ensure the post is detailed, actionable, and leaves the reader with something genuinely useful they can apply.
-Format:
 
-Use YAML front matter for metadata (title, date, category).
-Use Markdown for content, with fenced code blocks for code.
-Use bullet points, numbered lists, and bold/italic for emphasis where helpful.
-Make sure the language is clear, friendly, and avoids jargon unless explained.
+Format:
+- Use YAML front matter for metadata (title, date, categories) at the top of the file.
+- Use Markdown (.md) for content, with fenced code blocks for code.
+- Use bullet points, numbered lists, and bold/italic for emphasis where helpful.
+- Make sure the language is clear, friendly, and avoids jargon unless explained.
+
+
+Pattern for Jekyll blog post:
+---
+title: "<TOPIC NAME HERE>"
+date: YYYY-MM-DD
+categories: [category1, category2]
+---
+
+Your Markdown content goes here. Use code blocks for code examples.
+
 Example usage:
 Write a blog post using the above template about: “How to use Angular Reactive Forms for Dynamic Validation”
 
-Once ready save the blog post in it's respective html file.
-
-Update the blog/index.html to reflect this new blog post.
+Once ready, save the blog post in the _posts/ folder as a .md file named in the format YYYY-MM-DD-title-of-post.md.
