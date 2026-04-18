@@ -2,18 +2,81 @@
 layout: default
 ---
 
-<article>
+<div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress-bar" id="reading-progress-bar"></div>
+</div>
+
+<article class="post-shell">
     <header class="post-header">
+        <p class="post-kicker">Essay</p>
         <h1>{{ page.title }}</h1>
         <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">
                 {{ page.date | date: "%B %d, %Y" }}
             </time>
-            {% if page.author %} • by {{ page.author }}{% endif %}
+            {% if page.author %}<span>by {{ page.author }}</span>{% endif %}
+            <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
         </div>
     </header>
+
+    <aside class="post-toc" id="post-toc" hidden>
+        <p class="post-toc-title">On this page</p>
+        <nav id="post-toc-nav" aria-label="Table of contents"></nav>
+    </aside>
 
     <div class="post-content">
         {{ content }}
     </div>
 </article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var progressBar = document.getElementById('reading-progress-bar');
+    var article = document.querySelector('.post-shell');
+
+    function updateProgress() {
+        if (!progressBar || !article) {
+            return;
+        }
+        var articleTop = article.offsetTop;
+        var articleHeight = article.offsetHeight;
+        var viewportHeight = window.innerHeight;
+        var scrolled = window.scrollY - articleTop;
+        var total = articleHeight - viewportHeight;
+        var ratio = total > 0 ? Math.min(1, Math.max(0, scrolled / total)) : 0;
+        progressBar.style.transform = 'scaleX(' + ratio + ')';
+    }
+
+    var content = document.querySelector('.post-content');
+    var toc = document.getElementById('post-toc');
+    var tocNav = document.getElementById('post-toc-nav');
+
+    if (content && toc && tocNav) {
+        var headings = content.querySelectorAll('h2, h3');
+        if (headings.length > 2) {
+            var list = document.createElement('ol');
+            for (var i = 0; i < headings.length; i++) {
+                var heading = headings[i];
+                if (!heading.id) {
+                    heading.id = 'section-' + (i + 1);
+                }
+                var item = document.createElement('li');
+                if (heading.tagName.toLowerCase() === 'h3') {
+                    item.className = 'toc-depth-3';
+                }
+                var link = document.createElement('a');
+                link.href = '#' + heading.id;
+                link.textContent = heading.textContent;
+                item.appendChild(link);
+                list.appendChild(item);
+            }
+            tocNav.appendChild(list);
+            toc.hidden = false;
+        }
+    }
+
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+});
+</script>

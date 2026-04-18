@@ -8,7 +8,7 @@ module Jekyll
       @dir  = dir
       @name = 'index.html'
       self.process(@name)
-      self.read_yaml(File.join(base, 'blog'), 'category.html')
+      self.read_yaml(base, 'category.html')
       self.data['category'] = category
       self.data['title'] = "Posts in category: #{category.capitalize}"
     end

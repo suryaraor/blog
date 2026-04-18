@@ -7,18 +7,23 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <link type="application/atom+xml" rel="alternate" href="{{ site.baseurl }}/feed.xml" title="{{ site.title }}">
 </head>
 
-<body>
+<body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">
+    <div class="page-atmosphere" aria-hidden="true"></div>
     <div class="container">
-        <header>
-            <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-            <p class="site-description">{{ site.description }}</p>
-            <nav>
-                <a href="{{ '/' | relative_url }}">Home</a>
+        <header class="site-header">
+            <div class="site-branding">
+                <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+                <p class="site-description">{{ site.description }}</p>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="{{ '/' | relative_url }}">Latest</a>
                 <a href="{{ '/about' | relative_url }}">About</a>
             </nav>
         </header>

@@ -3,28 +3,51 @@ layout: default
 title: "Home"
 ---
 
-<div class="post-list">
-  {% for post in site.posts %}
-    <article class="post-item">
+{% assign featured_post = site.posts.first %}
+
+{% if featured_post %}
+<section class="featured-post">
+  <p class="featured-label">Latest essay</p>
+  <h1 class="featured-title">
+    <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a>
+  </h1>
+
+  {% if featured_post.description %}
+    <p class="featured-excerpt">{{ featured_post.description }}</p>
+  {% else %}
+    <p class="featured-excerpt">{{ featured_post.content | strip_html | truncatewords: 42 }}</p>
+  {% endif %}
+
+  <div class="featured-meta">
+    <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
+    <span>{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+    {% if featured_post.author %}<span>by {{ featured_post.author }}</span>{% endif %}
+  </div>
+
+  <a class="featured-cta" href="{{ featured_post.url | relative_url }}">Read this story</a>
+</section>
+{% endif %}
+
+<section class="post-grid" aria-label="More stories">
+  {% for post in site.posts offset:1 %}
+    <article class="post-card">
       <h2 class="post-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>
-      
+
       {% if post.description %}
         <p class="post-excerpt">{{ post.description }}</p>
       {% else %}
-        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
+        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 26 }}</p>
       {% endif %}
-      
+
       <div class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%B %d, %Y" }}
-        </time>
-        {% if post.author %} • by {{ post.author }}{% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        <span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
       </div>
     </article>
   {% endfor %}
-</div>
+</section>
 
 {% if site.posts.size == 0 %}
 <div class="no-posts">
