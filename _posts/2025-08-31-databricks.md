@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Databricks: The Unified Analytics Platform Revolutionizing Data Science"
-date: 2025-08-31
+date: 2025-08-31 00:00:01
 categories: Data
 ---
 
@@ -21,7 +21,7 @@ How Apache Spark's creators built the future of collaborative data analytics
     </div>
 </div>
 
-In the rapidly evolving landscape of big data and analytics, organizations face an increasingly complex challenge: how to efficiently process, analyze, and derive insights from massive datasets while enabling collaboration between data scientists, engineers, and analysts. Enter **Databricks** — a unified analytics platform that has revolutionized the way teams approach data science and machine learning at scale.
+In the rapidly evolving landscape of big data and analytics, organizations face an increasingly complex challenge: how to efficiently process, analyze, and derive insights from massive datasets while enabling collaboration between data scientists, engineers, and analysts. Enter **Databricks** - a unified analytics platform that has revolutionized the way teams approach data science and machine learning at scale.
 
 Founded in 2013 by the original creators of Apache Spark, Databricks emerged from the recognition that traditional data processing tools were inadequate for the demands of modern analytics. The platform represents a paradigm shift from fragmented, tool-specific workflows to a collaborative, cloud-native environment that seamlessly integrates data engineering, data science, and business analytics.
 
@@ -47,9 +47,9 @@ Databricks is built upon several fundamental components that work together to cr
 <div class="architecture-diagram">
     <h3>Databricks Architecture Overview</h3>
     <div style="font-family: monospace; font-size: 0.9em; line-height: 2;">
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”<br>
-        â”‚         Databricks Workspace                â”‚<br>
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        +--------------------------------------------------------------+<br>
+        |                    Databricks Workspace                      |<br>
+        +--------------------------------------------------------------+
     </div>
 </div>
 

@@ -1,11 +1,11 @@
 ---
 layout: default
 title: "The Glaciers That Won't Die: Why Some Are Actually Accelerating Toward Disaster"
-date: 2026-04-17
+date: 2026-04-17 00:00:07
 ---
 
 # The Glaciers That Won't Die: Why Some Are Actually Accelerating Toward Disaster
-I was reading about glaciers–genuinely, because apparently this is what my life has become–when I encountered a sentence that made me pause like I'd just stepped off a moving staircase: *"While most glaciers are retreating, a rare group of 'surging glaciers' can suddenly accelerate, unleashing powerful and sometimes destructive forces."*
+I was reading about glaciers-genuinely, because apparently this is what my life has become-when I encountered a sentence that made me pause like I'd just stepped off a moving staircase: *"While most glaciers are retreating, a rare group of 'surging glaciers' can suddenly accelerate, unleashing powerful and sometimes destructive forces."*
 
 Wait. While most are retreating, *some are accelerating*?
 
@@ -35,13 +35,13 @@ Think of it like this: imagine a staircase where most steps are slowly crumbling
 
 ## Why This Happens (And Why It's Weird)
 
-Climate scientists don't fully understand surging glaciers yet, which–let's be honest–is mildly terrifying in its own way. Science is supposed to explain things. When it shrugs, we should probably pay attention.
+Climate scientists don't fully understand surging glaciers yet, which-let's be honest-is mildly terrifying in its own way. Science is supposed to explain things. When it shrugs, we should probably pay attention.
 
-Here's what we *do* know: surging happens when the internal mechanics of a glacier shift dramatically. The ice that was moving slowly suddenly finds a lubricated pathway beneath it–think of it like a glacier learning to ice-skate on its own meltwater. The friction drops, and suddenly it's *moving*.
+Here's what we *do* know: surging happens when the internal mechanics of a glacier shift dramatically. The ice that was moving slowly suddenly finds a lubricated pathway beneath it-think of it like a glacier learning to ice-skate on its own meltwater. The friction drops, and suddenly it's *moving*.
 
 The result? Glaciers that can advance miles per year. Some surge with enough power to create floods. Some reshape river valleys. Some do things so unexpected that locals have watched the same landscape transform in their lifetimes.
 
-And while most glaciers are disappearing–which is sad and real–*some glaciers are getting weird*.
+And while most glaciers are disappearing-which is sad and real-*some glaciers are getting weird*.
 
 **The uncomfortable part:** we don't know how many are doing this. We don't have a full global catalog of surging behavior. We're basically saying, "This is happening, and we're still figuring out how often and where."
 
@@ -73,7 +73,7 @@ Most climate conversations are binary: either you care about climate, or you don
 
 That's actually more thought-provoking than doom.
 
-> **The real conversation isn't about whether climate change is real. It's about accepting that we don't fully understand how it works, and that should make us more humble about intervening–and more thoughtful about preventing further destabilization.**
+> **The real conversation isn't about whether climate change is real. It's about accepting that we don't fully understand how it works, and that should make us more humble about intervening-and more thoughtful about preventing further destabilization.**
 
 ---
 
@@ -85,13 +85,13 @@ Here's my challenge to you: **Go down a climate rabbit hole about something spec
 - **Why permafrost is destabilizing in ways nobody talks about**
 - **How Antarctic ice shelves behave differently than everyone assumed**
 
-Learn one surprising thing. Let it sit with you for a day. Then tell someone about it–not as doom, but as genuine surprise.
+Learn one surprising thing. Let it sit with you for a day. Then tell someone about it-not as doom, but as genuine surprise.
 
 Because here's the thing about surging glaciers: they're a reminder that nature is still full of mysteries. Climate change is making those mysteries *stranger*, not simpler.
 
-And maybe–*just maybe*–getting curious about the weird stuff is how we actually start taking it seriously.
+And maybe-*just maybe*-getting curious about the weird stuff is how we actually start taking it seriously.
 
 ---
 
-*What surprised you about surging glaciers? Have you noticed climate weirdness in your own region? Share in the comments–I want to know what unexpected climate behavior people have actually witnessed.*
+*What surprised you about surging glaciers? Have you noticed climate weirdness in your own region? Share in the comments-I want to know what unexpected climate behavior people have actually witnessed.*
 

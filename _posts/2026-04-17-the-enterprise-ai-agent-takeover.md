@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Five Headline Options (Pick Your Favorite)"
-date: 2026-04-17
+date: 2026-04-17 00:00:08
 ---
 ## The 79% Nobody's Talking About
 
@@ -71,7 +71,7 @@ Three things:
 
 ## Your Move: The Call to Adventure
 
-Here's what I'd suggestÃ¢â‚¬”and I mean this genuinely: **spend the next week actually using an AI agent to do work.** Not playing with it. *Using* it.
+Here's what I'd suggest+-+--Gand I mean this genuinely: **spend the next week actually using an AI agent to do work.** Not playing with it. *Using* it.
 
 Pick something you normally do:
 - A report you generate monthly
@@ -98,18 +98,18 @@ The real question is: **Are you going to learn before you have to, or after?**
 Create a conceptual illustration for a thought-provoking Medium essay about enterprise AI agent adoption crossing the 79% adoption threshold.
 
 Visual Elements:
-- **PRIMARY IMAGE:** A corporate office setting where human workers are seamlessly integrated with translucent AI agentsÃ¢â‚¬”not replacing humans but flowing around and through their workflows. One human figure stands slightly apart, observing the integration.
+- **PRIMARY IMAGE:** A corporate office setting where human workers are seamlessly integrated with translucent AI agents+-+--Gnot replacing humans but flowing around and through their workflows. One human figure stands slightly apart, observing the integration.
 - **SECONDARY ELEMENT:** A subtle upward-trending graph line woven into the composition, reaching a critical threshold point (represented by a glowing marker at 79%).
 
-Color palette: Muted corporate grays and blues contrasted with one accent color (amber or teal) representing the AI agentsÃ¢â‚¬”sophisticated but not futuristic or overly corporate.
+Color palette: Muted corporate grays and blues contrasted with one accent color (amber or teal) representing the AI agents+-+--Gsophisticated but not futuristic or overly corporate.
 
-Style: Modern, minimalist, slightly surrealÃ¢â‚¬”something between a technical diagram and conceptual art.
+Style: Modern, minimalist, slightly surreal+-+--Gsomething between a technical diagram and conceptual art.
 
 Composition: Asymmetrical, with the primary tension on the left side and the observing figure on the right, creating visual imbalance that mirrors organizational disruption.
 
 Text overlay: None (this will be added in design)
 
-Tone: Thoughtful, slightly unsettling, contemplativeÃ¢â‚¬”this isn't dystopian but it's not utopian either.
+Tone: Thoughtful, slightly unsettling, contemplative+-+--Gthis isn't dystopian but it's not utopian either.
 
 Key mood: Complexity, inevitability, quiet disruption
 

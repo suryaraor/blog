@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action"
-date: 2025-10-10 09:00:00 -0500
+date: 2025-10-10 00:00:01
 author: "Surya Rao Rayarao"
 description: "How agentic AI and autonomous agents advance AI from reactive chatbots to proactive, goal-directed systems."
 image: "/assets/images/blog/2025-10-10.jpg"
@@ -25,7 +25,7 @@ The distinction between conventional AI and agentic AI can be understood through
 
 ### What is Agentic AI?
 
-Agentic AI refers to artificial intelligence systems that exhibit agency—the capacity to act independently in pursuit of goals. Unlike passive AI models that simply process inputs and generate outputs, agentic AI systems can initiate actions, make decisions without constant human oversight, and modify their behavior based on changing circumstances and feedback from their environment.
+Agentic AI refers to artificial intelligence systems that exhibit agency-the capacity to act independently in pursuit of goals. Unlike passive AI models that simply process inputs and generate outputs, agentic AI systems can initiate actions, make decisions without constant human oversight, and modify their behavior based on changing circumstances and feedback from their environment.
 
 The term "agent" in computer science has long referred to software entities that act on behalf of users or other programs. However, when combined with modern AI capabilities, particularly those derived from large language models, these agents gain unprecedented sophistication in understanding context, reasoning about complex situations, and generating adaptive strategies.
 
@@ -96,4 +96,4 @@ Agentic AI is useful in many domains:
 
 ## Conclusion
 
-Agentic AI marks a significant step forward in how AI systems can act in the world. While challenges remain—particularly around safety, reliability, and societal impact—the potential for agents to augment human capabilities across research, business, science, and everyday life is enormous. The field will continue to evolve rapidly as researchers and practitioners refine architectures, tool integrations, and governance frameworks that make agentic systems practical and safe.
+Agentic AI marks a significant step forward in how AI systems can act in the world. While challenges remain-particularly around safety, reliability, and societal impact-the potential for agents to augment human capabilities across research, business, science, and everyday life is enormous. The field will continue to evolve rapidly as researchers and practitioners refine architectures, tool integrations, and governance frameworks that make agentic systems practical and safe.

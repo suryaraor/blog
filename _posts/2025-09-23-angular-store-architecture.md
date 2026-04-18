@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "Mastering Angular Store Architecture: A Practical Guide"
-date: 2025-09-23
+date: 2025-09-23 00:00:02
 categories: Angular
 ---
 
 # Mastering Angular Store Architecture: A Practical Guide
 
-State management is a cornerstone of building robust, scalable, and maintainable Angular applications. As your app grows, managing data flow and state transitions can become complex and error-prone. This is where **Angular store architecture** comes in—a pattern that helps you centralize, organize, and control your application's state in a predictable way.
+State management is a cornerstone of building robust, scalable, and maintainable Angular applications. As your app grows, managing data flow and state transitions can become complex and error-prone. This is where **Angular store architecture** comes in-a pattern that helps you centralize, organize, and control your application's state in a predictable way.
 
 In this post, you'll learn:
 - What Angular store architecture is and why it matters
@@ -124,8 +124,8 @@ export const selectCounter = (state) => state.counter;
 ## Common Pitfalls & Best Practices
 
 - **Avoid mutating state directly.** Always return new objects from reducers.
-- **Keep state serializable.** Don’t store functions, classes, or non-plain objects.
-- **Use selectors for all state access.** Don’t access the store’s value directly in components.
+- **Keep state serializable.** Don-t store functions, classes, or non-plain objects.
+- **Use selectors for all state access.** Don-t access the store-s value directly in components.
 - **Modularize your store.** Split state, actions, and reducers by feature.
 
 ---

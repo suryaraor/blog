@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "OpenAI's IPO Is a Ticking Time Bomb (And Wall Street Isn't Asking Why)"
-date: 2026-04-18
+date: 2026-04-18 00:00:26
 ---
 # OpenAI's IPO Is a Ticking Time Bomb (And Wall Street Isn't Asking Why)
 
@@ -29,7 +29,7 @@ The problem? Altman has more political capital. He's the visionary. He's the one
 
 Let's be direct about what $200 billion means.
 
-That's not R&D spending. That's not marketing. That's not salary costs. That's the raw infrastructure required just to stay competitive with Google, Meta, and Anthropic in the arms race for compute capacity. OpenAI is positioning itself as a company that needs to burn $200 billion—*before generating profit*—just to keep the lights on.
+That's not R&D spending. That's not marketing. That's not salary costs. That's the raw infrastructure required just to stay competitive with Google, Meta, and Anthropic in the arms race for compute capacity. OpenAI is positioning itself as a company that needs to burn $200 billion-*before generating profit*-just to keep the lights on.
 
 Compare this to Microsoft's path to profitability: Office 365 and Azure didn't need to spend a tenth of that to establish market dominance. Amazon Web Services made money almost immediately. Apple's infrastructure spending has never been close to a fraction of revenue.
 
@@ -128,21 +128,21 @@ Create a **modern, conceptual illustration** for a thought-provoking Medium essa
 
 - **PRIMARY IMAGE:** A split-screen or mirror-image composition showing two office spaces: one side (bright, optimistic) showing Sam Altman at a podium announcing IPO plans with confetti and celebration; the other side (darker, cautious) showing Sarah Friar at a desk with concern, surrounded by numbers, spreadsheets, and warning signs. The two figures face away from each other or are separated by an invisible barrier.
 
-- **SECONDARY ELEMENT:** A burning dollar sign or fire outline growing between them—subtle but visible—representing the $200 billion burn rate as the source of tension.
+- **SECONDARY ELEMENT:** A burning dollar sign or fire outline growing between them-subtle but visible-representing the $200 billion burn rate as the source of tension.
 
 **Color Palette:** 
 - Warm optimism on the left (golds, bright blues, clean whites)
 - Cool skepticism on the right (muted grays, deep blues, subtle reds)
 - A gradient or shadow zone where they meet, representing uncertainty
 
-**Style:** Modern, minimalist, corporate realism with symbolic tension—think financial editorial illustration, not caricature. Professional but emotionally resonant.
+**Style:** Modern, minimalist, corporate realism with symbolic tension-think financial editorial illustration, not caricature. Professional but emotionally resonant.
 
 **Composition:** Asymmetrical, with the tension/conflict as the focal point in the center where the two sides meet.
 
-**Tone:** Unsettling equilibrium—neither side is "wrong," but both can't be right simultaneously. The mood should convey discomfort without being preachy.
+**Tone:** Unsettling equilibrium-neither side is "wrong," but both can't be right simultaneously. The mood should convey discomfort without being preachy.
 
 **Key Mood:** Cognitive dissonance, tension, uncomfortable truth, professional crisis.
 
-**Avoid:** Stock photos of executives, generic IPO graphics, "rocket to the moon" imagery, cheerful corporate vibes, overly literal representations (like an actual bomb), clichéd Wall Street symbolism.
+**Avoid:** Stock photos of executives, generic IPO graphics, "rocket to the moon" imagery, cheerful corporate vibes, overly literal representations (like an actual bomb), clich+d Wall Street symbolism.
 
 **Dimensions:** 1200x630px (landscape format for Medium)

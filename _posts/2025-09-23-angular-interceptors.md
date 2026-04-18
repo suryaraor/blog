@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "A Practical Guide to Angular Interceptors"
-date: 2025-09-23
+date: 2025-09-23 00:00:01
 categories: Angular
 ---
 
 # A Practical Guide to Angular Interceptors
 
-HTTP communication is at the heart of most Angular applications. But what if you want to add authentication tokens, log requests, handle errors, or modify responses globally—without repeating code in every service? Enter **Angular Interceptors**: a powerful feature that lets you intercept and transform HTTP requests and responses in a clean, reusable way.
+HTTP communication is at the heart of most Angular applications. But what if you want to add authentication tokens, log requests, handle errors, or modify responses globally-without repeating code in every service? Enter **Angular Interceptors**: a powerful feature that lets you intercept and transform HTTP requests and responses in a clean, reusable way.
 
 In this post, you'll learn:
 - What Angular interceptors are and why they're useful
@@ -51,7 +51,7 @@ export class AuthInterceptor implements HttpInterceptor {
 }
 ```
 
-> **Tip:** Always use `req.clone()`—Angular HTTP requests are immutable!
+> **Tip:** Always use `req.clone()`-Angular HTTP requests are immutable!
 
 ---
 
@@ -103,7 +103,7 @@ export class ErrorInterceptor implements HttpInterceptor {
 
 ## Chaining Multiple Interceptors
 
-Angular supports multiple interceptors. They are called in the order they are provided. For example, you can have one for auth, one for logging, and one for error handling—all working together.
+Angular supports multiple interceptors. They are called in the order they are provided. For example, you can have one for auth, one for logging, and one for error handling-all working together.
 
 > **Tip:** Keep each interceptor focused on a single responsibility for easier testing and maintenance.
 
@@ -113,7 +113,7 @@ Angular supports multiple interceptors. They are called in the order they are pr
 
 - **Order matters:** Interceptors are executed in the order they are provided.
 - **Always use `clone()`:** Never mutate the original request.
-- **Handle errors gracefully:** Don’t swallow errors—log or display them to users.
+- **Handle errors gracefully:** Don-t swallow errors-log or display them to users.
 - **Unsubscribe if needed:** Interceptors return observables; manage subscriptions if you add side effects.
 
 ---

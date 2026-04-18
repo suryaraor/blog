@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "The AI Economic Divide"
-date: 2026-04-17
+date: 2026-04-17 00:00:01
 ---
 
 # The AI Economic Divide
@@ -11,7 +11,7 @@ A CFO at a mid-sized logistics company spent $4 million on AI tools last year.
 
 She bought the premium seats for Microsoft Copilot. She hired a "Head of AI Transformation." She ran a company-wide hackathon with branded t-shirts. She sent her executives to a conference in Davos where someone in a turtleneck told her that AI would change everything.
 
-By December, her efficiency metrics had barely moved. Her board was asking uncomfortable questions. And somewhere across town, a scrappier competitor was quietly using AI to *launch an entirely new revenue line* – and growing at three times her rate.
+By December, her efficiency metrics had barely moved. Her board was asking uncomfortable questions. And somewhere across town, a scrappier competitor was quietly using AI to *launch an entirely new revenue line* - and growing at three times her rate.
 
 This isn't a story about technology. It's a story about what most of us fundamentally misunderstand about the AI moment we're living through.
 
@@ -19,13 +19,13 @@ This isn't a story about technology. It's a story about what most of us fundamen
 
 ## The Number That Should Terrify You (Or Excite You)
 
-PwC just published its 2026 AI Performance Study – one of the most comprehensive looks at how AI is actually performing inside real organizations. They surveyed 1,217 senior executives across 25 sectors and multiple regions.
+PwC just published its 2026 AI Performance Study - one of the most comprehensive looks at how AI is actually performing inside real organizations. They surveyed 1,217 senior executives across 25 sectors and multiple regions.
 
 Here's the number that stopped me cold:
 
 > **74% of all AI-driven economic value is being captured by just 20% of companies.**
 
-Let that settle in. If you took all the revenue gains, all the efficiency wins, all the competitive advantages that AI is generating across the global economy – and dumped it into a pile – three-quarters of it is flowing to roughly one in five organizations.
+Let that settle in. If you took all the revenue gains, all the efficiency wins, all the competitive advantages that AI is generating across the global economy - and dumped it into a pile - three-quarters of it is flowing to roughly one in five organizations.
 
 The other 80%? They're not getting nothing. They're getting *breadcrumbs*. And a lot of them are spending significant money for those breadcrumbs.
 
@@ -37,7 +37,7 @@ What's going on?
 
 ## The Productivity Trap
 
-Here's where it gets interesting – and a little uncomfortable if you've been nodding along to the mainstream AI narrative.
+Here's where it gets interesting - and a little uncomfortable if you've been nodding along to the mainstream AI narrative.
 
 Most companies are using AI as a glorified efficiency machine. Faster document drafts. Shorter meeting summaries. Fewer support tickets routed to the wrong team. These gains are real. They're measurable. And they are *completely insufficient* to explain why the top 20% are generating **7.2 times more AI-driven revenue** than the average competitor.
 
@@ -57,7 +57,7 @@ That's a fundamentally different question. And most organizational cultures are 
 
 There's another data point from the PwC study that keeps nagging at me.
 
-AI leaders are increasing the number of *decisions made without human intervention* at **2.8 times the rate** of their peers. They're not just deploying AI – they're trusting it with actual calls. They're building systems that act, not just assist.
+AI leaders are increasing the number of *decisions made without human intervention* at **2.8 times the rate** of their peers. They're not just deploying AI - they're trusting it with actual calls. They're building systems that act, not just assist.
 
 Meanwhile, most companies are stuck in a loop of "human in the loop" workflows where AI suggestions get reviewed, debated, diluted, and occasionally acted upon. This is prudent. It's also slow. And in a world where speed of learning is a competitive moat, slow is a strategy that compounds in the wrong direction.
 
@@ -82,7 +82,7 @@ Companies capturing AI value are using it to chase *growth*. Companies missing o
 
 Growth is scary. It requires bets. It requires tolerance for experiments that fail loudly. It requires leaders willing to say, "We're going to try something that doesn't exist yet and it might embarrass us."
 
-Efficiency is comfortable. It produces metrics that look good in a quarterly report. It keeps the board quiet. It is also, increasingly, a race to the bottom – because if every company automates the same workflows with the same tools, no one has an advantage. You've just collectively lowered costs while handing the growth upside to the 20% willing to go further.
+Efficiency is comfortable. It produces metrics that look good in a quarterly report. It keeps the board quiet. It is also, increasingly, a race to the bottom - because if every company automates the same workflows with the same tools, no one has an advantage. You've just collectively lowered costs while handing the growth upside to the 20% willing to go further.
 
 > Most companies are using AI to run faster on a treadmill. The winners built an entirely different machine.
 
@@ -90,11 +90,11 @@ Efficiency is comfortable. It produces metrics that look good in a quarterly rep
 
 ## The Call to Adventure
 
-Here's what I want you to do this week – not metaphorically, but actually.
+Here's what I want you to do this week - not metaphorically, but actually.
 
 Write down the last three AI initiatives your company (or team, or side project) has launched. Next to each one, answer this question honestly:
 
-**Is this making us do the same thing faster – or does it make something *possible* that wasn't possible before?**
+**Is this making us do the same thing faster - or does it make something *possible* that wasn't possible before?**
 
 If your list is all the former, you're in the 80%. That's not a death sentence. It's a diagnosis. And unlike most business problems, this one has a clear treatment: stop asking how to optimize what exists, and start asking what becomes *possible*.
 
@@ -102,10 +102,10 @@ The 74% is going somewhere. It's going to the people willing to ask weirder, bol
 
 The question is: do you want to be asking those questions, or do you want to spend next year explaining to your board why the AI budget didn't move the needle?
 
-The choice – and it *is* a choice – is yours.
+The choice - and it *is* a choice - is yours.
 
 ---
 
-*Sources: [PwC 2026 AI Performance Study](https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html) Ãƒâ€šÂ· [IT Pro coverage](https://www.itpro.com/business/business-strategy/just-20-percent-of-companies-are-lapping-up-three-quarters-of-ais-financial-gains) Ãƒâ€šÂ· [HumAI analysis](https://www.humai.blog/74-of-ais-economic-value-goes-to-20-of-companies-pwcs-new-study-explains-why/)*
+*Sources: [PwC 2026 AI Performance Study](https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html) | [IT Pro coverage](https://www.itpro.com/business/business-strategy/just-20-percent-of-companies-are-lapping-up-three-quarters-of-ais-financial-gains) | [HumAI analysis](https://www.humai.blog/74-of-ais-economic-value-goes-to-20-of-companies-pwcs-new-study-explains-why/)*
 
 

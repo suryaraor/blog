@@ -1,12 +1,12 @@
 ---
 layout: default
 title: "We're Solving AI's Efficiency Problem. Then Ignoring It."
-date: 2026-04-18
+date: 2026-04-18 00:00:05
 ---
 
 # We're Solving AI's Efficiency Problem. Then Ignoring It.
 
-Last week, Google researchers published a paper describing an algorithm that sounds like science fiction: TurboQuant can compress an AI model's memory requirements by six times without losing a single percentage point of accuracy. Think about that for a second. Not five times. Not four. Six times. The Key-Value cache—the computational bottleneck that's been choking AI performance for years—reduced to just 3 bits of precision. Meanwhile, Gemini 3.1 Flash-Lite is hitting the market at a quarter the price of its predecessors, 2.5 times faster, with 45% quicker outputs.
+Last week, Google researchers published a paper describing an algorithm that sounds like science fiction: TurboQuant can compress an AI model's memory requirements by six times without losing a single percentage point of accuracy. Think about that for a second. Not five times. Not four. Six times. The Key-Value cache-the computational bottleneck that's been choking AI performance for years-reduced to just 3 bits of precision. Meanwhile, Gemini 3.1 Flash-Lite is hitting the market at a quarter the price of its predecessors, 2.5 times faster, with 45% quicker outputs.
 
 We just solved efficiency.
 
@@ -14,13 +14,13 @@ Then Meta announced they're spending $115 to $135 billion on compute infrastruct
 
 If you're not feeling the cognitive dissonance yet, sit with it for a moment. We've discovered ways to make AI dramatically leaner, faster, and cheaper. The engineering is elegant. The results are real. And the industry's response is basically: *Great. Now let's build bigger.*
 
-This isn't incompetence. It's something more interesting—and more unsettling.
+This isn't incompetence. It's something more interesting-and more unsettling.
 
 ## The Efficiency Breakthrough Everyone's Quietly Celebrating
 
 Let's talk about what actually happened, because the victories here are genuine. When TurboQuant came out of Google's research division, it wasn't incremental progress. Reducing memory consumption by 6x without accuracy loss is the kind of thing that should fundamentally change how we build these systems.
 
-> Quantization—throwing away precision—used to mean throwing away performance. Not anymore.
+> Quantization-throwing away precision-used to mean throwing away performance. Not anymore.
 
 Before this, we believed there was a hard trade-off. You wanted speed? You had to lose accuracy. You wanted memory efficiency? The model got dumber. These weren't bugs; they seemed like physics. But the latest generation of research is dismantling that assumption entirely.
 
@@ -58,7 +58,7 @@ You might be thinking: "These are trillion-dollar companies' problems, not mine.
 
 Wrong.
 
-If the industry decides efficiency is solved and therefore doesn't matter, the cost curve doesn't flatten—it reflects the spending curve. Anthropic approaching $19 billion in revenue. Meta spending $115 billion on infrastructure. These aren't abstract numbers. They're decisions about what kind of AI gets built, who gets to build it, and what kind of economic moat gets established around it.
+If the industry decides efficiency is solved and therefore doesn't matter, the cost curve doesn't flatten-it reflects the spending curve. Anthropic approaching $19 billion in revenue. Meta spending $115 billion on infrastructure. These aren't abstract numbers. They're decisions about what kind of AI gets built, who gets to build it, and what kind of economic moat gets established around it.
 
 When efficiency improvements don't translate to lower costs for end users and smaller organizations, you get consolidation. You get dominance by whoever can afford to spend the most. You get a world where building AI is only viable if you're already absurdly profitable.
 
@@ -68,7 +68,7 @@ The real win wouldn't be TurboQuant in a research paper. It would be TurboQuant 
 
 ## The Call to Adventure
 
-Here's what I'm wondering: If you work in AI—whether you're a researcher, an engineer, a decision-maker, or someone building products on top of these systems—what would it actually take for efficiency to matter more than scale?
+Here's what I'm wondering: If you work in AI-whether you're a researcher, an engineer, a decision-maker, or someone building products on top of these systems-what would it actually take for efficiency to matter more than scale?
 
 Not in research papers. In real investment decisions. In resource allocation. In the systems you're building right now.
 
