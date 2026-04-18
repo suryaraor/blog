@@ -5,7 +5,7 @@ date: 2026-04-18
 ---
 
 # The Intentional Internet: Why We're All Quietly Ghosting Our Phones
-Last Tuesday, I watched my friend Sarah do something I'd never seen before: she got bored with her Instagram feed after 30 seconds and put her phone down. Not because she ran out of contentÃƒÂ¢Ã¢â€šÂ¬â€the algorithm would never allow that. Not because of a notification drought. But because she *decided* to.
+Last Tuesday, I watched my friend Sarah do something I'd never seen before: she got bored with her Instagram feed after 30 seconds and put her phone down. Not because she ran out of content–the algorithm would never allow that. Not because of a notification drought. But because she *decided* to.
 
 That moment seemed impossibly small. It wasn't. 
 
@@ -17,7 +17,7 @@ What Sarah was doing is part of a quiet revolution happening right now, in April
 
 ## The Context Nobody Talks About
 
-Let's be honest about the tech world's favorite story: adoption rates are soaring. AI reached 53% adoption in just three yearsÃƒÂ¢Ã¢â€šÂ¬â€faster than the personal computer or the internet ever did. Four out of five university students are using it. The estimated value of generative AI tools to consumers hit $172 billion annually.
+Let's be honest about the tech world's favorite story: adoption rates are soaring. AI reached 53% adoption in just three years–faster than the personal computer or the internet ever did. Four out of five university students are using it. The estimated value of generative AI tools to consumers hit $172 billion annually.
 
 These numbers are real. They're also incomplete.
 
@@ -41,7 +41,7 @@ This doesn't mean Luddites are winning. It means something more nuanced is happe
 
 ### 2. Social Media Became Search Engines, and We Stopped Pretending
 
-Here's something quietly wild: TikTok, Instagram, YouTube, Pinterest, and Reddit are all behaving more like search engines now. People aren't doom-scrolling as muchÃƒÂ¢Ã¢â€šÂ¬â€they're *searching* for specific things. How-tos. Recommendations. Solutions.
+Here's something quietly wild: TikTok, Instagram, YouTube, Pinterest, and Reddit are all behaving more like search engines now. People aren't doom-scrolling as much–they're *searching* for specific things. How-tos. Recommendations. Solutions.
 
 The behavior shift is subtle but significant. It moves from passive consumption to active seeking. That changes everything about how people engage.
 
@@ -49,7 +49,7 @@ The behavior shift is subtle but significant. It moves from passive consumption 
 
 This is the big one. After years of digital overload, people are actively reassessing *when, where, and how* they use technology. Not *if*, but *how*.
 
-This isn't a mass exodus from the internet. It's a mass realization that the default settingÃƒÂ¢Ã¢â€šÂ¬â€"always on, always available, always hungry for attention"ÃƒÂ¢Ã¢â€šÂ¬â€doesn't have to be your default.
+This isn't a mass exodus from the internet. It's a mass realization that the default setting–"always on, always available, always hungry for attention"–doesn't have to be your default.
 
 ---
 
@@ -59,7 +59,7 @@ If you've been feeling weird about your relationship with your phone, you're not
 
 **That gap is where the real conversation is happening.**
 
-The uncomfortable truth the tech industry doesn't want to talk about: the best technology is invisible. It solves a problem and gets out of the way. But the most profitable technology is the oppositeÃƒÂ¢Ã¢â€šÂ¬â€it makes itself essential, necessary, impossible to ignore.
+The uncomfortable truth the tech industry doesn't want to talk about: the best technology is invisible. It solves a problem and gets out of the way. But the most profitable technology is the opposite–it makes itself essential, necessary, impossible to ignore.
 
 The intentional internet movement isn't about rejecting technology. It's about choosing what you let into your life instead of accepting whatever companies design to be maximally compelling.
 
@@ -69,7 +69,7 @@ Here's what changes when you think this way:
 ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ **You realize FOMO isn't real unless you feed it** and you control what feeds it
 ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ **You discover that boredom isn't a bug**, it's the only place real creativity lives
 ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ **You understand that one deep conversation is worth 47 shallow retweets**
-ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ **You get back timeÃƒÂ¢Ã¢â€šÂ¬â€actual, real, compounding time**
+ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ **You get back time–actual, real, compounding time**
 
 ---
 
@@ -85,7 +85,7 @@ Instead, there's just... a lot of people quietly closing apps. Deleting notifica
 
 ## The Call to Adventure
 
-Here's what I want you to try this week. Not because I'm some productivity guru who thinks you need to "optimize" your life further. But because the intentional internet isn't something you read aboutÃƒÂ¢Ã¢â€šÂ¬â€it's something you *practice*.
+Here's what I want you to try this week. Not because I'm some productivity guru who thinks you need to "optimize" your life further. But because the intentional internet isn't something you read about–it's something you *practice*.
 
 **Pick one thing:** 
 

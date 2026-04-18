@@ -5,7 +5,7 @@ date: 2026-04-17
 ---
 
 # The Uncomfortable Gap Between Who You Were and Who You're Becoming
-Four years ago, I watched Euphoria with the kind of intensity usually reserved for religious experiences. I was *living* in that showÃƒÂ¢Ã¢â€šÂ¬â€every crisis felt urgent, every character flaw felt like a prophecy about my own future. Last week, I opened TikTok to see my teenage self staring back at me. Not literallyÃƒÂ¢Ã¢â€šÂ¬â€but thousands of people sharing their childhood photos with the caption "This is who," followed by a photo of themselves today, usually accompanied by some version of "I can't believe I'm nothing like I thought I'd be."
+Four years ago, I watched Euphoria with the kind of intensity usually reserved for religious experiences. I was *living* in that show–every crisis felt urgent, every character flaw felt like a prophecy about my own future. Last week, I opened TikTok to see my teenage self staring back at me. Not literally–but thousands of people sharing their childhood photos with the caption "This is who," followed by a photo of themselves today, usually accompanied by some version of "I can't believe I'm nothing like I thought I'd be."
 
 The thought that hit me hardest wasn't pride or regret. It was relief mixed with something closer to vertigo.
 
@@ -17,9 +17,9 @@ Because somewhere in the last four years, I stopped being the person who watched
 
 Here's what nobody tells you about growing up: it doesn't happen in moments. It happens in the margins. In the decisions you make when nobody's watching. In the things you stop believing at 3 AM on an ordinary Tuesday.
 
-The viral "This is who" trend captures something we're all experiencing simultaneouslyÃƒÂ¢Ã¢â€šÂ¬â€a collision between who we were and who we've become. And it's *uncomfortable* because growth isn't supposed to feel good. Growth feels like betrayal.
+The viral "This is who" trend captures something we're all experiencing simultaneously–a collision between who we were and who we've become. And it's *uncomfortable* because growth isn't supposed to feel good. Growth feels like betrayal.
 
-> When you stop being someone, you're essentially admitting that everything you believed back then was incomplete, wrong, orÃƒÂ¢Ã¢â€šÂ¬â€worseÃƒÂ¢Ã¢â€šÂ¬â€wasn't actually *you*.
+> When you stop being someone, you're essentially admitting that everything you believed back then was incomplete, wrong, or–worse–wasn't actually *you*.
 
 The old version of you? That person is dead. Not dramatically. Just... gradually. Like cells regenerating. And we're all walking around grieving people we used to be while pretending it's totally normal.
 
@@ -35,7 +35,7 @@ And now they're rewatching, and it's like finding your diary from high school. E
 - You cringe at the priorities.
 - You feel *something* watching yourself through a younger lens.
 
-That's not nostalgia. That's cognitive dissonance. Your brain recognizing that you contain multitudesÃƒÂ¢Ã¢â€šÂ¬â€versions of yourself that have been deleted and replaced.
+That's not nostalgia. That's cognitive dissonance. Your brain recognizing that you contain multitudes–versions of yourself that have been deleted and replaced.
 
 ---
 
@@ -51,7 +51,7 @@ Sometimes you become exactly what you swore you'd never be. Or conversely, you r
 
 **The Grief**
 
-This is the sneaky one. You gain thingsÃƒÂ¢Ã¢â€šÂ¬â€stability, clarity, genuine friendships, maybe even self-respect. But you lose the old sense of possibility. You're not going to be that person. Ever. And somewhere in your cells, you're mourning that.
+This is the sneaky one. You gain things–stability, clarity, genuine friendships, maybe even self-respect. But you lose the old sense of possibility. You're not going to be that person. Ever. And somewhere in your cells, you're mourning that.
 
 ---
 
@@ -108,14 +108,14 @@ Because the people who change the world aren't the ones who stay the same. They'
 Create a **conceptual digital illustration** for a thought-provoking Medium essay about personal growth and the uncomfortable gap between past and present selves.
 
 **Visual Elements:**
-- **Primary Image:** A figure shown in profile, with a transparent/ghosted version of themselves visible behind, slightly younger and smallerÃƒÂ¢Ã¢â€šÂ¬â€suggesting the presence of who they were. The past self should be semi-transparent or faded, not fully erased.
-- **Secondary Element:** A subtle mirror or reflective surface showing not a perfect reflection, but a distorted or shifted oneÃƒÂ¢Ã¢â€šÂ¬â€symbolizing how we don't fully recognize ourselves when we look back.
+- **Primary Image:** A figure shown in profile, with a transparent/ghosted version of themselves visible behind, slightly younger and smaller–suggesting the presence of who they were. The past self should be semi-transparent or faded, not fully erased.
+- **Secondary Element:** A subtle mirror or reflective surface showing not a perfect reflection, but a distorted or shifted one–symbolizing how we don't fully recognize ourselves when we look back.
 
 **Color Palette:** Muted jewel tones (dusty indigo, terracotta, sage green) with metallic accents (soft gold or silver). Avoid bright pops of color or high-energy tones; this should feel introspective rather than energetic.
 
 **Style:** Modern, minimalist, slightly surreal. Hand-drawn elements mixed with clean digital work. Emotional rather than literal.
 
-**Composition:** Asymmetrical, with the figure positioned slightly off-center. Negative space is crucialÃƒÂ¢Ã¢â€šÂ¬â€leave room for contemplation.
+**Composition:** Asymmetrical, with the figure positioned slightly off-center. Negative space is crucial–leave room for contemplation.
 
 **Tone:** Thoughtful, slightly unsettling in a way that's beautiful rather than disturbing. There should be a sense of quiet movement, not stagnation.
 

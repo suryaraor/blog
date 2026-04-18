@@ -74,7 +74,7 @@ This creates a stunning inversion in who wins the next phase of AI:
 
 Here's why you should care, whether you build AI, buy AI, or just use AI:
 
-If you're an engineer, the skills that matter are shifting. It's no longer "can you scale a 10-trillion-parameter model?" It's "can you make a 100-billion-parameter model do what the 10-trillion parameter one does?" That's a completely different challengeÃƒÂ¢Ã¢â€šÂ¬â€and honestly, a more interesting one.
+If you're an engineer, the skills that matter are shifting. It's no longer "can you scale a 10-trillion-parameter model?" It's "can you make a 100-billion-parameter model do what the 10-trillion parameter one does?" That's a completely different challenge–and honestly, a more interesting one.
 
 If you're a decision-maker, your procurement logic just broke. The company that spent the most on GPUs didn't win. The company that figured out how to optimize what they have won. Your next AI investment should be in *efficiency* infrastructure, not raw compute.
 
@@ -88,7 +88,7 @@ Here's what keeps me up at night: if Google discovered in 2026 that you can get 
 
 What other billion-dollar industry bets are based on "bigger is better" when the real answer was always "smarter is better"?
 
-What if the entire scaling hypothesisÃƒÂ¢Ã¢â€šÂ¬â€the idea that bigger models automatically equal more capable AIÃƒÂ¢Ã¢â€šÂ¬â€was solving the wrong problem all along?
+What if the entire scaling hypothesis–the idea that bigger models automatically equal more capable AI–was solving the wrong problem all along?
 
 ---
 
@@ -113,17 +113,17 @@ Create a modern conceptual illustration for a thought-provoking Medium essay abo
 
 Visual Elements:
 - PRIMARY IMAGE: A massive, ornate, over-engineered machine (representing bloated AI models) gradually transforming into a sleek, minimal geometric form (representing efficient compression) through a central moment of realization/breakthrough
-- SECONDARY ELEMENT: A faint mathematical visualization in the backgroundÃƒÂ¢Ã¢â€šÂ¬â€perhaps polar coordinate grids or compression algorithms suggested through abstract geometry
+- SECONDARY ELEMENT: A faint mathematical visualization in the background–perhaps polar coordinate grids or compression algorithms suggested through abstract geometry
 
-Color palette: Sophisticated and slightly unsettlingÃƒÂ¢Ã¢â€šÂ¬â€deep blues and silvers with accents of warm amber to suggest the "aha moment" when old assumptions break. Avoid overly bright or corporate-feeling colors.
+Color palette: Sophisticated and slightly unsettling–deep blues and silvers with accents of warm amber to suggest the "aha moment" when old assumptions break. Avoid overly bright or corporate-feeling colors.
 
-Style: Modern, minimalist, conceptualÃƒÂ¢Ã¢â€šÂ¬â€geometric and clean with subtle 3D depth. The illustration should feel intelligent and precise, not mystical or unnecessarily complex.
+Style: Modern, minimalist, conceptual–geometric and clean with subtle 3D depth. The illustration should feel intelligent and precise, not mystical or unnecessarily complex.
 
 Composition: Asymmetrical; the transformation/breakthrough should occur slightly off-center, creating visual tension and drawing the eye toward the moment of change.
 
 Text overlay: None (this will be added in design)
 
-Tone: Thoughtful, slightly challenging, empoweringÃƒÂ¢Ã¢â€šÂ¬â€the feeling of discovering you've been solving the problem the hard way all along.
+Tone: Thoughtful, slightly challenging, empowering–the feeling of discovering you've been solving the problem the hard way all along.
 
 Key mood: Intellectual clarity, realization, strategic recalibration
 

@@ -9,13 +9,13 @@ Last month, my friend Sarah complained about the price of kitchen scales on Amaz
 
 Amazon has been using its platform power to pressure independent sellers into raising their prices on *competing* sites like Walmart and Target.
 
-Let that sink in. Amazon isn't just raising prices on its own platformÃƒÂ¢Ã¢â€šÂ¬â€it's orchestrating a chain reaction that makes things more expensive *everywhere else too*. And the worst part? Most of us had no idea it was happening.
+Let that sink in. Amazon isn't just raising prices on its own platform–it's orchestrating a chain reaction that makes things more expensive *everywhere else too*. And the worst part? Most of us had no idea it was happening.
 
 ---
 
 ## How Did We Get Here?
 
-Amazon's dominance is almost cartoonishly complete. The company controls roughly 40% of e-commerce in the US. That's not just market shareÃƒÂ¢Ã¢â€šÂ¬â€that's gravitational pull. Small sellers don't just want access to Amazon; they *need* it.
+Amazon's dominance is almost cartoonishly complete. The company controls roughly 40% of e-commerce in the US. That's not just market share–that's gravitational pull. Small sellers don't just want access to Amazon; they *need* it.
 
 So here's where it gets dark.
 
@@ -25,7 +25,7 @@ The mechanics are simple but insidious:
 
 - **Step 1**: A small seller lists a product on Amazon at a competitive price.
 - **Step 2**: Amazon notices the seller also sells on Walmart or Target at a lower price.
-- **Step 3**: Amazon applies pressureÃƒÂ¢Ã¢â€šÂ¬â€sometimes explicit, sometimes impliedÃƒÂ¢Ã¢â€šÂ¬â€to raise prices on those other platforms.
+- **Step 3**: Amazon applies pressure–sometimes explicit, sometimes implied–to raise prices on those other platforms.
 - **Step 4**: The seller complies (because Amazon is their primary revenue source), and suddenly everything costs more everywhere.
 
 It's not a bug. It's a feature.
@@ -38,7 +38,7 @@ Here's what infuriates me most: we think we have choices. We scroll through Walm
 
 When you find the same product at different price points across different retailers, you're not always witnessing a natural market at work. Sometimes you're witnessing the aftershock of corporate pressure you'll never see.
 
-This matters because it violates the basic premise of capitalismÃƒÂ¢Ã¢â€šÂ¬â€that competition drives prices down. When one platform is powerful enough to dictate pricing across competitors, competition becomes theater. You're not really choosing between retailers; you're just choosing which version of Amazon's price you prefer.
+This matters because it violates the basic premise of capitalism–that competition drives prices down. When one platform is powerful enough to dictate pricing across competitors, competition becomes theater. You're not really choosing between retailers; you're just choosing which version of Amazon's price you prefer.
 
 > **"The smaller the seller, the more vulnerable they are. They can't afford to lose access to Amazon's billions of customers."**
 
@@ -60,14 +60,14 @@ It's the economic equivalent of a squeeze play, and the middle and lower classes
 
 Because this is a moment when things could actually change.
 
-The documents are public now. Lawmakers and regulators who have been cautious about Big Tech are suddenly armed with evidence. The question isn't whether Amazon *has* the power to do thisÃƒÂ¢Ã¢â€šÂ¬â€they clearly do. The question is whether we're going to let them keep using it.
+The documents are public now. Lawmakers and regulators who have been cautious about Big Tech are suddenly armed with evidence. The question isn't whether Amazon *has* the power to do this–they clearly do. The question is whether we're going to let them keep using it.
 
 But it's not just about regulation. This is about how we think about the platforms we use every single day.
 
 **You should care because:**
 
 1. You're paying more than you would in a truly competitive market.
-2. Small sellersÃƒÂ¢Ã¢â€šÂ¬â€the people actually making thingsÃƒÂ¢Ã¢â€šÂ¬â€are being squeezed out of their own livelihoods.
+2. Small sellers–the people actually making things–are being squeezed out of their own livelihoods.
 3. Every time you assume the lowest price you see is the "real" price, you're reinforcing a system designed to hide the truth from you.
 
 ---
@@ -76,7 +76,7 @@ But it's not just about regulation. This is about how we think about the platfor
 
 What does it mean when a platform becomes powerful enough to dictate the entire market?
 
-What happens to innovation when small sellers know they can't compete fairlyÃƒÂ¢Ã¢â€šÂ¬â€that even if they offer a better product at a better price, the platform can simply bury them?
+What happens to innovation when small sellers know they can't compete fairly–that even if they offer a better product at a better price, the platform can simply bury them?
 
 What's the cost of convenience when that convenience is built on hidden pressure and manufactured scarcity?
 
@@ -104,6 +104,6 @@ You don't have to keep making that trade-off.
 
 ---
 
-*What surprised you most about this story? And more importantlyÃƒÂ¢Ã¢â€šÂ¬â€how does knowing it change the way you shop?* Drop a comment. Let's talk about it.
+*What surprised you most about this story? And more importantly–how does knowing it change the way you shop?* Drop a comment. Let's talk about it.
 
 
