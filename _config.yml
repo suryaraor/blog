@@ -5,5 +5,16 @@ email: "hello@example.com"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
+collections:
+  unlisted:
+    output: true
+    permalink: /unlisted/:name/
+defaults:
+  - scope:
+      path: ""
+      type: unlisted
+    values:
+      sitemap: false
+      robots: "noindex, nofollow"
 plugins:
   - jekyll-feed
