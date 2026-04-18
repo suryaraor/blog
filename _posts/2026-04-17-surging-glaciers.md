@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The Glaciers That Won't Die: Why Some Are Actually Accelerating Toward Disaster"
+date: 2026-04-17
+---
+
 # The Glaciers That Won't Die: Why Some Are Actually Accelerating Toward Disaster
 
 ## Five Curiosity-Gap Headlines (Pick Your Favorite)
@@ -101,3 +107,4 @@ And maybe—*just maybe*—getting curious about the weird stuff is how we actua
 ---
 
 *What surprised you about surging glaciers? Have you noticed climate weirdness in your own region? Share in the comments—I want to know what unexpected climate behavior people have actually witnessed.*
+

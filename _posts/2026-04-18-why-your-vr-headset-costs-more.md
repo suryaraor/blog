@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The Hidden Bill You're About to Pay for the AI Arms Race"
+date: 2026-04-18
+---
+
 # The Hidden Bill You're About to Pay for the AI Arms Race
 
 ## Five Headlines Fighting for Your Attention
@@ -150,3 +156,4 @@ Create a **conceptual illustration** for a thought-provoking Medium essay about 
 **Word Count:** 1,087 words  
 **Written:** April 18, 2026 at 08:00 AM  
 **Article Summary:** Explores how the AI infrastructure arms race is directly impacting consumer product availability and pricing, using Meta's Quest VR headset price increase as a case study. Connects the dots between Silicon Valley's AI spending priorities and real-world consequences for everyday consumers. Empowers readers to recognize patterns, make intentional purchasing decisions, and question corporate priorities reshaping the tech landscape.
+

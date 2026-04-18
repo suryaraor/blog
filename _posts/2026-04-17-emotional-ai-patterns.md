@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The Uncomfortable Truth: AI Models Are Developing Emotional Patterns (And We Have No Idea What to Do About It)"
+date: 2026-04-17
+---
+
 # The Uncomfortable Truth: AI Models Are Developing Emotional Patterns (And We Have No Idea What to Do About It)
 
 ## Five Curiosity Gap Headlines
@@ -160,3 +166,5 @@ Create a **surreal, conceptual illustration** for a thought-provoking Medium ess
 **Avoid:** Stock photos, smiley robots, glowing brains, corporate AI imagery, overly literal neural network visualizations, anything that feels dystopian or threatening
 
 **Dimensions:** 1200x630px (landscape format for Medium)
+
+

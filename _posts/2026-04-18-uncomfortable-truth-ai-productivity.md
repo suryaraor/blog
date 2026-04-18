@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Five Headlines for You to Choose From"
+date: 2026-04-18
+---
+
 # Five Headlines for You to Choose From
 
 1. **Why I Stopped Celebrating AI's "Productivity Wins"**
@@ -122,3 +128,5 @@ Key mood: **Cognitive dissonance**—the feeling you get when celebrating someth
 Avoid: Stock photos of happy developers, corporate diversity imagery, robot vs. human clichés, overly dark/dystopian aesthetics.
 
 Dimensions: **1200x630px** (landscape format for Medium)
+
+

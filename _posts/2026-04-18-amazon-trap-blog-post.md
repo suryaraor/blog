@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The Amazon Trap: How Your Favorite Shopping Platform Is Engineering Higher Prices"
+date: 2026-04-18
+---
+
 # The Amazon Trap: How Your Favorite Shopping Platform Is Engineering Higher Prices
 
 ## Five Headlines to Choose From
@@ -112,3 +118,5 @@ You don't have to keep making that trade-off.
 ---
 
 *What surprised you most about this story? And more importantly—how does knowing it change the way you shop?* Drop a comment. Let's talk about it.
+
+

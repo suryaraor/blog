@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The AI Energy Reckoning Is Coming (And It's Going to Change Everything)"
+date: 2026-04-17
+---
+
 # The AI Energy Reckoning Is Coming (And It's Going to Change Everything)
 
 ## Five Curiosity-Gap Headline Options
@@ -134,3 +140,5 @@ Create a minimalist, conceptual illustration for a thought-provoking Medium essa
 **Avoid:** Corporate stock photos, glowing AI brains, superhero imagery, overly bright neon, clichéd "the future" aesthetic
 
 **Dimensions:** 1200x630px (landscape format for Medium)
+
+

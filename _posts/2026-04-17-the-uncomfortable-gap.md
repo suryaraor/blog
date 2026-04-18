@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The Uncomfortable Gap Between Who You Were and Who You're Becoming"
+date: 2026-04-17
+---
+
 # The Uncomfortable Gap Between Who You Were and Who You're Becoming
 
 ## Five Headline Options (Choose Your Poison)
@@ -131,3 +137,5 @@ Create a **conceptual digital illustration** for a thought-provoking Medium essa
 **Avoid:** Stock photos, literal interpretations, overly bright colors, corporate minimalism, perfectly symmetrical compositions, obvious metaphors (like clocks or hourglasses).
 
 **Dimensions:** 1200x630px (landscape format for Medium)
+
+

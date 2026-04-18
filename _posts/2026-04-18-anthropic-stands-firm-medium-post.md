@@ -1,3 +1,9 @@
+---
+layout: default
+title: "When AI Companies Say No to Money: The Anthropic-Pentagon Standoff That Changes Everything"
+date: 2026-04-18
+---
+
 # When AI Companies Say No to Money: The Anthropic-Pentagon Standoff That Changes Everything
 
 ## Five Headlines (Choose Your Curiosity Gap):
@@ -119,3 +125,5 @@ That answer might tell you everything about who you actually are.
 ---
 
 **Word Count: 1,042 words**
+
+

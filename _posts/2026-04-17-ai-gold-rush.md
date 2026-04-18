@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The AI Gold Rush Is Rigged: How 20% of Companies Are Hoarding 75% of the Gains"
+date: 2026-04-17
+---
+
 # The AI Gold Rush Is Rigged: How 20% of Companies Are Hoarding 75% of the Gains
 
 ## Five Headlines (Pick Your Poison)
@@ -122,3 +128,5 @@ Create a **modern, conceptual illustration** for a thought-provoking Medium essa
 - **Tone:** Witty, empathetic, slightly provocative
 - **Target audience:** Tech professionals, business leaders, and anyone concerned about AI's real-world impact
 - **Key sources:** PwC 2026 AI Performance Study, Stanford AI Index 2026 Report
+
+

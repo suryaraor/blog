@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The AI Economic Divide"
+date: 2026-04-17
+---
+
 # The AI Economic Divide
 
 ---
@@ -114,3 +120,5 @@ The choice — and it *is* a choice — is yours.
 ---
 
 *Sources: [PwC 2026 AI Performance Study](https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html) · [IT Pro coverage](https://www.itpro.com/business/business-strategy/just-20-percent-of-companies-are-lapping-up-three-quarters-of-ais-financial-gains) · [HumAI analysis](https://www.humai.blog/74-of-ais-economic-value-goes-to-20-of-companies-pwcs-new-study-explains-why/)*
+
+

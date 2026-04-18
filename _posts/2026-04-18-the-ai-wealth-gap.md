@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The AI Wealth Gap: Why 75% of AI's Gains Are Going to Just 20% of Companies"
+date: 2026-04-18
+---
+
 # The AI Wealth Gap: Why 75% of AI's Gains Are Going to Just 20% of Companies
 
 ## Five Headlines That Might Have Made You Click
@@ -149,3 +155,5 @@ Key mood: Curiosity mixed with mild discomfort; empowerment through understandin
 Avoid: Corporate stock photography, happy diversity photos, glowing AI clichés, overly literal representations of wealth.
 
 Dimensions: 1200x630px (landscape format for Medium)
+
+

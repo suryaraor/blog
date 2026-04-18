@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The Uncomfortable Truth About AI's Water and Carbon Addiction"
+date: 2026-04-18
+---
+
 # The Uncomfortable Truth About AI's Water and Carbon Addiction
 
 ## 5 Curiosity Gap Headlines
@@ -129,3 +135,5 @@ Key mood: Curiosity mixed with discomfort; makes the viewer want to pause and re
 Avoid: Corporate stock photos, clean/pristine data centers, apocalyptic imagery, overly literal representations (like a thermometer), AI robot faces, or generic "climate change" clichés.
 
 Dimensions: 1200x630px (landscape format for Medium).
+
+

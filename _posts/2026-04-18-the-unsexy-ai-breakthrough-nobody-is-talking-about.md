@@ -1,3 +1,9 @@
+---
+layout: default
+title: "5 Curiosity-Gap Headlines"
+date: 2026-04-18
+---
+
 # 5 Curiosity-Gap Headlines
 
 1. **"While Everyone Cheered Bigger AI Models, Google Just Flipped the Script"**
@@ -148,3 +154,5 @@ Dimensions: 1200x630px (landscape format for Medium)
 **Tone: Witty, empathetic, slightly provocative**
 
 **Target Reader: Tech professionals, decision-makers, engineers, startup founders, anyone making strategic AI decisions**
+
+

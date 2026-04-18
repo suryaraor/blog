@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The AI Regulation Moment Just Became Real (And Everyone's Pretending Not to Notice)"
+date: 2026-04-18
+---
+
 # The AI Regulation Moment Just Became Real (And Everyone's Pretending Not to Notice)
 
 ## 5 Curiosity-Gap Headlines
@@ -153,3 +159,4 @@ Visual Elements:
 Key mood: The reader should feel: "This is important, and I need to pay attention to this shift."
 Avoid: Corporate stock photos, alarming imagery, overly dramatic depictions of "government control," cartoonish characters
 Dimensions: 1200x630px (landscape format for Medium)
+

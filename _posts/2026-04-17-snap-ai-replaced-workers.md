@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Five Curiosity-Gap Headlines (Choose One)"
+date: 2026-04-17
+---
+
 # Five Curiosity-Gap Headlines (Choose One)
 
 1. **AI Just Replaced 1,000 People at Snap. Here's What We're Not Talking About.**
@@ -122,3 +128,5 @@ Key Mood: Discomfort with recognition. Readers should feel "I didn't want to thi
 Avoid: Corporate stock photos, smiling faces, glowing AI interfaces, clichéd "robot taking job" imagery, overly bright or hopeful aesthetics.
 
 Dimensions: 1200x630px (landscape format for Medium)
+
+

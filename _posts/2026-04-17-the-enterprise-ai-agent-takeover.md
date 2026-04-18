@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Five Headline Options (Pick Your Favorite)"
+date: 2026-04-17
+---
+
 # Five Headline Options (Pick Your Favorite)
 
 1. **"The 79% Club: When Your Company's AI Agent Becomes Your Boss"**
@@ -121,3 +127,5 @@ Key mood: Complexity, inevitability, quiet disruption
 Avoid: Corporate stock photos, robot imagery, sci-fi aesthetics, anything that looks like a tech startup pitch deck, humanoid AI representations
 
 Dimensions: 1200x630px (landscape format for Medium)
+
+
