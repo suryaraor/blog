@@ -13,7 +13,7 @@ categories: [Java, Spring Boot, Architecture]
   <img src="/assets/images/blog/2026-01-08-hexagonal-architecture.png" alt="Hexagonal Architecture diagram">
 </figure>
 
-After 15 years of building enterprise Java applications, I've witnessed countless projects start with clean intentions—the familiar Controller → Service → Repository pattern that every Spring developer knows by heart. Yet, within 18 months, these codebases inevitably devolve into what we politely call "the Big Ball of Mud."
+After 15 years of building enterprise Java applications, I've witnessed countless projects start with clean intentions—the familiar Controller â†’ Service â†’ Repository pattern that every Spring developer knows by heart. Yet, within 18 months, these codebases inevitably devolve into what we politely call "the Big Ball of Mud."
 
 <!--more-->
 
@@ -36,7 +36,7 @@ Before diving into code, we need to understand the philosophical shift that Hexa
 In traditional layered architecture, dependencies flow in one direction—downward:
 
 ```
-Controller → Service → Repository → Database
+Controller â†’ Service â†’ Repository â†’ Database
 ```
 
 Your `Service` class depends on the `Repository` interface, which Spring Data JPA implements. But here's the problem: **your business logic (Service layer) depends on infrastructure concerns (persistence).**
@@ -44,7 +44,7 @@ Your `Service` class depends on the `Repository` interface, which Spring Data JP
 Hexagonal Architecture inverts this relationship:
 
 ```
-Infrastructure (Adapters) → Domain (Core Business Logic)
+Infrastructure (Adapters) â†’ Domain (Core Business Logic)
 ```
 
 **The domain layer has zero dependencies on external frameworks, databases, or delivery mechanisms.** Instead, the domain defines interfaces (ports) that describe *what* it needs, and the infrastructure layer provides implementations (adapters) that satisfy those contracts.
@@ -102,20 +102,20 @@ Adapters sit on the outer layer and implement the ports:
 > **Source code dependencies must point inward, toward the domain.**
 
 ```
-┌─────────────────────────────────────────┐
-│         Adapters (Infrastructure)       │
-│  ┌───────────────────────────────────┐  │
-│  │      Application Services         │  │
-│  │  ┌─────────────────────────────┐  │  │
-│  │  │      Domain (Core)          │  │  │
-│  │  │   Models, Entities,         │  │  │
-│  │  │   Business Rules            │  │  │
-│  │  └─────────────────────────────┘  │  │
-│  │         ↑ Ports (Interfaces)      │  │
-│  └─────────┼─────────────────────────┘  │
-│            │ Dependencies point inward  │
-└────────────┼───────────────────────────┘
-             │
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚         Adapters (Infrastructure)       â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+â”‚  â”‚      Application Services         â”‚  â”‚
+â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚  â”‚
+â”‚  â”‚  â”‚      Domain (Core)          â”‚  â”‚  â”‚
+â”‚  â”‚  â”‚   Models, Entities,         â”‚  â”‚  â”‚
+â”‚  â”‚  â”‚   Business Rules            â”‚  â”‚  â”‚
+â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚  â”‚
+â”‚  â”‚         â†‘ Ports (Interfaces)      â”‚  â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+â”‚            â”‚ Dependencies point inward  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+             â”‚
 ```
 
 The infrastructure layer knows about the domain, but the domain knows nothing about the infrastructure. This is achieved through **dependency inversion**: the infrastructure implements interfaces defined in the domain.
@@ -130,46 +130,46 @@ First, let's establish a clear package structure:
 
 ```
 com.example.ecommerce
-├── domain
-│   ├── model
-│   │   ├── Order.java
-│   │   ├── OrderId.java
-│   │   ├── OrderLine.java
-│   │   ├── Money.java
-│   │   └── OrderStatus.java
-│   ├── port
-│   │   ├── in
-│   │   │   └── CreateOrderUseCase.java
-│   │   └── out
-│   │       ├── OrderRepository.java
-│   │       ├── PaymentGateway.java
-│   │       └── InventoryService.java
-│   └── service
-│       └── OrderService.java
-├── application
-│   ├── config
-│   │   └── BeanConfiguration.java
-│   └── mapper
-│       ├── OrderDtoMapper.java
-│       └── OrderEntityMapper.java
-└── adapter
-    ├── in
-    │   └── web
-    │       ├── OrderController.java
-    │       └── dto
-    │           ├── CreateOrderRequest.java
-    │           └── OrderResponse.java
-    └── out
-        ├── persistence
-        │   ├── OrderJpaRepository.java
-        │   ├── OrderRepositoryAdapter.java
-        │   └── entity
-        │       ├── OrderEntity.java
-        │       └── OrderLineEntity.java
-        ├── payment
-        │   └── StripePaymentAdapter.java
-        └── inventory
-            └── RestInventoryAdapter.java
+â”œâ”€â”€ domain
+â”‚   â”œâ”€â”€ model
+â”‚   â”‚   â”œâ”€â”€ Order.java
+â”‚   â”‚   â”œâ”€â”€ OrderId.java
+â”‚   â”‚   â”œâ”€â”€ OrderLine.java
+â”‚   â”‚   â”œâ”€â”€ Money.java
+â”‚   â”‚   â””â”€â”€ OrderStatus.java
+â”‚   â”œâ”€â”€ port
+â”‚   â”‚   â”œâ”€â”€ in
+â”‚   â”‚   â”‚   â””â”€â”€ CreateOrderUseCase.java
+â”‚   â”‚   â””â”€â”€ out
+â”‚   â”‚       â”œâ”€â”€ OrderRepository.java
+â”‚   â”‚       â”œâ”€â”€ PaymentGateway.java
+â”‚   â”‚       â””â”€â”€ InventoryService.java
+â”‚   â””â”€â”€ service
+â”‚       â””â”€â”€ OrderService.java
+â”œâ”€â”€ application
+â”‚   â”œâ”€â”€ config
+â”‚   â”‚   â””â”€â”€ BeanConfiguration.java
+â”‚   â””â”€â”€ mapper
+â”‚       â”œâ”€â”€ OrderDtoMapper.java
+â”‚       â””â”€â”€ OrderEntityMapper.java
+â””â”€â”€ adapter
+    â”œâ”€â”€ in
+    â”‚   â””â”€â”€ web
+    â”‚       â”œâ”€â”€ OrderController.java
+    â”‚       â””â”€â”€ dto
+    â”‚           â”œâ”€â”€ CreateOrderRequest.java
+    â”‚           â””â”€â”€ OrderResponse.java
+    â””â”€â”€ out
+        â”œâ”€â”€ persistence
+        â”‚   â”œâ”€â”€ OrderJpaRepository.java
+        â”‚   â”œâ”€â”€ OrderRepositoryAdapter.java
+        â”‚   â””â”€â”€ entity
+        â”‚       â”œâ”€â”€ OrderEntity.java
+        â”‚       â””â”€â”€ OrderLineEntity.java
+        â”œâ”€â”€ payment
+        â”‚   â””â”€â”€ StripePaymentAdapter.java
+        â””â”€â”€ inventory
+            â””â”€â”€ RestInventoryAdapter.java
 ```
 
 ### 1. Pure Domain Model (No Annotations!)
@@ -1156,10 +1156,10 @@ I've profiled production systems extensively. Here's what a typical request brea
 
 ```
 Total Request Time: 150ms
-  ├─ Database Query: 120ms (80%)
-  ├─ Business Logic: 25ms (16.7%)
-  ├─ Object Mapping: 3ms (2%)
-  └─ HTTP Overhead: 2ms (1.3%)
+  â”œâ”€ Database Query: 120ms (80%)
+  â”œâ”€ Business Logic: 25ms (16.7%)
+  â”œâ”€ Object Mapping: 3ms (2%)
+  â””â”€ HTTP Overhead: 2ms (1.3%)
 ```
 
 **Mapping overhead is negligible** compared to I/O operations. MapStruct-generated code is as efficient as hand-written mapping and typically compiles down to simple getter/setter calls.
@@ -1327,7 +1327,7 @@ public class Order {
 
 Let's be brutally honest: **Hexagonal Architecture is not always the right choice.**
 
-### ✅ Use Hexagonal Architecture When:
+### âœ… Use Hexagonal Architecture When:
 
 | Scenario | Why |
 |----------|-----|
@@ -1338,7 +1338,7 @@ Let's be brutally honest: **Hexagonal Architecture is not always the right choic
 | **Polyglot Persistence** | You use multiple databases (PostgreSQL, MongoDB, Redis) or plan to migrate persistence technologies. |
 | **Large Development Teams** | Multiple teams working on different parts of the system; clear boundaries prevent conflicts. |
 
-### ❌ Don't Use Hexagonal Architecture When:
+### âŒ Don't Use Hexagonal Architecture When:
 
 | Scenario | Why |
 |----------|-----|

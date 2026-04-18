@@ -47,9 +47,9 @@ Databricks is built upon several fundamental components that work together to cr
 <div class="architecture-diagram">
     <h3>Databricks Architecture Overview</h3>
     <div style="font-family: monospace; font-size: 0.9em; line-height: 2;">
-        ┌──────────────────────────────────────────────┐<br>
-        │         Databricks Workspace                │<br>
-        └──────────────────────────────────────────────┘
+        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”<br>
+        â”‚         Databricks Workspace                â”‚<br>
+        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
     </div>
 </div>
 

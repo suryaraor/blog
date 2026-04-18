@@ -5,24 +5,11 @@ date: 2026-04-18
 ---
 
 # The AI Wealth Gap: Why 75% of AI's Gains Are Going to Just 20% of Companies
-
-## Five Headlines That Might Have Made You Click
-
-1. **"Why Your AI Investment Might Be Funding Someone Else's Fortune"**
-2. **"The Uncomfortable Truth About Who's Actually Getting Rich From AI"**
-3. **"How 20% of Companies Are Quietly Capturing 75% of AI's Wealth"**
-4. **"The AI Boom Is Real. The Prosperity? Not So Much."**
-5. **"AI Promised to Level the Playing Field. Here's What Really Happened."**
-
----
-
-## The Hook: The Meeting That Changed Everything
-
-I was in a Zoom call last month with a VP of a mid-sized tech company. She'd just invested $2M in AI infrastructure—new models, training data, specialized talent. Expensive stuff. Necessary stuff. She was excited but also... nervous.
+I was in a Zoom call last month with a VP of a mid-sized tech company. She'd just invested $2M in AI infrastructureÃƒÂ¢Ã¢â€šÂ¬â€new models, training data, specialized talent. Expensive stuff. Necessary stuff. She was excited but also... nervous.
 
 "We're doing everything right," she said. "We've got the budget, the team, the strategy. But somehow, I keep hearing that 75% of AI's economic gains are going to like, 20 other companies. So what are *we* doing wrong?"
 
-Nothing, I told her. It's not about what she's doing wrong. It's about what the system is designed to do right—for a very specific few.
+Nothing, I told her. It's not about what she's doing wrong. It's about what the system is designed to do rightÃƒÂ¢Ã¢â€šÂ¬â€for a very specific few.
 
 Welcome to the AI wealth gap. And yes, it's as bad as it sounds.
 
@@ -36,7 +23,7 @@ That story was beautiful. It was also wrong.
 
 The latest data is sobering: three-quarters of AI's economic gains are being captured by roughly one-fifth of companies. We're not talking about a normal competitive advantage here. We're talking about a structural, self-reinforcing machine that concentrates wealth and opportunity in increasingly fewer hands.
 
-**Here's the thing most people won't say out loud**: The companies winning big in AI aren't winning because they have smarter people or better ideas. They're winning because they *already had money*. And money in the AI era is like nuclear fuel—it accelerates itself.
+**Here's the thing most people won't say out loud**: The companies winning big in AI aren't winning because they have smarter people or better ideas. They're winning because they *already had money*. And money in the AI era is like nuclear fuelÃƒÂ¢Ã¢â€šÂ¬â€it accelerates itself.
 
 ---
 
@@ -44,7 +31,7 @@ The latest data is sobering: three-quarters of AI's economic gains are being cap
 
 Let me explain how this actually works, because it's important you understand the mechanics.
 
-**Step 1: Starting capital.** The richest tech companies—your Googles, Microsofts, Metas—have billions in cash. They can afford:
+**Step 1: Starting capital.** The richest tech companiesÃƒÂ¢Ã¢â€šÂ¬â€your Googles, Microsofts, MetasÃƒÂ¢Ã¢â€šÂ¬â€have billions in cash. They can afford:
 - The best talent (paying $500K+ salaries)
 - Massive compute infrastructure (running models costs tens of millions monthly)
 - R&D budgets that would make smaller companies weep
@@ -70,7 +57,7 @@ The companies on top aren't just winning. They're *systematically extracting* va
 
 If you're a knowledge worker, this affects your career trajectory. The best AI jobs, highest salaries, and equity upside are concentrating at maybe 20-30 megacorps. Everyone else is either working in a supporting role or fighting a losing battle to be relevant.
 
-If you're an entrepreneur, this is a warning. You can't out-AI an incumbent. You can't out-capital them. You can't out-hire them. You need an entirely different strategy—which means most of the promising AI applications are already spoken for by the time you see them.
+If you're an entrepreneur, this is a warning. You can't out-AI an incumbent. You can't out-capital them. You can't out-hire them. You need an entirely different strategyÃƒÂ¢Ã¢â€šÂ¬â€which means most of the promising AI applications are already spoken for by the time you see them.
 
 If you're an investor, you're probably making the rational choice and funding the leaders, which... accelerates the concentration. No judgment, just thermodynamics.
 
@@ -116,7 +103,7 @@ Here's what keeps me up at night: We built a system that *promised* to democrati
 
 That's not a failure of AI. It's a feature of capital. When you need billions to compete, the rich get richer. It's physics.
 
-The question isn't whether this will continue. It will. The question is what you do with that information. Do you position yourself strategically within that ecosystem? Do you accept that AI-driven wealth concentration is happening and plan accordingly? Or do you get angry and demand change—which is valid, by the way, just not likely to shift a $10-trillion industry in your favor?
+The question isn't whether this will continue. It will. The question is what you do with that information. Do you position yourself strategically within that ecosystem? Do you accept that AI-driven wealth concentration is happening and plan accordingly? Or do you get angry and demand changeÃƒÂ¢Ã¢â€šÂ¬â€which is valid, by the way, just not likely to shift a $10-trillion industry in your favor?
 
 ---
 
@@ -126,7 +113,7 @@ Here's what I want you to do: Look at your career, your investments, your assump
 
 Then act on the answer. Not with panic, but with clarity.
 
-Because the truth is, understanding how wealth actually flows in AI—not how it's supposed to flow, but how it *actually* flows—is the only way to stop being a passenger in someone else's fortune.
+Because the truth is, understanding how wealth actually flows in AIÃƒÂ¢Ã¢â€šÂ¬â€not how it's supposed to flow, but how it *actually* flowsÃƒÂ¢Ã¢â€šÂ¬â€is the only way to stop being a passenger in someone else's fortune.
 
 The question is: Will you adjust course?
 
@@ -140,7 +127,7 @@ Visual Elements:
 - **Primary Image**: A pyramid with the top 20% of blocks glowing and accumulating gold/light, while the bottom 80% remains muted and depleted. The light flows upward in concentrated streams.
 - **Secondary Element**: A small figure at the base of the pyramid looking upward with uncertainty, balanced by silhouettes of corporate towers at the summit.
 
-Color palette: Deep blues and grays (corporate, serious tone) with gold/amber accents concentrated at the top; bottom sections fade into desaturated tones. Avoid corporate bright colors—lean into somber, thoughtful palette.
+Color palette: Deep blues and grays (corporate, serious tone) with gold/amber accents concentrated at the top; bottom sections fade into desaturated tones. Avoid corporate bright colorsÃƒÂ¢Ã¢â€šÂ¬â€lean into somber, thoughtful palette.
 
 Style: Minimalist geometric with subtle surrealism; modern without being cold.
 
@@ -148,11 +135,11 @@ Composition: Asymmetrical, with visual weight concentrated in upper-right where 
 
 Text overlay: None (will be added in design)
 
-Tone: Thought-provoking and slightly unsettling—conveys structural inequality without being preachy.
+Tone: Thought-provoking and slightly unsettlingÃƒÂ¢Ã¢â€šÂ¬â€conveys structural inequality without being preachy.
 
 Key mood: Curiosity mixed with mild discomfort; empowerment through understanding.
 
-Avoid: Corporate stock photography, happy diversity photos, glowing AI clichés, overly literal representations of wealth.
+Avoid: Corporate stock photography, happy diversity photos, glowing AI clichÃƒÆ’Ã‚Â©s, overly literal representations of wealth.
 
 Dimensions: 1200x630px (landscape format for Medium)
 

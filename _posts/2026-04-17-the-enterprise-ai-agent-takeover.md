@@ -3,17 +3,6 @@ layout: default
 title: "Five Headline Options (Pick Your Favorite)"
 date: 2026-04-17
 ---
-
-# Five Headline Options (Pick Your Favorite)
-
-1. **"The 79% Club: When Your Company's AI Agent Becomes Your Boss"**
-2. **"Why I Stopped Worrying About Being Replaced by AI (And Started Worrying About Something Worse)"**
-3. **"The Uncomfortable Truth: 79% of Organizations Have Already Made Their Choice"**
-4. **"Your Company Isn't Adopting AI Agents. It's Already Adopted Them."**
-5. **"Why Enterprise AI Agents Aren't a Threat—They're an Inevitability"**
-
----
-
 ## The 79% Nobody's Talking About
 
 Last week, I watched a senior executive at a Fortune 500 company describe their new AI agent deployment like they were discussing the weather. No drama. No existential worry. Just another operational checkbox marked off the list. "It's handling 60% of our customer escalations now," she said, then moved on to discuss next quarter's targets.
@@ -82,7 +71,7 @@ Three things:
 
 ## Your Move: The Call to Adventure
 
-Here's what I'd suggest—and I mean this genuinely: **spend the next week actually using an AI agent to do work.** Not playing with it. *Using* it.
+Here's what I'd suggestÃ¢â‚¬”and I mean this genuinely: **spend the next week actually using an AI agent to do work.** Not playing with it. *Using* it.
 
 Pick something you normally do:
 - A report you generate monthly
@@ -109,18 +98,18 @@ The real question is: **Are you going to learn before you have to, or after?**
 Create a conceptual illustration for a thought-provoking Medium essay about enterprise AI agent adoption crossing the 79% adoption threshold.
 
 Visual Elements:
-- **PRIMARY IMAGE:** A corporate office setting where human workers are seamlessly integrated with translucent AI agents—not replacing humans but flowing around and through their workflows. One human figure stands slightly apart, observing the integration.
+- **PRIMARY IMAGE:** A corporate office setting where human workers are seamlessly integrated with translucent AI agentsÃ¢â‚¬”not replacing humans but flowing around and through their workflows. One human figure stands slightly apart, observing the integration.
 - **SECONDARY ELEMENT:** A subtle upward-trending graph line woven into the composition, reaching a critical threshold point (represented by a glowing marker at 79%).
 
-Color palette: Muted corporate grays and blues contrasted with one accent color (amber or teal) representing the AI agents—sophisticated but not futuristic or overly corporate.
+Color palette: Muted corporate grays and blues contrasted with one accent color (amber or teal) representing the AI agentsÃ¢â‚¬”sophisticated but not futuristic or overly corporate.
 
-Style: Modern, minimalist, slightly surreal—something between a technical diagram and conceptual art.
+Style: Modern, minimalist, slightly surrealÃ¢â‚¬”something between a technical diagram and conceptual art.
 
 Composition: Asymmetrical, with the primary tension on the left side and the observing figure on the right, creating visual imbalance that mirrors organizational disruption.
 
 Text overlay: None (this will be added in design)
 
-Tone: Thoughtful, slightly unsettling, contemplative—this isn't dystopian but it's not utopian either.
+Tone: Thoughtful, slightly unsettling, contemplativeÃ¢â‚¬”this isn't dystopian but it's not utopian either.
 
 Key mood: Complexity, inevitability, quiet disruption
 
