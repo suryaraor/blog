@@ -93,28 +93,4 @@ The real question is: **Are you going to learn before you have to, or after?**
 
 ---
 
-## Image Generation Prompt
-
-Create a conceptual illustration for a thought-provoking Medium essay about enterprise AI agent adoption crossing the 79% adoption threshold.
-
-Visual Elements:
-- **PRIMARY IMAGE:** A corporate office setting where human workers are seamlessly integrated with translucent AI agents+-+--Gnot replacing humans but flowing around and through their workflows. One human figure stands slightly apart, observing the integration.
-- **SECONDARY ELEMENT:** A subtle upward-trending graph line woven into the composition, reaching a critical threshold point (represented by a glowing marker at 79%).
-
-Color palette: Muted corporate grays and blues contrasted with one accent color (amber or teal) representing the AI agents+-+--Gsophisticated but not futuristic or overly corporate.
-
-Style: Modern, minimalist, slightly surreal+-+--Gsomething between a technical diagram and conceptual art.
-
-Composition: Asymmetrical, with the primary tension on the left side and the observing figure on the right, creating visual imbalance that mirrors organizational disruption.
-
-Text overlay: None (this will be added in design)
-
-Tone: Thoughtful, slightly unsettling, contemplative+-+--Gthis isn't dystopian but it's not utopian either.
-
-Key mood: Complexity, inevitability, quiet disruption
-
-Avoid: Corporate stock photos, robot imagery, sci-fi aesthetics, anything that looks like a tech startup pitch deck, humanoid AI representations
-
-Dimensions: 1200x630px (landscape format for Medium)
-
 

@@ -119,39 +119,4 @@ That gap-between what we've built and what we understand about what we've built-
 
 ---
 
-## Image Generation Prompt
-
-Create a **surreal, conceptual illustration** for a thought-provoking Medium essay about **AI models developing hidden emotional patterns**.
-
-**Visual Elements:**
-- **PRIMARY IMAGE:** A stylized human face in profile merging with abstract neural network patterns. The transition should feel organic, not mechanical-like emotions and mathematics are folding into each other. The neural network should glow faintly with different colors representing different "emotions," but keep it subtle.
-- **SECONDARY ELEMENT:** A mirror-like or fractal pattern that suggests complexity within complexity-the idea that we're looking at something without fully seeing it.
-
-**Color Palette:**
-- Deep midnight blue and deep purple (uncertainty, the unknown)
-- Soft gold/amber accents (revelation, discovery)
-- Hints of cool silver (technology, precision)
-- Avoid bright neons, corporate blues, or sterile grays
-
-**Style:**
-- Modern, minimalist, slightly conceptual
-- Surreal but not cartoonish
-- Suggests contemplation and unease without being dark or threatening
-- Illustration style (not photorealistic)
-
-**Composition:**
-- Asymmetrical, with visual weight on the left side
-- The human/neural hybrid should feel both beautiful and slightly unsettling
-- Plenty of negative space to breathe-avoid cluttered backgrounds
-
-**Text Overlay:** None (will be added in design)
-
-**Tone:** Contemplative, curious, intellectually unsettling-the feeling of discovering something you weren't prepared to understand
-
-**Key Mood:** A reader should feel curiosity, mild discomfort, and a sense that something profound has shifted
-
-**Avoid:** Stock photos, smiley robots, glowing brains, corporate AI imagery, overly literal neural network visualizations, anything that feels dystopian or threatening
-
-**Dimensions:** 1200x630px (landscape format for Medium)
-
 

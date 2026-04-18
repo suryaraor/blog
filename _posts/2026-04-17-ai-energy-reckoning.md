@@ -109,23 +109,4 @@ It's already started. We're just not paying attention yet.
 
 ---
 
-## Image Generation Prompt for This Article
-
-Create a minimalist, conceptual illustration for a thought-provoking Medium essay about AI's hidden energy crisis.
-
-**Visual Elements:**
-- **PRIMARY IMAGE:** A data center glowing in darkness, but instead of appearing powerful and technological, it shows visible electrical lines extending outward, some flickering or dimmed-capturing the strain and scarcity of power supply
-- **SECONDARY ELEMENT:** A power meter or gauge in the corner, dial approaching the danger zone, symbolizing approaching infrastructure limits without being heavy-handed
-- **Color palette:** Cool grays and deep blues with pops of amber/orange warning tones-futuristic but slightly unsettling, not sleek corporate aesthetic
-- **Style:** Modern minimalist with some conceptual elements; clean lines but with subtle wear or strain visible
-- **Composition:** Asymmetrical; the data center occupies about 60% of the frame, with power infrastructure trails creating visual flow
-- **Text overlay:** None
-- **Tone:** Thoughtful, cautious, urgent but not alarmist
-
-**Key mood:** Realization, unease, the moment before a crisis becomes unavoidable
-
-**Avoid:** Corporate stock photos, glowing AI brains, superhero imagery, overly bright neon, cliched "the future" aesthetic
-
-**Dimensions:** 1200x630px (landscape format for Medium)
-
 

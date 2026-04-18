@@ -99,28 +99,4 @@ The question is: How much are you willing to keep spending?
 
 ---
 
-**Image Generation Prompt for this Article:**
-
-Create a conceptual illustration for a thought-provoking Medium essay about AI's hidden environmental costs.
-
-Visual Elements:
-- **PRIMARY IMAGE:** A towering data center silhouette in the foreground, with visible cooling systems, positioned against a drying landscape (cracked earth, shrinking water bodies, wilted vegetation) in the background. The contrast between technological advancement and environmental devastation should be stark.
-- **SECONDARY ELEMENT:** A water droplet transforming into binary code (0s and 1s) or a leaf withering into circuit patterns-symbolizing the conversion of natural resources into AI progress.
-
-Color palette: Desaturated teals and grays for the landscape (showing depletion), with cool blues for water that's disappearing, and warm reds/oranges peeking through cracks in the earth (representing heat and stress). Avoid vibrant neon-this should feel somber and reflective, not dystopian or cartoonish.
-
-Style: Conceptual/metaphorical illustration, modern minimalist approach with strong symbolic depth. Think editorial illustration, not infographic.
-
-Composition: Asymmetrical, with the data center dominating the left-center and the landscape spreading right, creating visual tension between human technology and natural systems.
-
-Text overlay: None (this will be added in design).
-
-Tone: Thoughtful, unsettling, empowering-not fear-mongering. Readers should feel clarity and agency, not despair.
-
-Key mood: Curiosity mixed with discomfort; makes the viewer want to pause and reflect before their next AI interaction.
-
-Avoid: Corporate stock photos, clean/pristine data centers, apocalyptic imagery, overly literal representations (like a thermometer), AI robot faces, or generic "climate change" cliches.
-
-Dimensions: 1200x630px (landscape format for Medium).
-
 

@@ -122,28 +122,4 @@ The difference between seeing the future and missing it? Sometimes it's just pay
 
 ---
 
-## Image Generation Prompt
-
-Create a **minimalist, conceptual illustration** for a thought-provoking Medium essay about AI infrastructure and efficiency breakthroughs.
-
-Visual Elements:
-- **Primary Image**: A compact server or chip transforming/compressing into a smaller, more efficient form. Show the contrast between bloated and lean visually+-+--Gperhaps left side cluttered with data streams, right side clean and streamlined.
-- **Secondary Element**: A subtle upward arrow or efficiency symbol (not clich++-d, more abstract). Perhaps data flows that tighten into a focused beam.
-
-Color Palette: Muted tech blues, grays, with ONE accent color (teal or amber) for the "after" state. Professional but not corporate. Avoid sterile whites.
-
-Style: Modern minimalist, almost technical illustration. Flat design with subtle depth. Think mid-century modern meets tech manifesto.
-
-Composition: Asymmetrical, with the lean version on the right side (moving forward direction). Breathing room, not crowded.
-
-Text Overlay: None
-
-Tone: Thoughtful, slightly hopeful, slightly unsettling (like "wait, this changes things, doesn't it?")
-
-Key Mood: Curiosity + Realization + Empowerment
-
-Avoid: Stock photos, corporate aesthetics, literal data visualizations, neon colors, blockchain imagery
-
-Dimensions: 1200x630px (landscape for Medium)
-
 

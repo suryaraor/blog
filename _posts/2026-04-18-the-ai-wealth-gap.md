@@ -119,28 +119,4 @@ The question is: Will you adjust course?
 
 ---
 
-## Image Generation Prompt
-
-**Create a modern, conceptual illustration for a thought-provoking Medium essay about AI wealth concentration.**
-
-Visual Elements:
-- **Primary Image**: A pyramid with the top 20% of blocks glowing and accumulating gold/light, while the bottom 80% remains muted and depleted. The light flows upward in concentrated streams.
-- **Secondary Element**: A small figure at the base of the pyramid looking upward with uncertainty, balanced by silhouettes of corporate towers at the summit.
-
-Color palette: Deep blues and grays (corporate, serious tone) with gold/amber accents concentrated at the top; bottom sections fade into desaturated tones. Avoid corporate bright colors-lean into somber, thoughtful palette.
-
-Style: Minimalist geometric with subtle surrealism; modern without being cold.
-
-Composition: Asymmetrical, with visual weight concentrated in upper-right where wealth accumulates.
-
-Text overlay: None (will be added in design)
-
-Tone: Thought-provoking and slightly unsettling-conveys structural inequality without being preachy.
-
-Key mood: Curiosity mixed with mild discomfort; empowerment through understanding.
-
-Avoid: Corporate stock photography, happy diversity photos, glowing AI cliches, overly literal representations of wealth.
-
-Dimensions: 1200x630px (landscape format for Medium)
-
 

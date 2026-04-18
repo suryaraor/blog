@@ -130,20 +130,3 @@ That's unglamorous. That's also where the future is.
 
 ---
 
-## Image Generation Prompt
-
-Create a modern, conceptual illustration for a thought-provoking Medium essay about AI regulation and compliance.
-
-Visual Elements:
-- **PRIMARY IMAGE**: A split-screen composition-left side shows chaotic, fast-moving AI development (abstract digital streams, flying arrows, explosion of data); right side shows structured regulatory frameworks (precise grid patterns, careful measurements, official-looking documents). A clear boundary line separates the two, representing the shift from "move fast" to "move carefully."
-- **SECONDARY ELEMENT**: A small, symbolic figure of a tech worker standing at the boundary line, looking slightly uncertain but aware-representing the professional navigating the new landscape.
-- Color palette: Professional but not sterile-muted teals and grays on the regulation side, bright but slightly chaotic oranges and blues on the development side. The figure wears neutral, professional tones.
-- Style: Minimalist, clean, modern illustration style-not photorealistic, not cartoonish. Think contemporary design journalism aesthetic.
-- Composition: Asymmetrical, with visual weight balanced between the two sides. The figure should be small but intentionally placed, creating negative space that suggests contemplation.
-- Text overlay: None (will be added in design)
-- Tone: Thoughtful, slightly serious, empowering rather than ominous-this isn't about fear, it's about transition and opportunity
-
-Key mood: The reader should feel: "This is important, and I need to pay attention to this shift."
-Avoid: Corporate stock photos, alarming imagery, overly dramatic depictions of "government control," cartoonish characters
-Dimensions: 1200x630px (landscape format for Medium)
-

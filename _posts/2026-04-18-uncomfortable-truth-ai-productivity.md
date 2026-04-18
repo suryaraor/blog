@@ -94,28 +94,4 @@ That's uncomfortable. That's also honest. And maybe that's where we should start
 
 ---
 
-## Image Generation Prompt
-
-Create a **conceptual digital illustration** for a thought-provoking Medium essay about AI productivity and workforce displacement.
-
-Visual Elements:
-- **PRIMARY IMAGE:** A split-screen composition+-+--Gone side showing seamless, glowing code flowing effortlessly from a neural network, the other side showing a silhouette of a person walking away with a cardboard box. The contrast should feel stark but not heavy-handed.
-- **SECONDARY ELEMENT:** A subtle upward trending arrow made of binary code that morphs into a declining human figure outline+-+--Gshowing the mathematical inversion of gains and losses.
-
-Color palette: Cool grays and blues for the AI side, warm amber/orange for the human side, meeting in a tense neutral zone. Avoid corporate blues or aggressive reds.
-
-Style: **Modern, minimalist, conceptual**+-+--Gclean lines with slight expressionist touches to convey emotion without being manipulative.
-
-Composition: **Asymmetrical**+-+--Gthe AI code dominates roughly 55% of the frame, leaving 45% for the human element, subtly emphasizing the imbalance.
-
-Text overlay: None (will be added in design)
-
-Tone: **Thoughtful, unsettling, honest**+-+--Gnot angry, not apocalyptic, but definitely uncomfortable.
-
-Key mood: **Cognitive dissonance**+-+--Gthe feeling you get when celebrating something that also causes pain.
-
-Avoid: Stock photos of happy developers, corporate diversity imagery, robot vs. human clich++-s, overly dark/dystopian aesthetics.
-
-Dimensions: **1200x630px** (landscape format for Medium)
-
 

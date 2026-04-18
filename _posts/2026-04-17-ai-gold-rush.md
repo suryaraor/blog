@@ -89,31 +89,4 @@ That answer will tell you everything you need to know.
 
 ---
 
-## Image Generation Prompt
-
-Create a **modern, conceptual illustration** for a thought-provoking Medium essay about AI economic concentration and wealth inequality in the AI boom.
-
-**Visual Elements:**
-- **PRIMARY IMAGE:** A diverging path or forking road-one path glowing brightly and ascending (showing 20% of companies rising), the other dimming and flatting (showing 80% struggling). Make it metaphorical, not literal.
-- **SECONDARY ELEMENT:** Subtle digital dots or nodes connecting to the bright path, symbolizing focus, strategy, and directed investment.
-- **Color palette:** Deep navy and charcoal (serious, not alarmist) with selective bright gold accents on the ascending path. Avoid corporate blues and safe corporate colors.
-- **Style:** Modern minimalist with subtle 3D depth. Conceptual rather than literal.
-- **Composition:** Slightly asymmetrical, with the ascending path occupying more visual weight to show dominance.
-- **Text overlay:** None (this will be added in design)
-- **Tone:** Thought-provoking and slightly unsettling-beautiful but making viewers uncomfortable.
-
-**Key mood:** Curiosity mixed with mild unease. The realization that something is shifting and the viewer is watching it happen.
-
-**Avoid:** Corporate stock photos, obvious "winner/loser" imagery, cliched AI symbols (circuits, robots), pie charts, bright/optimistic colors.
-
-**Dimensions:** 1200x630px (landscape format for Medium)
-
----
-
-**Article Details:**
-- **Word count:** 1,047 words
-- **Tone:** Witty, empathetic, slightly provocative
-- **Target audience:** Tech professionals, business leaders, and anyone concerned about AI's real-world impact
-- **Key sources:** PwC 2026 AI Performance Study, Stanford AI Index 2026 Report
-
 
