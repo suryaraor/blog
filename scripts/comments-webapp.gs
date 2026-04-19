@@ -200,7 +200,7 @@ function addComment(payload) {
       name,
       website,
       comment,
-      'pending',
+      'approved',
       timestamp,
       visitorHash,
       userAgent
@@ -210,8 +210,8 @@ function addComment(payload) {
 
     return {
       ok: true,
-      message: 'Comment submitted and pending approval.',
-      status: 'pending',
+      message: 'Comment posted.',
+      status: 'approved',
       approved_comments_count: getSummaryRow(postId).approved_comments_count,
       likes_count: getLikes(postId, visitorId).likes_count
     };
@@ -314,9 +314,6 @@ function validateCommentInput(postId, pageUrl, name, comment) {
     throw new Error('Comment must be between 5 and ' + COMMENTS_CONFIG.commentMaxLength + ' characters.');
   }
 
-  if (containsSpamKeyword(name + ' ' + comment)) {
-    throw new Error('Comment flagged by spam filter.');
-  }
 }
 
 function validateLikeInput(postId, visitorId) {
@@ -388,15 +385,6 @@ function rejectDuplicateComment(postId, visitorId, name, comment) {
         throw new Error('Duplicate comment detected. Please edit your message before submitting again.');
       }
     }
-  });
-}
-
-function containsSpamKeyword(text) {
-  var keywords = ['casino', 'viagra', 'crypto scam', 'free money', 'buy followers'];
-  var lower = String(text || '').toLowerCase();
-
-  return keywords.some(function (keyword) {
-    return lower.indexOf(keyword) !== -1;
   });
 }
 

@@ -415,7 +415,7 @@
       }
 
       updateCounts(data);
-      showMessage('Your comment was submitted and is pending approval.', 'success');
+      showMessage('Your comment is now live.', 'success');
     } catch (error) {
       showMessage(error.message || 'Unable to submit comment.', 'error');
     } finally {
