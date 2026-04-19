@@ -8,7 +8,7 @@
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    {% if page.layout == 'post' %}
+    {% if page.date and page.layout != 'post' %}
     <link rel="stylesheet" href="{{ '/assets/css/post-interactions.css' | relative_url }}">
     <script src="{{ '/assets/js/post-interactions.js' | relative_url }}" defer></script>
     {% endif %}
@@ -36,6 +36,15 @@
         <main>
             {{ content }}
         </main>
+
+        {% if page.date and page.layout != 'post' %}
+        {% include post-interactions.html
+          post_id=page.url
+          page_url=page.url
+          post_title=page.title
+          api_url=site.comments_api_url
+        %}
+        {% endif %}
 
         <footer>
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
