@@ -21,4 +21,4 @@ plugins:
 
 # Google Apps Script web app URL for comments and likes.
 # Set this after deploying the Apps Script backend.
-comments_api_url: "https://script.google.com/macros/s/AKfycbwn1KvY4zRu9v7ujWzJTdCFxSYHy5teZw0nCe5ihjJG1fNcnwqqcdKDyGvzQnZd13IFH/exec"
+comments_api_url: "https://script.google.com/macros/s/AKfycbwn1KvY4zRu9v7ujWzJTdCFxSYHy5teZw0nCe5ihjJG1fNcnwqqdKDyGvzQnZd13IFH/exec"
