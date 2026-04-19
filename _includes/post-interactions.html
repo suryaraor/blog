@@ -1,0 +1,89 @@
+{% assign post_id = include.post_id | default: page.url %}
+{% assign page_url = include.page_url | default: page.url %}
+{% assign post_title = include.post_title | default: page.title %}
+{% assign api_url = include.api_url | default: site.comments_api_url %}
+
+<section
+  class="post-interactions"
+  data-post-id="{{ post_id | escape }}"
+  data-page-url="{{ page_url | escape }}"
+  data-post-title="{{ post_title | escape }}"
+  data-api-url="{{ api_url | escape }}"
+  aria-labelledby="post-interactions-title"
+>
+  <div class="post-interactions__header">
+    <div>
+      <p class="post-interactions__eyebrow">Conversation</p>
+      <h2 id="post-interactions-title">Comments and likes</h2>
+    </div>
+    <p class="post-interactions__note">
+      Comments are moderated. New submissions start as pending.
+    </p>
+  </div>
+
+  <div class="post-interactions__stats" aria-live="polite">
+    <button type="button" class="post-like-button" data-like-button disabled>
+      <span class="post-like-button__label">Like this post</span>
+      <span class="post-like-button__count" data-like-count>0</span>
+    </button>
+    <div class="post-interactions__stat">
+      <span class="post-interactions__stat-label">Comments</span>
+      <strong data-comment-count>0</strong>
+    </div>
+  </div>
+
+  <div class="post-interactions__message" data-status-message role="status" aria-live="polite"></div>
+
+  <div class="post-interactions__comments">
+    <div class="post-interactions__loading" data-loading>
+      Loading comments and likes...
+    </div>
+    <ol class="comment-list" data-comment-list></ol>
+  </div>
+
+  <form class="comment-form" data-comment-form novalidate>
+    <div class="comment-form__grid">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" maxlength="80" autocomplete="name" required>
+      </label>
+
+      <label>
+        <span>Website <small>(optional)</small></span>
+        <input type="url" name="website" maxlength="200" autocomplete="url" placeholder="https://example.com">
+      </label>
+    </div>
+
+    <label>
+      <span>Comment</span>
+      <textarea name="comment" maxlength="2000" rows="6" required></textarea>
+    </label>
+
+    <label class="comment-form__honeypot" aria-hidden="true">
+      <span>Leave this field blank</span>
+      <input type="text" name="company" tabindex="-1" autocomplete="off" maxlength="100">
+    </label>
+
+    <input type="hidden" name="post_id" value="{{ post_id | escape }}">
+    <input type="hidden" name="page_url" value="{{ page_url | escape }}">
+    <input type="hidden" name="post_title" value="{{ post_title | escape }}">
+    <input type="hidden" name="rendered_at" data-rendered-at>
+    <input type="hidden" name="visitor_id" data-visitor-id>
+    <input type="hidden" name="user_agent" data-user-agent>
+
+    <div class="comment-form__actions">
+      <button type="submit" data-comment-submit>Post comment</button>
+      <p class="comment-form__hint">
+        Please wait a few seconds after the form appears before submitting.
+      </p>
+    </div>
+  </form>
+
+  <details class="post-interactions__admin-note">
+    <summary>Admin note</summary>
+    <p>
+      Moderate comments in the Google Sheet by changing status from <strong>pending</strong> to
+      <strong>approved</strong> or <strong>spam</strong>. The frontend only renders approved comments.
+    </p>
+  </details>
+</section>

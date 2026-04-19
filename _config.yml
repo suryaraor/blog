@@ -18,3 +18,7 @@ defaults:
       robots: "noindex, nofollow"
 plugins:
   - jekyll-feed
+
+# Google Apps Script web app URL for comments and likes.
+# Set this after deploying the Apps Script backend.
+comments_api_url: ""
