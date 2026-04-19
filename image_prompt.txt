@@ -1,0 +1,67 @@
+# Image Prompts
+
+---
+Title: The Uncomfortable Gap Between Who You Were and Who You're Becoming
+Date: 2026-04-17
+Source: 2026-04-17-the-uncomfortable-gap.md
+
+Create a **conceptual digital illustration** for a thought-provoking Medium essay about personal growth and the uncomfortable gap between past and present selves.
+
+**Visual Elements:**
+- **Primary Image:** A figure shown in profile, with a transparent/ghosted version of themselves visible behind, slightly younger and smaller-suggesting the presence of who they were. The past self should be semi-transparent or faded, not fully erased.
+- **Secondary Element:** A subtle mirror or reflective surface showing not a perfect reflection, but a distorted or shifted one-symbolizing how we don't fully recognize ourselves when we look back.
+
+**Color Palette:** Muted jewel tones (dusty indigo, terracotta, sage green) with metallic accents (soft gold or silver). Avoid bright pops of color or high-energy tones; this should feel introspective rather than energetic.
+
+**Style:** Modern, minimalist, slightly surreal. Hand-drawn elements mixed with clean digital work. Emotional rather than literal.
+
+**Composition:** Asymmetrical, with the figure positioned slightly off-center. Negative space is crucial-leave room for contemplation.
+
+**Tone:** Thoughtful, slightly unsettling in a way that's beautiful rather than disturbing. There should be a sense of quiet movement, not stagnation.
+
+**Key Mood:** Bittersweetness, introspection, quiet power, the ache of change.
+
+**Avoid:** Stock photos, literal interpretations, overly bright colors, corporate minimalism, perfectly symmetrical compositions, obvious metaphors (like clocks or hourglasses).
+
+**Dimensions:** 1200x630px (landscape format for Medium)
+
+---
+Title: The Unsexy Ai Breakthrough Nobody Is Talking About
+Date: 2026-04-18
+Source: 2026-04-18-the-unsexy-ai-breakthrough-nobody-is-talking-about.md
+
+Create a modern conceptual illustration for a thought-provoking Medium essay about AI efficiency breakthroughs and the shift from "bigger is better" to "smarter is better."
+
+Visual Elements:
+- PRIMARY IMAGE: A massive, ornate, over-engineered machine (representing bloated AI models) gradually transforming into a sleek, minimal geometric form (representing efficient compression) through a central moment of realization/breakthrough
+- SECONDARY ELEMENT: A faint mathematical visualization in the background-perhaps polar coordinate grids or compression algorithms suggested through abstract geometry
+
+Color palette: Sophisticated and slightly unsettling-deep blues and silvers with accents of warm amber to suggest the "aha moment" when old assumptions break. Avoid overly bright or corporate-feeling colors.
+
+Style: Modern, minimalist, conceptual-geometric and clean with subtle 3D depth. The illustration should feel intelligent and precise, not mystical or unnecessarily complex.
+
+Composition: Asymmetrical; the transformation/breakthrough should occur slightly off-center, creating visual tension and drawing the eye toward the moment of change.
+
+Text overlay: None (this will be added in design)
+
+Tone: Thoughtful, slightly challenging, empowering-the feeling of discovering you've been solving the problem the hard way all along.
+
+Key mood: Intellectual clarity, realization, strategic recalibration
+
+Avoid: Corporate stock photos, mechanical/industrial cliches, anything that looks like a "data center," overly literal representations of compression or mathematics, bright cheerful gradients
+
+Dimensions: 1200x630px (landscape format for Medium)
+
+---
+Title: Why Your College Degree Just Became Obsolete (And Universities Will Never Admit It)
+Date: 2026-04-19
+Source: 2026-04-19-why-your-college-degree-just-became-obsolete-and-universities-will-never-admit-it.md
+
+A photo-realistic image of a college campus quad at dusk: prestigious stone buildings lit by golden hour light, students walking in the background *but all of their faces are blurred and identical*, rendering them featureless. In the foreground, a neon sign reading "50% PASSING SCORE" is mounted on a classical building's facade. The atmosphere is beautiful but deeply unsettling—the infrastructure is gorgeous and permanent, but the humans moving through it are interchangeable. Shot with cinematic depth of field, golden color grading, subtle desaturation of the human figures to make the environment feel more real than the people inhabiting it.
+
+---
+Title: Your Creative Work Just Became Free Training Data (And the Lawsuits Just Started)
+Date: 2026-04-19
+Source: 2026-04-19-your-creative-work-just-became-free-training-data-and-the-lawsuits-just-started.md
+
+A photorealistic image of a recording studio or creative workspace at dusk: a creator's desk covered with equipment (camera, microphone, midi keyboard, art tablet) all bathed in golden hour light through large windows. In the foreground, the equipment is sharp and detailed in rich color. In the background, visible through the window behind, a massive server farm or data center glows with cold blue and white lights, progressively sharper and more in-focus than the creator's tools—a visual inversion of depth. The atmosphere feels both beautiful and unsettling: the creative tools are personal and handcrafted, while the data center feels vast, inevitable, and cold. Shot with cinematic depth of field, warm color grading on the studio side, cool color grading on the data center side. The overall effect is "your craftsmanship vs. the infrastructure that's stealing it."

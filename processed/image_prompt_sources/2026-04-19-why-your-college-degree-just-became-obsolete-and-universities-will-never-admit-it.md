@@ -97,6 +97,9 @@ Then everyone else catches up.
 
 ---
 
+**IMAGE PROMPT:**
+A photo-realistic image of a college campus quad at dusk: prestigious stone buildings lit by golden hour light, students walking in the background *but all of their faces are blurred and identical*, rendering them featureless. In the foreground, a neon sign reading "50% PASSING SCORE" is mounted on a classical building's facade. The atmosphere is beautiful but deeply unsettling—the infrastructure is gorgeous and permanent, but the humans moving through it are interchangeable. Shot with cinematic depth of field, golden color grading, subtle desaturation of the human figures to make the environment feel more real than the people inhabiting it.
+
 ---
 
 **Word Count: 1,087 words**

@@ -81,3 +81,7 @@ Before summer 2026 arrives and the first court decisions land, ask yourself: If 
 The lawsuits are a distraction from the real crisis. Pay attention to what's being extracted, not just what's being litigated.
 
 ---
+
+## Image Prompt:
+
+A photorealistic image of a recording studio or creative workspace at dusk: a creator's desk covered with equipment (camera, microphone, midi keyboard, art tablet) all bathed in golden hour light through large windows. In the foreground, the equipment is sharp and detailed in rich color. In the background, visible through the window behind, a massive server farm or data center glows with cold blue and white lights, progressively sharper and more in-focus than the creator's tools—a visual inversion of depth. The atmosphere feels both beautiful and unsettling: the creative tools are personal and handcrafted, while the data center feels vast, inevitable, and cold. Shot with cinematic depth of field, warm color grading on the studio side, cool color grading on the data center side. The overall effect is "your craftsmanship vs. the infrastructure that's stealing it."

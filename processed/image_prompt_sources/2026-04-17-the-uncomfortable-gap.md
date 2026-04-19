@@ -102,3 +102,27 @@ Don't answer it trying to sound wise. Just be honest.
 Because the people who change the world aren't the ones who stay the same. They're the ones brave enough to become someone else, over and over again, and call it growth instead of betrayal.
 
 ---
+
+## Image Prompt for This Article
+
+Create a **conceptual digital illustration** for a thought-provoking Medium essay about personal growth and the uncomfortable gap between past and present selves.
+
+**Visual Elements:**
+- **Primary Image:** A figure shown in profile, with a transparent/ghosted version of themselves visible behind, slightly younger and smaller-suggesting the presence of who they were. The past self should be semi-transparent or faded, not fully erased.
+- **Secondary Element:** A subtle mirror or reflective surface showing not a perfect reflection, but a distorted or shifted one-symbolizing how we don't fully recognize ourselves when we look back.
+
+**Color Palette:** Muted jewel tones (dusty indigo, terracotta, sage green) with metallic accents (soft gold or silver). Avoid bright pops of color or high-energy tones; this should feel introspective rather than energetic.
+
+**Style:** Modern, minimalist, slightly surreal. Hand-drawn elements mixed with clean digital work. Emotional rather than literal.
+
+**Composition:** Asymmetrical, with the figure positioned slightly off-center. Negative space is crucial-leave room for contemplation.
+
+**Tone:** Thoughtful, slightly unsettling in a way that's beautiful rather than disturbing. There should be a sense of quiet movement, not stagnation.
+
+**Key Mood:** Bittersweetness, introspection, quiet power, the ache of change.
+
+**Avoid:** Stock photos, literal interpretations, overly bright colors, corporate minimalism, perfectly symmetrical compositions, obvious metaphors (like clocks or hourglasses).
+
+**Dimensions:** 1200x630px (landscape format for Medium)
+
+
