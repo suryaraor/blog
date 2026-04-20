@@ -21,6 +21,36 @@ Execute:
 powershell -NoProfile -ExecutionPolicy Bypass -File "scripts/move_sensitive_posts_to_unlisted.ps1"
 ```
 
+## End-to-End Post Processing Automation
+
+Use [scripts/process_and_publish_posts.py](scripts/process_and_publish_posts.py) to automate the recurring workflow:
+
+- find unprocessed root markdown files from the workspace folder
+- clean mojibake and strip headline-option and The Hook sections
+- normalize front matter and write Jekyll output
+- classify to [_posts](_posts) or [_unlisted](_unlisted) with sensitivity scoring
+- move source files into processed
+- validate output
+- optionally run Jekyll build and push to gh-pages
+
+Dry run (no file writes):
+
+```powershell
+python scripts/process_and_publish_posts.py --dry-run
+```
+
+Process and validate files:
+
+```powershell
+python scripts/process_and_publish_posts.py --run-build
+```
+
+Process, validate, commit and push:
+
+```powershell
+python scripts/process_and_publish_posts.py --run-build --git-push
+```
+
 ## Comments and Likes
 
 This blog includes a free comments and likes system that uses Google Apps Script and Google Sheets, so it works with a fully static GitHub Pages site.

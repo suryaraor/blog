@@ -1,0 +1,579 @@
+#!/usr/bin/env python3
+"""Process root-level markdown drafts into Jekyll posts and optionally push.
+
+Workflow:
+1) Find unprocessed source markdown files in workspace root.
+2) Clean mojibake and remove requested sections.
+3) Normalize front matter and write Jekyll post to _posts or _unlisted.
+4) Move processed source file into workspace processed folder.
+5) Validate output, optionally run Jekyll build, optionally git commit/push.
+"""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import math
+import re
+import shutil
+import subprocess
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
+
+
+SKIP_NAME_TOKENS = (
+    "image_prompt",
+    "headlines",
+    "topics",
+    "prompt",
+    "skill",
+    "template",
+    "readme",
+    "checklist",
+    "formulas",
+    "covered_categories",
+    "execution_report",
+    "toolkit",
+)
+
+TIER_KEYWORDS = {
+    3: [
+        "deepfake",
+        "weapon",
+        "military",
+        "moratorium",
+        "arms race",
+        "legislature",
+        "extinction",
+        "pentagon",
+        "layoff",
+    ],
+    2: [
+        "wealth gap",
+        "power grid",
+        "belief divide",
+        "controversial",
+        "ipo",
+        "inequality",
+        "political",
+        "job loss",
+    ],
+    1: ["regulation", "crisis", "automat"],
+}
+
+HEADING_HEADLINE_RE = re.compile(r"^\s{0,3}#{1,6}\s*(?:five|5)\b.*headlines?\s*$", re.IGNORECASE)
+THE_HOOK_RE = re.compile(r"^\s{0,3}#{1,6}\s*the hook\b", re.IGNORECASE)
+H1_RE = re.compile(r"^\s{0,3}#\s+(.+?)\s*$", re.MULTILINE)
+
+
+def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
+    blog_root = script_path.resolve().parents[1]
+    workspace_root = blog_root.parents[1]
+    return {
+        "workspace_root": workspace_root,
+        "blog_root": blog_root,
+        "source_dir": workspace_root,
+        "processed_dir": workspace_root / "processed",
+        "posts_dir": blog_root / "_posts",
+        "unlisted_dir": blog_root / "_unlisted",
+    }
+
+
+def parse_args() -> argparse.Namespace:
+    paths = build_workspace_paths(Path(__file__))
+
+    parser = argparse.ArgumentParser(
+        description="Process root markdown drafts to Jekyll posts and optionally push."
+    )
+    parser.add_argument("--source-dir", type=Path, default=paths["source_dir"])
+    parser.add_argument("--processed-dir", type=Path, default=paths["processed_dir"])
+    parser.add_argument("--blog-root", type=Path, default=paths["blog_root"])
+    parser.add_argument("--posts-dir", type=Path, default=paths["posts_dir"])
+    parser.add_argument("--unlisted-dir", type=Path, default=paths["unlisted_dir"])
+    parser.add_argument("--publish-date", default=dt.date.today().isoformat())
+    parser.add_argument("--branch", default="gh-pages")
+    parser.add_argument("--remote", default="origin")
+    parser.add_argument("--run-build", action="store_true", help="Run bundle exec jekyll build")
+    parser.add_argument("--git-push", action="store_true", help="Commit and push written posts")
+    parser.add_argument("--git-user-name", default="")
+    parser.add_argument("--git-user-email", default="")
+    parser.add_argument(
+        "--overwrite-existing",
+        action="store_true",
+        help="Overwrite existing output file if publish-date + slug already exists",
+    )
+    parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing")
+    return parser.parse_args()
+
+
+def read_text_utf8_replace(path: Path) -> str:
+    return path.read_bytes().decode("utf-8", errors="replace")
+
+
+def fix_mojibake(text: str) -> Tuple[str, List[str]]:
+    replacements = [
+        ("â€”", "—"),
+        ("â€“", "–"),
+        ("â€™", "'"),
+        ("â€˜", "'"),
+        ("â€œ", '"'),
+        ("â€\x9d", '"'),
+        ("â€", '"'),
+        ("â€", '"'),
+        ("â€", '"'),
+        ("Â·", "·"),
+        ("â€¢", "•"),
+        ("clichÃ©", "cliché"),
+        ("naÃ¯vetÃ©", "naïveté"),
+        ("Ã©", "é"),
+        ("Ã¨", "è"),
+        ("Ãª", "ê"),
+        ("Ã«", "ë"),
+        ("Ã¡", "á"),
+        ("Ã ", "à"),
+        ("Ã¢", "â"),
+        ("Ã£", "ã"),
+        ("Ã¶", "ö"),
+        ("Ã´", "ô"),
+        ("Ã³", "ó"),
+        ("Ãº", "ú"),
+        ("Ã¹", "ù"),
+        ("Ã¼", "ü"),
+        ("Ã±", "ñ"),
+        ("Ã§", "ç"),
+        ("Ã¯", "ï"),
+        ("Ã®", "î"),
+        ("Ã­", "í"),
+    ]
+
+    applied: List[str] = []
+    cleaned = text
+    for old, new in replacements:
+        if old in cleaned:
+            cleaned = cleaned.replace(old, new)
+            applied.append(f"{old} -> {new}")
+
+    return cleaned, applied
+
+
+def filename_to_title(filename: str) -> str:
+    stem = Path(filename).stem
+    stem = re.sub(r"^\d{4}[_-]\d{2}[_-]\d{2}(?:[_-]\d{2})?[_-]?", "", stem)
+    stem = re.sub(r"[_-]+", " ", stem).strip()
+    if not stem:
+        stem = "Untitled"
+    return " ".join(part.capitalize() for part in stem.split())
+
+
+def extract_title(text: str, source_name: str) -> str:
+    m = H1_RE.search(text)
+    if m:
+        return m.group(1).strip()
+    return filename_to_title(source_name)
+
+
+def slugify_title(title: str) -> str:
+    t = title.lower()
+    t = re.sub(r"[\'\"’“”]", "", t)
+    t = re.sub(r"[^a-z0-9]+", " ", t)
+    t = re.sub(r"\s+", "-", t).strip("-")
+    return t or "untitled"
+
+
+def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
+    lines = text.splitlines()
+    out: List[str] = []
+    i = 0
+    removed_headline_blocks = 0
+    removed_hook_headings = 0
+
+    while i < len(lines):
+        line = lines[i]
+
+        if HEADING_HEADLINE_RE.match(line):
+            removed_headline_blocks += 1
+            i += 1
+
+            while i < len(lines) and lines[i].strip() == "":
+                i += 1
+
+            while i < len(lines):
+                cur = lines[i]
+                if re.match(r"^\s{0,3}\d+[\.)]\s+", cur):
+                    i += 1
+                    continue
+                if re.match(r"^\s{2,}\S+", cur):
+                    i += 1
+                    continue
+                if cur.strip() == "":
+                    i += 1
+                    continue
+                break
+
+            if i < len(lines) and re.match(r"^\s*---\s*$", lines[i]):
+                i += 1
+
+            continue
+
+        if THE_HOOK_RE.match(line):
+            removed_hook_headings += 1
+            i += 1
+            continue
+
+        out.append(line)
+        i += 1
+
+    return "\n".join(out).strip() + "\n", {
+        "headline_blocks": removed_headline_blocks,
+        "hook_headings": removed_hook_headings,
+    }
+
+
+def parse_front_matter(text: str) -> Tuple[Optional[List[str]], str]:
+    if not text.startswith("---"):
+        return None, text
+
+    lines = text.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return None, text
+
+    end_idx = None
+    for idx in range(1, len(lines)):
+        if lines[idx].strip() == "---":
+            end_idx = idx
+            break
+
+    if end_idx is None:
+        return None, text
+
+    front_lines = lines[1:end_idx]
+    body = "\n".join(lines[end_idx + 1 :]).lstrip("\n")
+    return front_lines, body
+
+
+def normalize_front_matter(text: str, title: str, publish_date: str) -> str:
+    front_lines, body = parse_front_matter(text)
+
+    extra_lines: List[str] = []
+    if front_lines is not None:
+        for line in front_lines:
+            if re.match(r"^\s*(layout|title|date)\s*:", line, re.IGNORECASE):
+                continue
+            extra_lines.append(line)
+
+    escaped_title = title.replace('"', '\\"')
+    fm = [
+        "---",
+        "layout: default",
+        f'title: "{escaped_title}"',
+        f"date: {publish_date}",
+    ]
+    fm.extend(extra_lines)
+    fm.append("---")
+
+    if not body.endswith("\n"):
+        body += "\n"
+
+    return "\n".join(fm) + "\n" + body
+
+
+def keyword_pattern(keyword: str) -> re.Pattern[str]:
+    if keyword == "automat":
+        return re.compile(r"\bautomat\w*\b", re.IGNORECASE)
+    escaped = re.escape(keyword).replace(r"\ ", r"\s+")
+    return re.compile(rf"\b{escaped}\b", re.IGNORECASE)
+
+
+def sensitivity_score(title: str, body_text: str) -> Tuple[int, List[Tuple[str, str, int]]]:
+    heading_lines = "\n".join(
+        line for line in body_text.splitlines() if re.match(r"^\s{0,3}#{1,6}\s+", line)
+    )
+    non_heading_lines = "\n".join(
+        line for line in body_text.splitlines() if not re.match(r"^\s{0,3}#{1,6}\s+", line)
+    )
+
+    details: List[Tuple[str, str, int]] = []
+
+    for tier, keywords in TIER_KEYWORDS.items():
+        for kw in keywords:
+            pat = keyword_pattern(kw)
+            options: List[Tuple[str, int]] = []
+
+            if pat.search(title):
+                options.append(("title", int(math.ceil(tier * 1.5))))
+            if pat.search(heading_lines):
+                options.append(("heading", max(0, int(math.floor(tier * 0.5)))))
+            if pat.search(non_heading_lines):
+                options.append(("body", tier))
+
+            if options:
+                best = sorted(options, key=lambda x: x[1], reverse=True)[0]
+                details.append((kw, best[0], best[1]))
+
+    score = sum(p for _, _, p in details)
+    if len(details) >= 3:
+        score += 1
+        details.append(("cluster_bonus", "global", 1))
+
+    return score, details
+
+
+def find_unprocessed_files(source_dir: Path, processed_dir: Path) -> List[Path]:
+    processed_names = {p.name.lower() for p in processed_dir.glob("*.md")}
+
+    candidates: List[Path] = []
+    for p in source_dir.iterdir():
+        if not p.is_file() or p.suffix.lower() != ".md":
+            continue
+
+        low_name = p.name.lower()
+        if any(tok in low_name for tok in SKIP_NAME_TOKENS):
+            continue
+        if low_name in processed_names:
+            continue
+        candidates.append(p)
+
+    return sorted(candidates)
+
+
+def slug_already_exists(posts_dir: Path, unlisted_dir: Path, slug: str) -> bool:
+    pattern = f"*-{slug}.md"
+    return any(posts_dir.glob(pattern)) or any(unlisted_dir.glob(pattern))
+
+
+@dataclass
+class FileReport:
+    source: Path
+    output: Path
+    title: str
+    slug: str
+    destination: str
+    score: int
+    score_details: List[Tuple[str, str, int]]
+    removed: Dict[str, int]
+    mojibake_fixes: List[str]
+    validations: Dict[str, bool]
+
+
+def validate_output(path: Path, content: str) -> Dict[str, bool]:
+    raw = path.read_bytes()
+    checks = {
+        "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", path.name)),
+        "starts_with_front_matter": content.startswith("---\n"),
+        "no_headline_heading": not bool(HEADING_HEADLINE_RE.search(content)),
+        "no_the_hook_heading": not bool(THE_HOOK_RE.search(content)),
+        "no_mojibake_patterns": not bool(re.search(r"â€|Ã|Â·", content)),
+        "utf8_no_bom": raw[:3] != b"\xef\xbb\xbf",
+    }
+    return checks
+
+
+def run_jekyll_build(blog_root: Path) -> Tuple[str, str]:
+    try:
+        proc = subprocess.run(
+            ["bundle", "exec", "jekyll", "build"],
+            cwd=blog_root,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+    except FileNotFoundError as exc:
+        return "non-blocking", f"bundle not found: {exc}"
+
+    if proc.returncode == 0:
+        return "success", proc.stdout.strip()
+
+    out = (proc.stdout + "\n" + proc.stderr).lower()
+    if "bundle: command not found" in out or "bundler" in out or "ruby" in out:
+        return "non-blocking", proc.stderr.strip() or proc.stdout.strip()
+
+    return "failed", proc.stderr.strip() or proc.stdout.strip()
+
+
+def run_git(args: argparse.Namespace, written_paths: List[Path]) -> Tuple[bool, str]:
+    if not written_paths:
+        return True, "No new output files to commit."
+
+    rel_paths = [str(p.relative_to(args.blog_root)).replace("\\", "/") for p in written_paths]
+
+    def run_cmd(cmd: List[str]) -> subprocess.CompletedProcess[str]:
+        return subprocess.run(cmd, cwd=args.blog_root, text=True, capture_output=True, check=False)
+
+    if args.git_user_name:
+        run_cmd(["git", "config", "user.name", args.git_user_name])
+    if args.git_user_email:
+        run_cmd(["git", "config", "user.email", args.git_user_email])
+
+    add = run_cmd(["git", "add", *rel_paths])
+    if add.returncode != 0:
+        return False, add.stderr.strip() or add.stdout.strip()
+
+    message = f"Automate blog post import for {args.publish_date} ({len(rel_paths)} files)"
+    commit = run_cmd(["git", "commit", "-m", message])
+    if commit.returncode != 0:
+        output = (commit.stderr + "\n" + commit.stdout).strip()
+        if "nothing to commit" in output.lower():
+            return True, "Nothing to commit."
+        return False, output
+
+    push = run_cmd(["git", "push", args.remote, args.branch])
+    if push.returncode != 0:
+        return False, push.stderr.strip() or push.stdout.strip()
+
+    return True, (commit.stdout + "\n" + push.stdout + "\n" + push.stderr).strip()
+
+
+def print_report(
+    reports: List[FileReport],
+    build_result: Optional[Tuple[str, str]],
+    git_result: Optional[Tuple[bool, str]],
+) -> None:
+    print("\n=== Processing Report ===")
+
+    for rep in reports:
+        print(f"\nSource: {rep.source}")
+        print(f"Output: {rep.output}")
+        print(f"Title: {rep.title}")
+        print(f"Slug: {rep.slug}")
+        print(f"Destination: {rep.destination}")
+        print(f"Sensitivity score: {rep.score}")
+        if rep.score_details:
+            print("Score details:")
+            for kw, loc, pts in rep.score_details:
+                print(f"  - {kw} [{loc}] = {pts}")
+
+        print(
+            "Sections removed: "
+            f"headlines={rep.removed['headline_blocks']}, the_hook={rep.removed['hook_headings']}"
+        )
+        if rep.mojibake_fixes:
+            print(f"Mojibake fixes: yes ({len(rep.mojibake_fixes)} replacements)")
+        else:
+            print("Mojibake fixes: no")
+
+        print("Validation:")
+        for check, ok in rep.validations.items():
+            print(f"  - {check}: {'PASS' if ok else 'FAIL'}")
+
+    if build_result is not None:
+        status, details = build_result
+        print(f"\nJekyll build: {status}")
+        if details:
+            print(details)
+
+    if git_result is not None:
+        ok, details = git_result
+        print(f"\nGit push: {'success' if ok else 'failure'}")
+        if details:
+            print(details)
+
+
+def main() -> int:
+    args = parse_args()
+
+    args.source_dir = args.source_dir.resolve()
+    args.processed_dir = args.processed_dir.resolve()
+    args.blog_root = args.blog_root.resolve()
+    args.posts_dir = args.posts_dir.resolve()
+    args.unlisted_dir = args.unlisted_dir.resolve()
+
+    for d in (args.processed_dir, args.posts_dir, args.unlisted_dir):
+        d.mkdir(parents=True, exist_ok=True)
+
+    unprocessed = find_unprocessed_files(args.source_dir, args.processed_dir)
+    if not unprocessed:
+        print("Nothing to process")
+        return 0
+
+    reports: List[FileReport] = []
+    written_paths: List[Path] = []
+
+    for source_file in unprocessed:
+        original = read_text_utf8_replace(source_file)
+        fixed_text, mojibake_changes = fix_mojibake(original)
+        title = extract_title(fixed_text, source_file.name)
+        slug = slugify_title(title)
+
+        if slug_already_exists(args.posts_dir, args.unlisted_dir, slug) and not args.overwrite_existing:
+            print(
+                f"Skipping {source_file.name}: slug '{slug}' already exists in _posts or _unlisted. "
+                "Use --overwrite-existing to replace it."
+            )
+            continue
+
+        cleaned, removed = clean_sections(fixed_text)
+        normalized = normalize_front_matter(cleaned, title=title, publish_date=args.publish_date)
+
+        score, score_details = sensitivity_score(title, normalized)
+        destination_name = "_unlisted" if score >= 3 else "_posts"
+        destination_dir = args.unlisted_dir if score >= 3 else args.posts_dir
+
+        output_path = destination_dir / f"{args.publish_date}-{slug}.md"
+
+        if output_path.exists() and not args.overwrite_existing:
+            print(
+                f"Skipping {source_file.name}: {output_path.name} already exists. "
+                "Use --overwrite-existing to replace it."
+            )
+            continue
+
+        if not args.dry_run:
+            output_path.write_text(normalized, encoding="utf-8", newline="\n")
+            target_processed = args.processed_dir / source_file.name
+            if target_processed.exists():
+                target_processed.unlink()
+            shutil.move(str(source_file), str(target_processed))
+
+            validations = validate_output(output_path, normalized)
+            written_paths.append(output_path)
+        else:
+            validations = {
+                "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", output_path.name)),
+                "starts_with_front_matter": normalized.startswith("---\n"),
+                "no_headline_heading": not bool(HEADING_HEADLINE_RE.search(normalized)),
+                "no_the_hook_heading": not bool(THE_HOOK_RE.search(normalized)),
+                "no_mojibake_patterns": not bool(re.search(r"â€|Ã|Â·", normalized)),
+                "utf8_no_bom": True,
+            }
+
+        reports.append(
+            FileReport(
+                source=source_file,
+                output=output_path,
+                title=title,
+                slug=slug,
+                destination=destination_name,
+                score=score,
+                score_details=score_details,
+                removed=removed,
+                mojibake_fixes=mojibake_changes,
+                validations=validations,
+            )
+        )
+
+    if not reports:
+        print("Nothing to process")
+        return 0
+
+    build_result = run_jekyll_build(args.blog_root) if args.run_build and not args.dry_run else None
+    git_result = run_git(args, written_paths) if args.git_push and not args.dry_run else None
+
+    print_report(reports, build_result, git_result)
+
+    failed_validation = any(not all(r.validations.values()) for r in reports)
+    if failed_validation:
+        return 2
+
+    if build_result and build_result[0] == "failed":
+        return 3
+
+    if git_result and not git_result[0]:
+        return 4
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
