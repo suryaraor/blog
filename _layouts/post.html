@@ -17,6 +17,12 @@ layout: default
             {% if page.author %}<span>by {{ page.author }}</span>{% endif %}
             <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
         </div>
+        <div class="post-audio-controls" aria-live="polite">
+            <button type="button" class="post-audio-button" data-audio-button>
+                Play aloud
+            </button>
+            <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
+        </div>
     </header>
 
     <aside class="post-toc" id="post-toc" hidden>
@@ -40,6 +46,12 @@ layout: default
 document.addEventListener('DOMContentLoaded', function () {
     var progressBar = document.getElementById('reading-progress-bar');
     var article = document.querySelector('.post-shell');
+    var audioButton = document.querySelector('[data-audio-button]');
+    var audioStatus = document.querySelector('[data-audio-status]');
+    var content = document.querySelector('.post-content');
+    var speech = null;
+    var speechState = 'idle';
+    var speechSupported = Boolean(window.speechSynthesis && typeof window.SpeechSynthesisUtterance === 'function');
 
     function updateProgress() {
         if (!progressBar || !article) {
@@ -54,9 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
         progressBar.style.transform = 'scaleX(' + ratio + ')';
     }
 
-    var content = document.querySelector('.post-content');
     var toc = document.getElementById('post-toc');
     var tocNav = document.getElementById('post-toc-nav');
+
+    if (audioButton && audioStatus) {
+        setupAudioControls();
+    }
 
     if (content && toc && tocNav) {
         var headings = content.querySelectorAll('h2, h3');
@@ -85,5 +100,144 @@ document.addEventListener('DOMContentLoaded', function () {
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
     window.addEventListener('resize', updateProgress);
+
+    function setupAudioControls() {
+        if (!speechSupported) {
+            audioButton.disabled = true;
+            audioButton.textContent = 'Play aloud unavailable';
+            audioStatus.textContent = 'Speech playback is not supported in this browser.';
+            return;
+        }
+
+        audioButton.addEventListener('click', handleAudioButtonClick);
+        window.addEventListener('beforeunload', stopSpeech);
+        updateAudioUI();
+    }
+
+    function handleAudioButtonClick() {
+        if (!content) {
+            audioStatus.textContent = 'No article text found to read.';
+            return;
+        }
+
+        if (speech && speechState === 'paused') {
+            window.speechSynthesis.resume();
+            speechState = 'speaking';
+            updateAudioUI();
+            return;
+        }
+
+        if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+            window.speechSynthesis.pause();
+            speechState = 'paused';
+            updateAudioUI();
+            return;
+        }
+
+        startSpeech();
+    }
+
+    function startSpeech() {
+        stopSpeech();
+
+        var text = buildSpeechText();
+        if (!text) {
+            audioStatus.textContent = 'No readable article content was found.';
+            return;
+        }
+
+        speech = new window.SpeechSynthesisUtterance(text);
+        speech.lang = document.documentElement.lang || navigator.language || 'en-US';
+        speech.rate = 1;
+        speech.pitch = 1;
+        speech.onstart = function () {
+            speechState = 'speaking';
+            updateAudioUI();
+        };
+        speech.onend = finishSpeech;
+        speech.onerror = finishSpeech;
+
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(speech);
+        speechState = 'speaking';
+        updateAudioUI();
+    }
+
+    function finishSpeech() {
+        speech = null;
+        speechState = 'idle';
+        updateAudioUI();
+    }
+
+    function stopSpeech() {
+        if (!speechSupported) {
+            return;
+        }
+
+        window.speechSynthesis.cancel();
+        speech = null;
+        speechState = 'idle';
+    }
+
+    function buildSpeechText() {
+        var parts = [];
+        if (pageTitle()) {
+            parts.push(pageTitle());
+        }
+
+        if (!content) {
+            return parts.join('\n\n');
+        }
+
+        var paragraphs = content.querySelectorAll('h2, h3, p, li, blockquote, figcaption');
+        for (var i = 0; i < paragraphs.length; i++) {
+            var text = normalizeSpeechText(paragraphs[i].innerText || paragraphs[i].textContent || '');
+            if (text) {
+                parts.push(text);
+            }
+        }
+
+        return parts.join('\n\n');
+    }
+
+    function normalizeSpeechText(text) {
+        return String(text || '')
+            .replace(/\s+/g, ' ')
+            .replace(/\u00a0/g, ' ')
+            .trim();
+    }
+
+    function pageTitle() {
+        var heading = document.querySelector('.post-header h1');
+        return heading ? normalizeSpeechText(heading.textContent || '') : '';
+    }
+
+    function updateAudioUI() {
+        if (!audioButton || !audioStatus) {
+            return;
+        }
+
+        if (!speechSupported) {
+            return;
+        }
+
+        if (speechState === 'speaking' && window.speechSynthesis.paused) {
+            audioButton.textContent = 'Resume aloud';
+            audioButton.setAttribute('aria-label', 'Resume reading the article aloud');
+            audioStatus.textContent = 'Reading paused.';
+            return;
+        }
+
+        if (speechState === 'speaking') {
+            audioButton.textContent = 'Pause aloud';
+            audioButton.setAttribute('aria-label', 'Pause reading the article aloud');
+            audioStatus.textContent = 'Reading this article now.';
+            return;
+        }
+
+        audioButton.textContent = 'Play aloud';
+        audioButton.setAttribute('aria-label', 'Read the article aloud');
+        audioStatus.textContent = 'Reads this article in your browser.';
+    }
 });
 </script>
