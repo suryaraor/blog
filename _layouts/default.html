@@ -41,8 +41,12 @@
                 </button>
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
-            {% endif %}
+            <div class="post-content">
+                {{ content }}
+            </div>
+            {% else %}
             {{ content }}
+            {% endif %}
         </main>
 
         {% if page.date and page.layout != 'post' %}
