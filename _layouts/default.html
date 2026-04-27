@@ -117,6 +117,41 @@
                 startSpeech();
             }
 
+            function pickBestVoice(lang) {
+                var voices = window.speechSynthesis.getVoices();
+                if (!voices.length) return null;
+
+                var en = voices.filter(function (v) {
+                    return v.lang && v.lang.toLowerCase().startsWith('en');
+                });
+                if (!en.length) en = voices;
+
+                // Priority list — first match wins
+                var priorities = [
+                    // iOS / macOS Siri voices (most natural on iPad)
+                    function (v) { return /samantha/i.test(v.name); },
+                    function (v) { return /\bsiri\b/i.test(v.name); },
+                    function (v) { return /com\.apple\.ttsbundle/i.test(v.voiceURI) && !/-compact$/i.test(v.voiceURI); },
+                    // Edge / Windows Neural voices
+                    function (v) { return /natural/i.test(v.name); },
+                    function (v) { return /aria|jenny|guy|davis/i.test(v.name) && /online/i.test(v.name); },
+                    // Google voices (Chrome desktop)
+                    function (v) { return /google/i.test(v.name) && /female/i.test(v.name); },
+                    function (v) { return /google/i.test(v.name); },
+                    // Any non-compact local voice
+                    function (v) { return !/-compact$/i.test(v.voiceURI || ''); },
+                    // Absolute fallback
+                    function () { return true; }
+                ];
+
+                for (var p = 0; p < priorities.length; p++) {
+                    for (var i = 0; i < en.length; i++) {
+                        if (priorities[p](en[i])) return en[i];
+                    }
+                }
+                return null;
+            }
+
             function startSpeech() {
                 stopSpeech();
 
@@ -126,10 +161,27 @@
                     return;
                 }
 
+                var lang = document.documentElement.lang || navigator.language || 'en-US';
                 speech = new window.SpeechSynthesisUtterance(text);
-                speech.lang = document.documentElement.lang || navigator.language || 'en-US';
-                speech.rate = 1;
+                speech.lang = lang;
+                speech.rate = 0.95;
                 speech.pitch = 1;
+
+                // Voices load async on first call — wait if the list is empty
+                var voices = window.speechSynthesis.getVoices();
+                if (voices.length) {
+                    speech.voice = pickBestVoice(lang);
+                    doSpeak();
+                } else {
+                    window.speechSynthesis.onvoiceschanged = function () {
+                        window.speechSynthesis.onvoiceschanged = null;
+                        speech.voice = pickBestVoice(lang);
+                        doSpeak();
+                    };
+                }
+            }
+
+            function doSpeak() {
                 speech.onstart = function () {
                     speechState = 'speaking';
                     updateAudioUI();
