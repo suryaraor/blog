@@ -15,6 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Surya Blog">
     <link rel="apple-touch-icon" href="{{ '/profile.png' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/profile.png' | relative_url }}">
 
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     {% if page.date and page.layout != 'post' %}
@@ -39,6 +40,7 @@
             <nav class="site-nav" aria-label="Main navigation">
                 <a href="{{ '/' | relative_url }}">Latest</a>
                 <a href="{{ '/about' | relative_url }}">About</a>
+                <a href="{{ '/offline.html' | relative_url }}" id="offline-pill" class="offline-pill" hidden aria-label="Articles saved for offline reading">&#x2601;&#xFE0F; Offline</a>
             </nav>
         </header>
 
@@ -211,11 +213,93 @@
         </footer>
     </div>
 
+    <!-- Offline-ready toast -->
+    <div id="offline-toast" class="offline-toast" role="status" aria-live="polite" hidden>
+        <span class="offline-toast-text">&#x2601;&#xFE0F;&nbsp; All articles saved &mdash; readable offline</span>
+        <button class="offline-toast-close" aria-label="Dismiss" onclick="document.getElementById('offline-toast').hidden=true">&times;</button>
+    </div>
+
+    <style>
+    .offline-pill {
+        font-size: 0.78rem;
+        font-family: var(--font-body);
+        color: var(--ink-500);
+        border: 1px solid var(--line);
+        border-radius: 99px;
+        padding: 0.15rem 0.65rem;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .offline-pill:hover { color: var(--accent); border-color: var(--accent); }
+
+    .offline-toast {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--ink-900);
+        color: #fff;
+        padding: 0.75rem 1.25rem;
+        border-radius: 8px;
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        z-index: 9999;
+        animation: toast-in 0.3s ease;
+    }
+    @keyframes toast-in {
+        from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+        to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+    .offline-toast-close {
+        background: none;
+        border: none;
+        color: rgba(255,255,255,0.6);
+        font-size: 1.1rem;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+    }
+    .offline-toast-close:hover { color: #fff; }
+    </style>
+
     <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}', { scope: '{{ "/" | relative_url }}' });
+
+            // Show the offline pill + toast when the SW signals the cache is warm
+            navigator.serviceWorker.addEventListener('message', function (event) {
+                if (!event.data || event.data.type !== 'OFFLINE_READY') return;
+
+                // Show nav pill (persist across sessions via localStorage)
+                showOfflinePill();
+
+                // Show toast once per session
+                var toastKey = 'offline-toast-shown';
+                if (!sessionStorage.getItem(toastKey)) {
+                    sessionStorage.setItem(toastKey, '1');
+                    var toast = document.getElementById('offline-toast');
+                    if (toast) {
+                        toast.hidden = false;
+                        setTimeout(function () { toast.hidden = true; }, 5000);
+                    }
+                }
+            });
+
+            // Also restore pill immediately if previously shown (returning visitor)
+            if (localStorage.getItem('offline-ready')) showOfflinePill();
         });
+    }
+
+    function showOfflinePill() {
+        localStorage.setItem('offline-ready', '1');
+        var pill = document.getElementById('offline-pill');
+        if (pill) pill.hidden = false;
     }
     </script>
 </body>
