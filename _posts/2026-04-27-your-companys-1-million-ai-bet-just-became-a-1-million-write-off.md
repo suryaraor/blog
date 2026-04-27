@@ -1,4 +1,5 @@
 ---
+order: 21
 layout: default
 title: "Your Company's $1 Million AI Bet Just Became a $1 Million Write-Off"
 date: 2026-04-27

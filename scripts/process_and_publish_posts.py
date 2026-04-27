@@ -36,6 +36,14 @@ SKIP_NAME_TOKENS = (
     "formulas",
     "covered_categories",
     "toolkit",
+    # report / meta files that must never become blog posts
+    "report",
+    "summary",
+    "delivery",
+    "metadata",
+    "completion",
+    "scheduled",
+    "execution",
 )
 
 TIER_KEYWORDS = {
@@ -65,8 +73,9 @@ TIER_KEYWORDS = {
 
 HEADING_HEADLINE_RE = re.compile(r"^\s{0,3}#{1,6}\s*(?:five|5)\b.*headlines?\s*$", re.IGNORECASE)
 THE_HOOK_RE = re.compile(r"^\s{0,3}#{1,6}\s*the hook\b", re.IGNORECASE)
+IMAGE_PROMPT_RE = re.compile(r"^\s{0,3}#{1,6}\s*image\s+prompt\b", re.IGNORECASE)
 H1_RE = re.compile(r"^\s{0,3}#\s+(.+?)\s*$", re.MULTILINE)
-ROOT_DRAFT_RE = re.compile(r"^(?:\d{4}[_-]\d{2}[_-]\d{2}|ARTICLE_|EXECUTION_REPORT_|PRE_CLAUDE_PLAN_)", re.IGNORECASE)
+ROOT_DRAFT_RE = re.compile(r"^(?:\d{4}[_-]\d{2}[_-]\d{2}|ARTICLE_|PRE_CLAUDE_PLAN_)", re.IGNORECASE)
 
 
 def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
@@ -187,12 +196,31 @@ def slugify_title(title: str) -> str:
     return t or "untitled"
 
 
+def find_next_order(posts_dir: Path, unlisted_dir: Path) -> int:
+    """Scan existing posts/unlisted for the highest order: value and return max+1."""
+    max_order = 0
+    order_re = re.compile(r"^\s*order\s*:\s*(\d+)\s*$", re.IGNORECASE | re.MULTILINE)
+    for directory in (posts_dir, unlisted_dir):
+        if not directory.exists():
+            continue
+        for md in directory.glob("*.md"):
+            try:
+                text = md.read_text(encoding="utf-8", errors="replace")
+                m = order_re.search(text[:500])  # only check front matter region
+                if m:
+                    max_order = max(max_order, int(m.group(1)))
+            except OSError:
+                pass
+    return max_order + 1
+
+
 def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
     lines = text.splitlines()
     out: List[str] = []
     i = 0
     removed_headline_blocks = 0
     removed_hook_headings = 0
+    removed_image_prompts = 0
 
     while i < len(lines):
         line = lines[i]
@@ -227,12 +255,21 @@ def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
             i += 1
             continue
 
+        if IMAGE_PROMPT_RE.match(line):
+            # Remove the Image Prompt heading and everything to end of file
+            removed_image_prompts += 1
+            # Strip trailing --- separator that may precede it
+            while out and re.match(r"^\s*---\s*$", out[-1]):
+                out.pop()
+            break
+
         out.append(line)
         i += 1
 
     return "\n".join(out).strip() + "\n", {
         "headline_blocks": removed_headline_blocks,
         "hook_headings": removed_hook_headings,
+        "image_prompts": removed_image_prompts,
     }
 
 
@@ -258,19 +295,26 @@ def parse_front_matter(text: str) -> Tuple[Optional[List[str]], str]:
     return front_lines, body
 
 
-def normalize_front_matter(text: str, title: str, publish_date: str) -> str:
+def normalize_front_matter(text: str, title: str, publish_date: str, order: int) -> str:
     front_lines, body = parse_front_matter(text)
 
     extra_lines: List[str] = []
+    existing_order: Optional[int] = None
     if front_lines is not None:
         for line in front_lines:
-            if re.match(r"^\s*(layout|title|date)\s*:", line, re.IGNORECASE):
+            if re.match(r"^\s*(layout|title|date|order)\s*:", line, re.IGNORECASE):
+                # Preserve existing order value if present
+                m = re.match(r"^\s*order\s*:\s*(\d+)", line, re.IGNORECASE)
+                if m:
+                    existing_order = int(m.group(1))
                 continue
             extra_lines.append(line)
 
     escaped_title = title.replace('"', '\\"')
+    final_order = existing_order if existing_order is not None else order
     fm = [
         "---",
+        f"order: {final_order}",
         "layout: default",
         f'title: "{escaped_title}"',
         f"date: {publish_date}",
@@ -386,6 +430,13 @@ def move_root_support_files(workspace_root: Path, artifacts_dir: Path, runs_dir:
             "EXECUTION_SUMMARY_*.md",
             "EXECUTION_REPORT_*.md",
             "EXECUTION_REPORT_*.txt",
+            "SCHEDULED_TASK_*.md",
+            "SCHEDULED_TASK_*.txt",
+            "*_COMPLETION_REPORT*.md",
+            "*_COMPLETION_REPORT*.txt",
+            "*_COMPLETION_SUMMARY*.md",
+            "*_DELIVERY*.md",
+            "*TASK_COMPLETION*.md",
         ], runs_dir)
 
     return moved_files
@@ -445,8 +496,10 @@ def validate_output(path: Path, content: str) -> Dict[str, bool]:
     checks = {
         "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", path.name)),
         "starts_with_front_matter": content.startswith("---\n"),
+        "has_order_field": bool(re.search(r"^\s*order\s*:\s*\d+", content[:500], re.MULTILINE)),
         "no_headline_heading": not bool(HEADING_HEADLINE_RE.search(content)),
         "no_the_hook_heading": not bool(THE_HOOK_RE.search(content)),
+        "no_image_prompt_heading": not bool(IMAGE_PROMPT_RE.search(content)),
         "no_mojibake_patterns": not bool(re.search(r"â€|Ã|Â·", content)),
         "utf8_no_bom": raw[:3] != b"\xef\xbb\xbf",
     }
@@ -587,7 +640,9 @@ def print_report(
 
         print(
             "Sections removed: "
-            f"headlines={rep.removed['headline_blocks']}, the_hook={rep.removed['hook_headings']}"
+            f"headlines={rep.removed['headline_blocks']}, "
+            f"the_hook={rep.removed['hook_headings']}, "
+            f"image_prompt={rep.removed.get('image_prompts', 0)}"
         )
         if rep.mojibake_fixes:
             print(f"Mojibake fixes: yes ({len(rep.mojibake_fixes)} replacements)")
@@ -642,6 +697,7 @@ def main() -> int:
 
     reports: List[FileReport] = []
     written_paths: List[Path] = []
+    next_order = find_next_order(args.posts_dir, args.unlisted_dir)
 
     for source_file in unprocessed:
         original = read_text_utf8_replace(source_file)
@@ -657,7 +713,8 @@ def main() -> int:
             continue
 
         cleaned, removed = clean_sections(fixed_text)
-        normalized = normalize_front_matter(cleaned, title=title, publish_date=args.publish_date)
+        normalized = normalize_front_matter(cleaned, title=title, publish_date=args.publish_date, order=next_order)
+        next_order += 1
 
         score, score_details = sensitivity_score(title, normalized)
         destination_name = "_unlisted" if score >= 3 else "_posts"
@@ -689,8 +746,10 @@ def main() -> int:
             validations = {
                 "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", output_path.name)),
                 "starts_with_front_matter": normalized.startswith("---\n"),
+                "has_order_field": bool(re.search(r"^\s*order\s*:\s*\d+", normalized[:500], re.MULTILINE)),
                 "no_headline_heading": not bool(HEADING_HEADLINE_RE.search(normalized)),
                 "no_the_hook_heading": not bool(THE_HOOK_RE.search(normalized)),
+                "no_image_prompt_heading": not bool(IMAGE_PROMPT_RE.search(normalized)),
                 "no_mojibake_patterns": not bool(re.search(r"â€|Ã|Â·", normalized)),
                 "utf8_no_bom": True,
             }
