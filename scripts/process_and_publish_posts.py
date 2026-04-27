@@ -480,6 +480,37 @@ def validate_remote_push(blog_root: Path, written_paths: List[Path], remote: str
     return True, details
 
 
+def cleanup_topics_file(workspace_root: Path) -> None:
+    """Archive verbose topics.txt and create compact version for next workflow."""
+    topics_file = workspace_root / "docs" / "topics.txt"
+    if not topics_file.exists():
+        return
+    
+    archive_dir = workspace_root / "archive"
+    archive_dir.mkdir(exist_ok=True)
+    
+    # Archive with timestamp
+    timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M")
+    archive_file = archive_dir / f"topics_archive_{timestamp}.txt"
+    shutil.copy2(str(topics_file), str(archive_file))
+    
+    # Create compact header for next workflow
+    compact_content = """# Active Topics List
+
+## Format
+Date | Status | Topic | Brief Rationale
+
+## Current Topics
+
+---
+
+## Archive
+See archive/topics_archive_*.txt for complete historical logs.
+"""
+    
+    topics_file.write_text(compact_content, encoding="utf-8")
+
+
 def print_report(
     reports: List[FileReport],
     build_result: Optional[Tuple[str, str]],
@@ -655,6 +686,9 @@ def main() -> int:
 
     if git_result and not git_result[0]:
         return 4
+
+    # Cleanup and archive topics.txt
+    cleanup_topics_file(args.source_dir.parent)
 
     return 0
 
