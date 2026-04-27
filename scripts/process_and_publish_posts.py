@@ -2,11 +2,12 @@
 """Process root-level markdown drafts into Jekyll posts and optionally push.
 
 Workflow:
-1) Find unprocessed source markdown files in workspace root.
+1) Find unprocessed source markdown files in workspace root and artifacts/.
 2) Clean mojibake and remove requested sections.
 3) Normalize front matter and write Jekyll post to _posts or _unlisted.
 4) Move processed source file into workspace processed folder.
-5) Validate output, optionally run Jekyll build, optionally git commit/push.
+5) Move leftover root support files into artifacts/ and runs/.
+6) Validate output, optionally run Jekyll build, optionally git commit/push.
 """
 
 from __future__ import annotations
@@ -65,6 +66,7 @@ TIER_KEYWORDS = {
 HEADING_HEADLINE_RE = re.compile(r"^\s{0,3}#{1,6}\s*(?:five|5)\b.*headlines?\s*$", re.IGNORECASE)
 THE_HOOK_RE = re.compile(r"^\s{0,3}#{1,6}\s*the hook\b", re.IGNORECASE)
 H1_RE = re.compile(r"^\s{0,3}#\s+(.+?)\s*$", re.MULTILINE)
+ROOT_DRAFT_RE = re.compile(r"^(?:\d{4}[_-]\d{2}[_-]\d{2}|ARTICLE_|EXECUTION_REPORT_|PRE_CLAUDE_PLAN_)", re.IGNORECASE)
 
 
 def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
@@ -74,6 +76,7 @@ def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
         "workspace_root": workspace_root,
         "blog_root": blog_root,
         "source_dir": workspace_root,
+        "artifacts_dir": workspace_root / "artifacts",
         "processed_dir": workspace_root / "processed",
         "posts_dir": blog_root / "_posts",
         "unlisted_dir": blog_root / "_unlisted",
@@ -84,9 +87,10 @@ def parse_args() -> argparse.Namespace:
     paths = build_workspace_paths(Path(__file__))
 
     parser = argparse.ArgumentParser(
-        description="Process markdown drafts from artifacts/ to Jekyll posts and optionally push."
+        description="Process markdown drafts from the workspace root and artifacts/ to Jekyll posts and optionally push."
     )
-    parser.add_argument("--source-dir", type=Path, default=paths["source_dir"] / "artifacts")
+    parser.add_argument("--source-dir", type=Path, default=paths["source_dir"])
+    parser.add_argument("--artifacts-dir", type=Path, default=paths["artifacts_dir"])
     parser.add_argument("--processed-dir", type=Path, default=paths["processed_dir"])
     parser.add_argument("--blog-root", type=Path, default=paths["blog_root"])
     parser.add_argument("--posts-dir", type=Path, default=paths["posts_dir"])
@@ -347,20 +351,69 @@ def move_supporting_files(source_file: Path, processed_dir: Path) -> List[str]:
     return moved_files
 
 
-def find_unprocessed_files(source_dir: Path, processed_dir: Path) -> List[Path]:
+def move_root_support_files(workspace_root: Path, artifacts_dir: Path, runs_dir: Path) -> List[str]:
+    """Move leftover root support files into their canonical folders."""
+    moved_files: List[str] = []
+
+    def move_matches(patterns: List[str], destination: Path) -> None:
+        for pattern in patterns:
+            for matching_file in workspace_root.glob(pattern):
+                if not matching_file.is_file():
+                    continue
+                target = destination / matching_file.name
+                if target.exists():
+                    target.unlink()
+                shutil.move(str(matching_file), str(target))
+                moved_files.append(str(target.relative_to(workspace_root)))
+
+    if artifacts_dir.exists():
+        move_matches([
+            "*_HEADLINES_*.txt",
+            "*_IMAGE_PROMPT_*.txt",
+            "PRE_CLAUDE_PLAN_*.md",
+        ], artifacts_dir)
+        move_matches([
+            "HEADLINE_FORMULAS.txt",
+            "COVERED_CATEGORIES.txt",
+            "TOPIC_SELECTION_CHECKLIST.txt",
+            "topics.txt",
+        ], workspace_root / "docs")
+
+    if runs_dir.exists():
+        move_matches([
+            "EXECUTION_SUMMARY_*.md",
+            "EXECUTION_REPORT_*.md",
+            "EXECUTION_REPORT_*.txt",
+        ], runs_dir)
+
+    return moved_files
+
+
+def find_unprocessed_files(source_dirs: List[Path], processed_dir: Path) -> List[Path]:
     processed_names = {p.name.lower() for p in processed_dir.glob("*.md")}
 
     candidates: List[Path] = []
-    for p in source_dir.iterdir():
-        if not p.is_file() or p.suffix.lower() != ".md":
+    seen_paths = set()
+    for source_dir in source_dirs:
+        if not source_dir.exists():
             continue
+        for p in source_dir.iterdir():
+            if not p.is_file() or p.suffix.lower() != ".md":
+                continue
 
-        low_name = p.name.lower()
-        if any(tok in low_name for tok in SKIP_NAME_TOKENS):
-            continue
-        if low_name in processed_names:
-            continue
-        candidates.append(p)
+            resolved = p.resolve()
+            if resolved in seen_paths:
+                continue
+
+            low_name = p.name.lower()
+            if any(tok in low_name for tok in SKIP_NAME_TOKENS):
+                continue
+            if source_dir.name != "artifacts" and not ROOT_DRAFT_RE.match(p.name):
+                continue
+            if low_name in processed_names:
+                continue
+            seen_paths.add(resolved)
+            candidates.append(p)
 
     return sorted(candidates)
 
@@ -567,6 +620,7 @@ def main() -> int:
     args = parse_args()
 
     args.source_dir = args.source_dir.resolve()
+    args.artifacts_dir = args.artifacts_dir.resolve()
     args.processed_dir = args.processed_dir.resolve()
     args.blog_root = args.blog_root.resolve()
     args.posts_dir = args.posts_dir.resolve()
@@ -575,7 +629,10 @@ def main() -> int:
     for d in (args.processed_dir, args.posts_dir, args.unlisted_dir):
         d.mkdir(parents=True, exist_ok=True)
 
-    unprocessed = find_unprocessed_files(args.source_dir, args.processed_dir)
+    if not args.dry_run:
+        move_root_support_files(args.source_dir, args.artifacts_dir, args.source_dir / "runs")
+
+    unprocessed = find_unprocessed_files([args.source_dir, args.artifacts_dir], args.processed_dir)
     if not unprocessed:
         print("Nothing to process")
         return 0
