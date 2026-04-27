@@ -6,7 +6,16 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
-    
+
+    <!-- PWA / offline support -->
+    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+    <meta name="theme-color" content="#c84f24">
+    <!-- iOS home-screen app support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Surya Blog">
+    <link rel="apple-touch-icon" href="{{ '/profile.png' | relative_url }}">
+
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     {% if page.date and page.layout != 'post' %}
     <link rel="stylesheet" href="{{ '/assets/css/post-interactions.css' | relative_url }}">
@@ -15,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+
     <link type="application/atom+xml" rel="alternate" href="{{ site.baseurl }}/feed.xml" title="{{ site.title }}">
 </head>
 
@@ -201,5 +210,13 @@
             <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}', { scope: '{{ "/" | relative_url }}' });
+        });
+    }
+    </script>
 </body>
 </html>

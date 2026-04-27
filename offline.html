@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You're offline — Surya Rao Rayarao Blog</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .offline-shell {
+      max-width: 680px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+    .offline-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .offline-shell h1 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--ink-900);
+      margin: 0 0 0.75rem;
+    }
+    .offline-shell p {
+      color: var(--ink-500);
+      margin: 0 0 2rem;
+    }
+    .retry-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 4px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      margin-bottom: 3rem;
+    }
+    .retry-btn:hover { opacity: 0.88; }
+    .cached-section h2 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--ink-700);
+      margin: 0 0 1rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.5rem;
+    }
+    .cached-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .cached-list li {
+      border-bottom: 1px solid var(--line);
+      padding: 0.6rem 0;
+    }
+    .cached-list a {
+      color: var(--ink-900);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .cached-list a:hover { color: var(--accent); }
+    .no-cache {
+      color: var(--ink-500);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-atmosphere" aria-hidden="true"></div>
+  <div class="offline-shell">
+    <span class="offline-icon" aria-hidden="true">📵</span>
+    <h1>You're reading offline</h1>
+    <p>No internet connection found. Here are the articles already saved on this device — tap any to read it now.</p>
+    <button class="retry-btn" onclick="location.reload()">Try again</button>
+
+    <div class="cached-section">
+      <h2>Available offline</h2>
+      <ul class="cached-list" id="cached-list">
+        <li class="no-cache">Checking saved articles…</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    (async function () {
+      const list = document.getElementById('cached-list');
+      if (!('caches' in window)) {
+        list.innerHTML = '<li class="no-cache">Cache not available in this browser.</li>';
+        return;
+      }
+
+      try {
+        const keys = await caches.keys();
+        const allRequests = await Promise.all(keys.map(k => caches.open(k).then(c => c.keys())));
+        const urls = [].concat(...allRequests)
+          .map(r => r.url)
+          .filter(u => {
+            try {
+              const p = new URL(u).pathname;
+              // Keep only blog post paths: /YYYY/MM/DD/slug/
+              return /^\/\d{4}\/\d{2}\/\d{2}\/.+\/$/.test(p);
+            } catch { return false; }
+          })
+          .sort();
+
+        if (!urls.length) {
+          list.innerHTML = '<li class="no-cache">No articles saved yet. Visit some posts while online to save them.</li>';
+          return;
+        }
+
+        list.innerHTML = urls.map(u => {
+          const path = new URL(u).pathname;
+          // Turn /2026/04/27/your-title/ → "Your Title"
+          const slug = path.split('/').filter(Boolean).pop() || path;
+          const label = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+          return `<li><a href="${path}">${label}</a></li>`;
+        }).join('');
+      } catch {
+        list.innerHTML = '<li class="no-cache">Could not read saved articles.</li>';
+      }
+    })();
+  </script>
+</body>
+</html>

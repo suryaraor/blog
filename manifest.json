@@ -1,0 +1,20 @@
+{
+  "name": "Surya Rao Rayarao Blog",
+  "short_name": "Surya Blog",
+  "description": "Code, Karma, and Creativity: A deeper look at tech's impact on our world",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fffdf8",
+  "theme_color": "#c84f24",
+  "categories": ["blog", "news", "education"],
+  "icons": [
+    {
+      "src": "/profile.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
