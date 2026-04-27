@@ -1,4 +1,5 @@
 ---
+order: 14
 layout: default
 title: "Why Your College Degree Just Became Obsolete (And Universities Will Never Admit It)"
 date: 2026-04-19
@@ -94,10 +95,3 @@ If you're funding someone else's education: you're not buying a degree. You're b
 The universities won't admit this for another five years. The students already know it. The job market will figure it out in about 18 months.
 
 Then everyone else catches up.
-
----
-
----
-
-**Word Count: 1,087 words**
-**Status: Complete**

@@ -1,4 +1,5 @@
 ---
+order: 16
 layout: default
 title: "Your Company Is Losing Its Memory (And AI Is Accelerating It)"
 date: 2026-04-19

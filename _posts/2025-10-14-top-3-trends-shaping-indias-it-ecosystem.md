@@ -1,5 +1,6 @@
 ---
-layout: post
+order: 5
+layout: default
 title: "Top 3 Trends Shaping India's IT Ecosystem"
 date: 2025-10-14 00:00:01
 categories: [technology, india, trends]

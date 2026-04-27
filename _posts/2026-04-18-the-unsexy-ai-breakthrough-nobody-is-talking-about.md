@@ -1,6 +1,7 @@
 ---
+order: 12
 layout: default
-title: "5 Curiosity-Gap Headlines"
+title: "The Unsexy AI Breakthrough Nobody's Talking About"
 date: 2026-04-18 00:00:09
 ---
 Last month, while everyone was losing their minds over Claude Mythos 5's 10 trillion parameters and Gemini 3.1's fancy new voice features, Google quietly released something genuinely game-changing. It was so unsexy that even the tech media barely noticed.
@@ -103,15 +104,3 @@ Because the AI game just fundamentally changed.
 And the winners won't be the ones with the largest models.
 
 They'll be the ones who figured out how to win without them.
-
----
-
----
-
-**Word Count: 1,087 words**
-
-**Published: April 18, 2026 at 10:00 AM**
-
-**Tone: Witty, empathetic, slightly provocative**
-
-**Target Reader: Tech professionals, decision-makers, engineers, startup founders, anyone making strategic AI decisions**

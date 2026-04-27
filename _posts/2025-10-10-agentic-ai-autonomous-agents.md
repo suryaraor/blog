@@ -1,5 +1,6 @@
 ---
-layout: post
+order: 4
+layout: default
 title: "Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action"
 date: 2025-10-10 00:00:01
 author: "Surya Rao Rayarao"

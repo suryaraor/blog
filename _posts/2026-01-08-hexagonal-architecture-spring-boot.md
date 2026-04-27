@@ -1,5 +1,6 @@
 ---
-layout: post
+order: 7
+layout: default
 title: "Implementing Hexagonal Architecture (Ports & Adapters) and Clean Architecture in Spring Boot"
 date: 2026-01-08 00:00:01
 author: "Surya Rao Rayarao"

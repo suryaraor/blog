@@ -1,4 +1,5 @@
 ---
+order: 2
 layout: default
 title: "A Practical Guide to Angular Interceptors"
 date: 2025-09-23 00:00:01

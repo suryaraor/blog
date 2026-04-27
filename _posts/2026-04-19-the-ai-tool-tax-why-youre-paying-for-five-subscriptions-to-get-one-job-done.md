@@ -1,4 +1,5 @@
 ---
+order: 13
 layout: default
 title: "The AI Tool Tax: Why You're Paying for Five Subscriptions to Get One Job Done"
 date: 2026-04-19

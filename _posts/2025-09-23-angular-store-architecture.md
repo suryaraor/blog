@@ -1,4 +1,5 @@
 ---
+order: 3
 layout: default
 title: "Mastering Angular Store Architecture: A Practical Guide"
 date: 2025-09-23 00:00:02
