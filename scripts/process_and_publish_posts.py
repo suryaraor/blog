@@ -34,7 +34,6 @@ SKIP_NAME_TOKENS = (
     "checklist",
     "formulas",
     "covered_categories",
-    "execution_report",
     "toolkit",
 )
 
@@ -425,6 +424,33 @@ def run_git(args: argparse.Namespace, written_paths: List[Path]) -> Tuple[bool, 
     return True, (commit.stdout + "\n" + push.stdout + "\n" + push.stderr).strip()
 
 
+def validate_remote_push(blog_root: Path, written_paths: List[Path], remote: str, branch: str) -> Tuple[bool, str]:
+    """Pull latest from remote and validate pushed files are present."""
+    if not written_paths:
+        return True, "No files to validate."
+
+    def run_cmd(cmd: List[str]) -> subprocess.CompletedProcess[str]:
+        return subprocess.run(cmd, cwd=blog_root, text=True, capture_output=True, check=False)
+
+    pull = run_cmd(["git", "pull", remote, branch])
+    if pull.returncode != 0:
+        return False, f"git pull failed: {pull.stderr.strip() or pull.stdout.strip()}"
+
+    missing_files = []
+    for path in written_paths:
+        if not path.exists():
+            missing_files.append(str(path.relative_to(blog_root)))
+
+    if missing_files:
+        return False, (
+            f"After pull, {len(missing_files)} file(s) missing from local repo:\n"
+            + "\n".join(f"  - {f}" for f in missing_files)
+        )
+
+    details = f"✅ All {len(written_paths)} pushed file(s) validated after pull from {remote}/{branch}"
+    return True, details
+
+
 def print_report(
     reports: List[FileReport],
     build_result: Optional[Tuple[str, str]],
@@ -560,7 +586,24 @@ def main() -> int:
     build_result = run_jekyll_build(args.blog_root) if args.run_build and not args.dry_run else None
     git_result = run_git(args, written_paths) if args.git_push and not args.dry_run else None
 
+    validation_result = None
+    if args.git_push and not args.dry_run and git_result and git_result[0]:
+        validation_result = validate_remote_push(
+            blog_root=args.blog_root,
+            written_paths=written_paths,
+            remote=args.remote,
+            branch=args.branch,
+        )
+
     print_report(reports, build_result, git_result)
+
+    if validation_result is not None:
+        ok, details = validation_result
+        print(f"\nPost-push validation: {'success' if ok else 'failure'}")
+        if details:
+            print(details)
+        if not ok:
+            return 6
 
     failed_validation = any(not all(r.validations.values()) for r in reports)
     if failed_validation:
