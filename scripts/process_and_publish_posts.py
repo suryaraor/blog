@@ -84,9 +84,9 @@ def parse_args() -> argparse.Namespace:
     paths = build_workspace_paths(Path(__file__))
 
     parser = argparse.ArgumentParser(
-        description="Process root markdown drafts to Jekyll posts and optionally push."
+        description="Process markdown drafts from artifacts/ to Jekyll posts and optionally push."
     )
-    parser.add_argument("--source-dir", type=Path, default=paths["source_dir"])
+    parser.add_argument("--source-dir", type=Path, default=paths["source_dir"] / "artifacts")
     parser.add_argument("--processed-dir", type=Path, default=paths["processed_dir"])
     parser.add_argument("--blog-root", type=Path, default=paths["blog_root"])
     parser.add_argument("--posts-dir", type=Path, default=paths["posts_dir"])
@@ -319,6 +319,34 @@ def sensitivity_score(title: str, body_text: str) -> Tuple[int, List[Tuple[str, 
     return score, details
 
 
+def move_supporting_files(source_file: Path, processed_dir: Path) -> List[str]:
+    """Move matching HEADLINES and IMAGE_PROMPT files to processed/ folder."""
+    moved_files = []
+    
+    # Extract base name pattern: "2026_04_27_ARTICLE_global_inequality_ai" -> "2026_04_27_*_global_inequality_ai"
+    source_name = source_file.stem
+    if "_ARTICLE_" not in source_name:
+        return moved_files
+    
+    # Build pattern to find matching files: "2026_04_27_{HEADLINES,IMAGE_PROMPT}_global_inequality_ai.txt"
+    date_part = source_name.split("_ARTICLE_")[0]  # e.g., "2026_04_27"
+    topic_part = source_name.split("_ARTICLE_")[1]  # e.g., "global_inequality_ai"
+    
+    # Look for matching HEADLINES and IMAGE_PROMPT files
+    for file_type in ["HEADLINES", "IMAGE_PROMPT"]:
+        pattern = f"{date_part}_{file_type}_{topic_part}*.txt"
+        matching_files = list(source_file.parent.glob(pattern))
+        
+        for matching_file in matching_files:
+            target = processed_dir / matching_file.name
+            if target.exists():
+                target.unlink()
+            shutil.move(str(matching_file), str(target))
+            moved_files.append(matching_file.name)
+    
+    return moved_files
+
+
 def find_unprocessed_files(source_dir: Path, processed_dir: Path) -> List[Path]:
     processed_names = {p.name.lower() for p in processed_dir.glob("*.md")}
 
@@ -354,6 +382,7 @@ class FileReport:
     removed: Dict[str, int]
     mojibake_fixes: List[str]
     validations: Dict[str, bool]
+    moved_supporting_files: List[str] = None
 
 
 def validate_output(path: Path, content: str) -> Dict[str, bool]:
@@ -478,6 +507,13 @@ def print_report(
             print(f"Mojibake fixes: yes ({len(rep.mojibake_fixes)} replacements)")
         else:
             print("Mojibake fixes: no")
+        
+        if rep.moved_supporting_files:
+            print(f"Supporting files moved: yes ({len(rep.moved_supporting_files)} files)")
+            for fname in rep.moved_supporting_files:
+                print(f"  - {fname}")
+        else:
+            print("Supporting files moved: no")
 
         print("Validation:")
         for check, ok in rep.validations.items():
@@ -545,12 +581,16 @@ def main() -> int:
             )
             continue
 
+        moved_supporting = []
         if not args.dry_run:
             output_path.write_text(normalized, encoding="utf-8", newline="\n")
             target_processed = args.processed_dir / source_file.name
             if target_processed.exists():
                 target_processed.unlink()
             shutil.move(str(source_file), str(target_processed))
+            
+            # Move matching HEADLINES and IMAGE_PROMPT files
+            moved_supporting = move_supporting_files(source_file, args.processed_dir)
 
             validations = validate_output(output_path, normalized)
             written_paths.append(output_path)
@@ -576,6 +616,7 @@ def main() -> int:
                 removed=removed,
                 mojibake_fixes=mojibake_changes,
                 validations=validations,
+                moved_supporting_files=moved_supporting,
             )
         )
 
