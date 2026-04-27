@@ -2,7 +2,7 @@
 """Process root-level markdown drafts into Jekyll posts and optionally push.
 
 Workflow:
-1) Find unprocessed source markdown files in workspace root and artifacts/.
+1) Find unprocessed source markdown files in articles/, workspace root, and artifacts/.
 2) Clean mojibake and remove requested sections.
 3) Normalize front matter and write Jekyll post to _posts or _unlisted.
 4) Move processed source file into workspace processed folder.
@@ -76,6 +76,7 @@ def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
         "workspace_root": workspace_root,
         "blog_root": blog_root,
         "source_dir": workspace_root,
+        "articles_dir": workspace_root / "articles",
         "artifacts_dir": workspace_root / "artifacts",
         "processed_dir": workspace_root / "processed",
         "posts_dir": blog_root / "_posts",
@@ -87,9 +88,10 @@ def parse_args() -> argparse.Namespace:
     paths = build_workspace_paths(Path(__file__))
 
     parser = argparse.ArgumentParser(
-        description="Process markdown drafts from the workspace root and artifacts/ to Jekyll posts and optionally push."
+        description="Process markdown drafts from articles/, the workspace root, and artifacts/ to Jekyll posts and optionally push."
     )
     parser.add_argument("--source-dir", type=Path, default=paths["source_dir"])
+    parser.add_argument("--articles-dir", type=Path, default=paths["articles_dir"])
     parser.add_argument("--artifacts-dir", type=Path, default=paths["artifacts_dir"])
     parser.add_argument("--processed-dir", type=Path, default=paths["processed_dir"])
     parser.add_argument("--blog-root", type=Path, default=paths["blog_root"])
@@ -408,7 +410,7 @@ def find_unprocessed_files(source_dirs: List[Path], processed_dir: Path) -> List
             low_name = p.name.lower()
             if any(tok in low_name for tok in SKIP_NAME_TOKENS):
                 continue
-            if source_dir.name != "artifacts" and not ROOT_DRAFT_RE.match(p.name):
+            if source_dir.name not in {"artifacts", "articles"} and not ROOT_DRAFT_RE.match(p.name):
                 continue
             if low_name in processed_names:
                 continue
@@ -620,6 +622,7 @@ def main() -> int:
     args = parse_args()
 
     args.source_dir = args.source_dir.resolve()
+    args.articles_dir = args.articles_dir.resolve()
     args.artifacts_dir = args.artifacts_dir.resolve()
     args.processed_dir = args.processed_dir.resolve()
     args.blog_root = args.blog_root.resolve()
@@ -632,7 +635,7 @@ def main() -> int:
     if not args.dry_run:
         move_root_support_files(args.source_dir, args.artifacts_dir, args.source_dir / "runs")
 
-    unprocessed = find_unprocessed_files([args.source_dir, args.artifacts_dir], args.processed_dir)
+    unprocessed = find_unprocessed_files([args.articles_dir, args.source_dir, args.artifacts_dir], args.processed_dir)
     if not unprocessed:
         print("Nothing to process")
         return 0
