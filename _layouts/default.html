@@ -52,6 +52,9 @@
                 </button>
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
+            {% if page.image %}
+            <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+            {% endif %}
             <div class="post-content">
                 {{ content }}
             </div>

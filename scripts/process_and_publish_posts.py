@@ -14,12 +14,17 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import math
+import os
 import re
 import shutil
 import subprocess
 import sys
-from dataclasses import dataclass
+import urllib.error
+import urllib.parse
+import urllib.request
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -90,6 +95,7 @@ def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
         "processed_dir": workspace_root / "processed",
         "posts_dir": blog_root / "_posts",
         "unlisted_dir": blog_root / "_unlisted",
+        "images_dir": blog_root / "assets" / "images" / "posts",
     }
 
 
@@ -119,6 +125,11 @@ def parse_args() -> argparse.Namespace:
         help="Overwrite existing output file if publish-date + slug already exists",
     )
     parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing")
+    parser.add_argument(
+        "--generate-images",
+        action="store_true",
+        help="Auto-generate hero images via Pollinations.AI (FLUX, free, no key required)",
+    )
     return parser.parse_args()
 
 
@@ -214,6 +225,36 @@ def find_next_order(posts_dir: Path, unlisted_dir: Path) -> int:
     return max_order + 1
 
 
+def extract_image_prompt(text: str) -> Optional[str]:
+    """Return the text under ## Image Prompt heading before clean_sections strips it."""
+    lines = text.splitlines()
+    capturing = False
+    parts: List[str] = []
+    for line in lines:
+        if IMAGE_PROMPT_RE.match(line):
+            capturing = True
+            continue
+        if capturing:
+            if re.match(r"^\s{0,3}#{1,6}\s+", line) or re.match(r"^\s*---\s*$", line):
+                break
+            parts.append(line)
+    result = "\n".join(parts).strip()
+    return result or None
+
+
+def generate_image(prompt: str) -> Optional[bytes]:
+    """GET from Pollinations.AI (FLUX, free, no key); return raw JPEG bytes or None on error."""
+    encoded = urllib.parse.quote(prompt, safe="")
+    url = f"https://image.pollinations.ai/prompt/{encoded}?width=1344&height=768&model=flux&nologo=true"
+    req = urllib.request.Request(url, method="GET")
+    try:
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            return resp.read()
+    except urllib.error.URLError as exc:
+        print(f"[image] Pollinations API error: {exc}", file=sys.stderr)
+        return None
+
+
 def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
     lines = text.splitlines()
     out: List[str] = []
@@ -295,15 +336,16 @@ def parse_front_matter(text: str) -> Tuple[Optional[List[str]], str]:
     return front_lines, body
 
 
-def normalize_front_matter(text: str, title: str, publish_date: str, order: int) -> str:
+def normalize_front_matter(
+    text: str, title: str, publish_date: str, order: int, image: Optional[str] = None
+) -> str:
     front_lines, body = parse_front_matter(text)
 
     extra_lines: List[str] = []
     existing_order: Optional[int] = None
     if front_lines is not None:
         for line in front_lines:
-            if re.match(r"^\s*(layout|title|date|order)\s*:", line, re.IGNORECASE):
-                # Preserve existing order value if present
+            if re.match(r"^\s*(layout|title|date|order|image)\s*:", line, re.IGNORECASE):
                 m = re.match(r"^\s*order\s*:\s*(\d+)", line, re.IGNORECASE)
                 if m:
                     existing_order = int(m.group(1))
@@ -319,6 +361,8 @@ def normalize_front_matter(text: str, title: str, publish_date: str, order: int)
         f'title: "{escaped_title}"',
         f"date: {publish_date}",
     ]
+    if image:
+        fm.append(f"image: {image}")
     fm.extend(extra_lines)
     fm.append("---")
 
@@ -489,6 +533,7 @@ class FileReport:
     mojibake_fixes: List[str]
     validations: Dict[str, bool]
     moved_supporting_files: List[str] = None
+    image_filename: Optional[str] = None
 
 
 def validate_output(path: Path, content: str) -> Dict[str, bool]:
@@ -649,6 +694,11 @@ def print_report(
         else:
             print("Mojibake fixes: no")
         
+        if rep.image_filename:
+            print(f"Image: {rep.image_filename}")
+        else:
+            print("Image: none")
+
         if rep.moved_supporting_files:
             print(f"Supporting files moved: yes ({len(rep.moved_supporting_files)} files)")
             for fname in rep.moved_supporting_files:
@@ -699,6 +749,8 @@ def main() -> int:
     written_paths: List[Path] = []
     next_order = find_next_order(args.posts_dir, args.unlisted_dir)
 
+    want_images = args.generate_images
+
     for source_file in unprocessed:
         original = read_text_utf8_replace(source_file)
         fixed_text, mojibake_changes = fix_mojibake(original)
@@ -712,8 +764,26 @@ def main() -> int:
             )
             continue
 
+        # Extract image prompt BEFORE clean_sections strips it
+        image_prompt = extract_image_prompt(fixed_text) if want_images else None
+
         cleaned, removed = clean_sections(fixed_text)
-        normalized = normalize_front_matter(cleaned, title=title, publish_date=args.publish_date, order=next_order)
+
+        # Generate image bytes (API call) before normalize so path ends up in front matter
+        image_bytes: Optional[bytes] = None
+        image_filename: Optional[str] = None
+        if image_prompt and not args.dry_run:
+            print(f"[image] Generating hero image for '{title}'…")
+            image_bytes = generate_image(image_prompt)
+            if image_bytes:
+                image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
+                print(f"[image] Generated → {args.publish_date}-{slug}.jpg")
+            else:
+                print(f"[image] Generation failed for '{title}'; continuing without image.", file=sys.stderr)
+
+        normalized = normalize_front_matter(
+            cleaned, title=title, publish_date=args.publish_date, order=next_order, image=image_filename
+        )
         next_order += 1
 
         score, score_details = sensitivity_score(title, normalized)
@@ -736,7 +806,15 @@ def main() -> int:
             if target_processed.exists():
                 target_processed.unlink()
             shutil.move(str(source_file), str(target_processed))
-            
+
+            # Save generated image and queue for git
+            if image_bytes and image_filename:
+                images_dir = args.blog_root / "assets" / "images" / "posts"
+                images_dir.mkdir(parents=True, exist_ok=True)
+                image_dest = images_dir / f"{args.publish_date}-{slug}.jpg"
+                image_dest.write_bytes(image_bytes)
+                written_paths.append(image_dest)
+
             # Move matching HEADLINES and IMAGE_PROMPT files
             moved_supporting = move_supporting_files(source_file, args.processed_dir)
 
@@ -767,6 +845,7 @@ def main() -> int:
                 mojibake_fixes=mojibake_changes,
                 validations=validations,
                 moved_supporting_files=moved_supporting,
+                image_filename=image_filename,
             )
         )
 

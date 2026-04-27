@@ -8,6 +8,9 @@ title: "Home"
 
 {% if featured_post %}
 <section class="featured-post">
+  {% if featured_post.image %}
+  <img class="featured-thumb" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" loading="lazy">
+  {% endif %}
   <p class="featured-label">Latest essay</p>
   <h1 class="featured-title">
     <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a>
@@ -32,6 +35,9 @@ title: "Home"
 <section class="post-grid" aria-label="More stories">
   {% for post in sorted_posts offset:1 %}
     <article class="post-card">
+      {% if post.image %}
+      <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      {% endif %}
       <h2 class="post-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>
