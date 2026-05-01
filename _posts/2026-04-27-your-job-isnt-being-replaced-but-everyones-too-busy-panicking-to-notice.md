@@ -6,6 +6,11 @@ date: 2026-04-27
 ---
 # Your Job Isn't Being Replaced (But Everyone's Too Busy Panicking to Notice)
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-27-your-job-isnt-being-replaced-but-everyones-too-busy-panicking-to-notice-featured.webp" alt="Your Job Isn't Being Replaced (Everyone's Too Busy Panicking to Notice)">
+</figure>
+
+
 You're staring at your calendar reminder: *"Read the latest Claude update or fall behind."* Another AI tool. Another panic spiral about obsolescence. Your manager sent around an article yesterday about agentic workflows. Your friend just told you they're learning to prompt better because "honestly, I don't know what else to do." Everyone's operating from the same fear script: *AI is coming for your job, and you're running out of time.*
 
 Then you see it buried in your newsfeed—a Nature study published last week with a headline so quiet you almost missed it: "Human scientists trounce the best AI agents on complex tasks." Not "AI helps scientists." Not "AI accelerates discovery." Human scientists straight up *beat* the AI. You read it twice to make sure you understood correctly.

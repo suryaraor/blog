@@ -6,6 +6,11 @@ date: 2026-04-27
 ---
 # China Just Won the AI Independence War (And the US Hasn't Realized It Yet)
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-27-china-just-won-the-ai-independence-war-and-the-us-hasnt-realized-it-yet-featured.webp" alt="China Just Won the AI Independence War">
+</figure>
+
+
 On April 24, 2026, DeepSeek dropped a preview of its V4 flagship AI model. The timing seemed casual—a year after their R1 model shocked the world by proving you could build competitive AI for a fraction of what Silicon Valley spent. But there's one detail buried in the technical specifications that should terrify every executive in Washington.
 
 DeepSeek V4 was trained entirely on Huawei's Ascend 950PR chips.

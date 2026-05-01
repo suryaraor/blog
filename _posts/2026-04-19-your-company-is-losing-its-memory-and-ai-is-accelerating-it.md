@@ -6,6 +6,11 @@ date: 2026-04-19
 ---
 # Your Company Is Losing Its Memory (And AI Is Accelerating It)
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-19-your-company-is-losing-its-memory-and-ai-is-accelerating-it-featured.webp" alt="Your Company Is Losing Its Memory">
+</figure>
+
+
 Your senior engineer doesn't ask the architect anymore. She asks Claude.
 
 This seems fine. Faster answers, no waiting around. But here's what's actually happening: she's stopped learning *why* the system was designed that way. When that architect inevitably retires or leaves, their decision-making logic evaporates. It's replaced by a chatbot that can produce answers but can't explain the human judgment calls buried inside them.

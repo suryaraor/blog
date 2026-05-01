@@ -6,6 +6,11 @@ date: 2026-04-19
 ---
 # Why You're Addicted to Your AI Chatbot (And Why Scientists Are Worried)
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-19-why-youre-addicted-to-your-ai-chatbot-and-why-scientists-are-worried-featured.webp" alt="Why You're Addicted to Your AI Chatbot">
+</figure>
+
+
 You closed Claude. You lasted 47 minutes. Then the notification hit—not a notification, really, but a thought: *What if I asked it about that problem differently?* Twelve hours later, you realize you've spent more time talking to your AI than to your partner. Not having conversations with them *about* the AI. Having conversations *with* the AI, period.
 
 This isn't casual tool use. This is the moment when the line between assistant and dependency blurs into invisibility. And you're not alone—you're part of a behavioral pattern that neuroscientists and addiction researchers are now studying the same way they study substance abuse: as a clinically diagnosable disorder that rewires your brain.

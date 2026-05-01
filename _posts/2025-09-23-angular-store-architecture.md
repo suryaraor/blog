@@ -8,6 +8,11 @@ categories: Angular
 
 # Mastering Angular Store Architecture: A Practical Guide
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2025-09-23-angular-store-architecture-featured.webp" alt="Mastering Angular Store Architecture">
+</figure>
+
+
 State management is a cornerstone of building robust, scalable, and maintainable Angular applications. As your app grows, managing data flow and state transitions can become complex and error-prone. This is where **Angular store architecture** comes in-a pattern that helps you centralize, organize, and control your application's state in a predictable way.
 
 In this post, you'll learn:

@@ -6,6 +6,11 @@ date: 2026-04-17 00:00:05
 ---
 
 # Six Times Faster, Six Times Cheaper: The AI Breakthrough Nobody's Talking About
+
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-17-six-times-faster-the-ai-breakthrough-nobody-is-talking-about-featured.webp" alt="Six Times Faster: The AI Breakthrough Nobody's Talking About">
+</figure>
+
 ## The Thing Nobody Told You
 
 Last week, Google researchers published a paper about an algorithm called TurboQuant. Sixty people read it. Maybe. Meanwhile, everyone's losing their minds over new models from OpenAI, Anthropic, and Google — Claude Mythos 5, GPT-5.4, the usual parade of ever-larger numbers and shinier benchmarks.

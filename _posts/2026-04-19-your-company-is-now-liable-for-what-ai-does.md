@@ -6,6 +6,11 @@ date: 2026-04-19
 ---
 # Your Company Is Now Liable for What AI Does
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-19-your-company-is-now-liable-for-what-ai-does-featured.webp" alt="Your Company Is Now Liable for What AI Does">
+</figure>
+
+
 Last month, OpenAI faced a $10 million lawsuit over an unusual problem: ChatGPT generated a stream of legal filings so convincing that a law firm used them in an actual court case. The opposing party had to respond to fabricated arguments. The court didn't laugh it off—it treated this as a genuine harm. Someone has to pay for the opposing party's legal costs defending against ghost arguments. That someone might be you.
 
 This isn't an edge case anymore. Meta just lost two separate court cases where judges ruled the company knew its products caused harm and continued operating anyway. The legal principle just shifted from "innovation first, ask permission later" to "if you know about the harm, you can't ignore it." And now here's the thing that should terrify every general counsel: your safety research, your internal testing, your documentation of AI limitations—all of it is now evidence that you *knew* about the problem and deployed it anyway.

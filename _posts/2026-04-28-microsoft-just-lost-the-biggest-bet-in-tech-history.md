@@ -6,6 +6,11 @@ date: 2026-04-28
 ---
 # Microsoft Just Lost the Biggest Bet in Tech History
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-28-microsoft-just-lost-the-biggest-bet-in-tech-history-featured.webp" alt="Microsoft Just Lost the Biggest Bet in Tech History">
+</figure>
+
+
 On April 27th, Microsoft announced it was surrendering the exclusive rights to OpenAI's technology—the very thing it had paid $13 billion to secure. The announcement came as a shock to no one who understood what was actually at stake: Microsoft had just discovered that strategic partnerships, no matter how expensive, are worthless if your partner gets a better offer.
 
 This wasn't a polite negotiation. It was a forced capitulation. OpenAI wanted to sign a $50 billion deal with Amazon and Google—deals that violated Microsoft's exclusive distribution rights. Rather than fight the world's largest cloud computing companies, Microsoft quietly surrendered. Now Azure is no longer exclusive. OpenAI ships products wherever it wants.

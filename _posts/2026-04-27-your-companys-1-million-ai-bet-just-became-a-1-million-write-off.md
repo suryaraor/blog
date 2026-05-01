@@ -6,6 +6,11 @@ date: 2026-04-27
 ---
 # Your Company's $1 Million AI Bet Just Became a $1 Million Write-Off
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-27-your-companys-1-million-ai-bet-just-became-a-1-million-write-off-featured.webp" alt="Your Company's $1M AI Bet Just Became a Write-Off">
+</figure>
+
+
 The Slack conversation probably went like this: Your VP of Engineering drops a message in the executive channel at 2 PM on a Tuesday. "Just got word—our latest AI pilot is shelved. Third one this quarter." No explanation. No anger. Just acceptance. This isn't a glitch anymore. It's the norm.
 
 Your company invested $1.2 million in an AI solution last year. You hired consultants. You ran pilots. You told your board it was going to "transform operations." You meant it. And somewhere around month nine, it went silent. Not because the technology broke. Because nobody knew how to make it work.

@@ -6,6 +6,11 @@ date: 2026-04-27
 ---
 # They Tried to Replace Junior Developers. It Just Backfired.
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-27-they-tried-to-replace-junior-developers-it-just-backfired-featured.webp" alt="They Tried to Replace Junior Developers. It Backfired.">
+</figure>
+
+
 A year ago, Duolingo announced they were going "AI-first." No more junior engineers. AI would write the code; senior architects would manage the machines. It was the future everyone had been warning about: artificial intelligence making human skill obsolete.
 
 Except something happened. Last month, Duolingo reversed course—quietly rehiring junior developers. Netflix hired a junior engineer for the first time in 25 years. OpenAI and Anthropic are hiring junior developers for the first time ever. The narrative that AI was about to wipe out entry-level tech jobs just cracked.

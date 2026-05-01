@@ -6,6 +6,11 @@ date: 2026-04-29
 ---
 # The Agent Restructuring Lie: Why Your Company Is Firing People for Robots That Don't Exist
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-29-the-agent-restructuring-lie-why-your-company-is-firing-people-for-robots-that-dont-exist-featured.webp" alt="The Agent Restructuring Lie">
+</figure>
+
+
 They fired you for an agent that costs $5,000 a day to run.
 
 In early April 2026, Anthropic pulled the plug on OpenClaw access for Claude Pro users. Thousands of autonomous agent deployments—browsing the web, responding to emails, managing calendars—suddenly faced a choice: accept cost increases of 50 times your monthly bill, or shut down. A single agent instance running for 24 hours? $1,000 to $5,000 in compute costs. No one did the math on the way in.

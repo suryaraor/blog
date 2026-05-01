@@ -10,6 +10,11 @@ excerpt: "Three transformative trends are reshaping India's technology landscape
 image: /assets/images/blog/india-it-trends-2025.jpg
 ---
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2025-10-14-top-3-trends-shaping-indias-it-ecosystem-featured.webp" alt="Top 3 Trends Shaping India's IT Ecosystem">
+</figure>
+
+
 Based on comprehensive research, three transformative trends stand out as defining forces reshaping India's technology landscape in 2025. Each represents a critical dimension of India's digital evolution: indigenous platform adoption, market expansion, and technological leadership.
 
 ## Trend 1: The Indigenous Tech Revolution - Arattai's Explosive Growth

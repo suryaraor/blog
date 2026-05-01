@@ -6,6 +6,11 @@ date: 2026-05-01
 ---
 # The AI Agent Marketplace Just Became a Trojan Horse (And You Probably Already Downloaded It)
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-05-01-the-ai-agent-marketplace-just-became-a-trojan-horse-and-you-probably-already-downloaded-it-featured.webp" alt="The AI Agent Marketplace Just Became a Trojan Horse">
+</figure>
+
+
 You downloaded what looked like a legitimate OpenClaw skill last week. The documentation was professional. The GitHub stars were in the tens of thousands. The contributor profiles looked real. You deployed it to production. It's been running for six days.
 
 Three of those days, it was silently exfiltrating your API keys to a server in Eastern Europe.

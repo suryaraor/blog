@@ -6,6 +6,11 @@ date: 2026-04-17 00:00:09
 ---
 
 # The Uncomfortable Gap Between Who You Were and Who You're Becoming
+
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-17-the-uncomfortable-gap-featured.webp" alt="The Uncomfortable Gap Between Who You Were and Who You're Becoming">
+</figure>
+
 Four years ago, I watched Euphoria with the kind of intensity usually reserved for religious experiences. I was *living* in that show-every crisis felt urgent, every character flaw felt like a prophecy about my own future. Last week, I opened TikTok to see my teenage self staring back at me. Not literally-but thousands of people sharing their childhood photos with the caption "This is who," followed by a photo of themselves today, usually accompanied by some version of "I can't believe I'm nothing like I thought I'd be."
 
 The thought that hit me hardest wasn't pride or regret. It was relief mixed with something closer to vertigo.

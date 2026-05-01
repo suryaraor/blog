@@ -8,6 +8,11 @@ categories: Data
 
 # Databricks: The Unified Analytics Platform Revolutionizing Data Science
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2025-08-31-databricks-featured.webp" alt="Databricks: The Unified Analytics Platform">
+</figure>
+
+
 How Apache Spark's creators built the future of collaborative data analytics
 
 <div class="read-time">12 min read</div>

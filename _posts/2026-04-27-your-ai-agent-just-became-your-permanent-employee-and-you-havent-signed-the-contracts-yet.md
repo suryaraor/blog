@@ -6,6 +6,11 @@ date: 2026-04-27
 ---
 # Your AI Agent Just Became Your Permanent Employee (And You Haven't Signed the Contracts Yet)
 
+<figure class="post-featured-image">
+  <img src="/assets/images/blog/2026-04-27-your-ai-agent-just-became-your-permanent-employee-and-you-havent-signed-the-contracts-yet-featured.webp" alt="Your AI Agent Just Became Your Permanent Employee">
+</figure>
+
+
 Last week, a software engineer named Marcus deployed an Anthropic managed agent with memory into his workflow. The agent remembers every project he's mentioned, every bug pattern he's struggled with, every decision he's explained. Three days in, he realized he can't replace it. Not because it's irreplaceable—because it now knows more about his work patterns than any human colleague ever could. He's become dependent on a system that exists in no org chart, has no employment contract, and could disappear tomorrow. He just hasn't confronted that reality yet.
 
 This is what happens when companies ship persistent AI infrastructure without pausing to ask what we're actually building. Anthropic's rollout of memory-enabled managed agents on April 25 wasn't a minor feature update. It was a quiet normalization of something we don't have language for yet: permanent AI workers embedded in our daily operations. But we're treating them like tools, not like the fundamental reorganization of work they actually represent.
