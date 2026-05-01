@@ -11,7 +11,7 @@ image: /assets/images/blog/india-it-trends-2025.jpg
 ---
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2025-10-14-top-3-trends-shaping-indias-it-ecosystem-featured.webp" alt="Top 3 Trends Shaping India's IT Ecosystem">
+  <img src="/assets/images/blog/2025-10-14-top-3-trends-shaping-indias-it-ecosystem-featured.webp" alt="Top 3 Trends Shaping India's IT Ecosystem" width="1280" height="720">
 </figure>
 
 

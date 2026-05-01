@@ -7,7 +7,7 @@ date: 2026-04-19
 # Your Creative Work Just Became Free Training Data (And the Lawsuits Just Started)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-19-your-creative-work-just-became-free-training-data-and-the-lawsuits-just-started-featured.webp" alt="Your Creative Work Just Became Free Training Data">
+  <img src="/assets/images/blog/2026-04-19-your-creative-work-just-became-free-training-data-and-the-lawsuits-just-started-featured.webp" alt="Your Creative Work Just Became Free Training Data" width="1280" height="720">
 </figure>
 
 

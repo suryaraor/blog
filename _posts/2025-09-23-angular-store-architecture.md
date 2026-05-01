@@ -9,7 +9,7 @@ categories: Angular
 # Mastering Angular Store Architecture: A Practical Guide
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2025-09-23-angular-store-architecture-featured.webp" alt="Mastering Angular Store Architecture">
+  <img src="/assets/images/blog/2025-09-23-angular-store-architecture-featured.webp" alt="Mastering Angular Store Architecture" width="1280" height="720">
 </figure>
 
 

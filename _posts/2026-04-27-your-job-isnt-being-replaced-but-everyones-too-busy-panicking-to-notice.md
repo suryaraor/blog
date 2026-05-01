@@ -7,7 +7,7 @@ date: 2026-04-27
 # Your Job Isn't Being Replaced (But Everyone's Too Busy Panicking to Notice)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-27-your-job-isnt-being-replaced-but-everyones-too-busy-panicking-to-notice-featured.webp" alt="Your Job Isn't Being Replaced (Everyone's Too Busy Panicking to Notice)">
+  <img src="/assets/images/blog/2026-04-27-your-job-isnt-being-replaced-but-everyones-too-busy-panicking-to-notice-featured.webp" alt="Your Job Isn't Being Replaced (Everyone's Too Busy Panicking to Notice)" width="1280" height="720">
 </figure>
 
 

@@ -7,7 +7,7 @@ date: 2026-04-30
 # The Vertical AI Trap: Why Specialization Is Actually Re-Siloing Your Skills
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-30-the-vertical-ai-trap-why-specialization-is-actually-re-siloing-your-skills-featured.webp" alt="The Vertical AI Trap: Specialization Re-Siloing Your Skills">
+  <img src="/assets/images/blog/2026-04-30-the-vertical-ai-trap-why-specialization-is-actually-re-siloing-your-skills-featured.webp" alt="The Vertical AI Trap: Specialization Re-Siloing Your Skills" width="1280" height="720">
 </figure>
 
 

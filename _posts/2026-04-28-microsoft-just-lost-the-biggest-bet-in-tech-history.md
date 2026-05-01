@@ -7,7 +7,7 @@ date: 2026-04-28
 # Microsoft Just Lost the Biggest Bet in Tech History
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-28-microsoft-just-lost-the-biggest-bet-in-tech-history-featured.webp" alt="Microsoft Just Lost the Biggest Bet in Tech History">
+  <img src="/assets/images/blog/2026-04-28-microsoft-just-lost-the-biggest-bet-in-tech-history-featured.webp" alt="Microsoft Just Lost the Biggest Bet in Tech History" width="1280" height="720">
 </figure>
 
 

@@ -7,7 +7,7 @@ date: 2026-04-19
 # Your Company Is Losing Its Memory (And AI Is Accelerating It)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-19-your-company-is-losing-its-memory-and-ai-is-accelerating-it-featured.webp" alt="Your Company Is Losing Its Memory">
+  <img src="/assets/images/blog/2026-04-19-your-company-is-losing-its-memory-and-ai-is-accelerating-it-featured.webp" alt="Your Company Is Losing Its Memory" width="1280" height="720">
 </figure>
 
 

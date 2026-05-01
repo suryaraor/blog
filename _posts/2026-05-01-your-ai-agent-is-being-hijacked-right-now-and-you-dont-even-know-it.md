@@ -7,7 +7,7 @@ date: 2026-05-01
 # Your AI Agent Is Being Hijacked Right Now (And You Don't Even Know It)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-05-01-your-ai-agent-is-being-hijacked-right-now-and-you-dont-even-know-it-featured.webp" alt="Your AI Agent Is Being Hijacked Right Now">
+  <img src="/assets/images/blog/2026-05-01-your-ai-agent-is-being-hijacked-right-now-and-you-dont-even-know-it-featured.webp" alt="Your AI Agent Is Being Hijacked Right Now" width="1280" height="720">
 </figure>
 
 

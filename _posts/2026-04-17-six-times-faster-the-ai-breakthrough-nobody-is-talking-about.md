@@ -8,7 +8,7 @@ date: 2026-04-17 00:00:05
 # Six Times Faster, Six Times Cheaper: The AI Breakthrough Nobody's Talking About
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-17-six-times-faster-the-ai-breakthrough-nobody-is-talking-about-featured.webp" alt="Six Times Faster: The AI Breakthrough Nobody's Talking About">
+  <img src="/assets/images/blog/2026-04-17-six-times-faster-the-ai-breakthrough-nobody-is-talking-about-featured.webp" alt="Six Times Faster: The AI Breakthrough Nobody's Talking About" width="1280" height="720">
 </figure>
 
 ## The Thing Nobody Told You

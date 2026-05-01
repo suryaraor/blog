@@ -7,7 +7,7 @@ date: 2026-04-29
 # The Agent Restructuring Lie: Why Your Company Is Firing People for Robots That Don't Exist
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-29-the-agent-restructuring-lie-why-your-company-is-firing-people-for-robots-that-dont-exist-featured.webp" alt="The Agent Restructuring Lie">
+  <img src="/assets/images/blog/2026-04-29-the-agent-restructuring-lie-why-your-company-is-firing-people-for-robots-that-dont-exist-featured.webp" alt="The Agent Restructuring Lie" width="1280" height="720">
 </figure>
 
 

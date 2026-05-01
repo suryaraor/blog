@@ -7,7 +7,7 @@ date: 2026-05-01
 # The AI Agent Marketplace Just Became a Trojan Horse (And You Probably Already Downloaded It)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-05-01-the-ai-agent-marketplace-just-became-a-trojan-horse-and-you-probably-already-downloaded-it-featured.webp" alt="The AI Agent Marketplace Just Became a Trojan Horse">
+  <img src="/assets/images/blog/2026-05-01-the-ai-agent-marketplace-just-became-a-trojan-horse-and-you-probably-already-downloaded-it-featured.webp" alt="The AI Agent Marketplace Just Became a Trojan Horse" width="1280" height="720">
 </figure>
 
 

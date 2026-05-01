@@ -7,7 +7,7 @@ date: 2026-04-27
 # China Just Won the AI Independence War (And the US Hasn't Realized It Yet)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-27-china-just-won-the-ai-independence-war-and-the-us-hasnt-realized-it-yet-featured.webp" alt="China Just Won the AI Independence War">
+  <img src="/assets/images/blog/2026-04-27-china-just-won-the-ai-independence-war-and-the-us-hasnt-realized-it-yet-featured.webp" alt="China Just Won the AI Independence War" width="1280" height="720">
 </figure>
 
 

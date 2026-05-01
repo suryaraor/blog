@@ -11,7 +11,7 @@ categories: [Java, Spring Boot, Architecture]
 ## Introduction: The Painful Reality of Traditional Layered Architecture
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-01-08-hexagonal-architecture.png" alt="Hexagonal Architecture diagram">
+  <img src="/assets/images/blog/2026-01-08-hexagonal-architecture.png" alt="Hexagonal Architecture diagram" width="1280" height="720">
 </figure>
 
 After 15 years of building enterprise Java applications, I've witnessed countless projects start with clean intentions-the familiar Controller +-- Service +-- Repository pattern that every Spring developer knows by heart. Yet, within 18 months, these codebases inevitably devolve into what we politely call "the Big Ball of Mud."

@@ -7,7 +7,7 @@ date: 2026-04-27
 # They Tried to Replace Junior Developers. It Just Backfired.
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-27-they-tried-to-replace-junior-developers-it-just-backfired-featured.webp" alt="They Tried to Replace Junior Developers. It Backfired.">
+  <img src="/assets/images/blog/2026-04-27-they-tried-to-replace-junior-developers-it-just-backfired-featured.webp" alt="They Tried to Replace Junior Developers. It Backfired." width="1280" height="720">
 </figure>
 
 

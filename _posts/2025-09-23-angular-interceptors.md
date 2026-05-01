@@ -9,7 +9,7 @@ categories: Angular
 # A Practical Guide to Angular Interceptors
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2025-09-23-angular-interceptors-featured.webp" alt="A Practical Guide to Angular Interceptors">
+  <img src="/assets/images/blog/2025-09-23-angular-interceptors-featured.webp" alt="A Practical Guide to Angular Interceptors" width="1280" height="720">
 </figure>
 
 

@@ -7,7 +7,7 @@ date: 2026-04-27
 # Your AI Agent Just Became Your Permanent Employee (And You Haven't Signed the Contracts Yet)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-27-your-ai-agent-just-became-your-permanent-employee-and-you-havent-signed-the-contracts-yet-featured.webp" alt="Your AI Agent Just Became Your Permanent Employee">
+  <img src="/assets/images/blog/2026-04-27-your-ai-agent-just-became-your-permanent-employee-and-you-havent-signed-the-contracts-yet-featured.webp" alt="Your AI Agent Just Became Your Permanent Employee" width="1280" height="720">
 </figure>
 
 

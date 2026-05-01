@@ -7,7 +7,7 @@ date: 2026-04-19
 # Your Company Is Now Liable for What AI Does
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-19-your-company-is-now-liable-for-what-ai-does-featured.webp" alt="Your Company Is Now Liable for What AI Does">
+  <img src="/assets/images/blog/2026-04-19-your-company-is-now-liable-for-what-ai-does-featured.webp" alt="Your Company Is Now Liable for What AI Does" width="1280" height="720">
 </figure>
 
 

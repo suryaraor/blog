@@ -7,7 +7,7 @@ date: 2026-05-01
 # They're Silently Failing Your Production AI Right Now (And You Haven't Built Monitoring For It)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-05-01-theyre-silently-failing-your-production-ai-right-now-and-you-havent-built-monitoring-for-it-featured.webp" alt="They're Silently Failing Your Production AI">
+  <img src="/assets/images/blog/2026-05-01-theyre-silently-failing-your-production-ai-right-now-and-you-havent-built-monitoring-for-it-featured.webp" alt="They're Silently Failing Your Production AI" width="1280" height="720">
 </figure>
 
 

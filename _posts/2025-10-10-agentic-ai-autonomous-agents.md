@@ -11,7 +11,7 @@ image: "/assets/images/blog/2025-10-10.jpg"
 ## Introduction
 
 <figure class="post-featured-image">
-  <img src="{{ page.image | relative_url }}" alt="Featured image for Agentic AI article">
+  <img src="{{ page.image | relative_url }}" alt="Featured image for Agentic AI article" width="1280" height="720">
 </figure>
 
 The landscape of artificial intelligence is undergoing a fundamental transformation. While conversational AI systems and large language models (LLMs) have captured public imagination with their ability to generate human-like text and engage in dialogue, a new paradigm is emerging that promises to revolutionize how AI interacts with the world. This paradigm, known as **agentic AI** and **autonomous AI agents**, represents a significant leap from passive question-answering systems to proactive, goal-oriented entities capable of planning, decision-making, and executing complex tasks in the real world.

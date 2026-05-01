@@ -7,7 +7,7 @@ date: 2026-04-19
 # The AI Tool Tax: Why You're Paying for Five Subscriptions to Get One Job Done
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-19-the-ai-tool-tax-why-youre-paying-for-five-subscriptions-to-get-one-job-done-featured.webp" alt="The AI Tool Tax: Paying for Five Subscriptions">
+  <img src="/assets/images/blog/2026-04-19-the-ai-tool-tax-why-youre-paying-for-five-subscriptions-to-get-one-job-done-featured.webp" alt="The AI Tool Tax: Paying for Five Subscriptions" width="1280" height="720">
 </figure>
 
 

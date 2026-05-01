@@ -8,7 +8,7 @@ date: 2026-04-18 00:00:08
 # The Intentional Internet: Why We're All Quietly Ghosting Our Phones
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-18-the-intentional-internet-featured.webp" alt="The Intentional Internet: Why We're All Quietly Ghosting Our Phones">
+  <img src="/assets/images/blog/2026-04-18-the-intentional-internet-featured.webp" alt="The Intentional Internet: Why We're All Quietly Ghosting Our Phones" width="1280" height="720">
 </figure>
 
 Last Tuesday, I watched my friend Sarah do something I'd never seen before: she got bored with her Instagram feed after 30 seconds and put her phone down. Not because she ran out of content-the algorithm would never allow that. Not because of a notification drought. But because she *decided* to.

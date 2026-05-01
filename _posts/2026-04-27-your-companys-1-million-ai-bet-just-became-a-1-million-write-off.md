@@ -7,7 +7,7 @@ date: 2026-04-27
 # Your Company's $1 Million AI Bet Just Became a $1 Million Write-Off
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-27-your-companys-1-million-ai-bet-just-became-a-1-million-write-off-featured.webp" alt="Your Company's $1M AI Bet Just Became a Write-Off">
+  <img src="/assets/images/blog/2026-04-27-your-companys-1-million-ai-bet-just-became-a-1-million-write-off-featured.webp" alt="Your Company's $1M AI Bet Just Became a Write-Off" width="1280" height="720">
 </figure>
 
 

@@ -8,7 +8,7 @@ date: 2026-04-19
 # Why Your College Degree Just Became Obsolete (And Universities Will Never Admit It)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-19-why-your-college-degree-just-became-obsolete-and-universities-will-never-admit-it-featured.webp" alt="Why Your College Degree Just Became Obsolete">
+  <img src="/assets/images/blog/2026-04-19-why-your-college-degree-just-became-obsolete-and-universities-will-never-admit-it-featured.webp" alt="Why Your College Degree Just Became Obsolete" width="1280" height="720">
 </figure>
 
 

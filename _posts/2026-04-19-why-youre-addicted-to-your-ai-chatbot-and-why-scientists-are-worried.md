@@ -7,7 +7,7 @@ date: 2026-04-19
 # Why You're Addicted to Your AI Chatbot (And Why Scientists Are Worried)
 
 <figure class="post-featured-image">
-  <img src="/assets/images/blog/2026-04-19-why-youre-addicted-to-your-ai-chatbot-and-why-scientists-are-worried-featured.webp" alt="Why You're Addicted to Your AI Chatbot">
+  <img src="/assets/images/blog/2026-04-19-why-youre-addicted-to-your-ai-chatbot-and-why-scientists-are-worried-featured.webp" alt="Why You're Addicted to Your AI Chatbot" width="1280" height="720">
 </figure>
 
 
