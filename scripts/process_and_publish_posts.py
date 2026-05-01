@@ -128,7 +128,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--generate-images",
         action="store_true",
-        help="Auto-generate hero images via Pollinations.AI (FLUX, free, no key required)",
+        help="Fetch hero images from Unsplash (requires UNSPLASH_ACCESS_KEY env var or --unsplash-key)",
+    )
+    parser.add_argument(
+        "--unsplash-key",
+        default="",
+        help="Unsplash API access key (overrides UNSPLASH_ACCESS_KEY env var)",
     )
     return parser.parse_args()
 
@@ -242,17 +247,87 @@ def extract_image_prompt(text: str) -> Optional[str]:
     return result or None
 
 
-def generate_image(prompt: str) -> Optional[bytes]:
-    """GET from Pollinations.AI (FLUX, free, no key); return raw JPEG bytes or None on error."""
-    encoded = urllib.parse.quote(prompt, safe="")
-    url = f"https://image.pollinations.ai/prompt/{encoded}?width=1344&height=768&model=flux&nologo=true"
-    req = urllib.request.Request(url, method="GET")
+def load_env_file(blog_root: Path) -> None:
+    """Load .env from blog_root into os.environ; existing env vars are not overwritten."""
+    env_file = blog_root / ".env"
+    if not env_file.exists():
+        return
+    for line in env_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+def extract_search_keywords(image_prompt: Optional[str], title: str) -> str:
+    """Distill image_prompt or title into a short Unsplash search query."""
+    if image_prompt:
+        first_line = next((l.strip() for l in image_prompt.splitlines() if l.strip()), "")
+        for phrase in (
+            "Create a", "Visual metaphor of", "Style:", "photorealistic",
+            "dramatic lighting", "editorial quality", "cinematic", "high contrast",
+            "professional photography",
+        ):
+            first_line = re.sub(re.escape(phrase), "", first_line, flags=re.IGNORECASE)
+        cleaned = first_line.strip(" .,;:").strip()
+        if cleaned:
+            return cleaned[:60].rsplit(" ", 1)[0] if len(cleaned) > 60 else cleaned
+    return title[:60].rsplit(" ", 1)[0] if len(title) > 60 else title
+
+
+def fetch_unsplash_image(query: str, access_key: str) -> Optional[Tuple[bytes, str]]:
+    """Search Unsplash for a landscape photo; return (jpeg_bytes, attribution_markdown) or None."""
+    encoded_query = urllib.parse.quote(query)
+    search_url = (
+        f"https://api.unsplash.com/search/photos"
+        f"?query={encoded_query}&per_page=1&orientation=landscape&content_filter=high"
+    )
+    req = urllib.request.Request(
+        search_url, headers={"Authorization": f"Client-ID {access_key}"}
+    )
     try:
-        with urllib.request.urlopen(req, timeout=90) as resp:
-            return resp.read()
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
     except urllib.error.URLError as exc:
-        print(f"[image] Pollinations API error: {exc}", file=sys.stderr)
+        print(f"[image] Unsplash search error: {exc}", file=sys.stderr)
         return None
+
+    results = data.get("results", [])
+    if not results:
+        print(f"[image] No Unsplash results for: {query}", file=sys.stderr)
+        return None
+
+    photo = results[0]
+    download_url = photo["urls"]["regular"]
+    photographer = photo["user"]["name"]
+    user_link = photo["user"]["links"]["html"]
+
+    # Trigger download tracking as required by Unsplash API guidelines
+    track_url = photo.get("links", {}).get("download_location")
+    if track_url:
+        try:
+            urllib.request.urlopen(
+                urllib.request.Request(f"{track_url}?client_id={access_key}"), timeout=10
+            )
+        except Exception:
+            pass
+
+    try:
+        with urllib.request.urlopen(urllib.request.Request(download_url), timeout=30) as img_resp:
+            image_bytes = img_resp.read()
+    except urllib.error.URLError as exc:
+        print(f"[image] Unsplash download error: {exc}", file=sys.stderr)
+        return None
+
+    attribution = (
+        f"Photo by [{photographer}]({user_link}?utm_source=blog&utm_medium=referral)"
+        f" on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
+    )
+    return image_bytes, attribution
 
 
 def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
@@ -337,7 +412,8 @@ def parse_front_matter(text: str) -> Tuple[Optional[List[str]], str]:
 
 
 def normalize_front_matter(
-    text: str, title: str, publish_date: str, order: int, image: Optional[str] = None
+    text: str, title: str, publish_date: str, order: int,
+    image: Optional[str] = None, image_credit: Optional[str] = None
 ) -> str:
     front_lines, body = parse_front_matter(text)
 
@@ -363,6 +439,8 @@ def normalize_front_matter(
     ]
     if image:
         fm.append(f"image: {image}")
+    if image_credit:
+        fm.append(f'image_credit: "{image_credit}"')
     fm.extend(extra_lines)
     fm.append("---")
 
@@ -534,6 +612,7 @@ class FileReport:
     validations: Dict[str, bool]
     moved_supporting_files: List[str] = None
     image_filename: Optional[str] = None
+    image_credit: Optional[str] = None
 
 
 def validate_output(path: Path, content: str) -> Dict[str, bool]:
@@ -701,6 +780,8 @@ def print_report(
         
         if rep.image_filename:
             print(f"Image: {rep.image_filename}")
+            if rep.image_credit:
+                print(f"Image credit: {rep.image_credit}")
         else:
             print("Image: none")
 
@@ -742,6 +823,9 @@ def main() -> int:
     for d in (args.processed_dir, args.posts_dir, args.unlisted_dir):
         d.mkdir(parents=True, exist_ok=True)
 
+    load_env_file(args.blog_root)
+    unsplash_key = args.unsplash_key or os.environ.get("UNSPLASH_ACCESS_KEY", "")
+
     if not args.dry_run:
         move_root_support_files(args.source_dir, args.artifacts_dir, args.source_dir / "runs")
 
@@ -755,6 +839,9 @@ def main() -> int:
     next_order = find_next_order(args.posts_dir, args.unlisted_dir)
 
     want_images = args.generate_images
+    if want_images and not unsplash_key:
+        print("[image] --generate-images set but UNSPLASH_ACCESS_KEY not found; images will be skipped.", file=sys.stderr)
+        want_images = False
 
     for source_file in unprocessed:
         original = read_text_utf8_replace(source_file)
@@ -774,20 +861,24 @@ def main() -> int:
 
         cleaned, removed = clean_sections(fixed_text)
 
-        # Generate image bytes (API call) before normalize so path ends up in front matter
+        # Fetch Unsplash image before normalize so path ends up in front matter
         image_bytes: Optional[bytes] = None
         image_filename: Optional[str] = None
+        image_credit: Optional[str] = None
         if image_prompt and not args.dry_run:
-            print(f"[image] Generating hero image for '{title}'…")
-            image_bytes = generate_image(image_prompt)
-            if image_bytes:
+            query = extract_search_keywords(image_prompt, title)
+            print(f"[image] Searching Unsplash for '{query}'…")
+            result = fetch_unsplash_image(query, unsplash_key)
+            if result:
+                image_bytes, image_credit = result
                 image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
-                print(f"[image] Generated → {args.publish_date}-{slug}.jpg")
+                print(f"[image] Found -> {args.publish_date}-{slug}.jpg")
             else:
-                print(f"[image] Generation failed for '{title}'; continuing without image.", file=sys.stderr)
+                print(f"[image] Unsplash fetch failed for '{title}'; continuing without image.", file=sys.stderr)
 
         normalized = normalize_front_matter(
-            cleaned, title=title, publish_date=args.publish_date, order=next_order, image=image_filename
+            cleaned, title=title, publish_date=args.publish_date, order=next_order,
+            image=image_filename, image_credit=image_credit
         )
         next_order += 1
 
@@ -851,6 +942,7 @@ def main() -> int:
                 validations=validations,
                 moved_supporting_files=moved_supporting,
                 image_filename=image_filename,
+                image_credit=image_credit,
             )
         )
 
