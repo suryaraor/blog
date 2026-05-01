@@ -31,7 +31,7 @@ from typing import Dict, List, Optional, Tuple
 
 SKIP_NAME_TOKENS = (
     "image_prompt",
-    "headlines",
+    "headline",   # covers headline-options, headlines, headline_formulas, etc.
     "topics",
     "prompt",
     "skill",
