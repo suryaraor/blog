@@ -587,6 +587,11 @@ def run_git(args: argparse.Namespace, written_paths: List[Path]) -> Tuple[bool, 
     if args.git_user_email:
         run_cmd(["git", "config", "user.email", args.git_user_email])
 
+    # Pull latest before committing to avoid non-fast-forward rejections on push
+    pull = run_cmd(["git", "pull", "--rebase", args.remote, args.branch])
+    if pull.returncode != 0:
+        return False, f"git pull --rebase failed: {pull.stderr.strip() or pull.stdout.strip()}"
+
     add = run_cmd(["git", "add", *rel_paths])
     if add.returncode != 0:
         return False, add.stderr.strip() or add.stdout.strip()
