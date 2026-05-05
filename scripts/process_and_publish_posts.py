@@ -128,7 +128,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--generate-images",
         action="store_true",
+        default=True,
         help="Fetch hero images from Unsplash (requires UNSPLASH_ACCESS_KEY env var or --unsplash-key)",
+    )
+    parser.add_argument(
+        "--no-generate-images",
+        dest="generate_images",
+        action="store_false",
+        help="Disable automatic hero image generation",
     )
     parser.add_argument(
         "--unsplash-key",

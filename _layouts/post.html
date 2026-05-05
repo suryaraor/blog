@@ -17,6 +17,14 @@ layout: default
             {% if page.author %}<span>by {{ page.author }}</span>{% endif %}
             <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
         </div>
+        {% if page.image %}
+        <figure class="post-hero-image">
+            <img src="{{ page.image | relative_url }}" alt="Hero image for {{ page.title | escape }}">
+            {% if page.image_credit %}
+            <figcaption>{{ page.image_credit }}</figcaption>
+            {% endif %}
+        </figure>
+        {% endif %}
         <div class="post-audio-controls" aria-live="polite">
             <button type="button" class="post-audio-button" data-audio-button>
                 Play aloud
