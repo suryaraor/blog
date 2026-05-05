@@ -667,9 +667,9 @@ def run_git(args: argparse.Namespace, written_paths: List[Path]) -> Tuple[bool, 
         run_cmd(["git", "config", "user.email", args.git_user_email])
 
     # Pull latest before committing to avoid non-fast-forward rejections on push
-    pull = run_cmd(["git", "pull", "--rebase", args.remote, args.branch])
+    pull = run_cmd(["git", "pull", "--rebase", "--autostash", args.remote, args.branch])
     if pull.returncode != 0:
-        return False, f"git pull --rebase failed: {pull.stderr.strip() or pull.stdout.strip()}"
+        return False, f"git pull --rebase --autostash failed: {pull.stderr.strip() or pull.stdout.strip()}"
 
     add = run_cmd(["git", "add", *rel_paths])
     if add.returncode != 0:
@@ -688,6 +688,49 @@ def run_git(args: argparse.Namespace, written_paths: List[Path]) -> Tuple[bool, 
         return False, push.stderr.strip() or push.stdout.strip()
 
     return True, (commit.stdout + "\n" + push.stdout + "\n" + push.stderr).strip()
+
+
+def collect_pending_publish_paths(blog_root: Path) -> List[Path]:
+    """Collect tracked or untracked publish artifacts that still need to be committed."""
+    proc = subprocess.run(
+        ["git", "status", "--porcelain"],
+        cwd=blog_root,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+
+    if proc.returncode != 0:
+        return []
+
+    publishable_prefixes = (
+        "_posts/",
+        "_unlisted/",
+        "assets/images/posts/",
+    )
+
+    pending: List[Path] = []
+    seen = set()
+
+    for line in proc.stdout.splitlines():
+        if len(line) < 4:
+            continue
+
+        path_text = line[3:].strip()
+        if " -> " in path_text:
+            path_text = path_text.split(" -> ", 1)[1].strip()
+
+        normalized = path_text.replace("\\", "/")
+        if not normalized.startswith(publishable_prefixes):
+            continue
+
+        full_path = blog_root / normalized
+        if full_path in seen:
+            continue
+        seen.add(full_path)
+        pending.append(full_path)
+
+    return pending
 
 
 def validate_remote_push(blog_root: Path, written_paths: List[Path], remote: str, branch: str) -> Tuple[bool, str]:
@@ -831,6 +874,37 @@ def main() -> int:
 
     unprocessed = find_unprocessed_files([args.articles_dir, args.source_dir, args.artifacts_dir], args.processed_dir)
     if not unprocessed:
+        if args.git_push and not args.dry_run:
+            pending_paths = collect_pending_publish_paths(args.blog_root)
+            if pending_paths:
+                print(f"Nothing to process; pushing {len(pending_paths)} pending publish file(s).")
+                git_result = run_git(args, pending_paths)
+
+                validation_result = None
+                if git_result[0]:
+                    validation_result = validate_remote_push(
+                        blog_root=args.blog_root,
+                        written_paths=pending_paths,
+                        remote=args.remote,
+                        branch=args.branch,
+                    )
+
+                print_report([], None, git_result)
+
+                if validation_result is not None:
+                    ok, details = validation_result
+                    print(f"\nPost-push validation: {'success' if ok else 'failure'}")
+                    if details:
+                        print(details)
+                    if not ok:
+                        return 6
+
+                if not git_result[0]:
+                    return 4
+
+                cleanup_topics_file(args.source_dir.parent)
+                return 0
+
         print("Nothing to process")
         return 0
 
