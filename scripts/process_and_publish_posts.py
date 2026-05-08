@@ -146,8 +146,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--image-style",
         choices=["photo", "sketch"],
-        default="photo",
-        help="Image style: 'photo' uses Unsplash (default), 'sketch' uses Pollinations.AI pencil-drawing style",
+        default="sketch",
+        help="Image style: 'sketch' uses Pollinations.AI pencil-drawing style (default), 'photo' uses Unsplash",
     )
     parser.add_argument(
         "--pollinations-model",
@@ -467,7 +467,7 @@ def fetch_pollinations_image(
     encoded = urllib.parse.quote(prompt_text)
     url = (
         f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?width=1200&height=630&model={model}&nologo=true&seed=42"
+        f"?width=1200&height=675&model={model}&nologo=true&seed=42"
     )
     print(f"[image] Generating sketch via Pollinations.AI (model={model})…")
     try:
