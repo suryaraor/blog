@@ -198,10 +198,17 @@
                     updateAudioUI();
                 };
                 speech.onend = finishSpeech;
-                speech.onerror = finishSpeech;
+                speech.onerror = function (e) {
+                    // Chrome fires "interrupted"/"canceled" spuriously after cancel(); ignore those.
+                    if (e && (e.error === 'interrupted' || e.error === 'canceled')) return;
+                    finishSpeech();
+                };
 
-                window.speechSynthesis.cancel();
-                window.speechSynthesis.speak(speech);
+                // Give the prior cancel() in stopSpeech() time to settle before speaking.
+                setTimeout(function () {
+                    if (!speech) return;
+                    window.speechSynthesis.speak(speech);
+                }, 50);
                 speechState = 'speaking';
                 updateAudioUI();
             }
