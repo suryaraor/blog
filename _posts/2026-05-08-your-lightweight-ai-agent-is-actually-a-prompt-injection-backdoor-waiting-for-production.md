@@ -5,6 +5,7 @@ title: "Your \"Lightweight\" AI Agent Is Actually a Prompt Injection Backdoor Wa
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-lightweight-ai-agent-is-actually-a-prompt-injection-backdoor-waiting-for-production.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-08-your-lightweight-ai-agent-is-actually-a-prompt-injection-backdoor-waiting-for-production.wav
 ---
 # Your "Lightweight" AI Agent Is Actually a Prompt Injection Backdoor Waiting for Production
 
