@@ -49,6 +49,7 @@ SKIP_NAME_TOKENS = (
     "completion",
     "scheduled",
     "execution",
+    "pre_claude",  # PRE_CLAUDE_PLAN_* pipeline reports
 )
 
 TIER_KEYWORDS = {
