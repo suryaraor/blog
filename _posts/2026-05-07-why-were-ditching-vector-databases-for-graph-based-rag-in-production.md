@@ -3,6 +3,8 @@ order: 37
 layout: default
 title: "Why We're Ditching Vector Databases for Graph-Based RAG in Production"
 date: 2026-05-07
+image: /assets/images/posts/2026-05-07-why-were-ditching-vector-databases-for-graph-based-rag-in-production.jpg
+image_credit: "Photo by [Luke Chesser](https://unsplash.com/@lukechesser?utm_source=blog&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
 ---
 # Why We're Ditching Vector Databases for Graph-Based RAG in Production
 

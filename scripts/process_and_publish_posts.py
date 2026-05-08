@@ -130,7 +130,7 @@ def parse_args() -> argparse.Namespace:
         "--generate-images",
         action="store_true",
         default=True,
-        help="Fetch hero images from Unsplash (requires UNSPLASH_ACCESS_KEY env var or --unsplash-key)",
+        help="Fetch hero images (Unsplash for 'photo' style, Pollinations.AI for 'sketch' style)",
     )
     parser.add_argument(
         "--no-generate-images",
@@ -142,6 +142,17 @@ def parse_args() -> argparse.Namespace:
         "--unsplash-key",
         default="",
         help="Unsplash API access key (overrides UNSPLASH_ACCESS_KEY env var)",
+    )
+    parser.add_argument(
+        "--image-style",
+        choices=["photo", "sketch"],
+        default="photo",
+        help="Image style: 'photo' uses Unsplash (default), 'sketch' uses Pollinations.AI pencil-drawing style",
+    )
+    parser.add_argument(
+        "--pollinations-model",
+        default="flux",
+        help="Pollinations.AI model to use for sketch style (default: flux)",
     )
     return parser.parse_args()
 
@@ -271,28 +282,81 @@ def load_env_file(blog_root: Path) -> None:
             os.environ[key] = value
 
 
+_DIRECTIVE_LINE_RE = re.compile(
+    r"^\s*(style|lighting|camera|shot|color|mood|tone|composition|background|setting|"
+    r"format|aspect|ratio|resolution|quality|render|post.?processing)\s*:",
+    re.IGNORECASE,
+)
+_STRIP_PHRASES = re.compile(
+    r"\b(create\s+a|visual\s+metaphor\s+of|photorealistic|dramatic\s+lighting|"
+    r"editorial\s+quality|cinematic|high\s+contrast|professional\s+photography|"
+    r"ultra.?realistic|hyperrealistic|highly\s+detailed|full.?bleed|wide.?angle|"
+    r"stock\s+photo(?:graphy)?)\b",
+    re.IGNORECASE,
+)
+_PUNCTUATION_RE = re.compile(r"[—–\-|,;:.!?\"'()\[\]{}]")
+
+_TITLE_STOP_WORDS = {
+    "why", "how", "what", "when", "where", "who", "which", "the", "a", "an",
+    "and", "or", "but", "for", "nor", "yet", "so", "as", "at", "by", "in",
+    "of", "on", "to", "up", "is", "are", "was", "were", "be", "been",
+    "have", "has", "had", "do", "does", "did", "will", "would", "should",
+    "could", "may", "might", "we", "you", "they", "it", "this", "that",
+    "just", "now", "not", "your", "our", "its", "my", "we're", "you're",
+    "they're", "it's", "there", "here", "about", "with", "from", "into",
+    "already", "still", "also", "even", "very", "than", "then", "too",
+    "more", "most", "some", "every", "any", "new", "big", "make", "get",
+    "their", "these", "those", "over", "under", "been", "only", "never",
+    "re", "ve", "ll", "s", "d",
+}
+
+_TECH_JARGON = {
+    "rag", "llm", "api", "sdk", "saas", "paas", "k8s", "orm", "crud",
+    "rest", "graphql", "cicd", "devops", "npm", "pip", "git", "cli",
+    "based", "using", "via",
+}
+
+
+def _title_to_search_words(title: str) -> List[str]:
+    """Strip stop words and tech jargon from a title; return searchable content words."""
+    cleaned = _PUNCTUATION_RE.sub(" ", title)
+    words = cleaned.split()
+    return [
+        w for w in words
+        if len(w) > 2
+        and w.lower() not in _TITLE_STOP_WORDS
+        and w.lower() not in _TECH_JARGON
+    ]
+
+
 def extract_search_keywords(image_prompt: Optional[str], title: str) -> str:
-    """Distill image_prompt or title into a short Unsplash search query."""
+    """Distill image_prompt or title into a short Unsplash search query (3-5 key nouns)."""
     if image_prompt:
-        first_line = next((l.strip() for l in image_prompt.splitlines() if l.strip()), "")
-        for phrase in (
-            "Create a", "Visual metaphor of", "Style:", "photorealistic",
-            "dramatic lighting", "editorial quality", "cinematic", "high contrast",
-            "professional photography",
-        ):
-            first_line = re.sub(re.escape(phrase), "", first_line, flags=re.IGNORECASE)
-        cleaned = first_line.strip(" .,;:").strip()
-        if cleaned:
-            return cleaned[:60].rsplit(" ", 1)[0] if len(cleaned) > 60 else cleaned
+        content_lines = [
+            line.strip()
+            for line in image_prompt.splitlines()
+            if line.strip() and not _DIRECTIVE_LINE_RE.match(line)
+        ]
+        combined = " ".join(content_lines[:3])
+        combined = _STRIP_PHRASES.sub(" ", combined)
+        combined = _PUNCTUATION_RE.sub(" ", combined)
+        words = [w for w in combined.split() if len(w) > 2]
+        if words:
+            query = " ".join(words[:6])
+            return query[:60].rsplit(" ", 1)[0] if len(query) > 60 else query
+    content_words = _title_to_search_words(title)
+    if content_words:
+        query = " ".join(content_words[:5])
+        return query[:60].rsplit(" ", 1)[0] if len(query) > 60 else query
     return title[:60].rsplit(" ", 1)[0] if len(title) > 60 else title
 
 
-def fetch_unsplash_image(query: str, access_key: str) -> Optional[Tuple[bytes, str]]:
-    """Search Unsplash for a landscape photo; return (jpeg_bytes, attribution_markdown) or None."""
+def _unsplash_search(query: str, access_key: str) -> List[dict]:
+    """Run a single Unsplash search; return results list (empty on error or no hits)."""
     encoded_query = urllib.parse.quote(query)
     search_url = (
         f"https://api.unsplash.com/search/photos"
-        f"?query={encoded_query}&per_page=1&orientation=landscape&content_filter=high"
+        f"?query={encoded_query}&per_page=10&orientation=landscape&content_filter=high&order_by=relevant"
     )
     req = urllib.request.Request(
         search_url, headers={"Authorization": f"Client-ID {access_key}"}
@@ -300,16 +364,49 @@ def fetch_unsplash_image(query: str, access_key: str) -> Optional[Tuple[bytes, s
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode("utf-8"))
+        return data.get("results", [])
     except urllib.error.URLError as exc:
         print(f"[image] Unsplash search error: {exc}", file=sys.stderr)
-        return None
+        return []
 
-    results = data.get("results", [])
+
+def _build_query_candidates(query: str) -> List[str]:
+    """Return progressively simpler fallback queries from the original."""
+    candidates: List[str] = [query]
+    words = query.split()
+    if len(words) > 3:
+        candidates.append(" ".join(words[:3]))
+    if len(words) > 2:
+        candidates.append(" ".join(words[:2]))
+    if len(words) > 1:
+        candidates.append(words[0])
+    return list(dict.fromkeys(candidates))  # deduplicate while preserving order
+
+
+def fetch_unsplash_image(query: str, access_key: str) -> Optional[Tuple[bytes, str]]:
+    """Search Unsplash for a landscape photo; return (jpeg_bytes, attribution_markdown) or None.
+
+    Fetches top 10 results, picks the one with the most likes, and retries with
+    progressively shorter queries if the first search returns no results.
+    """
+    results: List[dict] = []
+    used_query = query
+    for candidate in _build_query_candidates(query):
+        results = _unsplash_search(candidate, access_key)
+        if results:
+            used_query = candidate
+            if candidate != query:
+                print(f"[image] Fell back to shorter query: '{candidate}'")
+            break
+
     if not results:
         print(f"[image] No Unsplash results for: {query}", file=sys.stderr)
         return None
 
-    photo = results[0]
+    # Pick the photo with the most likes from the relevance-ranked results
+    photo = max(results, key=lambda p: p.get("likes", 0))
+    print(f"[image] '{used_query}' -> selected photo #{results.index(photo) + 1}/{len(results)} by likes ({photo.get('likes', 0)})")
+
     download_url = photo["urls"]["regular"]
     photographer = photo["user"]["name"]
     user_link = photo["user"]["links"]["html"]
@@ -335,6 +432,57 @@ def fetch_unsplash_image(query: str, access_key: str) -> Optional[Tuple[bytes, s
         f"Photo by [{photographer}]({user_link}?utm_source=blog&utm_medium=referral)"
         f" on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
     )
+    return image_bytes, attribution
+
+
+def build_pollinations_prompt(image_prompt: Optional[str], title: str) -> str:
+    """Build a Pollinations.AI prompt with pencil-sketch style suffix."""
+    _DIRECTIVE_LABELS_RE = re.compile(
+        r"^\s*(style|lighting|camera|shot|color|mood|tone|composition|background|"
+        r"setting|format|aspect|ratio|resolution|quality|render)\s*:",
+        re.IGNORECASE,
+    )
+    if image_prompt:
+        content_lines = [
+            line.strip()
+            for line in image_prompt.splitlines()
+            if line.strip() and not _DIRECTIVE_LABELS_RE.match(line)
+        ]
+        base = " ".join(content_lines[:4]).strip()
+    else:
+        base = title
+
+    sketch_suffix = (
+        "pencil sketch, crosshatching, black and white ink drawing, "
+        "detailed hand-drawn illustration, no color, fine line art"
+    )
+    return f"{base}, {sketch_suffix}"
+
+
+def fetch_pollinations_image(
+    image_prompt: Optional[str], title: str, model: str = "flux"
+) -> Optional[Tuple[bytes, str]]:
+    """Generate a pencil-sketch hero image via Pollinations.AI; return (jpeg_bytes, attribution) or None."""
+    prompt_text = build_pollinations_prompt(image_prompt, title)
+    encoded = urllib.parse.quote(prompt_text)
+    url = (
+        f"https://image.pollinations.ai/prompt/{encoded}"
+        f"?width=1200&height=630&model={model}&nologo=true&seed=42"
+    )
+    print(f"[image] Generating sketch via Pollinations.AI (model={model})…")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "blog-pipeline/1.0"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            image_bytes = resp.read()
+    except urllib.error.URLError as exc:
+        print(f"[image] Pollinations.AI error: {exc}", file=sys.stderr)
+        return None
+
+    if len(image_bytes) < 1024:
+        print("[image] Pollinations.AI returned unexpectedly small response; skipping.", file=sys.stderr)
+        return None
+
+    attribution = "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
     return image_bytes, attribution
 
 
@@ -915,10 +1063,12 @@ def main() -> int:
     written_paths: List[Path] = []
     next_order = find_next_order(args.posts_dir, args.unlisted_dir)
 
+    image_style = args.image_style  # "photo" or "sketch"
     want_images = args.generate_images
-    if want_images and not unsplash_key:
-        print("[image] --generate-images set but UNSPLASH_ACCESS_KEY not found; images will be skipped.", file=sys.stderr)
-        want_images = False
+    if want_images and image_style == "photo" and not unsplash_key:
+        print("[image] --generate-images set but UNSPLASH_ACCESS_KEY not found; switching to sketch mode.", file=sys.stderr)
+        image_style = "sketch"
+    print(f"[image] Image mode: {image_style}")
 
     for source_file in unprocessed:
         original = read_text_utf8_replace(source_file)
@@ -938,20 +1088,29 @@ def main() -> int:
 
         cleaned, removed = clean_sections(fixed_text)
 
-        # Fetch Unsplash image before normalize so path ends up in front matter
+        # Fetch hero image before normalize so path ends up in front matter
         image_bytes: Optional[bytes] = None
         image_filename: Optional[str] = None
         image_credit: Optional[str] = None
         if want_images and not args.dry_run:
-            query = extract_search_keywords(image_prompt, title)
-            print(f"[image] Searching Unsplash for '{query}'…")
-            result = fetch_unsplash_image(query, unsplash_key)
-            if result:
-                image_bytes, image_credit = result
-                image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
-                print(f"[image] Found -> {args.publish_date}-{slug}.jpg")
+            if image_style == "sketch":
+                result = fetch_pollinations_image(image_prompt, title, model=args.pollinations_model)
+                if result:
+                    image_bytes, image_credit = result
+                    image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
+                    print(f"[image] Sketch generated -> {args.publish_date}-{slug}.jpg")
+                else:
+                    print(f"[image] Pollinations.AI failed for '{title}'; continuing without image.", file=sys.stderr)
             else:
-                print(f"[image] Unsplash fetch failed for '{title}'; continuing without image.", file=sys.stderr)
+                query = extract_search_keywords(image_prompt, title)
+                print(f"[image] Searching Unsplash for '{query}'…")
+                result = fetch_unsplash_image(query, unsplash_key)
+                if result:
+                    image_bytes, image_credit = result
+                    image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
+                    print(f"[image] Found -> {args.publish_date}-{slug}.jpg")
+                else:
+                    print(f"[image] Unsplash fetch failed for '{title}'; continuing without image.", file=sys.stderr)
 
         normalized = normalize_front_matter(
             cleaned, title=title, publish_date=args.publish_date, order=next_order,
