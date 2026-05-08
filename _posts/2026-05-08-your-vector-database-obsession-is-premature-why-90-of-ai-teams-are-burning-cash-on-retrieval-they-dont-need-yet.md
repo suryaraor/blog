@@ -5,6 +5,7 @@ title: "Your Vector Database Obsession Is Premature — Why 90% of AI Teams Are 
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-vector-database-obsession-is-premature-why-90-of-ai-teams-are-burning-cash-on-retrieval-they-dont-need-yet.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-08-your-vector-database-obsession-is-premature-why-90-of-ai-teams-are-burning-cash-on-retrieval-they-dont-need-yet.wav
 ---
 # Your Vector Database Obsession Is Premature — Why 90% of AI Teams Are Burning Cash on Retrieval They Don’t Need Yet
 
