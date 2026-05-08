@@ -80,7 +80,7 @@
         %}
         {% endif %}
 
-        {% if page.date and page.audio == nil %}
+        {% if page.date %}
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             var audioButton = document.querySelector('[data-audio-button]');
