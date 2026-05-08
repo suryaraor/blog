@@ -157,19 +157,25 @@
                 if (!en.length) en = voices;
                 console.log(LOG, 'English-filtered voices:', en.map(function(v){ return v.name; }).join(', '));
 
-                // Priority list — first match wins
+                // Priority list — first match wins.
+                // Local voices are preferred over non-local (network) voices because
+                // Chrome's non-local Google voices make a background network request
+                // that silently fails and never fires onstart.
                 var priorities = [
-                    // iOS / macOS Siri voices (most natural on iPad)
+                    // iOS / macOS (always local, high quality)
                     function (v) { return /samantha/i.test(v.name); },
                     function (v) { return /\bsiri\b/i.test(v.name); },
                     function (v) { return /com\.apple\.ttsbundle/i.test(v.voiceURI) && !/-compact$/i.test(v.voiceURI); },
-                    // Edge / Windows Neural voices
+                    // Windows local voices — reliable, no network required
+                    function (v) { return v.localService && /david|zira|mark/i.test(v.name); },
+                    function (v) { return v.localService; },
+                    // Edge / Windows Neural (high quality, needs network)
                     function (v) { return /natural/i.test(v.name); },
                     function (v) { return /aria|jenny|guy|davis/i.test(v.name) && /online/i.test(v.name); },
-                    // Google voices (Chrome desktop)
+                    // Google voices (needs network)
                     function (v) { return /google/i.test(v.name) && /female/i.test(v.name); },
                     function (v) { return /google/i.test(v.name); },
-                    // Any non-compact local voice
+                    // Any non-compact voice
                     function (v) { return !/-compact$/i.test(v.voiceURI || ''); },
                     // Absolute fallback
                     function () { return true; }
@@ -236,39 +242,89 @@
                 }
             }
 
-            function doSpeak() {
-                console.log(LOG, 'doSpeak — voice:', speech && speech.voice ? speech.voice.name : 'browser default',
-                    '| chars:', speech ? speech.text.length : 0);
+            // Split text on sentence boundaries into chunks of at most maxWords words.
+            // Chrome silently drops single utterances that are too long (long-text bug).
+            function chunkText(text, maxWords) {
+                var sentences = text.match(/[^.!?]+[.!?]*\s*/g) || [text];
+                var chunks = [];
+                var buf = '';
+                var bufWords = 0;
+                sentences.forEach(function (s) {
+                    var wc = s.trim().split(/\s+/).length;
+                    if (buf && bufWords + wc > maxWords) {
+                        chunks.push(buf.trim());
+                        buf = s;
+                        bufWords = wc;
+                    } else {
+                        buf += s;
+                        bufWords += wc;
+                    }
+                });
+                if (buf.trim()) chunks.push(buf.trim());
+                return chunks.filter(Boolean);
+            }
 
-                speech.onstart = function () {
-                    console.log(LOG, 'onstart — speech is now playing');
-                    speechState = 'speaking';
-                    updateAudioUI();
-                };
-                speech.onend = function () {
-                    console.log(LOG, 'onend — speech finished normally');
-                    finishSpeech();
-                };
-                speech.onerror = function (e) {
-                    console.warn(LOG, 'onerror | error:', e && e.error, '| full event:', e);
-                    if (e && (e.error === 'interrupted' || e.error === 'canceled')) {
-                        console.log(LOG, 'ignoring spurious', e.error, 'error (Chrome cancel race)');
+            function doSpeak() {
+                var lang = speech.lang;
+                var rate = speech.rate;
+                var pitch = speech.pitch;
+                var chosenVoice = speech.voice;
+                var fullText = speech.text;
+
+                var chunks = chunkText(fullText, 200);
+                console.log(LOG, 'doSpeak — voice:', chosenVoice ? chosenVoice.name : 'browser default',
+                    '| chars:', fullText.length, '| chunks:', chunks.length);
+
+                function speakChunk(index) {
+                    if (index >= chunks.length) {
+                        console.log(LOG, 'all chunks finished');
+                        finishSpeech();
                         return;
                     }
-                    finishSpeech();
-                };
+
+                    var chunk = chunks[index];
+                    var utterance = new window.SpeechSynthesisUtterance(chunk);
+                    utterance.lang = lang;
+                    utterance.rate = rate;
+                    utterance.pitch = pitch;
+                    if (chosenVoice) utterance.voice = chosenVoice;
+
+                    utterance.onstart = function () {
+                        if (index === 0) {
+                            console.log(LOG, 'onstart — speech is now playing');
+                            speechState = 'speaking';
+                            updateAudioUI();
+                        }
+                    };
+                    utterance.onend = function () {
+                        console.log(LOG, 'chunk', (index + 1), 'of', chunks.length, 'finished');
+                        if (speechState !== 'idle') {
+                            speakChunk(index + 1);
+                        }
+                    };
+                    utterance.onerror = function (e) {
+                        console.warn(LOG, 'onerror | chunk:', (index + 1), '| error:', e && e.error);
+                        if (e && (e.error === 'interrupted' || e.error === 'canceled')) {
+                            console.log(LOG, 'ignoring spurious', e.error, 'error');
+                            return;
+                        }
+                        finishSpeech();
+                    };
+
+                    speech = utterance;
+                    window.speechSynthesis.speak(utterance);
+                    console.log(LOG, 'speaking chunk', (index + 1), 'of', chunks.length,
+                        '| chars:', chunk.length,
+                        '| synth.speaking:', window.speechSynthesis.speaking);
+                }
 
                 // Give the prior cancel() in stopSpeech() time to settle before speaking.
                 setTimeout(function () {
-                    if (!speech) {
-                        console.warn(LOG, 'speech cleared before 50ms timeout — aborting speak');
+                    if (speechState === 'idle') {
+                        console.warn(LOG, 'speech cancelled before 50ms timeout — aborting');
                         return;
                     }
-                    console.log(LOG, 'calling speechSynthesis.speak() now');
-                    window.speechSynthesis.speak(speech);
-                    console.log(LOG, 'speak() returned | synth.speaking:', window.speechSynthesis.speaking,
-                        '| synth.pending:', window.speechSynthesis.pending,
-                        '| synth.paused:', window.speechSynthesis.paused);
+                    speakChunk(0);
                 }, 50);
                 speechState = 'speaking';
                 updateAudioUI();
