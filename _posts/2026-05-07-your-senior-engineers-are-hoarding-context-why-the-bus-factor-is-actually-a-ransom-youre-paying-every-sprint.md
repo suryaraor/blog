@@ -5,6 +5,7 @@ title: "Your Senior Engineers Are Hoarding Context — Why the “Bus Factor” 
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-your-senior-engineers-are-hoarding-context-why-the-bus-factor-is-actually-a-ransom-youre-paying-every-sprint.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-07-your-senior-engineers-are-hoarding-context-why-the-bus-factor-is-actually-a-ransom-youre-paying-every-sprint.wav
 ---
 # Your Senior Engineers Are Hoarding Context — Why the “Bus Factor” Is Actually a Ransom You’re Paying Every Sprint
 
