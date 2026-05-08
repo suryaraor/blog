@@ -83,6 +83,7 @@
         {% if page.date %}
         <script>
         document.addEventListener('DOMContentLoaded', function () {
+            var LOG = '[PlayAloud]';
             var audioButton = document.querySelector('[data-audio-button]');
             var audioStatus = document.querySelector('[data-audio-status]');
             var content = document.querySelector('.post-content');
@@ -90,11 +91,15 @@
             var speechState = 'idle';
             var speechSupported = Boolean(window.speechSynthesis && typeof window.SpeechSynthesisUtterance === 'function');
 
+            console.log(LOG, 'init | button:', !!audioButton, '| content:', !!content, '| speechSupported:', speechSupported, '| userAgent:', navigator.userAgent);
+
             if (!audioButton || !audioStatus) {
+                console.warn(LOG, 'button or status span not found in DOM — this page may not have page.date set, or layout is wrong');
                 return;
             }
 
             if (!speechSupported) {
+                console.warn(LOG, 'SpeechSynthesis not supported in this browser');
                 audioButton.disabled = true;
                 audioButton.textContent = 'Play aloud unavailable';
                 audioStatus.textContent = 'Speech playback is not supported in this browser.';
@@ -106,12 +111,19 @@
             updateAudioUI();
 
             function handleAudioButtonClick() {
+                console.log(LOG, 'click | state:', speechState,
+                    '| synth.speaking:', window.speechSynthesis.speaking,
+                    '| synth.paused:', window.speechSynthesis.paused,
+                    '| content:', !!content);
+
                 if (!content) {
+                    console.error(LOG, '.post-content not found — cannot extract article text');
                     audioStatus.textContent = 'No article text found to read.';
                     return;
                 }
 
                 if (speech && speechState === 'paused') {
+                    console.log(LOG, 'resuming paused speech');
                     window.speechSynthesis.resume();
                     speechState = 'speaking';
                     updateAudioUI();
@@ -119,6 +131,7 @@
                 }
 
                 if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+                    console.log(LOG, 'pausing active speech');
                     window.speechSynthesis.pause();
                     speechState = 'paused';
                     updateAudioUI();
@@ -130,12 +143,19 @@
 
             function pickBestVoice(lang) {
                 var voices = window.speechSynthesis.getVoices();
-                if (!voices.length) return null;
+                console.log(LOG, 'pickBestVoice | total voices:', voices.length,
+                    '| list:', voices.map(function(v){ return v.name + ' (' + v.lang + ')'; }).join(', '));
+
+                if (!voices.length) {
+                    console.warn(LOG, 'no voices available — browser will use its default');
+                    return null;
+                }
 
                 var en = voices.filter(function (v) {
                     return v.lang && v.lang.toLowerCase().startsWith('en');
                 });
                 if (!en.length) en = voices;
+                console.log(LOG, 'English-filtered voices:', en.map(function(v){ return v.name; }).join(', '));
 
                 // Priority list — first match wins
                 var priorities = [
@@ -157,57 +177,98 @@
 
                 for (var p = 0; p < priorities.length; p++) {
                     for (var i = 0; i < en.length; i++) {
-                        if (priorities[p](en[i])) return en[i];
+                        if (priorities[p](en[i])) {
+                            console.log(LOG, 'selected voice (priority slot ' + p + '):', en[i].name, en[i].lang, 'local:', en[i].localService);
+                            return en[i];
+                        }
                     }
                 }
                 return null;
             }
 
             function startSpeech() {
+                console.log(LOG, 'startSpeech — cancelling any prior synth');
                 stopSpeech();
 
                 var text = buildSpeechText();
+                console.log(LOG, 'text length:', text ? text.length : 0, '| preview:', text ? text.slice(0, 100) : '(empty)');
+
                 if (!text) {
+                    console.error(LOG, 'buildSpeechText returned empty — nothing to speak');
                     audioStatus.textContent = 'No readable article content was found.';
                     return;
                 }
 
                 var lang = document.documentElement.lang || navigator.language || 'en-US';
+                console.log(LOG, 'utterance lang:', lang);
                 speech = new window.SpeechSynthesisUtterance(text);
                 speech.lang = lang;
                 speech.rate = 0.95;
                 speech.pitch = 1;
 
-                // Voices load async on first call — wait if the list is empty
                 var voices = window.speechSynthesis.getVoices();
+                console.log(LOG, 'voices at utterance time:', voices.length, '— path:', voices.length ? 'immediate' : 'waiting for voiceschanged');
                 if (voices.length) {
                     speech.voice = pickBestVoice(lang);
                     doSpeak();
                 } else {
                     window.speechSynthesis.onvoiceschanged = function () {
+                        console.log(LOG, 'voiceschanged fired');
                         window.speechSynthesis.onvoiceschanged = null;
                         speech.voice = pickBestVoice(lang);
                         doSpeak();
                     };
+                    // Fallback: some browsers never fire voiceschanged
+                    setTimeout(function () {
+                        if (!speech) return;
+                        var v2 = window.speechSynthesis.getVoices();
+                        if (v2.length) {
+                            console.warn(LOG, 'voiceschanged did not fire but getVoices() now returns', v2.length, '— speaking anyway');
+                            window.speechSynthesis.onvoiceschanged = null;
+                            speech.voice = pickBestVoice(lang);
+                            doSpeak();
+                        } else {
+                            console.warn(LOG, 'voiceschanged never fired and getVoices() still empty after 1s — speaking with default voice');
+                            window.speechSynthesis.onvoiceschanged = null;
+                            doSpeak();
+                        }
+                    }, 1000);
                 }
             }
 
             function doSpeak() {
+                console.log(LOG, 'doSpeak — voice:', speech && speech.voice ? speech.voice.name : 'browser default',
+                    '| chars:', speech ? speech.text.length : 0);
+
                 speech.onstart = function () {
+                    console.log(LOG, 'onstart — speech is now playing');
                     speechState = 'speaking';
                     updateAudioUI();
                 };
-                speech.onend = finishSpeech;
+                speech.onend = function () {
+                    console.log(LOG, 'onend — speech finished normally');
+                    finishSpeech();
+                };
                 speech.onerror = function (e) {
-                    // Chrome fires "interrupted"/"canceled" spuriously after cancel(); ignore those.
-                    if (e && (e.error === 'interrupted' || e.error === 'canceled')) return;
+                    console.warn(LOG, 'onerror | error:', e && e.error, '| full event:', e);
+                    if (e && (e.error === 'interrupted' || e.error === 'canceled')) {
+                        console.log(LOG, 'ignoring spurious', e.error, 'error (Chrome cancel race)');
+                        return;
+                    }
                     finishSpeech();
                 };
 
                 // Give the prior cancel() in stopSpeech() time to settle before speaking.
                 setTimeout(function () {
-                    if (!speech) return;
+                    if (!speech) {
+                        console.warn(LOG, 'speech cleared before 50ms timeout — aborting speak');
+                        return;
+                    }
+                    console.log(LOG, 'calling speechSynthesis.speak() now');
                     window.speechSynthesis.speak(speech);
+                    console.log(LOG, 'speak() returned | synth.speaking:', window.speechSynthesis.speaking,
+                        '| synth.pending:', window.speechSynthesis.pending,
+                        '| synth.paused:', window.speechSynthesis.paused);
                 }, 50);
                 speechState = 'speaking';
                 updateAudioUI();
@@ -228,16 +289,19 @@
             function buildSpeechText() {
                 var parts = [];
                 var heading = document.querySelector('.post-header h1');
-
                 if (heading) {
                     parts.push(normalizeSpeechText(heading.textContent || ''));
+                } else {
+                    console.log(LOG, 'buildSpeechText: .post-header h1 not found (expected — title is inside .post-content h1)');
                 }
 
                 if (!content) {
+                    console.warn(LOG, 'buildSpeechText: .post-content is null');
                     return parts.join('\n\n');
                 }
 
                 var paragraphs = content.querySelectorAll('h2, h3, p, li, blockquote, figcaption');
+                console.log(LOG, 'buildSpeechText: matched', paragraphs.length, 'elements inside .post-content');
                 for (var i = 0; i < paragraphs.length; i++) {
                     var text = normalizeSpeechText(paragraphs[i].innerText || paragraphs[i].textContent || '');
                     if (text) {
@@ -245,6 +309,7 @@
                     }
                 }
 
+                console.log(LOG, 'buildSpeechText: parts collected:', parts.length, '| total chars:', parts.join('').length);
                 return parts.join('\n\n');
             }
 
