@@ -22,6 +22,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -34,11 +35,30 @@ if sys.platform == "win32":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
 
 
+class _Tee:
+    """Write to both a stream and a log file simultaneously."""
+
+    def __init__(self, stream, log_file):
+        self._stream = stream
+        self._log = log_file
+
+    def write(self, data: str) -> int:
+        self._log.write(data)
+        return self._stream.write(data)
+
+    def flush(self) -> None:
+        self._stream.flush()
+        self._log.flush()
+
+    def __getattr__(self, name):
+        return getattr(self._stream, name)
+
+
 SKIP_NAME_TOKENS = (
     "image_prompt",
     "headline",   # covers headline-options, headlines, headline_formulas, etc.
     "topics",
-    "prompt",
+    "_prompt",    # matches blog_prompt, generation_prompt, etc. but NOT article titles like "prompt-injection"
     "skill",
     "template",
     "readme",
@@ -158,6 +178,13 @@ def parse_args() -> argparse.Namespace:
         "--pollinations-model",
         default="flux",
         help="Pollinations.AI model to use for sketch style (default: flux)",
+    )
+    parser.add_argument(
+        "--exit-delay",
+        type=int,
+        default=10,
+        metavar="SECONDS",
+        help="Seconds to pause before closing so the window stays readable (0 to disable, default: 10)",
     )
     return parser.parse_args()
 
@@ -737,11 +764,15 @@ def find_unprocessed_files(source_dirs: List[Path], processed_dir: Path) -> List
                 continue
 
             low_name = p.name.lower()
-            if any(tok in low_name for tok in SKIP_NAME_TOKENS):
+            matched_token = next((tok for tok in SKIP_NAME_TOKENS if tok in low_name), None)
+            if matched_token:
+                print(f"[skip] {p.name} — matches skip token '{matched_token}'")
                 continue
             if source_dir.name not in {"artifacts", "articles"} and not ROOT_DRAFT_RE.match(p.name):
+                print(f"[skip] {p.name} — not a recognized draft pattern in '{source_dir.name}'")
                 continue
             if low_name in processed_names:
+                print(f"[skip] {p.name} — already processed")
                 continue
             seen_paths.add(resolved)
             candidates.append(p)
@@ -1018,6 +1049,39 @@ def main() -> int:
     args.blog_root = args.blog_root.resolve()
     args.posts_dir = args.posts_dir.resolve()
     args.unlisted_dir = args.unlisted_dir.resolve()
+
+    # Set up per-run log file
+    logs_dir = args.source_dir / "logs"
+    logs_dir.mkdir(parents=True, exist_ok=True)
+    run_ts = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_path = logs_dir / f"run_{run_ts}.log"
+    _log_file = open(log_path, "w", encoding="utf-8")
+    _orig_stdout, _orig_stderr = sys.stdout, sys.stderr
+    sys.stdout = _Tee(sys.stdout, _log_file)
+    sys.stderr = _Tee(sys.stderr, _log_file)
+
+    _exit_code = 0
+    try:
+        _exit_code = _main_inner(args, logs_dir, log_path)
+    finally:
+        sys.stdout = _orig_stdout
+        sys.stderr = _orig_stderr
+        _log_file.close()
+        _orig_stdout.write(f"\nLog written → {log_path}\n")
+        _orig_stdout.flush()
+        if args.exit_delay > 0:
+            for _i in range(args.exit_delay, 0, -1):
+                _orig_stdout.write(f"\rClosing in {_i}s… (Ctrl-C to exit now)  ")
+                _orig_stdout.flush()
+                time.sleep(1)
+            _orig_stdout.write("\r" + " " * 40 + "\n")
+            _orig_stdout.flush()
+    return _exit_code
+
+
+def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
+    print(f"=== Run started: {dt.datetime.now().isoformat(timespec='seconds')} ===")
+    print(f"Log: {log_path}")
 
     for d in (args.processed_dir, args.posts_dir, args.unlisted_dir):
         d.mkdir(parents=True, exist_ok=True)
