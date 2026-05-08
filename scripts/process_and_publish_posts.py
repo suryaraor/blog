@@ -542,18 +542,13 @@ def move_root_support_files(workspace_root: Path, artifacts_dir: Path, runs_dir:
                 shutil.move(str(matching_file), str(target))
                 moved_files.append(str(target.relative_to(workspace_root)))
 
-    if artifacts_dir.exists():
-        move_matches([
-            "*_HEADLINES_*.txt",
-            "*_IMAGE_PROMPT_*.txt",
-            "PRE_CLAUDE_PLAN_*.md",
-        ], artifacts_dir)
-        move_matches([
-            "HEADLINE_FORMULAS.txt",
-            "COVERED_CATEGORIES.txt",
-            "TOPIC_SELECTION_CHECKLIST.txt",
-            "topics.txt",
-        ], workspace_root / "docs")
+    archive_dir = workspace_root / "articles" / "archive"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    move_matches([
+        "*_HEADLINES_*.txt",
+        "*_IMAGE_PROMPT_*.txt",
+        "PRE_CLAUDE_PLAN_*.md",
+    ], archive_dir)
 
     if runs_dir.exists():
         move_matches([
@@ -880,7 +875,7 @@ def main() -> int:
     if not args.dry_run:
         move_root_support_files(args.source_dir, args.artifacts_dir, args.source_dir / "runs")
 
-    unprocessed = find_unprocessed_files([args.articles_dir, args.source_dir, args.artifacts_dir], args.processed_dir)
+    unprocessed = find_unprocessed_files([args.articles_dir, args.source_dir], args.processed_dir)
     if not unprocessed:
         if args.git_push and not args.dry_run:
             pending_paths = collect_pending_publish_paths(args.blog_root)
