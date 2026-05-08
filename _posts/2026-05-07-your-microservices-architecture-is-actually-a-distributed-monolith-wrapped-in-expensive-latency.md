@@ -5,6 +5,7 @@ title: "Your “Microservices” Architecture Is Actually a Distributed Monolith
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-your-microservices-architecture-is-actually-a-distributed-monolith-wrapped-in-expensive-latency.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-07-your-microservices-architecture-is-actually-a-distributed-monolith-wrapped-in-expensive-latency.wav
 ---
 # Your “Microservices” Architecture Is Actually a Distributed Monolith Wrapped in Expensive Latency
 
