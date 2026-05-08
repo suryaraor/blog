@@ -9,10 +9,19 @@ collections:
   unlisted:
     output: true
     permalink: /unlisted/:name/
+  reverted:
+    output: true
+    permalink: /reverted/:name/
 defaults:
   - scope:
       path: ""
       type: unlisted
+    values:
+      sitemap: false
+      robots: "noindex, nofollow"
+  - scope:
+      path: ""
+      type: reverted
     values:
       sitemap: false
       robots: "noindex, nofollow"

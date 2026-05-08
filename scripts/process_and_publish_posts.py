@@ -121,6 +121,7 @@ def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
         "processed_dir": workspace_root / "processed",
         "posts_dir": blog_root / "_posts",
         "unlisted_dir": blog_root / "_unlisted",
+        "reverted_dir": blog_root / "_reverted",
         "images_dir": blog_root / "assets" / "images" / "posts",
     }
 
@@ -138,6 +139,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--blog-root", type=Path, default=paths["blog_root"])
     parser.add_argument("--posts-dir", type=Path, default=paths["posts_dir"])
     parser.add_argument("--unlisted-dir", type=Path, default=paths["unlisted_dir"])
+    parser.add_argument("--reverted-dir", type=Path, default=paths["reverted_dir"])
     parser.add_argument("--publish-date", default=dt.date.today().isoformat())
     parser.add_argument("--branch", default="gh-pages")
     parser.add_argument("--remote", default="origin")
@@ -263,11 +265,14 @@ def slugify_title(title: str) -> str:
     return t or "untitled"
 
 
-def find_next_order(posts_dir: Path, unlisted_dir: Path) -> int:
-    """Scan existing posts/unlisted for the highest order: value and return max+1."""
+def find_next_order(posts_dir: Path, unlisted_dir: Path, reverted_dir: Optional[Path] = None) -> int:
+    """Scan existing posts/unlisted/reverted for the highest order: value and return max+1."""
     max_order = 0
     order_re = re.compile(r"^\s*order\s*:\s*(\d+)\s*$", re.IGNORECASE | re.MULTILINE)
-    for directory in (posts_dir, unlisted_dir):
+    dirs = [posts_dir, unlisted_dir]
+    if reverted_dir is not None:
+        dirs.append(reverted_dir)
+    for directory in dirs:
         if not directory.exists():
             continue
         for md in directory.glob("*.md"):
@@ -780,9 +785,12 @@ def find_unprocessed_files(source_dirs: List[Path], processed_dir: Path) -> List
     return sorted(candidates)
 
 
-def slug_already_exists(posts_dir: Path, unlisted_dir: Path, slug: str) -> bool:
+def slug_already_exists(posts_dir: Path, unlisted_dir: Path, slug: str, reverted_dir: Optional[Path] = None) -> bool:
     pattern = f"*-{slug}.md"
-    return any(posts_dir.glob(pattern)) or any(unlisted_dir.glob(pattern))
+    exists = any(posts_dir.glob(pattern)) or any(unlisted_dir.glob(pattern))
+    if not exists and reverted_dir is not None:
+        exists = any(reverted_dir.glob(pattern))
+    return exists
 
 
 @dataclass
@@ -893,6 +901,7 @@ def collect_pending_publish_paths(blog_root: Path) -> List[Path]:
     publishable_prefixes = (
         "_posts/",
         "_unlisted/",
+        "_reverted/",
         "assets/images/posts/",
         "assets/audio/posts/",
     )
@@ -1050,6 +1059,7 @@ def main() -> int:
     args.blog_root = args.blog_root.resolve()
     args.posts_dir = args.posts_dir.resolve()
     args.unlisted_dir = args.unlisted_dir.resolve()
+    args.reverted_dir = args.reverted_dir.resolve()
 
     # Set up per-run log file
     logs_dir = args.source_dir / "logs"
@@ -1131,7 +1141,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
 
     reports: List[FileReport] = []
     written_paths: List[Path] = []
-    next_order = find_next_order(args.posts_dir, args.unlisted_dir)
+    next_order = find_next_order(args.posts_dir, args.unlisted_dir, args.reverted_dir)
 
     image_style = args.image_style  # "photo" or "sketch"
     want_images = args.generate_images
@@ -1146,9 +1156,9 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
         title = extract_title(fixed_text, source_file.name)
         slug = slugify_title(title)
 
-        if slug_already_exists(args.posts_dir, args.unlisted_dir, slug) and not args.overwrite_existing:
+        if slug_already_exists(args.posts_dir, args.unlisted_dir, slug, args.reverted_dir) and not args.overwrite_existing:
             print(
-                f"Skipping {source_file.name}: slug '{slug}' already exists in _posts or _unlisted. "
+                f"Skipping {source_file.name}: slug '{slug}' already exists in _posts, _unlisted, or _reverted. "
                 "Use --overwrite-existing to replace it."
             )
             continue
