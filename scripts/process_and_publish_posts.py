@@ -942,7 +942,7 @@ def main() -> int:
         image_bytes: Optional[bytes] = None
         image_filename: Optional[str] = None
         image_credit: Optional[str] = None
-        if image_prompt and not args.dry_run:
+        if want_images and not args.dry_run:
             query = extract_search_keywords(image_prompt, title)
             print(f"[image] Searching Unsplash for '{query}'…")
             result = fetch_unsplash_image(query, unsplash_key)
