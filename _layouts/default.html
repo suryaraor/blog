@@ -46,12 +46,20 @@
 
         <main>
             {% if page.date %}
+            {% if page.audio %}
+            <div class="post-audio-controls">
+                <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
+                    <source src="{{ page.audio | relative_url }}" type="audio/wav">
+                </audio>
+            </div>
+            {% else %}
             <div class="post-audio-controls" aria-live="polite">
                 <button type="button" class="post-audio-button" data-audio-button>
                     Play aloud
                 </button>
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
+            {% endif %}
             {% if page.image %}
             <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
             {% endif %}
@@ -72,7 +80,7 @@
         %}
         {% endif %}
 
-        {% if page.date %}
+        {% if page.date and page.audio == nil %}
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             var audioButton = document.querySelector('[data-audio-button]');

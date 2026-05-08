@@ -894,6 +894,7 @@ def collect_pending_publish_paths(blog_root: Path) -> List[Path]:
         "_posts/",
         "_unlisted/",
         "assets/images/posts/",
+        "assets/audio/posts/",
     )
 
     pending: List[Path] = []
@@ -1221,6 +1222,17 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
 
             validations = validate_output(output_path, normalized)
             written_paths.append(output_path)
+
+            # Include pre-generated TTS audio file in git push if front matter references one
+            audio_match = re.search(r"^audio:\s*(\S+)", normalized, re.MULTILINE)
+            if audio_match:
+                audio_rel = audio_match.group(1).lstrip("/")
+                audio_abs = args.blog_root / audio_rel
+                if audio_abs.exists():
+                    written_paths.append(audio_abs)
+                    print(f"[audio] Queued for git push: {audio_rel}")
+                else:
+                    print(f"[audio] File not found, skipping: {audio_abs}", file=sys.stderr)
         else:
             validations = {
                 "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", output_path.name)),

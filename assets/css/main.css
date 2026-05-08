@@ -293,6 +293,12 @@ a:hover {
   margin-top: var(--space-2);
 }
 
+.post-audio-player {
+  width: 100%;
+  border-radius: 6px;
+  accent-color: var(--accent);
+}
+
 .post-audio-button {
   display: inline-flex;
   align-items: center;
