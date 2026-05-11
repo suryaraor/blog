@@ -1382,6 +1382,13 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
         return 0
 
     build_result = run_jekyll_build(args.blog_root) if args.run_build and not args.dry_run else None
+
+    # Pick up any pending publishable files (e.g. _reverted/) not created in this run
+    if args.git_push and not args.dry_run:
+        for p in collect_pending_publish_paths(args.blog_root):
+            if p not in written_paths:
+                written_paths.append(p)
+
     git_result = run_git(args, written_paths) if args.git_push and not args.dry_run else None
 
     validation_result = None
