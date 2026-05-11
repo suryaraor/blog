@@ -1,4 +1,4 @@
-.post-interactions {
+.post-comments {
   margin: var(--space-5) 0 0;
   padding: clamp(1.1rem, 3vw, 1.6rem);
   border: 1px solid var(--line);
@@ -7,139 +7,20 @@
   box-shadow: var(--shadow-soft);
 }
 
-.post-interactions__header {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-2);
-  align-items: flex-start;
-  margin-bottom: var(--space-3);
-}
-
-.post-interactions__eyebrow {
-  margin: 0 0 0.35rem;
-  font-size: 0.74rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.post-interactions__header h2 {
-  margin-bottom: 0;
-}
-
-.post-interactions__note {
-  margin: 0;
-  max-width: 34ch;
-  color: var(--ink-500);
-  font-size: 0.9rem;
-}
-
-.post-interactions__stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-  align-items: stretch;
-  margin-bottom: var(--space-2);
-}
-
-.post-like-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  min-width: 210px;
-  padding: 0.95rem 1.05rem;
-  border: 1px solid transparent;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #c84f24, #ff8c42);
-  color: #fff;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 10px 24px rgba(200, 79, 36, 0.2);
-  transition: transform 160ms ease, opacity 160ms ease, box-shadow 160ms ease;
-}
-
-.post-like-button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 28px rgba(200, 79, 36, 0.24);
-}
-
-.post-like-button:disabled,
-.post-like-button.is-liked {
-  opacity: 0.72;
-  cursor: default;
-}
-
-.post-like-button__count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.2rem;
-  padding: 0.1rem 0.55rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.post-interactions__stat {
-  min-width: 140px;
-  padding: 0.95rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.post-interactions__stat-label {
-  display: block;
-  margin-bottom: 0.15rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-500);
-  font-weight: 700;
-}
-
-.post-interactions__message {
-  min-height: 1.25rem;
-  margin-bottom: var(--space-2);
-  color: var(--ink-500);
-  font-size: 0.94rem;
-}
-
-.post-interactions__message.is-success {
-  color: #14643a;
-}
-
-.post-interactions__message.is-error {
-  color: #9f2f20;
-}
-
-.post-interactions__comments {
-  margin-bottom: var(--space-3);
-}
-
-.post-interactions__loading {
-  display: none;
-  color: var(--ink-500);
-  font-size: 0.94rem;
-  margin-bottom: var(--space-2);
-}
-
-.post-interactions.is-loading .post-interactions__loading {
-  display: block;
+.post-comments__heading {
+  margin: 0 0 var(--space-3);
 }
 
 .comment-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 var(--space-3);
   padding: 0;
   display: grid;
   gap: 0.85rem;
 }
 
 .comment-list:empty::before {
-  content: 'No approved comments yet. Be the first to start the conversation.';
+  content: 'No comments yet. Be the first to start the conversation.';
   display: block;
   padding: 1rem;
   border: 1px dashed var(--line);
@@ -149,7 +30,7 @@
 }
 
 .comment-card {
-  padding: 1rem 1rem 0.95rem;
+  padding: 1rem;
   border: 1px solid var(--line);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.84);
@@ -168,15 +49,6 @@
 .comment-card__name {
   color: var(--ink-900);
   font-weight: 700;
-}
-
-.comment-card__website {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.comment-card__website:hover {
-  text-decoration: underline;
 }
 
 .comment-card__body {
@@ -203,11 +75,6 @@
   font-weight: 600;
 }
 
-.comment-form small {
-  color: var(--ink-500);
-  font-weight: 500;
-}
-
 .comment-form input,
 .comment-form textarea {
   width: 100%;
@@ -224,12 +91,6 @@
   outline: none;
   border-color: rgba(200, 79, 36, 0.55);
   box-shadow: 0 0 0 3px rgba(200, 79, 36, 0.12);
-}
-
-.comment-form__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
 }
 
 .comment-form__honeypot {
@@ -267,38 +128,7 @@
   cursor: not-allowed;
 }
 
-.comment-form__hint {
-  margin: 0;
+.comment-form__status {
+  font-size: 0.9rem;
   color: var(--ink-500);
-  font-size: 0.86rem;
-}
-
-.post-interactions__admin-note {
-  margin-top: var(--space-2);
-  color: var(--ink-700);
-}
-
-.post-interactions__admin-note summary {
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.post-interactions__admin-note p {
-  margin: 0.7rem 0 0;
-  color: var(--ink-500);
-}
-
-@media (max-width: 720px) {
-  .post-interactions__header {
-    flex-direction: column;
-  }
-
-  .post-like-button,
-  .post-interactions__stat {
-    width: 100%;
-  }
-
-  .comment-form__grid {
-    grid-template-columns: 1fr;
-  }
 }
