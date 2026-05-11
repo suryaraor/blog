@@ -19,12 +19,26 @@
     commentForm.addEventListener('submit', handleSubmit);
   }
 
-  function loadComments() {
+  function loadComments(showLoading) {
+    if (showLoading && commentList) {
+      var loadingLi = document.createElement('li');
+      loadingLi.className = 'comment-list__loading';
+      loadingLi.textContent = 'Loading comments…';
+      commentList.innerHTML = '';
+      commentList.appendChild(loadingLi);
+    }
     var url = apiUrl + '?action=getComments&post_id=' + encodeURIComponent(postId) + '&_=' + Date.now();
     fetch(url, { mode: 'cors', credentials: 'omit', cache: 'no-store' })
       .then(function (r) { return r.json(); })
-      .then(function (data) { renderComments(data.comments || []); })
-      .catch(function () {});
+      .then(function (data) {
+        renderComments(data.comments || []);
+        if (showLoading && commentList) {
+          commentList.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      })
+      .catch(function () {
+        if (showLoading && commentList) commentList.innerHTML = '';
+      });
   }
 
   function renderComments(comments) {
@@ -56,7 +70,7 @@
     if (name.length < 2) return setStatus('Please enter your name.');
     if (comment.length < 5) return setStatus('Comment is too short.');
 
-    commentSubmit.disabled = true;
+    setSubmitting(true);
     setStatus('');
 
     var body = new URLSearchParams({
@@ -81,12 +95,19 @@
       if (data.ok === false) throw new Error(data.error || 'Failed to post comment.');
       commentForm.reset();
       setStatus('Comment posted!');
-      loadComments();
+      loadComments(true);
     } catch (err) {
       setStatus(err.message || 'Unable to post comment. Please try again.');
     } finally {
-      commentSubmit.disabled = false;
+      setSubmitting(false);
     }
+  }
+
+  function setSubmitting(on) {
+    commentSubmit.disabled = on;
+    commentSubmit.innerHTML = on
+      ? '<span class="btn-spinner" aria-hidden="true"></span>Posting…'
+      : 'Post comment';
   }
 
   function setStatus(msg) {
