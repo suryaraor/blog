@@ -25,6 +25,8 @@ defaults:
     values:
       sitemap: false
       robots: "noindex, nofollow"
+google_analytics: G-6W38HK15G9
+
 plugins:
   - jekyll-feed
 
