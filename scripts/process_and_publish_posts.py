@@ -172,14 +172,19 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--image-style",
-        choices=["photo", "sketch"],
-        default="sketch",
-        help="Image style: 'sketch' uses Pollinations.AI pencil-drawing style (default), 'photo' uses Unsplash",
+        choices=["photo", "sketch", "isometric", "watercolor", "glassmorphism", "flat_vector", "auto"],
+        default="auto",
+        help=(
+            "Image style for Pollinations.AI: 'auto' detects theme from post content (default); "
+            "'isometric' for how-to/educational; 'watercolor' for ethics/future-AI; "
+            "'glassmorphism' for hardware/coding; 'flat_vector' for tool reviews/UI-UX; "
+            "'sketch' for legacy pencil-drawing; 'photo' uses Unsplash instead"
+        ),
     )
     parser.add_argument(
         "--pollinations-model",
         default="flux",
-        help="Pollinations.AI model to use for sketch style (default: flux)",
+        help="Pollinations.AI model to use (default: flux). Options: flux, flux-realism, flux-3d, flux-anime, turbo",
     )
     parser.add_argument(
         "--exit-delay",
@@ -472,8 +477,92 @@ def fetch_unsplash_image(query: str, access_key: str) -> Optional[Tuple[bytes, s
     return image_bytes, attribution
 
 
-def build_pollinations_prompt(image_prompt: Optional[str], title: str) -> str:
-    """Build a Pollinations.AI prompt with pencil-sketch style suffix."""
+# ── Theme keyword maps ────────────────────────────────────────────────────────
+# Each entry: (title/category keywords, theme name)
+# Evaluated in order; first match wins.
+_THEME_SIGNALS: List[Tuple[List[str], str]] = [
+    # Ethics / Future-of-AI posts → Watercolor
+    (["ethic", "future", "society", "human", "conscious", "moral", "trust",
+      "bias", "fairness", "rights", "philosophy", "existential", "sentient",
+      "regulate", "regulation", "policy", "governance", "democratic",
+      "intentional internet", "wealth gap", "inequality", "divide"], "watercolor"),
+    # Hardware / Deep-coding posts → Glassmorphism
+    (["hardware", "chip", "silicon", "gpu", "cpu", "neural chip", "circuit",
+      "architecture", "infrastructure", "cloud", "kubernetes", "docker",
+      "spring boot", "backend", "database", "hexagonal", "coding", "code",
+      "angular", "react", "typescript", "python", "rust", "go lang",
+      "databricks", "data engineering", "data pipeline", "edge ai"], "glassmorphism"),
+    # AI Tool Reviews / Productivity / UI-UX → Flat Vector
+    (["tool", "review", "ui", "ux", "design", "app", "product", "software",
+      "platform", "saas", "interface", "workflow", "productivity", "automation",
+      "agent", "agentic", "assistant", "chatbot", "copilot", "plugin"], "flat_vector"),
+    # How-To / Educational / Tutorials → Isometric 3D
+    (["how to", "how-to", "guide", "tutorial", "learn", "beginner", "step",
+      "build", "create", "implement", "setup", "getting started", "explained",
+      "introduction", "deep dive", "breakdown", "interceptor", "store"], "isometric"),
+]
+
+# Theme → Pollinations.AI prompt suffix + preferred background descriptor
+_THEME_PROMPTS: Dict[str, Tuple[str, str]] = {
+    "isometric": (
+        "Clean Isometric 3D Illustration, white background with blue accent colors, "
+        "organized geometric layout, professional tech illustration, crisp edges, "
+        "soft shadows, modern infographic style",
+        "isometric",
+    ),
+    "watercolor": (
+        "Abstract Watercolor and Ink illustration, muted earth tones and soft pastels, "
+        "organic flowing shapes, hand-painted texture, ink wash, expressive brushstrokes, "
+        "thoughtful and human feeling, no harsh edges",
+        "watercolor",
+    ),
+    "glassmorphism": (
+        "Futuristic Glassmorphism with Neon Circuitry, dark mode deep black background, "
+        "glowing teal and cyan neon accents, frosted glass panels, circuit board patterns, "
+        "high-tech digital aesthetic, dramatic contrast, cyberpunk-inspired",
+        "glassmorphism",
+    ),
+    "flat_vector": (
+        "Flat Vector Illustration in Modern Web Design style, vibrant high-contrast primary colors, "
+        "clean geometric shapes, bold solid fills, minimal shadows, modern app UI aesthetic, "
+        "crisp and polished, no gradients",
+        "flat_vector",
+    ),
+    # Legacy fallback kept for --image-theme sketch
+    "sketch": (
+        "pencil sketch, crosshatching, black and white ink drawing, "
+        "detailed hand-drawn illustration, no color, fine line art",
+        "sketch",
+    ),
+}
+
+
+def detect_image_theme(title: str, category: str = "", image_prompt: str = "") -> str:
+    """Return the best-matching theme name for a post based on title/category/prompt signals."""
+    haystack = " ".join([title, category, image_prompt]).lower()
+    for signals, theme in _THEME_SIGNALS:
+        if any(sig in haystack for sig in signals):
+            return theme
+    # Default: isometric (most broadly applicable for tech content)
+    return "isometric"
+
+
+def build_pollinations_prompt(
+    image_prompt: Optional[str],
+    title: str,
+    theme: str = "auto",
+    category: str = "",
+) -> str:
+    """Build a Pollinations.AI prompt with a content-matched visual theme suffix.
+
+    theme values:
+      "auto"         — detect from title/category/image_prompt (recommended)
+      "isometric"    — How-To / Educational posts
+      "watercolor"   — Ethics / Future-of-AI posts
+      "glassmorphism"— Hardware / Coding posts
+      "flat_vector"  — Tool Reviews / UI-UX posts
+      "sketch"       — Legacy pencil-sketch (backwards compat)
+    """
     _DIRECTIVE_LABELS_RE = re.compile(
         r"^\s*(style|lighting|camera|shot|color|mood|tone|composition|background|"
         r"setting|format|aspect|ratio|resolution|quality|render)\s*:",
@@ -489,24 +578,29 @@ def build_pollinations_prompt(image_prompt: Optional[str], title: str) -> str:
     else:
         base = title
 
-    sketch_suffix = (
-        "pencil sketch, crosshatching, black and white ink drawing, "
-        "detailed hand-drawn illustration, no color, fine line art"
-    )
-    return f"{base}, {sketch_suffix}"
+    if theme == "auto":
+        theme = detect_image_theme(title, category, image_prompt or "")
+
+    theme_suffix, _ = _THEME_PROMPTS.get(theme, _THEME_PROMPTS["isometric"])
+    return f"{base}, {theme_suffix}"
 
 
 def fetch_pollinations_image(
-    image_prompt: Optional[str], title: str, model: str = "flux"
+    image_prompt: Optional[str],
+    title: str,
+    model: str = "flux",
+    theme: str = "auto",
+    category: str = "",
 ) -> Optional[Tuple[bytes, str]]:
-    """Generate a pencil-sketch hero image via Pollinations.AI; return (jpeg_bytes, attribution) or None."""
-    prompt_text = build_pollinations_prompt(image_prompt, title)
+    """Generate a themed hero image via Pollinations.AI; return (jpeg_bytes, attribution) or None."""
+    resolved_theme = theme if theme != "auto" else detect_image_theme(title, category, image_prompt or "")
+    prompt_text = build_pollinations_prompt(image_prompt, title, theme=resolved_theme, category=category)
     encoded = urllib.parse.quote(prompt_text)
     url = (
         f"https://image.pollinations.ai/prompt/{encoded}"
         f"?width=1200&height=675&model={model}&nologo=true&seed=42"
     )
-    print(f"[image] Generating sketch via Pollinations.AI (model={model})…")
+    print(f"[image] Generating image via Pollinations.AI (model={model}, theme={resolved_theme})…")
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "blog-pipeline/1.0"})
         with urllib.request.urlopen(req, timeout=60) as resp:
@@ -1143,11 +1237,11 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
     written_paths: List[Path] = []
     next_order = find_next_order(args.posts_dir, args.unlisted_dir, args.reverted_dir)
 
-    image_style = args.image_style  # "photo" or "sketch"
+    image_style = args.image_style  # "auto", "photo", "sketch", or explicit theme name
     want_images = args.generate_images
     if want_images and image_style == "photo" and not unsplash_key:
-        print("[image] --generate-images set but UNSPLASH_ACCESS_KEY not found; switching to sketch mode.", file=sys.stderr)
-        image_style = "sketch"
+        print("[image] --generate-images set but UNSPLASH_ACCESS_KEY not found; switching to auto theme mode.", file=sys.stderr)
+        image_style = "auto"
     print(f"[image] Image mode: {image_style}")
 
     for source_file in unprocessed:
@@ -1166,6 +1260,10 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
         # Extract image prompt BEFORE clean_sections strips it
         image_prompt = extract_image_prompt(fixed_text) if want_images else None
 
+        # Extract category from front matter for theme detection
+        _cat_match = re.search(r"^\s*category\s*:\s*(.+)$", fixed_text[:600], re.IGNORECASE | re.MULTILINE)
+        post_category = _cat_match.group(1).strip().strip('"\'') if _cat_match else ""
+
         cleaned, removed = clean_sections(fixed_text)
 
         # Fetch hero image before normalize so path ends up in front matter
@@ -1173,15 +1271,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
         image_filename: Optional[str] = None
         image_credit: Optional[str] = None
         if want_images and not args.dry_run:
-            if image_style == "sketch":
-                result = fetch_pollinations_image(image_prompt, title, model=args.pollinations_model)
-                if result:
-                    image_bytes, image_credit = result
-                    image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
-                    print(f"[image] Sketch generated -> {args.publish_date}-{slug}.jpg")
-                else:
-                    print(f"[image] Pollinations.AI failed for '{title}'; continuing without image.", file=sys.stderr)
-            else:
+            if image_style == "photo":
                 query = extract_search_keywords(image_prompt, title)
                 print(f"[image] Searching Unsplash for '{query}'…")
                 result = fetch_unsplash_image(query, unsplash_key)
@@ -1191,6 +1281,20 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                     print(f"[image] Found -> {args.publish_date}-{slug}.jpg")
                 else:
                     print(f"[image] Unsplash fetch failed for '{title}'; continuing without image.", file=sys.stderr)
+            else:
+                # image_style is "auto", "sketch", "isometric", "watercolor", "glassmorphism", or "flat_vector"
+                result = fetch_pollinations_image(
+                    image_prompt, title,
+                    model=args.pollinations_model,
+                    theme=image_style,
+                    category=post_category,
+                )
+                if result:
+                    image_bytes, image_credit = result
+                    image_filename = f"/assets/images/posts/{args.publish_date}-{slug}.jpg"
+                    print(f"[image] Generated -> {args.publish_date}-{slug}.jpg")
+                else:
+                    print(f"[image] Pollinations.AI failed for '{title}'; continuing without image.", file=sys.stderr)
 
         normalized = normalize_front_matter(
             cleaned, title=title, publish_date=args.publish_date, order=next_order,
