@@ -739,6 +739,60 @@ footer {
   background: rgba(22, 26, 40, 0.7);
 }
 
+.post-changelog {
+  margin: var(--space-4) 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.post-changelog-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-500);
+  margin: 0 0 0.75rem;
+}
+
+.post-changelog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-changelog-entry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.75rem;
+  align-items: baseline;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+
+.post-changelog-entry:last-child {
+  border-bottom: none;
+}
+
+.post-changelog-date {
+  font-weight: 700;
+  color: var(--ink-500);
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-changelog-note {
+  color: var(--ink-700);
+  flex: 1;
+}
+
+[data-theme="dark"] .post-changelog {
+  background: rgba(22, 26, 40, 0.6);
+}
+
 .further-reading {
   margin: var(--space-4) 0;
 }

@@ -1,0 +1,13 @@
+{% if page.changelog %}
+<section class="post-changelog">
+    <h2 class="post-changelog-title">&#128203; Revision History</h2>
+    <ul class="post-changelog-list">
+        {% for entry in page.changelog reversed %}
+        <li class="post-changelog-entry">
+            <time class="post-changelog-date">{{ entry.date | date: "%B %d, %Y" }}</time>
+            <span class="post-changelog-note">{{ entry.note }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
