@@ -45,6 +45,11 @@
             </nav>
         </header>
 
+        {% if page.date %}
+        <div class="reading-progress" aria-hidden="true">
+            <div class="reading-progress-bar" id="reading-progress-bar"></div>
+        </div>
+        {% endif %}
         <main>
             {% if page.date %}
             <div class="post-meta">
@@ -87,6 +92,25 @@
         {% endif %}
 
         {% if page.date %}
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var progressBar = document.getElementById('reading-progress-bar');
+            var postContent = document.querySelector('.post-content');
+            function updateProgress() {
+                if (!progressBar || !postContent) return;
+                var top = postContent.getBoundingClientRect().top + window.scrollY;
+                var height = postContent.offsetHeight;
+                var vh = window.innerHeight;
+                var scrolled = window.scrollY - top;
+                var total = height - vh;
+                var ratio = total > 0 ? Math.min(1, Math.max(0, scrolled / total)) : 0;
+                progressBar.style.transform = 'scaleX(' + ratio + ')';
+            }
+            updateProgress();
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            window.addEventListener('resize', updateProgress);
+        });
+        </script>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             var LOG = '[PlayAloud]';
