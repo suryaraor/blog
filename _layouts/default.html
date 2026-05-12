@@ -88,6 +88,16 @@
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
             {% endif %}
+            {% if page.tldr %}
+            <div class="tldr-box">
+                <p class="tldr-title">&#9889; TL;DR — Key Takeaways</p>
+                <ul class="tldr-list">
+                    {% for item in page.tldr %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
             <aside class="post-toc" id="post-toc" hidden>
                 <p class="post-toc-title">On this page</p>
                 <nav id="post-toc-nav" aria-label="Table of contents"></nav>

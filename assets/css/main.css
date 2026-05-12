@@ -622,6 +622,41 @@ footer {
   font-size: 0.86rem;
 }
 
+.tldr-box {
+  background: linear-gradient(135deg, #fff8ec, #fffdf8);
+  border: 1px solid var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.tldr-title {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.tldr-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.tldr-list li {
+  font-size: 0.95rem;
+  color: var(--ink-700);
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .tldr-box {
+  background: linear-gradient(135deg, #1e1a14, #1a1e2c);
+  border-color: #4a2810;
+}
+
 .difficulty-badge {
   display: inline-block;
   font-size: 0.7rem;
