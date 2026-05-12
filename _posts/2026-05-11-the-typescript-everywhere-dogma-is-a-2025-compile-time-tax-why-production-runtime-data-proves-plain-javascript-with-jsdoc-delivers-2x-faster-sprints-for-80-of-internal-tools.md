@@ -1,14 +1,14 @@
----
+﻿---
 order: 103
 layout: default
-title: "The \"TypeScript Everywhere\" Dogma Is a 2025 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools"
+title: "The Typescript Everywhere Dogma Is A 2026 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-typescript-everywhere-dogma-is-a-2025-compile-time-tax-why-production-runtime-data-proves-plain-javascript-with-jsdoc-delivers-2x-faster-sprints-for-80-of-internal-tools.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-typescript-everywhere-dogma-is-a-2025-compile.wav
 difficulty: Beginner
 ---
-# The "TypeScript Everywhere" Dogma Is a 2025 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools
+# The Typescript Everywhere Dogma Is A 2026 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools
 
 We have reached peak TypeScript. The year is 2025, and every new project starts with `npx create-next-app --typescript` like it’s a religious rite. The dogma is absolute: TypeScript equals professionalism, JavaScript equals chaos. But what if the gospel is wrong? What if, for the vast majority of internal tools—those CRUD apps, dashboards, and admin panels that never see public light—TypeScript is actually a tax? A compile-time drag that costs you 2x the sprint velocity for zero runtime benefit.
 

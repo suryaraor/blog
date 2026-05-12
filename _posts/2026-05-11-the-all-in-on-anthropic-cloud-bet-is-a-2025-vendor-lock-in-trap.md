@@ -1,14 +1,14 @@
----
+﻿---
 order: 118
 layout: default
-title: "The “All-In on Anthropic” Cloud Bet Is a 2025 Vendor Lock-In Trap"
+title: "The All In On Anthropic Cloud Bet Is A 2026 Vendor Lock-In Trap"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-all-in-on-anthropic-cloud-bet-is-a-2025-vendor-lock-in-trap.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-all-in-on-anthropic-cloud-bet-is-a-2025-vendor.wav
 difficulty: Intermediate
 ---
-# The “All-In on Anthropic” Cloud Bet Is a 2025 Vendor Lock-In Trap
+# The All In On Anthropic Cloud Bet Is A 2026 Vendor Lock-In Trap
 
 **Hook (150 words)**
 

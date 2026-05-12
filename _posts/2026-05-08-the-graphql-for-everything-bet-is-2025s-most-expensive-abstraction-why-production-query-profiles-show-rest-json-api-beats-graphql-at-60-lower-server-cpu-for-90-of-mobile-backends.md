@@ -1,13 +1,13 @@
----
+﻿---
 order: 92
 layout: default
-title: "The “GraphQL for Everything” Bet Is 2025’s Most Expensive Abstraction — Why Production Query Profiles Show REST+JSON:API Beats GraphQL at 60% Lower Server CPU for 90% of Mobile Backends"
+title: "The Graphql For Everything Bet Is 2026’s Most Expensive Abstraction — Why Production Query Profiles Show REST+JSON:API Beats GraphQL at 60% Lower Server CPU for 90% of Mobile Backends"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-graphql-for-everything-bet-is-2025s-most-expensive-abstraction-why-production-query-profiles-show-rest-json-api-beats-graphql-at-60-lower-server-cpu-for-90-of-mobile-backends.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The “GraphQL for Everything” Bet Is 2025’s Most Expensive Abstraction — Why Production Query Profiles Show REST+JSON:API Beats GraphQL at 60% Lower Server CPU for 90% of Mobile Backends
+# The Graphql For Everything Bet Is 2026’s Most Expensive Abstraction — Why Production Query Profiles Show REST+JSON:API Beats GraphQL at 60% Lower Server CPU for 90% of Mobile Backends
 
 Here’s a confession that might get me uninvited from the next tech conference after-party: I spent six months building a GraphQL backend for a mobile app, and I still can’t tell you if it was worth the headache.
 

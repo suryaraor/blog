@@ -1,14 +1,14 @@
----
+﻿---
 order: 117
 layout: default
-title: "The Agile Ceremony Ritual Is a 2025 Developer Velocity Sink"
+title: "The Agile Ceremony Ritual Is A 2026 Developer Velocity Sink"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-agile-ceremony-ritual-is-a-2025-developer-velocity-sink.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-agile-ceremony-ritual-is-a-2025-developer-velo.wav
 difficulty: Intermediate
 ---
-# The Agile Ceremony Ritual Is a 2025 Developer Velocity Sink
+# The Agile Ceremony Ritual Is A 2026 Developer Velocity Sink
 
 You know what's funny? The daily standup was invented to save time. Fifteen minutes, max. Three questions. No problem-solving. A sacred ritual to keep everyone aligned. But somewhere around 2023, that fifteen minutes metastasized. Now you've got your standup, your sprint planning, your backlog grooming, your retrospective, your demo day — and that's just Monday. Walk through any remote-first engineering floor, and you'll hear the same tired joke: "I'd get more done if I didn't have so many meetings about getting more done." The joke stopped being funny around the time developers started measuring their coding hours in single digits. Here's what nobody wants to admit: the Agile ceremony, once a revolutionary productivity tool, has become the very bottleneck it was designed to eliminate. And the data is finally proving it.
 

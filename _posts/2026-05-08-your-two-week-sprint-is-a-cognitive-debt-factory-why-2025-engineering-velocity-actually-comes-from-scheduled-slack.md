@@ -1,14 +1,14 @@
----
+﻿---
 order: 55
 layout: default
-title: "Your Two-Week Sprint Is a Cognitive Debt Factory — Why 2025 Engineering Velocity Actually Comes From Scheduled Slack"
+title: "Your Two Week Sprint Is A Cognitive Debt Factory Why 2026 Engineering Velocity Actually Comes From Scheduled Slack"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-two-week-sprint-is-a-cognitive-debt-factory-why-2025-engineering-velocity-actually-comes-from-scheduled-slack.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-two-week-sprint-is-a-cognitive-debt-factory-w.wav
 difficulty: Intermediate
 ---
-# Your Two-Week Sprint Is a Cognitive Debt Factory — Why 2025 Engineering Velocity Actually Comes From Scheduled Slack
+# Your Two Week Sprint Is A Cognitive Debt Factory Why 2026 Engineering Velocity Actually Comes From Scheduled Slack
 
 You know that feeling when you finish a sprint, deliver everything on time, and still feel like you've been mentally waterboarded? That's not burnout. That's your brain's way of telling you it's been running on cognitive fumes for two weeks straight. We've convinced ourselves that packed sprints equal productivity, that every hour must be billable or accountable, and that slack is just code for "lazy." But here's the uncomfortable truth that 2025's best engineering teams are already discovering: the most productive developers aren't the ones sprinting hardest. They're the ones who scheduled their rest before they needed it.
 

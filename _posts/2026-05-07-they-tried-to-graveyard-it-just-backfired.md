@@ -1,4 +1,4 @@
----
+﻿---
 order: 36
 layout: default
 title: "They Tried to Graveyard. It Just Backfired."
@@ -69,7 +69,7 @@ I've watched product teams spend three months building a "smart" documentation a
 
 ---
 
-## What the 2025 Roadmap Actually Needs
+# 2026 Roadmap Actually Needs
 
 So what does this mean going forward? If your current AI tools are sabotaging your future, what should you do?
 

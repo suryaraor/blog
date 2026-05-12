@@ -1,13 +1,13 @@
----
+﻿---
 order: 91
 layout: default
-title: "The \"Distributed Tracing\" Obsession Is a 2025 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents"
+title: "The Distributed Tracing Obsession Is A 2026 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-distributed-tracing-obsession-is-a-2025-debugging-crutch-why-structured-logging-with-span-ids-outperforms-opentelemetry-at-3x-lower-overhead-for-90-of-production-incidents.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The "Distributed Tracing" Obsession Is a 2025 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents
+# The Distributed Tracing Obsession Is A 2026 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents
 
 You’ve got a production incident. Your pager is screaming. Your heart is racing. You’ve spent months implementing OpenTelemetry, instrumenting every microservice, and wiring up a fancy distributed tracing dashboard. The traces are beautiful — a waterfall of spans cascading across 12 services. And yet, when the SRE asks you what’s actually wrong, you stare at that waterfall and feel… empty. Because the trace tells you *where* a request went, but not *why* it failed. You’re tracing the shape of the ghost, not the ghost itself. Meanwhile, the junior engineer on your team, the one who hasn’t read the OpenTelemetry docs, just grep’d the logs for a span ID and found the root cause in 90 seconds. You feel a mix of embarrassment and revelation. The industry has sold you a Ferrari when you needed a reliable bicycle. Distributed tracing, for all its hype, is often a crutch for teams that haven't mastered the basics of structured logging. And the data, when you look past the hype, tells a story you won't hear at KubeCon.
 

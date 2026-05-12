@@ -1,14 +1,14 @@
----
+﻿---
 order: 104
 layout: default
-title: "The \"Linear Ticket\" Cult Is a 2025 Debugging Black Hole"
+title: "The Linear Ticket Cult Is A 2026 Debugging Black Hole"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-linear-ticket-cult-is-a-2025-debugging-black-hole.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-linear-ticket-cult-is-a-2025-debugging-black-h.wav
 difficulty: Beginner
 ---
-# The "Linear Ticket" Cult Is a 2025 Debugging Black Hole
+# The Linear Ticket Cult Is A 2026 Debugging Black Hole
 
 The startup world worships at the altar of Linear—every ticket, every sprint, every perfectly labeled bug. Yet production incidents are spiking. Lean teams spend 40% of their precious time clicking between tickets, Slack threads, and code. Meanwhile, a single, humble markdown file sits in version control, ignored. We’re drowning in process, starving for context. What if the most powerful debugging tool isn’t a project manager, but a file your grandmother could edit?
 

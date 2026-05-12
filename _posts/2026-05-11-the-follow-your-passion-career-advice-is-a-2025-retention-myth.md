@@ -1,14 +1,14 @@
----
+﻿---
 order: 119
 layout: default
-title: "The \"Follow Your Passion\" Career Advice Is a 2025 Retention Myth"
+title: "The Follow Your Passion Career Advice Is A 2026 Retention Myth"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-follow-your-passion-career-advice-is-a-2025-retention-myth.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-follow-your-passion-career-advice-is-a-2025-re.wav
 difficulty: Intermediate
 ---
-# The "Follow Your Passion" Career Advice Is a 2025 Retention Myth
+# The Follow Your Passion Career Advice Is A 2026 Retention Myth
 
 You've been lied to. Not maliciously, but systematically. Every career coach, every Medium thought leader, every smug friend who landed a role at OpenAI has told you the same thing: *Follow your passion, and the money will follow.* But here's the contradiction that keeps me up at night—the data says otherwise. While thousands of engineers chase the glamour of AI, a quiet army of specialists in "boring" infrastructure tech is out-earning them 4x. Not because they're smarter. Not because they worked harder. Because they solved a problem nobody wanted to touch: the unsexy, critical plumbing that keeps the internet running. The passion economy is a retention myth designed to keep you chasing prestige while the real winners clock out at 5 PM with stock options that actually vest.
 

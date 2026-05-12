@@ -1,14 +1,14 @@
----
+﻿---
 order: 96
 layout: default
-title: "The 'Cloud-Native' Orthodox Is a 2025 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders"
+title: "The Cloud Native Orthodox Is A 2026 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-cloud-native-orthodox-is-a-2025-operational-death-march-why-40-fewer-microservices-and-a-bare-metal-bastion-host-beat-kubernetes-at-3x-lower-mttr-for-90-of-saas-founders.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-cloud-native-orthodox-is-a-2025-operational-de.wav
 difficulty: Beginner
 ---
-# The 'Cloud-Native' Orthodox Is a 2025 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders
+# The Cloud Native Orthodox Is A 2026 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders
 
 You're running a SaaS startup. Your engineering team is 15 people. You just spent three weeks debugging a single Istio sidecar that wouldn't route traffic correctly. Your lead engineer is updating their LinkedIn profile with the "Kubernetes" badge. Your CTO insists you need "cloud-native" because that's what every conference talk preaches.
 
@@ -44,7 +44,7 @@ But here's the blind spot: infrastructure choices are identity choices for engin
 
 Meanwhile, your burn rate is ticking. Your customers don't care about your pod autoscaling. They care about bugs, features, and reliability. You could give them all three faster with less complexity.
 
-## What Actually Works in 2025
+# The Cloud Native Orthodox Is A 2026
 
 **Going forward:** Smart founders are rejecting the orthodoxy.
 

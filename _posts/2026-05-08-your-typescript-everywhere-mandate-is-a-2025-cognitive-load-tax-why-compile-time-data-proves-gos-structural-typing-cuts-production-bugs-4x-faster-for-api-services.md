@@ -1,12 +1,12 @@
----
+﻿---
 order: 81
 layout: default
-title: "Your \"TypeScript Everywhere\" Mandate Is a 2025 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services"
+title: "Your Typescript Everywhere Mandate Is A 2026 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services"
 date: 2026-05-08
 audio: /assets/audio/posts/2026-05-08-your-typescript-everywhere-mandate-is-a-2025-cogni.wav
 difficulty: Intermediate
 ---
-# Your "TypeScript Everywhere" Mandate Is a 2025 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services
+# Your Typescript Everywhere Mandate Is A 2026 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services
 
 Here's the thing nobody wants to admit at the conference after-party: we've been sold a beautiful lie. The promise was that TypeScript would save us from ourselves. That adding types to JavaScript was the grown-up thing to do. That any team not on the TypeScript train by 2025 was irresponsible.
 

@@ -1,7 +1,7 @@
----
+﻿---
 order: 148
 layout: default
-title: "The 2025 “Cursor” Copilot Is a Technical Debt Factory"
+title: "The 2026 “Cursor” Copilot Is a Technical Debt Factory"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-cursor-copilot-is-a-technical-debt-factory.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
@@ -12,7 +12,7 @@ title: "The Cursor Copilot Is a Technical Debt Factory"
 date: 2025-07-15
 ---
 
-# The 2025 “Cursor” Copilot Is a Technical Debt Factory
+# The 2026 “Cursor” Copilot Is a Technical Debt Factory
 
 ## Hook
 

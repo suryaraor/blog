@@ -1,14 +1,14 @@
----
+﻿---
 order: 127
 layout: default
-title: "Why \"Move Fast and Break Things\" Is a 2025 Retention Killer"
+title: "Why Move Fast And Break Things Is A 2026 Retention Killer"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-why-move-fast-and-break-things-is-a-2025-retention-killer.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-why-move-fast-and-break-things-is-a-2025-retention.wav
 difficulty: Intermediate
 ---
-# Why "Move Fast and Break Things" Is a 2025 Retention Killer
+# Why Move Fast And Break Things Is A 2026 Retention Killer
 
 We worship at the altar of speed. Every startup pitch, every engineering blog, every management book tells you the same thing: ship faster, break things, iterate. The hero of the modern tech story is the engineer who pushes code at 2 AM, who never sleeps, who lives by the motto "done is better than perfect."
 

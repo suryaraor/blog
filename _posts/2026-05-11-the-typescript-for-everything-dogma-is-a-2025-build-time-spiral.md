@@ -1,14 +1,14 @@
----
+﻿---
 order: 111
 layout: default
-title: "The \"TypeScript for Everything\" Dogma Is a 2025 Build-Time Spiral"
+title: "The Typescript For Everything Dogma Is A 2026 Build-Time Spiral"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-typescript-for-everything-dogma-is-a-2025-build-time-spiral.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-typescript-for-everything-dogma-is-a-2025-buil.wav
 difficulty: Intermediate
 ---
-# The "TypeScript for Everything" Dogma Is a 2025 Build-Time Spiral
+# The Typescript For Everything Dogma Is A 2026 Build-Time Spiral
 
 You're standing in a codebase that takes three minutes to compile, your CI pipeline is weeping, and that strict `strict:true` config is now a curse you whisper into your coffee every morning. TypeScript was supposed to save us from ourselves. Instead, for many frontend-light SaaS products, it's become a build-time black hole where developer velocity goes to die. Here's the contrarian truth nobody in the TypeScript church wants to hear: Vanilla JavaScript with JSDoc annotations can deliver a 60% reduction in bundle size and developer friction for roughly 80% of the products out there. Yes, I said it. Let me show you the data.
 

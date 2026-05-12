@@ -1,14 +1,14 @@
----
+﻿---
 order: 134
 layout: default
-title: "The 2025 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps"
+title: "The 2026 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-framework-tax-why-vanilla-typescript-beats-next-js-remix-and-sveltekit-for-70-of-crud-apps.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-2025-framework-tax-why-production-profiling-pr.wav
 difficulty: Intermediate
 ---
-# The 2025 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps
+# The 2026 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps
 
 You just spent three hours debugging a hydration mismatch in your Next.js app, and the data you're fetching is literally two JSON objects from a Postgres table. Meanwhile, your colleague who wrote the same API in vanilla TypeScript and served it with a bare Node HTTP server went home at 4 PM, and his page loads in 47 milliseconds. Here's the dirty secret the framework influencers won't tell you: for 70% of API-driven CRUD applications deployed in 2025, the framework is the bottleneck. Not the database. Not the network. The thing you added to make your life easier.
 
@@ -51,7 +51,7 @@ Here's what happens:
 
 Developers are afraid of being caught with a "toy" stack — plain Node.js and vanilla TypeScript — at a company that values "enterprise readiness." But that fear is costing real money in infrastructure and user experience. Your startup doesn't need a full-stack framework for its admin dashboard.
 
-## The 2025 Stack Is Smaller Than You Think
+# The 2026 Stack Is Smaller Than You Think
 
 **What does this mean going forward?**
 

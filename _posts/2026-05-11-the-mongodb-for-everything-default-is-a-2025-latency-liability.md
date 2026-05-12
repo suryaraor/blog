@@ -1,14 +1,14 @@
----
+﻿---
 order: 106
 layout: default
-title: "The \"MongoDB for Everything\" Default Is a 2025 Latency Liability"
+title: "The Mongodb For Everything Default Is A 2026 Latency Liability"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-mongodb-for-everything-default-is-a-2025-latency-liability.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-mongodb-for-everything-default-is-a-2025-laten.wav
 difficulty: Beginner
 ---
-# The "MongoDB for Everything" Default Is a 2025 Latency Liability
+# The Mongodb For Everything Default Is A 2026 Latency Liability
 
 You're a senior engineer at a Series B startup. Codebase is young, team is fast, and MongoDB is the default storage for every event stream, user session, and audit log. It's the comfortable choice. But here's the contradiction that kept me up last week: your users complain about lag on a dashboard that loads three JSON arrays, and your monitoring shows MongoDB query times creeping past 200ms. Meanwhile, your PostgreSQL instance sits at 12% CPU, running analytics queries your document store can't touch. The default that made sense in 2019 is silently costing you in 2025.
 
@@ -32,7 +32,7 @@ You're a senior engineer at a Series B startup. Codebase is young, team is fast,
 
 The painful truth: you're optimizing for a world where you write events fast and never read them back with any complexity. That world doesn't exist in production.
 
-## The 2025 Engineering Reality Check
+# The Mongodb For Everything Default Is A 2026 Engineering Reality Check
 
 **Forward implications**: The smartest teams I know are doing three things. First, profiling their actual query patterns — not assuming what they look like. Second, running A/B comparisons on their own data, not trusting vendor benchmarks. Third, building with a hybrid model: MongoDB for write-heavy ingestion pipes, PostgreSQL JSONB for the read-heavy analytics layer.
 

@@ -1,13 +1,13 @@
----
+﻿---
 order: 137
 layout: default
-title: "The 2025 Kubernetes Cost Hangover — Why Production Profiling Proves 60% of Cluster Spend Goes to Idle Sidecars and Over-Provisioned Node Groups"
+title: "The 2026 Kubernetes Cost Hangover — Why Production Profiling Proves 60% of Cluster Spend Goes to Idle Sidecars and Over-Provisioned Node Groups"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-kubernetes-cost-hangover-why-production-profiling-proves-60-of-cluster-spend-goes-to-idle-sidecars-and-over-provisioned-node-groups.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The 2025 Kubernetes Cost Hangover — Why Production Profiling Proves 60% of Cluster Spend Goes to Idle Sidecars and Over-Provisioned Node Groups
+# The 2026 Kubernetes Cost Hangover — Why Production Profiling Proves 60% of Cluster Spend Goes to Idle Sidecars and Over-Provisioned Node Groups
 
 You finally got Kubernetes into production. High-fives all around. The architecture is clean. The deployments are rolling. The monitoring dashboards glow green. And your monthly AWS bill just hit six figures. Something is seriously wrong.
 

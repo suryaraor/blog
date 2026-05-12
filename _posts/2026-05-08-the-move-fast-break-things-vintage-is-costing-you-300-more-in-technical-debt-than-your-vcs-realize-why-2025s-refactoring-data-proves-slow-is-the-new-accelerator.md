@@ -1,14 +1,14 @@
----
+﻿---
 order: 64
 layout: default
-title: "The \"Move Fast & Break Things\" Vintage Is Costing You 300% More in Technical Debt Than Your VCs Realize — Why 2025's Refactoring Data Proves Slow Is the New Accelerator"
+title: "The Move Fast Break Things Vintage Is Costing You 300 More In Technical Debt Than Your Vcs Realize Why 2026's Refactoring Data Proves Slow Is the New Accelerator"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-move-fast-break-things-vintage-is-costing-you-300-more-in-technical-debt-than-your-vcs-realize-why-2025s-refactoring-data-proves-slow-is-the-new-accelerator.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-move-fast-break-things-vintage-is-costing-you.wav
 difficulty: Intermediate
 ---
-# The "Move Fast & Break Things" Vintage Is Costing You 300% More in Technical Debt Than Your VCs Realize — Why 2025's Refactoring Data Proves Slow Is the New Accelerator
+# The Move Fast Break Things Vintage Is Costing You 300 More In Technical Debt Than Your Vcs Realize Why 2026's Refactoring Data Proves Slow Is the New Accelerator
 
 Here's a confession that might get me uninvited from the next startup happy hour: I miss the days when we built things that broke. No, really. There was a time when "move fast and break things" felt like a battle cry, not a punchline. We shipped code on Friday afternoons, celebrated with kombucha on Monday when nothing had exploded, and congratulated ourselves on disrupting entire industries while our databases quietly wept.
 

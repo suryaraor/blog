@@ -1,14 +1,14 @@
----
+﻿---
 order: 110
 layout: default
-title: "The Data Mesh Evangelist Is a 2025 Organizational Time Sink"
+title: "The Data Mesh Evangelist Is A 2026 Organizational Time Sink"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-data-mesh-evangelist-is-a-2025-organizational-time-sink.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-data-mesh-evangelist-is-a-2025-organizational.wav
 difficulty: Intermediate
 ---
-# The Data Mesh Evangelist Is a 2025 Organizational Time Sink
+# The Data Mesh Evangelist Is A 2026 Organizational Time Sink
 
 You walk into the all-hands, and someone with a fancy title and a slide deck is telling you that your centralized data warehouse is the reason you can't ship. "We need data mesh," they say. "Decentralize ownership. Let each domain own its pipelines." It sounds so bold. So modern. So *agile*.
 

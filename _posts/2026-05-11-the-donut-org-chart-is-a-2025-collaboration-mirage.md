@@ -1,14 +1,14 @@
----
+﻿---
 order: 131
 layout: default
-title: "The “Donut” Org Chart Is a 2025 Collaboration Mirage"
+title: "The Donut Org Chart Is A 2026 Collaboration Mirage"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-donut-org-chart-is-a-2025-collaboration-mirage.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-donut-org-chart-is-a-2025-collaboration-mirage.wav
 difficulty: Intermediate
 ---
-# The “Donut” Org Chart Is a 2025 Collaboration Mirage
+# The Donut Org Chart Is A 2026 Collaboration Mirage
 
 ## Why Network Graph Data Proves Flat Teams with 6 Direct Reports Ship 50% Faster Than Squads with Embedded Platform Engineers
 

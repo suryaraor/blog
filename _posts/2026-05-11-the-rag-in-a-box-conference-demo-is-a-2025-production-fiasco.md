@@ -1,14 +1,14 @@
----
+﻿---
 order: 114
 layout: default
-title: "The “RAG-in-a-Box” Conference Demo Is a 2025 Production Fiasco"
+title: "The Rag In A Box Conference Demo Is A 2026 Production Fiasco"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-rag-in-a-box-conference-demo-is-a-2025-production-fiasco.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-rag-in-a-box-conference-demo-is-a-2025-product.wav
 difficulty: Intermediate
 ---
-# The “RAG-in-a-Box” Conference Demo Is a 2025 Production Fiasco
+# The Rag In A Box Conference Demo Is A 2026 Production Fiasco
 
 You’re at the keynote. The demo is *flawless*. A customer asks a messy question, and the AI instantly pulls the perfect answer from 10,000 support docs. The crowd erupts. You type the same question into your own bot three months later and get a recipe for banana bread. That’s not a bug—it’s the feature we bought into.
 

@@ -1,13 +1,13 @@
----
+﻿---
 order: 150
 layout: default
-title: "Your 2025 \"Microservices Migration\" Is a Latency Tax on a Single-Threaded Problem"
+title: "Your 2026 \"Microservices Migration\" Is a Latency Tax on a Single-Threaded Problem"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-microservices-migration-is-a-latency-tax-on-a-single-threaded-problem.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Advanced
 ---
-# Your 2025 "Microservices Migration" Is a Latency Tax on a Single-Threaded Problem
+# Your 2026 "Microservices Migration" Is a Latency Tax on a Single-Threaded Problem
 
 You just spent six months breaking your event stream processor into 12 microservices, hooked it to Kubernetes, and celebrated with a Slack GIF. Your production latency graph? It now looks like an EKG of a heart having second thoughts.
 

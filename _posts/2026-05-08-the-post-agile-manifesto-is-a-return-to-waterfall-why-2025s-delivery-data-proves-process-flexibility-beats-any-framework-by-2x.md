@@ -1,14 +1,14 @@
----
+﻿---
 order: 67
 layout: default
-title: "The “Post-Agile” Manifesto Is a Return to Waterfall — Why 2025’s Delivery Data Proves Process Flexibility Beats Any Framework by 2x"
+title: "The Post Agile Manifesto Is A Return To Waterfall Why 2026’s Delivery Data Proves Process Flexibility Beats Any Framework by 2x"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-post-agile-manifesto-is-a-return-to-waterfall-why-2025s-delivery-data-proves-process-flexibility-beats-any-framework-by-2x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-post-agile-manifesto-is-a-return-to-waterfall.wav
 difficulty: Intermediate
 ---
-# The “Post-Agile” Manifesto Is a Return to Waterfall — Why 2025’s Delivery Data Proves Process Flexibility Beats Any Framework by 2x
+# The Post Agile Manifesto Is A Return To Waterfall Why 2026’s Delivery Data Proves Process Flexibility Beats Any Framework by 2x
 
 We have a crisis of faith in our tools. The same engineers who chanted “sprint planning” like a prayer are now sneaking into rooms labeled “post‑agile” as if they’re joining a secret society. The irony? The loudest proponents of “post‑agile” are usually the ones who never liked agile in the first place. They traded one religion for another. But the data from 2025’s delivery benchmarks tells a different story: teams that ignored both orthodoxies and simply adapted to their context delivered twice as fast. The emperor has no clothes, no agile coach, and no manifesto. And somehow, that’s the only thing that works.
 

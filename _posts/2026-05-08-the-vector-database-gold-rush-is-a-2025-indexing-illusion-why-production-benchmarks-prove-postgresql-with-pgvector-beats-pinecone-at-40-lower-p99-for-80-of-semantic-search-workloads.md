@@ -1,13 +1,13 @@
----
+﻿---
 order: 94
 layout: default
-title: "The \"Vector Database\" Gold Rush Is a 2025 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads"
+title: "The Vector Database Gold Rush Is A 2026 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-vector-database-gold-rush-is-a-2025-indexing-illusion-why-production-benchmarks-prove-postgresql-with-pgvector-beats-pinecone-at-40-lower-p99-for-80-of-semantic-search-workloads.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The "Vector Database" Gold Rush Is a 2025 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads
+# The Vector Database Gold Rush Is A 2026 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads
 
 You've been told that vector databases are the future. That Pinecone, Weaviate, and Milvus are the new Oracle—essential, inevitable, and worth every penny. That PostgreSQL with its pgvector extension is a hobbyist's toy, fine for prototypes but not for serious production.
 

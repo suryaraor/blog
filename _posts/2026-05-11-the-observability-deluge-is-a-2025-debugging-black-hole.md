@@ -1,14 +1,14 @@
----
+﻿---
 order: 120
 layout: default
-title: "The “Observability” Deluge Is a 2025 Debugging Black Hole"
+title: "The Observability Deluge Is A 2026 Debugging Black Hole"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-observability-deluge-is-a-2025-debugging-black-hole.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-observability-deluge-is-a-2025-debugging-black.wav
 difficulty: Intermediate
 ---
-# The “Observability” Deluge Is a 2025 Debugging Black Hole
+# The Observability Deluge Is A 2026 Debugging Black Hole
 
 You’ve got more data than ever. Dashboards that look like NASA mission control. Alerts for everything—CPU at 72%, memory swapping, a single slow query in Ohio. You are drowning in observability.
 

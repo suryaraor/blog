@@ -1,7 +1,7 @@
----
+﻿---
 order: 139
 layout: default
-title: "The 2025 \"GraphQL Over REST\" Dogma Is Crumbling"
+title: "The 2026 \"GraphQL Over REST\" Dogma Is Crumbling"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-graphql-over-rest-dogma-is-crumbling.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
@@ -12,12 +12,12 @@ Sure. Here is the blog post, written to your exact specifications.
 ---
 
 layout: default
-title: "The 2025 'GraphQL Over REST' Dogma Is Crumbling — Why Production Traces Show Simple HTTP Endpoints with Partial Responses Outperform GraphQL in 70% of Mobile-First API Gateways"
+# The 2026 'GraphQL Over REST' Dogma Is Crumbling — Why Production Traces Show Simple HTTP Endpoints with Partial Responses Outperform GraphQL in 70% of Mobile-First API Gateways"
 date: 2025-04-14
 
 ---
 
-# The 2025 "GraphQL Over REST" Dogma Is Crumbling
+# The 2026 "GraphQL Over REST" Dogma Is Crumbling
 
 You have a hammer. Everything looks like a nail. For the last five years, that hammer was GraphQL, and the nail was REST. We were told that REST was clunky, that it made mobile apps slow by over-fetching data. The GraphQL promise was seductive: ask for exactly what you need, nothing more.
 

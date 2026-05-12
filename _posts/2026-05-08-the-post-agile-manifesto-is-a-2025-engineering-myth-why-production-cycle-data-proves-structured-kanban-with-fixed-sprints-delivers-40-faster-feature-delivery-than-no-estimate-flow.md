@@ -1,7 +1,7 @@
----
+﻿---
 order: 99
 layout: default
-title: "The Post-Agile Manifesto Is a 2025 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow"
+title: "The Post Agile Manifesto Is A 2026 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-post-agile-manifesto-is-a-2025-engineering-myth-why-production-cycle-data-proves-structured-kanban-with-fixed-sprints-delivers-40-faster-feature-delivery-than-no-estimate-flow.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
@@ -9,10 +9,10 @@ difficulty: Intermediate
 ---
 ---
 layout: default
-title: "The Post-Agile Manifesto Is a 2025 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow"
+# The Post Agile Manifesto Is A 2026 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow"
 date: 2025-01-15
 
-# The Post-Agile Manifesto Is a 2025 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow
+# The Post Agile Manifesto Is A 2026 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow
 
 You’re at a conference, sipping cold brew, nodding along as a speaker declares “estimates are dead.” The room erupts in applause. Engineers high-five. Product managers look relieved. Welcome to 2025, where we’ve collectively decided that planning is for losers and structure is the enemy. But here’s the contradiction: while “post-agile” thought leaders preach no-estimate flow, production cycle data tells a different story. Teams using structured Kanban with fixed sprints are shipping features 40% faster than those riding the no-estimate wave. The irony? The very systems we’re trying to escape are the ones making us faster. You feel the tension because you live it: the chaos of no boundaries, the anxiety of endless backlog grooming, the slow burn of “just ship when it’s ready.” We’ve been sold a narrative that freedom equals speed. The data says otherwise.
 

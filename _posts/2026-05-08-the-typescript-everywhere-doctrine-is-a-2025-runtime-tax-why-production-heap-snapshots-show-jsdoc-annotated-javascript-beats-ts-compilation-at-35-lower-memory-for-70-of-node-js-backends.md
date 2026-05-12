@@ -1,13 +1,13 @@
----
+﻿---
 order: 90
 layout: default
-title: "The 'TypeScript Everywhere' Doctrine Is a 2025 Runtime Tax — Why Production Heap Snapshots Show JSDoc-Annotated JavaScript Beats TS Compilation at 35% Lower Memory for 70% of Node.js Backends"
+title: "The Typescript Everywhere Doctrine Is A 2026 Runtime Tax — Why Production Heap Snapshots Show JSDoc-Annotated JavaScript Beats TS Compilation at 35% Lower Memory for 70% of Node.js Backends"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-typescript-everywhere-doctrine-is-a-2025-runtime-tax-why-production-heap-snapshots-show-jsdoc-annotated-javascript-beats-ts-compilation-at-35-lower-memory-for-70-of-node-js-backends.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The 'TypeScript Everywhere' Doctrine Is a 2025 Runtime Tax — Why Production Heap Snapshots Show JSDoc-Annotated JavaScript Beats TS Compilation at 35% Lower Memory for 70% of Node.js Backends
+# The Typescript Everywhere Doctrine Is A 2026 Runtime Tax — Why Production Heap Snapshots Show JSDoc-Annotated JavaScript Beats TS Compilation at 35% Lower Memory for 70% of Node.js Backends
 
 You're running a Node.js backend. It's stable. It's fast. You sleep well at night.
 

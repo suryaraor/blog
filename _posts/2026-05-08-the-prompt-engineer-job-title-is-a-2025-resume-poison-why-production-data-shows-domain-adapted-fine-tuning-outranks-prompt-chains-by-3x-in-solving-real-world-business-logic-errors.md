@@ -1,13 +1,13 @@
----
+﻿---
 order: 98
 layout: default
-title: "The 'Prompt Engineer' Job Title Is a 2025 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors"
+title: "The Prompt Engineer Job Title Is A 2026 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-prompt-engineer-job-title-is-a-2025-resume-poison-why-production-data-shows-domain-adapted-fine-tuning-outranks-prompt-chains-by-3x-in-solving-real-world-business-logic-errors.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The 'Prompt Engineer' Job Title Is a 2025 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors
+# The Prompt Engineer Job Title Is A 2026 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors
 
 You landed a gig as a "Prompt Engineer" six months ago. You crafted elegant chains. You described system instructions with Shakespearean precision. And yet your company's chatbot still can't tell a refund request from a shipping inquiry without hallucinating the customer's name.
 

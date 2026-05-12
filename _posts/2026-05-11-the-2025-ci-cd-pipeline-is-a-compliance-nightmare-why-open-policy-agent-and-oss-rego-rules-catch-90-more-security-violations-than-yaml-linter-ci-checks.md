@@ -1,13 +1,13 @@
----
+﻿---
 order: 145
 layout: default
-title: "The 2025 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks"
+title: "The 2026 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-ci-cd-pipeline-is-a-compliance-nightmare-why-open-policy-agent-and-oss-rego-rules-catch-90-more-security-violations-than-yaml-linter-ci-checks.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The 2025 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks
+# The 2026 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks
 
 We've built a beautiful lie. Push code, watch green checks, deploy to production. The YAML-linter purrs, your CI pipeline glows, and your compliance team sleeps soundly. Meanwhile, in the shadows, a single misconfigured Kubernetes pod or an overly permissive IAM role slips through. Your linter saw the syntax was valid. It never asked: *Is this actually secure?* That's the disconnect. We're playing checkers while the attackers play chess. The 2025 CI/CD pipeline isn't a delivery machine — it's a compliance nightmare dressed in green checkmarks. And the fix? It's not another YAML rule. It's about time we stop linting our way to safety.
 

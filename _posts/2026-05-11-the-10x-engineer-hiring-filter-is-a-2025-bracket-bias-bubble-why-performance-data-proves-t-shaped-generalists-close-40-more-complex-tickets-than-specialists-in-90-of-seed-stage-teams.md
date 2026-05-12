@@ -1,14 +1,14 @@
----
+﻿---
 order: 125
 layout: default
-title: "The \"10x Engineer\" Hiring Filter Is a 2025 Bracket Bias Bubble — Why Performance Data Proves T-Shaped Generalists Close 40% More Complex Tickets Than Specialists in 90% of Seed-Stage Teams"
+title: "The 10x Engineer Hiring Filter Is A 2026 Bracket Bias Bubble — Why Performance Data Proves T-Shaped Generalists Close 40% More Complex Tickets Than Specialists in 90% of Seed-Stage Teams"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-10x-engineer-hiring-filter-is-a-2025-bracket-bias-bubble-why-performance-data-proves-t-shaped-generalists-close-40-more-complex-tickets-than-specialists-in-90-of-seed-stage-teams.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-10x-engineer-hiring-filter-is-a-2025-bracket-b.wav
 difficulty: Intermediate
 ---
-# The "10x Engineer" Hiring Filter Is a 2025 Bracket Bias Bubble — Why Performance Data Proves T-Shaped Generalists Close 40% More Complex Tickets Than Specialists in 90% of Seed-Stage Teams
+# The 10x Engineer Hiring Filter Is A 2026 Bracket Bias Bubble — Why Performance Data Proves T-Shaped Generalists Close 40% More Complex Tickets Than Specialists in 90% of Seed-Stage Teams
 
 You know what's weird? The same founders who rant about "moving fast and breaking things" spend eight weeks trying to hire a ninja-rockstar-10x engineer who specializes in exactly one obscure microservice framework. They want someone who's done the same thing, at the same scale, at the same company. They want a perfect bracket pick.
 
@@ -52,7 +52,7 @@ I've sat in hiring committees where a generalist was passed over because they "d
 
 This is bracket bias in software form. We're optimizing for the wrong score.
 
-## What the Data Says About 2025
+# The 10x Engineer Hiring Filter Is A 2026
 
 What does this mean going forward? The implications are uncomfortable for anyone who's built their identity on deep specialization.
 

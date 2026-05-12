@@ -1,14 +1,14 @@
----
+﻿---
 order: 93
 layout: default
-title: "The \"Infinite Context Window\" Is a 2025 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search"
+title: "The Infinite Context Window Is A 2026 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-infinite-context-window-is-a-2025-attention-scalpel-why-production-traces-show-agentic-workflows-outperform-rag-at-4x-lower-token-cost-for-70-of-enterprise-search.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-infinite-context-window-is-a-2025-attention-sc.wav
 difficulty: Intermediate
 ---
-# The "Infinite Context Window" Is a 2025 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search
+# The Infinite Context Window Is A 2026 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search
 
 You’ve been sold a beautiful lie. Every AI vendor is parading their new "infinite context window" like a magic wand for enterprise search. They promise you can dump every sales transcript, every support ticket, every dusty PDF into one massive prompt and get perfect answers. It sounds elegant. It sounds powerful. It’s also the most expensive way to do the least useful thing. I’ve spent the last six months digging through production traces from dozens of companies deploying real search systems. The data tells a different story. Agentic workflows — those clunky, multi-step systems everyone said were too complex — are beating RAG on every meaningful metric. They cost four times less in tokens. They handle 70% of enterprise search queries better. And they do it by being ruthlessly selective about what the model actually sees. The infinite context window isn’t a floodlight. It’s a scalpel. We’ve just been using it backwards.
 

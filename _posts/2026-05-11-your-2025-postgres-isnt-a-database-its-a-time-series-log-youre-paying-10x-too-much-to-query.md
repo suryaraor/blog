@@ -1,13 +1,13 @@
----
+﻿---
 order: 143
 layout: default
-title: "Your 2025 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query"
+title: "Your 2026 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-postgres-isnt-a-database-its-a-time-series-log-youre-paying-10x-too-much-to-query.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# Your 2025 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query
+# Your 2026 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query
 
 You built a beautiful Postgres cluster. Replication is humming. Queries are sub-10ms. Your team drinks from the firehose of events, metrics, and logs. Congratulations. You've created a time-series database with none of the benefits and all of the markup.
 

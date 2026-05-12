@@ -1,7 +1,7 @@
----
+﻿---
 order: 124
 layout: default
-title: "The Daily Standup Is a 2025 Async Communication Funnel — Why Engineering Velocity Data Proves Written Status Updates Reduce Context Switching by 50% for 90% of Distributed Teams"
+title: "The Daily Standup Is A 2026 Async Communication Funnel — Why Engineering Velocity Data Proves Written Status Updates Reduce Context Switching by 50% for 90% of Distributed Teams"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-daily-standup-is-a-2025-async-communication-funnel-why-engineering-velocity-data-proves-written-status-updates-reduce-context-switching-by-50-for-90-of-distributed-teams.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
@@ -9,11 +9,11 @@ audio: /assets/audio/posts/2026-05-11-the-daily-standup-is-a-2025-async-communic
 difficulty: Intermediate
 ---
 layout: default
-title: The Daily Standup Is a 2025 Async Communication Funnel
+# The Daily Standup Is A 2026 Async Communication Funnel
 date: 2025-07-17
 ---
 
-# The Daily Standup Is a 2025 Async Communication Funnel — Why Engineering Velocity Data Proves Written Status Updates Reduce Context Switching by 50% for 90% of Distributed Teams
+# The Daily Standup Is A 2026 Async Communication Funnel — Why Engineering Velocity Data Proves Written Status Updates Reduce Context Switching by 50% for 90% of Distributed Teams
 
 You know the feeling. You're deep in the zone, untangling a knotted piece of logic, when *ding* — your calendar reminds you the daily standup starts in five minutes. You sigh, save your work, and join a Zoom room where six people wait in silence for someone to speak first. Someone talks about a bug. Another person's audio cuts out. You hear three updates that have nothing to do with your work. By the time you return to your code, it takes twenty minutes to rebuild the mental model you'd so carefully constructed. This is the ritual we've been told makes teams agile, transparent, and fast. But what if it's actually the single biggest drag on engineering velocity in distributed teams?
 

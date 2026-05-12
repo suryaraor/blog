@@ -1,14 +1,14 @@
----
+﻿---
 order: 141
 layout: default
-title: "The 2025 “Goodbye Monolith” Crusade Is a Premature Optimization"
+title: "The 2026 “Goodbye Monolith” Crusade Is a Premature Optimization"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-goodbye-monolith-crusade-is-a-premature-optimization.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-2025-goodbye-monolith-crusade-is-a-premature-o.wav
 difficulty: Intermediate
 ---
-# The 2025 “Goodbye Monolith” Crusade Is a Premature Optimization
+# The 2026 “Goodbye Monolith” Crusade Is a Premature Optimization
 
 You just raised your Series A. Your CTO, fresh off Twitter, is evangelizing microservices. Your lead engineer is drawing boxes on a whiteboard — each box a separate deployment, a separate database, a separate nightmare. Everyone nods. This is how you scale, right?
 

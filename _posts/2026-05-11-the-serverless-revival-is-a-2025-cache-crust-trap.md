@@ -1,14 +1,14 @@
----
+﻿---
 order: 129
 layout: default
-title: "The “Serverless Revival” Is a 2025 Cache-Crust Trap"
+title: "The Serverless Revival Is A 2026 Cache-Crust Trap"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-serverless-revival-is-a-2025-cache-crust-trap.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-serverless-revival-is-a-2025-cache-crust-trap.wav
 difficulty: Beginner
 ---
-# The “Serverless Revival” Is a 2025 Cache-Crust Trap
+# The Serverless Revival Is A 2026 Cache-Crust Trap
 
 You’ve heard the hype. Serverless is making a comeback in 2025. After years of being told that Lambda is dead or too slow for real apps, suddenly everyone from indie hackers to VC-backed startups is dusting off their `serverless.yml` files and celebrating a “revival.” But look closer at the bill data, and you’ll see something that makes the whole narrative unravel. The rising star of this movement isn’t Lambda itself—it’s the caching layer. Teams are slapping ElastiCache in front of every cold start, thinking they’ve cracked the speed problem. In reality, they’ve created a monster: a **cache-crust**—a brittle, expensive outer layer that costs more to maintain than running a single, humble t3.micro instance. For 90% of low-traffic SaaS backends, the math doesn’t lie. The “serverless revival” is a nice story for conference talks, but your AWS bill tells a different tale.
 

@@ -1,13 +1,13 @@
----
+﻿---
 order: 88
 layout: default
-title: "The \"Productivity\" Panic Is a 2025 Attention Heist — Why Context-Switching Data Proves 4-Hour Workdays Beat 12-Hour Sprints for Serialized Engineering Output"
+title: "The Productivity Panic Is A 2026 Attention Heist — Why Context-Switching Data Proves 4-Hour Workdays Beat 12-Hour Sprints for Serialized Engineering Output"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-productivity-panic-is-a-2025-attention-heist-why-context-switching-data-proves-4-hour-workdays-beat-12-hour-sprints-for-serialized-engineering-output.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
-# The "Productivity" Panic Is a 2025 Attention Heist — Why Context-Switching Data Proves 4-Hour Workdays Beat 12-Hour Sprints for Serialized Engineering Output
+# The Productivity Panic Is A 2026 Attention Heist — Why Context-Switching Data Proves 4-Hour Workdays Beat 12-Hour Sprints for Serialized Engineering Output
 
 We are living through the greatest irony in modern work. Companies are spending billions on productivity tools, AI assistants, and collaboration platforms. And yet, every engineer I know feels like they’re drowning in a sea of notifications, ping-ponging between Slack, Jira, email, and a dozen other apps. The irony? We’re working longer hours but producing less. The average knowledge worker loses 28% of their day to context-switching. That’s over two hours. Every single day. And what do we do? We double down on the very thing that’s breaking us. We glorify the 12-hour sprint. The all-nighter. The “grind.” But what if the opposite is true? What if the real productivity hack isn’t doing more, but doing less? What if serialized engineering output — the kind that builds real things — actually thrives on a four-hour workday? The data is there, hiding in plain sight. But we’re too busy to see it.
 
