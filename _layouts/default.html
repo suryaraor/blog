@@ -91,6 +91,7 @@
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
             {% endif %}
+            {% if page.series %}{% include content-map.html %}{% endif %}
             {% if page.learn %}
             <div class="learn-box">
                 <p class="learn-box-title">&#127891; What you'll learn</p>
