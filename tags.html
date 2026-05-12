@@ -4,7 +4,7 @@ title: Browse Articles
 ---
 <div class="tags-page">
     <h1 class="tags-page-title">Browse Articles</h1>
-    <p class="tags-page-desc">{{ site.posts | size }} articles — filter by topic, difficulty, or search by title.</p>
+    <p class="tags-page-desc" id="tags-page-desc">{{ site.posts | size }} articles — filter by topic, difficulty, or search by title.</p>
 
     <div class="tag-search-wrap">
         <input type="search" class="tag-search-input" id="tag-search" placeholder="Search articles by title..." aria-label="Search articles">
@@ -78,7 +78,7 @@ title: Browse Articles
                 <span class="tag-post-excerpt">{{ post.description | truncatewords: 20 }}</span>
                 {% endif %}
                 <span class="tag-post-meta">
-                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y · %H:%M" }}</time>
                     <span class="tag-meta-sep">&middot;</span>
                     <span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
                     {% if post.difficulty %}
@@ -102,8 +102,35 @@ title: Browse Articles
     var rows = document.querySelectorAll('.tag-post-row');
     var emptyState = document.getElementById('tags-empty');
     var countAll = document.getElementById('count-all');
+    var desc = document.getElementById('tags-page-desc');
     var activeFilter = 'all';
     var searchQuery = '';
+
+    function getLabel(filter) {
+        var btn = document.querySelector('[data-filter="' + filter + '"]');
+        return btn ? btn.textContent.trim().replace(/\s+\d+$/, '') : filter;
+    }
+
+    function updateDesc(visible) {
+        if (!desc) return;
+        if (activeFilter === 'all' && !searchQuery) {
+            desc.textContent = visible + ' articles — filter by topic, difficulty, or search by title.';
+        } else if (searchQuery && activeFilter !== 'all') {
+            desc.textContent = visible + ' articles matching “' + searchQuery + '” in ' + getLabel(activeFilter) + '.';
+        } else if (searchQuery) {
+            desc.textContent = visible + ' articles matching “' + searchQuery + '”.';
+        } else {
+            desc.textContent = visible + ' articles in ' + getLabel(activeFilter) + '.';
+        }
+    }
+
+    function syncURL() {
+        var params = new URLSearchParams();
+        if (activeFilter !== 'all') params.set('tag', activeFilter);
+        if (searchQuery) params.set('q', searchQuery);
+        var qs = params.toString();
+        history.replaceState({tag: activeFilter, q: searchQuery}, '', qs ? '?' + qs : location.pathname);
+    }
 
     function applyFilters() {
         var visible = 0;
@@ -123,6 +150,8 @@ title: Browse Articles
         });
         if (countAll) countAll.textContent = visible;
         if (emptyState) emptyState.hidden = visible > 0;
+        updateDesc(visible);
+        syncURL();
     }
 
     btns.forEach(function (btn) {
@@ -144,5 +173,25 @@ title: Browse Articles
             applyFilters();
         });
     }
+
+    // Restore filter/search state from URL on page load
+    (function () {
+        var params = new URLSearchParams(location.search);
+        var tag = params.get('tag');
+        var q = params.get('q');
+        if (tag) {
+            var btn = document.querySelector('[data-filter="' + tag + '"]');
+            if (btn) {
+                btns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                activeFilter = tag;
+            }
+        }
+        if (q) {
+            searchQuery = q.toLowerCase();
+            if (searchInput) searchInput.value = q;
+        }
+        if (tag || q) applyFilters();
+    })();
 })();
 </script>

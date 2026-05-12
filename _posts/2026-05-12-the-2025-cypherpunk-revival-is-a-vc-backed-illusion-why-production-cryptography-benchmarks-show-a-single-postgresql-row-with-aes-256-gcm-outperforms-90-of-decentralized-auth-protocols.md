@@ -2,7 +2,9 @@
 order: 156
 layout: default
 title: "The 2025 “Cypherpunk Revival” Is a VC-Backed Illusion — Why Production Cryptography Benchmarks Show a Single PostgreSQL Row with AES-256-GCM Outperforms 90% of Decentralized Auth Protocols"
-date: 2026-05-12
+date: 2026-05-12 11:00:00
+categories: AI
+difficulty: Advanced
 image: /assets/images/posts/2026-05-12-the-2025-cypherpunk-revival-is-a-vc-backed-illusion-why-production-cryptography-benchmarks-show-a-single-postgresql-row-with-aes-256-gcm-outperforms-90-of-decentralized-auth-protocols.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-12-the-2025-cypherpunk-revival-is-a-vc-backed-illusio.wav

@@ -2,7 +2,9 @@
 order: 154
 layout: default
 title: "Your 2025 “AI Code Assistant” Actually Doubles Review Time — Why Production Data Shows Senior Engineers Catch More Bugs in Hand-Written Code"
-date: 2026-05-12
+date: 2026-05-12 10:00:00
+categories: AI
+difficulty: Intermediate
 image: /assets/images/posts/2026-05-12-your-2025-ai-code-assistant-actually-doubles-review-time-why-production-data-shows-senior-engineers-catch-more-bugs-in-hand-written-code.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-12-your-2025-ai-code-assistant-actually-doubles-revie.wav

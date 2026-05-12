@@ -2,7 +2,9 @@
 order: 152
 layout: default
 title: "The 2025 “Vibe Coding” Is Actually a Senior Engineer’s Superpower"
-date: 2026-05-12
+date: 2026-05-12 09:00:00
+categories: AI
+difficulty: Intermediate
 image: /assets/images/posts/2026-05-12-the-2025-vibe-coding-is-actually-a-senior-engineers-superpower.jpg
 image_credit: “AI-generated illustration via [Pollinations.AI](https://pollinations.ai)”
 description: “Tech Twitter says experience is dead — that prompts beat architecture. But production data tells the opposite story: it’s the grizzled engineers who get the most out of AI, not the prompt artists.”

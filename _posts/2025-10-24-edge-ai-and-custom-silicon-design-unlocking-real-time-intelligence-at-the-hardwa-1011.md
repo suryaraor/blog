@@ -3,7 +3,7 @@ order: 6
 layout: default
 title: "**Edge AI and Custom Silicon Design: Unlocking Real-Time Intelligence at the Hardware Level**"
 date: 2025-10-24 00:00:01
-categories: [tech]
+categories: [Technology]
 tags: []
 difficulty: Intermediate
 ---
