@@ -84,73 +84,79 @@
         {% endif %}
         <main>
             {% if page.date %}
-            <div class="post-meta">
-                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-                {% if page.last_updated %}
-                <span class="post-last-updated">· Updated <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: "%B %d, %Y" }}</time></span>
-                {% endif %}
-                {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
-                <span>· {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
-                {% if page.difficulty %}
-                <span class="difficulty-badge difficulty-badge--{{ page.difficulty | downcase }}">{{ page.difficulty }}</span>
-                {% endif %}
-            </div>
-            {% if page.image %}
-            <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
-            {% endif %}
-            {%- assign _resolved_audio = page.audio -%}
-            {%- unless _resolved_audio -%}
-                {%- assign _post_date = page.date | date: "%Y-%m-%d" -%}
-                {%- assign _audio_files = site.static_files | where_exp: "f", "f.path contains '/assets/audio/posts/'" -%}
-                {%- for _af in _audio_files -%}
-                    {%- if _af.name contains _post_date -%}
-                        {%- assign _resolved_audio = _af.path -%}
-                    {%- endif -%}
-                {%- endfor -%}
-            {%- endunless -%}
-            {% if _resolved_audio %}
-            <div class="post-audio-embed">
-                <span class="post-audio-embed-label">&#127911; Listen to this article</span>
-                <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
-                    <source src="{{ _resolved_audio | relative_url }}" type="audio/wav">
-                </audio>
-            </div>
-            {% else %}
-            <div class="post-audio-controls" aria-live="polite">
-                <button type="button" class="post-audio-button" data-audio-button>
-                    Play aloud
-                </button>
-                <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
-            </div>
-            {% endif %}
-            {% include popular-posts.html %}
-            {% if page.series %}{% include content-map.html %}{% endif %}
-            {% if page.learn %}
-            <div class="learn-box">
-                <p class="learn-box-title">&#127891; What you'll learn</p>
-                <ul class="learn-list">
-                    {% for item in page.learn %}
-                    <li>{{ item }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-            {% if page.tldr %}
-            <div class="tldr-box">
-                <p class="tldr-title">&#9889; TL;DR — Key Takeaways</p>
-                <ul class="tldr-list">
-                    {% for item in page.tldr %}
-                    <li>{{ item }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-            <aside class="post-toc" id="post-toc" hidden>
-                <p class="post-toc-title">On this page</p>
-                <nav id="post-toc-nav" aria-label="Table of contents"></nav>
-            </aside>
-            <div class="post-content">
-                {{ content }}
+            <div class="post-layout">
+                <div class="post-main">
+                    <div class="post-meta">
+                        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                        {% if page.last_updated %}
+                        <span class="post-last-updated">· Updated <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: "%B %d, %Y" }}</time></span>
+                        {% endif %}
+                        {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
+                        <span>· {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+                        {% if page.difficulty %}
+                        <span class="difficulty-badge difficulty-badge--{{ page.difficulty | downcase }}">{{ page.difficulty }}</span>
+                        {% endif %}
+                    </div>
+                    {% if page.image %}
+                    <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+                    {% endif %}
+                    {%- assign _resolved_audio = page.audio -%}
+                    {%- unless _resolved_audio -%}
+                        {%- assign _post_date = page.date | date: "%Y-%m-%d" -%}
+                        {%- assign _audio_files = site.static_files | where_exp: "f", "f.path contains '/assets/audio/posts/'" -%}
+                        {%- for _af in _audio_files -%}
+                            {%- if _af.name contains _post_date -%}
+                                {%- assign _resolved_audio = _af.path -%}
+                            {%- endif -%}
+                        {%- endfor -%}
+                    {%- endunless -%}
+                    {% if _resolved_audio %}
+                    <div class="post-audio-embed">
+                        <span class="post-audio-embed-label">&#127911; Listen to this article</span>
+                        <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
+                            <source src="{{ _resolved_audio | relative_url }}" type="audio/wav">
+                        </audio>
+                    </div>
+                    {% else %}
+                    <div class="post-audio-controls" aria-live="polite">
+                        <button type="button" class="post-audio-button" data-audio-button>
+                            Play aloud
+                        </button>
+                        <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
+                    </div>
+                    {% endif %}
+                    {% if page.series %}{% include content-map.html %}{% endif %}
+                    {% if page.learn %}
+                    <div class="learn-box">
+                        <p class="learn-box-title">&#127891; What you'll learn</p>
+                        <ul class="learn-list">
+                            {% for item in page.learn %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% if page.tldr %}
+                    <div class="tldr-box">
+                        <p class="tldr-title">&#9889; TL;DR — Key Takeaways</p>
+                        <ul class="tldr-list">
+                            {% for item in page.tldr %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    <div class="post-content">
+                        {{ content }}
+                    </div>
+                </div>
+                <aside class="post-aside" aria-label="Article sidebar">
+                    <div class="post-toc" id="post-toc" hidden>
+                        <p class="post-toc-title">On this page</p>
+                        <nav id="post-toc-nav" aria-label="Table of contents"></nav>
+                    </div>
+                    {% include popular-posts.html %}
+                </aside>
             </div>
             {% else %}
             {{ content }}
@@ -158,6 +164,7 @@
         </main>
 
         {% if page.date %}
+        <div class="post-article-zone">
         {% include changelog.html %}
         {% include further-reading.html %}
         {% include series-nav.html %}
@@ -167,6 +174,7 @@
         {% include social-share.html %}
         {% include related-posts.html %}
         {% include giscus.html %}
+        </div>
         {% endif %}
 
         {% if page.date and page.layout != 'post' %}
