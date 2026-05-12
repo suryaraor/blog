@@ -1907,3 +1907,131 @@ button:focus-visible {
     font-size: 1.02rem;
   }
 }
+
+/* ── Giscus comments ─────────────────────────────────────── */
+.giscus-comments {
+  margin: var(--space-5) auto 0;
+  max-width: var(--content-width);
+  padding-top: var(--space-4);
+  border-top: 2px solid var(--line);
+}
+
+.giscus-comments-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: var(--space-3);
+}
+
+.giscus-comments .giscus-frame {
+  width: 100%;
+  border: none;
+}
+
+/* ── Consulting / Hire Me CTA ────────────────────────────── */
+.consulting-cta {
+  background: linear-gradient(135deg, #fff7ee, #fff);
+  border: 2px solid var(--accent-soft);
+  border-radius: 16px;
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-5) auto;
+  max-width: var(--content-width);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+[data-theme="dark"] .consulting-cta {
+  background: linear-gradient(135deg, rgba(74, 40, 16, 0.25), rgba(22, 26, 40, 0.6));
+  border-color: rgba(255, 140, 66, 0.3);
+}
+
+.consulting-cta-text {
+  flex: 1 1 280px;
+}
+
+.consulting-cta-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin: 0 0 0.4rem;
+}
+
+.consulting-cta-desc {
+  color: var(--ink-700);
+  font-size: 0.97rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.consulting-cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.65rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.18s, transform 0.12s;
+}
+
+.consulting-cta-btn:hover {
+  background: #a83d1a;
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .consulting-cta-btn {
+  background: var(--accent);
+  color: #12151e;
+}
+
+/* sidebar consulting widget */
+.sidebar-consulting {
+  background: var(--paper-strong);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.sidebar-consulting-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin: 0 0 0.4rem;
+}
+
+.sidebar-consulting-desc {
+  font-size: 0.85rem;
+  color: var(--ink-700);
+  margin: 0 0 var(--space-2);
+  line-height: 1.5;
+}
+
+.sidebar-consulting-btn {
+  display: block;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+
+.sidebar-consulting-btn:hover {
+  background: #a83d1a;
+}
+
+[data-theme="dark"] .sidebar-consulting-btn {
+  color: #12151e;
+}

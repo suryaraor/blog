@@ -31,6 +31,15 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Giscus (GitHub Discussions) comments — fill in repo_id and category_id
+# from https://giscus.app after enabling Discussions on the repo.
+giscus:
+  repo: "suryaraor/blog"
+  repo_id: "R_kgDONxample"
+  category: "General"
+  category_id: "DIC_kwDONxample"
+  mapping: "pathname"
+
 # Google Apps Script web app URL for comments and likes.
 # Set this after deploying the Apps Script backend.
 comments_api_url: "https://script.google.com/macros/s/AKfycbwn1KvY4zRu9v7ujWzJTdCFxSYHy5teZw0nCe5ihjJG1fNcnwqqdKDyGvzQnZd13IFH/exec"
