@@ -1,0 +1,64 @@
+---
+layout: default
+title: Tags & Categories
+---
+<div class="tags-page">
+    <h1 class="tags-page-title">Tags &amp; Categories</h1>
+
+    {% assign all_cats = "" | split: "" %}
+    {% for post in site.posts %}
+        {% for cat in post.categories %}
+            {% assign all_cats = all_cats | push: cat %}
+        {% endfor %}
+    {% endfor %}
+    {% assign unique_cats = all_cats | uniq | sort %}
+
+    <div class="tag-filter-bar" id="tag-filter-bar">
+        <button class="tag-filter-btn active" data-filter="all">All <span class="tag-count">{{ site.posts | size }}</span></button>
+        {% for cat in unique_cats %}
+        {% assign cat_count = 0 %}
+        {% for post in site.posts %}
+            {% if post.categories contains cat %}
+                {% assign cat_count = cat_count | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+        <button class="tag-filter-btn" data-filter="{{ cat | slugify }}">{{ cat }} <span class="tag-count">{{ cat_count }}</span></button>
+        {% endfor %}
+    </div>
+
+    <div class="tags-post-list" id="tags-post-list">
+        {% for post in site.posts %}
+        {% unless post.robots contains "noindex" %}
+        <a class="tag-post-row" href="{{ post.url | relative_url }}"
+           data-cats="{% for c in post.categories %}{{ c | slugify }} {% endfor %}">
+            <span class="tag-post-title">{{ post.title }}</span>
+            <span class="tag-post-meta">
+                {{ post.date | date: "%b %d, %Y" }}
+                {% for cat in post.categories %}<span class="tag-pill">{{ cat }}</span>{% endfor %}
+            </span>
+        </a>
+        {% endunless %}
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+(function () {
+    var btns = document.querySelectorAll('.tag-filter-btn');
+    var rows = document.querySelectorAll('.tag-post-row');
+    btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            btns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var filter = btn.getAttribute('data-filter');
+            rows.forEach(function (row) {
+                if (filter === 'all') {
+                    row.hidden = false;
+                } else {
+                    row.hidden = !(row.getAttribute('data-cats') || '').includes(filter);
+                }
+            });
+        });
+    });
+})();
+</script>

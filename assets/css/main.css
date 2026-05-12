@@ -739,6 +739,104 @@ footer {
   background: rgba(22, 26, 40, 0.7);
 }
 
+.tags-page {
+  max-width: var(--content-width);
+  margin: 0 auto var(--space-5);
+}
+
+.tags-page-title {
+  margin-bottom: var(--space-3);
+}
+
+.tag-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-3);
+}
+
+.tag-filter-btn {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-700);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tag-filter-btn:hover,
+.tag-filter-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.tag-count {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.tags-post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tag-post-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink-900);
+  transition: color 0.15s;
+}
+
+.tag-post-row:hover .tag-post-title {
+  color: var(--accent);
+}
+
+.tag-post-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.tag-post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.5rem;
+  font-size: 0.76rem;
+  color: var(--ink-500);
+  font-weight: 600;
+}
+
+.tag-pill {
+  background: rgba(200, 79, 36, 0.08);
+  border: 1px solid var(--accent-soft);
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+[data-theme="dark"] .tag-filter-btn {
+  background: rgba(22, 26, 40, 0.7);
+}
+
 .search-page {
   max-width: var(--content-width);
   margin: 0 auto var(--space-5);
