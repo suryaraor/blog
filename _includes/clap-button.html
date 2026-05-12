@@ -1,0 +1,56 @@
+<div class="clap-wrapper" id="clap-wrapper" aria-label="Clap for this article">
+    <button class="clap-btn" id="clap-btn" aria-label="Clap" title="Clap for this post">
+        <span class="clap-icon" aria-hidden="true">&#128079;</span>
+        <span class="clap-count" id="clap-count">–</span>
+    </button>
+    <p class="clap-label">If you found this useful, give it a clap!</p>
+</div>
+
+<script>
+(function () {
+    var POST_ID = {{ page.url | jsonify }};
+    var API_URL = {{ site.comments_api_url | jsonify }};
+    var STORAGE_KEY = 'clapped:' + POST_ID;
+    var btn = document.getElementById('clap-btn');
+    var countEl = document.getElementById('clap-count');
+    var clapped = localStorage.getItem(STORAGE_KEY);
+
+    if (clapped) {
+        btn.classList.add('clap-btn--clapped');
+        btn.setAttribute('aria-pressed', 'true');
+    }
+
+    function fetchCount() {
+        if (!API_URL) return;
+        fetch(API_URL + '?action=getClaps&post_id=' + encodeURIComponent(POST_ID))
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+                var n = (d && d.claps != null) ? d.claps : 0;
+                countEl.textContent = n;
+            })
+            .catch(function () { countEl.textContent = ''; });
+    }
+
+    fetchCount();
+
+    btn.addEventListener('click', function () {
+        if (localStorage.getItem(STORAGE_KEY)) return;
+        btn.classList.add('clap-btn--clapped', 'clap-btn--animating');
+        btn.setAttribute('aria-pressed', 'true');
+        localStorage.setItem(STORAGE_KEY, '1');
+        var cur = parseInt(countEl.textContent, 10) || 0;
+        countEl.textContent = cur + 1;
+        setTimeout(function () { btn.classList.remove('clap-btn--animating'); }, 600);
+        if (!API_URL) return;
+        fetch(API_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'clap', post_id: POST_ID })
+        }).then(function (r) { return r.json(); })
+          .then(function (d) {
+              if (d && d.claps != null) countEl.textContent = d.claps;
+          })
+          .catch(function () {});
+    });
+})();
+</script>
