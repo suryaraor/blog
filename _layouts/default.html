@@ -91,6 +91,16 @@
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
             {% endif %}
+            {% if page.learn %}
+            <div class="learn-box">
+                <p class="learn-box-title">&#127891; What you'll learn</p>
+                <ul class="learn-list">
+                    {% for item in page.learn %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
             {% if page.tldr %}
             <div class="tldr-box">
                 <p class="tldr-title">&#9889; TL;DR — Key Takeaways</p>
