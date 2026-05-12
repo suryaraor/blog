@@ -1,0 +1,17 @@
+{% assign popular = site.posts | where: "popular", true | slice: 0, 5 %}
+{% if popular.size == 0 %}
+    {% assign popular = site.posts | sort: "order" | reverse | slice: 0, 5 %}
+{% endif %}
+{% if popular.size > 0 %}
+<aside class="popular-posts-widget" aria-label="Popular posts">
+    <p class="popular-posts-title">&#128293; Popular</p>
+    <ol class="popular-posts-list">
+        {% for post in popular %}
+        <li>
+            <a href="{{ post.url | relative_url }}" class="popular-post-link">{{ post.title }}</a>
+            <span class="popular-post-meta">{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min</span>
+        </li>
+        {% endfor %}
+    </ol>
+</aside>
+{% endif %}

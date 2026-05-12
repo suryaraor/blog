@@ -739,6 +739,66 @@ footer {
   background: rgba(22, 26, 40, 0.7);
 }
 
+.popular-posts-widget {
+  position: fixed;
+  top: calc(26vh + 280px);
+  left: max(1rem, calc(50% + 390px));
+  width: 250px;
+  background: rgba(255, 250, 241, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.9rem 0.95rem;
+}
+
+.popular-posts-title {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--ink-500);
+  font-weight: 700;
+}
+
+.popular-posts-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.popular-posts-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.popular-post-link {
+  display: block;
+  color: var(--ink-700);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.popular-post-link:hover {
+  color: var(--accent);
+}
+
+.popular-post-meta {
+  font-size: 0.7rem;
+  color: var(--ink-500);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+[data-theme="dark"] .popular-posts-widget {
+  background: rgba(20, 24, 36, 0.96);
+}
+
+@media (max-width: 1180px) {
+  .popular-posts-widget {
+    display: none;
+  }
+}
+
 .archive-page {
   max-width: var(--content-width);
   margin: 0 auto var(--space-5);
