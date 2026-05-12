@@ -739,6 +739,114 @@ footer {
   background: rgba(22, 26, 40, 0.7);
 }
 
+.search-page {
+  max-width: var(--content-width);
+  margin: 0 auto var(--space-5);
+}
+
+.search-page-title {
+  margin-bottom: var(--space-3);
+}
+
+.search-input-wrap {
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--ink-900);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(200, 79, 36, 0.12);
+}
+
+[data-theme="dark"] .search-input {
+  background: rgba(22, 26, 40, 0.8);
+  color: var(--ink-900);
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.search-hint {
+  font-size: 0.8rem;
+  color: var(--ink-500);
+  margin: 0 0 var(--space-2);
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.search-result-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--ink-900);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.search-result-card:hover {
+  border-color: var(--accent-soft);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+  color: var(--ink-900);
+}
+
+.search-result-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-900);
+}
+
+.search-result-meta {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-500);
+}
+
+.search-result-excerpt {
+  font-size: 0.87rem;
+  color: var(--ink-700);
+  line-height: 1.5;
+}
+
+.search-empty {
+  color: var(--ink-500);
+  font-size: 0.95rem;
+}
+
+[data-theme="dark"] .search-result-card {
+  background: rgba(22, 26, 40, 0.7);
+}
+
 .use-case-box,
 .post-content blockquote.use-case-box {
   background: linear-gradient(135deg, #f0f8ff, #f8fbff);

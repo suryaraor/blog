@@ -1,0 +1,77 @@
+---
+layout: default
+title: Search
+---
+<div class="search-page">
+    <h1 class="search-page-title">Search Articles</h1>
+    <div class="search-input-wrap">
+        <input type="search" id="search-input" class="search-input" placeholder="Search by title, topic, or keyword…" autofocus autocomplete="off" spellcheck="false">
+        <span class="search-icon" aria-hidden="true">&#128269;</span>
+    </div>
+    <p class="search-hint" id="search-hint"></p>
+    <div id="search-results" class="search-results"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" defer></script>
+<script>
+(function () {
+    var POSTS_URL = '{{ "/search.json" | relative_url }}';
+    var input = document.getElementById('search-input');
+    var results = document.getElementById('search-results');
+    var hint = document.getElementById('search-hint');
+    var idx, docs;
+
+    function init() {
+        fetch(POSTS_URL)
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                docs = data;
+                idx = lunr(function () {
+                    this.ref('id');
+                    this.field('title', { boost: 10 });
+                    this.field('excerpt');
+                    data.forEach(function (d) { this.add(d); }, this);
+                });
+                hint.textContent = data.length + ' articles indexed.';
+                if (input.value.trim()) { search(input.value.trim()); }
+            });
+    }
+
+    function search(query) {
+        if (!idx) return;
+        var hits = idx.search(query + '*');
+        if (!hits.length) {
+            results.innerHTML = '<p class="search-empty">No results for <strong>' + escHtml(query) + '</strong>.</p>';
+            hint.textContent = '';
+            return;
+        }
+        hint.textContent = hits.length + ' result' + (hits.length === 1 ? '' : 's');
+        results.innerHTML = hits.map(function (h) {
+            var doc = docs.find(function (d) { return d.id === h.ref; });
+            if (!doc) return '';
+            return '<a class="search-result-card" href="' + escAttr(doc.url) + '">' +
+                '<span class="search-result-title">' + escHtml(doc.title) + '</span>' +
+                '<span class="search-result-meta">' + escHtml(doc.date) + '</span>' +
+                '<span class="search-result-excerpt">' + escHtml(doc.excerpt) + '</span>' +
+                '</a>';
+        }).join('');
+    }
+
+    function escHtml(s) { return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+    function escAttr(s) { return String(s).replace(/"/g, '&quot;'); }
+
+    window.addEventListener('load', function () {
+        if (typeof lunr === 'undefined') {
+            setTimeout(init, 300);
+        } else {
+            init();
+        }
+    });
+
+    input.addEventListener('input', function () {
+        var q = input.value.trim();
+        if (q.length < 2) { results.innerHTML = ''; hint.textContent = docs ? docs.length + ' articles indexed.' : ''; return; }
+        search(q);
+    });
+})();
+</script>
