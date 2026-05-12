@@ -74,6 +74,10 @@
             {% if page.image %}
             <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
             {% endif %}
+            <aside class="post-toc" id="post-toc" hidden>
+                <p class="post-toc-title">On this page</p>
+                <nav id="post-toc-nav" aria-label="Table of contents"></nav>
+            </aside>
             <div class="post-content">
                 {{ content }}
             </div>
@@ -92,6 +96,32 @@
         {% endif %}
 
         {% if page.date %}
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toc = document.getElementById('post-toc');
+            var tocNav = document.getElementById('post-toc-nav');
+            var content = document.querySelector('.post-content');
+            if (content && toc && tocNav) {
+                var headings = content.querySelectorAll('h2, h3');
+                if (headings.length >= 4) {
+                    var list = document.createElement('ol');
+                    for (var i = 0; i < headings.length; i++) {
+                        var h = headings[i];
+                        if (!h.id) { h.id = 'section-' + (i + 1); }
+                        var li = document.createElement('li');
+                        if (h.tagName.toLowerCase() === 'h3') { li.className = 'toc-depth-3'; }
+                        var a = document.createElement('a');
+                        a.href = '#' + h.id;
+                        a.textContent = h.textContent;
+                        li.appendChild(a);
+                        list.appendChild(li);
+                    }
+                    tocNav.appendChild(list);
+                    toc.hidden = false;
+                }
+            }
+        });
+        </script>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('.post-content pre').forEach(function (pre) {
