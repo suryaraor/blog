@@ -491,6 +491,22 @@
         </footer>
     </div>
 
+    {% if page.date %}
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+    <script>
+    (function () {
+        var btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 400) { btn.classList.add('visible'); }
+            else { btn.classList.remove('visible'); }
+        }, { passive: true });
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+    </script>
+    {% endif %}
     <!-- Offline-ready toast -->
     <div id="offline-toast" class="offline-toast" role="status" aria-live="polite" hidden>
         <span class="offline-toast-text">&#x2601;&#xFE0F;&nbsp; All articles saved &mdash; readable offline</span>
