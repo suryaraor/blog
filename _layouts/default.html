@@ -87,7 +87,7 @@
             <div class="post-layout">
                 <div class="post-main">
                     <div class="post-meta">
-                        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y · %H:%M" }}</time>
                         {% if page.last_updated %}
                         <span class="post-last-updated">· Updated <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: "%B %d, %Y" }}</time></span>
                         {% endif %}

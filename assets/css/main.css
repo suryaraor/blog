@@ -172,7 +172,7 @@ a:hover {
 .site-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   gap: var(--space-3);
   border-bottom: 1px solid var(--line);
   padding: var(--space-4) 0 var(--space-3);

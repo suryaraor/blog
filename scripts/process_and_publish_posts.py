@@ -255,11 +255,18 @@ def filename_to_title(filename: str) -> str:
     return " ".join(part.capitalize() for part in stem.split())
 
 
+def _truncate_title(title: str, max_chars: int = 80) -> str:
+    """Trim an overly long title to max_chars at the nearest word boundary."""
+    if len(title) <= max_chars:
+        return title
+    cut = title[:max_chars].rsplit(" ", 1)
+    return cut[0].rstrip(" :—-") if len(cut) > 1 else title[:max_chars]
+
+
 def extract_title(text: str, source_name: str) -> str:
     m = H1_RE.search(text)
-    if m:
-        return m.group(1).strip()
-    return filename_to_title(source_name)
+    raw = m.group(1).strip() if m else filename_to_title(source_name)
+    return _truncate_title(raw)
 
 
 def slugify_title(title: str) -> str:
@@ -1296,8 +1303,11 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                 else:
                     print(f"[image] Pollinations.AI failed for '{title}'; continuing without image.", file=sys.stderr)
 
+        # Use a per-file datetime so posts generated on the same day sort correctly.
+        # The filename still uses args.publish_date (YYYY-MM-DD) for stable URLs.
+        file_datetime = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         normalized = normalize_front_matter(
-            cleaned, title=title, publish_date=args.publish_date, order=next_order,
+            cleaned, title=title, publish_date=file_datetime, order=next_order,
             image=image_filename, image_credit=image_credit
         )
         next_order += 1

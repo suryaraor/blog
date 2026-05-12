@@ -23,7 +23,7 @@ title: "Home"
   {% endif %}
 
   <div class="featured-meta">
-    <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
+    <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y · %H:%M" }}</time>
     <span class="post-read-time">{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
     {% if featured_post.difficulty %}
     <span class="difficulty-badge difficulty-badge--{{ featured_post.difficulty | downcase }}">{{ featured_post.difficulty }}</span>
@@ -145,7 +145,7 @@ title: "Home"
       {% endif %}
 
       <div class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y · %H:%M" }}</time>
         <span class="post-read-time">{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
         {% if post.difficulty %}
         <span class="difficulty-badge difficulty-badge--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>
