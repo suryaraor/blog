@@ -55,9 +55,9 @@ title: "Home"
 </section>
 {% endif %}
 
-<section class="post-grid" aria-label="More stories">
+<section class="post-grid" id="post-grid" aria-label="More stories">
   {% for post in sorted_posts offset:1 %}
-    <article class="post-card">
+    <article class="post-card" data-page="1">
       {% if post.image %}
       <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
       {% endif %}
@@ -78,6 +78,42 @@ title: "Home"
     </article>
   {% endfor %}
 </section>
+
+<div class="pagination" id="pagination" hidden>
+  <button class="pagination-btn" id="pag-prev" aria-label="Previous page" disabled>&#8592; Prev</button>
+  <span class="pagination-info" id="pag-info"></span>
+  <button class="pagination-btn" id="pag-next" aria-label="Next page">Next &#8594;</button>
+</div>
+
+<script>
+(function () {
+    var PER_PAGE = 12;
+    var grid = document.getElementById('post-grid');
+    var pagination = document.getElementById('pagination');
+    var prevBtn = document.getElementById('pag-prev');
+    var nextBtn = document.getElementById('pag-next');
+    var info = document.getElementById('pag-info');
+    if (!grid) return;
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.post-card'));
+    var totalPages = Math.ceil(cards.length / PER_PAGE);
+    if (totalPages <= 1) return;
+    var page = 1;
+    pagination.hidden = false;
+
+    function render() {
+        var start = (page - 1) * PER_PAGE;
+        var end = start + PER_PAGE;
+        cards.forEach(function (c, i) { c.hidden = (i < start || i >= end); });
+        prevBtn.disabled = page === 1;
+        nextBtn.disabled = page === totalPages;
+        info.textContent = 'Page ' + page + ' of ' + totalPages;
+    }
+
+    prevBtn.addEventListener('click', function () { if (page > 1) { page--; render(); grid.scrollIntoView({behavior:'smooth'}); } });
+    nextBtn.addEventListener('click', function () { if (page < totalPages) { page++; render(); grid.scrollIntoView({behavior:'smooth'}); } });
+    render();
+})();
+</script>
 
 {% if site.posts.size == 0 %}
 <div class="no-posts">
