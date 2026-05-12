@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The \"Distributed Tracing\" Obsession Is a 2025 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-distributed-tracing-obsession-is-a-2025-debugging-crutch-why-structured-logging-with-span-ids-outperforms-opentelemetry-at-3x-lower-overhead-for-90-of-production-incidents/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (193 chars) ──────────────
+The \"Distributed Tracing\" Obsession Is a 2025 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents
+
+Thread 🧵👇
+
+── Tweet 2 (271 chars) ──────────────
+2/ • The Emperor's New Trace • • The Silent 3x Overhead • • The Observability Industrial Complex • • What happened (the message) • • When it happened (the timestamp) • • Where it happened (the service name and function) • • Why it happened (the stack trace or error code)
+
+── Tweet 3 (120 chars) ──────────────
+3/ • How to connect it (the span ID) • • The Pragmatist's Observability Stack • • So What • • The Minimalist's Manifesto
+
+── Tweet 4 (263 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-distributed-tracing-obsession-is-a-2025-debugging-crutch-why-structured-logging-with-span-ids-outperforms-opentelemetry-at-3x-lower-overhead-for-90-of-production-incidents/
+
+#Engineering #Tech

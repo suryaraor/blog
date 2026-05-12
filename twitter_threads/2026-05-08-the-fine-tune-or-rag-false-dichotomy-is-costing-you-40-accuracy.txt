@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The 'Fine-Tune or RAG' False Dichotomy Is Costing You 40% Accuracy
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-fine-tune-or-rag-false-dichotomy-is-costing-you-40-accuracy/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (77 chars) ──────────────
+The 'Fine-Tune or RAG' False Dichotomy Is Costing You 40% Accuracy
+
+Thread 🧵👇
+
+── Tweet 2 (226 chars) ──────────────
+2/ • The Fine-Tuning Mirage • • The RAG Reality Check • • The Blind Spot You Can't Afford • • 91% accuracy on complex multi-hop queries (vs. 68% fine-tune, 62% RAG) • • 3x faster query response times due to intelligent caching
+
+── Tweet 3 (222 chars) ──────────────
+3/ • 70% reduction in hallucination rates because context retrieval is semantically precise • • What This Means for 2025 and Beyond • • Intent-aware retrieval prompts that preprocess queries before hitting the vector store
+
+── Tweet 4 (222 chars) ──────────────
+4/ • Layered caching that learns which answers get asked most and keeps them hot • • Dynamic context assembly that weights retrieved chunks by relevance confidence • • Why You Should Care • • The Only Question That Matters
+
+── Tweet 5 (151 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-fine-tune-or-rag-false-dichotomy-is-costing-you-40-accuracy/
+
+#Engineering #Tech

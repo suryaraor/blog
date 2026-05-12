@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The Microservices Hangover Is a 2025 Performance Trap
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-microservices-hangover-is-a-2025-performance-trap/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (64 chars) ──────────────
+The Microservices Hangover Is a 2025 Performance Trap
+
+Thread 🧵👇
+
+── Tweet 2 (243 chars) ──────────────
+2/ • The Great Migration Lie • • The Hidden Cost of Independence • • Why We Keep Drinking the Kool-Aid • • Microservices shine at massive scale (think Google, Amazon, Netflix) • • Modular monoliths outperform for 70% of SaaS (under 100K users)
+
+── Tweet 3 (169 chars) ──────────────
+3/ • Network latency is the silent killer of user experience • • Operational complexity hides behind a veneer of "devops maturity" • • The Decade of the Modular Monolith
+
+── Tweet 4 (141 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-microservices-hangover-is-a-2025-performance-trap/
+
+#Engineering #Tech

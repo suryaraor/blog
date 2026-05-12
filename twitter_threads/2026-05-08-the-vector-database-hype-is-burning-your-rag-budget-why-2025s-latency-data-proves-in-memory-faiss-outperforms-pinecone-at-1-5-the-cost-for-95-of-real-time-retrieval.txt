@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The \"Vector Database\" Hype Is Burning Your RAG Budget — Why 2025's Latency Data Proves In-Memory FAISS Outperforms Pinecone at 1/5 the Cost for 95% of Real-Time Retrieval
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-vector-database-hype-is-burning-your-rag-budget-why-2025s-latency-data-proves-in-memory-faiss-outperforms-pinecone-at-1-5-the-cost-for-95-of-real-time-retrieval/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (183 chars) ──────────────
+The \"Vector Database\" Hype Is Burning Your RAG Budget — Why 2025's Latency Data Proves In-Memory FAISS Outperforms Pinecone at 1/5 the Cost for 95% of Real-Time Retrieval
+
+Thread 🧵👇
+
+── Tweet 2 (215 chars) ──────────────
+2/ • Hybrid architectures become standard — teams will use in-memory FAISS for their hot path (most frequent queries, latest data) and a managed vector database for cold storage (historical data, long-tail queries).
+
+── Tweet 3 (193 chars) ──────────────
+3/ • Latency budgets tighten — as RAG moves into voice agents and real-time decision making, the sub-50ms retrieval requirement will kill network-dependent solutions for latency-critical paths.
+
+── Tweet 4 (146 chars) ──────────────
+4/ • Cost transparency demands increase — CFOs are starting to ask why "search" costs more than compute, and the answer won't hold up to scrutiny.
+
+── Tweet 5 (252 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-vector-database-hype-is-burning-your-rag-budget-why-2025s-latency-data-proves-in-memory-faiss-outperforms-pinecone-at-1-5-the-cost-for-95-of-real-time-retrieval/
+
+#Engineering #Tech

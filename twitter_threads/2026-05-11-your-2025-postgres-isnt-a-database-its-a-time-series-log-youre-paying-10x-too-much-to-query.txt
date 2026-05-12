@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your 2025 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/your-2025-postgres-isnt-a-database-its-a-time-series-log-youre-paying-10x-too-much-to-query/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (107 chars) ──────────────
+Your 2025 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query
+
+Thread 🧵👇
+
+── Tweet 2 (258 chars) ──────────────
+2/ • The Scaling Paradox No One Talks About • • The Silent Autovacuum Crisis • • The Forward Path Is Counterintuitive • • For high-cardinality metrics (unique device IDs, session tokens), use a time-series database that understands high-cardinality indexing.
+
+── Tweet 3 (174 chars) ──────────────
+3/ • For low-cardinality metrics (CPU, memory, disk), a columnar engine like ClickHouse or a tiered Postgres extension like TimescaleDB will save you 70-80% on storage costs.
+
+── Tweet 4 (221 chars) ──────────────
+4/ • For event logs (clickstreams, API calls), look at streaming databases like Apache Kafka + ksqlDB or Materialize. They provide the query interface without the storage bloat. • • So What? • • What Will You Do Tomorrow?
+
+── Tweet 5 (179 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/your-2025-postgres-isnt-a-database-its-a-time-series-log-youre-paying-10x-too-much-to-query/
+
+#Engineering #Tech

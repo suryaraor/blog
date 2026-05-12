@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The “SOLID Principles” Cult Is a 2025 Maintainability Trap — Why Industrial-Strength Codebases Prove Functional Core/Imperative Shell Outperforms OOP Dogma by 6x in Bug Reduction
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-solid-principles-cult-is-a-2025-maintainability-trap-why-industrial-strength-codebases-prove-functional-core-imperative-shell-outperforms-oop-dogma-by-6x-in-bug-reduction/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (189 chars) ──────────────
+The “SOLID Principles” Cult Is a 2025 Maintainability Trap — Why Industrial-Strength Codebases Prove Functional Core/Imperative Shell Outperforms OOP Dogma by 6x in Bug Reduction
+
+Thread 🧵👇
+
+── Tweet 2 (195 chars) ──────────────
+2/ • Why Your Factory Needs Therapy • • The Market Hates Your Abstract Factory • • Why Gurus Are Trapped in 1990 • • The Uncomfortable Truth About 2025 • • So What? • • Stop Asking for Permission
+
+── Tweet 3 (262 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-solid-principles-cult-is-a-2025-maintainability-trap-why-industrial-strength-codebases-prove-functional-core-imperative-shell-outperforms-oop-dogma-by-6x-in-bug-reduction/
+
+#Engineering #Tech

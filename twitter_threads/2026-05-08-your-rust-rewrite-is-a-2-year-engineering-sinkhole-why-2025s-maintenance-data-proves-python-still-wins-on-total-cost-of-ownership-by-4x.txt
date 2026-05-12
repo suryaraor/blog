@@ -1,0 +1,42 @@
+Twitter/X Thread Draft — Your “Rust Rewrite” Is a 2-Year Engineering Sinkhole — Why 2025’s Maintenance Data Proves Python Still Wins on Total Cost of Ownership by 4x
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-rust-rewrite-is-a-2-year-engineering-sinkhole-why-2025s-maintenance-data-proves-python-still-wins-on-total-cost-of-ownership-by-4x/
+Tweets: 10
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (151 chars) ──────────────
+Your “Rust Rewrite” Is a 2-Year Engineering Sinkhole — Why 2025’s Maintenance Data Proves Python Still Wins on Total Cost of Ownership by 4x
+
+Thread 🧵👇
+
+── Tweet 2 (79 chars) ──────────────
+2/ • The Seduction of the Silver Bullet • • The Hidden Costs Nobody Talks About
+
+── Tweet 3 (228 chars) ──────────────
+3/ • Developer velocity drops by 70%. Your Python developers now need 3x longer to implement a feature because they have to reason about ownership, borrowing, and lifetimes. Simple CRUD endpoints that took a day now take a week.
+
+── Tweet 4 (266 chars) ──────────────
+4/ • On-call burden explodes. Rust might eliminate null pointer dereferences, but it introduces new failure modes: unsafe blocks that crash in production, complex async runtime bugs, and memory leaks from misused RefCell patterns. Your pager goes off more, not less.
+
+── Tweet 5 (261 chars) ──────────────
+5/ • Hiring becomes a nightmare. Rust developers cost 30–40% more than Python engineers and are harder to find. Meanwhile, your Python team is now maintaining two systems — the old one and the new one — stretching everyone thin. • • The Blind Spot in Every Room
+
+── Tweet 6 (213 chars) ──────────────
+6/ • Profile first. Spend a week with a flame graph. You’ll find 80% of your performance problems in 20% of the code. • • Rewrite the hot path. Rewrite just the critical 5% in Rust or Cython, not the whole system.
+
+── Tweet 7 (134 chars) ──────────────
+7/ • Index your database. Bad queries are responsible for more issues than language choice. • • The Real Future of Python Architecture
+
+── Tweet 8 (151 chars) ──────────────
+8/ • Invest in Python’s performance ecosystem. PyPy, Pyston, and cython keep getting faster. Most systems don’t need Rust; they need better algorithms.
+
+── Tweet 9 (187 chars) ──────────────
+9/ • Use Rust where it matters. Rewrite your core library, not your entire backend. A Rustified database driver or computation engine gives you 90% of the speed gain with 10% of the risk.
+
+── Tweet 10 (224 chars) ──────────────
+10/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-rust-rewrite-is-a-2-year-engineering-sinkhole-why-2025s-maintenance-data-proves-python-still-wins-on-total-cost-of-ownership-by-4x/
+
+#Engineering #Tech

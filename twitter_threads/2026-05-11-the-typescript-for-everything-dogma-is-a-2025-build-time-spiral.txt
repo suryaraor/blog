@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The \"TypeScript for Everything\" Dogma Is a 2025 Build-Time Spiral
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-typescript-for-everything-dogma-is-a-2025-build-time-spiral/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (78 chars) ──────────────
+The \"TypeScript for Everything\" Dogma Is a 2025 Build-Time Spiral
+
+Thread 🧵👇
+
+── Tweet 2 (275 chars) ──────────────
+2/ • The TypeScript Fever Dream • • The Bundle Size Rebellion • • The JSDoc Blind Spot • • Simpler code that's easy to read • • Faster iteration cycles • • Fewer layers of abstraction • • Smaller surface area for bugs • • The Pragmatic Pivot Forward • • So What • • Your Move
+
+── Tweet 3 (151 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-typescript-for-everything-dogma-is-a-2025-build-time-spiral/
+
+#Engineering #Tech

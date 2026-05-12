@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The 2025 Kubernetes Cost Hangover — Why Production Profiling Proves 60% of Cluster Spend Goes to Idle Sidecars and Over-Provisioned Node Groups
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-kubernetes-cost-hangover-why-production-profiling-proves-60-of-cluster-spend-goes-to-idle-sidecars-and-over-provisioned-node-groups/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (154 chars) ──────────────
+The 2025 Kubernetes Cost Hangover — Why Production Profiling Proves 60% of Cluster Spend Goes to Idle Sidecars and Over-Provisioned Node Groups
+
+Thread 🧵👇
+
+── Tweet 2 (117 chars) ──────────────
+2/ • The Shiny Proxy Paradox • • The Ghost Nodes in Your Cluster • • The Monitoring Mirage • • The New Normal Is Lean
+
+── Tweet 3 (183 chars) ──────────────
+3/ • Kill sidecars that aren’t pulling their weight. That log forwarder you added “just in case”? Profile it. If it transmits logs for 30 seconds a day, it doesn’t need 256 MB of RAM.
+
+── Tweet 4 (127 chars) ──────────────
+4/ • Right-size node groups based on actual utilization curves, not theoretical peak requests. Use spot instances aggressively.
+
+── Tweet 5 (192 chars) ──────────────
+5/ • Implement pod-level resource quotas that expire unused allocations after a grace period. If a sidecar asks for resources and doesn’t use them, it forfeits them. • • So What • • Conclusion
+
+── Tweet 6 (228 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-kubernetes-cost-hangover-why-production-profiling-proves-60-of-cluster-spend-goes-to-idle-sidecars-and-over-provisioned-node-groups/
+
+#Engineering #Tech

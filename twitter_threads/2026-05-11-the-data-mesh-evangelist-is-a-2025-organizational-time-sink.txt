@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The Data Mesh Evangelist Is a 2025 Organizational Time Sink
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-data-mesh-evangelist-is-a-2025-organizational-time-sink/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (70 chars) ──────────────
+The Data Mesh Evangelist Is a 2025 Organizational Time Sink
+
+Thread 🧵👇
+
+── Tweet 2 (229 chars) ──────────────
+2/ • The Beautiful Theory Nobody Asked For • • Speed Is Just Proximity to Reality • • The Inconvenient Truth About Scale • • What Centralization Actually Teaches You • • Start centralized. One warehouse. One transformation layer.
+
+── Tweet 3 (132 chars) ──────────────
+3/ • Only decentralize when one team genuinely cannot serve another team's needs and you have the engineering maturity to manage it.
+
+── Tweet 4 (221 chars) ──────────────
+4/ • Measure developer velocity on data features like you measure software deployment frequency. If your data pipeline delivery time isn't shrinking, your architecture is wrong. • • So What • • What to Do Tomorrow Morning
+
+── Tweet 5 (147 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-data-mesh-evangelist-is-a-2025-organizational-time-sink/
+
+#Engineering #Tech

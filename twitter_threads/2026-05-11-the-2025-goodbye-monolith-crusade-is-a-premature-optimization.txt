@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 2025 “Goodbye Monolith” Crusade Is a Premature Optimization
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-goodbye-monolith-crusade-is-a-premature-optimization/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (74 chars) ──────────────
+The 2025 “Goodbye Monolith” Crusade Is a Premature Optimization
+
+Thread 🧵👇
+
+── Tweet 2 (243 chars) ──────────────
+2/ • The Great Unspoken Heresy • • When Speed Becomes a Liability • • The Elephant in the Room • • A modular monolith: one deploy, one database, clear module boundaries • • A microservice: many deploys, many databases, clear service boundaries
+
+── Tweet 3 (167 chars) ──────────────
+3/ • The first optimizes for speed of change, the second for independent scaling • • The Architecture That Wins • • Why This Matters to You • • The Harder, Better Path
+
+── Tweet 4 (149 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-goodbye-monolith-crusade-is-a-premature-optimization/
+
+#Engineering #Tech

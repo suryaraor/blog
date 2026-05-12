@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The Silent ROI Killer: Why Your Team’s Obsession with Feature Velocity Is Destroying Long-Term Revenue
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/the-silent-roi-killer-why-your-teams-obsession-with-feature-velocity-is-destroying-long-term-revenue/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (113 chars) ──────────────
+The Silent ROI Killer: Why Your Team’s Obsession with Feature Velocity Is Destroying Long-Term Revenue
+
+Thread 🧵👇
+
+── Tweet 2 (253 chars) ──────────────
+2/ • The Feature Factory Myth • • The Hidden Cost of Speed • • Why Everyone Misses This • • Rethinking the Metrics That Matter • • Shifting from feature output to outcome-based OKRs • • Allocating at least 30% of capacity to improvements and maintenance
+
+── Tweet 3 (98 chars) ──────────────
+3/ • Running quarterly audits of feature usage and retiring unused ones • • So What • • Conclusion
+
+── Tweet 4 (188 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/the-silent-roi-killer-why-your-teams-obsession-with-feature-velocity-is-destroying-long-term-revenue/
+
+#Engineering #Tech

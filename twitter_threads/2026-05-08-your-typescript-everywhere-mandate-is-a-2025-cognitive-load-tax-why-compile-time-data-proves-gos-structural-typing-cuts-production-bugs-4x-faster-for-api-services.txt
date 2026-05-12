@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — Your \"TypeScript Everywhere\" Mandate Is a 2025 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-typescript-everywhere-mandate-is-a-2025-cognitive-load-tax-why-compile-time-data-proves-gos-structural-typing-cuts-production-bugs-4x-faster-for-api-services/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (180 chars) ──────────────
+Your \"TypeScript Everywhere\" Mandate Is a 2025 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services
+
+Thread 🧵👇
+
+── Tweet 2 (232 chars) ──────────────
+2/ • The Comfort Trap You've Been Sold • • Where The Market Actually Moves • • The Blind Spot We All Share • • What Happens Next • • Cognitive load tax: Your developers spend mental energy on types that don't prevent runtime errors.
+
+── Tweet 3 (240 chars) ──────────────
+3/ • Debugging tax: You chase ghosts at 2 AM that a proper compile-time system would have caught. • • Maintenance tax: Type definitions rot faster than the code they describe. • • Why You Should Actually Care • • The Choice You Have To Make
+
+── Tweet 4 (250 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-typescript-everywhere-mandate-is-a-2025-cognitive-load-tax-why-compile-time-data-proves-gos-structural-typing-cuts-production-bugs-4x-faster-for-api-services/
+
+#Engineering #Tech

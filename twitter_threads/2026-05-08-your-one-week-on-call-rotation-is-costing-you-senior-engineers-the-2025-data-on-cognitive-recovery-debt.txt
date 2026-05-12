@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your “One-Week On-Call Rotation” Is Costing You Senior Engineers — The 2025 Data on Cognitive Recovery Debt
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-one-week-on-call-rotation-is-costing-you-senior-engineers-the-2025-data-on-cognitive-recovery-debt/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (118 chars) ──────────────
+Your “One-Week On-Call Rotation” Is Costing You Senior Engineers — The 2025 Data on Cognitive Recovery Debt
+
+Thread 🧵👇
+
+── Tweet 2 (155 chars) ──────────────
+2/ • Rotations should be 3–4 days max, not 7. The fourth day of on-call shows diminishing returns on availability and increasing returns on cognitive debt.
+
+── Tweet 3 (146 chars) ──────────────
+3/ • Post-rotation “cool-down” days must be honored. No meetings, no critical decision-making, no architecture reviews for 48 hours post-rotation.
+
+── Tweet 4 (136 chars) ──────────────
+4/ • Compensate explicitly for cognitive debt. Pay a flat on-call bonus that is at least 10% of annual salary, not a token $50 per page.
+
+── Tweet 5 (191 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-one-week-on-call-rotation-is-costing-you-senior-engineers-the-2025-data-on-cognitive-recovery-debt/
+
+#Engineering #Tech

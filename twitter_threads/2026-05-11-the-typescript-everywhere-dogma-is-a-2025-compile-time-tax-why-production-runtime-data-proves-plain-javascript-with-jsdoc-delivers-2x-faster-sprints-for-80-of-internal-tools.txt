@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The \"TypeScript Everywhere\" Dogma Is a 2025 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-typescript-everywhere-dogma-is-a-2025-compile-time-tax-why-production-runtime-data-proves-plain-javascript-with-jsdoc-delivers-2x-faster-sprints-for-80-of-internal-tools/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (189 chars) ──────────────
+The \"TypeScript Everywhere\" Dogma Is a 2025 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools
+
+Thread 🧵👇
+
+── Tweet 2 (228 chars) ──────────────
+2/ • The Compile-Time Tax Everyone Ignored • • The Secret Life of Plain JavaScript • • The Blind Spot Engineers Love • • The Pragmatic Future • • TypeScript required: Shared libraries, external APIs, apps with >5-year lifetimes.
+
+── Tweet 3 (154 chars) ──────────────
+3/ • JavaScript + JSDoc fine: Internal dashboards, admin panels, prototypes, tools that serve <100 internal users. • • So What • • The Real Call to Action
+
+── Tweet 4 (261 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-typescript-everywhere-dogma-is-a-2025-compile-time-tax-why-production-runtime-data-proves-plain-javascript-with-jsdoc-delivers-2x-faster-sprints-for-80-of-internal-tools/
+
+#Engineering #Tech

@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your “Revenue per Engineer” Metric Is a Startup-Valuation Artifact — Why It’s Now Actively Destroying Product Quality
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-revenue-per-engineer-metric-is-a-startup-valuation-artifact-why-its-now-actively-destroying-product-quality/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (128 chars) ──────────────
+Your “Revenue per Engineer” Metric Is a Startup-Valuation Artifact — Why It’s Now Actively Destroying Product Quality
+
+Thread 🧵👇
+
+── Tweet 2 (269 chars) ──────────────
+2/ • The Surface-Level Seduction • • The Market’s Quiet Rebellion • • The Blind Spot Nobody Talks About • • How many hours your users waste on support calls • • How much trust you’re burning with each buggy release • • How much technical debt you’re piling up for later
+
+── Tweet 3 (252 chars) ──────────────
+3/ • How long it actually takes to ship a quality feature • • What We Should Be Measuring Instead • • Time to competency — how long until a new user can complete their core workflow • • Recovery time — how quickly the team fixes bugs and restores trust
+
+── Tweet 4 (186 chars) ──────────────
+4/ • Net promoter score per feature — not just overall satisfaction but granular quality signals • • Revenue per issue resolved — tying quality improvements directly to business outcomes
+
+── Tweet 5 (200 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-revenue-per-engineer-metric-is-a-startup-valuation-artifact-why-its-now-actively-destroying-product-quality/
+
+#Engineering #Tech

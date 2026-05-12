@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 2025 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-ci-cd-pipeline-is-a-compliance-nightmare-why-open-policy-agent-and-oss-rego-rules-catch-90-more-security-violations-than-yaml-linter-ci-checks/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (165 chars) ──────────────
+The 2025 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks
+
+Thread 🧵👇
+
+── Tweet 2 (271 chars) ──────────────
+2/ • Your Linter Is a Liar • • Enterprise Panic, Open Source Pivot • • The Industry Blind Spot: Automation Bias • • Forward: Policy as Code, Not Policy as Checklist • • A linter checks syntax. OPA checks semantics. • • A linter runs on commit. OPA evaluates on admission.
+
+── Tweet 3 (153 chars) ──────────────
+3/ • A linter sees one file. OPA sees the whole cluster. • • So What? You're Deploying with a Checklist, Not a Brain • • The Green Check That Betrays You
+
+── Tweet 4 (239 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-ci-cd-pipeline-is-a-compliance-nightmare-why-open-policy-agent-and-oss-rego-rules-catch-90-more-security-violations-than-yaml-linter-ci-checks/
+
+#Engineering #Tech

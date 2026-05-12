@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — A Practical Guide to Angular Interceptors
+============================================================
+Date: 2025-09-23
+URL:  https://suryaraor.github.io/blog/2025/09/23/angular-interceptors/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (52 chars) ──────────────
+A Practical Guide to Angular Interceptors
+
+Thread 🧵👇
+
+── Tweet 2 (273 chars) ──────────────
+2/ • What Angular interceptors are and why they're useful • • How to create and register an interceptor • • Real-world use cases (auth, logging, error handling) • • Best practices and common pitfalls • • How to chain multiple interceptors • • What Are Angular Interceptors?
+
+── Tweet 3 (230 chars) ──────────────
+3/ • Add headers (e.g., auth tokens) to every request • • Log or monitor HTTP traffic • • Handle errors globally • • Transform responses before they reach your code • • Creating a Simple Interceptor • • Registering the Interceptor
+
+── Tweet 4 (108 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2025/09/23/angular-interceptors/
+
+#Engineering #Tech

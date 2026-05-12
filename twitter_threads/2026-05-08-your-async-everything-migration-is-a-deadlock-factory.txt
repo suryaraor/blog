@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — Your \"Async Everything\" Migration Is a Deadlock Factory
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-async-everything-migration-is-a-deadlock-factory/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (68 chars) ──────────────
+Your \"Async Everything\" Migration Is a Deadlock Factory
+
+Thread 🧵👇
+
+── Tweet 2 (222 chars) ──────────────
+2/ • The Async Gold Rush • • Deadlocks Don’t Care About Intentions • • The Cult of the Event Loop • • The Great Unwinding • • If you have fewer than 100 shared resources (connections, files, locks), use sync with batching.
+
+── Tweet 3 (253 chars) ──────────────
+3/ • If you need to coordinate more than three async operations that depend on each other, you’re building a deadlock. • • If your async code has more than one catch statement per function, you’ve already lost. • • So What? • • What You Can Do Right Now
+
+── Tweet 4 (141 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-async-everything-migration-is-a-deadlock-factory/
+
+#Engineering #Tech

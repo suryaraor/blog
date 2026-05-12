@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — Your \"Lightweight\" AI Agent Is Actually a Prompt Injection Backdoor Waiting for Production
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-lightweight-ai-agent-is-actually-a-prompt-injection-backdoor-waiting-for-production/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (103 chars) ──────────────
+Your \"Lightweight\" AI Agent Is Actually a Prompt Injection Backdoor Waiting for Production
+
+Thread 🧵👇
+
+── Tweet 2 (164 chars) ──────────────
+2/ • The "Just Add Prompt" Trap • • There's No Free Lunch • • The Blind Spot That Hurts • • The Deeper Price of Cheap • • So What? • • The Real Weight We Must Carry
+
+── Tweet 3 (176 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-lightweight-ai-agent-is-actually-a-prompt-injection-backdoor-waiting-for-production/
+
+#Engineering #Tech

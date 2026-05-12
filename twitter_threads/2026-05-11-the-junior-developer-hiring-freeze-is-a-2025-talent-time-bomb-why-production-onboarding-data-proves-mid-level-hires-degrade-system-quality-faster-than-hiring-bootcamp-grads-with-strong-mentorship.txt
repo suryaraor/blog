@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The “Junior Developer” Hiring Freeze Is a 2025 Talent Time Bomb — Why Production Onboarding Data Proves Mid-Level Hires Degrade System Quality Faster Than Hiring Bootcamp Grads with Strong Mentorship
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-junior-developer-hiring-freeze-is-a-2025-talent-time-bomb-why-production-onboarding-data-proves-mid-level-hires-degrade-system-quality-faster-than-hiring-bootcamp-grads-with-strong-mentorship/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (210 chars) ──────────────
+The “Junior Developer” Hiring Freeze Is a 2025 Talent Time Bomb — Why Production Onboarding Data Proves Mid-Level Hires Degrade System Quality Faster Than Hiring Bootcamp Grads with Strong Mentorship
+
+Thread 🧵👇
+
+── Tweet 2 (233 chars) ──────────────
+2/ • The “Experienced” Safety Net Is an Illusion • • Market Reaction Drives the Wrong Incentives • • The Blind Spot: Mentorship Is Infrastructure, Not Charity • • Context over pattern-matching — learning this system, not any system*.
+
+── Tweet 3 (239 chars) ──────────────
+3/ • **Psychological safety — it’s okay to ask dumb questions. • • **Slow code reviews — catching mistakes before they land in production. • • Forward Implications: The Coming Talent Gap • • So What: Why Should You Care? • • The Hard Truth
+
+── Tweet 4 (255 chars) ──────────────
+4/ Full post → https://suryaraor.github.io/blog/2026/05/11/the-junior-developer-hiring-freeze-is-a-2025-talent-time-bomb-why-production-onboarding-data-proves-mid-level-hires-degrade-system-quality-faster-than-hiring-bootcamp-grads-with-strong-mentorship/

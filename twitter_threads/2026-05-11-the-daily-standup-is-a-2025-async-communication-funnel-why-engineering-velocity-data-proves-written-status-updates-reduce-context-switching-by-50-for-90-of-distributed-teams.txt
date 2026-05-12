@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The Daily Standup Is a 2025 Async Communication Funnel — Why Engineering Velocity Data Proves Written Status Updates Reduce Context Switching by 50% for 90% of Distributed Teams
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-daily-standup-is-a-2025-async-communication-funnel-why-engineering-velocity-data-proves-written-status-updates-reduce-context-switching-by-50-for-90-of-distributed-teams/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (188 chars) ──────────────
+The Daily Standup Is a 2025 Async Communication Funnel — Why Engineering Velocity Data Proves Written Status Updates Reduce Context Switching by 50% for 90% of Distributed Teams
+
+Thread 🧵👇
+
+── Tweet 2 (241 chars) ──────────────
+2/ • The Sync Addiction Everyone Defends • • What the Data Actually Whispers • • Synchronous standup teams: Average context recovery time of 24 minutes per interruption. Total weekly cost across a six-person team: 12 hours of lost deep work.
+
+── Tweet 3 (178 chars) ──────────────
+3/ • Async update teams: Average recovery time of 4 minutes. Total weekly cost: 2 hours. • • The Real Blind Spot Nobody Talks About • • What Asynchronous Standups Actually Unlock
+
+── Tweet 4 (242 chars) ──────────────
+4/ • Written daily updates: Posted to a shared channel by a designated cutoff time (say, 9 AM for a local timezone). • • Asynchronous review: Team members read updates at their own pace, reacting or asking questions without a time constraint.
+
+── Tweet 5 (161 chars) ──────────────
+5/ • Synchronous only for blockers: A daily 15-minute "slot" — not a meeting — for anyone with a real blocker to grab someone quickly. • • So What • • Conclusion
+
+── Tweet 6 (261 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-daily-standup-is-a-2025-async-communication-funnel-why-engineering-velocity-data-proves-written-status-updates-reduce-context-switching-by-50-for-90-of-distributed-teams/
+
+#Engineering #Tech

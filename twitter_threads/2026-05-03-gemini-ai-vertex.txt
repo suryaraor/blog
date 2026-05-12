@@ -1,0 +1,36 @@
+Twitter/X Thread Draft — Multimodal Intelligence at Scale: How Vertex AI Gemini Powers Streaming AI Analysis
+============================================================
+Date: 2026-05-03
+URL:  https://suryaraor.github.io/blog/2026/05/03/gemini-ai-vertex/
+Tweets: 8
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (94 chars) ──────────────
+Multimodal Intelligence at Scale: How Vertex AI Gemini Powers Streaming AI Analysis
+
+Thread 🧵👇
+
+── Tweet 2 (265 chars) ──────────────
+2/ • Why Multimodal Changes the Architecture • • Vision models for object detection. • • OCR engines to extract text. • • Speech-to-Text (STT) for audio transcription. • • Heuristic logic to stitch the outputs together. • • How the Streaming Pipeline Actually Works
+
+── Tweet 3 (217 chars) ──────────────
+3/ • Ingestion and chunking: Raw RTSP or WebRTC streams are broken into small temporal windows. Most teams do not send every frame. They sample at a rate that preserves motion and context without burning through cost.
+
+── Tweet 4 (240 chars) ──────────────
+4/ • Context assembly: A frame sequence, transcript fragment, and metadata payload are bundled together before inference. This is where Gemini’s long context becomes useful, especially when the event unfolds over minutes instead of seconds.
+
+── Tweet 5 (222 chars) ──────────────
+5/ • Cross-modal reasoning: The model interprets the signals together. For example, it can match a spoken product name with a visible package and a weight reading from a scale to infer which item is actually being handled.
+
+── Tweet 6 (251 chars) ──────────────
+6/ • Structured output: The response is forced into a schema, usually JSON, so downstream services can route the result into an event bus, a dashboard, or an automation workflow without another parsing layer. • • Why Teams Move to Gemini for Streaming
+
+── Tweet 7 (136 chars) ──────────────
+7/ • Simpler orchestration: One model can replace a stack of handoffs that used to require frame extraction, STT, OCR, and custom logic.
+
+── Tweet 8 (104 chars) ──────────────
+8/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/03/gemini-ai-vertex/
+
+#Engineering #Tech

@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — Why Structured Logging + Grafana on S3 Beats Datadog at 80% Lower Bill for 90% of Teams
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/why-structured-logging-grafana-on-s3-beats-datadog-at-80-lower-bill-for-90-of-teams/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (98 chars) ──────────────
+Why Structured Logging + Grafana on S3 Beats Datadog at 80% Lower Bill for 90% of Teams
+
+Thread 🧵👇
+
+── Tweet 2 (189 chars) ──────────────
+2/ • Structured JSON logging (use log/slog or equivalent) • • Ship to S3-compatible storage (compressed) • • Query with Grafana or custom tools • • Add simple alerting on metrics extraction
+
+── Tweet 3 (171 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/why-structured-logging-grafana-on-s3-beats-datadog-at-80-lower-bill-for-90-of-teams/
+
+#Engineering #Tech

@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The “All-In on Anthropic” Cloud Bet Is a 2025 Vendor Lock-In Trap
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-all-in-on-anthropic-cloud-bet-is-a-2025-vendor-lock-in-trap/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (76 chars) ──────────────
+The “All-In on Anthropic” Cloud Bet Is a 2025 Vendor Lock-In Trap
+
+Thread 🧵👇
+
+── Tweet 2 (184 chars) ──────────────
+2/ • 2.7x faster recovery from provider outages • • 18% lower average latency by routing to the fastest available model • • 23% cost savings by using cheaper models for simpler queries
+
+── Tweet 3 (151 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-all-in-on-anthropic-cloud-bet-is-a-2025-vendor-lock-in-trap/
+
+#Engineering #Tech

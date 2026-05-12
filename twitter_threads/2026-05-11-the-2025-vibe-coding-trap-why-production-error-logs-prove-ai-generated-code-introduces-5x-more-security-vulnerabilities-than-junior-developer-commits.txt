@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The 2025 “Vibe Coding” Trap — Why Production Error Logs Prove AI-Generated Code Introduces 5x More Security Vulnerabilities Than Junior Developer Commits
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-vibe-coding-trap-why-production-error-logs-prove-ai-generated-code-introduces-5x-more-security-vulnerabilities-than-junior-developer-commits/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (164 chars) ──────────────
+The 2025 “Vibe Coding” Trap — Why Production Error Logs Prove AI-Generated Code Introduces 5x More Security Vulnerabilities Than Junior Developer Commits
+
+Thread 🧵👇
+
+── Tweet 2 (226 chars) ──────────────
+2/ • When “Shippable” Means “Exploitable” • • The Market Loves a Good Mirage • • The Blind Spot You Can’t Afford • • What Security Teams Keep Getting Wrong • • So What Should You Actually Do? • • The Only Question That Matters
+
+── Tweet 3 (237 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-vibe-coding-trap-why-production-error-logs-prove-ai-generated-code-introduces-5x-more-security-vulnerabilities-than-junior-developer-commits/
+
+#Engineering #Tech

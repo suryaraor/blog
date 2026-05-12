@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The \"Serverless Honeymoon\" Is a 2025 Cold-Start Nightmare
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-serverless-honeymoon-is-a-2025-cold-start-nightmare/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (70 chars) ──────────────
+The \"Serverless Honeymoon\" Is a 2025 Cold-Start Nightmare
+
+Thread 🧵👇
+
+── Tweet 2 (274 chars) ──────────────
+2/ • Your Auto-Scale Is Lying to You • • Reserved Concurrency Isn't "Reserved"—It's Required • • The Industry's Blind Spot: Understanding "Bursty" • • Time-of-day bursts: Morning commuters hitting your API • • Event-driven bursts: Webhooks from a popular third-party service
+
+── Tweet 3 (172 chars) ──────────────
+3/ • Viral bursts: Social media amplification of your product • • Scheduled bursts: Your cron job that 10,000 users depend on • • The New Playbook for Production Serverless
+
+── Tweet 4 (248 chars) ──────────────
+4/ • Set reserved concurrency to 50% of your peak traffic — This creates a warm pool that absorbs the initial burst without cold starts. • • Auto-scale from that warm base — Let Lambda add more instances for the overflow, but don't start from zero.
+
+── Tweet 5 (228 chars) ──────────────
+5/ • Monitor cold-start rate per function — If it exceeds 1% during bursts, increase reserved concurrency. • • Use provisioned concurrency sparingly — Only for functions with heavy initialization (ML models, large dependencies).
+
+── Tweet 6 (143 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-serverless-honeymoon-is-a-2025-cold-start-nightmare/
+
+#Engineering #Tech

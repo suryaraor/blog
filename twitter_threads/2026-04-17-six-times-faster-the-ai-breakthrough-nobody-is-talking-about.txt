@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — Six Times Faster, Six Times Cheaper: The AI Breakthrough Nobody's Talking About
+============================================================
+Date: 2026-04-17
+URL:  https://suryaraor.github.io/blog/2026/04/17/six-times-faster-the-ai-breakthrough-nobody-is-talking-about/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (90 chars) ──────────────
+Six Times Faster, Six Times Cheaper: The AI Breakthrough Nobody's Talking About
+
+Thread 🧵👇
+
+── Tweet 2 (234 chars) ──────────────
+2/ • The Thing Nobody Told You • • The Problem Nobody Wanted to Admit • • Why This Matters (And It Actually Does) • • Smaller companies can now run frontier-level AI models that were previously impossible without a tech giant's budget
+
+── Tweet 3 (244 chars) ──────────────
+3/ • Open-source AI becomes actually deployable, not just theoretically possible • • The economics of AI companies suddenly look very different • • Nvidia's comfortable position as the only viable hardware vendor? It gets a lot less comfortable
+
+── Tweet 4 (245 chars) ──────────────
+4/ • The Narrative Everyone's Missing • • The Hidden War Nobody's Watching • • Capability camp: "Build bigger models, measure more benchmarks, call it progress." • • Efficiency camp: "Take what we have and make it work better, smarter, cheaper."
+
+── Tweet 5 (40 chars) ──────────────
+5/ • What This Means for You (Seriously)
+
+── Tweet 6 (148 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/17/six-times-faster-the-ai-breakthrough-nobody-is-talking-about/
+
+#Engineering #Tech

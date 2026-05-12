@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — Your “Microservices” Architecture Is Actually a Distributed Monolith Wrapped in Expensive Latency
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/your-microservices-architecture-is-actually-a-distributed-monolith-wrapped-in-expensive-latency/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (108 chars) ──────────────
+Your “Microservices” Architecture Is Actually a Distributed Monolith Wrapped in Expensive Latency
+
+Thread 🧵👇
+
+── Tweet 2 (214 chars) ──────────────
+2/ • The Holy Grail That Wasn't • • Microservices = faster releases (reality: slower, in many cases) • • Microservices = independent teams (reality: coupled by shared APIs, event schemas, and database transactions)
+
+── Tweet 3 (253 chars) ──────────────
+3/ • Microservices = easier debugging (reality: you now need distributed tracing, log aggregation, and a PhD in patience) • • The Hidden Tax You're Paying • • Domain-driven service consolidation — merging services that belong to the same business domain
+
+── Tweet 4 (201 chars) ──────────────
+4/ • Database-per-domain instead of database-per-service • • Shared modules for cross-cutting concerns (auth, logging, configuration) • • The Blind Spot Nobody Talks About • • Where Do We Go From Here?
+
+── Tweet 5 (196 chars) ──────────────
+5/ • Start with a well-structured monolith and extract services only when there's a clear technical or organizational need • • Use shared libraries for code that truly doesn't change independently
+
+── Tweet 6 (183 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/your-microservices-architecture-is-actually-a-distributed-monolith-wrapped-in-expensive-latency/
+
+#Engineering #Tech

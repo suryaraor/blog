@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — 2025’s Observability Data Proves Your Monitoring Stack Is a $200k Noise Machine—Why Engineers Who Ditch Dashboards for Causal Debugging Ship 3x Faster
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/2025s-observability-data-proves-your-monitoring-stack-is-a-200k-noise-machine-why-engineers-who-ditch-dashboards-for-causal-debugging-ship-3x-faster/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (161 chars) ──────────────
+2025’s Observability Data Proves Your Monitoring Stack Is a $200k Noise Machine—Why Engineers Who Ditch Dashboards for Causal Debugging Ship 3x Faster
+
+Thread 🧵👇
+
+── Tweet 2 (156 chars) ──────────────
+2/ • The Dashboard Delusion • • The Silent Exodus • • The Great Blind Spot • • The New Orthodoxy • • So Why Should You Care? • • The Only Dashboard You Need
+
+── Tweet 3 (236 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/2025s-observability-data-proves-your-monitoring-stack-is-a-200k-noise-machine-why-engineers-who-ditch-dashboards-for-causal-debugging-ship-3x-faster/
+
+#Engineering #Tech

@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — China Just Won the AI Independence War (And the US Hasn't Realized It Yet)
+============================================================
+Date: 2026-04-27
+URL:  https://suryaraor.github.io/blog/2026/04/27/china-just-won-the-ai-independence-war-and-the-us-hasnt-realized-it-yet/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (85 chars) ──────────────
+China Just Won the AI Independence War (And the US Hasn't Realized It Yet)
+
+Thread 🧵👇
+
+── Tweet 2 (250 chars) ──────────────
+2/ • The Export Control That Backfired • • What Every Tech Executive Just Learned • • Nvidia hardware = training capability, scaling advantage, US-allied companies • • Huawei hardware = inference efficiency, Chinese advantage, fast deployment in Asia
+
+── Tweet 3 (198 chars) ──────────────
+3/ • Why This Matters for Your Career (And Your Company's Survival) • • The Timeline That Should Scare You • • 2023: Export controls announced with confidence they'd strangle Chinese AI for 5+ years
+
+── Tweet 4 (216 chars) ──────────────
+4/ • 2024: Huawei and Chinese chipmakers begin accelerated development; Biden increases restrictions • • 2025: First signs Chinese chips are viable for inference; industry panics but assumes training still impossible
+
+── Tweet 5 (172 chars) ──────────────
+5/ • 2026: Frontier-capable model trained entirely on Chinese chips; US policy architects realize they miscalculated by 3+ years • • So What? • • The Uncomfortable Question
+
+── Tweet 6 (159 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/27/china-just-won-the-ai-independence-war-and-the-us-hasnt-realized-it-yet/
+
+#Engineering #Tech

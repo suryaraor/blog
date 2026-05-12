@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “AI-Native” Code Review Is a 2025 Productivity Mirage — Why Production Defect Data Shows Human-Led Reviews Catch 2x More Security Flaws Than Any LLM Autofix Pipeline
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-ai-native-code-review-is-a-2025-productivity-mirage-why-production-defect-data-shows-human-led-reviews-catch-2x-more-security-flaws-than-any-llm-autofix-pipeline/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (180 chars) ──────────────
+The “AI-Native” Code Review Is a 2025 Productivity Mirage — Why Production Defect Data Shows Human-Led Reviews Catch 2x More Security Flaws Than Any LLM Autofix Pipeline
+
+Thread 🧵👇
+
+── Tweet 2 (220 chars) ──────────────
+2/ • The Autofix Hype Train • • The Production Floor Tells a Different Story • • Every Engineer Suspects This • • Rethinking the Review Stack • • Use LLMs for the obvious: formatting, common vulnerabilities, boilerplate.
+
+── Tweet 3 (205 chars) ──────────────
+3/ • Reserve human attention for architectural decisions, novel logic, and security-critical paths. • • Measure what matters—not PR merge time, but time-to-catch-production-bugs. • • So What • • Conclusion
+
+── Tweet 4 (253 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-ai-native-code-review-is-a-2025-productivity-mirage-why-production-defect-data-shows-human-led-reviews-catch-2x-more-security-flaws-than-any-llm-autofix-pipeline/
+
+#Engineering #Tech

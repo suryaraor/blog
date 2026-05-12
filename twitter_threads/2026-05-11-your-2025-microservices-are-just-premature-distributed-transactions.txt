@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — Your 2025 Microservices Are Just Premature Distributed Transactions
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/your-2025-microservices-are-just-premature-distributed-transactions/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (78 chars) ──────────────
+Your 2025 Microservices Are Just Premature Distributed Transactions
+
+Thread 🧵👇
+
+── Tweet 2 (251 chars) ──────────────
+2/ • The Emperor of Loose Coupling • • The 40% Latency Tax Nobody Talks About • • The Glamour of Complexity • • The Modular Monolith Renaissance • • Clear module boundaries without network overhead • • Compile-time checks for cross-module dependencies
+
+── Tweet 3 (146 chars) ──────────────
+3/ • Profiling and hot-path optimization without distributed tracing • • Feature velocity measured in days, not sprints • • So What • • Conclusion
+
+── Tweet 4 (155 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/your-2025-microservices-are-just-premature-distributed-transactions/
+
+#Engineering #Tech

@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The “RAG-in-a-Box” Conference Demo Is a 2025 Production Fiasco
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-rag-in-a-box-conference-demo-is-a-2025-production-fiasco/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (73 chars) ──────────────
+The “RAG-in-a-Box” Conference Demo Is a 2025 Production Fiasco
+
+Thread 🧵👇
+
+── Tweet 2 (162 chars) ──────────────
+2/ • Your Chunks Are Ruining Your RAG • • The Market Is Finally Waking Up • • The Blind Spot Everyone Ignores • • What the Next Generation Looks Like • • So What?
+
+── Tweet 3 (148 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-rag-in-a-box-conference-demo-is-a-2025-production-fiasco/
+
+#Engineering #Tech

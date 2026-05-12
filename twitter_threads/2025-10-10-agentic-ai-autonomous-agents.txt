@@ -1,0 +1,36 @@
+Twitter/X Thread Draft — Agentic AI and Autonomous AI Agents: Beyond Chatbots to Action
+============================================================
+Date: 2025-10-10
+URL:  https://suryaraor.github.io/blog/2025/10/10/agentic-ai-autonomous-agents/
+Tweets: 8
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (118 chars) ──────────────
+How agentic AI and autonomous agents advance AI from reactive chatbots to proactive, goal-directed systems.
+
+Thread 🧵👇
+
+── Tweet 2 (268 chars) ──────────────
+2/ • Introduction • • Understanding Agentic AI: Core Concepts and Definitions • • What is Agentic AI? • • Key Characteristics of Autonomous AI Agents • • Goal-Oriented Behavior: Agents work toward achieving specific objectives rather than simply responding to queries.
+
+── Tweet 3 (142 chars) ──────────────
+3/ • Planning and Reasoning: Agents break down complex objectives into subtasks, sequence them logically, and reason about optimal approaches.
+
+── Tweet 4 (153 chars) ──────────────
+4/ • Tool Use and Environmental Interaction: Agents interact with external tools, APIs, databases, and systems to gather information and perform actions.
+
+── Tweet 5 (159 chars) ──────────────
+5/ • Memory and State Management: Agents maintain memory of prior actions and observations, allowing for learning within a session and continuity across tasks.
+
+── Tweet 6 (261 chars) ──────────────
+6/ • Autonomy and Self-Direction: Agents can operate with reduced human oversight and make decisions about how to proceed. • • Feedback Processing and Adaptation: Agents observe outcomes and adjust strategies to improve performance. • • The Spectrum of Autonomy
+
+── Tweet 7 (45 chars) ──────────────
+7/ • From Chatbots to Agents: A Brief History
+
+── Tweet 8 (116 chars) ──────────────
+8/ Read the full post:
+https://suryaraor.github.io/blog/2025/10/10/agentic-ai-autonomous-agents/
+
+#Engineering #Tech

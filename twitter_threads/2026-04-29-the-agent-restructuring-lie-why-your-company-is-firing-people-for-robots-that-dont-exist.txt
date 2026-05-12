@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The Agent Restructuring Lie: Why Your Company Is Firing People for Robots That Don't Exist
+============================================================
+Date: 2026-04-29
+URL:  https://suryaraor.github.io/blog/2026/04/29/the-agent-restructuring-lie-why-your-company-is-firing-people-for-robots-that-dont-exist/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (101 chars) ──────────────
+The Agent Restructuring Lie: Why Your Company Is Firing People for Robots That Don't Exist
+
+Thread 🧵👇
+
+── Tweet 2 (167 chars) ──────────────
+2/ • The Promise: Agents Will Replace Middle Managers • • The Reality: Agents Cost $1,000-$5,000 Per Day • • The Gap: Companies Promised Efficiency, Got Cost Explosion
+
+── Tweet 3 (266 chars) ──────────────
+3/ • Running an agent for 8 hours during work to handle emails and calendar management? Thousands of dollars per month per user. • • Deploying agents to handle customer support escalations? The compute cost per ticket might exceed what you paid a human to handle it.
+
+── Tweet 4 (200 chars) ──────────────
+4/ • Building a research agent to autonomously gather data? You're looking at $100+ per use case, depending on depth. • • The Second Wave: When Your Company Realizes the Agents Don't Work • • So What?
+
+── Tweet 5 (176 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/29/the-agent-restructuring-lie-why-your-company-is-firing-people-for-robots-that-dont-exist/
+
+#Engineering #Tech

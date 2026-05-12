@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “AI Pair Programmer” Is a 2025 Junior-Dev Brain Drain — Why Code Review Data Proves Copilot-Assisted Code Introduces 40% More Security Debt Than Solo Human Commits in 90% of Fintech Repos
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-ai-pair-programmer-is-a-2025-junior-dev-brain-drain-why-code-review-data-proves-copilot-assisted-code-introduces-40-more-security-debt-than-solo-human-commits-in-90-of-fintech-repos/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (202 chars) ──────────────
+The “AI Pair Programmer” Is a 2025 Junior-Dev Brain Drain — Why Code Review Data Proves Copilot-Assisted Code Introduces 40% More Security Debt Than Solo Human Commits in 90% of Fintech Repos
+
+Thread 🧵👇
+
+── Tweet 2 (269 chars) ──────────────
+2/ • Why Your Velocity Dashboard Is Lying to You • • Code review cycles for AI-assisted commits take 2.3x longer • • Rework rate (commits marked “needs changes”) is 1.7x higher • • Security-focused reviewers flag AI-generated code at 3.1x the rate of human-written code
+
+── Tweet 3 (225 chars) ──────────────
+3/ • Your Team Seniority Is a Bell Curve That Just Shifted • • The Fake Competence Epidemic • • The 2025 Developer Will Need Two Skills • • So What? You Bought Speed, You Got Debt • • Code Isn’t the Product. Understanding Is.
+
+── Tweet 4 (273 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-ai-pair-programmer-is-a-2025-junior-dev-brain-drain-why-code-review-data-proves-copilot-assisted-code-introduces-40-more-security-debt-than-solo-human-commits-in-90-of-fintech-repos/
+
+#Engineering #Tech

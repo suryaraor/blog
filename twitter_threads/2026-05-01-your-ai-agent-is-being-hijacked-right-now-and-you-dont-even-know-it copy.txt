@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your AI Agent Is Being Hijacked Right Now (And You Don't Even Know It)
+============================================================
+Date: 2026-05-01
+URL:  https://suryaraor.github.io/blog/2026/05/01/your-ai-agent-is-being-hijacked-right-now-and-you-dont-even-know-it copy/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (81 chars) ──────────────
+Your AI Agent Is Being Hijacked Right Now (And You Don't Even Know It)
+
+Thread 🧵👇
+
+── Tweet 2 (257 chars) ──────────────
+2/ • The Silent Command Injection Nobody Predicted • • Enterprise Blindness: The 88% Problem • • Security teams designed their defenses around external threats (network attacks, malware) • • Nobody anticipated agents would become internal execution surfaces
+
+── Tweet 3 (259 chars) ──────────────
+3/ • Agent deployment frameworks didn't build in data sanitization as a requirement • • "Trust the agent" became the default assumption, like "trust the employee" • • The Privilege Escalation Nobody's Prepared For • • Why We Built This Blind Spot • • So What?
+
+── Tweet 4 (53 chars) ──────────────
+4/ • Conclusion: What Are You Doing About This Today?
+
+── Tweet 5 (160 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/01/your-ai-agent-is-being-hijacked-right-now-and-you-dont-even-know-it copy/
+
+#Engineering #Tech

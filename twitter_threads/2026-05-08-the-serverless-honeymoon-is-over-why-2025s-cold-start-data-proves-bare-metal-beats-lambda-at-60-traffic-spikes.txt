@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “Serverless” Honeymoon Is Over — Why 2025’s Cold Start Data Proves Bare-Metal Beats Lambda at 60% Traffic Spikes
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-serverless-honeymoon-is-over-why-2025s-cold-start-data-proves-bare-metal-beats-lambda-at-60-traffic-spikes/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (127 chars) ──────────────
+The “Serverless” Honeymoon Is Over — Why 2025’s Cold Start Data Proves Bare-Metal Beats Lambda at 60% Traffic Spikes
+
+Thread 🧵👇
+
+── Tweet 2 (238 chars) ──────────────
+2/ • The 300ms Lie • • The Great Migration • • The Benchmarking Blind Spot • • The Hybrid Future • • Use Lambda for truly bursty, low-compute workloads (like image resizing) • • Reserve bare-metal for latency-sensitive, high-traffic paths
+
+── Tweet 3 (116 chars) ──────────────
+3/ • Build a decision matrix based on actual cold start data, not vendor promises • • So What? • • The Real Question
+
+── Tweet 4 (198 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-serverless-honeymoon-is-over-why-2025s-cold-start-data-proves-bare-metal-beats-lambda-at-60-traffic-spikes/
+
+#Engineering #Tech

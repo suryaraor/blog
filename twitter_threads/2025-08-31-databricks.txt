@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Databricks: The Unified Analytics Platform Revolutionizing Data Science
+============================================================
+Date: 2025-08-31
+URL:  https://suryaraor.github.io/blog/2025/08/31/databricks/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (82 chars) ──────────────
+Databricks: The Unified Analytics Platform Revolutionizing Data Science
+
+Thread 🧵👇
+
+── Tweet 2 (154 chars) ──────────────
+2/ • The Genesis: Why Databricks Was Created • • Data Silos: Different teams used different tools, creating isolated workflows and hampering collaboration
+
+── Tweet 3 (263 chars) ──────────────
+3/ • Infrastructure Complexity: Setting up and maintaining big data infrastructure required significant expertise and resources • • Scalability Bottlenecks: Traditional databases and analytics tools couldn't handle the volume, velocity, and variety of modern data
+
+── Tweet 4 (139 chars) ──────────────
+4/ • Time-to-Insight: The journey from raw data to actionable insights was lengthy and fragmented • • Core Architecture and Building Blocks
+
+── Tweet 5 (98 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2025/08/31/databricks/
+
+#Engineering #Tech

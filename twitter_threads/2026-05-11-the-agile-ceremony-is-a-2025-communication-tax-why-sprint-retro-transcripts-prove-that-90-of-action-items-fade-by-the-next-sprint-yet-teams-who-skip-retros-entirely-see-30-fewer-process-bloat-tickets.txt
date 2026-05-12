@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The Agile Ceremony Is a 2025 Communication Tax — Why Sprint Retro Transcripts Prove That 90% of Action Items Fade by the Next Sprint, Yet Teams Who Skip Retros Entirely See 30% Fewer Process Bloat Tickets
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-agile-ceremony-is-a-2025-communication-tax-why-sprint-retro-transcripts-prove-that-90-of-action-items-fade-by-the-next-sprint-yet-teams-who-skip-retros-entirely-see-30-fewer-process-bloat-tickets/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (215 chars) ──────────────
+The Agile Ceremony Is a 2025 Communication Tax — Why Sprint Retro Transcripts Prove That 90% of Action Items Fade by the Next Sprint, Yet Teams Who Skip Retros Entirely See 30% Fewer Process Bloat Tickets
+
+Thread 🧵👇
+
+── Tweet 2 (274 chars) ──────────────
+2/ • The Meeting That Ate the Sprint • • The Anti-Retro Underground • • The Blind Spot of Safety Theater • • What the Data Demands • • Run a data audit: track completion rate of retro action items over three sprints. • • Survey the team: is the retro energizing or draining?
+
+── Tweet 3 (166 chars) ──────────────
+3/ • Run a four-week experiment: pause the retro. Measure delivery speed, defect rate, and team mood. • • Decide based on data, not dogma. • • So What • • The Closure
+
+── Tweet 4 (259 chars) ──────────────
+4/ Full post → https://suryaraor.github.io/blog/2026/05/11/the-agile-ceremony-is-a-2025-communication-tax-why-sprint-retro-transcripts-prove-that-90-of-action-items-fade-by-the-next-sprint-yet-teams-who-skip-retros-entirely-see-30-fewer-process-bloat-tickets/

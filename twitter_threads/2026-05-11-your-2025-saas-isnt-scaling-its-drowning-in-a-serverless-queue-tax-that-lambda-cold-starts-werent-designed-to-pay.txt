@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — Your 2025 SaaS Isn't Scaling — It's Drowning in a \"Serverless\" Queue Tax That Lambda Cold Starts Weren't Designed to Pay
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/your-2025-saas-isnt-scaling-its-drowning-in-a-serverless-queue-tax-that-lambda-cold-starts-werent-designed-to-pay/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (133 chars) ──────────────
+Your 2025 SaaS Isn't Scaling — It's Drowning in a \"Serverless\" Queue Tax That Lambda Cold Starts Weren't Designed to Pay
+
+Thread 🧵👇
+
+── Tweet 2 (180 chars) ──────────────
+2/ • The Invisible Tax • • When Scale Eats Strategy • • The Engineer's Blind Spot • • The Future is Hybrid • • Latency-critical APIs stay on containers (cached, warm, predictable).
+
+── Tweet 3 (248 chars) ──────────────
+3/ • Batch processing, image resizing, and background jobs stay on Lambda (where cold starts don't matter). • • Every function gets a cost-per-cold-start metric, tracked like a revenue line item. • • So What? • • The End of the Serverless Honeymoon
+
+── Tweet 4 (201 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/your-2025-saas-isnt-scaling-its-drowning-in-a-serverless-queue-tax-that-lambda-cold-starts-werent-designed-to-pay/
+
+#Engineering #Tech

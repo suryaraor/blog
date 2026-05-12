@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The 2025 “Prompt Engineer” Is a Dead-End Job — Why Production Logs Prove That Traditional API Design Outlasts Prompt Chaining for 90% of Document Extraction Pipelines
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-prompt-engineer-is-a-dead-end-job-why-production-logs-prove-that-traditional-api-design-outlasts-prompt-chaining-for-90-of-document-extraction-pipelines/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (177 chars) ──────────────
+The 2025 “Prompt Engineer” Is a Dead-End Job — Why Production Logs Prove That Traditional API Design Outlasts Prompt Chaining for 90% of Document Extraction Pipelines
+
+Thread 🧵👇
+
+── Tweet 2 (243 chars) ──────────────
+2/ • The Hottest Job Nobody Understands • • The Silent Retreat from Prompt Chains • • The Blindness to Pipeline Physics • • The Forced Evolution of Engineering • • So Why Should You Actually Care? • • The Uncomfortable Truth in Production Logs
+
+── Tweet 3 (249 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-prompt-engineer-is-a-dead-end-job-why-production-logs-prove-that-traditional-api-design-outlasts-prompt-chaining-for-90-of-document-extraction-pipelines/
+
+#Engineering #Tech

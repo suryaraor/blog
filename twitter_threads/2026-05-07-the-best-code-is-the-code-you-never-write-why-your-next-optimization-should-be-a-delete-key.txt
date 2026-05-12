@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The Best Code Is the Code You Never Write—Why Your Next \"Optimization\" Should Be a Delete Key
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/the-best-code-is-the-code-you-never-write-why-your-next-optimization-should-be-a-delete-key/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (106 chars) ──────────────
+The Best Code Is the Code You Never Write—Why Your Next \"Optimization\" Should Be a Delete Key
+
+Thread 🧵👇
+
+── Tweet 2 (233 chars) ──────────────
+2/ • The Myth of More Code • • The Silent Tax of Complexity • • Cognitive load: Every new abstraction forces your team to hold another concept in their head. • • Bug surface area: More lines mean more places for bugs to hide, period.
+
+── Tweet 3 (267 chars) ──────────────
+3/ • Onboarding friction: New hires don't need to learn the problem domain; they need to learn your accidental complexity. • • Refactoring paralysis: The bigger the codebase, the harder it is to change anything without breaking something. • • Why We Can't Stop Adding
+
+── Tweet 4 (269 chars) ──────────────
+4/ • The Future Is Fewer Lines • • Code reviews should celebrate deletions as much as additions. • • Sprint planning should include a "code removal" bucket. • • Titles should reflect impact, not volume. • • Junior engineers should be taught to delete first, add second.
+
+── Tweet 5 (179 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/the-best-code-is-the-code-you-never-write-why-your-next-optimization-should-be-a-delete-key/
+
+#Engineering #Tech
