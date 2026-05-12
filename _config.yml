@@ -27,6 +27,10 @@ defaults:
       robots: "noindex, nofollow"
 google_analytics: G-6W38HK15G9
 
+# Plausible Analytics (privacy-friendly, no cookies)
+# Register at plausible.io and add your site domain here.
+plausible_domain: "suryaraor.github.io"
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

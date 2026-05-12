@@ -1,0 +1,5 @@
+{% if site.plausible_domain %}
+<!-- Plausible Analytics — privacy-friendly, no cookies -->
+<script defer data-domain="{{ site.plausible_domain }}" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };</script>
+{% endif %}
