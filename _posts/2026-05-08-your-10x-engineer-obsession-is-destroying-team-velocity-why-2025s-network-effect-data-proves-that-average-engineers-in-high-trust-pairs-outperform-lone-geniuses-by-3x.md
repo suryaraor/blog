@@ -5,6 +5,7 @@ title: "Your “10x Engineer” Obsession Is Destroying Team Velocity — Why 20
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-10x-engineer-obsession-is-destroying-team-velocity-why-2025s-network-effect-data-proves-that-average-engineers-in-high-trust-pairs-outperform-lone-geniuses-by-3x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Advanced
 ---
 # Your “10x Engineer” Obsession Is Destroying Team Velocity — Why 2025’s Network Effect Data Proves That Average Engineers in High-Trust Pairs Outperform Lone Geniuses by 3x
 

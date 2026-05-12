@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-lambda-to-fargate-migration-is-a-2025-cost-mirage-why-cloudwatch-spend-data-proves-monolithic-containers-on-ec2-run-40-cheaper-for-80-of-b2b-saas-backends.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-lambda-to-fargate-migration-is-a-2025-cost-mir.wav
+difficulty: Intermediate
 ---
 # The "Lambda-to-Fargate" Migration Is a 2025 Cost Mirage — Why CloudWatch Spend Data Proves Monolithic Containers on EC2 Run 40% Cheaper for 80% of B2B SaaS Backends
 

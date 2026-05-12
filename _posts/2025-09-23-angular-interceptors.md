@@ -4,8 +4,8 @@ layout: default
 title: "A Practical Guide to Angular Interceptors"
 date: 2025-09-23 00:00:01
 categories: Angular
+difficulty: Beginner
 ---
-
 # A Practical Guide to Angular Interceptors
 
 <figure class="post-featured-image">

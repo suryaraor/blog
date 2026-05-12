@@ -5,6 +5,7 @@ title: "The “AI-Native” Code Review Is a 2025 Productivity Mirage — Why Pr
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-ai-native-code-review-is-a-2025-productivity-mirage-why-production-defect-data-shows-human-led-reviews-catch-2x-more-security-flaws-than-any-llm-autofix-pipeline.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The “AI-Native” Code Review Is a 2025 Productivity Mirage — Why Production Defect Data Shows Human-Led Reviews Catch 2x More Security Flaws Than Any LLM Autofix Pipeline
 

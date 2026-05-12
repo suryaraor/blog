@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-one-person-framework-hype-is-a-2025-sunk-cost-trap-why-production-scaling-data-proves-monorepo-monoliths-outperform-microservices-at-2x-feature-velocity-for-90-of-early-stage-teams.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-one-person-framework-hype-is-a-2025-sunk-cost.wav
+difficulty: Intermediate
 ---
 # The “One-Person Framework” Hype Is a 2025 Sunk-Cost Trap — Why Production Scaling Data Proves Monorepo Monoliths Outperform Microservices at 2x Feature Velocity for 90% of Early-Stage Teams
 

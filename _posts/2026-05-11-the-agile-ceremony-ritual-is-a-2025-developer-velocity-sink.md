@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-agile-ceremony-ritual-is-a-2025-developer-velocity-sink.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-agile-ceremony-ritual-is-a-2025-developer-velo.wav
+difficulty: Intermediate
 ---
 # The Agile Ceremony Ritual Is a 2025 Developer Velocity Sink
 

@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-move-fast-and-break-things-reboot-is-a-2025-technical-debt-accelerator.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-move-fast-and-break-things-reboot-is-a-2025-te.wav
+difficulty: Intermediate
 ---
 # The "Move Fast and Break Things" Reboot Is a 2025 Technical Debt Accelerator
 

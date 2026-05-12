@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-rust-for-everything-migration-is-a-2025-velocity-killer-why-production-benchmarks-show-zig-beats-rust-at-4x-development-speed-for-systems-level-code.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-rust-for-everything-migration-is-a-2025-veloci.wav
+difficulty: Advanced
 ---
 ---
 

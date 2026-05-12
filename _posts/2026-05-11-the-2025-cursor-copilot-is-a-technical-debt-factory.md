@@ -5,6 +5,7 @@ title: "The 2025 “Cursor” Copilot Is a Technical Debt Factory"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-cursor-copilot-is-a-technical-debt-factory.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Beginner
 ---
 layout: default
 title: "The Cursor Copilot Is a Technical Debt Factory"

@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-10x-engineer-hiring-filter-is-a-2025-bracket-bias-bubble-why-performance-data-proves-t-shaped-generalists-close-40-more-complex-tickets-than-specialists-in-90-of-seed-stage-teams.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-10x-engineer-hiring-filter-is-a-2025-bracket-b.wav
+difficulty: Intermediate
 ---
 # The "10x Engineer" Hiring Filter Is a 2025 Bracket Bias Bubble — Why Performance Data Proves T-Shaped Generalists Close 40% More Complex Tickets Than Specialists in 90% of Seed-Stage Teams
 

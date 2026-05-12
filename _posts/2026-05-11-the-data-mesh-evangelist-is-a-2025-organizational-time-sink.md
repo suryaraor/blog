@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-data-mesh-evangelist-is-a-2025-organizational-time-sink.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-data-mesh-evangelist-is-a-2025-organizational.wav
+difficulty: Intermediate
 ---
 # The Data Mesh Evangelist Is a 2025 Organizational Time Sink
 

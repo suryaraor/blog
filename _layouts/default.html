@@ -66,6 +66,9 @@
                 <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
                 {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
                 <span>· {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+                {% if page.difficulty %}
+                <span class="difficulty-badge difficulty-badge--{{ page.difficulty | downcase }}">{{ page.difficulty }}</span>
+                {% endif %}
             </div>
             {% if page.image %}
             <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">

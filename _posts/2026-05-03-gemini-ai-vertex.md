@@ -5,6 +5,7 @@ title: "Multimodal Intelligence at Scale: How Vertex AI Gemini Powers Streaming 
 date: 2026-05-03
 image: /assets/images/posts/2026-05-03-multimodal-intelligence-at-scale-how-vertex-ai-gemini-powers-streaming-ai-analysis.jpg
 image_credit: "Photo by [Jonathan Kemper](https://unsplash.com/@jupp?utm_source=blog&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
+difficulty: Intermediate
 ---
 # Multimodal Intelligence at Scale: How Vertex AI Gemini Powers Streaming AI Analysis
 

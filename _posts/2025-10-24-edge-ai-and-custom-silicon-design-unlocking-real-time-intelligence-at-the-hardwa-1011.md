@@ -5,8 +5,8 @@ title: "**Edge AI and Custom Silicon Design: Unlocking Real-Time Intelligence at
 date: 2025-10-24 00:00:01
 categories: [tech]
 tags: []
+difficulty: Intermediate
 ---
-
 <figure class="post-featured-image">
   <img src="/assets/images/blog/2025-10-24-edge-ai-and-custom-silicon-design-unlocking-real-time-intelligence-at-the-hardwa-1011-featured.webp" alt="Edge AI and Custom Silicon Design" width="1280" height="720">
 </figure>

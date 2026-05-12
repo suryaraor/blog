@@ -5,6 +5,7 @@ title: "The API Economy's Dirty Secret: Your Scale-Up Is Breaking Because You Pr
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-the-api-economys-dirty-secret-your-scale-up-is-breaking-because-you-prioritized-rest-over-state.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The API Economy's Dirty Secret: Your Scale-Up Is Breaking Because You Prioritized REST Over State
 

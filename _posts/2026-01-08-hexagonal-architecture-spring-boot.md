@@ -6,8 +6,8 @@ date: 2026-01-08 00:00:01
 author: "Surya Rao Rayarao"
 description: "A comprehensive guide for senior Java developers on implementing Hexagonal Architecture in Spring Boot applications, with real-world code examples and honest trade-off analysis."
 categories: [Java, Spring Boot, Architecture]
+difficulty: Advanced
 ---
-
 ## Introduction: The Painful Reality of Traditional Layered Architecture
 
 <figure class="post-featured-image">

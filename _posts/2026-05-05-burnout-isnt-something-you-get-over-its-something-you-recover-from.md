@@ -6,6 +6,7 @@ date: 2026-05-05
 image: /assets/images/posts/2026-05-05-burnout-isnt-something-you-get-over-its-something-you-recover-from.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Beginner
 ---
 # Burnout Isn't Something You "Get Over"—It's Something You Recover From
 

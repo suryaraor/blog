@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-rag-in-a-box-conference-demo-is-a-2025-production-fiasco.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-rag-in-a-box-conference-demo-is-a-2025-product.wav
+difficulty: Intermediate
 ---
 # The “RAG-in-a-Box” Conference Demo Is a 2025 Production Fiasco
 

@@ -5,6 +5,7 @@ title: "The “Open Source Community” Is a 2025 Maintenance Tax — Why Commit
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-open-source-community-is-a-2025-maintenance-tax-why-commit-graph-data-proves-corporate-backed-repos-outlast-community-led-projects-by-4x-in-critical-infrastructure.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The “Open Source Community” Is a 2025 Maintenance Tax — Why Commit Graph Data Proves Corporate-Backed Repos Outlast Community-Led Projects by 4x in Critical Infrastructure
 

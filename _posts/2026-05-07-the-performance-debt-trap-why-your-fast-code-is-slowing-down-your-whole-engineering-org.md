@@ -5,6 +5,7 @@ title: "The Performance Debt Trap — Why Your “Fast” Code Is Slowing Down Y
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-the-performance-debt-trap-why-your-fast-code-is-slowing-down-your-whole-engineering-org.jpg
 image_credit: "Photo by [Clayton Robbins](https://unsplash.com/@claytonrobbins?utm_source=blog&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
+difficulty: Intermediate
 ---
 layout: default
 title: "The Performance Debt Trap — Why Your “Fast” Code Is Slowing Down Your Whole Engineering Org"

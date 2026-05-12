@@ -5,6 +5,7 @@ title: "Your 2025 \"Microservices Migration\" Is a Latency Tax on a Single-Threa
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-microservices-migration-is-a-latency-tax-on-a-single-threaded-problem.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Advanced
 ---
 # Your 2025 "Microservices Migration" Is a Latency Tax on a Single-Threaded Problem
 

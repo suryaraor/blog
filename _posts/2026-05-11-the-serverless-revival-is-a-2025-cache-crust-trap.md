@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-serverless-revival-is-a-2025-cache-crust-trap.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-serverless-revival-is-a-2025-cache-crust-trap.wav
+difficulty: Beginner
 ---
 # The “Serverless Revival” Is a 2025 Cache-Crust Trap
 

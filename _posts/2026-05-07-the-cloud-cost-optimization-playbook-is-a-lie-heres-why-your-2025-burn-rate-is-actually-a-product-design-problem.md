@@ -5,6 +5,7 @@ title: "The “Cloud Cost Optimization” Playbook Is a Lie — Here’s Why You
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-the-cloud-cost-optimization-playbook-is-a-lie-heres-why-your-2025-burn-rate-is-actually-a-product-design-problem.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 ---
 layout: default

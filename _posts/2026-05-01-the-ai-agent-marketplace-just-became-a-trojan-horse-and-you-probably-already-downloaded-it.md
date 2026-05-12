@@ -3,6 +3,7 @@ order: 31
 layout: default
 title: "The AI Agent Marketplace Just Became a Trojan Horse (And You Probably Already Downloaded It)"
 date: 2026-05-01
+difficulty: Intermediate
 ---
 # The AI Agent Marketplace Just Became a Trojan Horse (And You Probably Already Downloaded It)
 

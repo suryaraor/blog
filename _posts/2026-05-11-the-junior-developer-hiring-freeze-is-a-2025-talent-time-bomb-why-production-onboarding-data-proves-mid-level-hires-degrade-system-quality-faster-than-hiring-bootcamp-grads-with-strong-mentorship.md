@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-junior-developer-hiring-freeze-is-a-2025-talent-time-bomb-why-production-onboarding-data-proves-mid-level-hires-degrade-system-quality-faster-than-hiring-bootcamp-grads-with-strong-mentorship.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-junior-developer-hiring-freeze-is-a-2025-talen.wav
+difficulty: Intermediate
 ---
 # The “Junior Developer” Hiring Freeze Is a 2025 Talent Time Bomb — Why Production Onboarding Data Proves Mid-Level Hires Degrade System Quality Faster Than Hiring Bootcamp Grads with Strong Mentorship
 

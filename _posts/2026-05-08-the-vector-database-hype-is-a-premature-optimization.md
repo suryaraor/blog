@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-vector-database-hype-is-a-premature-optimization.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-vector-database-hype-is-a-premature-optimizati.wav
+difficulty: Advanced
 ---
 # The Vector Database Hype Is a Premature Optimization
 

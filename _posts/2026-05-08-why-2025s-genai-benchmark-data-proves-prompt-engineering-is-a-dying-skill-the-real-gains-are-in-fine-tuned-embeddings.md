@@ -4,6 +4,7 @@ layout: default
 title: "Why 2025’s GenAI Benchmark Data Proves Prompt Engineering Is a Dying Skill — The Real Gains Are in Fine-Tuned Embeddings"
 date: 2026-05-08
 audio: /assets/audio/posts/2026-05-08-why-2025-s-genai-benchmark-data-proves-prompt-engi.wav
+difficulty: Beginner
 ---
 ---
 

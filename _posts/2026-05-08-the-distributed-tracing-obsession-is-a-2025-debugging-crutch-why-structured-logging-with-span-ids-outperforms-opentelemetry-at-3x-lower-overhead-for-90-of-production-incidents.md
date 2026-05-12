@@ -5,6 +5,7 @@ title: "The \"Distributed Tracing\" Obsession Is a 2025 Debugging Crutch — Why
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-distributed-tracing-obsession-is-a-2025-debugging-crutch-why-structured-logging-with-span-ids-outperforms-opentelemetry-at-3x-lower-overhead-for-90-of-production-incidents.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The "Distributed Tracing" Obsession Is a 2025 Debugging Crutch — Why Structured Logging with Span IDs Outperforms OpenTelemetry at 3x Lower Overhead for 90% of Production Incidents
 

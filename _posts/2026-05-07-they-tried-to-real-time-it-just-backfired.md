@@ -5,6 +5,7 @@ title: "They Tried to Real-Time. It Just Backfired."
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-they-tried-to-real-time-it-just-backfired.jpg
 image_credit: "Photo by [Brett Jordan](https://unsplash.com/@brett_jordan?utm_source=blog&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
+difficulty: Intermediate
 ---
 # They Tried to Real-Time. It Just Backfired.
 

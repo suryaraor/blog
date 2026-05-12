@@ -3,6 +3,7 @@ order: 25
 layout: default
 title: "The Agent Restructuring Lie: Why Your Company Is Firing People for Robots That Don't Exist"
 date: 2026-04-29
+difficulty: Intermediate
 ---
 # The Agent Restructuring Lie: Why Your Company Is Firing People for Robots That Don't Exist
 

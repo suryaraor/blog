@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-mongodb-for-everything-default-is-a-2025-latency-liability.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-mongodb-for-everything-default-is-a-2025-laten.wav
+difficulty: Beginner
 ---
 # The "MongoDB for Everything" Default Is a 2025 Latency Liability
 

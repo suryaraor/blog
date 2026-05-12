@@ -3,6 +3,7 @@ order: 26
 layout: default
 title: "Medium Blog Post Task - April 30, 2026"
 date: 2026-04-30
+difficulty: Intermediate
 ---
 # Medium Blog Post Task - April 30, 2026
 ## ✓ EXECUTION COMPLETE

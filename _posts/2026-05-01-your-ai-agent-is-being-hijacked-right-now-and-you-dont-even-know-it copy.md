@@ -3,6 +3,7 @@ order: 28
 layout: default
 title: "Your AI Agent Is Being Hijacked Right Now (And You Don't Even Know It)"
 date: 2026-05-01
+difficulty: Intermediate
 ---
 # Your AI Agent Is Being Hijacked Right Now (And You Don't Even Know It)
 

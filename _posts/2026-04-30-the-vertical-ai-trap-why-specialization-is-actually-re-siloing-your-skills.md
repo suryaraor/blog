@@ -3,6 +3,7 @@ order: 27
 layout: default
 title: "The Vertical AI Trap: Why Specialization Is Actually Re-Siloing Your Skills"
 date: 2026-04-30
+difficulty: Beginner
 ---
 # The Vertical AI Trap: Why Specialization Is Actually Re-Siloing Your Skills
 

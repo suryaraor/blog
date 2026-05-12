@@ -5,6 +5,7 @@ title: "Your “Readwise” Habit Is Building an Unshippable Brain — Why the D
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-readwise-habit-is-building-an-unshippable-brain-why-the-data-shows-note-taking-reduces-real-world-problem-solving-by-28.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # Your “Readwise” Habit Is Building an Unshippable Brain — Why the Data Shows Note-Taking Reduces Real-World Problem Solving by 28%
 

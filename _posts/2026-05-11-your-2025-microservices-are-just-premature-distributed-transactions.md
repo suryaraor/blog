@@ -5,6 +5,7 @@ title: "Your 2025 Microservices Are Just Premature Distributed Transactions"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-microservices-are-just-premature-distributed-transactions.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Advanced
 ---
 # Your 2025 Microservices Are Just Premature Distributed Transactions
 

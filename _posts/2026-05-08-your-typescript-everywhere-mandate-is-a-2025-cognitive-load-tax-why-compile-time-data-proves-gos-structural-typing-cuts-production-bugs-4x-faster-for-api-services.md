@@ -4,6 +4,7 @@ layout: default
 title: "Your \"TypeScript Everywhere\" Mandate Is a 2025 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services"
 date: 2026-05-08
 audio: /assets/audio/posts/2026-05-08-your-typescript-everywhere-mandate-is-a-2025-cogni.wav
+difficulty: Intermediate
 ---
 # Your "TypeScript Everywhere" Mandate Is a 2025 Cognitive Load Tax — Why Compile-Time Data Proves Go's Structural Typing Cuts Production Bugs 4x Faster for API Services
 

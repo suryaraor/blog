@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-rust-rewrite-is-a-2-year-engineering-sinkhole-why-2025s-maintenance-data-proves-python-still-wins-on-total-cost-of-ownership-by-4x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-rust-rewrite-is-a-2-year-engineering-sinkhole.wav
+difficulty: Intermediate
 ---
 # Your “Rust Rewrite” Is a 2-Year Engineering Sinkhole — Why 2025’s Maintenance Data Proves Python Still Wins on Total Cost of Ownership by 4x
 

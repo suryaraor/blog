@@ -5,6 +5,7 @@ title: "The \"Productivity\" Panic Is a 2025 Attention Heist — Why Context-Swi
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-productivity-panic-is-a-2025-attention-heist-why-context-switching-data-proves-4-hour-workdays-beat-12-hour-sprints-for-serialized-engineering-output.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The "Productivity" Panic Is a 2025 Attention Heist — Why Context-Switching Data Proves 4-Hour Workdays Beat 12-Hour Sprints for Serialized Engineering Output
 

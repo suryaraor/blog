@@ -5,6 +5,7 @@ title: "Why Your Data Lake Is Actually a Liability — The Hidden Costs of Schem
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-why-your-data-lake-is-actually-a-liability-the-hidden-costs-of-schema-on-read-that-your-ml-pipeline-cant-afford.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # Why Your Data Lake Is Actually a Liability — The Hidden Costs of Schema-on-Read That Your ML Pipeline Can’t Afford
 

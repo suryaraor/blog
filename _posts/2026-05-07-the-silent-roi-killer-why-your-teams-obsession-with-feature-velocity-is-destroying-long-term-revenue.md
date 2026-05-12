@@ -5,6 +5,7 @@ title: "The Silent ROI Killer: Why Your Team’s Obsession with Feature Velocity
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-the-silent-roi-killer-why-your-teams-obsession-with-feature-velocity-is-destroying-long-term-revenue.jpg
 image_credit: "Photo by [Scott Umstattd](https://unsplash.com/@scott_umstattd?utm_source=blog&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
+difficulty: Beginner
 ---
 # The Silent ROI Killer: Why Your Team’s Obsession with Feature Velocity Is Destroying Long-Term Revenue
 

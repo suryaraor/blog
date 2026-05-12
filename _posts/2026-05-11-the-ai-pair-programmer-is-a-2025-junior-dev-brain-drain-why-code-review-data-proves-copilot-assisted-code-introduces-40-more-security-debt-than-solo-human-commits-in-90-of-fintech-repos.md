@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-ai-pair-programmer-is-a-2025-junior-dev-brain-drain-why-code-review-data-proves-copilot-assisted-code-introduces-40-more-security-debt-than-solo-human-commits-in-90-of-fintech-repos.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-ai-pair-programmer-is-a-2025-junior-dev-brain.wav
+difficulty: Intermediate
 ---
 # The “AI Pair Programmer” Is a 2025 Junior-Dev Brain Drain — Why Code Review Data Proves Copilot-Assisted Code Introduces 40% More Security Debt Than Solo Human Commits in 90% of Fintech Repos
 

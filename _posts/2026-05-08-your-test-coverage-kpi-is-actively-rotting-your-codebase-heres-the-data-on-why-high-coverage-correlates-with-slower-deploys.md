@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-test-coverage-kpi-is-actively-rotting-your-codebase-heres-the-data-on-why-high-coverage-correlates-with-slower-deploys.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-test-coverage-kpi-is-actively-rotting-your-codebase-heres-the-data-on-why-high-coverage-correlates-with-slower-deploys.wav
+difficulty: Intermediate
 ---
 # Your “Test Coverage” KPI Is Actively Rotting Your Codebase — Here’s the Data on Why High Coverage Correlates With Slower Deploys
 

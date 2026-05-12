@@ -5,6 +5,7 @@ title: "Your “High-Performance” Team Is Actually a Collection of Individual 
 date: 2026-05-07
 image: /assets/images/posts/2026-05-07-your-high-performance-team-is-actually-a-collection-of-individual-productivity-islands-why-async-work-is-killing-collective-intelligence.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # Your “High-Performance” Team Is Actually a Collection of Individual Productivity Islands — Why Async Work Is Killing Collective Intelligence
 

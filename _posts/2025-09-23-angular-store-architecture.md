@@ -4,8 +4,8 @@ layout: default
 title: "Mastering Angular Store Architecture: A Practical Guide"
 date: 2025-09-23 00:00:02
 categories: Angular
+difficulty: Beginner
 ---
-
 # Mastering Angular Store Architecture: A Practical Guide
 
 <figure class="post-featured-image">

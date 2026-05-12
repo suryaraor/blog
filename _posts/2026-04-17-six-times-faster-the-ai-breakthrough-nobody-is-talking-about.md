@@ -3,8 +3,8 @@ order: 8
 layout: default
 title: "Six Times Faster, Six Times Cheaper: The AI Breakthrough Nobody's Talking About"
 date: 2026-04-17 00:00:05
+difficulty: Intermediate
 ---
-
 # Six Times Faster, Six Times Cheaper: The AI Breakthrough Nobody's Talking About
 
 <figure class="post-featured-image">

@@ -5,6 +5,7 @@ title: "The Post-Agile Manifesto Is a 2025 Engineering Myth — Why Production C
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-post-agile-manifesto-is-a-2025-engineering-myth-why-production-cycle-data-proves-structured-kanban-with-fixed-sprints-delivers-40-faster-feature-delivery-than-no-estimate-flow.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 ---
 layout: default

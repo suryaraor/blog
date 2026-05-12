@@ -3,6 +3,7 @@ order: 35
 layout: default
 title: "They Tried to return . It Just Backfired."
 date: 2026-05-07
+difficulty: Intermediate
 ---
 # They Tried to return . It Just Backfired.
 

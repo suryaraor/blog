@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-cloud-native-orthodox-is-a-2025-operational-death-march-why-40-fewer-microservices-and-a-bare-metal-bastion-host-beat-kubernetes-at-3x-lower-mttr-for-90-of-saas-founders.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-cloud-native-orthodox-is-a-2025-operational-de.wav
+difficulty: Beginner
 ---
 # The 'Cloud-Native' Orthodox Is a 2025 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders
 

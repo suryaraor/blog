@@ -5,6 +5,7 @@ title: "The \"Vector Database\" Gold Rush Is a 2025 Indexing Illusion—Why Prod
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-vector-database-gold-rush-is-a-2025-indexing-illusion-why-production-benchmarks-prove-postgresql-with-pgvector-beats-pinecone-at-40-lower-p99-for-80-of-semantic-search-workloads.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The "Vector Database" Gold Rush Is a 2025 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads
 

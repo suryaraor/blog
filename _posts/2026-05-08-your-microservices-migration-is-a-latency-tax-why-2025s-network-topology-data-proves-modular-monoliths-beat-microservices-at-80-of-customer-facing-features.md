@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-microservices-migration-is-a-latency-tax-why-2025s-network-topology-data-proves-modular-monoliths-beat-microservices-at-80-of-customer-facing-features.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-microservices-migration-is-a-latency-tax-why.wav
+difficulty: Intermediate
 ---
 # Your "Microservices Migration" Is a Latency Tax — Why 2025's Network Topology Data Proves Modular Monoliths Beat Microservices at 80% of Customer-Facing Features
 

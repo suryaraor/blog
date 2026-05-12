@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-database-as-a-queue-fallacy-why-postgres-logs-prove-dedicated-message-brokers-have-5x-higher-throughput.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-2025-database-as-a-queue-fallacy-why-postgres.wav
+difficulty: Advanced
 ---
 # The 2025 "Database-as-a-Queue" Fallacy — Why Postgres Logs Prove Dedicated Message Brokers Have 5x Higher Throughput
 

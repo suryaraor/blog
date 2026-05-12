@@ -3,6 +3,7 @@ order: 24
 layout: default
 title: "Microsoft Just Lost the Biggest Bet in Tech History"
 date: 2026-04-28
+difficulty: Intermediate
 ---
 # Microsoft Just Lost the Biggest Bet in Tech History
 

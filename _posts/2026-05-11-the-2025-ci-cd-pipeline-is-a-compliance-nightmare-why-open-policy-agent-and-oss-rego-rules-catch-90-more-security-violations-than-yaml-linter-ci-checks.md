@@ -5,6 +5,7 @@ title: "The 2025 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Ag
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-ci-cd-pipeline-is-a-compliance-nightmare-why-open-policy-agent-and-oss-rego-rules-catch-90-more-security-violations-than-yaml-linter-ci-checks.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The 2025 CI/CD Pipeline Is a Compliance Nightmare — Why Open Policy Agent and OSS Rego Rules Catch 90% More Security Violations Than YAML-Linter CI Checks
 

@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-infinite-context-window-is-a-2025-attention-scalpel-why-production-traces-show-agentic-workflows-outperform-rag-at-4x-lower-token-cost-for-70-of-enterprise-search.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-infinite-context-window-is-a-2025-attention-sc.wav
+difficulty: Intermediate
 ---
 # The "Infinite Context Window" Is a 2025 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search
 

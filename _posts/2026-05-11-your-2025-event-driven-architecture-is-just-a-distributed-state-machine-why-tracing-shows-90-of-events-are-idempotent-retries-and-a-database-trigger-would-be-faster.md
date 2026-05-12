@@ -5,6 +5,7 @@ title: "Your 2025 “Event-Driven Architecture” Is Just a Distributed State Ma
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-event-driven-architecture-is-just-a-distributed-state-machine-why-tracing-shows-90-of-events-are-idempotent-retries-and-a-database-trigger-would-be-faster.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # Your 2025 “Event-Driven Architecture” Is Just a Distributed State Machine — Why Tracing Shows 90% of Events Are Idempotent Retries and a Database Trigger Would Be Faster
 

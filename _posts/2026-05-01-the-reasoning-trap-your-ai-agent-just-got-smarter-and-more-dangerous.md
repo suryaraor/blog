@@ -5,6 +5,7 @@ title: "The Reasoning Trap: Your AI Agent Just Got Smarter (And More Dangerous)"
 date: 2026-05-01
 image: /assets/images/posts/2026-05-01-the-reasoning-trap-your-ai-agent-just-got-smarter-and-more-dangerous.jpg
 image_credit: "Photo by [Headway](https://unsplash.com/@headwayio?utm_source=blog&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=blog&utm_medium=referral)"
+difficulty: Intermediate
 ---
 # The Reasoning Trap: Your AI Agent Just Got Smarter (And More Dangerous)
 

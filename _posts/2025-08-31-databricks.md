@@ -4,8 +4,8 @@ layout: default
 title: "Databricks: The Unified Analytics Platform Revolutionizing Data Science"
 date: 2025-08-31 00:00:01
 categories: Data
+difficulty: Beginner
 ---
-
 # Databricks: The Unified Analytics Platform Revolutionizing Data Science
 
 <figure class="post-featured-image">

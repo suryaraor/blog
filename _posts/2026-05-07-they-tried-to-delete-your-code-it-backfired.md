@@ -3,6 +3,7 @@ order: 34
 layout: default
 title: "They Tried to Delete Your Code. It Backfired."
 date: 2026-05-07
+difficulty: Intermediate
 ---
 layout: default
 title: "They Tried to Delete Your Code. It Backfired."

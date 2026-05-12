@@ -6,8 +6,8 @@ date: 2025-10-10 00:00:01
 author: "Surya Rao Rayarao"
 description: "How agentic AI and autonomous agents advance AI from reactive chatbots to proactive, goal-directed systems."
 image: "/assets/images/blog/2025-10-10.jpg"
+difficulty: Beginner
 ---
-
 ## Introduction
 
 <figure class="post-featured-image">

@@ -5,6 +5,7 @@ title: "The 2025 \"Serverless GPU\" Hype Is a Cold-Start Tax — Why Spot Instan
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-serverless-gpu-hype-is-a-cold-start-tax-why-spot-instances-on-preemptible-vms-cut-inference-costs-by-80-with-no-latency-regret-for-90-of-batch-ai-workloads.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Beginner
 ---
 # The 2025 "Serverless GPU" Hype Is a Cold-Start Tax — Why Spot Instances on Preemptible VMs Cut Inference Costs by 80% with No Latency Regret for 90% of Batch AI Workloads
 

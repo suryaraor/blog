@@ -3,6 +3,7 @@ order: 86
 layout: default
 title: "The \"Vector Database\" Hype Is Burning Your RAG Budget — Why 2025's Latency Data Proves In-Memory FAISS Outperforms Pinecone at 1/5 the Cost for 95% of Real-Time Retrieval"
 date: 2026-05-08
+difficulty: Intermediate
 ---
 # The "Vector Database" Hype Is Burning Your RAG Budget — Why 2025's Latency Data Proves In-Memory FAISS Outperforms Pinecone at 1/5 the Cost for 95% of Real-Time Retrieval
 

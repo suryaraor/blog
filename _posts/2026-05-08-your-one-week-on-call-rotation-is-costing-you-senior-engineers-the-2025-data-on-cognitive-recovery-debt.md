@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-one-week-on-call-rotation-is-costing-you-senior-engineers-the-2025-data-on-cognitive-recovery-debt.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-one-week-on-call-rotation-is-costing-you-seni.wav
+difficulty: Intermediate
 ---
 # Your “One-Week On-Call Rotation” Is Costing You Senior Engineers — The 2025 Data on Cognitive Recovery Debt
 

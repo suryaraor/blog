@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-framework-tax-why-vanilla-typescript-beats-next-js-remix-and-sveltekit-for-70-of-crud-apps.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-2025-framework-tax-why-production-profiling-pr.wav
+difficulty: Intermediate
 ---
 # The 2025 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps
 

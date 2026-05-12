@@ -5,6 +5,7 @@ title: "The 2025 \"Serverless GPU\" Fire Sale — Why Reserved Instances on Spot
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-serverless-gpu-fire-sale-why-reserved-instances-on-spot-pools-are-cheaper-than-your-coffee-budget-and-40-faster-for-batch-ai-workloads.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The 2025 "Serverless GPU" Fire Sale — Why Reserved Instances on Spot Pools Are Cheaper Than Your Coffee Budget and 40% Faster for Batch AI Workloads
 

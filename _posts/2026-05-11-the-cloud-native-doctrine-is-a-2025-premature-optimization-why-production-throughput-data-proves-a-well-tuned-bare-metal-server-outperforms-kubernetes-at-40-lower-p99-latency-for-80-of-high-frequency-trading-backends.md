@@ -5,6 +5,7 @@ title: "The Cloud-Native Doctrine Is a 2025 Premature Optimization — Why Produ
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-cloud-native-doctrine-is-a-2025-premature-optimization-why-production-throughput-data-proves-a-well-tuned-bare-metal-server-outperforms-kubernetes-at-40-lower-p99-latency-for-80-of-high-frequency-trading-backends.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Beginner
 ---
 # The Cloud-Native Doctrine Is a 2025 Premature Optimization — Why Production Throughput Data Proves a Well-Tuned Bare Metal Server Outperforms Kubernetes at 40% Lower P99 Latency for 80% of High-Frequency Trading Backends
 

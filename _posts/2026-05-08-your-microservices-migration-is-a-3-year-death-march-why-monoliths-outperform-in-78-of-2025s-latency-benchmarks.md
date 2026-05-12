@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-microservices-migration-is-a-3-year-death-march-why-monoliths-outperform-in-78-of-2025s-latency-benchmarks.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-microservices-migration-is-a-3-year-death-mar.wav
+difficulty: Intermediate
 ---
 # Your “Microservices Migration” Is a 3-Year Death March — Why Monoliths Outperform in 78% of 2025’s Latency Benchmarks
 

@@ -3,8 +3,8 @@ order: 12
 layout: default
 title: "The Unsexy AI Breakthrough Nobody's Talking About"
 date: 2026-04-18 00:00:09
+difficulty: Intermediate
 ---
-
 <figure class="post-featured-image">
   <img src="/assets/images/blog/2026-04-18-the-unsexy-ai-breakthrough-nobody-is-talking-about-featured.webp" alt="The Unsexy AI Breakthrough Nobody's Talking About" width="1280" height="720">
 </figure>

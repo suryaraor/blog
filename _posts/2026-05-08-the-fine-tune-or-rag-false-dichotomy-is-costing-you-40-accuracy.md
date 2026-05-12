@@ -4,6 +4,7 @@ layout: default
 title: "The 'Fine-Tune or RAG' False Dichotomy Is Costing You 40% Accuracy"
 date: 2026-05-08
 audio: /assets/audio/posts/2026-05-08-the-fine-tune-or-rag-false-dichotomy-is-costing-yo.wav
+difficulty: Intermediate
 ---
 # The 'Fine-Tune or RAG' False Dichotomy Is Costing You 40% Accuracy
 

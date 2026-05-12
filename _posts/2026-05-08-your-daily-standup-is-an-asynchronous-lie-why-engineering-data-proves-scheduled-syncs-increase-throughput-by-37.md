@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-daily-standup-is-an-asynchronous-lie-why-engineering-data-proves-scheduled-syncs-increase-throughput-by-37.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-your-daily-standup-is-an-asynchronous-lie-why-engi.wav
+difficulty: Intermediate
 ---
 # Your “Daily Standup” Is an Asynchronous Lie — Why Engineering Data Proves Scheduled Syncs Increase Throughput by 37%
 

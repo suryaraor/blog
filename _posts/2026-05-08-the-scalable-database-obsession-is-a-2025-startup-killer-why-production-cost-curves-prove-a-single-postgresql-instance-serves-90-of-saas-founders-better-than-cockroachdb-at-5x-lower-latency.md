@@ -5,6 +5,7 @@ title: "The “Scalable” Database Obsession Is a 2025 Startup Killer — Why P
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-scalable-database-obsession-is-a-2025-startup-killer-why-production-cost-curves-prove-a-single-postgresql-instance-serves-90-of-saas-founders-better-than-cockroachdb-at-5x-lower-latency.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The “Scalable” Database Obsession Is a 2025 Startup Killer — Why Production Cost Curves Prove a Single PostgreSQL Instance Serves 90% of SaaS Founders Better Than CockroachDB at 5x Lower Latency
 

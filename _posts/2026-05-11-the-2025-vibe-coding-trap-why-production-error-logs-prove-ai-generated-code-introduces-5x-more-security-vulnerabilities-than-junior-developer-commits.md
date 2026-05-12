@@ -5,6 +5,7 @@ title: "The 2025 “Vibe Coding” Trap — Why Production Error Logs Prove AI-G
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-vibe-coding-trap-why-production-error-logs-prove-ai-generated-code-introduces-5x-more-security-vulnerabilities-than-junior-developer-commits.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The 2025 “Vibe Coding” Trap — Why Production Error Logs Prove AI-Generated Code Introduces 5x More Security Vulnerabilities Than Junior Developer Commits
 

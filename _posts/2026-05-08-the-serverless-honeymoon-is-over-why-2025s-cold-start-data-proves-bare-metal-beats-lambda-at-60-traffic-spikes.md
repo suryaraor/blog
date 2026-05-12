@@ -6,6 +6,7 @@ date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-serverless-honeymoon-is-over-why-2025s-cold-start-data-proves-bare-metal-beats-lambda-at-60-traffic-spikes.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-08-the-serverless-honeymoon-is-over-why-2025-s-cold-s.wav
+difficulty: Advanced
 ---
 # The “Serverless” Honeymoon Is Over — Why 2025’s Cold Start Data Proves Bare-Metal Beats Lambda at 60% Traffic Spikes
 

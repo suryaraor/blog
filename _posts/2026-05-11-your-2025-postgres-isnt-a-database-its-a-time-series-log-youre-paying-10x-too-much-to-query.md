@@ -5,6 +5,7 @@ title: "Your 2025 Postgres Isn't a Database — It's a Time-Series Log You're Pa
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-postgres-isnt-a-database-its-a-time-series-log-youre-paying-10x-too-much-to-query.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # Your 2025 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query
 

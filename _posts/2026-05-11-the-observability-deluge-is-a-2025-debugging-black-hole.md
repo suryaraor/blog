@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-observability-deluge-is-a-2025-debugging-black-hole.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-observability-deluge-is-a-2025-debugging-black.wav
+difficulty: Intermediate
 ---
 # The “Observability” Deluge Is a 2025 Debugging Black Hole
 

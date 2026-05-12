@@ -5,6 +5,7 @@ title: "The 2025 \"GraphQL Over REST\" Dogma Is Crumbling"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-graphql-over-rest-dogma-is-crumbling.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 Sure. Here is the blog post, written to your exact specifications.
 

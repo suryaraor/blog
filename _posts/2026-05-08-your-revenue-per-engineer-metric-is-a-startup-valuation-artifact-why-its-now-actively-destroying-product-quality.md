@@ -13,6 +13,7 @@ image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinati
 Here’s the contradiction that keeps me up at night: Investors love telling founders to obsess over “Revenue per Engineer” (RPE). It’s a simple, seductive number. Divide your annual recurring revenue by your engineering headcount. Big number? Good. Small number? You’re “bloated.” The logic seems bulletproof: Great engineers are expensive, so each one should carry a heavy revenue load. But here’s the thing nobody wants to admit — this metric, born in the era of venture-funded hypergrowth and “growth at all costs,” is now actively destroying product quality at the very startups it’s meant to optimize. We’ve traded sustainable, delightful products for a spreadsheet column that looks impressive on a pitch deck but feels hollow in a user’s hands. The market is starting to sense it too. Users are tired of buggy, feature-bloated software that feels like it was built by a skeleton crew running on fumes. The RPE fetish isn’t just wrong — it’s dangerous.
 
 audio: /assets/audio/posts/2026-05-08-your-revenue-per-engineer-metric-is-a-startup-valu.wav
+difficulty: Intermediate
 ---
 **Section 1 (220 words)**
 ### The Surface-Level Seduction

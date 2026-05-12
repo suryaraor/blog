@@ -3,6 +3,7 @@ order: 23
 layout: default
 title: "Your AI Agent Just Became Your Permanent Employee (And You Haven't Signed the Contracts Yet)"
 date: 2026-04-27
+difficulty: Intermediate
 ---
 # Your AI Agent Just Became Your Permanent Employee (And You Haven't Signed the Contracts Yet)
 

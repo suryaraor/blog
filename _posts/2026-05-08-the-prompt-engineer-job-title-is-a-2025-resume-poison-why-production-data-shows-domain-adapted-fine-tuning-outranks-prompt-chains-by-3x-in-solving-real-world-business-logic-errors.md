@@ -5,6 +5,7 @@ title: "The 'Prompt Engineer' Job Title Is a 2025 Resume Poison — Why Producti
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-prompt-engineer-job-title-is-a-2025-resume-poison-why-production-data-shows-domain-adapted-fine-tuning-outranks-prompt-chains-by-3x-in-solving-real-world-business-logic-errors.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The 'Prompt Engineer' Job Title Is a 2025 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors
 

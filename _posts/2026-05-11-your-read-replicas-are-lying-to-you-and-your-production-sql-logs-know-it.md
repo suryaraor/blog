@@ -5,6 +5,7 @@ title: "Your Read Replicas Are Lying to You (And Your Production SQL Logs Know I
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-read-replicas-are-lying-to-you-and-your-production-sql-logs-know-it.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Advanced
 ---
 # Your Read Replicas Are Lying to You (And Your Production SQL Logs Know It)
 

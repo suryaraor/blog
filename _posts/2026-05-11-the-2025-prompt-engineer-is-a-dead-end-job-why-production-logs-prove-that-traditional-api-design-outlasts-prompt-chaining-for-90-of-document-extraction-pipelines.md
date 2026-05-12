@@ -5,6 +5,7 @@ title: "The 2025 “Prompt Engineer” Is a Dead-End Job — Why Production Logs
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-prompt-engineer-is-a-dead-end-job-why-production-logs-prove-that-traditional-api-design-outlasts-prompt-chaining-for-90-of-document-extraction-pipelines.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+difficulty: Intermediate
 ---
 # The 2025 “Prompt Engineer” Is a Dead-End Job — Why Production Logs Prove That Traditional API Design Outlasts Prompt Chaining for 90% of Document Extraction Pipelines
 

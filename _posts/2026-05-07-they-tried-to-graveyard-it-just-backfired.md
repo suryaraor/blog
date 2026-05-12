@@ -3,6 +3,7 @@ order: 36
 layout: default
 title: "They Tried to Graveyard. It Just Backfired."
 date: 2026-05-07
+difficulty: Intermediate
 ---
 # They Tried to Graveyard. It Just Backfired.
 

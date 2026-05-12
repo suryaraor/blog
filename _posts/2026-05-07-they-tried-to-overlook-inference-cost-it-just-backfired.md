@@ -3,6 +3,7 @@ order: 40
 layout: default
 title: "They Tried to Overlook Inference Cost. It Just Backfired."
 date: 2026-05-07
+difficulty: Intermediate
 ---
 # They Tried to Overlook Inference Cost. It Just Backfired.
 

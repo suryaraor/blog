@@ -3,6 +3,7 @@ order: 39
 layout: default
 title: "The Best Code Is the Code You Never Write—Why Your Next \"Optimization\" Should Be a Delete Key"
 date: 2026-05-07
+difficulty: Intermediate
 ---
 # The Best Code Is the Code You Never Write—Why Your Next "Optimization" Should Be a Delete Key
 
