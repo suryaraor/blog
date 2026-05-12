@@ -47,6 +47,11 @@
 
         <main>
             {% if page.date %}
+            <div class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
+                <span>· {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+            </div>
             {% if page.audio %}
             <div class="post-audio-controls">
                 <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
