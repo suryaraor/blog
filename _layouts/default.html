@@ -171,6 +171,16 @@
         </script>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.post-content blockquote').forEach(function (bq) {
+                var text = (bq.textContent || '').trim().toLowerCase();
+                if (text.startsWith('use case:') || text.startsWith('use case ')) {
+                    bq.classList.add('use-case-box');
+                }
+            });
+        });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('.post-content pre').forEach(function (pre) {
                 var btn = document.createElement('button');
                 btn.className = 'code-copy-btn';

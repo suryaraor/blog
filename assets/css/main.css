@@ -739,6 +739,23 @@ footer {
   background: rgba(22, 26, 40, 0.7);
 }
 
+.use-case-box,
+.post-content blockquote.use-case-box {
+  background: linear-gradient(135deg, #f0f8ff, #f8fbff);
+  border: 1px solid #b8d8f0;
+  border-left: 4px solid #3b9edd;
+  border-radius: 0 12px 12px 0;
+  padding: 0.85rem 1.1rem;
+  margin: var(--space-3) 0;
+  color: var(--ink-700);
+}
+
+[data-theme="dark"] .use-case-box,
+[data-theme="dark"] .post-content blockquote.use-case-box {
+  background: linear-gradient(135deg, #0f1e2e, #101828);
+  border-color: #1e3a52;
+}
+
 .post-changelog {
   margin: var(--space-4) 0 var(--space-3);
   padding: var(--space-2) var(--space-3);
