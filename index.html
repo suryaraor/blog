@@ -32,6 +32,29 @@ title: "Home"
 </section>
 {% endif %}
 
+{% assign pinned_posts = site.posts | where: "pinned", true %}
+{% if pinned_posts.size == 0 %}{% assign pinned_posts = sorted_posts | slice: 1, 4 %}{% endif %}
+{% if pinned_posts.size > 0 %}
+<section class="pinned-section" aria-label="Editor's picks">
+  <div class="pinned-section-header">
+    <span class="pinned-section-label">&#128204; Editor&rsquo;s Picks</span>
+  </div>
+  <div class="pinned-carousel">
+    {% for post in pinned_posts %}
+    <a class="pinned-card" href="{{ post.url | relative_url }}">
+      {% if post.image %}
+      <img class="pinned-card-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      {% endif %}
+      <div class="pinned-card-body">
+        <p class="pinned-card-title">{{ post.title }}</p>
+        <span class="pinned-card-meta">{{ post.date | date: "%b %d, %Y" }} · {{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
 <section class="post-grid" aria-label="More stories">
   {% for post in sorted_posts offset:1 %}
     <article class="post-card">
