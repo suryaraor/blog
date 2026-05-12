@@ -97,6 +97,10 @@
             {% endif %}
         </main>
 
+        {% if page.date %}
+        {% include social-share.html %}
+        {% endif %}
+
         {% if page.date and page.layout != 'post' %}
         {% include post-interactions.html
           post_id=page.url
