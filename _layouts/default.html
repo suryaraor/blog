@@ -98,11 +98,21 @@
             {% if page.image %}
             <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
             {% endif %}
-            {% if page.audio %}
+            {%- assign _resolved_audio = page.audio -%}
+            {%- unless _resolved_audio -%}
+                {%- assign _post_date = page.date | date: "%Y-%m-%d" -%}
+                {%- assign _audio_files = site.static_files | where_exp: "f", "f.path contains '/assets/audio/posts/'" -%}
+                {%- for _af in _audio_files -%}
+                    {%- if _af.name contains _post_date -%}
+                        {%- assign _resolved_audio = _af.path -%}
+                    {%- endif -%}
+                {%- endfor -%}
+            {%- endunless -%}
+            {% if _resolved_audio %}
             <div class="post-audio-embed">
                 <span class="post-audio-embed-label">&#127911; Listen to this article</span>
                 <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
-                    <source src="{{ page.audio | relative_url }}" type="audio/wav">
+                    <source src="{{ _resolved_audio | relative_url }}" type="audio/wav">
                 </audio>
             </div>
             {% else %}

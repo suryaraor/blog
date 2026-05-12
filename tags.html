@@ -1,64 +1,148 @@
 ---
 layout: default
-title: Tags & Categories
+title: Browse Articles
 ---
 <div class="tags-page">
-    <h1 class="tags-page-title">Tags &amp; Categories</h1>
+    <h1 class="tags-page-title">Browse Articles</h1>
+    <p class="tags-page-desc">{{ site.posts | size }} articles — filter by topic, difficulty, or search by title.</p>
 
-    {% assign all_cats = "" | split: "" %}
-    {% for post in site.posts %}
-        {% for cat in post.categories %}
-            {% assign all_cats = all_cats | push: cat %}
-        {% endfor %}
-    {% endfor %}
-    {% assign unique_cats = all_cats | uniq | sort %}
+    <div class="tag-search-wrap">
+        <input type="search" class="tag-search-input" id="tag-search" placeholder="Search articles by title..." aria-label="Search articles">
+        <span class="tag-search-icon" aria-hidden="true">&#128269;</span>
+    </div>
 
-    <div class="tag-filter-bar" id="tag-filter-bar">
-        <button class="tag-filter-btn active" data-filter="all">All <span class="tag-count">{{ site.posts | size }}</span></button>
-        {% for cat in unique_cats %}
-        {% assign cat_count = 0 %}
+    <div class="tag-filter-bar" id="tag-filter-bar" role="group" aria-label="Filter articles">
+        <button class="tag-filter-btn active" data-filter="all" data-filter-type="all">
+            All <span class="tag-count" id="count-all">{{ site.posts | size }}</span>
+        </button>
+
+        {% assign beginner_count = 0 %}
+        {% assign intermediate_count = 0 %}
+        {% assign advanced_count = 0 %}
         {% for post in site.posts %}
-            {% if post.categories contains cat %}
-                {% assign cat_count = cat_count | plus: 1 %}
-            {% endif %}
+            {% unless post.robots contains "noindex" %}
+                {% if post.difficulty == "Beginner" %}{% assign beginner_count = beginner_count | plus: 1 %}{% endif %}
+                {% if post.difficulty == "Intermediate" %}{% assign intermediate_count = intermediate_count | plus: 1 %}{% endif %}
+                {% if post.difficulty == "Advanced" %}{% assign advanced_count = advanced_count | plus: 1 %}{% endif %}
+            {% endunless %}
         {% endfor %}
-        <button class="tag-filter-btn" data-filter="{{ cat | slugify }}">{{ cat }} <span class="tag-count">{{ cat_count }}</span></button>
+
+        {% if beginner_count > 0 %}
+        <button class="tag-filter-btn tag-filter-btn--beginner" data-filter="beginner" data-filter-type="difficulty">
+            Beginner <span class="tag-count">{{ beginner_count }}</span>
+        </button>
+        {% endif %}
+        {% if intermediate_count > 0 %}
+        <button class="tag-filter-btn tag-filter-btn--intermediate" data-filter="intermediate" data-filter-type="difficulty">
+            Intermediate <span class="tag-count">{{ intermediate_count }}</span>
+        </button>
+        {% endif %}
+        {% if advanced_count > 0 %}
+        <button class="tag-filter-btn tag-filter-btn--advanced" data-filter="advanced" data-filter-type="difficulty">
+            Advanced <span class="tag-count">{{ advanced_count }}</span>
+        </button>
+        {% endif %}
+
+        {% assign all_cats = "" | split: "" %}
+        {% for post in site.posts %}
+            {% for cat in post.categories %}
+                {% assign all_cats = all_cats | push: cat %}
+            {% endfor %}
+        {% endfor %}
+        {% assign unique_cats = all_cats | uniq | sort %}
+        {% for cat in unique_cats %}
+            {% assign cat_count = 0 %}
+            {% for post in site.posts %}
+                {% if post.categories contains cat %}{% assign cat_count = cat_count | plus: 1 %}{% endif %}
+            {% endfor %}
+            <button class="tag-filter-btn" data-filter="{{ cat | slugify }}" data-filter-type="category">
+                {{ cat }} <span class="tag-count">{{ cat_count }}</span>
+            </button>
         {% endfor %}
     </div>
 
     <div class="tags-post-list" id="tags-post-list">
-        {% for post in site.posts %}
+        {% assign sorted_posts = site.posts | sort: 'order' | reverse %}
+        {% for post in sorted_posts %}
         {% unless post.robots contains "noindex" %}
         <a class="tag-post-row" href="{{ post.url | relative_url }}"
+           data-title="{{ post.title | downcase | escape }}"
+           data-difficulty="{{ post.difficulty | downcase }}"
            data-cats="{% for c in post.categories %}{{ c | slugify }} {% endfor %}">
-            <span class="tag-post-title">{{ post.title }}</span>
-            <span class="tag-post-meta">
-                {{ post.date | date: "%b %d, %Y" }}
-                {% for cat in post.categories %}<span class="tag-pill">{{ cat }}</span>{% endfor %}
-            </span>
+            {% if post.image %}
+            <img class="tag-post-thumb" src="{{ post.image | relative_url }}" alt="" loading="lazy" aria-hidden="true">
+            {% endif %}
+            <div class="tag-post-content">
+                <span class="tag-post-title">{{ post.title }}</span>
+                {% if post.description %}
+                <span class="tag-post-excerpt">{{ post.description | truncatewords: 20 }}</span>
+                {% endif %}
+                <span class="tag-post-meta">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+                    <span class="tag-meta-sep">&middot;</span>
+                    <span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+                    {% if post.difficulty %}
+                    <span class="difficulty-badge difficulty-badge--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>
+                    {% endif %}
+                    {% for cat in post.categories %}<span class="tag-pill">{{ cat }}</span>{% endfor %}
+                </span>
+            </div>
         </a>
         {% endunless %}
         {% endfor %}
     </div>
+
+    <p class="tags-empty-state" id="tags-empty" hidden>No articles match your search or filter. Try a different term.</p>
 </div>
 
 <script>
 (function () {
+    var searchInput = document.getElementById('tag-search');
     var btns = document.querySelectorAll('.tag-filter-btn');
     var rows = document.querySelectorAll('.tag-post-row');
+    var emptyState = document.getElementById('tags-empty');
+    var countAll = document.getElementById('count-all');
+    var activeFilter = 'all';
+    var searchQuery = '';
+
+    function applyFilters() {
+        var visible = 0;
+        rows.forEach(function (row) {
+            var title = row.getAttribute('data-title') || '';
+            var difficulty = row.getAttribute('data-difficulty') || '';
+            var cats = row.getAttribute('data-cats') || '';
+
+            var matchesFilter = activeFilter === 'all'
+                || difficulty === activeFilter
+                || (' ' + cats + ' ').indexOf(' ' + activeFilter + ' ') !== -1;
+            var matchesSearch = !searchQuery || title.indexOf(searchQuery) !== -1;
+
+            var show = matchesFilter && matchesSearch;
+            row.hidden = !show;
+            if (show) visible++;
+        });
+        if (countAll) countAll.textContent = visible;
+        if (emptyState) emptyState.hidden = visible > 0;
+    }
+
     btns.forEach(function (btn) {
         btn.addEventListener('click', function () {
             btns.forEach(function (b) { b.classList.remove('active'); });
             btn.classList.add('active');
-            var filter = btn.getAttribute('data-filter');
-            rows.forEach(function (row) {
-                if (filter === 'all') {
-                    row.hidden = false;
-                } else {
-                    row.hidden = !(row.getAttribute('data-cats') || '').includes(filter);
-                }
-            });
+            activeFilter = btn.getAttribute('data-filter');
+            applyFilters();
         });
     });
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function () {
+            searchQuery = this.value.trim().toLowerCase();
+            applyFilters();
+        });
+        searchInput.addEventListener('search', function () {
+            searchQuery = this.value.trim().toLowerCase();
+            applyFilters();
+        });
+    }
 })();
 </script>

@@ -35,9 +35,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Giscus (GitHub Discussions) comments — fill in repo_id and category_id
-# from https://giscus.app after enabling Discussions on the repo.
+# Giscus (GitHub Discussions) comments.
+# 1. Enable Discussions on the repo at github.com/suryaraor/blog/settings
+# 2. Visit https://giscus.app, select your repo, copy the repo_id and category_id
+# 3. Replace the placeholder values below and set enabled: true
 giscus:
+  enabled: false
   repo: "suryaraor/blog"
   repo_id: "R_kgDONxample"
   category: "General"

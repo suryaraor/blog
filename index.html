@@ -25,7 +25,9 @@ title: "Home"
   <div class="featured-meta">
     <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
     <span>{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
-    {% if featured_post.author %}<span>by {{ featured_post.author }}</span>{% endif %}
+    {% if featured_post.difficulty %}
+    <span class="difficulty-badge difficulty-badge--{{ featured_post.difficulty | downcase }}">{{ featured_post.difficulty }}</span>
+    {% endif %}
   </div>
 
   <a class="featured-cta" href="{{ featured_post.url | relative_url }}">Read this story</a>
@@ -33,11 +35,19 @@ title: "Home"
 {% endif %}
 
 {% assign pinned_posts = site.posts | where: "pinned", true %}
-{% if pinned_posts.size == 0 %}{% assign pinned_posts = sorted_posts | slice: 1, 4 %}{% endif %}
+{% assign using_pinned_fallback = false %}
+{% if pinned_posts.size == 0 %}
+    {% assign pinned_posts = sorted_posts | slice: 1, 4 %}
+    {% assign using_pinned_fallback = true %}
+{% endif %}
 {% if pinned_posts.size > 0 %}
-<section class="pinned-section" aria-label="Editor's picks">
+<section class="pinned-section" aria-label="{% if using_pinned_fallback %}Recent essays{% else %}Editor's picks{% endif %}">
   <div class="pinned-section-header">
+    {% if using_pinned_fallback %}
+    <span class="pinned-section-label">&#128240; Recent essays</span>
+    {% else %}
     <span class="pinned-section-label">&#128204; Editor&rsquo;s Picks</span>
+    {% endif %}
   </div>
   <div class="pinned-carousel">
     {% for post in pinned_posts %}
@@ -47,7 +57,9 @@ title: "Home"
       {% endif %}
       <div class="pinned-card-body">
         <p class="pinned-card-title">{{ post.title }}</p>
-        <span class="pinned-card-meta">{{ post.date | date: "%b %d, %Y" }} · {{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min</span>
+        <span class="pinned-card-meta">{{ post.date | date: "%b %d, %Y" }} · {{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min
+        {% if post.difficulty %}&nbsp;<span class="pinned-card-difficulty pinned-card-difficulty--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>{% endif %}
+        </span>
       </div>
     </a>
     {% endfor %}
@@ -55,8 +67,17 @@ title: "Home"
 </section>
 {% endif %}
 
-<section class="post-grid" id="post-grid" aria-label="More stories">
-  {% for post in sorted_posts offset:1 %}
+<div class="home-section-header">
+  <span class="home-section-label">&#128196; All stories</span>
+</div>
+
+<section class="post-grid" id="post-grid" aria-label="All stories">
+  {% if using_pinned_fallback %}
+    {% assign grid_posts = sorted_posts | slice: 5, 999 %}
+  {% else %}
+    {% assign grid_posts = sorted_posts | slice: 1, 999 %}
+  {% endif %}
+  {% for post in grid_posts %}
     <article class="post-card" data-page="1">
       {% if post.image %}
       <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
@@ -74,6 +95,9 @@ title: "Home"
       <div class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         <span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+        {% if post.difficulty %}
+        <span class="difficulty-badge difficulty-badge--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>
+        {% endif %}
       </div>
     </article>
   {% endfor %}
