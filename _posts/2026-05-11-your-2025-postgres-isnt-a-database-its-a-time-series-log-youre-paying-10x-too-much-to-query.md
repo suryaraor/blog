@@ -6,6 +6,7 @@ date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-postgres-isnt-a-database-its-a-time-series-log-youre-paying-10x-too-much-to-query.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
+description: "You built a beautiful Postgres cluster — but half your tables are just append-only event logs you're querying with full-table scans. The case for splitting your workloads before the cloud bill arrives."
 ---
 # Your 2026 Postgres Isn't a Database — It's a Time-Series Log You're Paying 10x Too Much to Query
 

@@ -1,18 +1,14 @@
 ﻿---
 order: 148
 layout: default
-title: "The 2026 “Cursor” Copilot Is a Technical Debt Factory"
+title: “Stop Blaming the Junior Dev: Your AI Copilot Is the Technical Debt Factory”
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-cursor-copilot-is-a-technical-debt-factory.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Beginner
+description: “AI copilots make junior engineers 10x faster at writing code that senior engineers spend 10x longer reviewing. Here's the production data on why your AI assistant might be your biggest debt machine.”
 ---
-layout: default
-title: "The Cursor Copilot Is a Technical Debt Factory"
-date: 2025-07-15
----
-
-# The 2026 “Cursor” Copilot Is a Technical Debt Factory
+# Stop Blaming the Junior Dev: Your AI Copilot Is the Technical Debt Factory
 
 ## Hook
 

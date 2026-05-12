@@ -11,7 +11,7 @@ title: "Home"
   {% if featured_post.image %}
   <img class="featured-thumb" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" loading="lazy">
   {% endif %}
-  <p class="featured-label">Latest essay</p>
+  <p class="featured-label">Latest Essay</p>
   <h1 class="featured-title">
     <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a>
   </h1>
@@ -19,18 +19,18 @@ title: "Home"
   {% if featured_post.description %}
     <p class="featured-excerpt">{{ featured_post.description }}</p>
   {% else %}
-    <p class="featured-excerpt">{{ featured_post.content | strip_html | truncatewords: 42 }}</p>
+    <p class="featured-excerpt">{{ featured_post.excerpt | strip_html | strip_newlines | strip | truncatewords: 40 }}</p>
   {% endif %}
 
   <div class="featured-meta">
     <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
-    <span>{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+    <span class="post-read-time">{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
     {% if featured_post.difficulty %}
     <span class="difficulty-badge difficulty-badge--{{ featured_post.difficulty | downcase }}">{{ featured_post.difficulty }}</span>
     {% endif %}
   </div>
 
-  <a class="featured-cta" href="{{ featured_post.url | relative_url }}">Read this story</a>
+  <a class="featured-cta" href="{{ featured_post.url | relative_url }}">Read this essay</a>
 </section>
 {% endif %}
 
@@ -41,12 +41,12 @@ title: "Home"
     {% assign using_pinned_fallback = true %}
 {% endif %}
 {% if pinned_posts.size > 0 %}
-<section class="pinned-section" aria-label="{% if using_pinned_fallback %}Recent essays{% else %}Editor's picks{% endif %}">
+<section class="pinned-section" aria-label="{% if using_pinned_fallback %}Recent Essays{% else %}Editor's Picks{% endif %}">
   <div class="pinned-section-header">
     {% if using_pinned_fallback %}
-    <span class="pinned-section-label">&#128240; Recent essays</span>
+    <h2 class="pinned-section-heading">&#128240; Recent Essays</h2>
     {% else %}
-    <span class="pinned-section-label">&#128204; Editor&rsquo;s Picks</span>
+    <h2 class="pinned-section-heading">&#128204; Editor&rsquo;s Picks</h2>
     {% endif %}
   </div>
   <div class="pinned-carousel">
@@ -57,7 +57,12 @@ title: "Home"
       {% endif %}
       <div class="pinned-card-body">
         <p class="pinned-card-title">{{ post.title }}</p>
-        <span class="pinned-card-meta">{{ post.date | date: "%b %d, %Y" }} · {{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min
+        {% if post.description %}
+        <p class="pinned-card-desc">{{ post.description | truncatewords: 18 }}</p>
+        {% else %}
+        <p class="pinned-card-desc">{{ post.excerpt | strip_html | strip_newlines | strip | truncatewords: 18 }}</p>
+        {% endif %}
+        <span class="pinned-card-meta">{{ post.date | date: "%b %d, %Y" }} &middot; {{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min
         {% if post.difficulty %}&nbsp;<span class="pinned-card-difficulty pinned-card-difficulty--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>{% endif %}
         </span>
       </div>
@@ -67,36 +72,86 @@ title: "Home"
 </section>
 {% endif %}
 
+<!-- Author bio strip -->
+<section class="homepage-bio" aria-label="About the author">
+  <img src="{{ '/profile.png' | relative_url }}" alt="{{ site.author }}" class="homepage-bio-photo" loading="lazy">
+  <div class="homepage-bio-text">
+    <strong class="homepage-bio-name">{{ site.author }}</strong>
+    <span class="homepage-bio-desc">Surya writes about the gap between trendy architecture and what shows up in production logs &mdash; distributed systems, AI tooling, and the hidden costs of best practices.</span>
+  </div>
+  <a href="{{ '/about' | relative_url }}" class="homepage-bio-link">About me &#8594;</a>
+</section>
+
+{% comment %}Collect categories for filter bar{% endcomment %}
+{% assign all_categories_raw = "" %}
+{% for post in sorted_posts %}
+  {% if post.categories %}
+    {% if post.categories.first %}
+      {% for cat in post.categories %}
+        {% assign all_categories_raw = all_categories_raw | append: cat | append: "||" %}
+      {% endfor %}
+    {% else %}
+      {% assign all_categories_raw = all_categories_raw | append: post.categories | append: "||" %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign category_list = all_categories_raw | split: "||" | uniq | sort %}
+
 <div class="home-section-header">
-  <span class="home-section-label">&#128196; All stories</span>
+  <h2 class="home-section-heading">&#128196; All Essays</h2>
+  {% assign has_categories = false %}
+  {% for cat in category_list %}
+    {% if cat != "" %}{% assign has_categories = true %}{% endif %}
+  {% endfor %}
+  {% if has_categories %}
+  <div class="category-filter-bar" role="group" aria-label="Filter by topic">
+    <button class="category-filter-btn active" data-category="all">All</button>
+    {% for cat in category_list %}
+      {% if cat != "" %}
+      <button class="category-filter-btn" data-category="{{ cat }}">{{ cat }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
 
-<section class="post-grid" id="post-grid" aria-label="All stories">
+<section class="post-grid" id="post-grid" aria-label="All essays">
   {% if using_pinned_fallback %}
     {% assign grid_posts = sorted_posts | slice: 5, 999 %}
   {% else %}
     {% assign grid_posts = sorted_posts | slice: 1, 999 %}
   {% endif %}
   {% for post in grid_posts %}
-    <article class="post-card" data-page="1">
+    {% assign post_cat_raw = "" %}
+    {% if post.categories %}
+      {% if post.categories.first %}
+        {% assign post_cat_raw = post.categories | join: "," %}
+      {% else %}
+        {% assign post_cat_raw = post.categories %}
+      {% endif %}
+    {% endif %}
+    <article class="post-card" data-page="1" data-categories="{{ post_cat_raw }}">
       {% if post.image %}
       <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
       {% endif %}
       <h2 class="post-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | truncate: 80 }}</a>
       </h2>
 
       {% if post.description %}
         <p class="post-excerpt">{{ post.description }}</p>
       {% else %}
-        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 26 }}</p>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | strip | truncatewords: 26 }}</p>
       {% endif %}
 
       <div class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-        <span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+        <span class="post-read-time">{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
         {% if post.difficulty %}
         <span class="difficulty-badge difficulty-badge--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>
+        {% endif %}
+        {% if post_cat_raw != "" %}
+        <span class="post-category-tag">{{ post_cat_raw | split: "," | first }}</span>
         {% endif %}
       </div>
     </article>
@@ -109,6 +164,8 @@ title: "Home"
   <button class="pagination-btn" id="pag-next" aria-label="Next page">Next &#8594;</button>
 </div>
 
+{% include newsletter-cta.html %}
+
 <script>
 (function () {
     var PER_PAGE = 12;
@@ -118,24 +175,77 @@ title: "Home"
     var nextBtn = document.getElementById('pag-next');
     var info = document.getElementById('pag-info');
     if (!grid) return;
-    var cards = Array.prototype.slice.call(grid.querySelectorAll('.post-card'));
-    var totalPages = Math.ceil(cards.length / PER_PAGE);
-    if (totalPages <= 1) return;
+    var allCards = Array.prototype.slice.call(grid.querySelectorAll('.post-card'));
+    var visibleCards = allCards.slice();
+    var totalPages = 1;
     var page = 1;
-    pagination.hidden = false;
 
-    function render() {
+    // Category filter
+    var filterBtns = document.querySelectorAll('.category-filter-btn');
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var cat = btn.getAttribute('data-category');
+            if (cat === 'all') {
+                visibleCards = allCards.slice();
+            } else {
+                visibleCards = allCards.filter(function (c) {
+                    var cats = (c.getAttribute('data-categories') || '').toLowerCase();
+                    return cats.indexOf(cat.toLowerCase()) !== -1;
+                });
+            }
+            page = 1;
+            renderCards();
+            grid.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    function getDateRange() {
+        var dates = visibleCards.map(function (c) {
+            var t = c.querySelector('time');
+            return t ? t.getAttribute('datetime') : '';
+        }).filter(Boolean).sort();
+        if (!dates.length) return '';
+        var oldest = new Date(dates[0]);
+        var newest = new Date(dates[dates.length - 1]);
+        var oy = oldest.getFullYear(), ny = newest.getFullYear();
+        return oy === ny ? String(oy) : (oy + '–' + ny);
+    }
+
+    function renderCards() {
+        totalPages = Math.ceil(visibleCards.length / PER_PAGE);
+        if (totalPages < 1) totalPages = 1;
         var start = (page - 1) * PER_PAGE;
         var end = start + PER_PAGE;
-        cards.forEach(function (c, i) { c.hidden = (i < start || i >= end); });
+        allCards.forEach(function (c) { c.hidden = true; });
+        visibleCards.forEach(function (c, i) { c.hidden = (i < start || i >= end); });
         prevBtn.disabled = page === 1;
         nextBtn.disabled = page === totalPages;
         info.textContent = 'Page ' + page + ' of ' + totalPages;
+
+        if (totalPages <= 1) {
+            pagination.hidden = true;
+        } else {
+            pagination.hidden = false;
+            var dateRange = getDateRange();
+            if (page < totalPages) {
+                var nextPage = page + 1;
+                nextBtn.innerHTML = 'Next: Page ' + nextPage + (dateRange ? ' — Essays from ' + dateRange : '') + ' →';
+            } else {
+                nextBtn.innerHTML = 'Next →';
+            }
+        }
     }
 
-    prevBtn.addEventListener('click', function () { if (page > 1) { page--; render(); grid.scrollIntoView({behavior:'smooth'}); } });
-    nextBtn.addEventListener('click', function () { if (page < totalPages) { page++; render(); grid.scrollIntoView({behavior:'smooth'}); } });
-    render();
+    prevBtn.addEventListener('click', function () {
+        if (page > 1) { page--; renderCards(); grid.scrollIntoView({ behavior: 'smooth' }); }
+    });
+    nextBtn.addEventListener('click', function () {
+        if (page < totalPages) { page++; renderCards(); grid.scrollIntoView({ behavior: 'smooth' }); }
+    });
+
+    renderCards();
 })();
 </script>
 

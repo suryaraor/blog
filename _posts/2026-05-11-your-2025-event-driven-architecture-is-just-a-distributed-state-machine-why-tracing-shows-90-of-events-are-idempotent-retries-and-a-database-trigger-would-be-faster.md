@@ -1,13 +1,14 @@
 ﻿---
 order: 151
 layout: default
-title: "Your 2026 “Event-Driven Architecture” Is Just a Distributed State Machine — Why Tracing Shows 90% of Events Are Idempotent Retries and a Database Trigger Would Be Faster"
+title: “Stop Calling It Event-Driven: Tracing Shows 90% of Your Events Are Idempotent Retries a DB Trigger Would Handle Faster”
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-your-2025-event-driven-architecture-is-just-a-distributed-state-machine-why-tracing-shows-90-of-events-are-idempotent-retries-and-a-database-trigger-would-be-faster.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
+description: “When you trace your Kafka streams end-to-end, 90% of events are idempotent retries doing the same work a database trigger would handle in 5 lines. Your 'event-driven' system is just a state machine with extra hops.”
 ---
-# Your 2026 “Event-Driven Architecture” Is Just a Distributed State Machine — Why Tracing Shows 90% of Events Are Idempotent Retries and a Database Trigger Would Be Faster
+# Stop Calling It Event-Driven: Tracing Shows 90% of Your Events Are Idempotent Retries a DB Trigger Would Handle Faster
 
 You’ve built an “event-driven system” with Kafka streams, async handlers, and a beautiful dashboard showing events flowing like digital rivers. Your team high-fives over the decoupled microservices. Your CTO mentions event sourcing in every all-hands. But when you actually trace those events from producer to consumer, something unsettling emerges: nearly all of them are doing the same damn thing. Retrying. Deduplicating. Ensuring the state didn’t change between the time the event was produced and the time it was consumed. It’s like building a high-speed rail system for people who are all walking to the same bus stop. The irony stings. Your architecture, so modern and buzzword-compliant, is just a distributed state machine with a fancy hat. And deep down, you already knew this—you just didn’t want to look at the traces.
 

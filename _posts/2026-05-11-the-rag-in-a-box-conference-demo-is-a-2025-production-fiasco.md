@@ -7,6 +7,7 @@ image: /assets/images/posts/2026-05-11-the-rag-in-a-box-conference-demo-is-a-202
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-11-the-rag-in-a-box-conference-demo-is-a-2025-product.wav
 difficulty: Intermediate
+description: "The keynote demo was flawless. Three months later your RAG bot answers a customer question with a banana bread recipe. Here's why unstructured retrieval plus a GPT wrapper isn't a product strategy."
 ---
 # The Rag In A Box Conference Demo Is A 2026 Production Fiasco
 
