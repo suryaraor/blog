@@ -1,0 +1,24 @@
+name: Validate Internal Links
+
+on:
+  push:
+    branches: [gh-pages]
+    paths:
+      - '_posts/**'
+      - 'scripts/validate_internal_links.py'
+  pull_request:
+    branches: [gh-pages]
+    paths:
+      - '_posts/**'
+
+jobs:
+  validate-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate internal links
+        run: python scripts/validate_internal_links.py
