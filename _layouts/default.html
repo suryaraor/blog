@@ -64,6 +64,9 @@
             {% if page.date %}
             <div class="post-meta">
                 <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                {% if page.last_updated %}
+                <span class="post-last-updated">· Updated <time datetime="{{ page.last_updated | date_to_xmlschema }}">{{ page.last_updated | date: "%B %d, %Y" }}</time></span>
+                {% endif %}
                 {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
                 <span>· {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
                 {% if page.difficulty %}
