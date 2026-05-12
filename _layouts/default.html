@@ -146,6 +146,12 @@
                         </ul>
                     </div>
                     {% endif %}
+                    <div class="post-toc-mobile" id="post-toc-mobile" hidden>
+                        <details class="post-toc-details">
+                            <summary class="post-toc-summary">On this page</summary>
+                            <nav class="post-toc-mobile-nav" id="post-toc-mobile-nav" aria-label="Table of contents"></nav>
+                        </details>
+                    </div>
                     <div class="post-content">
                         {{ content }}
                     </div>
@@ -191,8 +197,10 @@
         document.addEventListener('DOMContentLoaded', function () {
             var toc = document.getElementById('post-toc');
             var tocNav = document.getElementById('post-toc-nav');
+            var mobileToc = document.getElementById('post-toc-mobile');
+            var mobileTocNav = document.getElementById('post-toc-mobile-nav');
             var content = document.querySelector('.post-content');
-            if (content && toc && tocNav) {
+            if (content && tocNav) {
                 var headings = content.querySelectorAll('h2, h3');
                 if (headings.length >= 4) {
                     var list = document.createElement('ol');
@@ -208,7 +216,11 @@
                         list.appendChild(li);
                     }
                     tocNav.appendChild(list);
-                    toc.hidden = false;
+                    if (toc) { toc.hidden = false; }
+                    if (mobileToc && mobileTocNav) {
+                        mobileTocNav.appendChild(list.cloneNode(true));
+                        mobileToc.hidden = false;
+                    }
                 }
             }
         });
