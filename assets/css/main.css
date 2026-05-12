@@ -20,6 +20,73 @@
   --space-5: 3rem;
 }
 
+[data-theme="dark"] {
+  --ink-900: #e8ecf2;
+  --ink-700: #b0b8cc;
+  --ink-500: #7a849a;
+  --paper: #12151e;
+  --paper-strong: #1a1e2c;
+  --accent: #ff8c42;
+  --accent-soft: #4a2810;
+  --line: #272d3e;
+  --shadow-soft: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] body {
+  background: radial-gradient(circle at 18% -8%, rgba(80, 40, 10, 0.6) 0, transparent 42%),
+    radial-gradient(circle at 100% 12%, rgba(60, 20, 50, 0.4) 0, transparent 35%),
+    var(--paper);
+}
+
+[data-theme="dark"] .post-content code {
+  background: #1e2436;
+  border-color: #2e3550;
+  color: #c9d1e8;
+}
+
+[data-theme="dark"] .post-content pre {
+  background: #161a28;
+  border-color: #252c40;
+}
+
+[data-theme="dark"] .post-content blockquote {
+  background: #1a1e2c;
+  color: #a8b2cc;
+}
+
+[data-theme="dark"] .post-audio-embed {
+  background: linear-gradient(135deg, #1e2030, #161a28);
+}
+
+[data-theme="dark"] .post-card {
+  background: rgba(22, 26, 40, 0.85);
+}
+
+[data-theme="dark"] .featured-post {
+  background: linear-gradient(145deg, #1e2030, #181c2a);
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.86rem;
+  color: var(--ink-700);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent-soft);
+  background: rgba(200, 79, 36, 0.06);
+}
+
 * {
   box-sizing: border-box;
 }
