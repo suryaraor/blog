@@ -32,6 +32,8 @@ I believe the best learning happens at the boundary between theory and practice.
 
 Let's learn together.
 
+{% include consulting-cta.html %}
+
 ---
 
 *Last updated: {{ site.time | date: "%B %d, %Y" }}*
