@@ -29,6 +29,7 @@ google_analytics: G-6W38HK15G9
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Google Apps Script web app URL for comments and likes.
 # Set this after deploying the Apps Script backend.
