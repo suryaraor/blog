@@ -57,8 +57,12 @@
                 {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
                 <span>· {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
             </div>
+            {% if page.image %}
+            <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+            {% endif %}
             {% if page.audio %}
-            <div class="post-audio-controls">
+            <div class="post-audio-embed">
+                <span class="post-audio-embed-label">&#127911; Listen to this article</span>
                 <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
                     <source src="{{ page.audio | relative_url }}" type="audio/wav">
                 </audio>
@@ -70,9 +74,6 @@
                 </button>
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
             </div>
-            {% endif %}
-            {% if page.image %}
-            <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
             {% endif %}
             <aside class="post-toc" id="post-toc" hidden>
                 <p class="post-toc-title">On this page</p>
