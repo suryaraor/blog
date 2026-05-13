@@ -11,6 +11,11 @@ title: "Home"
   <div class="featured-post-inner">
     <div class="featured-post-text">
       <span class="featured-label">Latest Essay</span>
+      {% if featured_post.badge == 'editors_pick' %}
+      <span class="quality-badge quality-badge--editors-pick">Editor's Pick</span>
+      {% elsif featured_post.badge == 'featured' %}
+      <span class="quality-badge quality-badge--featured">Featured</span>
+      {% endif %}
       <h1 class="featured-title">
         <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title | truncate: 72 }}</a>
       </h1>
@@ -103,9 +108,16 @@ title: "Home"
       <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
       {% endif %}
       <div class="post-card-body">
-        {% if post_cat_raw != "" %}
-        <span class="post-category-tag">{{ post_cat_raw | split: "," | first }}</span>
-        {% endif %}
+        <div class="post-card-tags">
+          {% if post_cat_raw != "" %}
+          <span class="post-category-tag">{{ post_cat_raw | split: "," | first }}</span>
+          {% endif %}
+          {% if post.badge == 'editors_pick' %}
+          <span class="quality-badge quality-badge--editors-pick">Editor's Pick</span>
+          {% elsif post.badge == 'featured' %}
+          <span class="quality-badge quality-badge--featured">Featured</span>
+          {% endif %}
+        </div>
         <h2 class="post-title">
           <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | truncate: 65 }}</a>
         </h2>

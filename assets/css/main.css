@@ -2060,6 +2060,36 @@ footer {
   background: rgba(200, 79, 36, 0.1);
 }
 
+.quality-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  vertical-align: middle;
+}
+
+.quality-badge--editors-pick {
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.quality-badge--featured {
+  color: #0369a1;
+  background: rgba(3, 105, 161, 0.1);
+}
+
+.post-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
 .related-posts {
   margin: var(--space-4) 0;
   padding-top: var(--space-4);
@@ -2626,7 +2656,6 @@ details[open] > .post-toc-summary::after {
 }
 
 .post-card .post-category-tag {
-  margin-bottom: 0.4rem;
   align-self: flex-start;
 }
 
