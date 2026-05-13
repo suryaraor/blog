@@ -13,42 +13,72 @@
     var STORAGE_KEY = 'clapped:' + POST_ID;
     var btn = document.getElementById('clap-btn');
     var countEl = document.getElementById('clap-count');
-    var clapped = localStorage.getItem(STORAGE_KEY);
 
-    if (clapped) {
+    function getOrCreateVisitorId() {
+        var key = 'visitor_id';
+        var id = localStorage.getItem(key);
+        if (!id) {
+            id = Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2) + Date.now().toString(36);
+            localStorage.setItem(key, id);
+        }
+        return id;
+    }
+
+    var visitorId = getOrCreateVisitorId();
+
+    // Instant UI from localStorage while API loads
+    if (localStorage.getItem(STORAGE_KEY)) {
         btn.classList.add('clap-btn--clapped');
         btn.setAttribute('aria-pressed', 'true');
     }
 
-    function fetchCount() {
+    function fetchLikes() {
         if (!API_URL) return;
-        fetch(API_URL + '?action=getClaps&post_id=' + encodeURIComponent(POST_ID))
+        var url = API_URL + '?action=getLikes&post_id=' + encodeURIComponent(POST_ID) + '&visitor_id=' + encodeURIComponent(visitorId) + '&_=' + Date.now();
+        fetch(url, { mode: 'cors', credentials: 'omit', cache: 'no-store' })
             .then(function (r) { return r.json(); })
             .then(function (d) {
-                var n = (d && d.claps != null) ? d.claps : 0;
-                countEl.textContent = n;
+                countEl.textContent = (d && d.likes_count != null) ? d.likes_count : 0;
+                if (d && d.liked) {
+                    btn.classList.add('clap-btn--clapped');
+                    btn.setAttribute('aria-pressed', 'true');
+                    localStorage.setItem(STORAGE_KEY, '1');
+                }
             })
             .catch(function () { countEl.textContent = ''; });
     }
 
-    fetchCount();
+    fetchLikes();
 
     btn.addEventListener('click', function () {
-        if (localStorage.getItem(STORAGE_KEY)) return;
+        if (btn.classList.contains('clap-btn--clapped')) return;
+
+        // Optimistic update
         btn.classList.add('clap-btn--clapped', 'clap-btn--animating');
         btn.setAttribute('aria-pressed', 'true');
         localStorage.setItem(STORAGE_KEY, '1');
         var cur = parseInt(countEl.textContent, 10) || 0;
         countEl.textContent = cur + 1;
         setTimeout(function () { btn.classList.remove('clap-btn--animating'); }, 600);
+
         if (!API_URL) return;
+
+        var body = new URLSearchParams({
+            action: 'addLike',
+            post_id: POST_ID,
+            page_url: window.location.pathname,
+            visitor_id: visitorId
+        });
+
         fetch(API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ action: 'clap', post_id: POST_ID })
+            mode: 'cors',
+            credentials: 'omit',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+            body: body.toString()
         }).then(function (r) { return r.json(); })
           .then(function (d) {
-              if (d && d.claps != null) countEl.textContent = d.claps;
+              if (d && d.likes_count != null) countEl.textContent = d.likes_count;
           })
           .catch(function () {});
     });
