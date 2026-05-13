@@ -5,6 +5,7 @@ title: "Your 2025 \"Incremental Static Regeneration\" Is a 3x Latency Tax"
 date: 2026-05-13 11:20:32
 image: /assets/images/posts/2026-05-13-your-2025-incremental-static-regeneration-is-a-3x-latency-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-2025-incremental-static-regeneration-is-a-3x-latency-tax.wav
 ---
 # Your 2025 "Incremental Static Regeneration" Is a 3x Latency Tax
 

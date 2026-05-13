@@ -5,7 +5,7 @@ title: "Your 2025 \"Kubernetes for Everything\" Is a 5x Complexity Tax — Why P
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-kubernetes-for-everything-is-a-5x-complexity-tax-why-production-ops-logs-show-a-single-vps-with-docker-compose-handles-90-of-startup-deployments-with-3x-faster-recovery-times.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-kubernetes-for-everything-is-a-5x-comple.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-kubernetes-for-everything-is-a-5x-complexity-tax-why-production-ops-logs-show-a-single-vps-with-docker-compose-handles-90-of-startup-deployments-with-3x-faster-recovery-times.wav
 ---
 # Your 2025 "Kubernetes for Everything" Is a 5x Complexity Tax — Why Production Ops Logs Show a Single VPS with Docker-Compose Handles 90% of Startup Deployments with 3x Faster Recovery Times
 

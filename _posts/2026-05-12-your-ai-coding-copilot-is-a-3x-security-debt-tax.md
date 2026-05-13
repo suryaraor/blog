@@ -5,6 +5,7 @@ title: "Your “AI Coding Copilot” Is a 3x Security Debt Tax"
 date: 2026-05-12 19:50:24
 image: /assets/images/posts/2026-05-12-your-ai-coding-copilot-is-a-3x-security-debt-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-12-your-ai-coding-copilot-is-a-3x-security-debt-tax.wav
 ---
 # Your “AI Coding Copilot” Is a 3x Security Debt Tax
 

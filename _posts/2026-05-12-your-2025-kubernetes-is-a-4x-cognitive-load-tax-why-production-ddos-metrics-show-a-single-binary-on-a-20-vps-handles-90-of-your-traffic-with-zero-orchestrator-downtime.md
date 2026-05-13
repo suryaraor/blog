@@ -7,7 +7,7 @@ categories: Technology
 difficulty: Advanced
 image: /assets/images/posts/2026-05-12-your-2025-kubernetes-is-a-4x-cognitive-load-tax-why-production-ddos-metrics-show-a-single-binary-on-a-20-vps-handles-90-of-your-traffic-with-zero-orchestrator-downtime.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-kubernetes-is-a-4x-cognitive-load-tax-wh.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-kubernetes-is-a-4x-cognitive-load-tax-why-production-ddos-metrics-show-a-single-binary-on-a-20-vps-handles-90-of-your-traffic-with-zero-orchestrator-downtime.wav
 ---
 # Your 2025 "Kubernetes" Is a 4x Cognitive Load Tax — Why Production DDoS Metrics Show a Single Binary on a $20 VPS Handles 90% of Your Traffic with Zero Orchestrator Downtime
 

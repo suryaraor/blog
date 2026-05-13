@@ -5,7 +5,7 @@ title: "The Personalized Ai Ux Fad Is A 2026 Engagement Illusion — Why Product
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-personalized-ai-ux-fad-is-a-2025-engagement-illusion-why-production-a-b-test-data-proves-generic-recommendation-engines-retain-users-3x-longer-for-90-of-saas-products.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-personalized-ai-ux-fad-is-a-2025-engagement-il.wav
+audio: /assets/audio/posts/2026-05-11-the-personalized-ai-ux-fad-is-a-2025-engagement-illusion-why-production-a-b-test-data-proves-generic-recommendation-engines-retain-users-3x-longer-for-90-of-saas-products.wav
 difficulty: Intermediate
 ---
 # The Personalized Ai Ux Fad Is A 2026 Engagement Illusion — Why Production A/B Test Data Proves Generic Recommendation Engines Retain Users 3x Longer for 90% of SaaS Products

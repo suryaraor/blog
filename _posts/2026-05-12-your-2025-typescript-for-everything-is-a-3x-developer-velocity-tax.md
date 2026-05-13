@@ -5,6 +5,7 @@ title: "Your 2025 \"TypeScript for Everything\" Is a 3x Developer Velocity Tax"
 date: 2026-05-12 22:04:03
 image: /assets/images/posts/2026-05-12-your-2025-typescript-for-everything-is-a-3x-developer-velocity-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-12-your-2025-typescript-for-everything-is-a-3x-developer-velocity-tax.wav
 ---
 # Your 2025 "TypeScript for Everything" Is a 3x Developer Velocity Tax
 

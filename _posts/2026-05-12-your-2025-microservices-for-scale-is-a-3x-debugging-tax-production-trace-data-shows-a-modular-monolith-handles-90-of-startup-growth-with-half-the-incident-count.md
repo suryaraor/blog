@@ -5,7 +5,7 @@ title: "Your 2025 “Microservices for Scale” Is a 3x Debugging Tax — Produc
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-microservices-for-scale-is-a-3x-debugging-tax-production-trace-data-shows-a-modular-monolith-handles-90-of-startup-growth-with-half-the-incident-count.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-microservices-for-scale-is-a-3x-debuggin.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-microservices-for-scale-is-a-3x-debugging-tax-production-trace-data-shows-a-modular-monolith-handles-90-of-startup-growth-with-half-the-incident-count.wav
 ---
 # Your 2025 “Microservices for Scale” Is a 3x Debugging Tax — Production Trace Data Shows a Modular Monolith Handles 90% of Startup Growth With Half the Incident Count
 

@@ -7,7 +7,7 @@ categories: AI
 difficulty: Advanced
 image: /assets/images/posts/2026-05-12-the-2025-multi-agent-orchestration-is-a-distributed-deadlock-nightmare-why-production-traces-show-a-single-sequential-llm-call-outperforms-90-of-fancy-agent-frameworks.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-the-2025-multi-agent-orchestration-is-a-distribute.wav
+audio: /assets/audio/posts/2026-05-12-the-2025-multi-agent-orchestration-is-a-distributed-deadlock-nightmare-why-production-traces-show-a-single-sequential-llm-call-outperforms-90-of-fancy-agent-frameworks.wav
 ---
 # The 2025 "Multi-Agent Orchestration" Is a Distributed Deadlock Nightmare — Why Production Traces Show a Single Sequential LLM Call Outperforms 90% of Fancy Agent Frameworks
 

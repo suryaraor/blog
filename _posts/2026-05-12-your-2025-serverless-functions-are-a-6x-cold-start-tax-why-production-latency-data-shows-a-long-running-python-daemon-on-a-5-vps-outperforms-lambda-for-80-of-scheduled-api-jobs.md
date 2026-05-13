@@ -5,7 +5,7 @@ title: "Your 2025 \"Serverless Functions\" Are a 6x Cold-Start Tax — Why Produ
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-serverless-functions-are-a-6x-cold-start-tax-why-production-latency-data-shows-a-long-running-python-daemon-on-a-5-vps-outperforms-lambda-for-80-of-scheduled-api-jobs.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-serverless-functions-are-a-6x-cold-start.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-serverless-functions-are-a-6x-cold-start-tax-why-production-latency-data-shows-a-long-running-python-daemon-on-a-5-vps-outperforms-lambda-for-80-of-scheduled-api-jobs.wav
 ---
 # Your 2025 "Serverless Functions" Are a 6x Cold-Start Tax — Why Production Latency Data Shows a Long-Running Python Daemon on a $5 VPS Outperforms Lambda for 80% of Scheduled API Jobs
 

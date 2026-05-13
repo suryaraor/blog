@@ -5,7 +5,7 @@ title: "Your 2025 \"Serverless Everything\" Is a 6x Observability Tax"
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-serverless-everything-is-a-6x-observability-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-serverless-everything-is-a-6x-observabil.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-serverless-everything-is-a-6x-observability-tax.wav
 ---
 # Your 2025 "Serverless Everything" Is a 6x Observability Tax
 

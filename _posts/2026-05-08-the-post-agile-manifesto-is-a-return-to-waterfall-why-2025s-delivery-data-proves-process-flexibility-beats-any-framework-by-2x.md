@@ -5,7 +5,7 @@ title: "The Post Agile Manifesto Is A Return To Waterfall Why 2026’s Delivery 
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-post-agile-manifesto-is-a-return-to-waterfall-why-2025s-delivery-data-proves-process-flexibility-beats-any-framework-by-2x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-the-post-agile-manifesto-is-a-return-to-waterfall.wav
+audio: /assets/audio/posts/2026-05-08-the-post-agile-manifesto-is-a-return-to-waterfall-why-2025s-delivery-data-proves-process-flexibility-beats-any-framework-by-2x.wav
 difficulty: Intermediate
 ---
 # The Post Agile Manifesto Is A Return To Waterfall Why 2026’s Delivery Data Proves Process Flexibility Beats Any Framework by 2x

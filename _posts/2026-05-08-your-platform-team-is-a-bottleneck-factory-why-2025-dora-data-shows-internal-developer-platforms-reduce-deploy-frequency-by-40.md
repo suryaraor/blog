@@ -5,7 +5,7 @@ title: "Your Platform Team Is A Bottleneck Factory Why 2026 DORA Data Shows Inte
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-platform-team-is-a-bottleneck-factory-why-2025-dora-data-shows-internal-developer-platforms-reduce-deploy-frequency-by-40.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-your-platform-team-is-a-bottleneck-factory-why-202.wav
+audio: /assets/audio/posts/2026-05-08-your-platform-team-is-a-bottleneck-factory-why-2025-dora-data-shows-internal-developer-platforms-reduce-deploy-frequency-by-40.wav
 difficulty: Intermediate
 ---
 # Your Platform Team Is A Bottleneck Factory Why 2026 DORA Data Shows Internal Developer Platforms Reduce Deploy Frequency by 40%

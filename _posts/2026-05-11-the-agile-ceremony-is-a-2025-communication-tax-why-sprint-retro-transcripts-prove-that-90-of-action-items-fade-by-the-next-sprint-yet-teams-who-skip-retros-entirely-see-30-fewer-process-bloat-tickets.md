@@ -5,7 +5,7 @@ title: "The Agile Ceremony Is A 2026 Communication Tax — Why Sprint Retro Tran
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-agile-ceremony-is-a-2025-communication-tax-why-sprint-retro-transcripts-prove-that-90-of-action-items-fade-by-the-next-sprint-yet-teams-who-skip-retros-entirely-see-30-fewer-process-bloat-tickets.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-agile-ceremony-is-a-2025-communication-tax-why.wav
+audio: /assets/audio/posts/2026-05-11-the-agile-ceremony-is-a-2025-communication-tax-why-sprint-retro-transcripts-prove-that-90-of-action-items-fade-by-the-next-sprint-yet-teams-who-skip-retros-entirely-see-30-fewer-process-bloat-tickets.wav
 difficulty: Intermediate
 ---
 # The Agile Ceremony Is A 2026 Communication Tax — Why Sprint Retro Transcripts Prove That 90% of Action Items Fade by the Next Sprint, Yet Teams Who Skip Retros Entirely See 30% Fewer Process Bloat Tickets

@@ -5,6 +5,7 @@ title: "Your 2025 \"Event-Driven Everything\" Is a 5x Observability Tax"
 date: 2026-05-13 09:35:06
 image: /assets/images/posts/2026-05-13-your-2025-event-driven-everything-is-a-5x-observability-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-2025-event-driven-everything-is-a-5x-observability-tax.wav
 ---
 # Your 2025 "Event-Driven Everything" Is a 5x Observability Tax
 

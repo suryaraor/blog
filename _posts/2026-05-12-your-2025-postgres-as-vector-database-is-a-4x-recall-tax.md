@@ -5,7 +5,7 @@ title: "Your 2025 “Postgres as Vector Database” Is a 4x Recall Tax"
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-postgres-as-vector-database-is-a-4x-recall-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-postgres-as-vector-database-is-a-4x-reca.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-postgres-as-vector-database-is-a-4x-recall-tax.wav
 ---
 # Your 2025 “Postgres as Vector Database” Is a 4x Recall Tax
 

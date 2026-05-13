@@ -5,7 +5,7 @@ title: "The Daily Standup Is A 2026 Async Communication Funnel — Why Engineeri
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-daily-standup-is-a-2025-async-communication-funnel-why-engineering-velocity-data-proves-written-status-updates-reduce-context-switching-by-50-for-90-of-distributed-teams.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-daily-standup-is-a-2025-async-communication-fu.wav
+audio: /assets/audio/posts/2026-05-11-the-daily-standup-is-a-2025-async-communication-funnel-why-engineering-velocity-data-proves-written-status-updates-reduce-context-switching-by-50-for-90-of-distributed-teams.wav
 difficulty: Intermediate
 ---
 layout: default

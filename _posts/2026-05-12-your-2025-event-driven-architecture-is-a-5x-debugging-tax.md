@@ -5,7 +5,7 @@ title: "Your 2025 “Event-Driven Architecture” Is a 5x Debugging Tax"
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-event-driven-architecture-is-a-5x-debugging-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-event-driven-architecture-is-a-5x-debugg.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-event-driven-architecture-is-a-5x-debugging-tax.wav
 ---
 # Your 2025 “Event-Driven Architecture” Is a 5x Debugging Tax
 

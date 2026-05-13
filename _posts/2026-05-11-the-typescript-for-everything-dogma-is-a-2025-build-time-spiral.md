@@ -5,7 +5,7 @@ title: "The Typescript For Everything Dogma Is A 2026 Build-Time Spiral"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-typescript-for-everything-dogma-is-a-2025-build-time-spiral.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-typescript-for-everything-dogma-is-a-2025-buil.wav
+audio: /assets/audio/posts/2026-05-11-the-typescript-for-everything-dogma-is-a-2025-build-time-spiral.wav
 difficulty: Intermediate
 ---
 # The Typescript For Everything Dogma Is A 2026 Build-Time Spiral

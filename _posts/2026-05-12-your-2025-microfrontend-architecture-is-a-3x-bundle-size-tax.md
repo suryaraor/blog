@@ -21,7 +21,7 @@ Here's the contradiction no one wants to admit: your 2025 microfrontend architec
 
 Let's talk about the lie we've all been telling ourselves.
 
-audio: /assets/audio/posts/2026-05-12-your-2025-microfrontend-architecture-is-a-3x-bundl.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-microfrontend-architecture-is-a-3x-bundle-size-tax.wav
 ---
 **Section 1 (220 words): The Autonomy Mirage**
 

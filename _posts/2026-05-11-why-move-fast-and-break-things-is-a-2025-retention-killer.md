@@ -5,7 +5,7 @@ title: "Why Move Fast And Break Things Is A 2026 Retention Killer"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-why-move-fast-and-break-things-is-a-2025-retention-killer.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-why-move-fast-and-break-things-is-a-2025-retention.wav
+audio: /assets/audio/posts/2026-05-11-why-move-fast-and-break-things-is-a-2025-retention-killer.wav
 difficulty: Intermediate
 ---
 # Why Move Fast And Break Things Is A 2026 Retention Killer

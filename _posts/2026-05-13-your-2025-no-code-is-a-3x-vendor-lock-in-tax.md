@@ -5,6 +5,7 @@ title: "Your 2025 \"No-Code\" Is a 3x Vendor Lock-In Tax"
 date: 2026-05-13 10:03:50
 image: /assets/images/posts/2026-05-13-your-2025-no-code-is-a-3x-vendor-lock-in-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-2025-no-code-is-a-3x-vendor-lock-in-tax.wav
 ---
 # Your 2025 "No-Code" Is a 3x Vendor Lock-In Tax
 

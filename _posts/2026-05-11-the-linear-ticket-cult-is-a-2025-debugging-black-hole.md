@@ -5,7 +5,7 @@ title: "The Linear Ticket Cult Is A 2026 Debugging Black Hole"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-linear-ticket-cult-is-a-2025-debugging-black-hole.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-linear-ticket-cult-is-a-2025-debugging-black-h.wav
+audio: /assets/audio/posts/2026-05-11-the-linear-ticket-cult-is-a-2025-debugging-black-hole.wav
 difficulty: Beginner
 ---
 # The Linear Ticket Cult Is A 2026 Debugging Black Hole

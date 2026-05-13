@@ -5,7 +5,7 @@ title: "Why Structured Logging + Grafana on S3 Beats Datadog at 80% Lower Bill f
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-why-structured-logging-grafana-on-s3-beats-datadog-at-80-lower-bill-for-90-of-teams.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-observability-vendor-lock-in-is-a-2025-cost-fi.wav
+audio: /assets/audio/posts/2026-05-11-why-structured-logging-grafana-on-s3-beats-datadog-at-80-lower-bill-for-90-of-teams.wav
 difficulty: Beginner
 ---
 # Why Structured Logging + Grafana on S3 Beats Datadog at 80% Lower Bill for 90% of Teams

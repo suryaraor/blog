@@ -5,6 +5,7 @@ title: "Your AI Code Reviewer Is a 3x Noise Tax"
 date: 2026-05-13 12:04:07
 image: /assets/images/posts/2026-05-13-your-ai-code-reviewer-is-a-3x-noise-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-ai-code-reviewer-is-a-3x-noise-tax.wav
 ---
 # Your AI Code Reviewer Is a 3x Noise Tax
 

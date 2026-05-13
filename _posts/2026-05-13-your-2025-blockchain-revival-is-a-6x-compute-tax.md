@@ -5,6 +5,7 @@ title: "Your 2025 “Blockchain” Revival Is a 6x Compute Tax"
 date: 2026-05-13 08:04:34
 image: /assets/images/posts/2026-05-13-your-2025-blockchain-revival-is-a-6x-compute-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-2025-blockchain-revival-is-a-6x-compute-tax.wav
 ---
 # Your 2025 “Blockchain” Revival Is a 6x Compute Tax
 

@@ -5,7 +5,7 @@ title: "The Serverless Pricing Model Is A 2026 Silent Bankruptor"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-serverless-pricing-model-is-a-2025-silent-bankruptor.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-serverless-pricing-model-is-a-2025-silent-bank.wav
+audio: /assets/audio/posts/2026-05-11-the-serverless-pricing-model-is-a-2025-silent-bankruptor.wav
 difficulty: Beginner
 ---
 # The Serverless Pricing Model Is A 2026 Silent Bankruptor

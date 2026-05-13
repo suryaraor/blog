@@ -5,7 +5,7 @@ title: "Your 2025 “Event-Driven Architecture” Is a 4x Debugging Tax — Why 
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-event-driven-architecture-is-a-4x-debugging-tax-why-production-tracing-data-shows-a-synchronous-http-call-handles-90-of-retail-checkouts-with-fewer-failures-than-kafka.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-event-driven-architecture-is-a-4x-debugg.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-event-driven-architecture-is-a-4x-debugging-tax-why-production-tracing-data-shows-a-synchronous-http-call-handles-90-of-retail-checkouts-with-fewer-failures-than-kafka.wav
 ---
 # Your 2025 “Event-Driven Architecture” Is a 4x Debugging Tax — Why Production Tracing Data Shows a Synchronous HTTP Call Handles 90% of Retail Checkouts With Fewer Failures Than Kafka
 

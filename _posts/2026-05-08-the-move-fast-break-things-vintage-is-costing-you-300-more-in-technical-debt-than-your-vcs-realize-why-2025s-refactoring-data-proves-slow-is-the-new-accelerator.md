@@ -5,7 +5,7 @@ title: "The Move Fast Break Things Vintage Is Costing You 300 More In Technical 
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-move-fast-break-things-vintage-is-costing-you-300-more-in-technical-debt-than-your-vcs-realize-why-2025s-refactoring-data-proves-slow-is-the-new-accelerator.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-the-move-fast-break-things-vintage-is-costing-you.wav
+audio: /assets/audio/posts/2026-05-08-the-move-fast-break-things-vintage-is-costing-you-300-more-in-technical-debt-than-your-vcs-realize-why-2025s-refactoring-data-proves-slow-is-the-new-accelerator.wav
 difficulty: Intermediate
 ---
 # The Move Fast Break Things Vintage Is Costing You 300 More In Technical Debt Than Your Vcs Realize Why 2026's Refactoring Data Proves Slow Is the New Accelerator

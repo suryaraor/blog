@@ -5,6 +5,7 @@ title: "Your “Real-Time Dashboards” Are a 10x Distraction Tax"
 date: 2026-05-13 10:49:24
 image: /assets/images/posts/2026-05-13-your-real-time-dashboards-are-a-10x-distraction-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-real-time-dashboards-are-a-10x-distraction-tax.wav
 ---
 # Your “Real-Time Dashboards” Are a 10x Distraction Tax
 

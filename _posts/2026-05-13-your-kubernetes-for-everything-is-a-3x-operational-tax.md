@@ -5,6 +5,7 @@ title: "Your \"Kubernetes for Everything\" Is a 3x Operational Tax"
 date: 2026-05-13 06:33:46
 image: /assets/images/posts/2026-05-13-your-kubernetes-for-everything-is-a-3x-operational-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-kubernetes-for-everything-is-a-3x-operational-tax.wav
 ---
 # Your "Kubernetes for Everything" Is a 3x Operational Tax
 

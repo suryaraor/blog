@@ -5,6 +5,7 @@ title: "Your \"Serverless Redis\" Is a 6x Cost Trap"
 date: 2026-05-13 11:35:08
 image: /assets/images/posts/2026-05-13-your-serverless-redis-is-a-6x-cost-trap.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-serverless-redis-is-a-6x-cost-trap.wav
 ---
 # Your "Serverless Redis" Is a 6x Cost Trap
 

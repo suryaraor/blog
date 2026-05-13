@@ -5,7 +5,7 @@ title: "Your Two Week Sprint Is A Cognitive Debt Factory Why 2026 Engineering Ve
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-two-week-sprint-is-a-cognitive-debt-factory-why-2025-engineering-velocity-actually-comes-from-scheduled-slack.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-your-two-week-sprint-is-a-cognitive-debt-factory-w.wav
+audio: /assets/audio/posts/2026-05-08-your-two-week-sprint-is-a-cognitive-debt-factory-why-2025-engineering-velocity-actually-comes-from-scheduled-slack.wav
 difficulty: Intermediate
 ---
 # Your Two Week Sprint Is A Cognitive Debt Factory Why 2026 Engineering Velocity Actually Comes From Scheduled Slack

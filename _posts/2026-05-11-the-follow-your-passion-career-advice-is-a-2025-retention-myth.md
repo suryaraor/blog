@@ -5,7 +5,7 @@ title: "The Follow Your Passion Career Advice Is A 2026 Retention Myth"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-follow-your-passion-career-advice-is-a-2025-retention-myth.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-follow-your-passion-career-advice-is-a-2025-re.wav
+audio: /assets/audio/posts/2026-05-11-the-follow-your-passion-career-advice-is-a-2025-retention-myth.wav
 difficulty: Intermediate
 ---
 # The Follow Your Passion Career Advice Is A 2026 Retention Myth

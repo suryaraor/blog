@@ -5,7 +5,7 @@ title: "Your 2025 \"SQL for Analytics\" Is a 4x Memory Tax — Why Production Qu
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-sql-for-analytics-is-a-4x-memory-tax-why-production-query-logs-show-duckdb-on-a-single-laptop-beats-snowflake-on-90-of-ad-hoc-data-sprints-with-zero-cloud-spend.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-sql-for-analytics-is-a-4x-memory-tax-why.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-sql-for-analytics-is-a-4x-memory-tax-why-production-query-logs-show-duckdb-on-a-single-laptop-beats-snowflake-on-90-of-ad-hoc-data-sprints-with-zero-cloud-spend.wav
 ---
 # Your 2025 "SQL for Analytics" Is a 4x Memory Tax — Why Production Query Logs Show DuckDB on a Single Laptop Beats Snowflake on 90% of Ad-Hoc Data Sprints with Zero Cloud Spend
 

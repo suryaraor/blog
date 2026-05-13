@@ -5,7 +5,7 @@ title: "Your 2025 \"Merge Queue as a Service\" Is a 20-Minute Cycle Time Tax"
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-merge-queue-as-a-service-is-a-20-minute-cycle-time-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-merge-queue-as-a-service-is-a-20-minute.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-merge-queue-as-a-service-is-a-20-minute-cycle-time-tax.wav
 ---
 # Your 2025 "Merge Queue as a Service" Is a 20-Minute Cycle Time Tax
 

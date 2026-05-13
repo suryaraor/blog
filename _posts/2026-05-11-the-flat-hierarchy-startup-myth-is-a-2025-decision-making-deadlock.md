@@ -5,7 +5,7 @@ title: "The Flat Hierarchy Startup Myth Is A 2026 Decision-Making Deadlock"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-flat-hierarchy-startup-myth-is-a-2025-decision-making-deadlock.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-flat-hierarchy-startup-myth-is-a-2025-decision.wav
+audio: /assets/audio/posts/2026-05-11-the-flat-hierarchy-startup-myth-is-a-2025-decision-making-deadlock.wav
 difficulty: Beginner
 ---
 # The Flat Hierarchy Startup Myth Is A 2026 Decision-Making Deadlock

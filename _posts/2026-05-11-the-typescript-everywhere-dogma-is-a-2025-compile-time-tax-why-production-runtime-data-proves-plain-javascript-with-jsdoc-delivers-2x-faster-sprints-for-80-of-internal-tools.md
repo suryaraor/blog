@@ -5,7 +5,7 @@ title: "The Typescript Everywhere Dogma Is A 2026 Compile-Time Tax—Why Product
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-typescript-everywhere-dogma-is-a-2025-compile-time-tax-why-production-runtime-data-proves-plain-javascript-with-jsdoc-delivers-2x-faster-sprints-for-80-of-internal-tools.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-typescript-everywhere-dogma-is-a-2025-compile.wav
+audio: /assets/audio/posts/2026-05-11-the-typescript-everywhere-dogma-is-a-2025-compile-time-tax-why-production-runtime-data-proves-plain-javascript-with-jsdoc-delivers-2x-faster-sprints-for-80-of-internal-tools.wav
 difficulty: Beginner
 ---
 # The Typescript Everywhere Dogma Is A 2026 Compile-Time Tax—Why Production Runtime Data Proves Plain JavaScript with JSDoc Delivers 2x Faster Sprints for 80% of Internal Tools

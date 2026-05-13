@@ -5,6 +5,7 @@ title: "Your 2025 \"Rust Rewrite\" Is a 3x Hiring Tax"
 date: 2026-05-13 09:49:16
 image: /assets/images/posts/2026-05-13-your-2025-rust-rewrite-is-a-3x-hiring-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-2025-rust-rewrite-is-a-3x-hiring-tax.wav
 ---
 # Your 2025 "Rust Rewrite" Is a 3x Hiring Tax
 

@@ -5,7 +5,7 @@ title: "The Observability-as-a-Service Tax Is a Debugging Mirage"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-observability-as-a-service-tax-is-a-debugging-mirage.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-the-observability-as-a-service-tax-is-a-debugging.wav
+audio: /assets/audio/posts/2026-05-08-the-observability-as-a-service-tax-is-a-debugging-mirage.wav
 difficulty: Intermediate
 ---
 # The Observability-as-a-Service Tax Is a Debugging Mirage

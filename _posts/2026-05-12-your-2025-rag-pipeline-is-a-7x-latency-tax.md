@@ -5,7 +5,7 @@ title: "Your 2025 “RAG Pipeline” Is a 7x Latency Tax"
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-rag-pipeline-is-a-7x-latency-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-rag-pipeline-is-a-7x-latency-tax-why-pro.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-rag-pipeline-is-a-7x-latency-tax.wav
 ---
 layout: default
 title: "Your 2025 RAG Pipeline Is a 7x Latency Tax"

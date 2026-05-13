@@ -5,7 +5,7 @@ title: "The \"Real-Time Data\" Obsession Is a Billion-Dollar Latency Lie"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-real-time-data-obsession-is-a-billion-dollar-latency-lie.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-the-real-time-data-obsession-is-a-billion-dollar-l.wav
+audio: /assets/audio/posts/2026-05-08-the-real-time-data-obsession-is-a-billion-dollar-latency-lie.wav
 difficulty: Intermediate
 ---
 # The "Real-Time Data" Obsession Is a Billion-Dollar Latency Lie

@@ -5,7 +5,7 @@ title: "The 'Junior-Doom' Hiring Panic Is Wrong — Here's the Data on Why Senio
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-junior-doom-hiring-panic-is-wrong-heres-the-data-on-why-senior-only-teams-ship-slower.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-the-junior-doom-hiring-panic-is-wrong-here-s-the-d.wav
+audio: /assets/audio/posts/2026-05-08-the-junior-doom-hiring-panic-is-wrong-heres-the-data-on-why-senior-only-teams-ship-slower.wav
 difficulty: Intermediate
 ---
 # The 'Junior-Doom' Hiring Panic Is Wrong — Here's the Data on Why Senior-Only Teams Ship Slower

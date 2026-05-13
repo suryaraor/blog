@@ -5,7 +5,7 @@ title: "The Serverless Honeymoon Is A 2026 Cold-Start Nightmare"
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-serverless-honeymoon-is-a-2025-cold-start-nightmare.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-serverless-honeymoon-is-a-2025-cold-start-nigh.wav
+audio: /assets/audio/posts/2026-05-11-the-serverless-honeymoon-is-a-2025-cold-start-nightmare.wav
 difficulty: Intermediate
 ---
 # The Serverless Honeymoon Is A 2026 Cold-Start Nightmare

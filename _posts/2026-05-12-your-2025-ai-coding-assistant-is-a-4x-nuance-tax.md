@@ -5,7 +5,7 @@ title: "Your 2025 “AI Coding Assistant” Is a 4x Nuance Tax"
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-ai-coding-assistant-is-a-4x-nuance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-ai-coding-assistant-is-a-4x-nuance-tax-w.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-ai-coding-assistant-is-a-4x-nuance-tax.wav
 ---
 # Your 2025 “AI Coding Assistant” Is a 4x Nuance Tax
 

@@ -5,6 +5,7 @@ title: "Your 2025 \"Rust for Everything\" Is a 5x Hiring Bottleneck"
 date: 2026-05-12 22:48:53
 image: /assets/images/posts/2026-05-12-your-2025-rust-for-everything-is-a-5x-hiring-bottleneck.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-12-your-2025-rust-for-everything-is-a-5x-hiring-bottleneck.wav
 ---
 # Your 2025 "Rust for Everything" Is a 5x Hiring Bottleneck
 

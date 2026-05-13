@@ -5,7 +5,7 @@ title: "The Solid Principles Cult Is A 2026 Maintainability Trap — Why Industr
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-the-solid-principles-cult-is-a-2025-maintainability-trap-why-industrial-strength-codebases-prove-functional-core-imperative-shell-outperforms-oop-dogma-by-6x-in-bug-reduction.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-the-solid-principles-cult-is-a-2025-maintainabilit.wav
+audio: /assets/audio/posts/2026-05-08-the-solid-principles-cult-is-a-2025-maintainability-trap-why-industrial-strength-codebases-prove-functional-core-imperative-shell-outperforms-oop-dogma-by-6x-in-bug-reduction.wav
 difficulty: Intermediate
 ---
 # The Solid Principles Cult Is A 2026 Maintainability Trap — Why Industrial-Strength Codebases Prove Functional Core/Imperative Shell Outperforms OOP Dogma by 6x in Bug Reduction

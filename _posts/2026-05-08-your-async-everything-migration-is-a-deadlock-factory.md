@@ -5,7 +5,7 @@ title: "Your \"Async Everything\" Migration Is a Deadlock Factory"
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-async-everything-migration-is-a-deadlock-factory.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-your-async-everything-migration-is-a-deadlock-fact.wav
+audio: /assets/audio/posts/2026-05-08-your-async-everything-migration-is-a-deadlock-factory.wav
 difficulty: Beginner
 ---
 # Your "Async Everything" Migration Is a Deadlock Factory

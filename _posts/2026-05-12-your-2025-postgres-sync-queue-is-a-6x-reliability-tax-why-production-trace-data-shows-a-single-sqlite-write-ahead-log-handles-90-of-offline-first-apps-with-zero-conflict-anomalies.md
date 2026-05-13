@@ -5,7 +5,7 @@ title: "Your 2025 “Postgres Sync Queue” Is a 6x Reliability Tax — Why Prod
 date: 2026-05-12
 image: /assets/images/posts/2026-05-12-your-2025-postgres-sync-queue-is-a-6x-reliability-tax-why-production-trace-data-shows-a-single-sqlite-write-ahead-log-handles-90-of-offline-first-apps-with-zero-conflict-anomalies.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-12-your-2025-postgres-sync-queue-is-a-6x-reliability.wav
+audio: /assets/audio/posts/2026-05-12-your-2025-postgres-sync-queue-is-a-6x-reliability-tax-why-production-trace-data-shows-a-single-sqlite-write-ahead-log-handles-90-of-offline-first-apps-with-zero-conflict-anomalies.wav
 ---
 # Your 2025 “Postgres Sync Queue” Is a 6x Reliability Tax — Why Production Trace Data Shows a Single SQLite Write-Ahead Log Handles 90% of Offline-First Apps With Zero Conflict Anomalies
 

@@ -5,7 +5,7 @@ title: "The Ai Pair Programmer Shortcut Is A 2026 Context Blind Spot — Why Pro
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-ai-pair-programmer-shortcut-is-a-2025-context-blind-spot-why-production-commit-data-proves-over-reliance-on-copilot-style-tools-triples-refactor-cycles-for-80-of-microservice-repos.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-ai-pair-programmer-shortcut-is-a-2025-context.wav
+audio: /assets/audio/posts/2026-05-11-the-ai-pair-programmer-shortcut-is-a-2025-context-blind-spot-why-production-commit-data-proves-over-reliance-on-copilot-style-tools-triples-refactor-cycles-for-80-of-microservice-repos.wav
 difficulty: Intermediate
 ---
 # The Ai Pair Programmer Shortcut Is A 2026 Context Blind Spot — Why Production Commit Data Proves Over-Reliance on Copilot-Style Tools Triples Refactor Cycles for 80% of Microservice Repos

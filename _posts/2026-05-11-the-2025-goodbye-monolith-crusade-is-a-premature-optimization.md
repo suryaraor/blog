@@ -5,7 +5,7 @@ title: “Breaking Up the Monolith Is Still Premature Optimization for Most Star
 date: 2026-05-11
 image: /assets/images/posts/2026-05-11-the-2025-goodbye-monolith-crusade-is-a-premature-optimization.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-11-the-2025-goodbye-monolith-crusade-is-a-premature-o.wav
+audio: /assets/audio/posts/2026-05-11-the-2025-goodbye-monolith-crusade-is-a-premature-optimization.wav
 difficulty: Intermediate
 ---
 # Breaking Up the Monolith Is Still Premature Optimization for Most Startups

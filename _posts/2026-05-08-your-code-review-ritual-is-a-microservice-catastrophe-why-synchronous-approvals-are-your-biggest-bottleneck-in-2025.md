@@ -5,7 +5,7 @@ title: "Your Code Review Ritual Is A Microservice Catastrophe Why Synchronous Ap
 date: 2026-05-08
 image: /assets/images/posts/2026-05-08-your-code-review-ritual-is-a-microservice-catastrophe-why-synchronous-approvals-are-your-biggest-bottleneck-in-2025.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
-audio: /assets/audio/posts/2026-05-08-your-code-review-ritual-is-a-microservice-catastro.wav
+audio: /assets/audio/posts/2026-05-08-your-code-review-ritual-is-a-microservice-catastrophe-why-synchronous-approvals-are-your-biggest-bottleneck-in-2025.wav
 difficulty: Intermediate
 ---
 # Your Code Review Ritual Is A Microservice Catastrophe Why Synchronous Approvals Are Your Biggest Bottleneck In 2026
