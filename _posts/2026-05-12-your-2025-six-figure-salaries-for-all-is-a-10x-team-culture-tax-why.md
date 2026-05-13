@@ -1,4 +1,4 @@
----
+﻿---
 order: 185
 layout: default
 title: "Your 2025 “Six-Figure Salaries for All” Is a 10x Team Culture Tax — Why"
@@ -6,11 +6,6 @@ date: 2026-05-12 17:49:25
 image: /assets/images/posts/2026-05-12-your-2025-six-figure-salaries-for-all-is-a-10x-team-culture-tax-why.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---
----
-layout: default
-title: Your Six-Figure Promise Killed Breakthrough Engineering
-date: 2025-07-15
-
 # Your 2025 “Six-Figure Salaries for All” Is a 10x Team Culture Tax — Why Compensation Data Shows Top-of-Market Pay Eliminates the Hunger That Drives Breakthrough Engineering
 
 You’ve seen the job postings. “Competitive six-figure salary. Unlimited PTO. Free lunch. Stock options. We pay top of market.” Every startup with Series A funding now parades compensation like a mating dance. But here’s the uncomfortable truth nobody wants to admit: paying everyone $150K+ might be the fastest way to kill your engineering team’s ability to build anything genuinely new. We’ve fetishized compensation as a culture metric, mistaking comfort for motivation. The data suggests something darker—that the very hunger which drove breakout engineering in the last decade is being systematically extinguished by generous paychecks. And we’re all pretending not to notice.

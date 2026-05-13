@@ -1,4 +1,4 @@
----
+﻿---
 order: 181
 layout: default
 title: "Your 60% Unit Test Is a 5x Tax"
@@ -6,11 +6,6 @@ date: 2026-05-12 15:48:05
 image: /assets/images/posts/2026-05-12-your-60-unit-test-is-a-5x-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---
----
-layout: default
-title: "Your 60% Unit Test Is a 5x Tax"
-date: 2025-07-16
-
 # Your 60% Unit Test Is a 5x Tax
 
 You just spent three sprints chasing 90% line coverage. Your CI pipeline glows green. The coverage badge on GitHub reads like a report card your parents would frame. But last night, a simple null pointer slipped past every single test and nuked production for seventeen minutes. Your coverage is a lie. And worse — it's costing you five times the velocity it should, for zero safety. Here's the uncomfortable truth: for most CRUD microservices, coverage above 60% doesn't reduce defects. It just makes your codebase heavier, your deploys slower, and your team more exhausted. The tests you worship are the very thing slowing you down.

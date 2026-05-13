@@ -1,4 +1,4 @@
----
+﻿---
 order: 184
 layout: default
 title: "Your 2025 IaC Is a $4M Config Drift Tax"
@@ -6,11 +6,6 @@ date: 2026-05-12 17:33:38
 image: /assets/images/posts/2026-05-12-your-2025-iac-is-a-4m-config-drift-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---
----
-layout: default
-title: Your 2025 IaC Is a $4M Config Drift Tax
-date: 2025-07-15
-
 # Your 2025 IaC Is a $4M Config Drift Tax
 
 I love Infrastructure as Code. I've written it, preached it, and watched it burn down production on a Tuesday afternoon.

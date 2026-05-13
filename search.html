@@ -3,9 +3,10 @@ layout: default
 title: Search
 ---
 <div class="search-page">
-    <h1 class="search-page-title">Search Articles</h1>
+    <h1 class="search-page-title">Find an Essay</h1>
+    <p class="search-page-desc">Search by topic, technology, theme, or keyword across {{ site.posts | size }} articles.</p>
     <div class="search-input-wrap">
-        <input type="search" id="search-input" class="search-input" placeholder="Search by title, topic, or keyword…" autofocus autocomplete="off" spellcheck="false">
+        <input type="search" id="search-input" class="search-input" placeholder="e.g. Kubernetes, AI tooling, cost, distributed systems…" autofocus autocomplete="off" spellcheck="false">
         <span class="search-icon" aria-hidden="true">&#128269;</span>
     </div>
     <p class="search-hint" id="search-hint"></p>

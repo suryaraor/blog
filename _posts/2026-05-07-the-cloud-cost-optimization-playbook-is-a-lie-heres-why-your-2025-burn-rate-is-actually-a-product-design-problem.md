@@ -7,8 +7,6 @@ image: /assets/images/posts/2026-05-07-the-cloud-cost-optimization-playbook-is-a
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
----
-layout: default
 # The Cloud Cost Optimization Playbook Is A Lie Heres Why Your 2026 Burn Rate Is Actually a Product Design Problem
 date: 2025-01-15
 

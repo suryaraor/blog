@@ -1,4 +1,4 @@
----
+﻿---
 order: 187
 layout: default
 title: "Rust's 15x Hiring Tax Isn't Worth It"
@@ -6,11 +6,6 @@ date: 2026-05-12 19:18:56
 image: /assets/images/posts/2026-05-12-rusts-15x-hiring-tax-isnt-worth-it.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---
----
-layout: default
-title: Rust's 15x Hiring Tax Isn't Worth It
-date: 2025-07-15
-
 # Rust's 15x Hiring Tax Isn't Worth It
 
 Your team just spent three months rewriting a perfectly fine Go service in Rust. The latency dropped by 12%. The memory usage went from 50MB to 18MB. You high-fived. Then your senior Rust engineer quit, and you spent the next four months trying to fill the role. You received three qualified applicants. One wanted remote from a timezone that doesn't overlap with your standup. The other two wanted $250k base. Meanwhile, the Go team across the hall ships four services in the time it takes you to find a candidate. This is the dirty secret of the 2025 Rust hype cycle: performance metrics are seductive, but they hide a hiring tax that most teams never calculate. We're optimizing for CPU cycles while ignoring the human cost. And that cost is breaking engineering teams.

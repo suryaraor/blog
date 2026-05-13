@@ -7,8 +7,6 @@ image: /assets/images/posts/2026-05-08-the-post-agile-manifesto-is-a-2025-engine
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 difficulty: Intermediate
 ---
----
-layout: default
 # The Post Agile Manifesto Is A 2026 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow"
 date: 2025-01-15
 

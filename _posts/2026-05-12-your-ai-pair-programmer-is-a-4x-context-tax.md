@@ -1,4 +1,4 @@
----
+﻿---
 order: 183
 layout: default
 title: "Your AI Pair Programmer Is a 4x Context Tax"
@@ -6,11 +6,6 @@ date: 2026-05-12 16:34:22
 image: /assets/images/posts/2026-05-12-your-ai-pair-programmer-is-a-4x-context-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---
----
-layout: default
-title: Your AI Pair Programmer Is a 4x Context Tax
-date: 2025-07-15
-
 # Your AI Pair Programmer Is a 4x Context Tax
 
 You're doing it wrong. The 2025 AI coding assistant you've been training for months — Cursor, Copilot, Supermaven, whatever — is actually making you slower. Not during the first five minutes of a task, when it autocompletes a function with satisfying accuracy. No, the pain comes two hours later, when you're five refactors deep, staring at code that looks plausible but isn't *yours*. You can't trust it. So you check. Then you check again. Then you trace three dependency chains manually, because the AI hallucinated a type definition that doesn't exist. Productivity collapses. The tool that promised to make you a 10x engineer has quietly become a 4x context tax. You're not writing more code — you're validating more code. And that's the contradiction nobody wants to admit.

@@ -1,4 +1,4 @@
----
+﻿---
 order: 182
 layout: default
 title: "Your AI Code Is a 3x Debt Tax"
@@ -6,11 +6,6 @@ date: 2026-05-12 16:04:07
 image: /assets/images/posts/2026-05-12-your-ai-code-is-a-3x-debt-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---
----
-layout: default
-title: Your AI Code Is a 3x Debt Tax
-date: 2025-07-15
-
 # Your AI Code Is a 3x Debt Tax
 
 You finally shipped that feature in record time. Copilot wrote the core logic, the unit tests passed on the first run, and your manager high-fived you in the standup. But six months later, your team is drowning. The deployment pipeline is a tangle of abandoned conditional branches. The dependency list reads like a grocery receipt for a party you never threw. And nobody—not the original developer, not the architect, not the new hire who tried to refactor it—can explain why there’s a `try-except` block that silently swallows a `ValueError` on a function that only returns strings. This is the hidden tax of AI-generated code: it feels like a productivity miracle today and behaves like a technical debt time bomb tomorrow. Production repository analysis now shows that Copilot commits introduce 40% more unused dependencies and undocumented edge cases compared to senior engineers handwriting the same functions. The speed boost is real. The cost is invisible—until it bankrupts your sprint.

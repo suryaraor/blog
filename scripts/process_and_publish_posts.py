@@ -683,6 +683,39 @@ def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
     }
 
 
+def _strip_leading_orphan_fm(text: str) -> str:
+    """Strip an unclosed front matter block at the start of text.
+
+    The model sometimes emits ``---\\nlayout: ...\\ntitle: ...\\n`` without a
+    closing ``---``.  That block ends up embedded in the body after
+    normalize_front_matter prepends the real header.  Remove it here so the
+    body starts cleanly at the first heading or paragraph.
+    """
+    if not text.startswith("---"):
+        return text
+    lines = text.splitlines()
+    # Walk forward: if we find a closing --- within 30 lines it's a REAL block
+    for i in range(1, min(30, len(lines))):
+        if lines[i].strip() == "---":
+            return text  # properly closed — leave it alone
+        if re.match(r"^\s{0,3}#{1,6}\s+", lines[i]):
+            # Found a heading before any closing --- → definitely unclosed FM
+            break
+    # The block is unclosed.  Advance past YAML-looking lines + blank lines to
+    # find where the real content starts.
+    i = 1
+    while i < len(lines):
+        stripped = lines[i].strip()
+        if stripped == "":
+            i += 1
+            continue
+        if re.match(r"^[A-Za-z_][\w]*\s*:", stripped):
+            i += 1  # looks like a YAML key: value line
+            continue
+        break  # first non-YAML, non-blank line — real content starts here
+    return "\n".join(lines[i:]).lstrip("\n")
+
+
 def parse_front_matter(text: str) -> Tuple[Optional[List[str]], str]:
     if not text.startswith("---"):
         return None, text
@@ -698,7 +731,18 @@ def parse_front_matter(text: str) -> Tuple[Optional[List[str]], str]:
             break
 
     if end_idx is None:
-        return None, text
+        # Unclosed front matter — parse what we can, treat rest as body
+        front_lines = []
+        for idx in range(1, len(lines)):
+            stripped = lines[idx].strip()
+            if stripped == "" or re.match(r"^\s{0,3}#{1,6}\s+", lines[idx]):
+                body_start = idx
+                break
+            front_lines.append(lines[idx])
+        else:
+            body_start = len(lines)
+        body = "\n".join(lines[body_start:]).lstrip("\n")
+        return front_lines, body
 
     front_lines = lines[1:end_idx]
     body = "\n".join(lines[end_idx + 1 :]).lstrip("\n")
@@ -710,6 +754,8 @@ def normalize_front_matter(
     image: Optional[str] = None, image_credit: Optional[str] = None
 ) -> str:
     front_lines, body = parse_front_matter(text)
+    # Remove any orphan front matter block that slipped into the body
+    body = _strip_leading_orphan_fm(body)
 
     extra_lines: List[str] = []
     existing_order: Optional[int] = None

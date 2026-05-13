@@ -67,11 +67,11 @@
                 <p class="site-description">{{ site.description }}</p>
             </div>
             <nav class="site-nav" aria-label="Main navigation">
-                <a href="{{ '/' | relative_url }}">Latest</a>
-                <a href="{{ '/about' | relative_url }}">About</a>
-                <a href="{{ '/search' | relative_url }}">Search</a>
-                <a href="{{ '/tags' | relative_url }}">Tags</a>
+                <a href="{{ '/' | relative_url }}" class="site-nav-primary">Essays</a>
+                <a href="{{ '/search' | relative_url }}" class="site-nav-search" aria-label="Search essays">&#128269; Search</a>
+                <a href="{{ '/tags' | relative_url }}">Topics</a>
                 <a href="{{ '/archive' | relative_url }}">Archive</a>
+                <a href="{{ '/about' | relative_url }}">About</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">&#9790;</button>
                 <a href="{{ '/offline.html' | relative_url }}" id="offline-pill" class="offline-pill" hidden aria-label="Articles saved for offline reading" title="Load once, read anywhere — no internet needed" data-tooltip="Load once, read anywhere — no internet needed">&#x2601;&#xFE0F; Offline</a>
             </nav>
