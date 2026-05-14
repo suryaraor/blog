@@ -69,12 +69,14 @@ SKIP_NAME_TOKENS = (
     # report / meta files that must never become blog posts
     "report",
     "summary",
-    "delivery",
+    "_delivery",   # matches *_DELIVERY*.md meta files; avoids false-positives on article titles containing "-delivery-"
     "metadata",
     "completion",
     "scheduled",
     "execution",
     "pre_claude",  # PRE_CLAUDE_PLAN_* pipeline reports
+    # planning / admin files that live in the workspace root
+    "sprint_",     # sprint_1.md, sprint_2.md, etc.
 )
 
 TIER_KEYWORDS = {
@@ -946,6 +948,7 @@ class FileReport:
     output: Path
     title: str
     slug: str
+    source_slug: str          # slug derived from source filename (for detecting rewrites)
     destination: str
     score: int
     score_details: List[Tuple[str, str, int]]
@@ -955,6 +958,9 @@ class FileReport:
     moved_supporting_files: List[str] = None
     image_filename: Optional[str] = None
     image_credit: Optional[str] = None
+    audio_filename: Optional[str] = None
+    audio_size_kb: Optional[int] = None
+    quality_score: Optional[float] = None
 
 
 def validate_output(path: Path, content: str) -> Dict[str, bool]:
@@ -981,8 +987,8 @@ def run_jekyll_build(blog_root: Path) -> Tuple[str, str]:
             capture_output=True,
             check=False,
         )
-    except FileNotFoundError as exc:
-        return "non-blocking", f"bundle not found: {exc}"
+    except FileNotFoundError:
+        return "warning", "bundle not installed — install Ruby+Bundler to enable local render validation"
 
     if proc.returncode == 0:
         return "success", proc.stdout.strip()
@@ -1147,7 +1153,16 @@ def print_report(
         print(f"Output: {rep.output}")
         print(f"Title: {rep.title}")
         print(f"Slug: {rep.slug}")
+        if rep.source_slug and rep.source_slug != rep.slug:
+            print(f"Title rewrite: {rep.source_slug} → {rep.slug}")
         print(f"Destination: {rep.destination}")
+        if rep.quality_score is not None:
+            badge = ""
+            if rep.quality_score >= 9.0:
+                badge = "  [editors_pick]"
+            elif rep.quality_score >= 8.5:
+                badge = "  [featured]"
+            print(f"Quality score: {rep.quality_score:.1f}/10{badge}")
         print(f"Sensitivity score: {rep.score}")
         if rep.score_details:
             print("Score details:")
@@ -1172,6 +1187,12 @@ def print_report(
         else:
             print("Image: none")
 
+        if rep.audio_filename:
+            size_str = f"  ({rep.audio_size_kb} KB)" if rep.audio_size_kb is not None else ""
+            print(f"Audio: {rep.audio_filename}{size_str}")
+        else:
+            print("Audio: none")
+
         if rep.moved_supporting_files:
             print(f"Supporting files moved: yes ({len(rep.moved_supporting_files)} files)")
             for fname in rep.moved_supporting_files:
@@ -1185,9 +1206,12 @@ def print_report(
 
     if build_result is not None:
         status, details = build_result
-        print(f"\nJekyll build: {status}")
-        if details:
-            print(details)
+        if status == "warning":
+            print(f"\nJekyll build: ⚠  SKIPPED — {details}", file=sys.stderr)
+        else:
+            print(f"\nJekyll build: {status}")
+            if details:
+                print(details)
 
     if git_result is not None:
         ok, details = git_result
@@ -1302,6 +1326,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
         fixed_text, mojibake_changes = fix_mojibake(original)
         title = extract_title(fixed_text, source_file.name)
         slug = slugify_title(title)
+        source_slug = slugify_title(filename_to_title(source_file.name))
 
         if slug_already_exists(args.posts_dir, args.unlisted_dir, slug, args.reverted_dir) and not args.overwrite_existing:
             print(
@@ -1371,6 +1396,13 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
             )
             continue
 
+        # Extract quality score and audio path from normalized front matter (set by run_agent.py)
+        _qs_match = re.search(r"^\s*quality_score\s*:\s*([\d.]+)", normalized, re.MULTILINE)
+        quality_score: Optional[float] = float(_qs_match.group(1)) if _qs_match else None
+
+        audio_filename: Optional[str] = None
+        audio_size_kb: Optional[int] = None
+
         moved_supporting = []
         if not args.dry_run:
             output_path.write_text(normalized, encoding="utf-8", newline="\n")
@@ -1400,7 +1432,9 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                 audio_abs = args.blog_root / audio_rel
                 if audio_abs.exists():
                     written_paths.append(audio_abs)
-                    print(f"[audio] Queued for git push: {audio_rel}")
+                    audio_filename = audio_rel
+                    audio_size_kb = audio_abs.stat().st_size // 1024
+                    print(f"[audio] Queued for git push: {audio_rel}  ({audio_size_kb} KB)")
                 else:
                     print(f"[audio] File not found, skipping: {audio_abs}", file=sys.stderr)
         else:
@@ -1421,6 +1455,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                 output=output_path,
                 title=title,
                 slug=slug,
+                source_slug=source_slug,
                 destination=destination_name,
                 score=score,
                 score_details=score_details,
@@ -1430,6 +1465,9 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                 moved_supporting_files=moved_supporting,
                 image_filename=image_filename,
                 image_credit=image_credit,
+                audio_filename=audio_filename,
+                audio_size_kb=audio_size_kb,
+                quality_score=quality_score,
             )
         )
 
