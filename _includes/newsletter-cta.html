@@ -14,7 +14,7 @@
               action="https://buttondown.email/api/emails/embed-subscribe/suryarao"
               method="post"
               target="popupwindow"
-              onsubmit="window.open('https://buttondown.email/suryarao','popupwindow')">
+              onsubmit="handleNewsletterSubmit(event, this)">
             <input type="hidden" value="1" name="embed">
             <div class="newsletter-form-row">
                 <label for="newsletter-email" class="sr-only">Email address</label>
@@ -25,3 +25,26 @@
         </form>
     </div>
 </section>
+<script>
+(function () {
+  var NEWSLETTER_API_URL = {{ site.comments_api_url | jsonify }};
+
+  function handleNewsletterSubmit(event, form) {
+    window.open('https://buttondown.email/suryarao', 'popupwindow');
+    var email = (form.querySelector('input[name="email"]') || {}).value || '';
+    if (email && NEWSLETTER_API_URL) {
+      fetch(NEWSLETTER_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'addNewsletterSubscriber',
+          email: email,
+          source_page: window.location.href
+        })
+      }).catch(function () {});
+    }
+  }
+
+  window.handleNewsletterSubmit = handleNewsletterSubmit;
+})();
+</script>

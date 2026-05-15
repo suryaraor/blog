@@ -105,10 +105,32 @@ TIER_KEYWORDS = {
 }
 
 HEADING_HEADLINE_RE = re.compile(r"^\s{0,3}#{1,6}\s*(?:five|5)\b.*headlines?\s*$", re.IGNORECASE)
-THE_HOOK_RE = re.compile(r"^\s{0,3}#{1,6}\s*the hook\b", re.IGNORECASE)
+# Matches "## Hook", "## The Hook", "### Hook (2 paragraphs)", etc.
+HOOK_HEADING_RE = re.compile(r"^\s{0,3}#{1,6}\s*(?:the\s+)?hook\b", re.IGNORECASE)
+THE_HOOK_RE = HOOK_HEADING_RE  # backward-compat alias used in validation
 IMAGE_PROMPT_RE = re.compile(r"^\s{0,3}#{1,6}\s*image\s+prompt\b", re.IGNORECASE)
+# "## Section 1: Title (220 words)" — group 1=hashes, group 2=title without word count
+SECTION_N_HEADING_RE = re.compile(
+    r"^(\s{0,3}#{1,6})\s*[Ss]ection\s+\d+\s*[:\-–]\s*(.+?)(?:\s*\(\d+\s*words?\))?\s*$"
+)
+# "## So What?", "## So What? subtitle", "## The So What?", "## The \"So What?\"", etc.
+SO_WHAT_HEADING_RE = re.compile(
+    r'^\s{0,3}#{1,6}\s*(?:the\s+)?[\'"“”]?so\s+what[?!]?', re.IGNORECASE
+)
+# "## Conclusion" bare (no subtitle after it)
+CONCLUSION_BARE_RE = re.compile(r"^\s{0,3}#{1,6}\s*[Cc]onclusion\s*$")
+# "## Conclusion: Subtitle" — group 1=hashes, group 2=subtitle
+CONCLUSION_PREFIXED_RE = re.compile(r"^(\s{0,3}#{1,6})\s*[Cc]onclusion\s*[:\-–]\s*(.+?)\s*$")
+# Standalone bold structural labels: **Hook (150 words)**, **Section 1: ...**, **So What (80 words)**
+STRUCTURAL_BOLD_RE = re.compile(
+    r"^\s*\*{1,2}\s*(?:the\s+)?(?:hook\b|section\s+\d+\b|so\s+what[?!]?\b)[^*]*\*{1,2}\s*$",
+    re.IGNORECASE,
+)
 H1_RE = re.compile(r"^\s{0,3}#\s+(.+?)\s*$", re.MULTILINE)
 ROOT_DRAFT_RE = re.compile(r"^(?:\d{4}[_-]\d{2}[_-]\d{2}|ARTICLE_|PRE_CLAUDE_PLAN_)", re.IGNORECASE)
+# Metadata fields the AI template sometimes emits as orphan lines in the article body
+# rather than in the front matter block. We hoist these into the front matter.
+_BODY_FM_FIELD_RE = re.compile(r"^\s*(badge|quality_score)\s*:\s*(.+?)\s*$", re.IGNORECASE)
 
 
 def build_workspace_paths(script_path: Path) -> Dict[str, Path]:
@@ -633,6 +655,9 @@ def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
     removed_headline_blocks = 0
     removed_hook_headings = 0
     removed_image_prompts = 0
+    removed_section_labels = 0
+    removed_so_what_headings = 0
+    removed_structural_bold = 0
 
     while i < len(lines):
         line = lines[i]
@@ -662,8 +687,45 @@ def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
 
             continue
 
-        if THE_HOOK_RE.match(line):
+        # Hook heading: ## Hook, ## The Hook, ### Hook (2 paragraphs), etc.
+        if HOOK_HEADING_RE.match(line):
             removed_hook_headings += 1
+            i += 1
+            continue
+
+        # Section N: Title → strip the "Section N:" prefix, keep the title
+        m = SECTION_N_HEADING_RE.match(line)
+        if m:
+            hashes, title = m.group(1), m.group(2).strip()
+            out.append(f"{hashes} {title}")
+            removed_section_labels += 1
+            i += 1
+            continue
+
+        # So What? headings (any variant) → remove the heading line
+        if SO_WHAT_HEADING_RE.match(line):
+            removed_so_what_headings += 1
+            i += 1
+            continue
+
+        # Bare Conclusion heading → remove
+        if CONCLUSION_BARE_RE.match(line):
+            removed_so_what_headings += 1
+            i += 1
+            continue
+
+        # Conclusion: Subtitle → strip prefix, keep subtitle as heading
+        m = CONCLUSION_PREFIXED_RE.match(line)
+        if m:
+            hashes, title = m.group(1), m.group(2).strip()
+            out.append(f"{hashes} {title}")
+            removed_section_labels += 1
+            i += 1
+            continue
+
+        # Standalone bold structural labels: **Hook (150 words)**, **Section 1: ...**, **So What**
+        if STRUCTURAL_BOLD_RE.match(line):
+            removed_structural_bold += 1
             i += 1
             continue
 
@@ -682,6 +744,9 @@ def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
         "headline_blocks": removed_headline_blocks,
         "hook_headings": removed_hook_headings,
         "image_prompts": removed_image_prompts,
+        "section_labels": removed_section_labels,
+        "so_what_headings": removed_so_what_headings,
+        "structural_bold": removed_structural_bold,
     }
 
 
@@ -769,6 +834,23 @@ def normalize_front_matter(
                     existing_order = int(m.group(1))
                 continue
             extra_lines.append(line)
+
+    # Hoist badge/quality_score that the AI template sometimes emits as orphan
+    # YAML lines in the body (after the hook section) instead of in front matter.
+    extra_keys = {
+        re.match(r"^\s*(\w+)\s*:", l).group(1).lower()
+        for l in extra_lines
+        if re.match(r"^\s*(\w+)\s*:", l)
+    }
+    clean_body: List[str] = []
+    for line in body.splitlines():
+        m = _BODY_FM_FIELD_RE.match(line)
+        if m and m.group(1).lower() not in extra_keys:
+            extra_lines.append(f"{m.group(1).lower()}: {m.group(2)}")
+            extra_keys.add(m.group(1).lower())
+        else:
+            clean_body.append(line)
+    body = "\n".join(clean_body)
 
     escaped_title = title.replace('"', '\\"')
     final_order = existing_order if existing_order is not None else order
