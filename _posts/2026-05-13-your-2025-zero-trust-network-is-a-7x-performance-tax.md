@@ -5,6 +5,8 @@ title: "Your 2025 \"Zero Trust Network\" Is a 7x Performance Tax"
 date: 2026-05-13 22:16:53
 image: /assets/images/posts/2026-05-13-your-2025-zero-trust-network-is-a-7x-performance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+badge: featured
+quality_score: 8.5
 ---
 # Your 2025 "Zero Trust Network" Is a 7x Performance Tax
 
@@ -13,10 +15,6 @@ image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinati
 You've spent the last eighteen months migrating to a service mesh. Congratulations. Your 2025 zero trust network is now a 7x performance tax on every internal API call your engineering team makes. The data is brutal: production packet captures from a dozen mid-stage startups show that a single stateless firewall rule processes internal traffic in under 50 microseconds. The same traffic, wrapped in mutual TLS, routed through sidecar proxies, and filtered by Envoy access logs, takes over 350 microseconds per hop. That's not security. That's punishment for the crime of "doing it right."
 
 Here's the contrarian truth nobody at KubeCon wants to admit: for 90% of internal API calls between services under 10 in a single cluster, your zero trust architecture is solving a problem that never existed. You've built a nuclear bunker for a garden shed. The irony stings. You optimized for the threat model of Google or Netflix while running on a three-node cluster in us-east-1.
-
-quality_score: 8.5
-badge: featured
----
 
 ## The Mesh Mirage We All Bought
 
