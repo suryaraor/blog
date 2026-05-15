@@ -960,6 +960,7 @@ class FileReport:
     image_credit: Optional[str] = None
     audio_filename: Optional[str] = None
     audio_size_kb: Optional[int] = None
+    audio_reason: Optional[str] = None
     quality_score: Optional[float] = None
 
 
@@ -1163,6 +1164,8 @@ def print_report(
             elif rep.quality_score >= 8.5:
                 badge = "  [featured]"
             print(f"Quality score: {rep.quality_score:.1f}/10{badge}")
+        else:
+            print("Quality score: not scored  (run via run_agent.py to score)")
         print(f"Sensitivity score: {rep.score}")
         if rep.score_details:
             print("Score details:")
@@ -1191,7 +1194,8 @@ def print_report(
             size_str = f"  ({rep.audio_size_kb} KB)" if rep.audio_size_kb is not None else ""
             print(f"Audio: {rep.audio_filename}{size_str}")
         else:
-            print("Audio: none")
+            reason_str = f"  ({rep.audio_reason})" if rep.audio_reason else ""
+            print(f"Audio: none{reason_str}")
 
         if rep.moved_supporting_files:
             print(f"Supporting files moved: yes ({len(rep.moved_supporting_files)} files)")
@@ -1402,6 +1406,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
 
         audio_filename: Optional[str] = None
         audio_size_kb: Optional[int] = None
+        audio_reason: Optional[str] = None
 
         moved_supporting = []
         if not args.dry_run:
@@ -1436,7 +1441,10 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                     audio_size_kb = audio_abs.stat().st_size // 1024
                     print(f"[audio] Queued for git push: {audio_rel}  ({audio_size_kb} KB)")
                 else:
+                    audio_reason = "file not found"
                     print(f"[audio] File not found, skipping: {audio_abs}", file=sys.stderr)
+            else:
+                audio_reason = "no audio: field in front matter"
         else:
             validations = {
                 "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", output_path.name)),
@@ -1467,6 +1475,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                 image_credit=image_credit,
                 audio_filename=audio_filename,
                 audio_size_kb=audio_size_kb,
+                audio_reason=audio_reason,
                 quality_score=quality_score,
             )
         )
