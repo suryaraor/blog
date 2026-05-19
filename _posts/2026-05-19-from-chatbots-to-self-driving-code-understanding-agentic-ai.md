@@ -5,6 +5,7 @@ title: "From Chatbots to Self-Driving Code: Understanding Agentic AI"
 date: 2026-05-19 13:21:52
 image: /assets/images/posts/2026-05-19-from-chatbots-to-self-driving-code-understanding-agentic-ai.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-19-from-chatbots-to-self-driving-code-understanding-agentic-ai.wav
 ---
 # From Chatbots to Self-Driving Code: Understanding Agentic AI
 
