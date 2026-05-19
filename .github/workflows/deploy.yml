@@ -21,12 +21,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # ruby/setup-ruby with bundler-cache: true automatically caches vendor/bundle
-      # keyed on the OS + Gemfile.lock hash — saves 60-120s of gem installation
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4'
-          bundler-cache: true
+          bundler-cache: false
+
+      - name: Cache gems
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: gems-${{ runner.os }}-ruby-3.4-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            gems-${{ runner.os }}-ruby-3.4-
+
+      - name: Install gems
+        run: |
+          bundle config set --local path 'vendor/bundle'
+          bundle lock --add-platform x86_64-linux
+          bundle install --jobs 4 --retry 3
 
       # Cache Jekyll's internal build artefacts across runs so unchanged posts
       # don't need to be re-parsed. Uses a rolling key so the cache is refreshed
