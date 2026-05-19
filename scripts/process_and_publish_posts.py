@@ -34,6 +34,15 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
 
+# ── optional TTS module ───────────────────────────────────────────────────────
+_WORKSPACE_SCRIPTS = Path(__file__).resolve().parents[3] / "scripts"
+sys.path.insert(0, str(_WORKSPACE_SCRIPTS))
+try:
+    from generate_audio import generate_audio_from_markdown as _tts_generate
+    _AUDIO_AVAILABLE = True
+except ImportError:
+    _AUDIO_AVAILABLE = False
+
 
 class _Tee:
     """Write to both a stream and a log file simultaneously."""
@@ -209,6 +218,11 @@ def parse_args() -> argparse.Namespace:
         "--pollinations-model",
         default="flux",
         help="Pollinations.AI model to use (default: flux). Options: flux, flux-realism, flux-3d, flux-anime, turbo",
+    )
+    parser.add_argument(
+        "--no-audio",
+        action="store_true",
+        help="Disable automatic TTS audio generation (requires GOOGLE_TTS_API_KEY)",
     )
     parser.add_argument(
         "--exit-delay",
@@ -646,6 +660,16 @@ def fetch_pollinations_image(
 
     attribution = "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
     return image_bytes, attribution
+
+
+def _inject_audio_field(text: str, audio_url: str) -> str:
+    """Insert audio: field before the closing --- of the front matter block."""
+    if not text.startswith("---"):
+        return text
+    end = text.find("\n---", 3)
+    if end == -1:
+        return text
+    return text[:end] + f"\naudio: {audio_url}" + text[end:]
 
 
 def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
@@ -1356,6 +1380,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
 
     load_env_file(args.blog_root)
     unsplash_key = args.unsplash_key or os.environ.get("UNSPLASH_ACCESS_KEY", "")
+    tts_api_key = os.environ.get("GOOGLE_TTS_API_KEY", "")
 
     if not args.dry_run:
         move_root_support_files(args.source_dir, args.artifacts_dir, args.source_dir / "runs")
@@ -1512,7 +1537,7 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
             validations = validate_output(output_path, normalized)
             written_paths.append(output_path)
 
-            # Include pre-generated TTS audio file in git push if front matter references one
+            # Generate TTS audio if not already present in front matter
             audio_match = re.search(r"^audio:\s*(\S+)", normalized, re.MULTILINE)
             if audio_match:
                 audio_rel = audio_match.group(1).lstrip("/")
@@ -1525,8 +1550,30 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
                 else:
                     audio_reason = "file not found"
                     print(f"[audio] File not found, skipping: {audio_abs}", file=sys.stderr)
+            elif _AUDIO_AVAILABLE and tts_api_key and not getattr(args, "no_audio", False):
+                audio_dir = args.blog_root / "assets" / "audio" / "posts"
+                audio_dir.mkdir(parents=True, exist_ok=True)
+                audio_wav = audio_dir / f"{args.publish_date}-{slug}.wav"
+                audio_url = f"/assets/audio/posts/{args.publish_date}-{slug}.wav"
+                print(f"\n[audio] Generating TTS audio …")
+                try:
+                    size = _tts_generate(normalized, audio_wav, tts_api_key)
+                    updated = _inject_audio_field(normalized, audio_url)
+                    output_path.write_text(updated, encoding="utf-8", newline="\n")
+                    written_paths.append(audio_wav)
+                    audio_filename = audio_url.lstrip("/")
+                    audio_size_kb = size // 1024
+                    print(f"[audio] Saved → {audio_wav.name}  ({audio_size_kb} KB)")
+                except Exception as exc:
+                    audio_reason = f"TTS error: {exc}"
+                    print(f"[audio] Failed: {exc}; continuing without audio", file=sys.stderr)
             else:
-                audio_reason = "no audio: field in front matter"
+                if not _AUDIO_AVAILABLE:
+                    audio_reason = "generate_audio module not found"
+                elif not tts_api_key:
+                    audio_reason = "GOOGLE_TTS_API_KEY not set"
+                else:
+                    audio_reason = "--no-audio flag"
         else:
             validations = {
                 "filename_pattern": bool(re.match(r"^\d{4}-\d{2}-\d{2}-.+\.md$", output_path.name)),
