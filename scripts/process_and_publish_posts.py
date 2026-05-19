@@ -31,8 +31,15 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 if sys.platform == "win32":
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8")
+    # reconfigure() changes encoding on the existing wrapper without replacing it,
+    # avoiding the buffer-ownership bug that io.TextIOWrapper reassignment causes
+    # when stdout/stderr have no real console (e.g. subprocess capture).
+    for _s in (sys.stdout, sys.stderr):
+        if _s is not None and hasattr(_s, "reconfigure"):
+            try:
+                _s.reconfigure(encoding="utf-8")
+            except Exception:
+                pass
 
 # ── optional TTS module ───────────────────────────────────────────────────────
 _WORKSPACE_SCRIPTS = Path(__file__).resolve().parents[3] / "scripts"
