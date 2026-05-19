@@ -38,7 +38,22 @@ STATIC_PAGES = {"/", "/about", "/about/", "/search", "/search/",
 
 broken: list[tuple[str, int, str, str]] = []
 
-for post_path in sorted(POSTS_DIR.glob("*.md")):
+_arg_files = [f for f in sys.argv[1:] if f.endswith(".md")]
+if _arg_files:
+    _resolved = []
+    for f in _arg_files:
+        p = Path(f)
+        if not p.is_absolute():
+            p = BLOG_DIR / f
+        if p.exists():
+            _resolved.append(p)
+    check_paths = sorted(_resolved)
+    _scope = f"{len(check_paths)} changed post(s)"
+else:
+    check_paths = sorted(POSTS_DIR.glob("*.md"))
+    _scope = f"{len(check_paths)} posts"
+
+for post_path in check_paths:
     text = post_path.read_text(encoding="utf-8")
     # Strip front matter before scanning
     body = FRONT_MATTER_RE.sub("", text, count=1)
@@ -61,4 +76,4 @@ if broken:
         print(f"  {fname}:{lineno}  [{text}]({url})")
     sys.exit(1)
 else:
-    print(f"All internal links OK (checked {len(list(POSTS_DIR.glob('*.md')))} posts).")
+    print(f"All internal links OK (checked {_scope}).")

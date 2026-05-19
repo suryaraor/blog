@@ -29,7 +29,20 @@ VALID_DIFFICULTY = {"Beginner", "Intermediate", "Advanced"}
 errors: list[tuple[str, str]] = []
 warnings: list[tuple[str, str]] = []
 
-for post_path in sorted(POSTS_DIR.glob("*.md")):
+_arg_files = [f for f in sys.argv[1:] if f.endswith(".md")]
+if _arg_files:
+    _resolved = []
+    for f in _arg_files:
+        p = Path(f)
+        if not p.is_absolute():
+            p = BLOG_DIR / f
+        if p.exists():
+            _resolved.append(p)
+    post_paths = sorted(_resolved)
+else:
+    post_paths = sorted(POSTS_DIR.glob("*.md"))
+
+for post_path in post_paths:
     text = post_path.read_text(encoding="utf-8")
     m = FRONT_MATTER_RE.match(text)
     if not m:
@@ -61,7 +74,7 @@ for post_path in sorted(POSTS_DIR.glob("*.md")):
     if not fm.get("description"):
         warnings.append((post_path.name, "no description — Open Graph and Twitter cards will fall back to site description"))
 
-checked = len(list(POSTS_DIR.glob("*.md")))
+checked = len(post_paths)
 
 if warnings:
     print(f"Metadata warnings ({len(warnings)}):\n")

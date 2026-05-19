@@ -1,0 +1,60 @@
+name: Deploy Jekyll to GitHub Pages
+
+on:
+  push:
+    branches: [gh-pages]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy at a time; don't cancel in-progress so we don't leave the site half-deployed
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # ruby/setup-ruby with bundler-cache: true automatically caches vendor/bundle
+      # keyed on the OS + Gemfile.lock hash — saves 60-120s of gem installation
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      # Cache Jekyll's internal build artefacts across runs so unchanged posts
+      # don't need to be re-parsed. Uses a rolling key so the cache is refreshed
+      # on every run (restore-keys picks up the most recent prior entry).
+      - name: Restore Jekyll build cache
+        uses: actions/cache@v4
+        with:
+          path: .jekyll-cache
+          key: jekyll-cache-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            jekyll-cache-${{ runner.os }}-
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
