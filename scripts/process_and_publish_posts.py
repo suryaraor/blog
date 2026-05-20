@@ -649,9 +649,10 @@ def fetch_pollinations_image(
     resolved_theme = theme if theme != "auto" else detect_image_theme(title, category, image_prompt or "")
     prompt_text = build_pollinations_prompt(image_prompt, title, theme=resolved_theme, category=category)
     encoded = urllib.parse.quote(prompt_text)
+    negative = urllib.parse.quote("text, words, title, letters, labels, watermark, writing, typography")
     url = (
         f"https://image.pollinations.ai/prompt/{encoded}"
-        f"?width=1200&height=675&model={model}&nologo=true&seed=42"
+        f"?width=1200&height=675&model={model}&nologo=true&seed=42&negative={negative}"
     )
     print(f"[image] Generating image via Pollinations.AI (model={model}, theme={resolved_theme})…")
     try:
@@ -689,8 +690,8 @@ def build_gemini_arch_prompt(title: str, image_prompt: Optional[str], category: 
     category_hint = f" (category: {category})" if category else ""
 
     return (
-        f"A clean, minimal technical architecture and flow diagram for a blog post titled '{title}'{category_hint}. "
-        f"Key building blocks from the post: {concept_text}. "
+        f"A clean, minimal technical architecture and flow diagram{category_hint}. "
+        f"Topic and key building blocks: {concept_text}. "
         f"Represent each major concept as a labeled rounded-rectangle node. "
         f"Each node must include a small relevant icon inside the box (e.g. a database cylinder icon for databases, "
         f"a cloud icon for cloud services, a gear icon for processing steps, a lock icon for security, "
@@ -989,6 +990,57 @@ def normalize_front_matter(
         body += "\n"
 
     return "\n".join(fm) + "\n" + body
+
+
+def inject_hero_into_body(
+    text: str, image_filename: str, title: str, image_credit: Optional[str] = None
+) -> str:
+    """Insert the hero image into the post body after the intro, before the first ## heading.
+
+    The image: front matter field is kept for OG/Twitter meta tags.
+    """
+    front_lines, body = parse_front_matter(text)
+
+    escaped_alt = title.replace('"', '&quot;').replace("'", "&#39;")
+    img_parts = [
+        '<figure class="post-hero-image">',
+        f'<img class="post-hero" src="{image_filename}" alt="Hero image for {escaped_alt}" loading="lazy">',
+    ]
+    if image_credit:
+        img_parts.append(f"<figcaption>{image_credit}</figcaption>")
+    img_parts.append("</figure>")
+    img_block = "\n".join(img_parts)
+
+    lines = body.splitlines()
+    insert_idx = None
+
+    # Prefer inserting right before the first ## heading (after intro paragraphs)
+    for i, line in enumerate(lines):
+        if re.match(r"^\s{0,3}##\s+", line):
+            insert_idx = i
+            break
+
+    if insert_idx is None:
+        # No ## heading — insert after the H1's first paragraph
+        for i, line in enumerate(lines):
+            if re.match(r"^\s{0,3}#\s+", line):
+                j = i + 1
+                while j < len(lines) and not lines[j].strip():
+                    j += 1
+                while j < len(lines) and lines[j].strip():
+                    j += 1
+                insert_idx = j
+                break
+
+    if insert_idx is None:
+        insert_idx = len(lines)
+
+    new_lines = lines[:insert_idx] + [img_block, ""] + lines[insert_idx:]
+    new_body = "\n".join(new_lines)
+
+    if front_lines is not None:
+        return "---\n" + "\n".join(front_lines) + "\n---\n" + new_body
+    return new_body
 
 
 def keyword_pattern(keyword: str) -> re.Pattern[str]:
@@ -1598,6 +1650,8 @@ def _main_inner(args, logs_dir: Path, log_path: Path) -> int:
             cleaned, title=title, publish_date=file_datetime, order=next_order,
             image=image_filename, image_credit=image_credit
         )
+        if image_filename and not args.dry_run:
+            normalized = inject_hero_into_body(normalized, image_filename, title, image_credit)
         next_order += 1
 
         score, score_details = sensitivity_score(title, normalized)
