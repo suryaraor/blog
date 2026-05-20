@@ -32,6 +32,15 @@ I believe the best learning happens at the boundary between theory and practice.
 
 Let's learn together.
 
+## Connect With Me
+
+If you're a fellow technical builder and want to connect, the fastest ways to reach me are:
+
+- [LinkedIn](https://www.linkedin.com/in/suryaraor/) for professional networking
+- [X](https://x.com/suryarao_r) for quick conversations and updates
+- [Text me at 913-413-6752](tel:+19134136752) if you prefer SMS
+- [Email me at suryaraor.r@gmail.com](mailto:suryaraor.r@gmail.com) for longer messages
+
 ---
 
 *Last updated: {{ site.time | date: "%B %d, %Y" }}*

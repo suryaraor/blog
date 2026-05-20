@@ -45,7 +45,7 @@
         </header>
 
         <main>
-            {% if page.date %}
+            {% if page.date and page.layout != 'post' %}
             <div class="post-audio-controls" aria-live="polite">
                 <button type="button" class="post-audio-button" data-audio-button>
                     Play aloud
@@ -72,7 +72,7 @@
         %}
         {% endif %}
 
-        {% if page.date %}
+        {% if page.date and page.layout != 'post' %}
         <script>
         document.addEventListener('DOMContentLoaded', function () {
             var audioButton = document.querySelector('[data-audio-button]');
