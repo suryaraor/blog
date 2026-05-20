@@ -1,0 +1,33 @@
+Twitter/X Thread Draft — They Tried to Replace Junior Developers. It Just Backfired.
+============================================================
+Date: 2026-04-27
+URL:  https://suryaraor.github.io/blog/2026/04/27/they-tried-to-replace-junior-developers-it-just-backfired/
+Tweets: 7
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (70 chars) ──────────────
+They Tried to Replace Junior Developers. It Just Backfired.
+
+Thread 🧵👇
+
+── Tweet 2 (77 chars) ──────────────
+2/ • The Bet That Should Have Worked • • Why AI-Only Teams Keep Breaking Down
+
+── Tweet 3 (228 chars) ──────────────
+3/ • Architecture requires context. Junior developers learn by building under scrutiny. They absorb not just syntax but the why behind decisions. An AI generates code; a junior developer under mentorship learns systems thinking.
+
+── Tweet 4 (181 chars) ──────────────
+4/ • Production failures need human diagnosis. When your system goes down at 3 AM, you need someone who understands the entire chain of logic, not just the latest generated snippet.
+
+── Tweet 5 (254 chars) ──────────────
+5/ • Knowledge transmission is real infrastructure. There's no AI tool that can transfer domain knowledge from a 15-year veteran to the next generation. That only happens through relationship, patience, and yes, junior developers asking "dumb questions."
+
+── Tweet 6 (149 chars) ──────────────
+6/ • The Quiet Rehiring That Everyone Missed • • What Companies Are Quietly Learning About AI • • So What? • • Conclusion: The Uncomfortable Question
+
+── Tweet 7 (145 chars) ──────────────
+7/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/27/they-tried-to-replace-junior-developers-it-just-backfired/
+
+#Engineering #Tech

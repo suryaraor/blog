@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — Why We're Ditching Vector Databases for Graph-Based RAG in Production
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/why-were-ditching-vector-databases-for-graph-based-rag-in-production/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (80 chars) ──────────────
+Why We're Ditching Vector Databases for Graph-Based RAG in Production
+
+Thread 🧵👇
+
+── Tweet 2 (229 chars) ──────────────
+2/ • The Feature Factory Mirage • • The Complexity Tax Is Due • • The Deletion Taboo • • The Sparse Future Wins • • Start sparse. Add only what a query actually touches. • • Prune aggressively. Delete anything unused for 30 days.
+
+── Tweet 3 (76 chars) ──────────────
+3/ • Measure by relationship count, not vector count. Quality over quantity.
+
+── Tweet 4 (156 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/why-were-ditching-vector-databases-for-graph-based-rag-in-production/
+
+#Engineering #Tech

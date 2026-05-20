@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The AI Agent Marketplace Just Became a Trojan Horse (And You Probably Already Downloaded It)
+============================================================
+Date: 2026-05-01
+URL:  https://suryaraor.github.io/blog/2026/05/01/the-ai-agent-marketplace-just-became-a-trojan-horse-and-you-probably-already-downloaded-it/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (103 chars) ──────────────
+The AI Agent Marketplace Just Became a Trojan Horse (And You Probably Already Downloaded It)
+
+Thread 🧵👇
+
+── Tweet 2 (264 chars) ──────────────
+2/ • Why the "Professional Deception" Works Better Than You Think • • The Unsettling Statistic Nobody Wants to Admit • • Shadow AI incidents cost an average of $670,000 MORE than standard security incidents, driven entirely by delayed detection and scope confusion
+
+── Tweet 3 (112 chars) ──────────────
+3/ • Enterprises struggle to trace agent actions back to origin (was that an agent, a human, or malicious code?)
+
+── Tweet 4 (241 chars) ──────────────
+4/ • Permission escalation happens silently—your agent downloaded something that gave it read-access to your database, and you don't know until data walks out the door • • When "Community-Vetted" Stops Being a Promise and Becomes a Liability
+
+── Tweet 5 (103 chars) ──────────────
+5/ • The Moment Your Agent Became Untrustworthy • • So What? • • Conclusion: The Uncomfortable Question
+
+── Tweet 6 (178 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/01/the-ai-agent-marketplace-just-became-a-trojan-horse-and-you-probably-already-downloaded-it/
+
+#Engineering #Tech

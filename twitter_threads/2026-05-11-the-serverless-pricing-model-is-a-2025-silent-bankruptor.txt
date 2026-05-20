@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The \"Serverless\" Pricing Model Is a 2025 Silent Bankruptor
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-serverless-pricing-model-is-a-2025-silent-bankruptor/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (71 chars) ──────────────
+The \"Serverless\" Pricing Model Is a 2025 Silent Bankruptor
+
+Thread 🧵👇
+
+── Tweet 2 (227 chars) ──────────────
+2/ • The Cloud's Most Expensive Lie • • The Bill That Breaks Your Back • • Why Nobody Talks About This • • The Future Is Boring (and Profitable) • • Start with containers on EC2 with reserved instances for predictable workloads
+
+── Tweet 3 (267 chars) ──────────────
+3/ • Use Lambda only for truly variable, event-driven tasks (like image processing) • • Implement auto-scaling groups that mimic serverless scaling without the per-request premium • • Monitor cost-per-request as a core metric, not just compute utilization • • So What
+
+── Tweet 4 (19 chars) ──────────────
+4/ • Go Do This Now
+
+── Tweet 5 (144 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-serverless-pricing-model-is-a-2025-silent-bankruptor/
+
+#Engineering #Tech

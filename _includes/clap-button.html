@@ -1,0 +1,86 @@
+<div class="clap-wrapper" id="clap-wrapper" aria-label="Clap for this article">
+    <button class="clap-btn" id="clap-btn" aria-label="Clap" title="Clap for this post">
+        <span class="clap-icon" aria-hidden="true">&#128079;</span>
+        <span class="clap-count" id="clap-count">–</span>
+    </button>
+    <p class="clap-label">If you found this useful, give it a clap!</p>
+</div>
+
+<script>
+(function () {
+    var POST_ID = {{ page.url | jsonify }};
+    var API_URL = {{ site.comments_api_url | jsonify }};
+    var STORAGE_KEY = 'clapped:' + POST_ID;
+    var btn = document.getElementById('clap-btn');
+    var countEl = document.getElementById('clap-count');
+
+    function getOrCreateVisitorId() {
+        var key = 'visitor_id';
+        var id = localStorage.getItem(key);
+        if (!id) {
+            id = Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2) + Date.now().toString(36);
+            localStorage.setItem(key, id);
+        }
+        return id;
+    }
+
+    var visitorId = getOrCreateVisitorId();
+
+    // Instant UI from localStorage while API loads
+    if (localStorage.getItem(STORAGE_KEY)) {
+        btn.classList.add('clap-btn--clapped');
+        btn.setAttribute('aria-pressed', 'true');
+    }
+
+    function fetchLikes() {
+        if (!API_URL) return;
+        var url = API_URL + '?action=getLikes&post_id=' + encodeURIComponent(POST_ID) + '&visitor_id=' + encodeURIComponent(visitorId) + '&_=' + Date.now();
+        fetch(url, { mode: 'cors', credentials: 'omit', cache: 'no-store' })
+            .then(function (r) { return r.json(); })
+            .then(function (d) {
+                countEl.textContent = (d && d.likes_count != null) ? d.likes_count : 0;
+                if (d && d.liked) {
+                    btn.classList.add('clap-btn--clapped');
+                    btn.setAttribute('aria-pressed', 'true');
+                    localStorage.setItem(STORAGE_KEY, '1');
+                }
+            })
+            .catch(function () { countEl.textContent = ''; });
+    }
+
+    fetchLikes();
+
+    btn.addEventListener('click', function () {
+        if (btn.classList.contains('clap-btn--clapped')) return;
+
+        // Optimistic update
+        btn.classList.add('clap-btn--clapped', 'clap-btn--animating');
+        btn.setAttribute('aria-pressed', 'true');
+        localStorage.setItem(STORAGE_KEY, '1');
+        var cur = parseInt(countEl.textContent, 10) || 0;
+        countEl.textContent = cur + 1;
+        setTimeout(function () { btn.classList.remove('clap-btn--animating'); }, 600);
+
+        if (!API_URL) return;
+
+        var body = new URLSearchParams({
+            action: 'addLike',
+            post_id: POST_ID,
+            page_url: window.location.pathname,
+            visitor_id: visitorId
+        });
+
+        fetch(API_URL, {
+            method: 'POST',
+            mode: 'cors',
+            credentials: 'omit',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+            body: body.toString()
+        }).then(function (r) { return r.json(); })
+          .then(function (d) {
+              if (d && d.likes_count != null) countEl.textContent = d.likes_count;
+          })
+          .catch(function () {});
+    });
+})();
+</script>

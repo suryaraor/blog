@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “GraphQL for Everything” Bet Is 2025’s Most Expensive Abstraction — Why Production Query Profiles Show REST+JSON:API Beats GraphQL at 60% Lower Server CPU for 90% of Mobile Backends
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-graphql-for-everything-bet-is-2025s-most-expensive-abstraction-why-production-query-profiles-show-rest-json-api-beats-graphql-at-60-lower-server-cpu-for-90-of-mobile-backends/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (196 chars) ──────────────
+The “GraphQL for Everything” Bet Is 2025’s Most Expensive Abstraction — Why Production Query Profiles Show REST+JSON:API Beats GraphQL at 60% Lower Server CPU for 90% of Mobile Backends
+
+Thread 🧵👇
+
+── Tweet 2 (266 chars) ──────────────
+2/ • The Hype Didn’t Match the Hardware • • What Cached Responses Reveal • • Profile endpoint: REST returns a fixed shape, cached at edge — 2ms response time, 0.3ms CPU • • Profile query: GraphQL parses, validates, resolves each field — 12ms response time, 2.1ms CPU
+
+── Tweet 3 (177 chars) ──────────────
+3/ • Result: REST handles 6-7x the requests with the same hardware • • The Productivity Mirage • • The Shift Back to Pragmatism • • Why This Matters to You • • The Final Thought
+
+── Tweet 4 (266 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-graphql-for-everything-bet-is-2025s-most-expensive-abstraction-why-production-query-profiles-show-rest-json-api-beats-graphql-at-60-lower-server-cpu-for-90-of-mobile-backends/
+
+#Engineering #Tech

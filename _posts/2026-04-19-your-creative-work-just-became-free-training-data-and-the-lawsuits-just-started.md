@@ -3,6 +3,7 @@ order: 18
 layout: default
 title: "Your Creative Work Just Became Free Training Data (And the Lawsuits Just Started)"
 date: 2026-04-19
+difficulty: Intermediate
 ---
 # Your Creative Work Just Became Free Training Data (And the Lawsuits Just Started)
 

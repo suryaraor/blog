@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 'Prompt Engineer' Job Title Is a 2025 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-prompt-engineer-job-title-is-a-2025-resume-poison-why-production-data-shows-domain-adapted-fine-tuning-outranks-prompt-chains-by-3x-in-solving-real-world-business-logic-errors/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (194 chars) ──────────────
+The 'Prompt Engineer' Job Title Is a 2025 Resume Poison — Why Production Data Shows Domain-Adapted Fine-Tuning Outranks Prompt Chains by 3x in Solving Real-World Business Logic Errors
+
+Thread 🧵👇
+
+── Tweet 2 (267 chars) ──────────────
+2/ • The Gold Rush That Wasn't • • Prompt engineering treats the model as a black box you can coax • • Fine-tuning treats the model as a substrate you can reshape • • One optimizes for the model's defaults, the other for your reality • • The Quiet Shift You've Missed
+
+── Tweet 3 (111 chars) ──────────────
+3/ • Why Everyone Missed The Real Battle • • What Production Reality Demands • • So What • • What To Do Tuesday
+
+── Tweet 4 (267 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-prompt-engineer-job-title-is-a-2025-resume-poison-why-production-data-shows-domain-adapted-fine-tuning-outranks-prompt-chains-by-3x-in-solving-real-world-business-logic-errors/
+
+#Engineering #Tech

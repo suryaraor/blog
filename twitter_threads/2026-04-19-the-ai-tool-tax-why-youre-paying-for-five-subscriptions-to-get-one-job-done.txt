@@ -1,0 +1,36 @@
+Twitter/X Thread Draft — The AI Tool Tax: Why You're Paying for Five Subscriptions to Get One Job Done
+============================================================
+Date: 2026-04-19
+URL:  https://suryaraor.github.io/blog/2026/04/19/the-ai-tool-tax-why-youre-paying-for-five-subscriptions-to-get-one-job-done/
+Tweets: 8
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (88 chars) ──────────────
+The AI Tool Tax: Why You're Paying for Five Subscriptions to Get One Job Done
+
+Thread 🧵👇
+
+── Tweet 2 (200 chars) ──────────────
+2/ • Why Did One Tool Become Seventeen? • • The Hidden Cost Nobody's Measuring • • Claude Pro: $20/month • • Claude API (usage): $40-80/month • • ChatGPT Plus: $20/month • • Gemini Advanced: $20/month
+
+── Tweet 3 (106 chars) ──────────────
+3/ • Specialized tools (Perplexity, Mistral, Cursor, Midjourney): $120-180/month • • Total: $220-320/month
+
+── Tweet 4 (271 chars) ──────────────
+4/ • Context switching tax: Every time you copy a prompt from one interface to another, you lose momentum. Research shows context switching costs 23 minutes of productivity per switch. Three tools = 69 minutes of lost productivity daily. That's 57 hours per quarter just…
+
+── Tweet 5 (183 chars) ──────────────
+5/ • Decision paralysis: "Should I use Claude for this or ChatGPT?" Decision-making overhead adds another 30-40 minutes per day for experienced users evaluating which tool is "right."
+
+── Tweet 6 (229 chars) ──────────────
+6/ • Integration bankruptcy: You build a workflow around Claude's API, then Anthropic changes their policy. You rebuild around OpenAI. Then they change pricing. By the time you've rebuilt twice, you've lost weeks of productivity.
+
+── Tweet 7 (227 chars) ──────────────
+7/ • Feature fragmentation: Claude excels at long context. ChatGPT excels at speed. Gemini excels at multimodal. You end up learning 17 different interfaces for marginal feature differences instead of mastering one tool deeply.
+
+── Tweet 8 (163 chars) ──────────────
+8/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/19/the-ai-tool-tax-why-youre-paying-for-five-subscriptions-to-get-one-job-done/
+
+#Engineering #Tech

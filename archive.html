@@ -1,0 +1,32 @@
+---
+layout: default
+title: Archive
+---
+<div class="archive-page">
+    <h1 class="archive-page-title">Archive</h1>
+
+    {% assign posts_by_year_month = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+
+    {% for group in posts_by_year_month %}
+    {% assign display_label = group.name | split: "-" %}
+    {% assign year = display_label[0] %}
+    {% assign month_num = display_label[1] %}
+    {% assign month_names = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+    {% assign month_idx = month_num | minus: 1 %}
+    {% assign month_name = month_names[month_idx] %}
+
+    <section class="archive-month">
+        <h2 class="archive-month-heading">{{ month_name }} {{ year }} <span class="archive-count">{{ group.items.size }}</span></h2>
+        <ul class="archive-list">
+            {% for post in group.items %}
+            {% unless post.robots contains "noindex" %}
+            <li class="archive-item">
+                <a class="archive-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <span class="archive-meta">{{ post.date | date: "%b %d" }} · {{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min</span>
+            </li>
+            {% endunless %}
+            {% endfor %}
+        </ul>
+    </section>
+    {% endfor %}
+</div>

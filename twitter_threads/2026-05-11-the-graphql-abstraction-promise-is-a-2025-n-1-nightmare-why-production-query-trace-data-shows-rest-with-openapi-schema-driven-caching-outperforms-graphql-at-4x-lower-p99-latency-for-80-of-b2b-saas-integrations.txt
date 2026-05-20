@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The GraphQL Abstraction Promise Is a 2025 N+1 Nightmare — Why Production Query Trace Data Shows REST with OpenAPI Schema-Driven Caching Outperforms GraphQL at 4x Lower P99 Latency for 80% of B2B SaaS Integrations
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-graphql-abstraction-promise-is-a-2025-n-1-nightmare-why-production-query-trace-data-shows-rest-with-openapi-schema-driven-caching-outperforms-graphql-at-4x-lower-p99-latency-for-80-of-b2b-saas-integrations/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (223 chars) ──────────────
+The GraphQL Abstraction Promise Is a 2025 N+1 Nightmare — Why Production Query Trace Data Shows REST with OpenAPI Schema-Driven Caching Outperforms GraphQL at 4x Lower P99 Latency for 80% of B2B SaaS Integrations
+
+Thread 🧵👇
+
+── Tweet 2 (243 chars) ──────────────
+2/ • Section 1: The Big Lie We All Bought • • The promise: Fewer network calls. • • The reality: More database queries, each one a potential latency spike. • • Section 2: The Market’s Silent Pivot • • Section 3: The Industry’s Costly Oversight
+
+── Tweet 3 (68 chars) ──────────────
+3/ • Section 4: The Pragmatic Way Forward • • So What • • Conclusion
+
+── Tweet 4 (269 chars) ──────────────
+4/ Full post → https://suryaraor.github.io/blog/2026/05/11/the-graphql-abstraction-promise-is-a-2025-n-1-nightmare-why-production-query-trace-data-shows-rest-with-openapi-schema-driven-caching-outperforms-graphql-at-4x-lower-p99-latency-for-80-of-b2b-saas-integrations/

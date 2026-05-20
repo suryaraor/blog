@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The “Serverless Revival” Is a 2025 Cache-Crust Trap
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-serverless-revival-is-a-2025-cache-crust-trap/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (62 chars) ──────────────
+The “Serverless Revival” Is a 2025 Cache-Crust Trap
+
+Thread 🧵👇
+
+── Tweet 2 (199 chars) ──────────────
+2/ • The Cheap Illusion • • The Actual Bill Reveals Everything • • A single t3.micro in us-east-1 costs roughly $7-8/month. • • A small ElastiCache cluster, even the cheapest, starts at $15-20/month.
+
+── Tweet 3 (248 chars) ──────────────
+3/ • Lambda invocations for a low-traffic app (100k requests/day) might cost $1-2/month in compute. • • Add Data Transfer, CloudWatch, API Gateway, and NAT Gateway—your “serverless” setup often hits $40-60/month. • • The Blind Spot Everyone Ignores
+
+── Tweet 4 (62 chars) ──────────────
+4/ • Forward: Simplify or Suffer • • So What? • • The Takeaway
+
+── Tweet 5 (137 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-serverless-revival-is-a-2025-cache-crust-trap/
+
+#Engineering #Tech

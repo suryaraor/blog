@@ -1,0 +1,33 @@
+Twitter/X Thread Draft — The \"Move Fast and Break Things\" Reboot Is a 2025 Technical Debt Accelerator
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-move-fast-and-break-things-reboot-is-a-2025-technical-debt-accelerator/
+Tweets: 7
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (89 chars) ──────────────
+The \"Move Fast and Break Things\" Reboot Is a 2025 Technical Debt Accelerator
+
+Thread 🧵👇
+
+── Tweet 2 (201 chars) ──────────────
+2/ • Hook (150 words) • • Section 1: Speed Was Never the Enemy (220 words) • • Growth-stage startups that enforce a minimum 30-minute code review per pull request see 4x fewer post-merge critical bugs.
+
+── Tweet 3 (235 chars) ──────────────
+3/ • The average developer spends 18 minutes fixing a bug caught in review vs. 2.3 hours fixing the exact same bug after merge. • • Teams that treat code review as optional double their mean time to recovery (MTTR) within three months.
+
+── Tweet 4 (258 chars) ──────────────
+4/ • Section 2: The Debt Trap Nobody Admits (230 words) • • Section 3: The Industry's Blind Spot (220 words) • • Section 4: What Speed Actually Requires (220 words) • • Mandatory async reviews for any PR touching core infrastructure, regardless of team size.
+
+── Tweet 5 (212 chars) ──────────────
+5/ • Review scorecards that track not just whether review happened, but whether bugs were caught pre-merge. • • Capacity for rework baked into sprint planning—not as a punishment, but as a feature of the process.
+
+── Tweet 6 (88 chars) ──────────────
+6/ • Incident forensics as input to the product roadmap, not just the engineering retro.
+
+── Tweet 7 (162 chars) ──────────────
+7/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-move-fast-and-break-things-reboot-is-a-2025-technical-debt-accelerator/
+
+#Engineering #Tech

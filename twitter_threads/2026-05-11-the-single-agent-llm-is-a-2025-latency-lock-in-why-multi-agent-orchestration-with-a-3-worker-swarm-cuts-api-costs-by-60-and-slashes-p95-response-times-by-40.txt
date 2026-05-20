@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “Single-Agent” LLM Is a 2025 Latency Lock-In — Why Multi-Agent Orchestration with a 3-Worker Swarm Cuts API Costs by 60% and Slashes p95 Response Times by 40%
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-single-agent-llm-is-a-2025-latency-lock-in-why-multi-agent-orchestration-with-a-3-worker-swarm-cuts-api-costs-by-60-and-slashes-p95-response-times-by-40/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (173 chars) ──────────────
+The “Single-Agent” LLM Is a 2025 Latency Lock-In — Why Multi-Agent Orchestration with a 3-Worker Swarm Cuts API Costs by 60% and Slashes p95 Response Times by 40%
+
+Thread 🧵👇
+
+── Tweet 2 (273 chars) ──────────────
+2/ • The Bigger, the Better… Right? • • The Hidden Cost of “Simple” • • The Blind Spot We All Share • • Your New Architecture, Starting Tomorrow • • Planner Agent: Takes the user’s complex request and breaks it into 2-3 atomic tasks. It’s the project manager, not the doer.
+
+── Tweet 3 (213 chars) ──────────────
+3/ • Worker Agents (2-3): Each one handles one task. Small prompts. Fast responses. Cheap tokens. • • Aggregator Agent (optional): Reassembles the outputs into a coherent final response. • • So What • • Conclusion
+
+── Tweet 4 (244 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-single-agent-llm-is-a-2025-latency-lock-in-why-multi-agent-orchestration-with-a-3-worker-swarm-cuts-api-costs-by-60-and-slashes-p95-response-times-by-40/
+
+#Engineering #Tech

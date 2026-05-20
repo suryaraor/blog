@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The Performance Debt Trap — Why Your “Fast” Code Is Slowing Down Your Whole Engineering Org
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/the-performance-debt-trap-why-your-fast-code-is-slowing-down-your-whole-engineering-org/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (102 chars) ──────────────
+The Performance Debt Trap — Why Your “Fast” Code Is Slowing Down Your Whole Engineering Org
+
+Thread 🧵👇
+
+── Tweet 2 (201 chars) ──────────────
+2/ • The Speed That Kills Velocity • • The Hidden Cost of Every Optimization • • The Blind Spot in Engineering Culture • • The Measurable Future of Sustainable Speed • • So What? • • The Real Challenge
+
+── Tweet 3 (175 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/the-performance-debt-trap-why-your-fast-code-is-slowing-down-your-whole-engineering-org/
+
+#Engineering #Tech

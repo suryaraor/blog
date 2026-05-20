@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The 'Junior-Doom' Hiring Panic Is Wrong — Here's the Data on Why Senior-Only Teams Ship Slower
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-junior-doom-hiring-panic-is-wrong-heres-the-data-on-why-senior-only-teams-ship-slower/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (105 chars) ──────────────
+The 'Junior-Doom' Hiring Panic Is Wrong — Here's the Data on Why Senior-Only Teams Ship Slower
+
+Thread 🧵👇
+
+── Tweet 2 (244 chars) ──────────────
+2/ • The Senior Mirage • • The Hidden Cost of Experience • • Why Everyone Misses This • • Survivorship bias: When a senior-only team ships fast, it's because they're good. When they ship slow, it's "complexity of the project." Excuses are easy.
+
+── Tweet 3 (138 chars) ──────────────
+3/ • Recruiter metrics: It's easier to measure years of experience than actual output. Juniors look "risky" on paper. Seniors look "safe."
+
+── Tweet 4 (244 chars) ──────────────
+4/ • Ego protection: No senior wants to admit that a junior could ever help them be faster. It threatens the very hierarchy they've built their career on. • • What the Future Holds • • Juniors ask "why" questions that force seniors to simplify.
+
+── Tweet 5 (164 chars) ──────────────
+5/ • Seniors teach juniors, which forces them to articulate their reasoning. • • The friction creates clarity. And clarity creates speed. • • So What • • Conclusion
+
+── Tweet 6 (177 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-junior-doom-hiring-panic-is-wrong-heres-the-data-on-why-senior-only-teams-ship-slower/
+
+#Engineering #Tech

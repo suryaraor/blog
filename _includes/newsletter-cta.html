@@ -1,0 +1,50 @@
+<section class="newsletter-cta" aria-label="Newsletter signup">
+    <div class="newsletter-cta-inner">
+        <p class="newsletter-cta-icon">&#128139;</p>
+        <div class="newsletter-cta-text">
+            <h2 class="newsletter-cta-title">One essay every week or two. Worth it.</h2>
+            <p class="newsletter-cta-desc">No-nonsense takes on distributed systems, AI tooling, and the hidden costs of engineering "best practices" — straight to your inbox.</p>
+            <ul class="newsletter-benefits">
+                <li>No hype, no listicles</li>
+                <li>Production-tested insights</li>
+                <li>Unsubscribe any time</li>
+            </ul>
+        </div>
+        <form class="newsletter-form"
+              action="https://buttondown.email/api/emails/embed-subscribe/suryarao"
+              method="post"
+              target="popupwindow"
+              onsubmit="handleNewsletterSubmit(event, this)">
+            <input type="hidden" value="1" name="embed">
+            <div class="newsletter-form-row">
+                <label for="newsletter-email" class="sr-only">Email address</label>
+                <input class="newsletter-input" id="newsletter-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email">
+                <button class="newsletter-submit" type="submit">Subscribe &rarr;</button>
+            </div>
+            <p class="newsletter-disclaimer">No spam. Unsubscribe any time.</p>
+        </form>
+    </div>
+</section>
+<script>
+(function () {
+  var NEWSLETTER_API_URL = {{ site.comments_api_url | jsonify }};
+
+  function handleNewsletterSubmit(event, form) {
+    window.open('https://buttondown.email/suryarao', 'popupwindow');
+    var email = (form.querySelector('input[name="email"]') || {}).value || '';
+    if (email && NEWSLETTER_API_URL) {
+      fetch(NEWSLETTER_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'addNewsletterSubscriber',
+          email: email,
+          source_page: window.location.href
+        })
+      }).catch(function () {});
+    }
+  }
+
+  window.handleNewsletterSubmit = handleNewsletterSubmit;
+})();
+</script>

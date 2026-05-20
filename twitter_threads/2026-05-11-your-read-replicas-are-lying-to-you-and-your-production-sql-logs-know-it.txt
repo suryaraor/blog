@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — Your Read Replicas Are Lying to You (And Your Production SQL Logs Know It)
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/your-read-replicas-are-lying-to-you-and-your-production-sql-logs-know-it/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (85 chars) ──────────────
+Your Read Replicas Are Lying to You (And Your Production SQL Logs Know It)
+
+Thread 🧵👇
+
+── Tweet 2 (190 chars) ──────────────
+2/ • The Replica Mirage • • Four Layers of Unnecessary Pain • • Replication lag – Even with synchronous replication, your replica is never truly current. Every read is a gamble on staleness.
+
+── Tweet 3 (150 chars) ──────────────
+3/ • Cross-region sync cost – Moving data between regions isn’t free. It’s a bandwidth and time tax that accumulates exponentially with more replicas.
+
+── Tweet 4 (269 chars) ──────────────
+4/ • Consistency overhead – Most SaaS apps don’t need strict consistency for every read, but the architecture forces it anyway. • • Instance resource waste – Your replicas sit idle 70% of the time, burning money while the primary still takes the brunt of write traffic.
+
+── Tweet 5 (119 chars) ──────────────
+5/ • The Industry’s Favorite Blind Spot • • What the Next Twelve Months Demand • • So What? • • The Real Call to Action
+
+── Tweet 6 (160 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/your-read-replicas-are-lying-to-you-and-your-production-sql-logs-know-it/
+
+#Engineering #Tech

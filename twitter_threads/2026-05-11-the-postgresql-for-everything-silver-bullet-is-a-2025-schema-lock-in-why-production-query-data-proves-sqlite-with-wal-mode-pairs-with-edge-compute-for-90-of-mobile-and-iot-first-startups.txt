@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “PostgreSQL for Everything” Silver Bullet Is a 2025 Schema Lock-In — Why Production Query Data Proves SQLite with WAL Mode Pairs with Edge Compute for 90% of Mobile- and IoT-First Startups
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-postgresql-for-everything-silver-bullet-is-a-2025-schema-lock-in-why-production-query-data-proves-sqlite-with-wal-mode-pairs-with-edge-compute-for-90-of-mobile-and-iot-first-startups/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (203 chars) ──────────────
+The “PostgreSQL for Everything” Silver Bullet Is a 2025 Schema Lock-In — Why Production Query Data Proves SQLite with WAL Mode Pairs with Edge Compute for 90% of Mobile- and IoT-First Startups
+
+Thread 🧵👇
+
+── Tweet 2 (215 chars) ──────────────
+2/ • The Surface-Level Seduction • • The Underground Reality • • The Industry Blind Spot • • What This Means for Your Architecture • • Local-first storage: SQLite with WAL mode on every device — zero latency writes.
+
+── Tweet 3 (213 chars) ──────────────
+3/ • Edge compute nodes: Sync brokers that handle conflict resolution and batch replication. • • Central Postgres: Only for cross-user analytics and billing — not for every read. • • So What? • • The Final Thought
+
+── Tweet 4 (274 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-postgresql-for-everything-silver-bullet-is-a-2025-schema-lock-in-why-production-query-data-proves-sqlite-with-wal-mode-pairs-with-edge-compute-for-90-of-mobile-and-iot-first-startups/
+
+#Engineering #Tech

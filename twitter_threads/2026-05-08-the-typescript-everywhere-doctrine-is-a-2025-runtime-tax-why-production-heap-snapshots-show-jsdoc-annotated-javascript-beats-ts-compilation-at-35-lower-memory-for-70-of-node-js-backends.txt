@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 'TypeScript Everywhere' Doctrine Is a 2025 Runtime Tax — Why Production Heap Snapshots Show JSDoc-Annotated JavaScript Beats TS Compilation at 35% Lower Memory for 70% of Node.js Backends
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-typescript-everywhere-doctrine-is-a-2025-runtime-tax-why-production-heap-snapshots-show-jsdoc-annotated-javascript-beats-ts-compilation-at-35-lower-memory-for-70-of-node-js-backends/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (202 chars) ──────────────
+The 'TypeScript Everywhere' Doctrine Is a 2025 Runtime Tax — Why Production Heap Snapshots Show JSDoc-Annotated JavaScript Beats TS Compilation at 35% Lower Memory for 70% of Node.js Backends
+
+Thread 🧵👇
+
+── Tweet 2 (254 chars) ──────────────
+2/ • The Type Tax Nobody Talks About • • The Unspoken Reversal • • The Cargo Cult of Compilation • • The Post-TypeScript Architecture • • Write JavaScript with JSDoc annotations for type information • • Use tsc —noEmit for type checking in CI and locally
+
+── Tweet 3 (153 chars) ──────────────
+3/ • Deploy the raw JavaScript to Node.js • • Profit from lower memory, faster deploys, and simpler toolchains • • So What • • The Pragmatic Path Forward
+
+── Tweet 4 (273 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-typescript-everywhere-doctrine-is-a-2025-runtime-tax-why-production-heap-snapshots-show-jsdoc-annotated-javascript-beats-ts-compilation-at-35-lower-memory-for-70-of-node-js-backends/
+
+#Engineering #Tech

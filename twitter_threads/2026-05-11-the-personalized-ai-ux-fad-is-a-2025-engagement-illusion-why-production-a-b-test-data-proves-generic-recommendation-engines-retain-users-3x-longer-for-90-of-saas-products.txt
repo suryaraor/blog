@@ -1,0 +1,33 @@
+Twitter/X Thread Draft — The “Personalized AI” UX Fad Is a 2025 Engagement Illusion — Why Production A/B Test Data Proves Generic Recommendation Engines Retain Users 3x Longer for 90% of SaaS Products
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-personalized-ai-ux-fad-is-a-2025-engagement-illusion-why-production-a-b-test-data-proves-generic-recommendation-engines-retain-users-3x-longer-for-90-of-saas-products/
+Tweets: 7
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (186 chars) ──────────────
+The “Personalized AI” UX Fad Is a 2025 Engagement Illusion — Why Production A/B Test Data Proves Generic Recommendation Engines Retain Users 3x Longer for 90% of SaaS Products
+
+Thread 🧵👇
+
+── Tweet 2 (102 chars) ──────────────
+2/ • The Personalization Mirage • • The Generic Engine Advantage • • The Blind Spot Nobody Talks About
+
+── Tweet 3 (254 chars) ──────────────
+3/ • The novelty trap. Personalized AI is fun to build. Engineers love watching models learn. VCs love hearing about “deep personalization.” Nobody wants to admit that the fancy feature you spent six months building is outperformed by a list of “Top 10.”
+
+── Tweet 4 (274 chars) ──────────────
+4/ • The ego problem. Product teams have invested their identities in personalization. Admitting that generic works better feels like admitting you wasted resources. So teams cherry-pick short-term metrics (click-through rates on day one) while ignoring long-term retention.
+
+── Tweet 5 (278 chars) ──────────────
+5/ • The data paradox. To make personalization good, you need lots of user data. But to get lots of user data, users must engage. But users don’t engage because the personalization is bad. It’s a chicken-and-egg problem that generic engines bypass entirely — they start working…
+
+── Tweet 6 (37 chars) ──────────────
+6/ • What Actually Works • • So What?
+
+── Tweet 7 (258 chars) ──────────────
+7/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-personalized-ai-ux-fad-is-a-2025-engagement-illusion-why-production-a-b-test-data-proves-generic-recommendation-engines-retain-users-3x-longer-for-90-of-saas-products/
+
+#Engineering #Tech

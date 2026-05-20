@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — They Tried to Real-Time. It Just Backfired.
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/they-tried-to-real-time-it-just-backfired/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (54 chars) ──────────────
+They Tried to Real-Time. It Just Backfired.
+
+Thread 🧵👇
+
+── Tweet 2 (145 chars) ──────────────
+2/ • Recency bias is a feature, not a bug. When you see a real-time dip, you assume it's the start of a trend. It's usually just random variance.
+
+── Tweet 3 (167 chars) ──────────────
+3/ • Decision fatigue is real. Every update asks your brain: "Should I do something?" Most of the time, the answer is no. But your brain still burns glucose answering.
+
+── Tweet 4 (256 chars) ──────────────
+4/ • Controls get inverted. The tool you built to reduce uncertainty actually increases it. You have more information, but less understanding. • • Default views that update hourly, not every second • • Alerts that suppress during volatility, not amplify it
+
+── Tweet 5 (56 chars) ──────────────
+5/ • Dashboards designed to be glanced at, not stared at
+
+── Tweet 6 (129 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/they-tried-to-real-time-it-just-backfired/
+
+#Engineering #Tech

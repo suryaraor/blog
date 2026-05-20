@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — **Edge AI and Custom Silicon Design: Unlocking Real-Time Intelligence at the Hardware Level**
+============================================================
+Date: 2025-10-24
+URL:  https://suryaraor.github.io/blog/2025/10/24/edge-ai-and-custom-silicon-design-unlocking-real-time-intelligence-at-the-hardwa-1011/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (100 chars) ──────────────
+Edge AI and Custom Silicon Design: Unlocking Real-Time Intelligence at the Hardware Level
+
+Thread 🧵👇
+
+── Tweet 2 (251 chars) ──────────────
+2/ • The Context: Why Edge AI Demands Custom Silicon • • The need for real-time decisions (e.g., immediate hazard detection in self-driving cars) • • Reduction in latency and network dependencies • • Enhanced privacy and security by keeping data local
+
+── Tweet 3 (197 chars) ──────────────
+3/ • Lower operational costs by minimizing cloud bandwidth use • • The Custom Silicon Advantage • • Optimizes compute units and memory hierarchies for AI algorithms, eliminating wasteful operations
+
+── Tweet 4 (241 chars) ──────────────
+4/ • Incorporates hardware accelerators tailored to neural network primitives like matrix multiplies, convolutions, and quantized operations • • Improves energy efficiency, critical for battery-powered edge devices (e.g., sensors, wearables)
+
+── Tweet 5 (254 chars) ──────────────
+5/ • Enables low-latency local processing, vital for safety-critical applications • • Provides greater security and IP protection by embedding proprietary algorithms at the hardware level • • Leadership and Team Impact: Navigating Custom Silicon Projects
+
+── Tweet 6 (160 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2025/10/24/edge-ai-and-custom-silicon-design-unlocking-real-time-intelligence-at-the-hardwa-1011/
+
+#tech

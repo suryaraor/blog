@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The \"Rust for Everything\" Migration Is a 2025 Velocity Killer — Why Production Benchmarks Show Zig Beats Rust at 4x Development Speed for Systems-Level Code
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-rust-for-everything-migration-is-a-2025-velocity-killer-why-production-benchmarks-show-zig-beats-rust-at-4x-development-speed-for-systems-level-code/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (169 chars) ──────────────
+The \"Rust for Everything\" Migration Is a 2025 Velocity Killer — Why Production Benchmarks Show Zig Beats Rust at 4x Development Speed for Systems-Level Code
+
+Thread 🧵👇
+
+── Tweet 2 (149 chars) ──────────────
+2/ • The Safety Mirage • • The Wait, Actually It's Worse • • The Blind Spot Nobody Discusses • • Where We Go From Here • • So What? • • The Next Step
+
+── Tweet 3 (240 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-rust-for-everything-migration-is-a-2025-velocity-killer-why-production-benchmarks-show-zig-beats-rust-at-4x-development-speed-for-systems-level-code/
+
+#Engineering #Tech

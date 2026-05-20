@@ -3,6 +3,7 @@ var COMMENTS_CONFIG = {
   commentsSheetName: 'comments',
   likesSheetName: 'likes',
   summarySheetName: 'summary',
+  newsletterSheetName: 'newsletter',
   likeSaltProperty: 'LIKES_SALT',
   maxCommentsPerWindowPerVisitor: 3,
   rateLimitWindowMinutes: 10,
@@ -15,7 +16,8 @@ var COMMENTS_CONFIG = {
 var COMMENTS_HEADERS = {
   comments: ['id', 'post_id', 'page_url', 'name', 'website', 'comment', 'status', 'created_at', 'ip_hash', 'user_agent'],
   likes: ['id', 'post_id', 'page_url', 'visitor_id', 'created_at'],
-  summary: ['post_id', 'likes_count', 'approved_comments_count', 'updated_at']
+  summary: ['post_id', 'likes_count', 'approved_comments_count', 'updated_at'],
+  newsletter: ['email', 'subscribed_at', 'source_page']
 };
 
 function doGet(e) {
@@ -62,6 +64,10 @@ function doPost(e) {
 
     if (action === 'addLike') {
       return jsonOutput(addLike(payload));
+    }
+
+    if (action === 'addNewsletterSubscriber') {
+      return jsonOutput(addNewsletterSubscriber(payload));
     }
 
     return jsonOutput({
@@ -258,6 +264,41 @@ function addLike(payload) {
   } finally {
     lock.releaseLock();
   }
+}
+
+function addNewsletterSubscriber(payload) {
+  var lock = LockService.getScriptLock();
+  lock.waitLock(30000);
+
+  try {
+    var email = sanitizeInput(payload.email, 320, false).toLowerCase();
+    var sourcePage = sanitizeInput(payload.source_page, 500, false);
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      throw new Error('Invalid email address.');
+    }
+
+    var sheet = getNewsletterSheet();
+    var rows = readSheetRows(sheet);
+    var alreadySubscribed = rows.some(function (row) {
+      return String(row.email || '').toLowerCase().trim() === email;
+    });
+
+    if (!alreadySubscribed) {
+      sheet.appendRow([email, new Date(), sourcePage]);
+    }
+
+    return {
+      ok: true,
+      message: alreadySubscribed ? 'Already subscribed.' : 'Subscribed successfully.'
+    };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function getNewsletterSheet() {
+  return getOrCreateSheet(COMMENTS_CONFIG.newsletterSheetName, COMMENTS_HEADERS.newsletter);
 }
 
 function sanitizeInput(value, maxLength, allowNewlines) {

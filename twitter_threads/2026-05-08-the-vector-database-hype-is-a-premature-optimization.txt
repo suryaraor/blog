@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The Vector Database Hype Is a Premature Optimization
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-vector-database-hype-is-a-premature-optimization/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (63 chars) ──────────────
+The Vector Database Hype Is a Premature Optimization
+
+Thread 🧵👇
+
+── Tweet 2 (204 chars) ──────────────
+2/ • The Assumption That Costs You Millions • • The Market Is Already Voting • • The Blind Spot Everyone Ignores • • What Comes Next • • If you have fewer than 10 million vectors, you don't need Pinecone.
+
+── Tweet 3 (189 chars) ──────────────
+3/ • If you're not sharding across dozens of nodes, you don't need a vector database. • • If you value your sanity and your runway, you should start simple. • • So What? • • The Real Choice
+
+── Tweet 4 (140 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-vector-database-hype-is-a-premature-optimization/
+
+#Engineering #Tech

@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The \"Rust for Everything\" Shift Is a 2025 Cognitive Bottleneck—Why Production CPU Profiles Show Zig Outperforms Rust at 30% Less Memory for 70% of Systems-Level Services
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-rust-for-everything-shift-is-a-2025-cognitive-bottleneck-why-production-cpu-profiles-show-zig-outperforms-rust-at-30-less-memory-for-70-of-systems-level-services/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (182 chars) ──────────────
+The \"Rust for Everything\" Shift Is a 2025 Cognitive Bottleneck—Why Production CPU Profiles Show Zig Outperforms Rust at 30% Less Memory for 70% of Systems-Level Services
+
+Thread 🧵👇
+
+── Tweet 2 (270 chars) ──────────────
+2/ • The Rust Religion • • The Quiet Switchers • • Why Everyone Misses This • • Where We're Headed • • Smaller binaries. Zig produces executables that are typically half the size of Rust equivalents. • • Faster compile times. No monomorphization tax. No macro expansion.
+
+── Tweet 3 (266 chars) ──────────────
+3/ • Simpler cross-compilation. Zig ships with a C toolchain. One command, any target. • • Predictable performance. No hidden allocations. No surprise LLVM optimizations. • • Better C interop. Call C libraries directly. No FFI boilerplate. • • So What • • Conclusion
+
+── Tweet 4 (253 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-rust-for-everything-shift-is-a-2025-cognitive-bottleneck-why-production-cpu-profiles-show-zig-outperforms-rust-at-30-less-memory-for-70-of-systems-level-services/
+
+#Engineering #Tech

@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your Senior Engineers Are Hoarding Context — Why the “Bus Factor” Is Actually a Ransom You’re Paying Every Sprint
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/your-senior-engineers-are-hoarding-context-why-the-bus-factor-is-actually-a-ransom-youre-paying-every-sprint/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (124 chars) ──────────────
+Your Senior Engineers Are Hoarding Context — Why the “Bus Factor” Is Actually a Ransom You’re Paying Every Sprint
+
+Thread 🧵👇
+
+── Tweet 2 (265 chars) ──────────────
+2/ • The Invisible Tax on Expertise • • The Hidden Market Inside Your Team • • The Blind Spot Nobody Talks About • • Designing for Distribution • • Mandate written design docs before any significant change — not as a ceremony, but as a forcing function for clarity.
+
+── Tweet 3 (271 chars) ──────────────
+3/ • Rotate on-call responsibilities so every engineer, not just the senior, gains operational context. • • Create “no single owner” rules for critical services — at least two people must be able to explain and modify every piece of production-impacting code. • • So What
+
+── Tweet 4 (35 chars) ──────────────
+4/ • The Only Question That Matters
+
+── Tweet 5 (196 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/your-senior-engineers-are-hoarding-context-why-the-bus-factor-is-actually-a-ransom-youre-paying-every-sprint/
+
+#Engineering #Tech

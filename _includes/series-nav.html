@@ -1,0 +1,36 @@
+{% if page.series %}
+{% assign series_posts = site.posts | where: "series", page.series | sort: "series_part" %}
+{% assign current_index = 0 %}
+{% for sp in series_posts %}
+    {% if sp.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+    {% endif %}
+{% endfor %}
+{% assign prev_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+{% assign prev_post = series_posts[prev_index] %}
+{% assign next_post = series_posts[next_index] %}
+
+<nav class="series-nav" aria-label="Series navigation">
+    <div class="series-nav-header">
+        <span class="series-nav-label">Part {{ page.series_part }} of {{ series_posts.size }} in</span>
+        <span class="series-nav-name">{{ page.series }}</span>
+    </div>
+    <div class="series-nav-links">
+        {% if current_index > 0 and prev_post %}
+        <a class="series-nav-btn series-nav-btn--prev" href="{{ prev_post.url | relative_url }}">
+            <span class="series-nav-direction">&#8592; Previous</span>
+            <span class="series-nav-title">{{ prev_post.title }}</span>
+        </a>
+        {% else %}
+        <span></span>
+        {% endif %}
+        {% if next_post %}
+        <a class="series-nav-btn series-nav-btn--next" href="{{ next_post.url | relative_url }}">
+            <span class="series-nav-direction">Next &#8594;</span>
+            <span class="series-nav-title">{{ next_post.title }}</span>
+        </a>
+        {% endif %}
+    </div>
+</nav>
+{% endif %}

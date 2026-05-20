@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 10x Engineer Myth Is Crushing Your Startup — Why Math Says Average Teams With Strong Processes Ship Faster
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/the-10x-engineer-myth-is-crushing-your-startup-why-math-says-average-teams-with-strong-processes-ship-faster/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (121 chars) ──────────────
+The 10x Engineer Myth Is Crushing Your Startup — Why Math Says Average Teams With Strong Processes Ship Faster
+
+Thread 🧵👇
+
+── Tweet 2 (258 chars) ──────────────
+2/ • The Genius Trap Everyone Falls For • • The Hidden Cost of Rockstar Engineers • • Why Passion Projects Fool Everyone • • They have clear, documented workflows • • They use standardized tooling across the team • • They run routine code reviews and testing
+
+── Tweet 3 (201 chars) ──────────────
+3/ • They rotate responsibilities to avoid bottlenecks • • They prioritize shipping over perfection • • The New Formula for Startup Speed • • Reading Between the Lines • • Ship the System, Not the Hero
+
+── Tweet 4 (196 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/the-10x-engineer-myth-is-crushing-your-startup-why-math-says-average-teams-with-strong-processes-ship-faster/
+
+#Engineering #Tech

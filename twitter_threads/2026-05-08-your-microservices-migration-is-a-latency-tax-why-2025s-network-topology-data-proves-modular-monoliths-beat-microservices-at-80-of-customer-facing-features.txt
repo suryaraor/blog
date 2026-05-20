@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — Your \"Microservices Migration\" Is a Latency Tax — Why 2025's Network Topology Data Proves Modular Monoliths Beat Microservices at 80% of Customer-Facing Features
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-microservices-migration-is-a-latency-tax-why-2025s-network-topology-data-proves-modular-monoliths-beat-microservices-at-80-of-customer-facing-features/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (174 chars) ──────────────
+Your \"Microservices Migration\" Is a Latency Tax — Why 2025's Network Topology Data Proves Modular Monoliths Beat Microservices at 80% of Customer-Facing Features
+
+Thread 🧵👇
+
+── Tweet 2 (276 chars) ──────────────
+2/ • The Great Deception • • The Market Is Quietly Reversing • • The Comfortable Blind Spot • • You don't need 50 services for a checkout flow. • • You don't need a service mesh for 3 teams. • • You don't need eventual consistency for a user profile. • • The 80% Rule for 2026
+
+── Tweet 3 (49 chars) ──────────────
+3/ • So What • • The Architecture That Fades Away
+
+── Tweet 4 (243 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-microservices-migration-is-a-latency-tax-why-2025s-network-topology-data-proves-modular-monoliths-beat-microservices-at-80-of-customer-facing-features/
+
+#Engineering #Tech

@@ -3,6 +3,7 @@ order: 15
 layout: default
 title: "Why You're Addicted to Your AI Chatbot (And Why Scientists Are Worried)"
 date: 2026-04-19
+difficulty: Intermediate
 ---
 # Why You're Addicted to Your AI Chatbot (And Why Scientists Are Worried)
 

@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 2025 \"Serverless GPU\" Hype Is a Cold-Start Tax — Why Spot Instances on Preemptible VMs Cut Inference Costs by 80% with No Latency Regret for 90% of Batch AI Workloads
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-serverless-gpu-hype-is-a-cold-start-tax-why-spot-instances-on-preemptible-vms-cut-inference-costs-by-80-with-no-latency-regret-for-90-of-batch-ai-workloads/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (183 chars) ──────────────
+The 2025 \"Serverless GPU\" Hype Is a Cold-Start Tax — Why Spot Instances on Preemptible VMs Cut Inference Costs by 80% with No Latency Regret for 90% of Batch AI Workloads
+
+Thread 🧵👇
+
+── Tweet 2 (273 chars) ──────────────
+2/ • The Serverless Mirage • • The Cold-Start Tax • • The Industry Blind Spot • • Batch inference on spot instances: 80% cost savings • • Cold-start penalty for serverless: 2–5x markup • • Real-time workloads that justify serverless: less than 10% of total inference volume
+
+── Tweet 3 (62 chars) ──────────────
+3/ • The Pragmatist’s Playbook • • So What? • • The Hard Truth
+
+── Tweet 4 (252 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-serverless-gpu-hype-is-a-cold-start-tax-why-spot-instances-on-preemptible-vms-cut-inference-costs-by-80-with-no-latency-regret-for-90-of-batch-ai-workloads/
+
+#Engineering #Tech

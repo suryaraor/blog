@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The Unsexy AI Breakthrough Nobody's Talking About
+============================================================
+Date: 2026-04-18
+URL:  https://suryaraor.github.io/blog/2026/04/18/the-unsexy-ai-breakthrough-nobody-is-talking-about/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (60 chars) ──────────────
+The Unsexy AI Breakthrough Nobody's Talking About
+
+Thread 🧵👇
+
+── Tweet 2 (258 chars) ──────────────
+2/ • The Story Nobody's Telling (But Should Be) • • The Compression Paradox • • The Unsexy Mathematics • • The Uncomfortable Realignment • • Your company doesn't actually need GPT-4 to handle most queries. It needs something 10% as big but running instantly.
+
+── Tweet 3 (254 chars) ──────────────
+3/ • Your data center costs are skyrocketing not because you need bigger models, but because you're running inefficient ones. • • Your latency problems aren't about raw computing power. They're about memory bandwidth. • • The Winners and Losers Inversion
+
+── Tweet 4 (98 chars) ──────────────
+4/ • So What? The Career Inflection Point • • The Uncomfortable Question • • The Call to Adventure
+
+── Tweet 5 (138 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/18/the-unsexy-ai-breakthrough-nobody-is-talking-about/
+
+#Engineering #Tech

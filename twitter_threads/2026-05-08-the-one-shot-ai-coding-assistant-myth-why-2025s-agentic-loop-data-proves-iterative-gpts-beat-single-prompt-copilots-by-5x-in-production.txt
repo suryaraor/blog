@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The “One-Shot” AI Coding Assistant Myth — Why 2025’s Agentic Loop Data Proves Iterative GPTs Beat Single-Prompt Copilots by 5x in Production
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-one-shot-ai-coding-assistant-myth-why-2025s-agentic-loop-data-proves-iterative-gpts-beat-single-prompt-copilots-by-5x-in-production/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (151 chars) ──────────────
+The “One-Shot” AI Coding Assistant Myth — Why 2025’s Agentic Loop Data Proves Iterative GPTs Beat Single-Prompt Copilots by 5x in Production
+
+Thread 🧵👇
+
+── Tweet 2 (229 chars) ──────────────
+2/ • They embrace failure. They don’t pretend their first output is perfect. • • They encourage dialogue. They ask clarifying questions instead of guessing. • • They learn from feedback. Each iteration improves the next response.
+
+── Tweet 3 (223 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-one-shot-ai-coding-assistant-myth-why-2025s-agentic-loop-data-proves-iterative-gpts-beat-single-prompt-copilots-by-5x-in-production/
+
+#Engineering #Tech

@@ -3,6 +3,7 @@ order: 30
 layout: default
 title: "They're Silently Failing Your Production AI Right Now (And You Haven't Built Monitoring For It)"
 date: 2026-05-01
+difficulty: Intermediate
 ---
 # They're Silently Failing Your Production AI Right Now (And You Haven't Built Monitoring For It)
 

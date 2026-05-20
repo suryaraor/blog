@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — Why Your Data Lake Is Actually a Liability — The Hidden Costs of Schema-on-Read That Your ML Pipeline Can’t Afford
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/why-your-data-lake-is-actually-a-liability-the-hidden-costs-of-schema-on-read-that-your-ml-pipeline-cant-afford/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (125 chars) ──────────────
+Why Your Data Lake Is Actually a Liability — The Hidden Costs of Schema-on-Read That Your ML Pipeline Can’t Afford
+
+Thread 🧵👇
+
+── Tweet 2 (164 chars) ──────────────
+2/ • The Illusion of Flexibility • • The Hidden Tax You Can’t Ignore • • Why Everyone Misses This • • What the Smart Teams Are Doing • • So What? • • The Final Call
+
+── Tweet 3 (199 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/why-your-data-lake-is-actually-a-liability-the-hidden-costs-of-schema-on-read-that-your-ml-pipeline-cant-afford/
+
+#Engineering #Tech

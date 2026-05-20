@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The \"Linear Ticket\" Cult Is a 2025 Debugging Black Hole
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-linear-ticket-cult-is-a-2025-debugging-black-hole/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (68 chars) ──────────────
+The \"Linear Ticket\" Cult Is a 2025 Debugging Black Hole
+
+Thread 🧵👇
+
+── Tweet 2 (265 chars) ──────────────
+2/ • The Productivity Mirage • • The goal: Reduce cognitive load. • • The truth: Tickets multiply cognitive load via endless context-switching. • • The Hidden Tax of a 3-Tool Workflow • • The Industry’s Favorite Blind Spot • • The Markdown-First Debugging Manifesto
+
+── Tweet 3 (197 chars) ──────────────
+3/ • Symptom & reproduction steps (written by reporter) • • Root cause analysis (written by engineer) • • Fix & tests (linked to PR, no extra ticket) • • So What? • • What If You Tried It Tomorrow?
+
+── Tweet 4 (141 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-linear-ticket-cult-is-a-2025-debugging-black-hole/
+
+#Engineering #Tech

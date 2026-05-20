@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The \"Move Fast & Break Things\" Vintage Is Costing You 300% More in Technical Debt Than Your VCs Realize — Why 2025's Refactoring Data Proves Slow Is the New Accelerator
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-move-fast-break-things-vintage-is-costing-you-300-more-in-technical-debt-than-your-vcs-realize-why-2025s-refactoring-data-proves-slow-is-the-new-accelerator/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (181 chars) ──────────────
+The \"Move Fast & Break Things\" Vintage Is Costing You 300% More in Technical Debt Than Your VCs Realize — Why 2025's Refactoring Data Proves Slow Is the New Accelerator
+
+Thread 🧵👇
+
+── Tweet 2 (221 chars) ──────────────
+2/ • Refactoring isn't a cost center — it's a growth lever. Every hour spent cleaning code unlocks future velocity. • • Hire for discipline, not speed. The best engineer you can hire is the one who says "no" to shortcuts.
+
+── Tweet 3 (118 chars) ──────────────
+3/ • Measure the right things. Stop tracking lines of code written. Start tracking bugs introduced and time-to-revert.
+
+── Tweet 4 (248 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-move-fast-break-things-vintage-is-costing-you-300-more-in-technical-debt-than-your-vcs-realize-why-2025s-refactoring-data-proves-slow-is-the-new-accelerator/
+
+#Engineering #Tech

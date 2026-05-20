@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — Your Code Review Ritual Is a Microservice Catastrophe — Why Synchronous Approvals Are Your Biggest Bottleneck in 2025
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-code-review-ritual-is-a-microservice-catastrophe-why-synchronous-approvals-are-your-biggest-bottleneck-in-2025/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (128 chars) ──────────────
+Your Code Review Ritual Is a Microservice Catastrophe — Why Synchronous Approvals Are Your Biggest Bottleneck in 2025
+
+Thread 🧵👇
+
+── Tweet 2 (139 chars) ──────────────
+2/ • The Myth of the Necessary Gate • • The Queue Is the Real Deploy Gate • • The Ritual Is the Identity • • From Gatekeeping to Guardrails
+
+── Tweet 3 (143 chars) ──────────────
+3/ • Async-first reviews that don't block deployment. Someone can comment on code already in production, with automated rollback as safety net.
+
+── Tweet 4 (160 chars) ──────────────
+4/ • Risk-based triage: critical path changes get priority queues. Internal tooling gets lighter review. Yes, that means different standards for different code.
+
+── Tweet 5 (131 chars) ──────────────
+5/ • AI-assisted pre-screening that handles style and lint automatically, leaving humans only for logic and architecture questions.
+
+── Tweet 6 (203 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-code-review-ritual-is-a-microservice-catastrophe-why-synchronous-approvals-are-your-biggest-bottleneck-in-2025/
+
+#Engineering #Tech

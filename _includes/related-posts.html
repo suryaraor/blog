@@ -1,0 +1,39 @@
+{% assign max_related = 3 %}
+{% assign related = "" | split: "" %}
+
+{% if page.categories.size > 0 %}
+    {% for post in site.posts %}
+        {% if post.url != page.url and post.categories contains page.categories[0] %}
+            {% assign related = related | push: post %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if related.size == 0 %}
+    {% for post in site.posts %}
+        {% if post.url != page.url %}
+            {% assign related = related | push: post %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% assign related_trimmed = related | slice: 0, max_related %}
+
+{% if related_trimmed.size > 0 %}
+<section class="related-posts">
+    <h2 class="related-posts-title">Related Articles</h2>
+    <div class="related-posts-grid">
+        {% for rpost in related_trimmed %}
+        <a class="related-post-card" href="{{ rpost.url | relative_url }}">
+            {% if rpost.image %}
+            <img src="{{ rpost.image | relative_url }}" alt="{{ rpost.title | escape }}" class="related-post-thumb" loading="lazy">
+            {% endif %}
+            <div class="related-post-body">
+                <p class="related-post-title">{{ rpost.title }}</p>
+                <span class="related-post-meta">{{ rpost.date | date: "%b %d, %Y" }} &middot; {{ rpost.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

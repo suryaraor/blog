@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The “Observability” Deluge Is a 2025 Debugging Black Hole
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-observability-deluge-is-a-2025-debugging-black-hole/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (68 chars) ──────────────
+The “Observability” Deluge Is a 2025 Debugging Black Hole
+
+Thread 🧵👇
+
+── Tweet 2 (270 chars) ──────────────
+2/ • Your Alerts Are Lying to You • • The Market Is Selling You a Fire Hose • • We’re Ignoring the One Thing That Works • • You Need to Stop Collecting and Start Thinking • • Kill 80% of your alerts. If a threshold hasn't caught a real incident in six months, delete it.
+
+── Tweet 3 (183 chars) ──────────────
+3/ • Invest in trace sampling that prioritizes outliers. Most vendors sample random traces. Sample the weird ones—the slowest 1%, the ones with errors, the ones that span 15 services.
+
+── Tweet 4 (184 chars) ──────────────
+4/ • Build root-cause runbooks from actual incidents, not vendor templates. Every time you miss a root cause, update your trace analysis workflow. • • So What (80 words) • • Conclusion
+
+── Tweet 5 (143 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-observability-deluge-is-a-2025-debugging-black-hole/
+
+#Engineering #Tech

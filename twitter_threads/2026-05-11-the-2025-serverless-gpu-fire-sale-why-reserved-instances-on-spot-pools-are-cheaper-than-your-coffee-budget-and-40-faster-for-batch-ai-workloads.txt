@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The 2025 \"Serverless GPU\" Fire Sale — Why Reserved Instances on Spot Pools Are Cheaper Than Your Coffee Budget and 40% Faster for Batch AI Workloads
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-serverless-gpu-fire-sale-why-reserved-instances-on-spot-pools-are-cheaper-than-your-coffee-budget-and-40-faster-for-batch-ai-workloads/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (161 chars) ──────────────
+The 2025 \"Serverless GPU\" Fire Sale — Why Reserved Instances on Spot Pools Are Cheaper Than Your Coffee Budget and 40% Faster for Batch AI Workloads
+
+Thread 🧵👇
+
+── Tweet 2 (143 chars) ──────────────
+2/ • On-Demand H100 per hour: $3.96 (US East) • • Reserved Spot Pool per hour: $0.92 • • Performance delta for batch inference: +38% throughput
+
+── Tweet 3 (231 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-serverless-gpu-fire-sale-why-reserved-instances-on-spot-pools-are-cheaper-than-your-coffee-budget-and-40-faster-for-batch-ai-workloads/
+
+#Engineering #Tech

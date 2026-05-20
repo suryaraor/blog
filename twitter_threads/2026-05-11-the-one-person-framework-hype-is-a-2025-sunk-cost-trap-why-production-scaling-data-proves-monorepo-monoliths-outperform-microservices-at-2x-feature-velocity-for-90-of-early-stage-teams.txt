@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The “One-Person Framework” Hype Is a 2025 Sunk-Cost Trap — Why Production Scaling Data Proves Monorepo Monoliths Outperform Microservices at 2x Feature Velocity for 90% of Early-Stage Teams
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-one-person-framework-hype-is-a-2025-sunk-cost-trap-why-production-scaling-data-proves-monorepo-monoliths-outperform-microservices-at-2x-feature-velocity-for-90-of-early-stage-teams/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (200 chars) ──────────────
+The “One-Person Framework” Hype Is a 2025 Sunk-Cost Trap — Why Production Scaling Data Proves Monorepo Monoliths Outperform Microservices at 2x Feature Velocity for 90% of Early-Stage Teams
+
+Thread 🧵👇
+
+── Tweet 2 (202 chars) ──────────────
+2/ • The Great One-Person Lie • • The Monorepo Monolith Is the Real MVP • • Why You’re Still Falling for It • • What the Smart Teams Are Doing Now • • So What Should You Actually Do? • • The Bottom Line
+
+── Tweet 3 (272 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-one-person-framework-hype-is-a-2025-sunk-cost-trap-why-production-scaling-data-proves-monorepo-monoliths-outperform-microservices-at-2x-feature-velocity-for-90-of-early-stage-teams/
+
+#Engineering #Tech

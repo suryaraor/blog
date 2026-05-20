@@ -3,8 +3,8 @@ order: 14
 layout: default
 title: "Why Your College Degree Just Became Obsolete (And Universities Will Never Admit It)"
 date: 2026-04-19
+difficulty: Intermediate
 ---
-
 # Why Your College Degree Just Became Obsolete (And Universities Will Never Admit It)
 
 <figure class="post-featured-image">

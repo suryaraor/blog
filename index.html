@@ -7,58 +7,216 @@ title: "Home"
 {% assign featured_post = sorted_posts.first %}
 
 {% if featured_post %}
-<section class="featured-post">
-  {% if featured_post.image %}
-  <img class="featured-thumb" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" loading="lazy">
-  {% endif %}
-  <p class="featured-label">Latest essay</p>
-  <h1 class="featured-title">
-    <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a>
-  </h1>
+<section class="featured-post" aria-label="Latest essay">
+  <div class="featured-post-inner">
+    <div class="featured-post-text">
+      <span class="featured-label">Latest Essay</span>
+      {% if featured_post.badge == 'editors_pick' %}
+      <span class="quality-badge quality-badge--editors-pick">Editor's Pick</span>
+      {% elsif featured_post.badge == 'featured' %}
+      <span class="quality-badge quality-badge--featured">Featured</span>
+      {% endif %}
+      <h1 class="featured-title">
+        <a href="{{ featured_post.url | relative_url }}">{{ featured_post.title | truncate: 72 }}</a>
+      </h1>
 
-  {% if featured_post.description %}
-    <p class="featured-excerpt">{{ featured_post.description }}</p>
-  {% else %}
-    <p class="featured-excerpt">{{ featured_post.content | strip_html | truncatewords: 42 }}</p>
-  {% endif %}
+      {% if featured_post.description %}
+        <p class="featured-excerpt">{{ featured_post.description | truncate: 140 }}</p>
+      {% else %}
+        <p class="featured-excerpt">{{ featured_post.excerpt | strip_html | strip_newlines | strip | truncatewords: 28 }}</p>
+      {% endif %}
 
-  <div class="featured-meta">
-    <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%B %d, %Y" }}</time>
-    <span>{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
-    {% if featured_post.author %}<span>by {{ featured_post.author }}</span>{% endif %}
+      <div class="featured-meta">
+        <time datetime="{{ featured_post.date | date_to_xmlschema }}">{{ featured_post.date | date: "%b %d, %Y" }}</time>
+        <span aria-hidden="true">&middot;</span>
+        <span class="post-read-time">{{ featured_post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+        {% if featured_post.difficulty %}
+        <span class="difficulty-badge difficulty-badge--{{ featured_post.difficulty | downcase }}">{{ featured_post.difficulty }}</span>
+        {% endif %}
+      </div>
+
+      <a class="featured-cta" href="{{ featured_post.url | relative_url }}">Read this essay &rarr;</a>
+    </div>
+    {% if featured_post.image %}
+    <div class="featured-post-image-wrap">
+      <img class="featured-thumb" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" loading="eager">
+    </div>
+    {% endif %}
   </div>
-
-  <a class="featured-cta" href="{{ featured_post.url | relative_url }}">Read this story</a>
 </section>
 {% endif %}
 
-<section class="post-grid" aria-label="More stories">
-  {% for post in sorted_posts offset:1 %}
-    <article class="post-card">
+<!-- Author bio strip -->
+<section class="homepage-bio" aria-label="About the author">
+  <img src="{{ '/profile.png' | relative_url }}" alt="{{ site.author }}" class="homepage-bio-photo" loading="lazy">
+  <div class="homepage-bio-text">
+    <strong class="homepage-bio-name">{{ site.author }}</strong>
+    <span class="homepage-bio-desc">Writes about the gap between trendy architecture and what shows up in production logs &mdash; distributed systems, AI tooling, and the hidden costs of best practices.</span>
+  </div>
+  <a href="{{ '/about' | relative_url }}" class="homepage-bio-link">About &rarr;</a>
+</section>
+
+{% comment %}Collect categories for filter bar{% endcomment %}
+{% assign all_categories_raw = "" %}
+{% for post in sorted_posts %}
+  {% if post.categories %}
+    {% if post.categories.first %}
+      {% for cat in post.categories %}
+        {% assign all_categories_raw = all_categories_raw | append: cat | append: "||" %}
+      {% endfor %}
+    {% else %}
+      {% assign all_categories_raw = all_categories_raw | append: post.categories | append: "||" %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign category_list = all_categories_raw | split: "||" | uniq | sort %}
+
+{% assign has_categories = false %}
+{% for cat in category_list %}
+  {% if cat != "" %}{% assign has_categories = true %}{% endif %}
+{% endfor %}
+
+<div class="home-section-header">
+  <div class="home-section-heading-row">
+    <h2 class="home-section-heading">All Essays</h2>
+    {% if has_categories %}
+    <div class="category-filter-bar" role="group" aria-label="Filter by topic">
+      <button class="category-filter-btn active" data-category="all">All</button>
+      {% for cat in category_list %}
+        {% if cat != "" %}
+        <button class="category-filter-btn" data-category="{{ cat }}">{{ cat }}</button>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<section class="post-grid" id="post-grid" aria-label="All essays">
+  {% assign grid_posts = sorted_posts | slice: 1, 999 %}
+  {% for post in grid_posts %}
+    {% assign post_cat_raw = "" %}
+    {% if post.categories %}
+      {% if post.categories.first %}
+        {% assign post_cat_raw = post.categories | join: "," %}
+      {% else %}
+        {% assign post_cat_raw = post.categories %}
+      {% endif %}
+    {% endif %}
+    <article class="post-card" data-page="1" data-categories="{{ post_cat_raw }}">
       {% if post.image %}
       <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
       {% endif %}
-      <h2 class="post-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
+      <div class="post-card-body">
+        <div class="post-card-tags">
+          {% if post_cat_raw != "" %}
+          <span class="post-category-tag">{{ post_cat_raw | split: "," | first }}</span>
+          {% endif %}
+          {% if post.badge == 'editors_pick' %}
+          <span class="quality-badge quality-badge--editors-pick">Editor's Pick</span>
+          {% elsif post.badge == 'featured' %}
+          <span class="quality-badge quality-badge--featured">Featured</span>
+          {% endif %}
+        </div>
+        <h2 class="post-title">
+          <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | truncate: 65 }}</a>
+        </h2>
 
-      {% if post.description %}
-        <p class="post-excerpt">{{ post.description }}</p>
-      {% else %}
-        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 26 }}</p>
-      {% endif %}
+        {% if post.description %}
+          <p class="post-excerpt">{{ post.description | truncate: 110 }}</p>
+        {% else %}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | strip | truncatewords: 20 }}</p>
+        {% endif %}
 
-      <div class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-        <span>{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+        <div class="post-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+          <span aria-hidden="true">&middot;</span>
+          <span class="post-read-time">{{ post.content | number_of_words | divided_by: 220 | plus: 1 }} min</span>
+          {% if post.difficulty %}
+          <span class="difficulty-badge difficulty-badge--{{ post.difficulty | downcase }}">{{ post.difficulty }}</span>
+          {% endif %}
+        </div>
       </div>
     </article>
   {% endfor %}
 </section>
 
+<div class="pagination" id="pagination" hidden>
+  <button class="pagination-btn" id="pag-prev" aria-label="Previous page" disabled>&larr; Prev</button>
+  <span class="pagination-info" id="pag-info"></span>
+  <button class="pagination-btn pagination-btn--next" id="pag-next" aria-label="Next page">Next &rarr;</button>
+</div>
+
+{% include newsletter-cta.html %}
+
+<script>
+(function () {
+    var PER_PAGE = 12;
+    var grid = document.getElementById('post-grid');
+    var pagination = document.getElementById('pagination');
+    var prevBtn = document.getElementById('pag-prev');
+    var nextBtn = document.getElementById('pag-next');
+    var info = document.getElementById('pag-info');
+    if (!grid) return;
+    var allCards = Array.prototype.slice.call(grid.querySelectorAll('.post-card'));
+    var visibleCards = allCards.slice();
+    var totalPages = 1;
+    var page = 1;
+
+    var filterBtns = document.querySelectorAll('.category-filter-btn');
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var cat = btn.getAttribute('data-category');
+            if (cat === 'all') {
+                visibleCards = allCards.slice();
+            } else {
+                visibleCards = allCards.filter(function (c) {
+                    var cats = (c.getAttribute('data-categories') || '').toLowerCase();
+                    return cats.indexOf(cat.toLowerCase()) !== -1;
+                });
+            }
+            page = 1;
+            renderCards();
+            grid.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    function renderCards() {
+        totalPages = Math.max(1, Math.ceil(visibleCards.length / PER_PAGE));
+        var start = (page - 1) * PER_PAGE;
+        var end = start + PER_PAGE;
+        allCards.forEach(function (c) { c.hidden = true; });
+        visibleCards.forEach(function (c, i) { c.hidden = (i < start || i >= end); });
+        prevBtn.disabled = page === 1;
+        nextBtn.disabled = page === totalPages;
+
+        if (totalPages <= 1) {
+            pagination.hidden = true;
+        } else {
+            pagination.hidden = false;
+            info.textContent = 'Page ' + page + ' of ' + totalPages;
+            nextBtn.innerHTML = page < totalPages
+                ? 'Next: Page ' + (page + 1) + ' &rarr;'
+                : 'Next &rarr;';
+        }
+    }
+
+    prevBtn.addEventListener('click', function () {
+        if (page > 1) { page--; renderCards(); window.scrollTo({ top: grid.offsetTop - 80, behavior: 'smooth' }); }
+    });
+    nextBtn.addEventListener('click', function () {
+        if (page < totalPages) { page++; renderCards(); window.scrollTo({ top: grid.offsetTop - 80, behavior: 'smooth' }); }
+    });
+
+    renderCards();
+})();
+</script>
+
 {% if site.posts.size == 0 %}
 <div class="no-posts">
   <h2>Welcome to {{ site.title }}</h2>
-  <p>No posts yet, but check back soon!</p>
+  <p>No posts yet &mdash; check back soon.</p>
 </div>
 {% endif %}

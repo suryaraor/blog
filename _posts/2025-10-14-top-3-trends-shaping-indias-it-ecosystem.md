@@ -3,13 +3,13 @@ order: 5
 layout: default
 title: "Top 3 Trends Shaping India's IT Ecosystem"
 date: 2025-10-14 00:00:01
-categories: [technology, india, trends]
+categories: [Technology, India, Trends]
 tags: [AI, digital-transformation, indigenous-tech, Arattai, Zoho, startup-ecosystem]
 author: Surya Rao
 excerpt: "Three transformative trends are reshaping India's technology landscape in 2025: indigenous platform adoption through Arattai's explosive growth, a $267B digital transformation market expansion, and AI adoption leadership where India outpaces global benchmarks."
 image: /assets/images/blog/india-it-trends-2025.jpg
+difficulty: Intermediate
 ---
-
 <figure class="post-featured-image">
   <img src="/assets/images/blog/2025-10-14-top-3-trends-shaping-indias-it-ecosystem-featured.webp" alt="Top 3 Trends Shaping India's IT Ecosystem" width="1280" height="720">
 </figure>

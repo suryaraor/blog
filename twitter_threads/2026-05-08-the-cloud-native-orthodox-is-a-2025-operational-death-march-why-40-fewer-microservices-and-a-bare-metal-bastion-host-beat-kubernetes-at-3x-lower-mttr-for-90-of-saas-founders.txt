@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The 'Cloud-Native' Orthodox Is a 2025 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-cloud-native-orthodox-is-a-2025-operational-death-march-why-40-fewer-microservices-and-a-bare-metal-bastion-host-beat-kubernetes-at-3x-lower-mttr-for-90-of-saas-founders/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (190 chars) ──────────────
+The 'Cloud-Native' Orthodox Is a 2025 Operational Death March — Why 40% Fewer Microservices and a Bare-Metal Bastion Host Beat Kubernetes at 3x Lower MTTR for 90% of SaaS Founders
+
+Thread 🧵👇
+
+── Tweet 2 (198 chars) ──────────────
+2/ • The Big Lie of "Scale-Ready" • • What Silicon Valley Won't Admit • • The Emotional Trap You're In • • What Actually Works in 2025 • • Fewer services: Target 4-8 microservices maximum, not 40-80
+
+── Tweet 3 (257 chars) ──────────────
+3/ • Simpler infrastructure: Bare-metal or single-VM solutions that you can debug without a PhD • • Bastion host models: A single entry point you control, not a mesh of proxies • • Monolith-first thinking: Start whole, extract only when absolutely necessary
+
+── Tweet 4 (56 chars) ──────────────
+4/ • So Why Should You Care? • • The Real Call to Action
+
+── Tweet 5 (261 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-cloud-native-orthodox-is-a-2025-operational-death-march-why-40-fewer-microservices-and-a-bare-metal-bastion-host-beat-kubernetes-at-3x-lower-mttr-for-90-of-saas-founders/
+
+#Engineering #Tech

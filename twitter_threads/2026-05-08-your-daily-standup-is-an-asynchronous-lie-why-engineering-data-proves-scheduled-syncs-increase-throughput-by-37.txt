@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your “Daily Standup” Is an Asynchronous Lie — Why Engineering Data Proves Scheduled Syncs Increase Throughput by 37%
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-daily-standup-is-an-asynchronous-lie-why-engineering-data-proves-scheduled-syncs-increase-throughput-by-37/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (127 chars) ──────────────
+Your “Daily Standup” Is an Asynchronous Lie — Why Engineering Data Proves Scheduled Syncs Increase Throughput by 37%
+
+Thread 🧵👇
+
+── Tweet 2 (190 chars) ──────────────
+2/ • The Async Illusion We All Bought • • The Market's Quiet Pivot • • Why We Missed the Real Problem • • The Road Ahead: Hybrid, Not Hyped • • Keep them short. 15 minutes, max. No tangents.
+
+── Tweet 3 (202 chars) ──────────────
+3/ • Ban status bingo. No one wants to hear what you did yesterday. Focus on blockers and alignment. • • Make them optional for deep work days. Some teams run standups three times a week, not every day.
+
+── Tweet 4 (114 chars) ──────────────
+4/ • Record the key decisions. Async docs for the record, sync meetings for the signal. • • So What? • • Your Move
+
+── Tweet 5 (199 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-daily-standup-is-an-asynchronous-lie-why-engineering-data-proves-scheduled-syncs-increase-throughput-by-37/
+
+#Engineering #Tech

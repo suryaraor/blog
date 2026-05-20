@@ -3,6 +3,7 @@ order: 22
 layout: default
 title: "Your Job Isn't Being Replaced (But Everyone's Too Busy Panicking to Notice)"
 date: 2026-04-27
+difficulty: Intermediate
 ---
 # Your Job Isn't Being Replaced (But Everyone's Too Busy Panicking to Notice)
 

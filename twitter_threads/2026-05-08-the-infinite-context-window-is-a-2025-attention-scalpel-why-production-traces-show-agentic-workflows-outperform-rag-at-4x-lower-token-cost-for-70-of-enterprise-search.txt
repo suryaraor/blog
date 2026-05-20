@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The \"Infinite Context Window\" Is a 2025 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-infinite-context-window-is-a-2025-attention-scalpel-why-production-traces-show-agentic-workflows-outperform-rag-at-4x-lower-token-cost-for-70-of-enterprise-search/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (184 chars) ──────────────
+The \"Infinite Context Window\" Is a 2025 Attention Scalpel — Why Production Traces Show Agentic Workflows Outperform RAG at 4x Lower Token Cost for 70% of Enterprise Search
+
+Thread 🧵👇
+
+── Tweet 2 (177 chars) ──────────────
+2/ • The Bigger the Context, the Worse the Answer • • The Real Cost of Maximum Context • • Why We Keep Building the Wrong Thing • • What the Next Generation of Search Looks Like
+
+── Tweet 3 (255 chars) ──────────────
+3/ • Routing first: Every query starts with a classifier that decides what data sources are relevant, not what size context to use. • • Proactive pruning: Models will actively discard retrieved content they deem irrelevant before the final reasoning step.
+
+── Tweet 4 (119 chars) ──────────────
+4/ • Cost-awareness baked in: Token budgets will be explicit constraints, not afterthoughts. • • So What • • Conclusion
+
+── Tweet 5 (254 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-infinite-context-window-is-a-2025-attention-scalpel-why-production-traces-show-agentic-workflows-outperform-rag-at-4x-lower-token-cost-for-70-of-enterprise-search/
+
+#Engineering #Tech

@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your 2025 \"Microservices Migration\" Is a Latency Tax on a Single-Threaded Problem
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/your-2025-microservices-migration-is-a-latency-tax-on-a-single-threaded-problem/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (94 chars) ──────────────
+Your 2025 \"Microservices Migration\" Is a Latency Tax on a Single-Threaded Problem
+
+Thread 🧵👇
+
+── Tweet 2 (199 chars) ──────────────
+2/ • The Assumption We All Bought • • What Production Profiles Actually Show • • Single-box actor models (Akka, Erlang, or even a well-written Go program) deliver median latencies of 2–8 milliseconds
+
+── Tweet 3 (248 chars) ──────────────
+3/ • Kubernetes microservices processing the same workload: 45–120 milliseconds median • • The Blind Spot We’re All Ignoring • • What This Means for Your Architecture • • Can your stream be processed on a single modern server (64 cores, 256GB RAM)?
+
+── Tweet 4 (140 chars) ──────────────
+4/ • Does your state fit in memory? • • Is your throughput under 50,000 events per second? • • So Why Should You Care? • • The Final Thought
+
+── Tweet 5 (167 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/your-2025-microservices-migration-is-a-latency-tax-on-a-single-threaded-problem/
+
+#Engineering #Tech

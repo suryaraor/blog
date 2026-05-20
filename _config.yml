@@ -9,6 +9,9 @@ collections:
   unlisted:
     output: true
     permalink: /unlisted/:name/
+  reverted:
+    output: true
+    permalink: /reverted/:name/
 defaults:
   - scope:
       path: ""
@@ -16,8 +19,33 @@ defaults:
     values:
       sitemap: false
       robots: "noindex, nofollow"
+  - scope:
+      path: ""
+      type: reverted
+    values:
+      sitemap: false
+      robots: "noindex, nofollow"
+google_analytics: G-6W38HK15G9
+
+# Plausible Analytics (privacy-friendly, no cookies)
+# Register at plausible.io and add your site domain here.
+plausible_domain: "suryaraor.github.io"
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+
+# Giscus (GitHub Discussions) comments.
+# 1. Enable Discussions on the repo at github.com/suryaraor/blog/settings
+# 2. Visit https://giscus.app, select your repo, copy the repo_id and category_id
+# 3. Replace the placeholder values below and set enabled: true
+giscus:
+  enabled: false
+  repo: "suryaraor/blog"
+  repo_id: "R_kgDONxample"
+  category: "General"
+  category_id: "DIC_kwDONxample"
+  mapping: "pathname"
 
 # Google Apps Script web app URL for comments and likes.
 # Set this after deploying the Apps Script backend.

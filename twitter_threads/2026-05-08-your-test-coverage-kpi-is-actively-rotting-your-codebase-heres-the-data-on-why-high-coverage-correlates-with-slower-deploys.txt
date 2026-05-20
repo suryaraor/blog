@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — Your “Test Coverage” KPI Is Actively Rotting Your Codebase — Here’s the Data on Why High Coverage Correlates With Slower Deploys
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-test-coverage-kpi-is-actively-rotting-your-codebase-heres-the-data-on-why-high-coverage-correlates-with-slower-deploys/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (139 chars) ──────────────
+Your “Test Coverage” KPI Is Actively Rotting Your Codebase — Here’s the Data on Why High Coverage Correlates With Slower Deploys
+
+Thread 🧵👇
+
+── Tweet 2 (198 chars) ──────────────
+2/ • The High-Score Fallacy • • The Hidden Tax of “Testing Debt” • • The Engineer’s Silent Rebellion • • Killing Your Darlings • • A Contrarian’s Guide to Testing • • Trust the Human, Not the Number
+
+── Tweet 3 (211 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-test-coverage-kpi-is-actively-rotting-your-codebase-heres-the-data-on-why-high-coverage-correlates-with-slower-deploys/
+
+#Engineering #Tech

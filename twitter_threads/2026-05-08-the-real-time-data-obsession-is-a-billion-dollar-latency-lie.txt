@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The \"Real-Time Data\" Obsession Is a Billion-Dollar Latency Lie
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-real-time-data-obsession-is-a-billion-dollar-latency-lie/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (75 chars) ──────────────
+The \"Real-Time Data\" Obsession Is a Billion-Dollar Latency Lie
+
+Thread 🧵👇
+
+── Tweet 2 (194 chars) ──────────────
+2/ • The Speed Myth We All Believed • • The Batch Processing Rebellion • • Cost per query: Batch processing is 40-60% cheaper than equivalent event-driven architectures for analytical workloads.
+
+── Tweet 3 (106 chars) ──────────────
+3/ • Error rates: Streaming pipelines have a 3x higher rate of silent data loss compared to batch systems.
+
+── Tweet 4 (254 chars) ──────────────
+4/ • Query latency: For 95% of business intelligence queries, batch results arriving in 15 minutes perform identically to "real-time" results in the decision-making process. • • Why Smart Engineers Keep Falling for This • • The Future Is Awkwardly Hybrid
+
+── Tweet 5 (273 chars) ──────────────
+5/ • Real-time for control surfaces (user-facing interactions, fraud detection at point of sale). • • Batch for analytical surfaces (trend analysis, reporting, model training). • • Streaming as a transport layer—not as a compute layer. • • So What • • The Uncomfortable Ask
+
+── Tweet 6 (148 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-real-time-data-obsession-is-a-billion-dollar-latency-lie/
+
+#Engineering #Tech

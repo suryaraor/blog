@@ -1,0 +1,33 @@
+Twitter/X Thread Draft — The 2025 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-framework-tax-why-vanilla-typescript-beats-next-js-remix-and-sveltekit-for-70-of-crud-apps/
+Tweets: 7
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (115 chars) ──────────────
+The 2025 Framework Tax — Why Vanilla TypeScript Beats Next.js, Remix, and SvelteKit for 70% of CRUD Apps
+
+Thread 🧵👇
+
+── Tweet 2 (250 chars) ──────────────
+2/ • Your Framework Is a Luxury You Didn't Order • • The Latency Tax Nobody Charges (Until Production) • • Vanilla TypeScript (Node HTTP + direct DB client): ~45ms median response • • Next.js (Pages Router, getServerSideProps): ~180ms median response
+
+── Tweet 3 (191 chars) ──────────────
+3/ • Remix (loader function, default config): ~155ms median response • • SvelteKit (load function, server-side): ~140ms median response • • We Optimized for Developer Experience Until It Hurt
+
+── Tweet 4 (151 chars) ──────────────
+4/ • The cognitive overhead doesn't scale. The framework's abstractions leak constantly: hydration errors, routing conflicts, middleware ordering bugs.
+
+── Tweet 5 (198 chars) ──────────────
+5/ • The performance "optimizations" are pre-optimizations. You get SSR, ISR, streaming, and React Server Components when your app probably just needs a simple JSON endpoint and a client-side fetch.
+
+── Tweet 6 (275 chars) ──────────────
+6/ • The bundle becomes the enemy. Even if you only use 10% of the framework's features, you ship 100% of its critical path. • • The 2025 Stack Is Smaller Than You Think • • Vanilla TypeScript for the API layer (Node http module or a micro-framework like hono or itty-router)
+
+── Tweet 7 (187 chars) ──────────────
+7/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-framework-tax-why-vanilla-typescript-beats-next-js-remix-and-sveltekit-for-70-of-crud-apps/
+
+#Engineering #Tech

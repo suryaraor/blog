@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The “Serverless Functions” Myth Is a 2025 Cost Explosion — Why Cold-Start Data Proves Long-Running Containers on Spot Instances Beat Lambda at 2x the Throughput for 60% of Event-Driven Workloads
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-serverless-functions-myth-is-a-2025-cost-explosion-why-cold-start-data-proves-long-running-containers-on-spot-instances-beat-lambda-at-2x-the-throughput-for-60-of-event-driven-workloads/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (205 chars) ──────────────
+The “Serverless Functions” Myth Is a 2025 Cost Explosion — Why Cold-Start Data Proves Long-Running Containers on Spot Instances Beat Lambda at 2x the Throughput for 60% of Event-Driven Workloads
+
+Thread 🧵👇
+
+── Tweet 2 (237 chars) ──────────────
+2/ • The Serverless Tax • • The Spot Instance Secret • • The Blind Spot • • The Future of Event-Driven Architecture • • Use Lambda for: Infrequent, unpredictable workloads (under 1,000 invocations/day), low-latency webhooks, prototyping.
+
+── Tweet 3 (161 chars) ──────────────
+3/ • Use containers on spot for: Steady-state event processing (1,000-100,000 invocations/minute), stateful workloads, anything with consistent traffic patterns.
+
+── Tweet 4 (164 chars) ──────────────
+4/ • Use hybrid for: Workloads with variable traffic—keep a container pool handling baseline traffic, spill over to Lambda during spikes. • • So What • • Conclusion
+
+── Tweet 5 (277 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-serverless-functions-myth-is-a-2025-cost-explosion-why-cold-start-data-proves-long-running-containers-on-spot-instances-beat-lambda-at-2x-the-throughput-for-60-of-event-driven-workloads/
+
+#Engineering #Tech

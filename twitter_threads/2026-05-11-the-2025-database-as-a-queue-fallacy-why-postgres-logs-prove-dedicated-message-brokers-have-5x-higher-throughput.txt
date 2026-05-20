@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 2025 \"Database-as-a-Queue\" Fallacy — Why Postgres Logs Prove Dedicated Message Brokers Have 5x Higher Throughput
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-database-as-a-queue-fallacy-why-postgres-logs-prove-dedicated-message-brokers-have-5x-higher-throughput/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (129 chars) ──────────────
+The 2025 \"Database-as-a-Queue\" Fallacy — Why Postgres Logs Prove Dedicated Message Brokers Have 5x Higher Throughput
+
+Thread 🧵👇
+
+── Tweet 2 (241 chars) ──────────────
+2/ • Postgres for persistent state, transactional data, and business logic • • Redis Streams for high-throughput, ephemeral messaging with simple patterns • • RabbitMQ or SQS for complex routing, guaranteed delivery, and dead-letter handling
+
+── Tweet 3 (69 chars) ──────────────
+3/ • Kafka for event sourcing, log compaction, and replayable streams
+
+── Tweet 4 (200 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-database-as-a-queue-fallacy-why-postgres-logs-prove-dedicated-message-brokers-have-5x-higher-throughput/
+
+#Engineering #Tech

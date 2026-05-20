@@ -1,0 +1,33 @@
+Twitter/X Thread Draft — Your Job Isn't Being Replaced (But Everyone's Too Busy Panicking to Notice)
+============================================================
+Date: 2026-04-27
+URL:  https://suryaraor.github.io/blog/2026/04/27/your-job-isnt-being-replaced-but-everyones-too-busy-panicking-to-notice/
+Tweets: 7
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (86 chars) ──────────────
+Your Job Isn't Being Replaced (But Everyone's Too Busy Panicking to Notice)
+
+Thread 🧵👇
+
+── Tweet 2 (271 chars) ──────────────
+2/ • The Study Nobody's Talking About • • Why Benchmarks Are Lying to You (And Your Company Believes Every Word) • • Benchmark design: Create a test with clear rules and measurable answers (classify this image, solve this math problem, write code that passes these tests)
+
+── Tweet 3 (181 chars) ──────────────
+3/ • AI excels: Because there's a pattern to find and the data exists somewhere in training • • Executive sees results: "ChatGPT passed the bar exam! It wrote this code in seconds!"
+
+── Tweet 4 (169 chars) ──────────────
+4/ • Real-world deployment: Assign AI to a task that requires contextual judgment, domain intuition, and the ability to recognize when the problem itself is framed wrong
+
+── Tweet 5 (255 chars) ──────────────
+5/ • AI stalls: It produces plausible-sounding nonsense. It optimizes for the stated goal while missing the actual goal. It gets confident about things it doesn't understand • • The Timeline Nobody's Prepared For • • What You're Actually Competing Against
+
+── Tweet 6 (222 chars) ──────────────
+6/ • Admit the technology isn't as transformative as promised (career-ending for the executive who championed it) • • Keep pushing forward, hire fewer people, demand existing staff "work smarter" with AI tools • • So What?
+
+── Tweet 7 (159 chars) ──────────────
+7/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/27/your-job-isnt-being-replaced-but-everyones-too-busy-panicking-to-notice/
+
+#Engineering #Tech

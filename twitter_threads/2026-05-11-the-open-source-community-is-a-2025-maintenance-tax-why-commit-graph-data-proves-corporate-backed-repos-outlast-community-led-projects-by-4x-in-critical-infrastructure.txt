@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — The “Open Source Community” Is a 2025 Maintenance Tax — Why Commit Graph Data Proves Corporate-Backed Repos Outlast Community-Led Projects by 4x in Critical Infrastructure
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-open-source-community-is-a-2025-maintenance-tax-why-commit-graph-data-proves-corporate-backed-repos-outlast-community-led-projects-by-4x-in-critical-infrastructure/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (182 chars) ──────────────
+The “Open Source Community” Is a 2025 Maintenance Tax — Why Commit Graph Data Proves Corporate-Backed Repos Outlast Community-Led Projects by 4x in Critical Infrastructure
+
+Thread 🧵👇
+
+── Tweet 2 (229 chars) ──────────────
+2/ • The Myth of the Benevolent Volunteer • • The Sustainability-Magic Trade-Off • • The Burnout Economy Nobody Discusses • • Open source maintenance is often unglamorous work — triaging bugs, updating dependencies, reviewing PRs
+
+── Tweet 3 (225 chars) ──────────────
+3/ • This work benefits companies worth billions • • Those companies rarely contribute proportional resources back • • The cycle continues until the maintainer quits, burns out, or gets hired • • What Stability Actually Costs
+
+── Tweet 4 (169 chars) ──────────────
+4/ • Community-led projects will continue to exist but will serve niche or experimental use cases • • Critical infrastructure will concentrate under corporate governance
+
+── Tweet 5 (217 chars) ──────────────
+5/ • The “open source community” will become a maintenance tax — a cost of doing business, not a source of innovation • • The talent pipeline will shift: aspiring maintainers will need corporate sponsorship to survive
+
+── Tweet 6 (255 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-open-source-community-is-a-2025-maintenance-tax-why-commit-graph-data-proves-corporate-backed-repos-outlast-community-led-projects-by-4x-in-critical-infrastructure/
+
+#Engineering #Tech

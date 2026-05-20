@@ -1,0 +1,36 @@
+Twitter/X Thread Draft — Your Creative Work Just Became Free Training Data (And the Lawsuits Just Started)
+============================================================
+Date: 2026-04-19
+URL:  https://suryaraor.github.io/blog/2026/04/19/your-creative-work-just-became-free-training-data-and-the-lawsuits-just-started/
+Tweets: 8
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (92 chars) ──────────────
+Your Creative Work Just Became Free Training Data (And the Lawsuits Just Started)
+
+Thread 🧵👇
+
+── Tweet 2 (224 chars) ──────────────
+2/ • The Systematic Extraction: How AI Companies Built Empires on Your Work • • The Compression: From Scarcity to Commodity in One Training Run • • A stock footage library's entire catalog → compressed into vector embeddings
+
+── Tweet 3 (269 chars) ──────────────
+3/ • A musician's compositional style → parameterized into a diffusion model • • An artist's visual language → extracted into a LoRA fine-tune • • Your unique voice, aesthetic, timing, all the intangible things that made you irreplaceable → flattened into training data
+
+── Tweet 4 (170 chars) ──────────────
+4/ • The Legal Lag: Decisions Won't Arrive Until Summer 2026 (But Extraction Happened in 2023) • • The Real Loss: It's Not Copyright. It's the Disappearance of Expertise.
+
+── Tweet 5 (207 chars) ──────────────
+5/ • Your skills stop being scarce. If your editing style is encoded in a model, anyone can now create in your style. Your competitive advantage isn't your skill anymore—it's whether you got extracted first.
+
+── Tweet 6 (226 chars) ──────────────
+6/ • Your labor gets compressed into compute. Your 10 years of learning, failed experiments, and refinement become $0.001 of server costs. The AI company captures the value you spent a decade creating in a single training run.
+
+── Tweet 7 (251 chars) ──────────────
+7/ • Your negotiating power disappears. You can't sell your work if the model already has it. You can't negotiate licensing if the model already trained on you. You can't build scarcity when scarcity has been deliberately engineered away. • • So What?
+
+── Tweet 8 (167 chars) ──────────────
+8/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/19/your-creative-work-just-became-free-training-data-and-the-lawsuits-just-started/
+
+#Engineering #Tech

@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “Scalable” Database Obsession Is a 2025 Startup Killer — Why Production Cost Curves Prove a Single PostgreSQL Instance Serves 90% of SaaS Founders Better Than CockroachDB at 5x Lower Latency
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-scalable-database-obsession-is-a-2025-startup-killer-why-production-cost-curves-prove-a-single-postgresql-instance-serves-90-of-saas-founders-better-than-cockroachdb-at-5x-lower-latency/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (205 chars) ──────────────
+The “Scalable” Database Obsession Is a 2025 Startup Killer — Why Production Cost Curves Prove a Single PostgreSQL Instance Serves 90% of SaaS Founders Better Than CockroachDB at 5x Lower Latency
+
+Thread 🧵👇
+
+── Tweet 2 (217 chars) ──────────────
+2/ • The Scaling Religion • • The Hidden Tax of “Enterprise Ready” • • A single PostgreSQL instance handling 500 concurrent connections: ~$150/month. • • A three-node CockroachDB cluster doing the same: ~$1,800/month.
+
+── Tweet 3 (179 chars) ──────────────
+3/ • The latency difference? Postgres wins by 80ms on average for simple reads. • • The Cloud Bro Blind Spot • • The Simple Future • • Why You Should Care • • Go Simple or Go Home
+
+── Tweet 4 (277 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-scalable-database-obsession-is-a-2025-startup-killer-why-production-cost-curves-prove-a-single-postgresql-instance-serves-90-of-saas-founders-better-than-cockroachdb-at-5x-lower-latency/
+
+#Engineering #Tech

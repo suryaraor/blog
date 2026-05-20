@@ -3,6 +3,7 @@ order: 19
 layout: default
 title: "China Just Won the AI Independence War (And the US Hasn't Realized It Yet)"
 date: 2026-04-27
+difficulty: Intermediate
 ---
 # China Just Won the AI Independence War (And the US Hasn't Realized It Yet)
 

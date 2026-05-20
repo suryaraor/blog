@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — Your AI Agent Just Became Your Permanent Employee (And You Haven't Signed the Contracts Yet)
+============================================================
+Date: 2026-04-27
+URL:  https://suryaraor.github.io/blog/2026/04/27/your-ai-agent-just-became-your-permanent-employee-and-you-havent-signed-the-contracts-yet/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (103 chars) ──────────────
+Your AI Agent Just Became Your Permanent Employee (And You Haven't Signed the Contracts Yet)
+
+Thread 🧵👇
+
+── Tweet 2 (246 chars) ──────────────
+2/ • Why We're Pretending These Are Just "Better Tools" • • The Privacy Collapse Nobody's Prepared For • • Use your conversations for model improvement (as all current LLM services do) • • Share aggregate patterns with business intelligence teams
+
+── Tweet 3 (260 chars) ──────────────
+3/ • Retain data for "safety" and "audit" purposes indefinitely • • Change the terms retroactively (they legally can) • • Who's Liable When Your Agent Makes a Mistake? • • You? You delegated it to the agent. • • Your manager? They approved you using the agent.
+
+── Tweet 4 (141 chars) ──────────────
+4/ • Anthropic? They shipped the agent infrastructure. • • The agent? It has no legal personhood. • • When $200/Month Replaces a $120K Salary
+
+── Tweet 5 (177 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/27/your-ai-agent-just-became-your-permanent-employee-and-you-havent-signed-the-contracts-yet/
+
+#Engineering #Tech

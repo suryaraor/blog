@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The \"AI Pair Programmer\" Shortcut Is a 2025 Context Blind Spot — Why Production Commit Data Proves Over-Reliance on Copilot-Style Tools Triples Refactor Cycles for 80% of Microservice Repos
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-ai-pair-programmer-shortcut-is-a-2025-context-blind-spot-why-production-commit-data-proves-over-reliance-on-copilot-style-tools-triples-refactor-cycles-for-80-of-microservice-repos/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (202 chars) ──────────────
+The \"AI Pair Programmer\" Shortcut Is a 2025 Context Blind Spot — Why Production Commit Data Proves Over-Reliance on Copilot-Style Tools Triples Refactor Cycles for 80% of Microservice Repos
+
+Thread 🧵👇
+
+── Tweet 2 (233 chars) ──────────────
+2/ • The Speed Mirage Your Metrics Are Selling • • The Triage Treadmill Nobody Talks About • • Why We're All Missing the Real Story • • What This Means for Your Architecture in 2025 • • Segment AI usage: boilerplate and research only
+
+── Tweet 3 (148 chars) ──────────────
+3/ • Shift AI role: from generator to critic • • Track survival rates: not just creation rates • • So What Should You Actually Do? • • The Real Test
+
+── Tweet 4 (272 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-ai-pair-programmer-shortcut-is-a-2025-context-blind-spot-why-production-commit-data-proves-over-reliance-on-copilot-style-tools-triples-refactor-cycles-for-80-of-microservice-repos/
+
+#Engineering #Tech

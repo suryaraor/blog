@@ -1,0 +1,39 @@
+Twitter/X Thread Draft — Implementing Hexagonal Architecture (Ports & Adapters) and Clean Architecture in Spring Boot
+============================================================
+Date: 2026-01-08
+URL:  https://suryaraor.github.io/blog/2026/01/08/hexagonal-architecture-spring-boot/
+Tweets: 9
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (188 chars) ──────────────
+A comprehensive guide for senior Java developers on implementing Hexagonal Architecture in Spring Boot applications, with real-world code examples and honest trade-off analysis.
+
+Thread 🧵👇
+
+── Tweet 2 (74 chars) ──────────────
+2/ • Introduction: The Painful Reality of Traditional Layered Architecture
+
+── Tweet 3 (239 chars) ──────────────
+3/ • Database-Centric Design: Your business logic is scattered across @Service classes that are tightly coupled to JPA entities. Want to change your persistence layer from PostgreSQL to MongoDB? Good luck spending three months refactoring.
+
+── Tweet 4 (204 chars) ──────────────
+4/ • Testing Nightmares: Unit testing your business rules requires loading the entire Spring Context, mocking EntityManager, and dealing with transaction management. A simple test takes 15 seconds to run.
+
+── Tweet 5 (209 chars) ──────────────
+5/ • Anemic Domain Models: Your domain objects are glorified data transfer objects with getters and setters, while all the real business logic lives in service classes that operate on these passive structures.
+
+── Tweet 6 (224 chars) ──────────────
+6/ • Framework Lock-In: Your core business logic is so intertwined with Spring annotations (@Transactional, @Autowired, @Entity) that migrating to another framework-or even upgrading Spring Boot-becomes a high-risk endeavor.
+
+── Tweet 7 (262 chars) ──────────────
+7/ • The Philosophy: Dependency Inversion at the Architectural Level • • The Core Principle: Dependencies Point Inward • • Anatomy of Hexagonal Architecture • • Domain Models: Pure POJOs representing business concepts with rich behavior (not anemic data holders)
+
+── Tweet 8 (240 chars) ──────────────
+8/ • Domain Services: Complex business logic that doesn't naturally belong to a single entity • • Value Objects: Immutable objects that describe aspects of the domain • • Domain Events: Notifications about significant business state changes
+
+── Tweet 9 (135 chars) ──────────────
+9/ Read the full post:
+https://suryaraor.github.io/blog/2026/01/08/hexagonal-architecture-spring-boot/
+
+#Java #SpringBoot #Architecture

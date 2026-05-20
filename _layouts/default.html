@@ -7,6 +7,24 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
+    {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% if page.last_updated %}<meta property="article:modified_time" content="{{ page.last_updated | date_to_xmlschema }}">{% endif %}
+    <meta property="article:author" content="{{ site.author }}">
+    {% endif %}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.image %}<meta name="twitter:image" content="{{ page.image | absolute_url }}">{% endif %}
+
     <!-- PWA / offline support -->
     <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
     <meta name="theme-color" content="#c84f24">
@@ -18,6 +36,15 @@
     <link rel="icon" type="image/png" href="{{ '/profile.png' | relative_url }}">
 
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script>
+    (function () {
+        var saved = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    })();
+    </script>
     {% if page.date and page.layout != 'post' %}
     <link rel="stylesheet" href="{{ '/assets/css/post-interactions.css' | relative_url }}">
     <script src="{{ '/assets/js/post-interactions.js' | relative_url }}" defer></script>
@@ -27,6 +54,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link type="application/atom+xml" rel="alternate" href="{{ site.baseurl }}/feed.xml" title="{{ site.title }}">
+    {% include google-analytics.html %}
+    {% include plausible.html %}
 </head>
 
 <body class="{% if page.layout %}layout-{{ page.layout }}{% endif %}">
@@ -34,16 +63,25 @@
     <div class="container">
         <header class="site-header">
             <div class="site-branding">
-                <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+                <a href="{{ '/' | relative_url }}" class="site-title"><span class="site-wordmark" aria-hidden="true">SRR</span>{{ site.title }}</a>
                 <p class="site-description">{{ site.description }}</p>
             </div>
             <nav class="site-nav" aria-label="Main navigation">
-                <a href="{{ '/' | relative_url }}">Latest</a>
+                <a href="{{ '/' | relative_url }}" class="site-nav-primary">Essays</a>
+                <a href="{{ '/search' | relative_url }}" class="site-nav-search" aria-label="Search essays">&#128269; Search</a>
+                <a href="{{ '/tags' | relative_url }}">Topics</a>
+                <a href="{{ '/archive' | relative_url }}">Archive</a>
                 <a href="{{ '/about' | relative_url }}">About</a>
-                <a href="{{ '/offline.html' | relative_url }}" id="offline-pill" class="offline-pill" hidden aria-label="Articles saved for offline reading">&#x2601;&#xFE0F; Offline</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">&#9790;</button>
+                <a href="{{ '/offline.html' | relative_url }}" id="offline-pill" class="offline-pill" hidden aria-label="Articles saved for offline reading" title="Load once, read anywhere — no internet needed" data-tooltip="Load once, read anywhere — no internet needed">&#x2601;&#xFE0F; Offline</a>
             </nav>
         </header>
 
+        {% if page.date %}
+        <div class="reading-progress" aria-hidden="true">
+            <div class="reading-progress-bar" id="reading-progress-bar"></div>
+        </div>
+        {% endif %}
         <main>
             {% if page.date and page.layout != 'post' %}
             <div class="post-audio-controls" aria-live="polite">
@@ -63,6 +101,20 @@
             {% endif %}
         </main>
 
+        {% if page.date %}
+        <div class="post-article-zone">
+        {% include changelog.html %}
+        {% include further-reading.html %}
+        {% include series-nav.html %}
+        {% include clap-button.html %}
+        {% include author-bio.html %}
+        {% include newsletter-cta.html %}
+        {% include social-share.html %}
+        {% include related-posts.html %}
+        {% include giscus.html %}
+        </div>
+        {% endif %}
+
         {% if page.date and page.layout != 'post' %}
         {% include post-interactions.html
           post_id=page.url
@@ -75,6 +127,95 @@
         {% if page.date and page.layout != 'post' %}
         <script>
         document.addEventListener('DOMContentLoaded', function () {
+            var toc = document.getElementById('post-toc');
+            var tocNav = document.getElementById('post-toc-nav');
+            var mobileToc = document.getElementById('post-toc-mobile');
+            var mobileTocNav = document.getElementById('post-toc-mobile-nav');
+            var content = document.querySelector('.post-content');
+            if (content && tocNav) {
+                var headings = content.querySelectorAll('h2, h3');
+                if (headings.length >= 4) {
+                    var list = document.createElement('ol');
+                    for (var i = 0; i < headings.length; i++) {
+                        var h = headings[i];
+                        if (!h.id) { h.id = 'section-' + (i + 1); }
+                        var li = document.createElement('li');
+                        if (h.tagName.toLowerCase() === 'h3') { li.className = 'toc-depth-3'; }
+                        var a = document.createElement('a');
+                        a.href = '#' + h.id;
+                        a.textContent = h.textContent;
+                        li.appendChild(a);
+                        list.appendChild(li);
+                    }
+                    tocNav.appendChild(list);
+                    if (toc) { toc.hidden = false; }
+                    if (mobileToc && mobileTocNav) {
+                        mobileTocNav.appendChild(list.cloneNode(true));
+                        mobileToc.hidden = false;
+                    }
+                }
+            }
+        });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.post-content blockquote').forEach(function (bq) {
+                var text = (bq.textContent || '').trim().toLowerCase();
+                if (text.startsWith('use case:') || text.startsWith('use case ')) {
+                    bq.classList.add('use-case-box');
+                }
+            });
+        });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.post-content pre').forEach(function (pre) {
+                var btn = document.createElement('button');
+                btn.className = 'code-copy-btn';
+                btn.textContent = 'Copy';
+                btn.setAttribute('aria-label', 'Copy code to clipboard');
+                btn.addEventListener('click', function () {
+                    var code = pre.querySelector('code');
+                    var text = code ? (code.innerText || code.textContent) : (pre.innerText || pre.textContent);
+                    navigator.clipboard.writeText(text).then(function () {
+                        btn.textContent = 'Copied!';
+                        btn.classList.add('copied');
+                        setTimeout(function () {
+                            btn.textContent = 'Copy';
+                            btn.classList.remove('copied');
+                        }, 2000);
+                    }).catch(function () {
+                        btn.textContent = 'Error';
+                        setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+                    });
+                });
+                pre.style.position = 'relative';
+                pre.appendChild(btn);
+            });
+        });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var progressBar = document.getElementById('reading-progress-bar');
+            var postContent = document.querySelector('.post-content');
+            function updateProgress() {
+                if (!progressBar || !postContent) return;
+                var top = postContent.getBoundingClientRect().top + window.scrollY;
+                var height = postContent.offsetHeight;
+                var vh = window.innerHeight;
+                var scrolled = window.scrollY - top;
+                var total = height - vh;
+                var ratio = total > 0 ? Math.min(1, Math.max(0, scrolled / total)) : 0;
+                progressBar.style.transform = 'scaleX(' + ratio + ')';
+            }
+            updateProgress();
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            window.addEventListener('resize', updateProgress);
+        });
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var LOG = '[PlayAloud]';
             var audioButton = document.querySelector('[data-audio-button]');
             var audioStatus = document.querySelector('[data-audio-status]');
             var content = document.querySelector('.post-content');
@@ -82,11 +223,15 @@
             var speechState = 'idle';
             var speechSupported = Boolean(window.speechSynthesis && typeof window.SpeechSynthesisUtterance === 'function');
 
+            console.log(LOG, 'init | button:', !!audioButton, '| content:', !!content, '| speechSupported:', speechSupported, '| userAgent:', navigator.userAgent);
+
             if (!audioButton || !audioStatus) {
+                console.warn(LOG, 'button or status span not found in DOM — this page may not have page.date set, or layout is wrong');
                 return;
             }
 
             if (!speechSupported) {
+                console.warn(LOG, 'SpeechSynthesis not supported in this browser');
                 audioButton.disabled = true;
                 audioButton.textContent = 'Play aloud unavailable';
                 audioStatus.textContent = 'Speech playback is not supported in this browser.';
@@ -98,12 +243,19 @@
             updateAudioUI();
 
             function handleAudioButtonClick() {
+                console.log(LOG, 'click | state:', speechState,
+                    '| synth.speaking:', window.speechSynthesis.speaking,
+                    '| synth.paused:', window.speechSynthesis.paused,
+                    '| content:', !!content);
+
                 if (!content) {
+                    console.error(LOG, '.post-content not found — cannot extract article text');
                     audioStatus.textContent = 'No article text found to read.';
                     return;
                 }
 
                 if (speech && speechState === 'paused') {
+                    console.log(LOG, 'resuming paused speech');
                     window.speechSynthesis.resume();
                     speechState = 'speaking';
                     updateAudioUI();
@@ -111,6 +263,7 @@
                 }
 
                 if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+                    console.log(LOG, 'pausing active speech');
                     window.speechSynthesis.pause();
                     speechState = 'paused';
                     updateAudioUI();
@@ -122,26 +275,39 @@
 
             function pickBestVoice(lang) {
                 var voices = window.speechSynthesis.getVoices();
-                if (!voices.length) return null;
+                console.log(LOG, 'pickBestVoice | total voices:', voices.length,
+                    '| list:', voices.map(function(v){ return v.name + ' (' + v.lang + ')'; }).join(', '));
+
+                if (!voices.length) {
+                    console.warn(LOG, 'no voices available — browser will use its default');
+                    return null;
+                }
 
                 var en = voices.filter(function (v) {
                     return v.lang && v.lang.toLowerCase().startsWith('en');
                 });
                 if (!en.length) en = voices;
+                console.log(LOG, 'English-filtered voices:', en.map(function(v){ return v.name; }).join(', '));
 
-                // Priority list — first match wins
+                // Priority list — first match wins.
+                // Local voices are preferred over non-local (network) voices because
+                // Chrome's non-local Google voices make a background network request
+                // that silently fails and never fires onstart.
                 var priorities = [
-                    // iOS / macOS Siri voices (most natural on iPad)
+                    // iOS / macOS (always local, high quality)
                     function (v) { return /samantha/i.test(v.name); },
                     function (v) { return /\bsiri\b/i.test(v.name); },
                     function (v) { return /com\.apple\.ttsbundle/i.test(v.voiceURI) && !/-compact$/i.test(v.voiceURI); },
-                    // Edge / Windows Neural voices
+                    // Windows local voices — reliable, no network required
+                    function (v) { return v.localService && /david|zira|mark/i.test(v.name); },
+                    function (v) { return v.localService; },
+                    // Edge / Windows Neural (high quality, needs network)
                     function (v) { return /natural/i.test(v.name); },
                     function (v) { return /aria|jenny|guy|davis/i.test(v.name) && /online/i.test(v.name); },
-                    // Google voices (Chrome desktop)
+                    // Google voices (needs network)
                     function (v) { return /google/i.test(v.name) && /female/i.test(v.name); },
                     function (v) { return /google/i.test(v.name); },
-                    // Any non-compact local voice
+                    // Any non-compact voice
                     function (v) { return !/-compact$/i.test(v.voiceURI || ''); },
                     // Absolute fallback
                     function () { return true; }
@@ -149,51 +315,149 @@
 
                 for (var p = 0; p < priorities.length; p++) {
                     for (var i = 0; i < en.length; i++) {
-                        if (priorities[p](en[i])) return en[i];
+                        if (priorities[p](en[i])) {
+                            console.log(LOG, 'selected voice (priority slot ' + p + '):', en[i].name, en[i].lang, 'local:', en[i].localService);
+                            return en[i];
+                        }
                     }
                 }
                 return null;
             }
 
             function startSpeech() {
+                console.log(LOG, 'startSpeech — cancelling any prior synth');
                 stopSpeech();
 
                 var text = buildSpeechText();
+                console.log(LOG, 'text length:', text ? text.length : 0, '| preview:', text ? text.slice(0, 100) : '(empty)');
+
                 if (!text) {
+                    console.error(LOG, 'buildSpeechText returned empty — nothing to speak');
                     audioStatus.textContent = 'No readable article content was found.';
                     return;
                 }
 
                 var lang = document.documentElement.lang || navigator.language || 'en-US';
+                console.log(LOG, 'utterance lang:', lang);
                 speech = new window.SpeechSynthesisUtterance(text);
                 speech.lang = lang;
                 speech.rate = 0.95;
                 speech.pitch = 1;
 
-                // Voices load async on first call — wait if the list is empty
                 var voices = window.speechSynthesis.getVoices();
+                console.log(LOG, 'voices at utterance time:', voices.length, '— path:', voices.length ? 'immediate' : 'waiting for voiceschanged');
                 if (voices.length) {
                     speech.voice = pickBestVoice(lang);
                     doSpeak();
                 } else {
                     window.speechSynthesis.onvoiceschanged = function () {
+                        console.log(LOG, 'voiceschanged fired');
                         window.speechSynthesis.onvoiceschanged = null;
                         speech.voice = pickBestVoice(lang);
                         doSpeak();
                     };
+                    // Fallback: some browsers never fire voiceschanged
+                    setTimeout(function () {
+                        if (!speech) return;
+                        var v2 = window.speechSynthesis.getVoices();
+                        if (v2.length) {
+                            console.warn(LOG, 'voiceschanged did not fire but getVoices() now returns', v2.length, '— speaking anyway');
+                            window.speechSynthesis.onvoiceschanged = null;
+                            speech.voice = pickBestVoice(lang);
+                            doSpeak();
+                        } else {
+                            console.warn(LOG, 'voiceschanged never fired and getVoices() still empty after 1s — speaking with default voice');
+                            window.speechSynthesis.onvoiceschanged = null;
+                            doSpeak();
+                        }
+                    }, 1000);
                 }
             }
 
-            function doSpeak() {
-                speech.onstart = function () {
-                    speechState = 'speaking';
-                    updateAudioUI();
-                };
-                speech.onend = finishSpeech;
-                speech.onerror = finishSpeech;
+            // Split text on sentence boundaries into chunks of at most maxWords words.
+            // Chrome silently drops single utterances that are too long (long-text bug).
+            function chunkText(text, maxWords) {
+                var sentences = text.match(/[^.!?]+[.!?]*\s*/g) || [text];
+                var chunks = [];
+                var buf = '';
+                var bufWords = 0;
+                sentences.forEach(function (s) {
+                    var wc = s.trim().split(/\s+/).length;
+                    if (buf && bufWords + wc > maxWords) {
+                        chunks.push(buf.trim());
+                        buf = s;
+                        bufWords = wc;
+                    } else {
+                        buf += s;
+                        bufWords += wc;
+                    }
+                });
+                if (buf.trim()) chunks.push(buf.trim());
+                return chunks.filter(Boolean);
+            }
 
-                window.speechSynthesis.cancel();
-                window.speechSynthesis.speak(speech);
+            function doSpeak() {
+                var lang = speech.lang;
+                var rate = speech.rate;
+                var pitch = speech.pitch;
+                var chosenVoice = speech.voice;
+                var fullText = speech.text;
+
+                var chunks = chunkText(fullText, 200);
+                console.log(LOG, 'doSpeak — voice:', chosenVoice ? chosenVoice.name : 'browser default',
+                    '| chars:', fullText.length, '| chunks:', chunks.length);
+
+                function speakChunk(index) {
+                    if (index >= chunks.length) {
+                        console.log(LOG, 'all chunks finished');
+                        finishSpeech();
+                        return;
+                    }
+
+                    var chunk = chunks[index];
+                    var utterance = new window.SpeechSynthesisUtterance(chunk);
+                    utterance.lang = lang;
+                    utterance.rate = rate;
+                    utterance.pitch = pitch;
+                    if (chosenVoice) utterance.voice = chosenVoice;
+
+                    utterance.onstart = function () {
+                        if (index === 0) {
+                            console.log(LOG, 'onstart — speech is now playing');
+                            speechState = 'speaking';
+                            updateAudioUI();
+                        }
+                    };
+                    utterance.onend = function () {
+                        console.log(LOG, 'chunk', (index + 1), 'of', chunks.length, 'finished');
+                        if (speechState !== 'idle') {
+                            speakChunk(index + 1);
+                        }
+                    };
+                    utterance.onerror = function (e) {
+                        console.warn(LOG, 'onerror | chunk:', (index + 1), '| error:', e && e.error);
+                        if (e && (e.error === 'interrupted' || e.error === 'canceled')) {
+                            console.log(LOG, 'ignoring spurious', e.error, 'error');
+                            return;
+                        }
+                        finishSpeech();
+                    };
+
+                    speech = utterance;
+                    window.speechSynthesis.speak(utterance);
+                    console.log(LOG, 'speaking chunk', (index + 1), 'of', chunks.length,
+                        '| chars:', chunk.length,
+                        '| synth.speaking:', window.speechSynthesis.speaking);
+                }
+
+                // Give the prior cancel() in stopSpeech() time to settle before speaking.
+                setTimeout(function () {
+                    if (speechState === 'idle') {
+                        console.warn(LOG, 'speech cancelled before 50ms timeout — aborting');
+                        return;
+                    }
+                    speakChunk(0);
+                }, 50);
                 speechState = 'speaking';
                 updateAudioUI();
             }
@@ -213,16 +477,19 @@
             function buildSpeechText() {
                 var parts = [];
                 var heading = document.querySelector('.post-header h1');
-
                 if (heading) {
                     parts.push(normalizeSpeechText(heading.textContent || ''));
+                } else {
+                    console.log(LOG, 'buildSpeechText: .post-header h1 not found (expected — title is inside .post-content h1)');
                 }
 
                 if (!content) {
+                    console.warn(LOG, 'buildSpeechText: .post-content is null');
                     return parts.join('\n\n');
                 }
 
                 var paragraphs = content.querySelectorAll('h2, h3, p, li, blockquote, figcaption');
+                console.log(LOG, 'buildSpeechText: matched', paragraphs.length, 'elements inside .post-content');
                 for (var i = 0; i < paragraphs.length; i++) {
                     var text = normalizeSpeechText(paragraphs[i].innerText || paragraphs[i].textContent || '');
                     if (text) {
@@ -230,6 +497,7 @@
                     }
                 }
 
+                console.log(LOG, 'buildSpeechText: parts collected:', parts.length, '| total chars:', parts.join('').length);
                 return parts.join('\n\n');
             }
 
@@ -261,6 +529,36 @@
             }
         });
         </script>
+        <script>
+        /* Reading engagement — fires Plausible custom events at scroll-depth milestones */
+        (function () {
+            if (typeof window.plausible !== 'function') return;
+            var milestones = [25, 50, 75, 100];
+            var fired = {};
+            var postContent = document.querySelector('.post-content');
+            if (!postContent) return;
+            function getDepth() {
+                var rect = postContent.getBoundingClientRect();
+                var top = rect.top + window.scrollY;
+                var height = postContent.offsetHeight;
+                if (height <= 0) return 0;
+                var scrolled = window.scrollY + window.innerHeight - top;
+                return Math.min(100, Math.max(0, Math.round(scrolled / height * 100)));
+            }
+            function check() {
+                var depth = getDepth();
+                for (var i = 0; i < milestones.length; i++) {
+                    var m = milestones[i];
+                    if (!fired[m] && depth >= m) {
+                        fired[m] = true;
+                        window.plausible('Reading Depth', { props: { percent: m + '%', url: window.location.pathname } });
+                    }
+                }
+            }
+            window.addEventListener('scroll', check, { passive: true });
+            setTimeout(check, 2000);
+        })();
+        </script>
         {% endif %}
 
         <footer>
@@ -268,6 +566,40 @@
         </footer>
     </div>
 
+    <script>
+    (function () {
+        var btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        function applyTheme(dark) {
+            document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+            btn.textContent = dark ? '☀' : '☾';
+            btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        btn.textContent = isDark ? '☀' : '☾';
+        btn.addEventListener('click', function () {
+            isDark = !isDark;
+            applyTheme(isDark);
+        });
+    })();
+    </script>
+    {% if page.date %}
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">&#8593;</button>
+    <script>
+    (function () {
+        var btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 400) { btn.classList.add('visible'); }
+            else { btn.classList.remove('visible'); }
+        }, { passive: true });
+        btn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+    </script>
+    {% endif %}
     <!-- Offline-ready toast -->
     <div id="offline-toast" class="offline-toast" role="status" aria-live="polite" hidden>
         <span class="offline-toast-text">&#x2601;&#xFE0F;&nbsp; All articles saved &mdash; readable offline</span>
@@ -285,8 +617,40 @@
         text-decoration: none;
         white-space: nowrap;
         transition: color 0.2s, border-color 0.2s;
+        position: relative;
     }
     .offline-pill:hover { color: var(--accent); border-color: var(--accent); }
+    .offline-pill[data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: calc(100% + 6px);
+        right: 0;
+        background: var(--ink-900);
+        color: #fff;
+        font-size: 0.72rem;
+        font-family: var(--font-body);
+        font-weight: 400;
+        line-height: 1.4;
+        padding: 0.4rem 0.65rem;
+        border-radius: 8px;
+        white-space: nowrap;
+        max-width: 240px;
+        white-space: normal;
+        width: max-content;
+        z-index: 500;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+        pointer-events: none;
+    }
+    .offline-pill[data-tooltip]:hover::before {
+        content: '';
+        position: absolute;
+        bottom: calc(100% + 1px);
+        right: 1rem;
+        border: 5px solid transparent;
+        border-top-color: var(--ink-900);
+        z-index: 500;
+        pointer-events: none;
+    }
 
     .offline-toast {
         position: fixed;

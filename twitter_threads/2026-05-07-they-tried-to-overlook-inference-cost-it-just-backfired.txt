@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — They Tried to Overlook Inference Cost. It Just Backfired.
+============================================================
+Date: 2026-05-07
+URL:  https://suryaraor.github.io/blog/2026/05/07/they-tried-to-overlook-inference-cost-it-just-backfired/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (68 chars) ──────────────
+They Tried to Overlook Inference Cost. It Just Backfired.
+
+Thread 🧵👇
+
+── Tweet 2 (166 chars) ──────────────
+2/ • Your Latency SLA Is a Silent Killer • • The Hidden Economics of Keeping AI Alive • • The Blind Spot Everyone Looks Away From • • Redesigning for a Cheaper Future
+
+── Tweet 3 (144 chars) ──────────────
+3/ • Move toward hybrid architectures where you use a smaller model for 80% of queries and only escalate to the massive model for the hard ones.
+
+── Tweet 4 (144 chars) ──────────────
+4/ • Re-think SLAs: do you really need 200ms on a request that's just summarizing a cat photo? No. Trade latency for cost on non-critical paths.
+
+── Tweet 5 (186 chars) ──────────────
+5/ • Demand transparency from cloud providers. Ask for cost breakdowns beyond raw GPU hours. If they can't provide it, you're paying for their opacity. • • So What? • • The Final Thought
+
+── Tweet 6 (143 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/07/they-tried-to-overlook-inference-cost-it-just-backfired/
+
+#Engineering #Tech

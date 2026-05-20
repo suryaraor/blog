@@ -3,6 +3,7 @@ order: 20
 layout: default
 title: "They Tried to Replace Junior Developers. It Just Backfired."
 date: 2026-04-27
+difficulty: Intermediate
 ---
 # They Tried to Replace Junior Developers. It Just Backfired.
 

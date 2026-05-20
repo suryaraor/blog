@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The “Donut” Org Chart Is a 2025 Collaboration Mirage
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-donut-org-chart-is-a-2025-collaboration-mirage/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (63 chars) ──────────────
+The “Donut” Org Chart Is a 2025 Collaboration Mirage
+
+Thread 🧵👇
+
+── Tweet 2 (231 chars) ──────────────
+2/ • Why Network Graph Data Proves Flat Teams with 6 Direct Reports Ship 50% Faster Than Squads with Embedded Platform Engineers • • Phase 1 (Discovery): Flat teams, 6 direct reports, no embedded engineers. Move fast, learn faster.
+
+── Tweet 3 (267 chars) ──────────────
+3/ • Phase 2 (Scaling): Introduce platform teams asynchronously. Don’t embed them in squads. Let them build APIs and libraries that squads pull, not push. • • Phase 3 (Optimization): Keep coordination points below 3 per feature. If it rises, simplify before you hire.
+
+── Tweet 4 (138 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-donut-org-chart-is-a-2025-collaboration-mirage/
+
+#Engineering #Tech

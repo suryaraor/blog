@@ -1,0 +1,30 @@
+Twitter/X Thread Draft — Your “Platform Team” Is a Bottleneck Factory — Why 2025 DORA Data Shows Internal Developer Platforms Reduce Deploy Frequency by 40%
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/your-platform-team-is-a-bottleneck-factory-why-2025-dora-data-shows-internal-developer-platforms-reduce-deploy-frequency-by-40/
+Tweets: 6
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (142 chars) ──────────────
+Your “Platform Team” Is a Bottleneck Factory — Why 2025 DORA Data Shows Internal Developer Platforms Reduce Deploy Frequency by 40%
+
+Thread 🧵👇
+
+── Tweet 2 (179 chars) ──────────────
+2/ • Decouple enablement from gatekeeping. The platform team should provide tooling, not approvals. Let developers provision their own infrastructure within guardrails, not gates.
+
+── Tweet 3 (254 chars) ──────────────
+3/ • Embrace a diversity of paths. Stop trying to build one golden path that fits everyone. Build multiple golden paths, each optimized for a specific use case. Or better yet, build a library of reusable components that developers can compose themselves.
+
+── Tweet 4 (193 chars) ──────────────
+4/ • Measure what matters. Don't just track platform uptime and adoption. Track deploy frequency, lead time for changes, and developer NPS. If those numbers drop, your platform is a bottleneck.
+
+── Tweet 5 (215 chars) ──────────────
+5/ • Iterate constantly. Your platform should be a living product, not a monument. If you treat it like a finished thing, developers will treat it like a museum. Interesting to look at, but nobody wants to touch it.
+
+── Tweet 6 (214 chars) ──────────────
+6/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/your-platform-team-is-a-bottleneck-factory-why-2025-dora-data-shows-internal-developer-platforms-reduce-deploy-frequency-by-40/
+
+#Engineering #Tech

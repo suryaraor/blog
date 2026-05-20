@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — Your 2025 “Event-Driven Architecture” Is Just a Distributed State Machine — Why Tracing Shows 90% of Events Are Idempotent Retries and a Database Trigger Would Be Faster
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/your-2025-event-driven-architecture-is-just-a-distributed-state-machine-why-tracing-shows-90-of-events-are-idempotent-retries-and-a-database-trigger-would-be-faster/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (180 chars) ──────────────
+Your 2025 “Event-Driven Architecture” Is Just a Distributed State Machine — Why Tracing Shows 90% of Events Are Idempotent Retries and a Database Trigger Would Be Faster
+
+Thread 🧵👇
+
+── Tweet 2 (185 chars) ──────────────
+2/ • The Glorious Lie We Tell Ourselves • • The Market’s Quiet Admission • • The Blind Spot: We Forgot What Events Are For • • What You Should Actually Do (And It’s Radical) • • So What
+
+── Tweet 3 (252 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/your-2025-event-driven-architecture-is-just-a-distributed-state-machine-why-tracing-shows-90-of-events-are-idempotent-retries-and-a-database-trigger-would-be-faster/
+
+#Engineering #Tech

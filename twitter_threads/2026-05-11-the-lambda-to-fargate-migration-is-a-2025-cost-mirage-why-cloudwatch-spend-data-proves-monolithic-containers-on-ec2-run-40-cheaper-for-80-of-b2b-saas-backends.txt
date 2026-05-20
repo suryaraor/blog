@@ -1,0 +1,39 @@
+Twitter/X Thread Draft — The \"Lambda-to-Fargate\" Migration Is a 2025 Cost Mirage — Why CloudWatch Spend Data Proves Monolithic Containers on EC2 Run 40% Cheaper for 80% of B2B SaaS Backends
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-lambda-to-fargate-migration-is-a-2025-cost-mirage-why-cloudwatch-spend-data-proves-monolithic-containers-on-ec2-run-40-cheaper-for-80-of-b2b-saas-backends/
+Tweets: 9
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (177 chars) ──────────────
+The \"Lambda-to-Fargate\" Migration Is a 2025 Cost Mirage — Why CloudWatch Spend Data Proves Monolithic Containers on EC2 Run 40% Cheaper for 80% of B2B SaaS Backends
+
+Thread 🧵👇
+
+── Tweet 2 (158 chars) ──────────────
+2/ • EC2 (m6i.xlarge): ~$180/month + ~$25 CloudWatch logs = $205/month • • Lambda (@200M monthly invocations): ~$4,000/month + ~$700 CloudWatch = $4,700/month
+
+── Tweet 3 (138 chars) ──────────────
+3/ • Fargate (1 vCPU, 4GB, 24/7): ~$300/month + ~$150 CloudWatch logs per task (and you need at least 2 tasks for redundancy) = $750/month
+
+── Tweet 4 (277 chars) ──────────────
+4/ • The "migration tax" lasts forever. Serverless tools like Lambda and Fargate charge you for every second of execution and every byte of logs. Monolithic containers charge you for a fixed amount of compute — done. When your traffic grows 2x, your Lambda bill grows 2x. Your…
+
+── Tweet 5 (197 chars) ──────────────
+5/ • Cold starts kill latency. Lambda cold starts add 200–500ms to requests. For B2B SaaS, that ruins the user experience. Fargate doesn't have cold starts, but it has the same CloudWatch overhead.
+
+── Tweet 6 (179 chars) ──────────────
+6/ • Complexity is a liability. Every microservice adds deployment pipelines, service meshes, and debugging nightmares. A monolith is one deploy, one log stream, one mental model.
+
+── Tweet 7 (211 chars) ──────────────
+7/ • CloudWatch cost optimization tools will flood the market — because companies realize they're bleeding cash on logs. • • AWS will price Fargate competitively with EC2 — but only after enough companies leave.
+
+── Tweet 8 (79 chars) ──────────────
+8/ • The "serverless-first" mantra will become "cost-first, serverless-second."
+
+── Tweet 9 (246 chars) ──────────────
+9/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-lambda-to-fargate-migration-is-a-2025-cost-mirage-why-cloudwatch-spend-data-proves-monolithic-containers-on-ec2-run-40-cheaper-for-80-of-b2b-saas-backends/
+
+#Engineering #Tech

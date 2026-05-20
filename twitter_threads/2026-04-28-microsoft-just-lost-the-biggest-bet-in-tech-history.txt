@@ -1,0 +1,33 @@
+Twitter/X Thread Draft — Microsoft Just Lost the Biggest Bet in Tech History
+============================================================
+Date: 2026-04-28
+URL:  https://suryaraor.github.io/blog/2026/04/28/microsoft-just-lost-the-biggest-bet-in-tech-history/
+Tweets: 7
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (62 chars) ──────────────
+Microsoft Just Lost the Biggest Bet in Tech History
+
+Thread 🧵👇
+
+── Tweet 2 (98 chars) ──────────────
+2/ • How a Billion-Dollar Moat Became a Liability • • The Collapse of Vendor Lock-In in the AI Era
+
+── Tweet 3 (269 chars) ──────────────
+3/ • Exclusivity only works when you have sustained competitive advantage. But AI models are getting faster to build, easier to replicate, and increasingly commodified. OpenAI's advantage over competitors shrinks every quarter as Google, Anthropic, and others catch up.
+
+── Tweet 4 (257 chars) ──────────────
+4/ • Exclusivity only works if your partner can't leave. But OpenAI could leave. They could work with Amazon. They could work with Google. Threatening to sue your partner for making a better deal somewhere else is a great way to push them to actually leave.
+
+── Tweet 5 (259 chars) ──────────────
+5/ • Exclusivity only works if your partner trusts you. OpenAI didn't trust that Microsoft would invest enough to keep pace with competitors. Better to diversify across three cloud providers than bet the company on one. • • What Microsoft Lost (Besides Pride)
+
+── Tweet 6 (97 chars) ──────────────
+6/ • What This Means for Your Enterprise Deals • • So What? • • The Question Every CTO Should Ask
+
+── Tweet 7 (139 chars) ──────────────
+7/ Read the full post:
+https://suryaraor.github.io/blog/2026/04/28/microsoft-just-lost-the-biggest-bet-in-tech-history/
+
+#Engineering #Tech

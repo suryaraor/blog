@@ -1,0 +1,4 @@
+---
+layout: none
+---
+[{% for post in site.posts %}{% unless post.robots contains "noindex" %}{"id":"{{ post.url | relative_url }}","title":{{ post.title | jsonify }},"url":"{{ post.url | relative_url }}","date":"{{ post.date | date: "%B %d, %Y" }}","excerpt":{{ post.excerpt | strip_html | truncatewords: 40 | jsonify }}}{% unless forloop.last %},{% endunless %}{% endunless %}{% endfor %}]

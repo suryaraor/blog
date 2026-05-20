@@ -9,6 +9,11 @@ layout: default
 <article class="post-shell">
     <header class="post-header">
         <p class="post-kicker">Essay</p>
+        {% if page.badge == 'editors_pick' %}
+        <span class="quality-badge quality-badge--editors-pick">Editor's Pick</span>
+        {% elsif page.badge == 'featured' %}
+        <span class="quality-badge quality-badge--featured">Featured</span>
+        {% endif %}
         <h1>{{ page.title }}</h1>
         <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -17,6 +22,14 @@ layout: default
             {% if page.author %}<span>by {{ page.author }}</span>{% endif %}
             <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
         </div>
+        {% if page.image %}
+        <figure class="post-hero-image">
+            <img src="{{ page.image | relative_url }}" alt="Hero image for {{ page.title | escape }}">
+            {% if page.image_credit %}
+            <figcaption>{{ page.image_credit }}</figcaption>
+            {% endif %}
+        </figure>
+        {% endif %}
         <div class="post-audio-controls" aria-live="polite">
             <button type="button" class="post-audio-button" data-audio-button>
                 Play aloud

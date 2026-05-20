@@ -32,6 +32,8 @@ I believe the best learning happens at the boundary between theory and practice.
 
 Let's learn together.
 
+{% include consulting-cta.html %}
+
 ## Connect With Me
 
 If you're a fellow technical builder and want to connect, the fastest ways to reach me are:

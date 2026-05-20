@@ -1,0 +1,27 @@
+Twitter/X Thread Draft — The \"Vector Database\" Gold Rush Is a 2025 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-vector-database-gold-rush-is-a-2025-indexing-illusion-why-production-benchmarks-prove-postgresql-with-pgvector-beats-pinecone-at-40-lower-p99-for-80-of-semantic-search-workloads/
+Tweets: 5
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (198 chars) ──────────────
+The \"Vector Database\" Gold Rush Is a 2025 Indexing Illusion—Why Production Benchmarks Prove PostgreSQL with pgvector Beats Pinecone at 40% Lower p99 for 80% of Semantic Search Workloads
+
+Thread 🧵👇
+
+── Tweet 2 (215 chars) ──────────────
+2/ • The Billion-Dollar Bait-and-Switch • • The Quiet Migration Nobody's Writing About • • The Elephant in the Indexing Room • • Pinecone treats vector search as a black box. You send an embedding, get results back.
+
+── Tweet 3 (226 chars) ──────────────
+3/ • PostgreSQL lets you write WHERE category = 'airline_review' ORDER BY embedding  query_vector LIMIT 5. • • That single SQL join reduces latency by 30-50% because you're filtering before the distance computation, not after.
+
+── Tweet 4 (209 chars) ──────────────
+4/ • Pinecone's approach requires filtering in post-processing, which blows up p99 latency under real-world conditions. • • The Pragmatist's Manifesto • • So What • • Stop Adding Complexity. Start Deleting It.
+
+── Tweet 5 (269 chars) ──────────────
+5/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-vector-database-gold-rush-is-a-2025-indexing-illusion-why-production-benchmarks-prove-postgresql-with-pgvector-beats-pinecone-at-40-lower-p99-for-80-of-semantic-search-workloads/
+
+#Engineering #Tech

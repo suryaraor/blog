@@ -1,0 +1,21 @@
+Twitter/X Thread Draft — The Post-Agile Manifesto Is a 2025 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow
+============================================================
+Date: 2026-05-08
+URL:  https://suryaraor.github.io/blog/2026/05/08/the-post-agile-manifesto-is-a-2025-engineering-myth-why-production-cycle-data-proves-structured-kanban-with-fixed-sprints-delivers-40-faster-feature-delivery-than-no-estimate-flow/
+Tweets: 3
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (195 chars) ──────────────
+The Post-Agile Manifesto Is a 2025 Engineering Myth — Why Production Cycle Data Proves Structured Kanban with Fixed Sprints Delivers 40% Faster Feature Delivery Than “No-Estimate” Flow
+
+Thread 🧵👇
+
+── Tweet 2 (217 chars) ──────────────
+2/ • The No-Estimate Promise That Broke • • The Hidden Cost of Your Freedom • • Your Intuition Was Right • • What You Need to Do Differently • • So What Should You Actually Do? • • The Hardest Truth Is the Easiest One
+
+── Tweet 3 (267 chars) ──────────────
+3/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/08/the-post-agile-manifesto-is-a-2025-engineering-myth-why-production-cycle-data-proves-structured-kanban-with-fixed-sprints-delivers-40-faster-feature-delivery-than-no-estimate-flow/
+
+#Engineering #Tech

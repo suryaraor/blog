@@ -1,0 +1,24 @@
+Twitter/X Thread Draft — The 2025 \"GraphQL Over REST\" Dogma Is Crumbling
+============================================================
+Date: 2026-05-11
+URL:  https://suryaraor.github.io/blog/2026/05/11/the-2025-graphql-over-rest-dogma-is-crumbling/
+Tweets: 4
+
+--- DRAFT (edit before posting) ---
+
+── Tweet 1 (60 chars) ──────────────
+The 2025 \"GraphQL Over REST\" Dogma Is Crumbling
+
+Thread 🧵👇
+
+── Tweet 2 (194 chars) ──────────────
+2/ • The Silent Killer: Complexity Tax • • Why Traces Don't Lie • • The Industry's Blind Spot • • Schema obsession: We fell in love with the schema, but the user cares about the loading spinner.
+
+── Tweet 3 (257 chars) ──────────────
+3/ • Tooling worship: We love GraphiQL, but it masks the fact that the underlying network call is a monster. • • The "One True Way" fallacy: We treat architectural patterns like religions, not trade-offs. • • Forward Implications • • So What? • • Conclusion
+
+── Tweet 4 (133 chars) ──────────────
+4/ Read the full post:
+https://suryaraor.github.io/blog/2026/05/11/the-2025-graphql-over-rest-dogma-is-crumbling/
+
+#Engineering #Tech
