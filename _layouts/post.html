@@ -24,7 +24,7 @@ layout: default
         </div>
         {% if page.image %}
         <figure class="post-hero-image">
-            <img src="{{ page.image | relative_url }}" alt="Hero image for {{ page.title | escape }}">
+            <img class="post-hero" src="{{ page.image | relative_url }}" alt="Hero image for {{ page.title | escape }}">
             {% if page.image_credit %}
             <figcaption>{{ page.image_credit }}</figcaption>
             {% endif %}
