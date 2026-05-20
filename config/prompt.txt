@@ -30,7 +30,7 @@ Output:
 
 - No mojibake artifacts
 
-- move the output file under github_push\blog\_posts
+- move the output file under _posts
 
 - move the input file after processing under processed folder
 
