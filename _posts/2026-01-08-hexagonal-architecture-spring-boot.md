@@ -2,7 +2,7 @@
 order: 7
 layout: default
 title: "Implementing Hexagonal Architecture (Ports & Adapters) and Clean Architecture in Spring Boot"
-date: 2026-01-08 00:00:01
+date: "2026-01-08 00:00:01"
 author: "Surya Rao Rayarao"
 description: "A comprehensive guide for senior Java developers on implementing Hexagonal Architecture in Spring Boot applications, with real-world code examples and honest trade-off analysis."
 categories: [Java, Spring Boot, Architecture]

@@ -2,7 +2,7 @@
 order: 189
 layout: default
 title: "Your SPA Is a 7x Mobile Performance Tax"
-date: 2026-05-12 20:04:25
+date: "2026-05-12 20:04:25"
 image: /assets/images/posts/2026-05-12-your-spa-is-a-7x-mobile-performance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

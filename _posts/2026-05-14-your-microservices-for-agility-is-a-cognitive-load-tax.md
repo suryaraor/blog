@@ -2,7 +2,7 @@
 order: 229
 layout: default
 title: "Your \"Microservices for Agility\" Is a Cognitive Load Tax"
-date: 2026-05-14 08:18:36
+date: "2026-05-14 08:18:36"
 image: /assets/images/posts/2026-05-14-your-microservices-for-agility-is-a-cognitive-load-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

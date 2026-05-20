@@ -2,7 +2,7 @@
 order: 305
 layout: default
 title: "Extending Agents with Graph-Powered Reasoning and Neo4j"
-date: 2026-05-20 10:20:06
+date: "2026-05-20 10:20:06"
 image: /assets/images/posts/2026-05-20-extending-agents-with-graph-powered-reasoning-and-neo4j.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 quality_score: 7.5

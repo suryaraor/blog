@@ -2,7 +2,7 @@
 order: 223
 layout: default
 title: "Your Postgres Addiction Is Costing You 6x Query Time"
-date: 2026-05-13 19:18:55
+date: "2026-05-13 19:18:55"
 image: /assets/images/posts/2026-05-13-your-postgres-addiction-is-costing-you-6x-query-time.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

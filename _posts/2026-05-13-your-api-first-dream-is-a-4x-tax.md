@@ -2,7 +2,7 @@
 order: 201
 layout: default
 title: "Your API-First Dream Is a 4x Tax"
-date: 2026-05-13 07:34:33
+date: "2026-05-13 07:34:33"
 image: /assets/images/posts/2026-05-13-your-api-first-dream-is-a-4x-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-13-your-api-first-dream-is-a-4x-tax.wav

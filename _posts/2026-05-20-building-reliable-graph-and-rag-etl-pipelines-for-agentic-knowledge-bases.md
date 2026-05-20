@@ -2,7 +2,7 @@
 order: 304
 layout: default
 title: "Building Reliable Graph and RAG ETL Pipelines for Agentic Knowledge Bases"
-date: 2026-05-20 09:20:58
+date: "2026-05-20 09:20:58"
 image: /assets/images/posts/2026-05-20-building-reliable-graph-and-rag-etl-pipelines-for-agentic-knowledge-bases.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-20-building-reliable-graph-and-rag-etl-pipelines-for-agentic-knowledge-bases.wav

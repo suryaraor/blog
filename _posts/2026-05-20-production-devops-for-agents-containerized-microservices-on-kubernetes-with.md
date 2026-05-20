@@ -2,7 +2,7 @@
 order: 301
 layout: default
 title: "Production DevOps for Agents: Containerized Microservices on Kubernetes with"
-date: 2026-05-20 06:15:15
+date: "2026-05-20 06:15:15"
 image: /assets/images/posts/2026-05-20-production-devops-for-agents-containerized-microservices-on-kubernetes-with.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

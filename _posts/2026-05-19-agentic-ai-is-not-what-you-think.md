@@ -2,7 +2,7 @@
 order: 290
 layout: default
 title: "Agentic AI Is Not What You Think"
-date: 2026-05-19 12:19:54
+date: "2026-05-19 12:19:54"
 image: /assets/images/posts/2026-05-19-agentic-ai-is-not-what-you-think.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 quality_score: 8.5

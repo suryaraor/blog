@@ -2,7 +2,7 @@
 order: 288
 layout: default
 title: "Your JSON Obsession Is Costing You 3x"
-date: 2026-05-19 09:19:24
+date: "2026-05-19 09:19:24"
 image: /assets/images/posts/2026-05-19-your-json-obsession-is-costing-you-3x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

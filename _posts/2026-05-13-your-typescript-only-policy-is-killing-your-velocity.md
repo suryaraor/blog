@@ -2,7 +2,7 @@
 order: 220
 layout: default
 title: "Your TypeScript-Only Policy Is Killing Your Velocity"
-date: 2026-05-13 15:19:07
+date: "2026-05-13 15:19:07"
 image: /assets/images/posts/2026-05-13-your-typescript-only-policy-is-killing-your-velocity.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

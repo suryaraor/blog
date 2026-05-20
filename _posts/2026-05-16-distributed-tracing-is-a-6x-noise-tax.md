@@ -2,7 +2,7 @@
 order: 252
 layout: default
 title: "Distributed Tracing Is a 6x Noise Tax"
-date: 2026-05-16 10:18:33
+date: "2026-05-16 10:18:33"
 image: /assets/images/posts/2026-05-16-distributed-tracing-is-a-6x-noise-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-16-distributed-tracing-is-a-6x-noise-tax.wav

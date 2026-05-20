@@ -2,7 +2,7 @@
 order: 293
 layout: default
 title: "LLMs as Central Reasoners: The Brain Behind Agentic Systems"
-date: 2026-05-19 15:18:35
+date: "2026-05-19 15:18:35"
 image: /assets/images/posts/2026-05-19-llms-as-central-reasoners-the-brain-behind-agentic-systems.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-19-llms-as-central-reasoners-the-brain-behind-agentic-systems.wav

@@ -2,7 +2,7 @@
 order: 203
 layout: default
 title: "Your ZIRP Hiring Is Killing Productivity"
-date: 2026-05-13 08:50:13
+date: "2026-05-13 08:50:13"
 image: /assets/images/posts/2026-05-13-your-zirp-hiring-is-killing-productivity.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

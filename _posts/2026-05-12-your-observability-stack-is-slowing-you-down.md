@@ -2,7 +2,7 @@
 order: 190
 layout: default
 title: "Your \"Observability Stack\" Is Slowing You Down"
-date: 2026-05-12 21:03:28
+date: "2026-05-12 21:03:28"
 image: /assets/images/posts/2026-05-12-your-observability-stack-is-slowing-you-down.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

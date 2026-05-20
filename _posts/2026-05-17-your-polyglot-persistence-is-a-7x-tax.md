@@ -2,7 +2,7 @@
 order: 271
 layout: default
 title: "Your \"Polyglot Persistence\" Is a 7x Tax"
-date: 2026-05-17 22:20:52
+date: "2026-05-17 22:20:52"
 image: /assets/images/posts/2026-05-17-your-polyglot-persistence-is-a-7x-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-17-your-polyglot-persistence-is-a-7x-tax.wav

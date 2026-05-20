@@ -2,7 +2,7 @@
 order: 247
 layout: default
 title: "Your 2025 “Structured Prompt Engineering” Is a 2x Output Tax"
-date: 2026-05-16 06:10:07
+date: "2026-05-16 06:10:07"
 image: /assets/images/posts/2026-05-16-your-2025-structured-prompt-engineering-is-a-2x-output-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 quality_score: 9.0

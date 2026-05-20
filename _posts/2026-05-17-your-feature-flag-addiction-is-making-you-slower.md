@@ -2,7 +2,7 @@
 order: 266
 layout: default
 title: "Your “Feature Flag” Addiction Is Making You Slower"
-date: 2026-05-17 17:19:26
+date: "2026-05-17 17:19:26"
 image: /assets/images/posts/2026-05-17-your-feature-flag-addiction-is-making-you-slower.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

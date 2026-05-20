@@ -2,7 +2,7 @@
 order: 215
 layout: default
 title: "Your RAG Stack Is a Hallucination Tax"
-date: 2026-05-13 13:18:15
+date: "2026-05-13 13:18:15"
 image: /assets/images/posts/2026-05-13-your-rag-stack-is-a-hallucination-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

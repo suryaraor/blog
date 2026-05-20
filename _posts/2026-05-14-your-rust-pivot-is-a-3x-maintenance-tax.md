@@ -2,7 +2,7 @@
 order: 233
 layout: default
 title: "Your Rust Pivot Is a 3x Maintenance Tax"
-date: 2026-05-14 21:18:28
+date: "2026-05-14 21:18:28"
 image: /assets/images/posts/2026-05-14-your-rust-pivot-is-a-3x-maintenance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

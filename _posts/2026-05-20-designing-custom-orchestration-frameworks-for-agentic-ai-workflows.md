@@ -2,7 +2,7 @@
 order: 306
 layout: default
 title: "Designing Custom Orchestration Frameworks for Agentic AI Workflows"
-date: 2026-05-20 11:19:46
+date: "2026-05-20 11:19:46"
 image: /assets/images/posts/2026-05-20-designing-custom-orchestration-frameworks-for-agentic-ai-workflows.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-20-designing-custom-orchestration-frameworks-for-agentic-ai-workflows.wav

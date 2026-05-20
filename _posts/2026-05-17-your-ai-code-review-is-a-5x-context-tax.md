@@ -2,7 +2,7 @@
 order: 263
 layout: default
 title: "Your AI Code Review Is a 5x Context Tax"
-date: 2026-05-17 14:19:25
+date: "2026-05-17 14:19:25"
 image: /assets/images/posts/2026-05-17-your-ai-code-review-is-a-5x-context-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

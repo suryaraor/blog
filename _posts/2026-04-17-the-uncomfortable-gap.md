@@ -2,7 +2,7 @@
 order: 9
 layout: default
 title: "The Uncomfortable Gap Between Who You Were and Who You're Becoming"
-date: 2026-04-17 00:00:09
+date: "2026-04-17 00:00:09"
 difficulty: Intermediate
 ---
 # The Uncomfortable Gap Between Who You Were and Who You're Becoming

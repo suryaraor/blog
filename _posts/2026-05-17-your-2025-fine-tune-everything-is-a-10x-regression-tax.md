@@ -2,7 +2,7 @@
 order: 261
 layout: default
 title: "Your 2025 \"Fine-Tune Everything\" Is a 10x Regression Tax"
-date: 2026-05-17 12:17:54
+date: "2026-05-17 12:17:54"
 image: /assets/images/posts/2026-05-17-your-2025-fine-tune-everything-is-a-10x-regression-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

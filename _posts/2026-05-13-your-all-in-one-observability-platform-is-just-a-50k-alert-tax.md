@@ -2,7 +2,7 @@
 order: 218
 layout: default
 title: "Your “All-in-One” Observability Platform Is Just a $50k Alert Tax"
-date: 2026-05-13 14:03:53
+date: "2026-05-13 14:03:53"
 image: /assets/images/posts/2026-05-13-your-all-in-one-observability-platform-is-just-a-50k-alert-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

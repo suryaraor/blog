@@ -2,7 +2,7 @@
 order: 254
 layout: default
 title: "Your Python AI Stack Is Burning 3x More CPU Than It Should"
-date: 2026-05-16 12:18:32
+date: "2026-05-16 12:18:32"
 image: /assets/images/posts/2026-05-16-your-python-ai-stack-is-burning-3x-more-cpu-than-it-should.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

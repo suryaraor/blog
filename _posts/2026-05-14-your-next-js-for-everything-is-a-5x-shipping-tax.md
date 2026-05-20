@@ -2,7 +2,7 @@
 order: 234
 layout: default
 title: "Your “Next.js for Everything” Is a 5x Shipping Tax"
-date: 2026-05-14 22:19:07
+date: "2026-05-14 22:19:07"
 image: /assets/images/posts/2026-05-14-your-next-js-for-everything-is-a-5x-shipping-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

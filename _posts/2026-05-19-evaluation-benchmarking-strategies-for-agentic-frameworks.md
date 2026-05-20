@@ -2,7 +2,7 @@
 order: 296
 layout: default
 title: "Evaluation & Benchmarking Strategies for Agentic Frameworks"
-date: 2026-05-19 18:20:02
+date: "2026-05-19 18:20:02"
 image: /assets/images/posts/2026-05-19-evaluation-benchmarking-strategies-for-agentic-frameworks.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-19-evaluation-benchmarking-strategies-for-agentic-frameworks.wav

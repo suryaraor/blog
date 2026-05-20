@@ -2,7 +2,7 @@
 order: 300
 layout: default
 title: "Framework-Level Engineering: Fusing LangGraph with Deep Planning Agent"
-date: 2026-05-20 00:20:24
+date: "2026-05-20 00:20:24"
 image: /assets/images/posts/2026-05-20-framework-level-engineering-fusing-langgraph-with-deep-planning-agent.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-20-framework-level-engineering-fusing-langgraph-with-deep-planning-agent.wav

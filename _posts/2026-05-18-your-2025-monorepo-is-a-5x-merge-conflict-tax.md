@@ -2,7 +2,7 @@
 order: 277
 layout: default
 title: "Your 2025 Monorepo Is a 5x Merge Conflict Tax"
-date: 2026-05-18 11:21:27
+date: "2026-05-18 11:21:27"
 image: /assets/images/posts/2026-05-18-your-2025-monorepo-is-a-5x-merge-conflict-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 quality_score: 7.5

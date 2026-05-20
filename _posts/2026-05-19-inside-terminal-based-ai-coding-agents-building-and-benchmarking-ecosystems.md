@@ -2,7 +2,7 @@
 order: 299
 layout: default
 title: "Inside Terminal-Based AI Coding Agents: Building and Benchmarking Ecosystems"
-date: 2026-05-19 23:19:54
+date: "2026-05-19 23:19:54"
 image: /assets/images/posts/2026-05-19-inside-terminal-based-ai-coding-agents-building-and-benchmarking-ecosystems.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-19-inside-terminal-based-ai-coding-agents-building-and-benchmarking-ecosystems.wav

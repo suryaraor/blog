@@ -2,7 +2,7 @@
 order: 267
 layout: default
 title: "Your 2025 \"TypeScript Everywhere\" Is a 6x Compile-Time Tax"
-date: 2026-05-17 18:20:10
+date: "2026-05-17 18:20:10"
 image: /assets/images/posts/2026-05-17-your-2025-typescript-everywhere-is-a-6x-compile-time-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-17-your-2025-typescript-everywhere-is-a-6x-compile-time-tax.wav

@@ -2,7 +2,7 @@
 order: 284
 layout: default
 title: "Your Agentic AI Is a 3x Hallucination Tax"
-date: 2026-05-18 21:18:48
+date: "2026-05-18 21:18:48"
 image: /assets/images/posts/2026-05-18-your-agentic-ai-is-a-3x-hallucination-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-18-your-agentic-ai-is-a-3x-hallucination-tax.wav

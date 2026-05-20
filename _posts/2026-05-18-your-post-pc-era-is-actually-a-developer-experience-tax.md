@@ -2,7 +2,7 @@
 order: 285
 layout: default
 title: "Your “Post-PC Era” Is Actually a Developer Experience Tax"
-date: 2026-05-18 22:19:08
+date: "2026-05-18 22:19:08"
 image: /assets/images/posts/2026-05-18-your-post-pc-era-is-actually-a-developer-experience-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

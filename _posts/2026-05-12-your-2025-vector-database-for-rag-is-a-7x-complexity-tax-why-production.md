@@ -2,7 +2,7 @@
 order: 180
 layout: default
 title: "Your 2025 \"Vector Database for RAG\" Is a 7x Complexity Tax — Why Production"
-date: 2026-05-12 15:34:46
+date: "2026-05-12 15:34:46"
 image: /assets/images/posts/2026-05-12-your-2025-vector-database-for-rag-is-a-7x-complexity-tax-why-production.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-12-your-2025-vector-database-for-rag-is-a-7x-complexity-tax-why-production.wav

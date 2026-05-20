@@ -2,7 +2,7 @@
 order: 257
 layout: default
 title: "Your \"Browser IDE\" Is a 4x Cognitive Tax"
-date: 2026-05-16 16:19:28
+date: "2026-05-16 16:19:28"
 image: /assets/images/posts/2026-05-16-your-browser-ide-is-a-4x-cognitive-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

@@ -2,7 +2,7 @@
 order: 250
 layout: default
 title: "Your PWA is Costing You 3x Conversions"
-date: 2026-05-16 08:18:19
+date: "2026-05-16 08:18:19"
 image: /assets/images/posts/2026-05-16-your-pwa-is-costing-you-3x-conversions.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

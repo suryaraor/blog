@@ -2,7 +2,7 @@
 order: 204
 layout: default
 title: "Your AI Copilot Is a 40% Context Tax"
-date: 2026-05-13 09:04:24
+date: "2026-05-13 09:04:24"
 image: /assets/images/posts/2026-05-13-your-ai-copilot-is-a-40-context-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-13-your-ai-copilot-is-a-40-context-tax.wav

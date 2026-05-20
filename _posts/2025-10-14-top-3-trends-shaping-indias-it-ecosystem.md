@@ -2,7 +2,7 @@
 order: 5
 layout: default
 title: "Top 3 Trends Shaping India's IT Ecosystem"
-date: 2025-10-14 00:00:01
+date: "2025-10-14 00:00:01"
 categories: [Technology, India, Trends]
 tags: [AI, digital-transformation, indigenous-tech, Arattai, Zoho, startup-ecosystem]
 author: Surya Rao

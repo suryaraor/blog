@@ -2,7 +2,7 @@
 order: 235
 layout: default
 title: "Your WASM \"Future-Proofing\" Is Actually a 6x Performance Tax"
-date: 2026-05-15 05:26:10
+date: "2026-05-15 05:26:10"
 image: /assets/images/posts/2026-05-15-your-wasm-future-proofing-is-actually-a-6x-performance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

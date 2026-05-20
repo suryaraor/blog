@@ -2,7 +2,7 @@
 order: 241
 layout: default
 title: "Your 2025 \"AI Code Review\" Is a 5x Noise Tax"
-date: 2026-05-15 15:18:47
+date: "2026-05-15 15:18:47"
 image: /assets/images/posts/2026-05-15-your-2025-ai-code-review-is-a-5x-noise-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

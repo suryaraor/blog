@@ -2,7 +2,7 @@
 order: 196
 layout: default
 title: "Your Redis Cache Is Probably Slowing You Down"
-date: 2026-05-13 05:56:57
+date: "2026-05-13 05:56:57"
 image: /assets/images/posts/2026-05-13-your-redis-cache-is-probably-slowing-you-down.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

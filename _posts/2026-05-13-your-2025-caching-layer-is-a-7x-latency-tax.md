@@ -2,7 +2,7 @@
 order: 216
 layout: default
 title: "Your 2025 \"Caching Layer\" Is a 7x Latency Tax"
-date: 2026-05-13 13:33:47
+date: "2026-05-13 13:33:47"
 image: /assets/images/posts/2026-05-13-your-2025-caching-layer-is-a-7x-latency-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

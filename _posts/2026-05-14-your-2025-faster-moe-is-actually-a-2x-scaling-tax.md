@@ -2,7 +2,7 @@
 order: 231
 layout: default
 title: "Your 2025 \"Faster MoE\" Is Actually a 2x Scaling Tax"
-date: 2026-05-14 16:19:14
+date: "2026-05-14 16:19:14"
 image: /assets/images/posts/2026-05-14-your-2025-faster-moe-is-actually-a-2x-scaling-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

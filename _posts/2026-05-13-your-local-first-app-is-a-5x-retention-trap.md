@@ -2,7 +2,7 @@
 order: 214
 layout: default
 title: "Your Local-First App Is a 5x Retention Trap"
-date: 2026-05-13 12:48:14
+date: "2026-05-13 12:48:14"
 image: /assets/images/posts/2026-05-13-your-local-first-app-is-a-5x-retention-trap.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-13-your-local-first-app-is-a-5x-retention-trap.wav

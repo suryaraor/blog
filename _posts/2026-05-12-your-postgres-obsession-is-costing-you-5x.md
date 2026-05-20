@@ -2,7 +2,7 @@
 order: 192
 layout: default
 title: "Your Postgres Obsession Is Costing You 5x"
-date: 2026-05-12 21:49:19
+date: "2026-05-12 21:49:19"
 image: /assets/images/posts/2026-05-12-your-postgres-obsession-is-costing-you-5x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

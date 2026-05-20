@@ -2,7 +2,7 @@
 order: 195
 layout: default
 title: "Your 2025 \"AI Coding Assistant\" Is a 4x Debugging Tax"
-date: 2026-05-12 23:02:56
+date: "2026-05-12 23:02:56"
 image: /assets/images/posts/2026-05-12-your-2025-ai-coding-assistant-is-a-4x-debugging-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-12-your-2025-ai-coding-assistant-is-a-4x-debugging-tax.wav

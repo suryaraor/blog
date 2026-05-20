@@ -2,7 +2,7 @@
 order: 294
 layout: default
 title: "Making AI Agents Work: A Guide to Tool Use and Function Calling"
-date: 2026-05-19 16:21:49
+date: "2026-05-19 16:21:49"
 image: /assets/images/posts/2026-05-19-making-ai-agents-work-a-guide-to-tool-use-and-function-calling.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-19-making-ai-agents-work-a-guide-to-tool-use-and-function-calling.wav

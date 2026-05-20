@@ -2,7 +2,7 @@
 order: 278
 layout: default
 title: "Your AI Refactoring Is a 10x Tech Debt Accelerator"
-date: 2026-05-18 12:19:26
+date: "2026-05-18 12:19:26"
 image: /assets/images/posts/2026-05-18-your-ai-refactoring-is-a-10x-tech-debt-accelerator.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-18-your-ai-refactoring-is-a-10x-tech-debt-accelerator.wav

@@ -2,7 +2,7 @@
 order: 244
 layout: default
 title: "Your 2025 “PostgreSQL for Everything” Is a 3x Scaling Tax"
-date: 2026-05-15 18:18:43
+date: "2026-05-15 18:18:43"
 image: /assets/images/posts/2026-05-15-your-2025-postgresql-for-everything-is-a-3x-scaling-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-15-your-2025-postgresql-for-everything-is-a-3x-scaling-tax.wav

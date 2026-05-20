@@ -2,7 +2,7 @@
 order: 295
 layout: default
 title: "Memory Systems in AI Agents: Short-Term Context vs Long-Term Vector Storage"
-date: 2026-05-19 17:21:39
+date: "2026-05-19 17:21:39"
 image: /assets/images/posts/2026-05-19-memory-systems-in-ai-agents-short-term-context-vs-long-term-vector-storage.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-19-memory-systems-in-ai-agents-short-term-context-vs-long-term-vector-storage.wav

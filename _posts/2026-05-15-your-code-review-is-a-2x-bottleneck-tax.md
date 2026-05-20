@@ -2,7 +2,7 @@
 order: 237
 layout: default
 title: "Your Code Review Is a 2x Bottleneck Tax"
-date: 2026-05-15 08:19:12
+date: "2026-05-15 08:19:12"
 image: /assets/images/posts/2026-05-15-your-code-review-is-a-2x-bottleneck-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-15-your-code-review-is-a-2x-bottleneck-tax.wav

@@ -2,7 +2,7 @@
 order: 292
 layout: default
 title: "Designing Multi-Agent Orchestration Patterns"
-date: 2026-05-19 09:00:00
+date: "2026-05-19 09:00:00"
 categories: AI
 difficulty: Intermediate
 audio: /assets/audio/posts/2026-05-19-designing-multi-agent-orchestration-patterns.wav

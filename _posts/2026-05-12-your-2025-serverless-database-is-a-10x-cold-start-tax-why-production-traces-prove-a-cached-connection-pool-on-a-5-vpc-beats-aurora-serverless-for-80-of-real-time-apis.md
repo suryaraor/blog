@@ -2,7 +2,7 @@
 order: 153
 layout: default
 title: "Your 2025 “Serverless” Database Is a 10x Cold-Start Tax — Why Production Traces Prove a Cached Connection Pool on a $5 VPC Beats Aurora Serverless for 80% of Real-Time APIs"
-date: 2026-05-12 09:30:00
+date: "2026-05-12 09:30:00"
 categories: Data
 difficulty: Advanced
 image: /assets/images/posts/2026-05-12-your-2025-serverless-database-is-a-10x-cold-start-tax-why-production-traces-prove-a-cached-connection-pool-on-a-5-vpc-beats-aurora-serverless-for-80-of-real-time-apis.jpg

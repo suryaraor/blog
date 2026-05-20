@@ -2,7 +2,7 @@
 order: 287
 layout: default
 title: "Your 2025 \"Serverless SQL\" Is a 10x Compute Tax"
-date: 2026-05-19 08:18:23
+date: "2026-05-19 08:18:23"
 image: /assets/images/posts/2026-05-19-your-2025-serverless-sql-is-a-10x-compute-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

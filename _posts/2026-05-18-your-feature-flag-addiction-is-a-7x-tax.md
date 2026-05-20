@@ -2,7 +2,7 @@
 order: 273
 layout: default
 title: "Your Feature Flag Addiction Is a 7x Tax"
-date: 2026-05-18 07:18:49
+date: "2026-05-18 07:18:49"
 image: /assets/images/posts/2026-05-18-your-feature-flag-addiction-is-a-7x-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-18-your-feature-flag-addiction-is-a-7x-tax.wav

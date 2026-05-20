@@ -2,7 +2,7 @@
 order: 272
 layout: default
 title: "Your Kubernetes Obsession Is Costing You 9x Brain Cells"
-date: 2026-05-18 06:37:21
+date: "2026-05-18 06:37:21"
 image: /assets/images/posts/2026-05-18-your-kubernetes-obsession-is-costing-you-9x-brain-cells.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

@@ -2,7 +2,7 @@
 order: 276
 layout: default
 title: "Your 'Vibe Coding' Is a 9x Debugging Tax"
-date: 2026-05-18 10:18:58
+date: "2026-05-18 10:18:58"
 image: /assets/images/posts/2026-05-18-your-vibe-coding-is-a-9x-debugging-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 quality_score: 7.5

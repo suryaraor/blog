@@ -2,7 +2,7 @@
 order: 298
 layout: default
 title: "Understanding MCP and FastMCP: Building Unified Tools for Enterprise APIs"
-date: 2026-05-19 22:19:59
+date: "2026-05-19 22:19:59"
 image: /assets/images/posts/2026-05-19-understanding-mcp-and-fastmcp-building-unified-tools-for-enterprise-apis.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-19-understanding-mcp-and-fastmcp-building-unified-tools-for-enterprise-apis.wav

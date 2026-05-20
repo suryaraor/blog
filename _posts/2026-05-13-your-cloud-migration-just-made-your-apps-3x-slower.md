@@ -2,7 +2,7 @@
 order: 213
 layout: default
 title: "Your Cloud Migration Just Made Your Apps 3x Slower"
-date: 2026-05-13 12:19:51
+date: "2026-05-13 12:19:51"
 image: /assets/images/posts/2026-05-13-your-cloud-migration-just-made-your-apps-3x-slower.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

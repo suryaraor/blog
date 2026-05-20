@@ -2,7 +2,7 @@
 order: 245
 layout: default
 title: "Your Vector Database Is a 3x Relevance Tax"
-date: 2026-05-15 19:19:12
+date: "2026-05-15 19:19:12"
 image: /assets/images/posts/2026-05-15-your-vector-database-is-a-3x-relevance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-15-your-vector-database-is-a-3x-relevance-tax.wav

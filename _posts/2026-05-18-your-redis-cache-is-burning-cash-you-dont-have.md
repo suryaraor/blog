@@ -2,7 +2,7 @@
 order: 279
 layout: default
 title: "Your Redis Cache Is Burning Cash You Don't Have"
-date: 2026-05-18 13:19:10
+date: "2026-05-18 13:19:10"
 image: /assets/images/posts/2026-05-18-your-redis-cache-is-burning-cash-you-dont-have.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

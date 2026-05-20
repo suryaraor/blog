@@ -2,7 +2,7 @@
 order: 256
 layout: default
 title: "Your 2025 \"Vector Databases\" Are a 5x Recall Tax"
-date: 2026-05-16 15:19:00
+date: "2026-05-16 15:19:00"
 image: /assets/images/posts/2026-05-16-your-2025-vector-databases-are-a-5x-recall-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

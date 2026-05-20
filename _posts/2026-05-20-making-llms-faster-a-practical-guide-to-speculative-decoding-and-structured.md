@@ -2,7 +2,7 @@
 order: 302
 layout: default
 title: "Making LLMs Faster: A Practical Guide to Speculative Decoding and Structured"
-date: 2026-05-20 07:20:01
+date: "2026-05-20 07:20:01"
 image: /assets/images/posts/2026-05-20-making-llms-faster-a-practical-guide-to-speculative-decoding-and-structured.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

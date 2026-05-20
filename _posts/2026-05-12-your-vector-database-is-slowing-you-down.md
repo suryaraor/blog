@@ -2,7 +2,7 @@
 order: 191
 layout: default
 title: "Your Vector Database Is Slowing You Down"
-date: 2026-05-12 21:19:05
+date: "2026-05-12 21:19:05"
 image: /assets/images/posts/2026-05-12-your-vector-database-is-slowing-you-down.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

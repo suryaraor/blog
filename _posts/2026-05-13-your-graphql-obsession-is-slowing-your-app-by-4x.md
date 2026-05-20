@@ -2,7 +2,7 @@
 order: 222
 layout: default
 title: "Your GraphQL Obsession Is Slowing Your App By 4x"
-date: 2026-05-13 18:18:48
+date: "2026-05-13 18:18:48"
 image: /assets/images/posts/2026-05-13-your-graphql-obsession-is-slowing-your-app-by-4x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

@@ -2,7 +2,7 @@
 order: 209
 layout: default
 title: "Your Post-Mortem Culture Is Killing Your On-Call"
-date: 2026-05-13 11:04:20
+date: "2026-05-13 11:04:20"
 image: /assets/images/posts/2026-05-13-your-post-mortem-culture-is-killing-your-on-call.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

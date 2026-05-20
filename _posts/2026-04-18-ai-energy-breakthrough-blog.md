@@ -2,7 +2,7 @@
 order: 10
 layout: default
 title: "The AI Energy Breakthrough Nobody's Talking About-Why 100x Efficiency Matters More Than the Next Big Model"
-date: 2026-04-18 00:00:01
+date: "2026-04-18 00:00:01"
 difficulty: Intermediate
 ---
 # The AI Energy Breakthrough Nobody's Talking About-Why 100x Efficiency Matters More Than the Next Big Model

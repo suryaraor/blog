@@ -2,7 +2,7 @@
 order: 281
 layout: default
 title: "Your \"Serverless for Everything\" Is a 4x Cold-Start Tax"
-date: 2026-05-18 15:18:58
+date: "2026-05-18 15:18:58"
 image: /assets/images/posts/2026-05-18-your-serverless-for-everything-is-a-4x-cold-start-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

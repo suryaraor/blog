@@ -2,7 +2,7 @@
 order: 303
 layout: default
 title: "Serverless Functions vs. GPU-Accelerated Containers: A Practical Guide"
-date: 2026-05-20 08:20:06
+date: "2026-05-20 08:20:06"
 image: /assets/images/posts/2026-05-20-serverless-functions-vs-gpu-accelerated-containers-a-practical-guide.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-20-serverless-functions-vs-gpu-accelerated-containers-a-practical-guide.wav

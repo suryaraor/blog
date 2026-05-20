@@ -2,7 +2,7 @@
 order: 268
 layout: default
 title: "Your AI Unit Tests Are a 7x Maintenance Tax"
-date: 2026-05-17 19:20:23
+date: "2026-05-17 19:20:23"
 image: /assets/images/posts/2026-05-17-your-ai-unit-tests-are-a-7x-maintenance-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

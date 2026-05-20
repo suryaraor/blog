@@ -2,7 +2,7 @@
 order: 12
 layout: default
 title: "The Unsexy AI Breakthrough Nobody's Talking About"
-date: 2026-04-18 00:00:09
+date: "2026-04-18 00:00:09"
 difficulty: Intermediate
 ---
 <figure class="post-featured-image">

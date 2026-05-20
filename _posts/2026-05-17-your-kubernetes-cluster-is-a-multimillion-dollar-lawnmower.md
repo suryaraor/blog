@@ -2,7 +2,7 @@
 order: 260
 layout: default
 title: "Your Kubernetes Cluster is a Multimillion Dollar Lawnmower"
-date: 2026-05-17 11:18:36
+date: "2026-05-17 11:18:36"
 image: /assets/images/posts/2026-05-17-your-kubernetes-cluster-is-a-multimillion-dollar-lawnmower.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

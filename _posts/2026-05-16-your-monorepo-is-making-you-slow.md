@@ -2,7 +2,7 @@
 order: 255
 layout: default
 title: "Your Monorepo Is Making You Slow"
-date: 2026-05-16 13:20:23
+date: "2026-05-16 13:20:23"
 ---
 # Your Monorepo Is Making You Slow
 

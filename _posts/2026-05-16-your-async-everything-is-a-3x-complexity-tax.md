@@ -2,7 +2,7 @@
 order: 253
 layout: default
 title: "Your \"Async Everything\" Is a 3x Complexity Tax"
-date: 2026-05-16 11:17:59
+date: "2026-05-16 11:17:59"
 image: /assets/images/posts/2026-05-16-your-async-everything-is-a-3x-complexity-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

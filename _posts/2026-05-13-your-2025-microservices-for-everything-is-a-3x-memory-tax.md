@@ -2,7 +2,7 @@
 order: 200
 layout: default
 title: "Your 2025 \"Microservices for Everything\" Is a 3x Memory Tax"
-date: 2026-05-13 07:19:47
+date: "2026-05-13 07:19:47"
 image: /assets/images/posts/2026-05-13-your-2025-microservices-for-everything-is-a-3x-memory-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

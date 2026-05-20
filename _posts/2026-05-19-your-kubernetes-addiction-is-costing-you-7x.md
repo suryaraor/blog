@@ -2,7 +2,7 @@
 order: 289
 layout: default
 title: "Your Kubernetes Addiction Is Costing You 7x"
-date: 2026-05-19 11:18:46
+date: "2026-05-19 11:18:46"
 image: /assets/images/posts/2026-05-19-your-kubernetes-addiction-is-costing-you-7x.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

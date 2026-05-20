@@ -2,7 +2,7 @@
 order: 230
 layout: default
 title: "Your React Addiction Is Costing You 6x Performance"
-date: 2026-05-14 14:19:03
+date: "2026-05-14 14:19:03"
 image: /assets/images/posts/2026-05-14-your-react-addiction-is-costing-you-6x-performance.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 ---

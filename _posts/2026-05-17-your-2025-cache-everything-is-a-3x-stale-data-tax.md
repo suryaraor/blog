@@ -2,7 +2,7 @@
 order: 258
 layout: default
 title: "Your 2025 Cache Everything Is A 3x Stale Data Tax"
-date: 2026-05-17 08:20:13
+date: "2026-05-17 08:20:13"
 image: /assets/images/posts/2026-05-17-your-2025-cache-everything-is-a-3x-stale-data-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-17-your-2025-cache-everything-is-a-3x-stale-data-tax-why-production-traffic-data-shows-direct-database-reads-outperforming-redis-on-90-of-read-heavy-api-endpoints-under-1k-rps.wav

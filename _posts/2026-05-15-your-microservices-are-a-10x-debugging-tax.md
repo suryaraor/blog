@@ -2,7 +2,7 @@
 order: 239
 layout: default
 title: "Your Microservices Are a 10x Debugging Tax"
-date: 2026-05-15 12:19:38
+date: "2026-05-15 12:19:38"
 image: /assets/images/posts/2026-05-15-your-microservices-are-a-10x-debugging-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 audio: /assets/audio/posts/2026-05-15-your-microservices-are-a-10x-debugging-tax.wav
