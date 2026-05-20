@@ -5,6 +5,7 @@ title: "Your 2025 \"AI Pair Programmer\" Is a 4x Context Tax"
 date: "2026-05-16 09:18:29"
 image: /assets/images/posts/2026-05-16-your-2025-ai-pair-programmer-is-a-4x-context-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-16-your-2025-ai-pair-programmer-is-a-4x-context-tax.wav
 ---
 # Your 2025 "AI Pair Programmer" Is a 4x Context Tax
 

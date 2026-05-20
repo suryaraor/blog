@@ -5,6 +5,7 @@ title: "Your Microservices Are Secretly Slowing Everything Down"
 date: "2026-05-16 07:18:43"
 image: /assets/images/posts/2026-05-16-your-microservices-are-secretly-slowing-everything-down.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-16-your-microservices-are-secretly-slowing-everything-down.wav
 ---
 # Your Microservices Are Secretly Slowing Everything Down
 

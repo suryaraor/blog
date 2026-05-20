@@ -5,6 +5,7 @@ title: "Your \"TypeScript for Everything\" Is a 3x Complexity Tax"
 date: "2026-05-15 14:18:58"
 image: /assets/images/posts/2026-05-15-your-typescript-for-everything-is-a-3x-complexity-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-15-your-typescript-for-everything-is-a-3x-complexity-tax.wav
 ---
 # Your "TypeScript for Everything" Is a 3x Complexity Tax
 

@@ -5,6 +5,7 @@ title: "Your 2025 Rust Obsession Is Killing Throughput"
 date: "2026-05-18 14:18:49"
 image: /assets/images/posts/2026-05-18-your-2025-rust-obsession-is-killing-throughput.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-18-your-2025-rust-obsession-is-killing-throughput.wav
 ---
 # Your 2025 Rust Obsession Is Killing Throughput
 

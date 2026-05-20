@@ -5,6 +5,7 @@ title: "Your Event-Driven Architecture Is a 6x Debugging Tax"
 date: "2026-05-17 15:18:47"
 image: /assets/images/posts/2026-05-17-your-event-driven-architecture-is-a-6x-debugging-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-17-your-event-driven-architecture-is-a-6x-debugging-tax.wav
 ---
 # Your Event-Driven Architecture Is a 6x Debugging Tax
 

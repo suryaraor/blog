@@ -3,6 +3,7 @@ order: 255
 layout: default
 title: "Your Monorepo Is Making You Slow"
 date: "2026-05-16 13:20:23"
+audio: /assets/audio/posts/2026-05-16-your-monorepo-is-making-you-slow.wav
 ---
 # Your Monorepo Is Making You Slow
 

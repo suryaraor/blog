@@ -5,6 +5,7 @@ title: "Your \"Feature Flags for Everything\" Is a 5x Complexity Tax"
 date: "2026-05-15 17:19:35"
 image: /assets/images/posts/2026-05-15-your-feature-flags-for-everything-is-a-5x-complexity-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-15-your-feature-flags-for-everything-is-a-5x-complexity-tax.wav
 ---
 # Your "Feature Flags for Everything" Is a 5x Complexity Tax
 

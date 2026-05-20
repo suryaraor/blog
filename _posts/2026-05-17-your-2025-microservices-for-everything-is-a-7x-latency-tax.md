@@ -5,6 +5,7 @@ title: "Your 2025 “Microservices for Everything” Is a 7x Latency Tax"
 date: "2026-05-17 13:18:49"
 image: /assets/images/posts/2026-05-17-your-2025-microservices-for-everything-is-a-7x-latency-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-17-your-2025-microservices-for-everything-is-a-7x-latency-tax.wav
 ---
 # Your 2025 “Microservices for Everything” Is a 7x Latency Tax
 

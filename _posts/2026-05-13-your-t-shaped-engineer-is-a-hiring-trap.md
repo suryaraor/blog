@@ -5,6 +5,7 @@ title: "Your \"T-Shaped Engineer\" Is a Hiring Trap"
 date: "2026-05-13 20:19:08"
 image: /assets/images/posts/2026-05-13-your-t-shaped-engineer-is-a-hiring-trap.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-t-shaped-engineer-is-a-hiring-trap.wav
 ---
 # Your "T-Shaped Engineer" Is a Hiring Trap
 

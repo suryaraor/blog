@@ -5,6 +5,7 @@ title: "Your \"Serverless Database\" Is a 4x Cold-Start Tax"
 date: "2026-05-13 14:18:38"
 image: /assets/images/posts/2026-05-13-your-serverless-database-is-a-4x-cold-start-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-13-your-serverless-database-is-a-4x-cold-start-tax.wav
 ---
 # Your "Serverless Database" Is a 4x Cold-Start Tax
 

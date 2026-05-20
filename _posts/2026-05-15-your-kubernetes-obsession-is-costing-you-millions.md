@@ -5,6 +5,7 @@ title: "Your Kubernetes Obsession Is Costing You Millions"
 date: "2026-05-15 09:18:57"
 image: /assets/images/posts/2026-05-15-your-kubernetes-obsession-is-costing-you-millions.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-15-your-kubernetes-obsession-is-costing-you-millions.wav
 ---
 # Your Kubernetes Obsession Is Costing You Millions
 

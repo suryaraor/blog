@@ -5,6 +5,7 @@ title: "Your Serverless Functions Are a 4x Cold-Start Tax"
 date: "2026-05-16 06:19:00"
 image: /assets/images/posts/2026-05-16-your-serverless-functions-are-a-4x-cold-start-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-16-your-serverless-functions-are-a-4x-cold-start-tax.wav
 ---
 # Your Serverless Functions Are a 4x Cold-Start Tax
 

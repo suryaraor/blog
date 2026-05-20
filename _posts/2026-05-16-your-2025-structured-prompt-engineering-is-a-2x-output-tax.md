@@ -7,6 +7,7 @@ image: /assets/images/posts/2026-05-16-your-2025-structured-prompt-engineering-i
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
 quality_score: 9.0
 badge: editors_pick
+audio: /assets/audio/posts/2026-05-16-your-2025-structured-prompt-engineering-is-a-2x-output-tax.wav
 ---
 # Your 2025 “Structured Prompt Engineering” Is a 2x Output Tax
 

@@ -5,6 +5,7 @@ title: "Your Vector Database Is Costing You 4x Latency"
 date: "2026-05-14 07:19:12"
 image: /assets/images/posts/2026-05-14-your-vector-database-is-costing-you-4x-latency.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-14-your-vector-database-is-costing-you-4x-latency.wav
 ---
 # Your Vector Database Is Costing You 4x Latency
 

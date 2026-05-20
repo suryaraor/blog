@@ -5,6 +5,7 @@ title: "Your 2025 “AI Sprint Planning” Is Just Busywork"
 date: "2026-05-14 18:18:24"
 image: /assets/images/posts/2026-05-14-your-2025-ai-sprint-planning-is-just-busywork.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-14-your-2025-ai-sprint-planning-is-just-busywork.wav
 ---
 # Your 2025 “AI Sprint Planning” Is Just Busywork
 

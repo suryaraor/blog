@@ -5,6 +5,7 @@ title: "Your Cloud-Native Database Is a 4x Query Tax"
 date: "2026-05-17 20:19:35"
 image: /assets/images/posts/2026-05-17-your-cloud-native-database-is-a-4x-query-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-17-your-cloud-native-database-is-a-4x-query-tax.wav
 ---
 # Your Cloud-Native Database Is a 4x Query Tax
 

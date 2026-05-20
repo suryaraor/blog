@@ -5,6 +5,7 @@ title: "Your 2025 \"Just Ship It\" MVP Is a 3x Refactoring Tax"
 date: "2026-05-15 21:38:12"
 image: /assets/images/posts/2026-05-15-your-2025-just-ship-it-mvp-is-a-3x-refactoring-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-15-your-2025-just-ship-it-mvp-is-a-3x-refactoring-tax.wav
 ---
 # Your 2025 "Just Ship It" MVP Is a 3x Refactoring Tax
 

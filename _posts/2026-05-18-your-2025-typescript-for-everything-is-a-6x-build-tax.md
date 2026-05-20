@@ -5,6 +5,7 @@ title: "Your 2025 \"TypeScript for Everything\" Is a 6x Build Tax"
 date: "2026-05-18 20:18:23"
 image: /assets/images/posts/2026-05-18-your-2025-typescript-for-everything-is-a-6x-build-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-18-your-2025-typescript-for-everything-is-a-6x-build-tax.wav
 ---
 # Your 2025 "TypeScript for Everything" Is a 6x Build Tax
 

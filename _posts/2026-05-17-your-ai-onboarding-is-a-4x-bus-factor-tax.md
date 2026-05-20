@@ -5,6 +5,7 @@ title: "Your \"AI Onboarding\" Is a 4x Bus Factor Tax"
 date: "2026-05-17 16:17:46"
 image: /assets/images/posts/2026-05-17-your-ai-onboarding-is-a-4x-bus-factor-tax.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-17-your-ai-onboarding-is-a-4x-bus-factor-tax.wav
 ---
 # Your "AI Onboarding" Is a 4x Bus Factor Tax
 

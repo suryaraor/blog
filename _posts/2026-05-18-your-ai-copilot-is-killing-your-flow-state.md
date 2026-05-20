@@ -5,6 +5,7 @@ title: "Your AI Copilot Is Killing Your Flow State"
 date: "2026-05-18 08:19:18"
 image: /assets/images/posts/2026-05-18-your-ai-copilot-is-killing-your-flow-state.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-05-18-your-ai-copilot-is-killing-your-flow-state.wav
 ---
 # Your AI Copilot Is Killing Your Flow State
 
