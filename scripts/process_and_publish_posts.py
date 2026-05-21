@@ -710,13 +710,13 @@ def fetch_gemini_image(
     api_key: str,
     category: str = "",
 ) -> Optional[Tuple[bytes, str]]:
-    """Generate an architecture diagram via Gemini 2.0 Flash (free tier); return (jpeg_bytes, attribution) or None."""
+    """Generate an architecture diagram via Gemini 2.5 Flash Image; return (jpeg_bytes, attribution) or None."""
     prompt_text = build_gemini_arch_prompt(title, image_prompt, category)
-    print(f"[image] Generating architecture diagram via Gemini 2.0 Flash Image…")
+    print(f"[image] Generating architecture diagram via Gemini 2.5 Flash Image…")
 
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models"
-        f"/gemini-2.0-flash-exp-image-generation:generateContent?key={api_key}"
+        f"/gemini-2.5-flash-image:generateContent?key={api_key}"
     )
     payload = json.dumps({
         "contents": [{"parts": [{"text": prompt_text}]}],
