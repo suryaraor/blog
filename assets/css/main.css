@@ -673,6 +673,52 @@ a:hover {
   max-width: 100%;
   border-radius: 12px;
   border: 1px solid #efdcc9;
+  cursor: zoom-in;
+  transition: opacity 0.15s;
+}
+.post-content img:hover {
+  opacity: 0.9;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.88);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  cursor: zoom-out;
+}
+.lightbox-overlay.is-open {
+  display: flex;
+}
+.lightbox-overlay img {
+  max-width: 95vw;
+  max-height: 92vh;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+  cursor: default;
+}
+.lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  opacity: 0.85;
+  z-index: 10000;
+}
+.lightbox-close:hover {
+  opacity: 1;
 }
 
 /* Hero image shown at top of individual posts */

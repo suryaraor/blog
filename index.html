@@ -39,7 +39,9 @@ title: "Home"
     </div>
     {% if featured_post.image %}
     <div class="featured-post-image-wrap">
-      <img class="featured-thumb" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" loading="eager">
+      <a href="{{ featured_post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img class="featured-thumb" src="{{ featured_post.image | relative_url }}" alt="{{ featured_post.title }}" loading="eager">
+      </a>
     </div>
     {% endif %}
   </div>
@@ -105,7 +107,9 @@ title: "Home"
     {% endif %}
     <article class="post-card" data-page="1" data-categories="{{ post_cat_raw }}">
       {% if post.image %}
-      <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      <a href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      </a>
       {% endif %}
       <div class="post-card-body">
         <div class="post-card-tags">

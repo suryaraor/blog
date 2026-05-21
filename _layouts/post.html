@@ -47,6 +47,11 @@ layout: default
     api_url=site.comments_api_url
 %}
 
+<div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var progressBar = document.getElementById('reading-progress-bar');
@@ -105,6 +110,40 @@ document.addEventListener('DOMContentLoaded', function () {
     updateProgress();
     window.addEventListener('scroll', updateProgress, { passive: true });
     window.addEventListener('resize', updateProgress);
+
+    // Lightbox for post images
+    var lightboxOverlay = document.getElementById('lightbox-overlay');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var lightboxClose = document.getElementById('lightbox-close');
+
+    if (lightboxOverlay && lightboxImg && content) {
+        var postImgs = content.querySelectorAll('img');
+        postImgs.forEach(function (img) {
+            img.addEventListener('click', function () {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt || '';
+                lightboxOverlay.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+                lightboxClose.focus();
+            });
+        });
+
+        function closeLightbox() {
+            lightboxOverlay.classList.remove('is-open');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxOverlay.addEventListener('click', function (e) {
+            if (e.target === lightboxOverlay) { closeLightbox(); }
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && lightboxOverlay.classList.contains('is-open')) {
+                closeLightbox();
+            }
+        });
+    }
 
     function setupAudioControls() {
         if (!speechSupported) {
