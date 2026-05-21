@@ -25,14 +25,6 @@
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {% if page.image %}<meta name="twitter:image" content="{{ page.image | absolute_url }}">{% endif %}
 
-    <!-- PWA / offline support -->
-    <link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
-    <meta name="theme-color" content="#c84f24">
-    <!-- iOS home-screen app support -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Surya Blog">
-    <link rel="apple-touch-icon" href="{{ '/profile.png' | relative_url }}">
     <link rel="icon" type="image/png" href="{{ '/profile.png' | relative_url }}">
 
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -73,7 +65,6 @@
                 <a href="{{ '/archive' | relative_url }}">Archive</a>
                 <a href="{{ '/about' | relative_url }}">About</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">&#9790;</button>
-                <a href="{{ '/offline.html' | relative_url }}" id="offline-pill" class="offline-pill" hidden aria-label="Articles saved for offline reading" title="Load once, read anywhere — no internet needed" data-tooltip="Load once, read anywhere — no internet needed">&#x2601;&#xFE0F; Offline</a>
             </nav>
         </header>
 
@@ -85,6 +76,13 @@
         <main>
             {% if page.date and page.layout != 'post' %}
             <header class="post-header">
+                {% if page.categories.size > 0 %}
+                <div class="post-header-cats">
+                    {% for cat in page.categories %}
+                    <a href="{{ '/tags' | relative_url }}?tag={{ cat | slugify }}" class="post-header-cat-pill">{{ cat }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
                 <h1>{{ page.title }}</h1>
                 <div class="post-meta">
                     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
@@ -613,126 +611,41 @@
     })();
     </script>
     {% endif %}
-    <!-- Offline-ready toast -->
-    <div id="offline-toast" class="offline-toast" role="status" aria-live="polite" hidden>
-        <span class="offline-toast-text">&#x2601;&#xFE0F;&nbsp; All articles saved &mdash; readable offline</span>
-        <button class="offline-toast-close" aria-label="Dismiss" onclick="document.getElementById('offline-toast').hidden=true">&times;</button>
+    {% if page.date %}
+    <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+        <img id="lightbox-img" src="" alt="">
     </div>
-
-    <style>
-    .offline-pill {
-        font-size: 0.78rem;
-        font-family: var(--font-body);
-        color: var(--ink-500);
-        border: 1px solid var(--line);
-        border-radius: 99px;
-        padding: 0.15rem 0.65rem;
-        text-decoration: none;
-        white-space: nowrap;
-        transition: color 0.2s, border-color 0.2s;
-        position: relative;
-    }
-    .offline-pill:hover { color: var(--accent); border-color: var(--accent); }
-    .offline-pill[data-tooltip]:hover::after {
-        content: attr(data-tooltip);
-        position: absolute;
-        bottom: calc(100% + 6px);
-        right: 0;
-        background: var(--ink-900);
-        color: #fff;
-        font-size: 0.72rem;
-        font-family: var(--font-body);
-        font-weight: 400;
-        line-height: 1.4;
-        padding: 0.4rem 0.65rem;
-        border-radius: 8px;
-        white-space: nowrap;
-        max-width: 240px;
-        white-space: normal;
-        width: max-content;
-        z-index: 500;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-        pointer-events: none;
-    }
-    .offline-pill[data-tooltip]:hover::before {
-        content: '';
-        position: absolute;
-        bottom: calc(100% + 1px);
-        right: 1rem;
-        border: 5px solid transparent;
-        border-top-color: var(--ink-900);
-        z-index: 500;
-        pointer-events: none;
-    }
-
-    .offline-toast {
-        position: fixed;
-        bottom: 1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        background: var(--ink-900);
-        color: #fff;
-        padding: 0.75rem 1.25rem;
-        border-radius: 8px;
-        font-family: var(--font-body);
-        font-size: 0.9rem;
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-        z-index: 9999;
-        animation: toast-in 0.3s ease;
-    }
-    @keyframes toast-in {
-        from { opacity: 0; transform: translateX(-50%) translateY(12px); }
-        to   { opacity: 1; transform: translateX(-50%) translateY(0); }
-    }
-    .offline-toast-close {
-        background: none;
-        border: none;
-        color: rgba(255,255,255,0.6);
-        font-size: 1.1rem;
-        cursor: pointer;
-        padding: 0;
-        line-height: 1;
-    }
-    .offline-toast-close:hover { color: #fff; }
-    </style>
-
     <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-            navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}', { scope: '{{ "/" | relative_url }}' });
-
-            // Show the offline pill + toast when the SW signals the cache is warm
-            navigator.serviceWorker.addEventListener('message', function (event) {
-                if (!event.data || event.data.type !== 'OFFLINE_READY') return;
-
-                // Show nav pill (persist across sessions via localStorage)
-                showOfflinePill();
-
-                // Show toast once per session
-                var toastKey = 'offline-toast-shown';
-                if (!sessionStorage.getItem(toastKey)) {
-                    sessionStorage.setItem(toastKey, '1');
-                    var toast = document.getElementById('offline-toast');
-                    if (toast) {
-                        toast.hidden = false;
-                        setTimeout(function () { toast.hidden = true; }, 5000);
-                    }
-                }
+    document.addEventListener('DOMContentLoaded', function () {
+        var overlay = document.getElementById('lightbox-overlay');
+        var lightboxImg = document.getElementById('lightbox-img');
+        var closeBtn = document.getElementById('lightbox-close');
+        var content = document.querySelector('.post-content');
+        if (!overlay || !lightboxImg || !content) return;
+        content.querySelectorAll('img').forEach(function (img) {
+            img.addEventListener('click', function () {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt || '';
+                overlay.classList.add('is-open');
+                document.body.style.overflow = 'hidden';
+                closeBtn.focus();
             });
-
-            // Also restore pill immediately if previously shown (returning visitor)
-            if (localStorage.getItem('offline-ready')) showOfflinePill();
         });
-    }
-
-    function showOfflinePill() {
-        localStorage.setItem('offline-ready', '1');
-        var pill = document.getElementById('offline-pill');
-        if (pill) pill.hidden = false;
-    }
+        function closeLightbox() {
+            overlay.classList.remove('is-open');
+            document.body.style.overflow = '';
+            lightboxImg.src = '';
+        }
+        closeBtn.addEventListener('click', closeLightbox);
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) closeLightbox();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeLightbox();
+        });
+    });
     </script>
+    {% endif %}
 </body>
 </html>

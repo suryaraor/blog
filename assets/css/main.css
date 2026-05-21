@@ -1488,6 +1488,32 @@ footer {
   letter-spacing: 0.06em;
 }
 
+.post-header-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-header-cat-pill {
+  display: inline-block;
+  background: rgba(200, 79, 36, 0.08);
+  border: 1px solid var(--accent-soft);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+.post-header-cat-pill:hover {
+  background: rgba(200, 79, 36, 0.18);
+  border-color: var(--accent);
+}
+
 .tags-empty-state {
   color: var(--ink-500);
   font-size: 0.95rem;
