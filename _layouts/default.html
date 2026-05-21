@@ -85,14 +85,20 @@
         <main>
             {% if page.date and page.layout != 'post' %}
             <div class="post-audio-controls" aria-live="polite">
+                {% if page.audio %}
+                <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
+                    <source src="{{ page.audio | relative_url }}" type="audio/wav">
+                </audio>
+                {% else %}
                 <button type="button" class="post-audio-button" data-audio-button>
                     Play aloud
                 </button>
                 <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
+                {% endif %}
             </div>
-            {% if page.image %}
+            {% if page.image %}{% unless content contains 'post-hero-image' %}
             <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
-            {% endif %}
+            {% endunless %}{% endif %}
             <div class="post-content">
                 {{ content }}
             </div>
