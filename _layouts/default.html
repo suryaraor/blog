@@ -84,18 +84,25 @@
         {% endif %}
         <main>
             {% if page.date and page.layout != 'post' %}
-            <div class="post-audio-controls" aria-live="polite">
-                {% if page.audio %}
-                <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
-                    <source src="{{ page.audio | relative_url }}" type="audio/wav">
-                </audio>
-                {% else %}
-                <button type="button" class="post-audio-button" data-audio-button>
-                    Play aloud
-                </button>
-                <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
-                {% endif %}
-            </div>
+            <header class="post-header">
+                <h1>{{ page.title }}</h1>
+                <div class="post-meta">
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                    <span>{{ content | number_of_words | divided_by: 220 | plus: 1 }} min read</span>
+                </div>
+                <div class="post-audio-controls" aria-live="polite">
+                    {% if page.audio %}
+                    <audio controls preload="none" class="post-audio-player" aria-label="Listen to this article">
+                        <source src="{{ page.audio | relative_url }}" type="audio/wav">
+                    </audio>
+                    {% else %}
+                    <button type="button" class="post-audio-button" data-audio-button>
+                        Play aloud
+                    </button>
+                    <span class="post-audio-status" data-audio-status>Reads this article in your browser.</span>
+                    {% endif %}
+                </div>
+            </header>
             {% if page.image %}{% unless content contains 'post-hero-image' %}
             <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
             {% endunless %}{% endif %}

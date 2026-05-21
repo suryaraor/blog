@@ -568,6 +568,11 @@ a:hover {
   max-width: 68ch;
 }
 
+/* Title is displayed in the post header above the image; suppress the duplicate H1 from markdown */
+.layout-default .post-content > h1:first-child {
+  display: none;
+}
+
 .post-content p,
 .post-content li {
   color: #232a3a;
