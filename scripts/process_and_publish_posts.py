@@ -868,6 +868,24 @@ def clean_sections(text: str) -> Tuple[str, Dict[str, int]]:
     }
 
 
+def _strip_leading_code_fence(text: str) -> str:
+    """Strip an outer code fence that the model wrapped around its entire response.
+
+    Handles the case where the body (after real front matter is extracted) still
+    starts with ```[lang] ... ``` wrapping a duplicate front matter block and the
+    article content.  Only strips when the fence opens on the very first line.
+    """
+    stripped = text.lstrip("\n")
+    m = re.match(r"^```[a-zA-Z]*\n(.*\n?)```[ \t]*$", stripped, re.DOTALL)
+    if m:
+        return m.group(1).rstrip("\n")
+    # Also handle an unclosed opening fence (no matching closing ```)
+    m2 = re.match(r"^```[a-zA-Z]*\n", stripped)
+    if m2:
+        return stripped[m2.end():]
+    return text
+
+
 def _strip_leading_orphan_fm(text: str) -> str:
     """Strip an unclosed front matter block at the start of text.
 
@@ -876,6 +894,8 @@ def _strip_leading_orphan_fm(text: str) -> str:
     normalize_front_matter prepends the real header.  Remove it here so the
     body starts cleanly at the first heading or paragraph.
     """
+    # First remove any outer code fence the model may have added
+    text = _strip_leading_code_fence(text)
     if not text.startswith("---"):
         return text
     lines = text.splitlines()
