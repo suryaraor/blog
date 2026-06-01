@@ -8,12 +8,6 @@ image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinati
 quality_score: 7.5
 audio: /assets/audio/posts/2026-06-01-getting-started-with-agentic-ai-using-claude.wav
 ---
-```
----
-layout: default
-title: "Getting Started with Agentic AI Using Claude"
-date: 2024-01-15
----
 
 # Getting Started with Agentic AI Using Claude
 
