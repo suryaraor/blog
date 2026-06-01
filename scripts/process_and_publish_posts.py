@@ -846,7 +846,7 @@ def generate_excalidraw_diagram(
         client = _OpenAI(api_key=api_key, base_url=_DEEPSEEK_BASE_URL)
         resp = client.chat.completions.create(
             model=_DIAGRAM_MODEL,
-            max_tokens=4096,
+            max_tokens=8192,
             messages=[
                 {"role": "system", "content": _DIAGRAM_SYSTEM},
                 {"role": "user", "content": user_prompt},
