@@ -5,6 +5,7 @@ title: "Why the Best Codebases Are Boring"
 date: 2026-06-01 05:41:33
 image: /assets/images/posts/2026-06-01-why-the-best-codebases-are-boring.jpg
 image_credit: "AI-generated illustration via [Pollinations.AI](https://pollinations.ai)"
+audio: /assets/audio/posts/2026-06-01-why-the-best-codebases-are-boring.wav
 ---
 # Why the Best Codebases Are Boring
 
